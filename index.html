@@ -241,7 +241,7 @@ details.qa .ans p{font-size:14.5px;line-height:1.95;color:#333;margin:0 0 12px}
 
 <main>
   <div class="about" id="sec-about">
-    <em class="no">A1</em><img loading="lazy" decoding="async" class="avatar pic" src="assets/5fd09f41ba34.jpg" alt="熊非">
+    <em class="no">A1</em><img loading="lazy" decoding="async" class="avatar pic" src="assets/25e65e555941.webp" alt="熊非">
     <div class="who">
       <div class="bio" data-no="P1" data-field="正文"><em class="no">P1</em><p>我是熊非，<b>同济建筑学士学位</b>，<b>Harvard 21'（MDes RR首个大陆录取本科生）</b>。曾任<b>豆包多模态产品负责人</b>（包括图片/视频理解，实时视频通话，computer use）；<b>即梦founding PM</b>；连续创业者，曾悉空科技COO（Spatial Intelligence）、曾画龙CEO（物理世界定制AI）。</p><p>2019在Harvard和MIT开始我的Computer Vision旅程，而后我致力于打造<b>以视觉为统一接口的交互新范式</b>，以及<b>下一代视觉交互的前沿模型</b>。我相信模型作为新质生产力，下一代的生产关系会围绕模型展开，最强的学习信号会来自产品落地和部署环境，有竞争力的组织会从这样的新生产力和生产关系长出来。我希望建立这样的组织，也希望认识更多有趣的朋友。</p></div>
       <div class="links"><a href="mailto:fei.w.xiong@outlook.com"><em class="no">A4</em>EMAIL</a><a href="https://www.xiaoyuzhoufm.com/podcast/6885f49a7c043891439ecf96" target="_blank" rel="noopener"><em class="no">A5</em>小宇宙 · FUNDAMENTALS: AI ↗</a><span class="plain"><em class="no">A6</em>微信 · wowolpert</span></div>
@@ -325,6 +325,8 @@ function release(){
     setTimeout(function(){ if(s.parentNode) s.parentNode.removeChild(s); },700);
   }
   if(SM){
+    var av=document.querySelector('img.avatar');  /* 头像插队:首屏下方第一张脸,最先到 */
+    if(av&&av.loading==='lazy') av.loading='eager';
     for(var oi=1;oi<N;oi+=2) kick(oi);       /* 放行后先补奇数小图 */
     setTimeout(kickImgs,4000);                /* 奇数若卡住,4s 后图片照样开跑(其 8s 兜底再放高清) */
   }
