@@ -30,6 +30,14 @@ html{scroll-snap-type:y proximity}
 
 /* copy numbering badges: invisible on the real site, visible in edit mode.
    edit mode = the SAME page, only the badges + a hint pill appear on top */
+#loadshade{position:fixed;inset:0;z-index:200;background:#FAFCF9;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .45s ease}
+#loadshade.on{opacity:1}
+#loadshade.off{opacity:0!important;pointer-events:none}
+.ls-in{display:flex;flex-direction:column;align-items:center;gap:14px}
+.ls-name{font-size:13px;letter-spacing:.42em;color:#161715;font-weight:600;padding-left:.42em}
+.ls-track{width:min(240px,56vw);height:2px;background:#E6E8E3;overflow:hidden}
+.ls-fill{height:100%;width:0%;background:#5E93A6;transition:width .25s ease}
+.ls-pct{font-size:10px;letter-spacing:.34em;color:#7c7f7a;font-family:ui-monospace,Menlo,monospace;padding-left:.34em}
 em.no{display:none}
 body.edit em.no{display:inline-block;font-style:normal;background:var(--water);color:#fff;
   font-size:10px;letter-spacing:.1em;padding:2px 7px;border-radius:3px;margin-right:9px;vertical-align:2px;font-weight:700;
@@ -289,18 +297,36 @@ if(POSTER){
     .then(function(bl){ return self.createImageBitmap?createImageBitmap(bl):null; })
     .then(function(b){ if(b){ posterBmp=b; repaint(); } }).catch(function(){});
 }
-/* 全局加载进度条:顶部 2px 水青,帧齐后淡出 */
-var pbar=document.createElement('div');
-pbar.style.cssText='position:fixed;top:0;left:0;height:2px;width:0%;background:#5E93A6;z-index:60;transition:width .25s ease,opacity .5s ease;pointer-events:none';
-document.body.appendChild(pbar);
-var loadedN=0;
+/* 阻塞式加载罩(v61):帧没齐之前锁住页面,居中进度条管理预期;
+   600ms 宽限——快网/有缓存的用户根本见不到它;深链不拦;30s 兜底放行绝不困人 */
+var loadedN=0, shade=null, shadeBar=null, shadePct=null, shadeDone=false;
+if(!location.hash && N>0){
+  shade=document.createElement('div'); shade.id='loadshade';
+  shade.innerHTML='<div class="ls-in"><div class="ls-name">熊 非 / FEI XIONG</div>'+
+    '<div class="ls-track"><div class="ls-fill"></div></div>'+
+    '<div class="ls-pct">LOADING · 0%</div></div>';
+  document.body.appendChild(shade);
+  document.documentElement.style.overflow='hidden';
+  document.body.style.overflow='hidden';
+  shadeBar=shade.querySelector('.ls-fill'); shadePct=shade.querySelector('.ls-pct');
+  setTimeout(function(){ if(!shadeDone&&shade) shade.classList.add('on'); },600);
+  setTimeout(release,30000);
+}
+function release(){
+  if(shadeDone) return; shadeDone=true;
+  document.documentElement.style.overflow='';
+  document.body.style.overflow='';
+  if(shade){
+    var s=shade; shade=null;
+    s.classList.add('off');
+    setTimeout(function(){ if(s.parentNode) s.parentNode.removeChild(s); },700);
+  }
+}
 function pTick(){
   loadedN++;
-  pbar.style.width=(loadedN/N*100).toFixed(1)+'%';
-  if(loadedN>=N){
-    setTimeout(function(){ pbar.style.opacity='0'; },300);
-    setTimeout(function(){ if(pbar.parentNode) pbar.parentNode.removeChild(pbar); },1200);
-  }
+  var pc=Math.round(loadedN/N*100);
+  if(shadeBar){ shadeBar.style.width=pc+'%'; if(shadePct) shadePct.textContent='LOADING · '+pc+'%'; }
+  if(loadedN>=N) release();
 }
 /* 取帧:就绪即重绘(决不等滚动);外置模式下首帧优先,不被其余 30 帧抢带宽 */
 var _c={r:0,en:0,pass:0,t:0,d:0,rp:0};
@@ -311,7 +337,7 @@ function kick(i){
   fetch(FRAMES[i]).then(function(r){ if(!r.ok) throw 0; return r.blob(); }).then(function(bl){
     blobs[i]=bl; FRAMES[i]=null;
     pTick(); repaint();
-  }).catch(function(){ kicked[i]=false; });
+  }).catch(function(){ kicked[i]=false; if(shade) setTimeout(function(){ kick(i); },1200); });  /* 锁页期间自动重试 */
 }
 kick(0); kick(1); kick(2);
 var rested=false;
