@@ -322,31 +322,42 @@ function release(){
     s.classList.add('off');
     setTimeout(function(){ if(s.parentNode) s.parentNode.removeChild(s); },700);
   }
-  if(SM){ setTimeout(function(){ upgrade(); upgrade(); },300); }  /* 放行后开双通道高清升级 */
+  if(SM){
+    for(var oi=1;oi<N;oi+=2) kick(oi);       /* 放行后先补奇数小图 */
+    setTimeout(upgradeStart,5000);            /* 奇数若卡住,5s 后高清照样开跑 */
+  }
 }
 function pTick(){
   loadedN++;
-  var pc=Math.round(loadedN/N*100);
+  var na=(typeof NA!=='undefined')?NA:N;
+  var pc=Math.min(100,Math.round(loadedN/na*100));
   if(shadeBar){ shadeBar.style.width=pc+'%'; if(shadePct) shadePct.textContent='LOADING · '+pc+'%'; }
-  if(loadedN>=N) release();
+  if(loadedN>=na) release();
 }
 /* 取帧:就绪即重绘(决不等滚动);外置模式下首帧优先,不被其余 30 帧抢带宽 */
 var _c={r:0,en:0,pass:0,t:0,d:0,rp:0};
-/* 取帧 v62 双档:小图(~40KB/帧)全并发先行,凑齐即放行;高清按"离播放头最近优先"后台替换 */
+/* 取帧 v63 三段:偶数小图(~420KB)凑齐即放行 -> 奇数小图补插 -> 高清按播放头最近优先替换 */
 var SM=FRAMES_SM.length===N;
-var kicked=new Array(N), hiB=new Array(N), upBusy=0;
+var NA=SM?Math.floor((N+1)/2):N;             /* 放行门槛:偶数帧张数(末帧 32 为偶,天然在内) */
+var kicked=new Array(N), hiB=new Array(N), upBusy=0, smCount=0, upStarted=false;
+function upgradeStart(){ if(upStarted||!SM) return; upStarted=true; upgrade(); upgrade(); }
 function kick(i){
   if(i<0||i>=N||kicked[i]||blobs[i]) return;
   kicked[i]=true;
   var src=SM?FRAMES_SM[i]:FRAMES[i];
   if(!src){ kicked[i]=false; return; }
   fetch(src).then(function(r){ if(!r.ok) throw 0; return r.blob(); }).then(function(bl){
-    if(!blobs[i]){ blobs[i]=bl; pTick(); }
+    if(!blobs[i]){
+      blobs[i]=bl; smCount++;
+      if(!SM||i%2===0) pTick();
+      if(SM&&smCount>=N) upgradeStart();     /* 小图全齐,再开高清 */
+    }
     if(!SM) FRAMES[i]=null;
     repaint();
   }).catch(function(){ kicked[i]=false; if(shade) setTimeout(function(){ kick(i); },1200); });  /* 锁页期间自动重试 */
 }
-for(var ki=0;ki<N;ki++) kick(ki);
+for(var ki=0;ki<N;ki+=2) kick(ki);
+if(!SM){ for(var kj=1;kj<N;kj+=2) kick(kj); }
 function nextUp(){
   var c=Math.round(cur*(N-1)), best=-1, bd=1e9;
   for(var k=0;k<N;k++){ if(!hiB[k]){ var d=Math.abs(k-c); if(d<bd){ bd=d; best=k; } } }
