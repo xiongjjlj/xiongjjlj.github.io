@@ -580,16 +580,17 @@ function render(p){
       cx.drawImage(b,dx,dy,side,side);       /* same box for both: no ghost offset */
       cx.globalAlpha=1;
     }
+    drawTF(W*0.58, H*0.04, W*0.40, H*0.84, p);   /* 塔与楼同时揭幕 */
   } else {
-    /* 楼的首帧在路上:图纸注记式占位 */
+    /* 首帧在路上:左右各一条图纸注记占位,谁都不先出 */
     cx.save();
     cx.fillStyle=GREY; cx.globalAlpha=0.5;
     cx.font='500 '+Math.max(10,Math.round(H*0.011))+'px ui-monospace,Menlo,monospace';
     cx.textAlign='center'; cx.textBaseline='middle';
     cx.fillText('B 3 1 · L O A D I N G', dx+side/2, dy+side/2);
+    cx.fillText('T R A N S F O R M E R · L O A D I N G', W*0.78, dy+side/2);  /* 与左注同一水平线 */
     cx.restore();
   }
-  drawTF(W*0.58, H*0.04, W*0.40, H*0.84, p);
   for(var c=0;c<CAPS.length;c++){
     var el=CAPS[c], o=ramp(p,+el.dataset.a,+el.dataset.b);
     el.style.opacity=o.toFixed(3);
