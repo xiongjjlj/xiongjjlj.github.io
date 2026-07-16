@@ -81,6 +81,11 @@ body.edit #savebar{display:flex}
 .cnote .t1{font-size:10.5px;letter-spacing:.24em;color:#84887F;font-style:italic}
 .cnote.l{left:4%;width:50%}
 .cnote.r{left:57%;width:40%}
+@media (max-aspect-ratio: 100/115){ /* 竖屏:画注归位到楼/塔正下方,居中 */
+  .cnote.l,.cnote.r{left:8%;width:84%;text-align:center;bottom:auto}
+  .cnote.l{top:49%}
+  .cnote.r{top:88.8%}
+}
 }
 
 #caps{position:absolute;inset:0;pointer-events:none;z-index:6}
@@ -668,7 +673,7 @@ function render(p){
   if(PT){
     side=Math.min(W*0.92, H*0.46)*(0.96+0.04*p);
     dx=(W-side)/2; dy=H*0.03+(H*0.46-side)/2;
-    tfx=W*0.10; tfy=H*0.52; tfw=W*0.80; tfh=H*0.36;
+    tfw=W*0.74; tfx=W*(0.5-0.38*0.74); tfy=H*0.52; tfh=H*0.36;   /* 塔身(锚点在 0.38rw)对齐屏幕中线 */
   } else {
     var bw = W*0.50;
     side=Math.min(bw*0.96,H*0.98)*(0.96+0.04*p);
