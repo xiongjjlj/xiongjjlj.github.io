@@ -96,6 +96,7 @@ body.edit #savebar{display:flex}
 .cap.hnote{left:auto;right:clamp(22px,5.5vw,84px);bottom:clamp(70px,13vh,150px);max-width:min(30vw,330px)}
 .cap.hnote b{font-size:12.5px;font-weight:400;color:var(--grey);line-height:1.95;letter-spacing:.05em}
 @media (max-width:760px){.cap.hnote{display:none}}
+@media (max-width:699px){.cnote{display:none}}
 
 main{position:relative;z-index:5;background:var(--paper);padding:26px 0 60px;
   border-radius:26px 26px 0 0;box-shadow:0 -18px 60px rgba(24,34,32,.10);scroll-snap-align:start;scroll-snap-stop:always;
@@ -661,10 +662,19 @@ function render(p){
     }
     return;
   }
-  /* 恒定构图:任何比例都是左楼右塔;塔是代码画的,首帧未到也照画不误 */
-  var bw = W*0.50;
-  var side=Math.min(bw*0.96,H*0.98)*(0.96+0.04*p);
-  var dx=(bw-side)/2, dy=(H-side)/2;
+  /* 布局:横屏=左楼右塔恒定构图;竖屏(H>1.15W)=楼上塔下纵排(2026-07-14 用户定的 Plan A) */
+  var PT = H > W*1.15;
+  var side, dx, dy, tfx, tfy, tfw, tfh;
+  if(PT){
+    side=Math.min(W*0.92, H*0.46)*(0.96+0.04*p);
+    dx=(W-side)/2; dy=H*0.03+(H*0.46-side)/2;
+    tfx=W*0.10; tfy=H*0.52; tfw=W*0.80; tfh=H*0.36;
+  } else {
+    var bw = W*0.50;
+    side=Math.min(bw*0.96,H*0.98)*(0.96+0.04*p);
+    dx=(bw-side)/2; dy=(H-side)/2;
+    tfx=W*0.58; tfy=H*0.04; tfw=W*0.40; tfh=H*0.84;
+  }
   cx.fillStyle=PAPER; cx.fillRect(0,0,W,H);
   cx.globalAlpha=1;
   if(a||b){
@@ -674,11 +684,11 @@ function render(p){
       cx.drawImage(b,dx,dy,side,side);       /* same box for both: no ghost offset */
       cx.globalAlpha=1;
     }
-    drawTF(W*0.58, H*0.04, W*0.40, H*0.84, p);   /* 塔与楼同时揭幕 */
+    drawTF(tfx,tfy,tfw,tfh,p);               /* 塔与楼同时揭幕 */
   } else if(posterBmp){
     /* 高清首帧在路上:先上内嵌海报,楼塔同帧亮相(进度条负责交代加载) */
     cx.drawImage(posterBmp,dx,dy,side,side);
-    drawTF(W*0.58, H*0.04, W*0.40, H*0.84, p);
+    drawTF(tfx,tfy,tfw,tfh,p);
   }
   for(var c=0;c<CAPS.length;c++){
     var el=CAPS[c], o=ramp(p,+el.dataset.a,+el.dataset.b);
