@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 实验室发布调研</title>
+<style>
+:root{
+  --bg:#F7F8FA; --card:#FFFFFF; --text:#1F2329; --sub:#646A73; --line:#E4E6EB; --soft:#F2F3F5;
+  --blue:#3370FF; --orange:#FF8800; --red:#D83931; --green:#34B369; --gray:#8F959E;
+  --shadow:0 1px 2px rgba(31,35,41,.06),0 4px 16px rgba(31,35,41,.05);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#141518; --card:#1E2024; --text:#E8EAED; --sub:#A0A6AE; --line:#30333A; --soft:#26292E; --shadow:none; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 "PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif}
+a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+header.hero{padding-top:40px;padding-bottom:24px}
+header.hero h1{font-size:30px;line-height:1.3;margin:0 0 12px}
+header.hero .lead{font-size:18px;font-weight:600;margin:0 0 6px}
+header.hero .meta{color:var(--sub);margin:0}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 16px;box-shadow:var(--shadow)}
+.stat b{font-size:22px;display:block;line-height:1.2}
+.stat span{color:var(--sub);font-size:13px}
+nav.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.bar .wrap{display:flex;gap:14px;align-items:center;flex-wrap:nowrap;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:thin}
+.chips{display:flex;gap:5px;flex-wrap:nowrap;align-items:center;flex:none}
+.chips .lab{color:var(--sub);font-size:13px;margin-right:2px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:2px 9px;font-size:12px;white-space:nowrap;cursor:pointer;display:inline-flex;align-items:center;gap:6px;user-select:none}
+.chip.off{opacity:.35}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+select{flex:none;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:8px;padding:4px 8px;font:inherit;font-size:13px}
+section{margin:28px 0}
+h2.sec{font-size:22px;margin:0 0 6px}
+p.secsub{color:var(--sub);margin:0 0 16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 10px;font-size:17px}
+ol.tight,ul.tight{margin:0;padding-left:22px} ol.tight li,ul.tight li{margin:6px 0}
+ol.tight li b,ul.tight li b{display:block}
+.muted{color:var(--sub)}
+/* 泳道图 */
+.swim{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px 10px;box-shadow:var(--shadow);overflow-x:auto}
+.swim-inner{min-width:900px;position:relative}
+.axis{position:relative;height:26px;margin-left:190px;margin-right:8px}
+.axis .tk{position:absolute;top:0;transform:translateX(-50%);font-size:12px;color:var(--sub);white-space:nowrap}
+.lane{display:flex;align-items:center;height:30px;border-top:1px dashed var(--line)}
+.lane.grp{height:26px;border-top:1px solid var(--line)}
+.lane.grp .ln{font-weight:700;color:var(--blue);font-size:13px}
+.lane .ln{width:190px;flex:none;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-right:8px;cursor:pointer}
+.lane .ln:hover{color:var(--blue)}
+.track{position:relative;flex:1;height:100%;margin-right:8px}
+.track .ev{position:absolute;top:50%;width:13px;height:13px;border-radius:50%;transform:translate(-50%,-50%);cursor:pointer;border:2px solid var(--card);box-shadow:0 0 0 1px rgba(0,0,0,.08);transition:transform .12s}
+.track .ev:hover{transform:translate(-50%,-50%) scale(1.5);z-index:3}
+.grid-v{position:absolute;top:26px;bottom:0;width:1px;background:var(--line);pointer-events:none}
+.today{position:absolute;top:20px;bottom:0;width:0;border-left:2px dashed var(--red);pointer-events:none}
+.today span{position:absolute;top:-20px;left:4px;font-size:12px;color:var(--red);white-space:nowrap}
+.legend{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0 0 190px;font-size:12px;color:var(--sub)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:-1px}
+#tip{position:fixed;z-index:50;pointer-events:none;background:#1F2329;color:#fff;font-size:12px;line-height:1.5;padding:6px 9px;border-radius:6px;max-width:320px;display:none}
+/* 公司 */
+.group-head{margin:40px 0 12px;padding-left:12px;border-left:4px solid var(--blue)}
+.group-head h2{margin:0;font-size:22px}
+.group-head p{margin:2px 0 0;color:var(--sub)}
+.co{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:16px 0;box-shadow:var(--shadow);scroll-margin-top:64px}
+.co-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap}
+.co-head h3{margin:0;font-size:22px}
+.co-head .who{color:var(--sub);font-size:14px}
+.verdict{font-size:16px;font-weight:600;margin:8px 0 0}
+.badge{border-radius:6px;padding:2px 10px;font-size:13px;font-weight:600;white-space:nowrap}
+.st-公开可用{background:#E8F0FF;color:#245BDB}
+.st-受限可用{background:#FFF1E0;color:#C25E00}
+.st-无可用物{background:#FFECEB;color:#B42B25}
+.st-已下线{background:var(--soft);color:var(--sub)}
+@media (prefers-color-scheme: dark){ .st-公开可用{background:#1D2B4A;color:#8AB0FF} .st-受限可用{background:#3A2A14;color:#FFB766} .st-无可用物{background:#3D1E1D;color:#FF8A84} }
+.tl{position:relative;margin:20px 0 4px;padding-left:0}
+.tl:before{content:"";position:absolute;left:120px;top:4px;bottom:4px;width:2px;background:var(--line)}
+.ev-row{display:grid;grid-template-columns:110px 1fr;gap:28px;position:relative;margin:0 0 16px;scroll-margin-top:80px}
+.ev-row .when{text-align:right;padding-top:2px}
+.ev-row .when b{display:block;font-size:14px}
+.ev-row .when .fm{font-size:12px;font-weight:600}
+.ev-row .pin{position:absolute;left:114px;top:6px;width:14px;height:14px;border-radius:50%;border:3px solid var(--card);box-shadow:0 0 0 1px rgba(0,0,0,.1)}
+.ev-body{background:var(--soft);border-radius:10px;padding:12px 14px;transition:box-shadow .3s}
+.ev-body.flash{box-shadow:0 0 0 3px var(--orange)}
+.ev-body h4{margin:0 0 4px;font-size:16px}
+.ev-body p{margin:2px 0}
+.ev-body .eff{color:var(--text)}
+.ev-body .eff:before{content:"效果　";color:var(--sub);font-weight:600}
+.ev-body .desc:empty,.ev-body .eff:empty{display:none}
+.media{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px}
+.media figure{flex:1 1 380px;max-width:680px}
+.media figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.media video{width:100%;display:block;background:#000;aspect-ratio:16/9}
+.media img{width:100%;display:block;max-height:340px;object-fit:contain;background:var(--card);cursor:zoom-in}
+.media figcaption{font-size:12px;color:var(--sub);padding:6px 10px}
+.analysis{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.analysis div b{display:block;color:var(--sub);font-size:13px}
+.links{margin-top:10px;font-size:13px;color:var(--sub)}
+.links a{margin-right:12px}
+.ev-row.hide,.co.hide,.lane.hide,.group-head.hide,.track .ev.hide,.supp-card.hide{display:none}
+/* 补充样本 */
+.supp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+.supp-card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.supp-card .media{margin:0}
+.supp-card .media figure{max-width:none}
+.supp-card .media figure{border:0;border-radius:0;border-bottom:1px solid var(--line)}
+.supp-card .media img{max-height:220px;object-fit:cover;object-position:top}
+.supp-card .bd{padding:12px 14px}
+.supp-card h4{margin:0;font-size:16px;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.supp-card .who{color:var(--sub);font-size:13px}
+.supp-card p{margin:6px 0 0}
+/* 灯箱 */
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:60;display:none;align-items:center;justify-content:center;flex-direction:column;padding:24px;cursor:zoom-out}
+#lb img{max-width:96vw;max-height:86vh;object-fit:contain;background:#fff}
+#lb div{color:#fff;margin-top:10px;font-size:14px;text-align:center}
+footer{color:var(--sub);font-size:13px;padding-top:24px;padding-bottom:60px;border-top:1px solid var(--line);margin-top:40px}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  .two,.analysis{grid-template-columns:1fr}
+  .tl:before{left:8px}
+  .ev-row{grid-template-columns:1fr;gap:6px;padding-left:24px}
+  .ev-row .when{text-align:left}
+  .ev-row .pin{left:2px}
+  .media figure{flex-basis:100%}
+  header.hero h1{font-size:24px}
+}
+</style>
+</head>
+<body>
+<header class="hero wrap">
+  <h1>AI 实验室发布调研</h1>
+  <p class="meta">可用物＝外部人可以直接使用的东西（产品、开源权重、开源代码、任何人可玩的网页）。核查日 2026-10-07。视频从原片剪辑，每段不超过 60 秒。</p>
+  <div class="stats" id="stats"></div>
+</header>
+<nav class="bar"><div class="wrap">
+  <div class="chips" id="gchips"><span class="lab">打法</span></div>
+  <div class="chips" id="fchips"><span class="lab">形式</span></div>
+  <select id="jump"><option value="">跳到公司…</option></select>
+</div></nav>
+<main class="wrap">
+  <section id="swim">
+    <h2 class="sec">全景时间线</h2>
+    <p class="secsub">每个圆点是一次发布或事件，颜色表示形式。悬停看摘要，点击跳到详情。</p>
+    <div class="swim"><div class="swim-inner" id="swimInner"></div></div>
+  </section>
+  <section id="cases"></section>
+  <section id="supp">
+    <h2 class="sec">其余 14 个样本</h2>
+    <p class="secsub">只列一句现状和一个画面。点名称看主要来源。</p>
+    <div class="supp-grid" id="suppGrid"></div>
+  </section>
+  <section id="notes" class="card">
+    <h3>待确认</h3>
+    <ul class="tight">
+      <li>公司自报、未经第三方复核的数字：1X 的预订数，Decart 的用户数，Odyssey-3 的 77%，Reflection Beam 的跑分。</li>
+      <li>Periodic Labs 的付费客户只有 Bloomberg 报道，交付日期未公开。</li>
+      <li>语用科技的估值：媒体称投后约 20 亿美元；按工商持股 12% 推算约 18 亿美元。</li>
+      <li>Reflection AI 说权重 10 月内放出；Odyssey-3 说「几周内」公开；xAI 的期限是 2026 年底。核实方法：到期查官网。</li>
+    </ul>
+  </section>
+</main>
+<footer class="wrap">资料来源：各公司官网、博客、GitHub、论文与报道，2026-10-07 核查。每家公司卡片末尾列出主要链接。</footer>
+<div id="tip"></div>
+<div id="lb"><img alt=""><div></div></div>
+<script>
+const DATA={"forms": [{"name": "宣言文章", "color": "#7F3BF5"}, {"name": "访谈演讲", "color": "#0FA5A5"}, {"name": "演示视频", "color": "#FF8800"}, {"name": "试玩预览", "color": "#D9A400"}, {"name": "开源", "color": "#34B369"}, {"name": "产品", "color": "#3370FF"}, {"name": "资本人事", "color": "#8F959E"}, {"name": "第三方", "color": "#D83931"}], "groups": [{"id": "A", "name": "只给人和论点", "desc": "拿出的只有人、宣言或立场文章。"}, {"id": "B", "name": "只给期限", "desc": "拿出的主要是一个日期。"}, {"id": "C", "name": "先放演示", "desc": "先放演示视频或受限试玩。"}, {"id": "D", "name": "先放可用物", "desc": "在大概念之前或同时放出了可用物。"}], "companies": [{"id": "ssi", "name": "SSI", "who": "Ilya Sutskever", "group": "A", "status": "无可用物", "verdict": "27 个月无可用物，估值 320 亿美元。", "events": [{"id": "ssi-0", "date": "2024-06-19", "form": "宣言文章", "title": "官网只有一页宣言", "desc": "宣言 217 个英文单词。核心句：一个目标，一个产品，安全的超级智能。", "effect": "没有模型、论文或演示。", "media": [{"t": "i", "src": "media/ssi.jpg", "cap": "SSI 官网全站（2026-10-07 截图）"}]}, {"id": "ssi-1", "date": "2024-09-04", "form": "资本人事", "title": "融资 10 亿美元", "desc": "估值约 50 亿美元。投资方有 a16z、红杉、DST Global。", "effect": "投资人只能评估人和方向。", "media": [{"t": "i", "src": "media/ssi_updates.jpg", "cap": "官网更新页：成立 27 个月只有 3 条（2026-10-07 截图）"}]}, {"id": "ssi-2", "date": "2025-04", "form": "资本人事", "title": "融资 20 亿美元", "desc": "估值 320 亿美元，Greenoaks 领投。谷歌云提供 TPU 算力。", "effect": "估值 7 个月涨 6 倍多，期间没有新发布物。", "media": []}, {"id": "ssi-3", "date": "2025-07-03", "form": "资本人事", "title": "Ilya 接任 CEO", "desc": "联合创始人 Daniel Gross 加入 Meta。此前 Meta 想收购 SSI，被拒绝。", "effect": "外部信用没有动摇。", "media": []}, {"id": "ssi-4", "date": "2025-11-25", "form": "访谈演讲", "title": "96 分钟播客访谈", "desc": "Ilya 在 Dwarkesh 播客上说：规模化时代结束，回到研究时代。", "effect": "播放 158 万次。这是 SSI 成立以来信息量最大的公开材料。", "media": [{"t": "v", "src": "media/ssi_v1.mp4", "poster": "media/posters/ssi_v1.jpg", "cap": "主持人问 SSI 怎么赚钱。Ilya 答：现在只专注研究。剪自原片 42:41–43:41"}]}, {"id": "ssi-5", "date": "2026-07-27", "form": "资本人事", "title": "英伟达战略投资", "desc": "金额未披露，彭博称约 50 亿美元。SSI 的算力扩大一个数量级。", "effect": "零发布物状态下最大的外部背书。", "media": []}, {"id": "ssi-6", "date": "2026-08-04", "form": "第三方", "title": "投资人说「8 月发模型」", "desc": "投资人 Gavin Baker 在播客中转述。SSI 本身没有给过日期。", "effect": "8 月没有发布。失约算在 SSI 头上。", "media": []}], "lesson": "公司不给日期，别人会替它给日期。", "premise": "这条路只对 Ilya 级的个人信用成立。", "links": [["官网", "https://ssi.inc/"], ["播客", "https://www.youtube.com/watch?v=aR20FWCCjAs"], ["英伟达新闻稿", "https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership"]]}, {"id": "pragmatik", "name": "语用科技 Pragmatik Labs", "who": "林俊旸", "group": "A", "status": "无可用物", "verdict": "一篇长文加一页官网，天使轮约 2.2 亿美元。", "events": [{"id": "pragmatik-0", "date": "2026-03-04", "form": "资本人事", "title": "林俊旸离开通义千问", "desc": "林俊旸曾任阿里通义千问技术负责人。", "effect": "Qwen 的开源成绩成为他的信用来源。", "media": []}, {"id": "pragmatik-1", "date": "2026-03-26", "form": "宣言文章", "title": "英文立论长文", "desc": "约 2100 词。主张：AI 从「为答案而推理」转向「为行动而思考」。", "effect": "比公司官宣早四个半月。", "media": [{"t": "i", "src": "media/justinlin_blog.jpg", "cap": "长文首屏（2026-10-07 截图）"}]}, {"id": "pragmatik-2", "date": "2026-06", "form": "资本人事", "title": "天使轮约 2.2 亿美元", "desc": "高榕和红杉中国各约 1 亿美元，腾讯约 2000 万美元。", "effect": "媒体称投后估值约 20 亿美元。工商信息显示外部持股 12%。", "media": []}, {"id": "pragmatik-3", "date": "2026-08-12", "form": "宣言文章", "title": "官宣：一条推文加一页官网", "desc": "官网有一屏标语、四个方向和一个邮箱。没有产品入口和日期。", "effect": "推文约 37 万次浏览。至今没有模型、论文或代码。", "media": [{"t": "i", "src": "media/pragmatik.jpg", "cap": "语用科技官网（2026-10-07 截图）"}]}], "lesson": "国内也能只靠履历融资。", "premise": "创始人必须有全球可查的开源成绩。", "links": [["长文", "https://justinlin610.github.io/blog/from-reasoning-to-agentic-thinking/"], ["官网", "https://pragmatik.com/"], ["新浪科技", "https://finance.sina.com.cn/tech/roll/2026-08-17/doc-ininqtnx7849290.shtml"]]}, {"id": "ineffable", "name": "Ineffable Intelligence", "who": "David Silver", "group": "A", "status": "无可用物", "verdict": "先发立场文章，一年后融资 11 亿美元。", "events": [{"id": "ineffable-0", "date": "2025-04-10", "form": "宣言文章", "title": "立场文章《Welcome to the Era of Experience》", "desc": "Silver 和 Sutton 联名，11 页，没有公式和实验。同日 DeepMind 发布 49 分钟配套播客。", "effect": "播客播放 45.7 万次。「经验时代」成为后来融资的核心说法。", "media": [{"t": "v", "src": "media/ineffable_v1.mp4", "poster": "media/posters/ineffable_v1.jpg", "cap": "Silver 讲人类数据时代和经验时代的区别。剪自 DeepMind 播客原片 01:50–02:40"}]}, {"id": "ineffable-1", "date": "2026-01-30", "form": "资本人事", "title": "Silver 离开 DeepMind 创业", "desc": "Fortune 报道。公司官网只有使命和七条信念。", "effect": "没有任何技术产出。", "media": []}, {"id": "ineffable-2", "date": "2026-04-27", "form": "资本人事", "title": "种子轮 11 亿美元", "desc": "估值 51 亿美元。红杉和 Lightspeed 领投，英伟达和谷歌跟投。", "effect": "公司称这是欧洲最大的种子轮。", "media": [{"t": "i", "src": "media/ineffable.jpg", "cap": "Ineffable 官网首页（2026-10-07 截图）"}]}, {"id": "ineffable-3", "date": "2026-06-16", "form": "资本人事", "title": "签约谷歌云", "desc": "部署英伟达 Vera Rubin 集群。", "effect": "钱先变成了算力。", "media": []}, {"id": "ineffable-4", "date": "2026-09-07", "form": "资本人事", "title": "新增 6 名联合创始人", "desc": "其中 4 人来自 DeepMind。", "effect": "团队扩大，仍无产出。", "media": []}, {"id": "ineffable-5", "date": "2026-09-23", "form": "资本人事", "title": "招聘「模拟宇宙工程师」", "desc": "职责是为超级学习者搭建世界。要求大型多人游戏和物理引擎经验。", "effect": "第一次透露要先「造世界」。", "media": []}], "lesson": "立场文章可以提前一年铺好融资叙事。", "premise": "作者必须已经用同一方法赢过，例如 AlphaGo。", "links": [["立场文章 PDF", "https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf"], ["官网", "https://www.ineffable.ai/"], ["TechCrunch", "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/"]]}, {"id": "ami", "name": "AMI Labs", "who": "Yann LeCun", "group": "A", "status": "公开可用", "verdict": "十年反 LLM 立场，换来 10.3 亿美元和 10 篇论文。", "events": [{"id": "ami-0", "date": "2025-11-19", "form": "宣言文章", "title": "宣布离开 Meta 创业", "desc": "LeCun 在 LinkedIn 宣布。方向是世界模型。", "effect": "延续他多年的主张：放大 LLM 到不了人类水平的智能。", "media": []}, {"id": "ami-1", "date": "2026-01-22", "form": "访谈演讲", "title": "MIT Technology Review 独家访谈", "desc": "主张：LLM 没有世界模型，既不能真正推理，也不能规划。", "effect": "立场越鲜明，投资人越清楚自己在买什么。", "media": []}, {"id": "ami-2", "date": "2026-03-10", "form": "资本人事", "title": "种子轮 10.3 亿美元", "desc": "投前估值 35 亿美元。贝佐斯、英伟达、三星、丰田参投。", "effect": "官网至今只有这一条公告。", "media": [{"t": "i", "src": "media/ami_updates.jpg", "cap": "AMI 官网更新页（2026-10-07 截图）"}]}, {"id": "ami-3", "date": "2026-05-07", "form": "开源", "title": "第一篇标注 AMI 单位的论文", "desc": "5 月 14 日出现第一篇附代码的论文。", "effect": "到 2026-10-06 共 10 篇，5 篇附代码。没有模型或产品。", "media": []}, {"id": "ami-4", "date": "2026-05-15", "form": "访谈演讲", "title": "预测 2027 年初换范式", "desc": "《Unsupervised Learning》播客，82 分钟。", "effect": "这是一个可以到期核对的判断。", "media": []}, {"id": "ami-5", "date": "2026-07-09", "form": "访谈演讲", "title": "被问第一个模型何时发布", "desc": "RAISE Summit 炉边对话。LeCun 没有给日期。", "effect": "交付时间问题，用十年前的判断回答。", "media": [{"t": "v", "src": "media/ami_v1.mp4", "poster": "media/posters/ami_v1.jpg", "cap": "剪自 RAISE Summit 2026 原片 07:39–08:38"}]}, {"id": "ami-6", "date": "2026-10-05", "form": "开源", "title": "H-JEPA 论文", "desc": "分层世界模型，在迷宫环境中逐级规划。", "effect": "代表 AMI 已兑现的形式：论文加代码。", "media": [{"t": "i", "src": "media/ami_hjepa.jpg", "cap": "H-JEPA 论文图 1（arXiv，2026-10-05）"}]}], "lesson": "长期公开的反主流立场可以替代演示。", "premise": "需要图灵奖身份和可复现的开源成果线。产出只有论文时，下一轮只能再卖立场。", "links": [["官网", "https://amilabs.xyz/"], ["TechCrunch", "https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/"], ["RAISE 访谈", "https://www.youtube.com/watch?v=iDpPFAXmcZc"]]}, {"id": "periodic", "name": "Periodic Labs", "who": "Liam Fedus、Ekin Dogus Cubuk", "group": "A", "status": "受限可用", "verdict": "3 亿美元种子轮后，官网 350 天没有更新。", "events": [{"id": "periodic-0", "date": "2025-09-30", "form": "宣言文章", "title": "宣言加 3 亿美元种子轮", "desc": "约 500 词宣言：互联网文本已经用尽，新知识要靠实验产生。同日 a16z 发布 51 分钟播客。", "effect": "没有时间表、演示或实验室照片。", "media": [{"t": "v", "src": "media/periodic_v1.mp4", "poster": "media/posters/periodic_v1.jpg", "cap": "创始人给出进度尺子：常压超导纪录约 135 K。剪自 a16z 播客原片 12:30–13:15"}]}, {"id": "periodic-1", "date": "2026-03-25", "form": "第三方", "title": "报道以约 70 亿美元估值洽谈", "desc": "Bloomberg 报道。", "effect": "未见官宣。", "media": []}, {"id": "periodic-2", "date": "2026-05", "form": "第三方", "title": "报道 75 亿美元估值", "desc": "Forbes 报道 AMP 领投。", "effect": "截至 2026-10-07 未见官宣交割。", "media": []}, {"id": "periodic-3", "date": "2026-09-15", "form": "产品", "title": "模型 Neon，只在自家实验室", "desc": "1T 参数，在开源模型 Kimi K2.6 上继续训练。用于分析 X 射线衍射数据。", "effect": "XRD 分析成功率从 2.7% 升到 55.3%（自报）。外部没有 API 和权重。", "media": [{"t": "i", "src": "media/periodic_news.jpg", "cap": "新闻页：2025-09-30 之后下一篇是 2026-09-15（2026-10-07 截图）"}, {"t": "i", "src": "media/periodic_xrd.jpg", "cap": "Neon 的 XRD 分析界面（官方配图）"}]}], "lesson": "数据论点不公开验证时，信用只在投资人之间流转。", "premise": "Bloomberg 称公司向半导体行业付费客户交付定制智能体，日期未公开。", "links": [["新闻页", "https://periodic.com/news"], ["Neon", "https://periodic.com/news/building-labs-that-learn"], ["TechCrunch", "https://techcrunch.com/2025/09/30/former-openai-and-deepmind-researchers-raise-whopping-300m-seed-to-automate-science/"]]}, {"id": "openai_rsi", "name": "OpenAI「自动化 AI 研究员」时间表", "who": "Sam Altman、Jakub Pachocki", "group": "B", "status": "无可用物", "verdict": "按期宣布「研究实习生」达标，口径由自己定。", "events": [{"id": "openai_rsi-0", "date": "2025-10-28", "form": "访谈演讲", "title": "直播公布两个日期", "desc": "2026 年 9 月：自动化 AI 研究实习生。2028 年 3 月：自动化 AI 研究员。", "effect": "Altman 的推文浏览 539 万次。没有演示和评测方法。", "media": [{"t": "v", "src": "media/openai_rsi_v1.mp4", "poster": "media/posters/openai_rsi_v1.jpg", "cap": "路线图写着「自动化科学发现」。剪自直播原片 03:38–04:38"}]}, {"id": "openai_rsi-1", "date": "2026-02-05", "form": "产品", "title": "GPT-5.3-Codex", "desc": "OpenAI 称它是「第一个参与创造自己的模型」。", "effect": "「模型造模型」第一次写进发布标题。", "media": []}, {"id": "openai_rsi-2", "date": "2026-07-29", "form": "第三方", "title": "普林斯顿「影子评估」", "desc": "agent 拿未发表的研究题目做 6 天。工程部分全部完成。", "effect": "原作者给研究质量打 2/6 和 1/6。", "media": []}, {"id": "openai_rsi-3", "date": "2026-08-26", "form": "宣言文章", "title": "事故报告", "desc": "2026-07 发现：内部研究 agent 越狱，攻破了 Hugging Face 多个集群。", "effect": "OpenAI 称之为「警告信号」。", "media": []}, {"id": "openai_rsi-4", "date": "2026-09-06", "form": "宣言文章", "title": "宣布「研究实习生」达标", "desc": "每个人类工作日对应 3.1 个 agent 工作日。定义、计量和判分都在内部。", "effect": "外部用不到，也无法复核。", "media": []}, {"id": "openai_rsi-5", "date": "2026-09-28", "form": "第三方", "title": "下一代模型取消发布", "desc": "WSJ 报道：GPT-6.1 Astra 因欺瞒问题取消发布。", "effect": "达标公告 3 周后，安全问题成为焦点。", "media": []}], "lesson": "公开日期会带来到期复查。", "premise": "验收口径自己定时，兑现也会被质疑。这条路依赖已经在卖的产品兜底。", "links": [["OpenAI 公告", "https://openai.com/index/research-acceleration-view-inside-openai/"], ["TechCrunch", "https://techcrunch.com/2025/10/28/sam-altman-says-openai-will-have-a-legitimate-ai-researcher-by-2028/"], ["影子评估论文", "https://arxiv.org/abs/2607.27191"]]}, {"id": "reflection", "name": "Reflection AI", "who": "Misha Laskin、Ioannis Antonoglou", "group": "B", "status": "受限可用", "verdict": "承诺「明年初」的开放模型，2026-10-05 才发布。", "events": [{"id": "reflection-0", "date": "2025-03-07", "form": "资本人事", "title": "出隐身，方向是自主编程", "desc": "融资约 1.3 亿美元，估值约 5.45 亿美元。", "effect": "", "media": []}, {"id": "reflection-1", "date": "2025-07-16", "form": "试玩预览", "title": "代码理解产品 Asimov", "desc": "需要排队使用。", "effect": "页面现已 404。", "media": []}, {"id": "reflection-2", "date": "2025-10-09", "form": "宣言文章", "title": "宣言：美国的开放前沿实验室", "desc": "约 600 词。同日融资 20 亿美元，估值 80 亿美元。", "effect": "没有模型和跑分。开放模型的期限是「明年初」。", "media": []}, {"id": "reflection-3", "date": "2026-04-23", "form": "资本人事", "title": "估值 250 亿美元", "desc": "CEO 上 CNBC 谈尚未发布的模型。", "effect": "钱到位，模型未到。", "media": [{"t": "v", "src": "media/reflection_v1.mp4", "poster": "media/posters/reflection_v1.jpg", "cap": "剪自 CNBC 片段原片 03:35–04:35（2026-04-23）"}]}, {"id": "reflection-4", "date": "2026-07", "form": "资本人事", "title": "SpaceX 算力合同", "desc": "每月 1.5 亿美元，使用 Colossus 集群。", "effect": "", "media": []}, {"id": "reflection-5", "date": "2026-10-05", "form": "试玩预览", "title": "发布 Beam，只开候补名单", "desc": "5010 亿参数。公司说权重在 10 月内放出。", "effect": "2026-10-07 权重未放出。", "media": [{"t": "i", "src": "media/reflection_beam.jpg", "cap": "Beam 效率图（官方配图，数值为公司自报）"}]}], "lesson": "期限延误后，之后的每个承诺都会被打折。", "premise": "", "links": [["宣言", "https://reflection.ai/blog/building-frontier-open-intelligencence"], ["Beam 发布文", "https://reflection.ai/blog/introducing-beam"], ["TechCrunch", "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"]]}, {"id": "onex", "name": "1X NEO", "who": "1X Technologies", "group": "C", "status": "无可用物", "verdict": "开订当天，WSJ 拍到遥控操作员。", "events": [{"id": "onex-0", "date": "2025-10-28", "form": "演示视频", "title": "发布片加开放预订", "desc": "9 分 53 秒。2 万美元买断，或每月 499 美元订阅。定金 200 美元，可退。", "effect": "发布片播放 188 万次。公司自报 5 天内收到 1 万多份预订。", "media": [{"t": "v", "src": "media/onex_v2.mp4", "poster": "media/posters/onex_v2.jpg", "cap": "官方发布片的家务章节。剪自原片 04:00–05:00"}]}, {"id": "onex-1", "date": "2025-10-28", "form": "第三方", "title": "WSJ 实测：拍到遥控操作员", "desc": "官网 FAQ 写明「Expert Mode」：做不了的家务由员工远程遥控。", "effect": "视频播放 293 万次。", "media": [{"t": "v", "src": "media/onex_v1.mp4", "poster": "media/posters/onex_v1.jpg", "cap": "镜头切到隔壁房间戴 VR 头显的操作员。剪自 WSJ 原片 03:27–04:13"}]}, {"id": "onex-2", "date": "2025-10-30", "form": "第三方", "title": "MKBHD 拆解视频", "desc": "指出发布片近 10 分钟里，只有 2 个镜头标了「自主」。", "effect": "播放 702 万次，是官方发布片的 3.7 倍。", "media": [{"t": "v", "src": "media/onex_v3.mp4", "poster": "media/posters/onex_v3.jpg", "cap": "剪自 MKBHD 原片 04:30–05:29"}]}, {"id": "onex-3", "date": "2026-01-12", "form": "演示视频", "title": "1X World Model", "desc": "机器人先生成「完成任务」的视频，再换算成动作。", "effect": "生成 5 秒视频需要约 11 秒。", "media": []}, {"id": "onex-4", "date": "2026-06-04", "form": "资本人事", "title": "成立 World Model Lab", "desc": "专门做具身世界模型预训练。", "effect": "", "media": []}, {"id": "onex-5", "date": "2026-09-18", "form": "访谈演讲", "title": "CEO 改谈 2027 年出货", "desc": "目标改为明年出货 5 万台。", "effect": "开订 344 天，没有一台被确认交付。", "media": []}], "lesson": "遥控写在 FAQ 里、视频只讲自主时，第三方当天就会揭出来。", "premise": "", "links": [["发布片", "https://www.youtube.com/watch?v=LTYMWadOW7c"], ["WSJ 实测", "https://www.youtube.com/watch?v=f3c4mQty_so"], ["官网", "https://www.1x.tech/neo"]]}, {"id": "odyssey", "name": "Odyssey-3", "who": "Odyssey", "group": "C", "status": "无可用物", "verdict": "只放 38 段视频，说「几周内公开」，第 22 天未开放。", "events": [{"id": "odyssey-0", "date": "2025-05-28", "form": "试玩预览", "title": "Odyssey-1 研究预览", "desc": "任何人都能在浏览器里免费玩。公司公开了推理成本。", "effect": "公司从此有了「给试玩」的记录。", "media": []}, {"id": "odyssey-1", "date": "2026-06", "form": "访谈演讲", "title": "CTO 在 RAAIS 现场演示", "desc": "观众扫码，用手机联机玩多人世界模型。", "effect": "", "media": [{"t": "v", "src": "media/odyssey_v3.mp4", "poster": "media/posters/odyssey_v3.jpg", "cap": "剪自 RAAIS 2026 演讲原片 13:43–14:40"}]}, {"id": "odyssey-2", "date": "2026-06-17", "form": "资本人事", "title": "B 轮 3.1 亿美元", "desc": "估值 14.5 亿美元。亚马逊、GV、AMD Ventures 参投。", "effect": "", "media": []}, {"id": "odyssey-3", "date": "2026-09-15", "form": "演示视频", "title": "Odyssey-3 博客：38 段视频", "desc": "覆盖机械臂、人形机器人、驾驶、无人机和游戏。承诺「几周内公开」。", "effect": "没有试用入口、API 或权重。数字全部自报。", "media": [{"t": "v", "src": "media/odyssey_v2.mp4", "poster": "media/posters/odyssey_v2.jpg", "cap": "人形机器人开箱。控制策略由合作方 Flexion 开发"}, {"t": "v", "src": "media/odyssey_v1.mp4", "poster": "media/posters/odyssey_v1.jpg", "cap": "约 2 小时 GTA 录像迁移到《荒野大镖客 2》骑马（自报）"}]}, {"id": "odyssey-4", "date": "2026-09-21", "form": "试玩预览", "title": "Agora-2 多人研究预览", "desc": "最多 20 个人或 AI 智能体同场。Agora-2 不是 Odyssey-3。", "effect": "2026-10-07 是第 22 天，Odyssey-3 仍未开放。", "media": []}], "lesson": "以前给过试玩的团队，这次只给视频，外界会读成没准备好。", "premise": "", "links": [["博客", "https://odyssey.systems/introducing-odyssey-3"], ["质疑分析", "https://runtimewire.com/article/odyssey-3-world-model-robots-cars-game-agents"], ["TechCrunch", "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/"]]}, {"id": "gi", "name": "General Intuition", "who": "Pim de Witte", "group": "C", "status": "公开可用", "verdict": "靠独家游戏录像论点融 6.7 亿美元，第一个可用物没用这份数据。", "events": [{"id": "gi-0", "date": "2025-10-16", "form": "演示视频", "title": "27 秒品牌短片加种子轮", "desc": "种子轮 1.337 亿美元。公司从游戏录屏平台 Medal 分拆。", "effect": "短片浏览 228 万次。技术演示只在闭门场合播放。", "media": [{"t": "v", "src": "media/gi_v2.mp4", "poster": "media/posters/gi_v2.jpg", "cap": "亮相短片（X 原生视频）"}]}, {"id": "gi-1", "date": "2025-12-06", "form": "访谈演讲", "title": "Latent Space 独家预览", "desc": "主持人在节目开头说，画面不能公开播出。", "effect": "", "media": []}, {"id": "gi-2", "date": "2026-06-25", "form": "资本人事", "title": "A 轮 3.2 亿美元", "desc": "估值 23 亿美元，Khosla 领投。", "effect": "", "media": []}, {"id": "gi-3", "date": "2026-07-06", "form": "开源", "title": "世界模型 MIRA", "desc": "四人联机《火箭联盟》。浏览器可玩，代码开源。", "effect": "训练数据是 1 万小时机器人对战录像，不是 Medal 数据。浏览 50.7 万次。", "media": [{"t": "v", "src": "media/gi_v1.mp4", "poster": "media/posters/gi_v1.jpg", "cap": "MIRA 官方演示（X 原生视频）"}]}, {"id": "gi-4", "date": "2026-09-29", "form": "资本人事", "title": "融资 2.2 亿美元", "desc": "估值 62 亿美元。商用模型开给选定合作方和候补名单。", "effect": "一年累计融资约 6.7 亿美元。", "media": [{"t": "i", "src": "media/gi.jpg", "cap": "官网首页（2026-10-07 截图）"}]}], "lesson": "闭门演示可以换来估值。", "premise": "数据论点必须用一个用该数据训练的可用物证明。", "links": [["MIRA 代码", "https://github.com/mira-wm/mira"], ["MIRA 演示站", "https://mira-wm.com/"], ["TechCrunch", "https://techcrunch.com/2025/10/16/general-intuition-lands-134m-seed-to-teach-agents-spatial-reasoning-using-video-game-clips/"]]}, {"id": "genie", "name": "Genie 3 → Project Genie", "who": "Google DeepMind", "group": "C", "status": "受限可用", "verdict": "177 天从演示视频到付费试玩，60 秒上限 8 个月未放开。", "events": [{"id": "genie-0", "date": "2025-08-05", "form": "演示视频", "title": "Genie 3 博客和视频", "desc": "只给少数研究者和创作者试用。博客标注「受限研究预览」，列出 5 条局限。", "effect": "外部能看到的只有剪辑过的画面。", "media": [{"t": "v", "src": "media/genie_v1.mp4", "poster": "media/posters/genie_v1.jpg", "cap": "刷漆后转头，漆还在。剪自官方视频原片 00:30–01:27"}]}, {"id": "genie-1", "date": "2026-01-29", "form": "试玩预览", "title": "Project Genie 开放", "desc": "Google AI Ultra 订阅用户可玩。每个世界限玩 60 秒。", "effect": "演示中的「用文字加入事件」功能，产品中没有。", "media": [{"t": "v", "src": "media/genie_v2.mp4", "poster": "media/posters/genie_v2.jpg", "cap": "产品流程：先写提示词，再进入世界。剪自原片 00:29–01:28"}]}, {"id": "genie-2", "date": "2026-01-30", "form": "第三方", "title": "游戏股下跌", "desc": "Unity 收盘跌 24.2%，Roblox 跌 13.2%。", "effect": "资本市场按「替代游戏引擎」的想象定价。", "media": []}, {"id": "genie-3", "date": "2026-05-19", "form": "产品", "title": "接入 Google 街景", "desc": "I/O 大会宣布。开放到 140 多个国家。", "effect": "", "media": []}, {"id": "genie-4", "date": "2026-10-07", "form": "产品", "title": "仍是 60 秒，没有 API", "desc": "帮助中心写着：高峰需要排队。", "effect": "", "media": [{"t": "i", "src": "media/genie_help.jpg", "cap": "帮助中心（2026-10-07 截图）"}]}], "lesson": "首日标注「研究预览」和局限后，批评落在体验上限，没有变成真假之争。", "premise": "每个会话独占一颗芯片，只有自建算力的公司付得起。", "links": [["Genie 3 博客", "https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/"], ["Project Genie", "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/"], ["帮助中心", "https://support.google.com/labs/answer/16875695?hl=en"]]}, {"id": "decart", "name": "Decart", "who": "Dean Leitersdorf", "group": "D", "status": "公开可用", "verdict": "发布当天让任何人试玩，缺陷被玩家做成速通视频。", "events": [{"id": "decart-0", "date": "2024-10-31", "form": "开源", "title": "Oasis：浏览器可玩，权重开源", "desc": "AI 生成的《我的世界》，每秒 20 帧。开源 5 亿参数权重。", "effect": "公司自报 3 天 7 小时迎来 100 万独立用户。", "media": [{"t": "v", "src": "media/decart_v1.mp4", "poster": "media/posters/decart_v1.jpg", "cap": "每帧由模型按键鼠输入实时生成（X 原生视频）"}]}, {"id": "decart-1", "date": "2024-11-05", "form": "第三方", "title": "玩家速通视频", "desc": "模型记不住地形，转身后地形会被重排。玩家利用这一点速通。", "effect": "播放 139 万次。缺陷变成了传播。", "media": [{"t": "v", "src": "media/decart_v2.mp4", "poster": "media/posters/decart_v2.jpg", "cap": "剪自玩家 4z 原片 02:03–02:47"}]}, {"id": "decart-2", "date": "2024-12-19", "form": "资本人事", "title": "A 轮 3200 万美元", "desc": "Benchmark 领投，投后 5 亿美元以上。", "effect": "", "media": []}, {"id": "decart-3", "date": "2025-07-17", "form": "产品", "title": "MirageLSD", "desc": "把任意实时视频流转换成另一种风格。", "effect": "发布帖浏览 101.6 万次。", "media": []}, {"id": "decart-4", "date": "2025-08-07", "form": "资本人事", "title": "融资 1 亿美元", "desc": "估值 31 亿美元。", "effect": "演示 9 个月后，估值从 1 亿美元出头涨到 31 亿美元。", "media": []}, {"id": "decart-5", "date": "2026-06-10", "form": "产品", "title": "付费 API Oasis 3", "desc": "实时驾驶世界模型，每秒 0.02 美元。", "effect": "TechCrunch 实测：掉头回原地，场景全变。", "media": [{"t": "v", "src": "media/decart_v3.mp4", "poster": "media/posters/decart_v3.jpg", "cap": "剪自官方片原片 00:35–01:09"}, {"t": "i", "src": "media/decart_pricing.jpg", "cap": "定价页（2026-10-07 截图）"}]}, {"id": "decart-6", "date": "2026-07-16", "form": "产品", "title": "Lucy 2.5", "desc": "实时视频模型，网页可试用。", "effect": "", "media": [{"t": "v", "src": "media/decart_v4.mp4", "poster": "media/posters/decart_v4.jpg", "cap": "官方发布片"}]}, {"id": "decart-7", "date": "2026-08-13", "form": "资本人事", "title": "Anthropic 洽谈收购", "desc": "Bloomberg 报道，约 60 亿美元。", "effect": "2026-09-08，Anthropic 尽调后放弃。", "media": []}], "lesson": "让所有人上手后，缺陷会变成传播，不会变成丑闻。", "premise": "Decart 的 GPU 优化业务有收入，承担试玩成本。", "links": [["发布帖", "https://x.com/DecartAI/status/1852091173420294291"], ["开源权重", "https://huggingface.co/Etched/oasis-500m"], ["TechCrunch 实测", "https://techcrunch.com/2026/06/10/decarts-new-world-model-can-simulate-hours-of-photorealistic-driving-with-some-caveats/"]]}, {"id": "worldlabs", "name": "World Labs", "who": "李飞飞", "group": "D", "status": "公开可用", "verdict": "第 80 天放出可逛的网页，按期交付产品，2026-09 签约并入 AMD。", "events": [{"id": "worldlabs-0", "date": "2024-09-13", "form": "资本人事", "title": "亮相，融资 2.3 亿美元", "desc": "只给一个期限：2025 年出第一个产品。", "effect": "", "media": []}, {"id": "worldlabs-1", "date": "2024-12-02", "form": "试玩预览", "title": "网页演示：可逛不可造", "desc": "任何人可在浏览器里逛 8 个预生成的 3D 世界。生成功能只开候补名单。", "effect": "演示在访客电脑上运行，成本低。", "media": [{"t": "v", "src": "media/worldlabs_v1.mp4", "poster": "media/posters/worldlabs_v1.jpg", "cap": "世界都由官方预生成。剪自预告原片 00:00–00:58"}]}, {"id": "worldlabs-2", "date": "2025-09-16", "form": "试玩预览", "title": "Marble 限量测试版", "desc": "报名后可以用自己的图生成世界。", "effect": "", "media": []}, {"id": "worldlabs-3", "date": "2025-11-10", "form": "宣言文章", "title": "李飞飞长文《From Words to Worlds》", "desc": "主张：空间智能是 AI 的下一个前沿。", "effect": "产品上线前两天发布。", "media": []}, {"id": "worldlabs-4", "date": "2025-11-12", "form": "产品", "title": "Marble 全面开放", "desc": "有免费版和付费版。可导出 3D 文件。", "effect": "按 2024 年承诺的期限交付。", "media": [{"t": "v", "src": "media/worldlabs_v2.mp4", "poster": "media/posters/worldlabs_v2.jpg", "cap": "剪自上线教程原片 00:15–01:04"}]}, {"id": "worldlabs-5", "date": "2026-02-18", "form": "资本人事", "title": "融资 10 亿美元", "desc": "Autodesk 出 2 亿美元。", "effect": "", "media": []}, {"id": "worldlabs-6", "date": "2026-07-21", "form": "资本人事", "title": "收购 SceniX", "desc": "机器人仿真公司。", "effect": "方向转向机器人。", "media": []}, {"id": "worldlabs-7", "date": "2026-09-01", "form": "试玩预览", "title": "Atlas 早期访问", "desc": "统一世界模型，只对选定合作方开放。", "effect": "", "media": [{"t": "v", "src": "media/worldlabs_v3.mp4", "poster": "media/posters/worldlabs_v3.jpg", "cap": "剪自 Atlas 官方视频原片 00:24–01:14"}]}, {"id": "worldlabs-8", "date": "2026-09-28", "form": "资本人事", "title": "AMD 签约收购", "desc": "约 82 亿美元全股票。李飞飞将任 AMD 首席科学家。", "effect": "交易待监管批准。", "media": [{"t": "i", "src": "media/worldlabs.jpg", "cap": "官网首页（2026-10-07 截图）"}]}], "lesson": "只承诺一件事，并按时兑现。", "premise": "能在访客浏览器里运行的演示，成本低，任何人都能上手。", "links": [["网页演示", "https://www.worldlabs.ai/blog/generating-worlds"], ["Marble", "https://www.worldlabs.ai/blog/marble-world-model"], ["TechCrunch", "https://techcrunch.com/2025/11/12/fei-fei-lis-world-labs-speeds-up-the-world-model-race-with-marble-its-first-commercial-product/"]]}, {"id": "tml", "name": "Thinking Machines Lab", "who": "Mira Murati", "group": "D", "status": "公开可用", "verdict": "零产品拿 20 亿美元种子轮，第 8 个月先交一个微调工具。", "events": [{"id": "tml-0", "date": "2025-02-18", "form": "宣言文章", "title": "公司成立公告", "desc": "约 20 名成员来自 OpenAI。", "effect": "没有演示和产品时间表。", "media": []}, {"id": "tml-1", "date": "2025-07-15", "form": "资本人事", "title": "种子轮 20 亿美元", "desc": "估值 120 亿美元，a16z 领投。承诺「未来几个月」推出第一个产品。", "effect": "当时没有任何产品。", "media": []}, {"id": "tml-2", "date": "2025-09-10", "form": "宣言文章", "title": "第一篇技术博客", "desc": "主题是大模型推理结果不确定的原因，附开源代码。", "effect": "成立第 204 天才出现第一个技术产出。", "media": []}, {"id": "tml-3", "date": "2025-10-01", "form": "试玩预览", "title": "Tinker 私测", "desc": "托管服务，帮研究者微调开源模型。私测加候补名单。", "effect": "种子轮后第 78 天兑现承诺。", "media": [{"t": "i", "src": "media/tinker_announce.jpg", "cap": "Tinker 发布页（2026-10-07 截图）"}]}, {"id": "tml-4", "date": "2025-12-12", "form": "产品", "title": "Tinker 全面开放", "desc": "", "effect": "", "media": []}, {"id": "tml-5", "date": "2026-01-14", "form": "资本人事", "title": "两位联合创始人回到 OpenAI", "desc": "Barret Zoph 和 Luke Metz 离开。", "effect": "", "media": []}, {"id": "tml-6", "date": "2026-05-11", "form": "演示视频", "title": "交互模型研究预览", "desc": "全双工交互，边听边说。", "effect": "至今没有开放。", "media": [{"t": "v", "src": "media/tml_v1.mp4", "poster": "media/posters/tml_v1.jpg", "cap": "剪自官方视频原片 00:00–01:00"}]}, {"id": "tml-7", "date": "2026-07-15", "form": "开源", "title": "开放权重模型 Inkling", "desc": "成立后第 17 个月的第一个自家模型。", "effect": "", "media": [{"t": "i", "src": "media/tml_inkling.jpg", "cap": "Inkling 发布页（2026-10-07 截图）"}]}, {"id": "tml-8", "date": "2026-09-03", "form": "第三方", "title": "报道新一轮估值", "desc": "The Information 报道：投前估值至少 400 亿美元。", "effect": "低于此前约 500 亿美元的目标。", "media": []}], "lesson": "第一个可用物可以是窄工具，不必是自家模型。", "premise": "承诺窄，才能按时兑现。", "links": [["Tinker 发布页", "https://thinkingmachines.ai/news/announcing-tinker/"], ["Inkling 发布页", "https://thinkingmachines.ai/news/introducing-inkling/"], ["TechCrunch", "https://techcrunch.com/2026/01/14/mira-muratis-startup-thinking-machines-lab-is-losing-two-of-its-co-founders-to-openai"]]}, {"id": "recursive", "name": "Recursive Superintelligence", "who": "Richard Socher", "group": "D", "status": "公开可用", "verdict": "出隐身第 29 天交出可复测的代码，自称快 2.2 秒，复测只认 0.6 秒。", "events": [{"id": "recursive-0", "date": "2026-01-23", "form": "第三方", "title": "报道以 40 亿美元估值洽谈", "desc": "Bloomberg 报道。", "effect": "", "media": []}, {"id": "recursive-1", "date": "2026-05-13", "form": "资本人事", "title": "出隐身，融资 6.5 亿美元", "desc": "估值 46.5 亿美元。目标是递归自我改进。", "effect": "联合创始人有 Rocktäschel、Clune、Dosovitskiy 和田渊栋。", "media": []}, {"id": "recursive-2", "date": "2026-06-11", "form": "开源", "title": "研究博客、代码和三项跑分", "desc": "例：社区训练速度榜 NanoGPT Speedrun，自测快 2.2 秒。", "effect": "没有 API 和试用。", "media": [{"t": "i", "src": "media/recursive_chart.jpg", "cap": "SOL-ExecBench 成绩（Socher 推文配图，公司自测）"}]}, {"id": "recursive-3", "date": "2026-07-28", "form": "资本人事", "title": "AWS 算力协议", "desc": "4.1 亿美元，多年期。", "effect": "", "media": []}, {"id": "recursive-4", "date": "2026-08-02", "form": "第三方", "title": "榜单维护者复测", "desc": "五项改动只有一项成立。", "effect": "只认快 0.6 秒。", "media": []}, {"id": "recursive-5", "date": "2026-09-14", "form": "访谈演讲", "title": "Latent Space 访谈", "desc": "Socher 复述成绩时，主持人当场追问。", "effect": "", "media": [{"t": "v", "src": "media/recursive_v1.mp4", "poster": "media/posters/recursive_v1.jpg", "cap": "剪自原片 45:50–46:50"}]}], "lesson": "把成绩交给第三方复测，信用来得快，也会被当场打折。", "premise": "", "links": [["研究博客", "https://www.recursive.com/articles/first-steps-toward-automated-ai-research"], ["复测记录", "https://github.com/KellerJordan/modded-nanogpt/pull/322"], ["SiliconANGLE", "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/"]]}, {"id": "miromind", "name": "MiroMind", "who": "陈天桥", "group": "D", "status": "公开可用", "verdict": "开源搜索智能体比「发现式智能」早 81 天。", "events": [{"id": "miromind-0", "date": "2025-07-19", "form": "开源", "title": "数学模型 MiroMind-M1", "desc": "70 亿和 320 亿参数，连同约 78 万条训练数据开源。", "effect": "", "media": []}, {"id": "miromind-1", "date": "2025-08-08", "form": "开源", "title": "搜索智能体 MiroThinker", "desc": "同时开源框架和训练数据。", "effect": "可用物比大概念早 81 天。", "media": []}, {"id": "miromind-2", "date": "2025-10-28", "form": "访谈演讲", "title": "陈天桥提出「发现式智能」", "desc": "AIAS 2025 演讲。整场没有提到 MiroMind。", "effect": "", "media": [{"t": "v", "src": "media/miromind_v1.mp4", "poster": "media/posters/miromind_v1.jpg", "cap": "剪自演讲原片 02:56–03:56"}]}, {"id": "miromind-3", "date": "2026-01", "form": "开源", "title": "MiroThinker v1.5", "desc": "2350 亿参数版 BrowseComp 69.8 分。", "effect": "第三方博主公开上手测评。", "media": [{"t": "i", "src": "media/miromind_bc.jpg", "cap": "官方 BrowseComp 对比图"}]}, {"id": "miromind-4", "date": "2026-02-05", "form": "宣言文章", "title": "内部信：做「通用求解器」", "desc": "要求预训练以因果为核心的理科大模型。", "effect": "没有给时间表。", "media": []}, {"id": "miromind-5", "date": "2026-03-11", "form": "开源", "title": "1.7 版和闭源旗舰 H1", "desc": "开源两个版本，同时推出闭源智能体。", "effect": "此后 7 个月没有新的开源版本。", "media": []}, {"id": "miromind-6", "date": "2026-04-24", "form": "资本人事", "title": "知识产权纠纷公开", "desc": "前核心人员代季峰离职创业，双方各有说法。", "effect": "其新公司 7 个月融资 4 亿美元。", "media": []}, {"id": "miromind-7", "date": "2026-05-12", "form": "产品", "title": "暂停中国大陆和港澳服务", "desc": "海外应用照常提供。", "effect": "", "media": []}], "lesson": "可用物在前、概念在后，信用可以核对。", "premise": "可用物依赖少数核心人员时，人员离开会打断节奏。", "links": [["GitHub", "https://github.com/MiroMindAI/MiroThinker"], ["爱范儿", "https://www.ifanr.com/1643014"], ["第一财经", "https://www.yicai.com/news/103166591.html"]]}, {"id": "shengshu", "name": "生数科技", "who": "朱军团队", "group": "D", "status": "公开可用", "verdict": "给在卖的 Vidu 换上「通用世界模型」定位，99 天融约 54 亿元。", "events": [{"id": "shengshu-0", "date": "2024-07", "form": "产品", "title": "视频模型 Vidu 全球上线", "desc": "", "effect": "可用物早于新定位约 20 个月。", "media": []}, {"id": "shengshu-1", "date": "2025-12-16", "form": "开源", "title": "世界行动模型 Motus", "desc": "直接输出机器人动作。代码和权重开源。", "effect": "2026-01-05 之后没有新代码。", "media": []}, {"id": "shengshu-2", "date": "2026-02-05", "form": "资本人事", "title": "A+ 轮超 6 亿元", "desc": "", "effect": "", "media": []}, {"id": "shengshu-3", "date": "2026-03-29", "form": "宣言文章", "title": "宣布「通用世界模型」战略", "desc": "宣布当天没有新产品。", "effect": "变的是定位，不是可用物。", "media": [{"t": "i", "src": "media/shengshu_news.jpg", "cap": "官网新闻页（2026-10-07 截图）"}]}, {"id": "shengshu-4", "date": "2026-04-10", "form": "资本人事", "title": "B 轮近 20 亿元", "desc": "阿里云领投。", "effect": "", "media": []}, {"id": "shengshu-5", "date": "2026-07-03", "form": "产品", "title": "Vidu S1", "desc": "用户用语音实时改变角色行为。", "effect": "", "media": [{"t": "v", "src": "media/shengshu_v1.mp4", "poster": "media/posters/shengshu_v1.jpg", "cap": "官方发布片（全长 55 秒）"}]}, {"id": "shengshu-6", "date": "2026-07-06", "form": "资本人事", "title": "融资 5 亿美元", "desc": "阿里云领投。", "effect": "改定位后 99 天融资约 54 亿元。", "media": []}, {"id": "shengshu-7", "date": "2026-09-16", "form": "产品", "title": "Vidu S2", "desc": "", "effect": "", "media": []}], "lesson": "已有产品时，换一个更大的定位可以抬高估值。", "premise": "没有产品的团队照搬，只剩定位。", "links": [["量子位", "https://www.qbitai.com/2026/04/398772.html"], ["官网新闻", "https://www.shengshu.com/en/news/"], ["投资方公告", "https://grandmountcapital.com/index.php?a=shows&catid=4&id=223"]]}], "supp": [{"name": "Project Prometheus", "who": "贝佐斯", "group": "A", "status": "无可用物", "line": "2026-06-11 B 轮 120 亿美元，估值约 410 亿美元。没有官网、论文或演示。", "lesson": "巨头信用可以替代发布物。", "link": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/", "media": [{"t": "i", "src": "media/supp_prometheus.jpg", "cap": "TechCrunch 报道（2026-10-07 截图）"}]}, {"name": "Ricursive Intelligence", "who": "AlphaChip 作者", "group": "A", "status": "无可用物", "line": "2026-01-26 A 轮 3 亿美元，估值 40 亿美元。官网只列创始人旧论文。与 Recursive 是两家公司。", "lesson": "旧论文当新公司的证明。", "link": "https://ricursive.com/", "media": [{"t": "i", "src": "media/supp_ricursive.jpg", "cap": "官网（2026-10-07 截图）"}]}, {"name": "Discovery Loop", "who": "Jeff Dean 等 4 人", "group": "A", "status": "无可用物", "line": "2026-08-05 官宣，只有使命和名单。洽谈 10 亿美元，未完成。", "lesson": "名单就是发布物。", "link": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/", "media": []}, {"name": "Core Automation", "who": "Jerry Tworek", "group": "A", "status": "无可用物", "line": "约 6 周内估值从 10 亿美元谈到约 40 亿美元。没有产品和论文。", "lesson": "估值定价的是履历。", "link": "https://the-decoder.com/ai-money-keeps-flowing-as-deepseek-plans-record-raise-and-core-automation-quadruples-valuation-in-weeks/", "media": [{"t": "i", "src": "media/supp_core.jpg", "cap": "The Decoder 报道（2026-10-07 截图）"}]}, {"name": "Sakana AI RSI Lab", "who": "Sakana AI", "group": "A", "status": "无可用物", "line": "2026-06 成立，宣言列的是旧成果。2026-09-24 聘 Schmidhuber 任首席科学顾问。", "lesson": "旧成果加明星顾问。", "link": "https://sakana.ai/rsi-lab/", "media": [{"t": "i", "src": "media/supp_sakana.jpg", "cap": "RSI Lab 页面（2026-10-07 截图）"}]}, {"name": "Magic", "who": "Eric Steinberger", "group": "A", "status": "无可用物", "line": "2024 年宣称 1 亿 token 上下文后，两年没有产品。2026-09-08 只发研究更新。", "lesson": "两年只发研究更新。", "link": "https://magic.dev/blog/pretraining", "media": [{"t": "i", "src": "media/supp_magic.jpg", "cap": "研究更新（2026-10-07 截图）"}]}, {"name": "xAI 游戏承诺", "who": "马斯克", "group": "B", "status": "无可用物", "line": "2025-10-06 承诺 2026 年底前发布 AI 生成的游戏。截至 2026-10-07 没有发布。", "lesson": "期限会被逐日核对。", "link": "https://x.com/elonmusk/status/1975064769729327545", "media": [{"t": "i", "src": "media/supp_xai.jpg", "cap": "Hitmarker 报道（2026-10-07 截图）"}]}, {"name": "小鹏 IRON", "who": "小鹏汽车", "group": "C", "status": "无可用物", "line": "2025-11-05 发布后被疑「里面是真人」。次日剪开腿部外壳自证。2027 年对外交付。", "lesson": "太像人，先要自证。", "link": "https://www.ifanr.com/1643550", "media": [{"t": "v", "src": "media/xpeng_v1.mp4", "poster": "media/posters/xpeng_v1.jpg", "cap": "CNET 视频：人人以为是真人的机器人。剪自原片开头"}]}, {"name": "humans& Persimmon", "who": "前 Anthropic、xAI 研究员", "group": "C", "status": "受限可用", "line": "2026-09-10 研究预览。试玩要登录，API 要申请。种子轮 4.8 亿美元。", "lesson": "先亮可核对的分数。", "link": "https://persimmon.humansand.ai/blog/persimmon.html", "media": [{"t": "i", "src": "media/supp_humans.jpg", "cap": "Persimmon 博客（2026-10-07 截图）"}]}, {"name": "Runway GWM Worlds 2", "who": "Runway", "group": "C", "status": "受限可用", "line": "2026-09-03 研究预览。只有联系表单，没有公开入口。", "lesson": "有产品的公司也压预期。", "link": "https://runway.com/research/introducing-gwm-worlds-2", "media": [{"t": "v", "src": "media/runway_v1.mp4", "poster": "media/posters/runway_v1.jpg", "cap": "官方发布片开头"}]}, {"name": "Lila Sciences", "who": "Flagship Pioneering", "group": "C", "status": "受限可用", "line": "平台只对合作方开放。B 轮按投前 85 亿美元洽谈，未完成。", "lesson": "用成果新闻代替试用。", "link": "https://www.lila.ai/", "media": [{"t": "i", "src": "media/supp_lila.jpg", "cap": "官网（2026-10-07 截图）"}]}, {"name": "Dynamics Lab Mirage 2", "who": "Dynamics Lab", "group": "D", "status": "已下线", "line": "2025-08 浏览器可玩。之后没有消息。2026-10 官网域名已转为停放页。", "lesson": "能玩的网页也会消失。", "link": "https://the-decoder.com/mirage-2-allows-users-to-turn-sketches-and-photos-into-interactive-game-worlds/", "media": [{"t": "i", "src": "media/supp_mirage.jpg", "cap": "The Decoder 报道（2026-10-07 截图）"}]}, {"name": "Unconventional AI", "who": "Naveen Rao", "group": "D", "status": "公开可用", "line": "2026-06-25 开源图像模型 Un-0，用软件模拟振荡器电路运行。芯片未造出。", "lesson": "用开源物支撑硬件叙事。", "link": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/", "media": []}, {"name": "Keen Technologies", "who": "John Carmack", "group": "D", "status": "公开可用", "line": "2025-08-05 开源实体 Atari 机器人平台。2026-07 Richard Sutton 离开。", "lesson": "只交开源物。", "link": "https://github.com/Keen-Technologies/physical_atari", "media": [{"t": "i", "src": "media/supp_keen.jpg", "cap": "GitHub 仓库（2026-10-07 截图）"}]}]};
+const FORMC=Object.fromEntries(DATA.forms.map(f=>[f.name,f.color]));
+const D0=new Date('2024-06-01'),D1=new Date('2026-10-31'),TODAY=new Date('2026-10-07');
+const pd=s=>s.length===7?new Date(s+'-15'):new Date(s);
+const pct=s=>((pd(s)-D0)/(D1-D0)*100);
+const el=(t,c,txt)=>{const e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e};
+const state={g:new Set(DATA.groups.map(g=>g.id)),f:new Set(DATA.forms.map(f=>f.name))};
+
+// 顶部统计
+const nEv=DATA.companies.reduce((a,c)=>a+c.events.length,0);
+const nMedia=DATA.companies.reduce((a,c)=>a+c.events.reduce((b,e)=>b+e.media.length,0),0)+DATA.supp.reduce((a,s)=>a+s.media.length,0);
+[[DATA.companies.length,'家详解'],[DATA.supp.length,'家补充'],[nEv,'个事件'],[nMedia,'个视频或截图']].forEach(([n,t])=>{const s=el('div','stat');s.append(el('b',null,n),el('span',null,t));stats.append(s)});
+
+
+// 筛选条
+DATA.groups.forEach(g=>{const c=el('span','chip',g.name);c.dataset.g=g.id;c.title=g.desc;c.onclick=()=>{state.g.has(g.id)?state.g.delete(g.id):state.g.add(g.id);c.classList.toggle('off');apply()};gchips.append(c)});
+DATA.forms.forEach(f=>{const c=el('span','chip');const d=el('i','dot');d.style.background=f.color;c.append(d,document.createTextNode(f.name));c.onclick=()=>{state.f.has(f.name)?state.f.delete(f.name):state.f.add(f.name);c.classList.toggle('off');apply()};fchips.append(c)});
+
+// 泳道图
+const inner=swimInner;
+const axis=el('div','axis');inner.append(axis);
+for(let y=2024;y<=2026;y++)for(const m of [1,4,7,10]){const s=`${y}-${String(m).padStart(2,'0')}-01`;if(pd(s)<D0||pd(s)>new Date('2026-07-01'))continue;const t=el('div','tk',`${y}-${String(m).padStart(2,'0')}`);t.style.left=pct(s)+'%';axis.append(t)}
+const tip=document.getElementById('tip');
+const lanesWrap=el('div');lanesWrap.style.position='relative';inner.append(lanesWrap);
+DATA.groups.forEach(g=>{
+  const gl=el('div','lane grp');gl.dataset.g=g.id;gl.append(el('div','ln',g.name));lanesWrap.append(gl);
+  DATA.companies.filter(c=>c.group===g.id).forEach(c=>{
+    const lane=el('div','lane');lane.dataset.g=g.id;
+    const ln=el('div','ln',c.name);ln.title=c.verdict;ln.onclick=()=>document.getElementById('co-'+c.id).scrollIntoView();
+    const tr=el('div','track');
+    let last=-99,off=0;
+    c.events.forEach(e=>{
+      const p=pct(e.date);const d=el('div','ev');d.style.left=p+'%';d.style.background=FORMC[e.form];d.dataset.f=e.form;
+      if(p-last<1.2){off=off?0:7}else off=0;last=p;if(off)d.style.top=`calc(50% + ${off}px)`;
+      d.onmouseenter=ev=>{tip.style.display='block';tip.innerHTML='';tip.append(el('div',null,`${e.date} · ${e.form}`),el('b',null,e.title));};
+      d.onmousemove=ev=>{tip.style.left=Math.min(ev.clientX+14,innerWidth-340)+'px';tip.style.top=(ev.clientY+14)+'px'};
+      d.onmouseleave=()=>tip.style.display='none';
+      d.onclick=()=>{const t=document.getElementById('ev-'+e.id);t.scrollIntoView({block:'center'});const b=t.querySelector('.ev-body');b.classList.add('flash');setTimeout(()=>b.classList.remove('flash'),1600)};
+      tr.append(d);
+    });
+    lane.append(ln,tr);lanesWrap.append(lane);
+  });
+});
+// 网格线与核查日线：放在轨道坐标系里
+const overlay=el('div');overlay.style.cssText='position:absolute;top:0;bottom:0;left:190px;right:8px;pointer-events:none';inner.style.position='relative';inner.append(overlay);
+for(let y=2024;y<=2026;y++)for(const m of [1,4,7,10]){const s=`${y}-${String(m).padStart(2,'0')}-01`;if(pd(s)<D0||pd(s)>new Date('2026-07-01'))continue;const g=el('div','grid-v');g.style.left=pct(s)+'%';overlay.append(g)}
+const td=el('div','today');td.style.left=pct('2026-10-07')+'%';td.append(el('span',null,'核查日'));overlay.append(td);
+const lg=el('div','legend');DATA.forms.forEach(f=>{const s=el('span');const i=el('i');i.style.background=f.color;s.append(i,document.createTextNode(f.name));lg.append(s)});inner.append(lg);
+
+// 媒体
+function mediaBlock(list){
+  const box=el('div','media');
+  list.forEach(m=>{
+    const fig=el('figure');
+    if(m.t==='v'){const v=el('video');v.controls=true;v.preload='none';v.playsInline=true;v.poster=m.poster;v.src=m.src;fig.append(v)}
+    else{const im=el('img');im.loading='lazy';im.src=m.src;im.alt=m.cap;im.onclick=()=>openLb(m);fig.append(im)}
+    fig.append(el('figcaption',null,(m.t==='v'?'视频　':'图　')+m.cap));box.append(fig);
+  });
+  return box;
+}
+const lb=document.getElementById('lb');
+function openLb(m){lb.querySelector('img').src=m.src;lb.querySelector('div').textContent=m.cap;lb.style.display='flex'}
+lb.onclick=()=>lb.style.display='none';
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.style.display='none'});
+
+// 公司详情
+DATA.groups.forEach(g=>{
+  const gh=el('div','group-head');gh.dataset.g=g.id;gh.append(el('h2',null,g.name),el('p',null,g.desc));cases.append(gh);
+  DATA.companies.filter(c=>c.group===g.id).forEach(c=>{
+    const opt=el('option',null,c.name);opt.value=c.id;jump.append(opt);
+    const co=el('article','co');co.id='co-'+c.id;co.dataset.g=g.id;
+    const hd=el('div','co-head');const left=el('div');
+    left.append(el('h3',null,c.name),el('div','who',c.who),el('p','verdict',c.verdict));
+    hd.append(left,el('span','badge st-'+c.status,c.status));co.append(hd);
+    const tl=el('div','tl');
+    c.events.forEach(e=>{
+      const row=el('div','ev-row');row.id='ev-'+e.id;row.dataset.f=e.form;
+      const when=el('div','when');when.append(el('b',null,e.date));const fm=el('span','fm',e.form);fm.style.color=FORMC[e.form];when.append(fm);
+      const pin=el('div','pin');pin.style.background=FORMC[e.form];
+      const body=el('div','ev-body');body.append(el('h4',null,e.title),el('p','desc',e.desc),el('p','eff',e.effect));
+      if(e.media.length)body.append(mediaBlock(e.media));
+      row.append(when,pin,body);tl.append(row);
+    });
+    co.append(tl);
+    const an=el('div','analysis');
+    const a1=el('div');a1.append(el('b',null,'教训'),document.createTextNode(c.lesson));an.append(a1);
+    if(c.premise){const a2=el('div');a2.append(el('b',null,'前提或代价'),document.createTextNode(c.premise));an.append(a2)}
+    co.append(an);
+    const ls=el('div','links');ls.append(document.createTextNode('来源　'));c.links.forEach(([n,u])=>{const a=el('a',null,n);a.href=u;a.target='_blank';a.rel='noopener';ls.append(a)});co.append(ls);
+    cases.append(co);
+  });
+});
+jump.onchange=()=>{if(jump.value)document.getElementById('co-'+jump.value).scrollIntoView();jump.value=''};
+
+// 补充样本
+DATA.supp.forEach(s=>{
+  const cd=el('div','supp-card');cd.dataset.g=s.group;
+  if(s.media.length)cd.append(mediaBlock(s.media));
+  const bd=el('div','bd');const h=el('h4');const a=el('a',null,s.name);a.href=s.link;a.target='_blank';a.rel='noopener';h.append(a,el('span','badge st-'+s.status,s.status));
+  bd.append(h,el('div','who',s.who+' · '+DATA.groups.find(g=>g.id===s.group).name),el('p',null,s.line));
+  const l=el('p','muted');l.textContent='教训：'+s.lesson;bd.append(l);cd.append(bd);suppGrid.append(cd);
+});
+
+function apply(){
+  document.querySelectorAll('[data-g]').forEach(n=>{if(n.classList.contains('chip'))return;n.classList.toggle('hide',!state.g.has(n.dataset.g))});
+  document.querySelectorAll('.track .ev,.ev-row').forEach(n=>n.classList.toggle('hide',!state.f.has(n.dataset.f)));
+}
+</script>
+</body>
+</html>
