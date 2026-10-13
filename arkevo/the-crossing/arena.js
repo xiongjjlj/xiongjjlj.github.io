@@ -1,4 +1,6 @@
 import * as THREE from './assets/three.module.js';
+import {sceneState,routeAt,ROUTE,OBSERVERS,SMOKES,EXIT} from './scene-model.js';
+export {sceneState,VALIDATION,validateLayout} from './scene-model.js';
 
 // An original, deterministic training environment. All geometry is generated here.
 export function createArena(container, {quality='high', mode='cinematic'}={}) {
@@ -82,7 +84,7 @@ export function createArena(container, {quality='high', mode='cinematic'}={}) {
   const arch=mesh(new THREE.ExtrudeGeometry(archShape,{depth:1.25,bevelEnabled:false}),sand,gate);arch.position.z=-.625;
   for(let i=0;i<11;i++){let a=Math.PI*i/10;let b=box(.32,.18,1.4,Math.cos(a)*1.43,2.6+Math.sin(a)*1.43,0,cap,gate);b.rotation.z=a-Math.PI/2;}
   box(5.6,.18,1.55,0,5.04,0,cap,gate);
-  const sign=label('FIELD  /  07',3.2,.57);sign.position.set(2,4.53,-6.58);
+  const sign=label('EXIT  /  07',3.2,.57,'#edf2dc','#315947');sign.position.set(2,4.53,-6.58);
   const wallSign=label('ARKEVO',3.9,.85);wallSign.position.set(-10,2.8,-4.04);
   const caution=label('ADAPTATION RANGE',3.6,.45,'#414a3c','#d2c39c');caution.position.set(9,1.17,-5.53);
   // Shaded walkway, stair access and railings.
@@ -103,7 +105,8 @@ export function createArena(container, {quality='high', mode='cinematic'}={}) {
   const cable=[];for(let i=0;i<40;i++){const a=i/39;cable.push([-11+22*a,5.4-1.0*Math.sin(a*Math.PI),-5]);}line(cable,'#4d5144',.8);
   for(const [x,z] of [[-13,3.4],[12,3.5]]){cyl(.045,.06,3.9,x,1.95,z,metal);box(.5,.08,.25,x+.18,3.9,z,metal);box(.32,.025,.17,x+.18,3.85,z,paint);}
   const leaf=material('#707961');for(const [x,z] of [[-13.8,-10],[-5.6,-10.7],[13.5,10.5],[-13,10]])for(let i=0;i<12;i++){const m=mesh(new THREE.ConeGeometry(.16,.55,4),leaf);m.position.set(x+(rnd()-.5)*1.4,.22,z+(rnd()-.5)*1.1);m.rotation.z=(rnd()-.5)*.8;}
-  const mark=label('07',1.8,1.0,'#e5dbc1','#8a9084');mark.rotation.x=-Math.PI/2;mark.position.set(-10,.09,0);
+  const mark=label('START',2.6,.65,'#edf0df','#5b7160');mark.rotation.x=-Math.PI/2;mark.position.set(-10,.09,3.5);
+  box(1.7,.018,1.7,EXIT.x,.075,EXIT.z,teal);const exitMark=label('EXIT',1.35,.46,'#edf2dc','#315947');exitMark.rotation.x=-Math.PI/2;exitMark.position.set(EXIT.x,.092,EXIT.z);
   // Articulated original robots; joint angles are driven only by timeline time.
   function robot(color){const g=new THREE.Group();world.add(g);const bodyMat=material(color,.5);const dark=material('#273831',.5);const torso=box(.43,.53,.29,0,1.02,0,bodyMat,g);box(.25,.25,.27,0,1.44,0,bodyMat,g);box(.23,.06,.03,0,1.47,.145,black,g);box(.15,.018,.033,0,1.47,.165,paint,g);box(.35,.14,.26,0,.69,0,dark,g);box(.25,.36,.13,0,1.0,-.2,dark,g);
     const limbs=[];for(let side of [-1,1]){const leg=new THREE.Group();g.add(leg);leg.position.set(side*.13,.68,0);box(.13,.53,.15,0,-.27,0,dark,leg);box(.16,.26,.18,0,-.40,0,bodyMat,leg);box(.16,.09,.29,0,-.61,.045,dark,leg);limbs.push(leg);const arm=new THREE.Group();g.add(arm);arm.position.set(side*.3,1.23,0);box(.13,.48,.14,0,-.19,0,bodyMat,arm);cyl(.09,.09,.12,0,.0,0,dark,arm);limbs.push(arm);}
@@ -111,20 +114,28 @@ export function createArena(container, {quality='high', mode='cinematic'}={}) {
     box(.1,.10,.6,.19,1.01,.3,dark,g);return {g,limbs};
   }
   const actor=robot('#d9ddd1');const enemyA=robot('#82675b');const enemyB=robot('#82675b');const enemyC=robot('#82675b');
-  enemyA.g.position.set(8.4,0,-4.55);enemyA.g.rotation.y=-1.1;enemyB.g.position.set(10.4,0,3.35);enemyB.g.rotation.y=-1.5;enemyC.g.position.set(7.2,1.99,-7.7);enemyC.g.rotation.y=-.72;
+  [enemyA,enemyB,enemyC].forEach((enemy,i)=>{enemy.g.position.set(OBSERVERS[i].x,0,OBSERVERS[i].z);enemy.g.rotation.y=-1.6;});
   // Tool layers use calm, readable lines on top of the actual environment.
   const toolLayer=new THREE.Group();world.add(toolLayer);
   function ring(r,color){const m=new THREE.MeshBasicMaterial({color,transparent:true,opacity:.75,depthWrite:false,side:THREE.DoubleSide});materials.push(m);const n=mesh(new THREE.RingGeometry(r-.025,r+.025,64),m,toolLayer);n.rotation.x=-Math.PI/2;n.position.y=.115;n.castShadow=false;return n;}
-  const rings=[ring(1.45,'#377c64'),ring(1.45,'#377c64'),ring(.25,'#4a9676')];rings[0].position.set(.15,.115,-.3);rings[1].position.set(2.8,.115,-.65);
+  const rings=[ring(SMOKES[0].radius,'#377c64'),ring(SMOKES[1].radius,'#377c64'),ring(.25,'#4a9676')];rings[0].position.set(SMOKES[0].x,.115,SMOKES[0].z);rings[1].position.set(SMOKES[1].x,.115,SMOKES[1].z);
+  const arrivalRing=ring(.95,'#468a65');arrivalRing.position.set(EXIT.x,.13,EXIT.z);const verifiedFlag=label('EXIT VERIFIED',3.55,.6,'#edf2dc','#315947');world.remove(verifiedFlag);toolLayer.add(verifiedFlag);verifiedFlag.position.set(2,5.83,-7.1);
+  const smokeLabels=SMOKES.map(smoke=>{const l=label(smoke.id,1.0,.4,'#edf0dc','#38634e');world.remove(l);toolLayer.add(l);l.position.set(smoke.x,3.1,smoke.z);return l;});
+  const observerLabels=OBSERVERS.map(o=>{const l=label(o.id,.6,.3,'#eee5d9','#895f50');world.remove(l);toolLayer.add(l);l.position.set(o.x,1.99,o.z);return l;});
   const paths=[];
   function arc(start,end,peak,color,opacity=1,thick=false){const pts=[];for(let i=0;i<=70;i++){const q=i/70;pts.push([THREE.MathUtils.lerp(start[0],end[0],q),THREE.MathUtils.lerp(start[1],end[1],q)+Math.sin(q*Math.PI)*peak,THREE.MathUtils.lerp(start[2],end[2],q)]);}const l=thick?stroke(pts,color,.033,opacity,toolLayer):line(pts,color,opacity,toolLayer);l.geometry.setDrawRange(0,0);paths.push(l);return l;}
-  const throwOne=arc([-6.5,1.4,2.2],[.15,.15,-.3],4.8,'#c1c892',.95,true);
-  const throwTwo=arc([-6.5,1.4,2.2],[2.8,.15,-.65],5.8,'#438568',.95,true);
-  const candidates=[];for(let j=0;j<9;j++)candidates.push(arc([-6.5,1.4,2.2],[1+j*.32,.15,-1.6+j*.24],4.4+j*.23,'#69a48b',.23));
-  const safePoints=[[-10,.15,2.25],[-6.5,.15,2.2],[-3.4,.15,1.2],[.1,.15,.2],[3.1,.15,-1.1],[5.1,.15,-3.2],[8.2,.15,-4.5]];
+  const throwOne=arc([-6.5,1.4,2.2],[SMOKES[0].x,.15,SMOKES[0].z],4.8,'#c1c892',.95,true);
+  const throwTwo=arc([-6.5,1.4,2.2],[SMOKES[1].x,.15,SMOKES[1].z],5.8,'#438568',.95,true);
+  const candidates=[];for(let j=0;j<9;j++)candidates.push(arc([-6.5,1.4,2.2],[2.1+j*.3,.15,-4.5+j*.22],4.4+j*.23,'#69a48b',.23));
+  const safePoints=Array.from({length:101},(_,i)=>{const p=routeAt(i/100);return [p.x,.15,p.z];});
   const safeLine=stroke(safePoints,'#3e8c69',.055,.92,toolLayer);
-  const sightA=line([[0,0,0],[1,1,1]],'#b36f61',.8,toolLayer);const sightB=line([[0,0,0],[1,1,1]],'#b36f61',.75,toolLayer);const sightC=line([[0,0,0],[1,1,1]],'#b85e49',.95,toolLayer);
-  function updateSight(l,a,b){const arr=l.geometry.attributes.position.array;arr.set([...a,...b]);l.geometry.attributes.position.needsUpdate=true;l.geometry.computeBoundingSphere();}
+  const rayMaterial=new THREE.MeshBasicMaterial({color:'#b3604e',transparent:true,opacity:.85,depthWrite:false});materials.push(rayMaterial);
+  const rays=OBSERVERS.map(()=>mesh(new THREE.CylinderGeometry(.022,.022,1,8),rayMaterial,toolLayer));rays.forEach(r=>{r.castShadow=false;r.renderOrder=4;});
+  const hitMaterial=new THREE.MeshBasicMaterial({color:'#4b9b79',depthWrite:false});materials.push(hitMaterial);
+  const hits=OBSERVERS.map(()=>mesh(new THREE.SphereGeometry(.105,12,8),hitMaterial,toolLayer));hits.forEach(h=>{h.castShadow=false;h.renderOrder=5;});
+  const hitGround=OBSERVERS.map(()=>ring(.22,'#4b9b79'));
+  const sightUp=new THREE.Vector3(0,1,0),sightA=new THREE.Vector3(),sightB=new THREE.Vector3();
+  function updateSight(l,a,b){sightA.set(a.x,a.y,a.z);sightB.set(b.x,b.y,b.z);const delta=sightB.clone().sub(sightA);l.position.copy(sightA).add(sightB).multiplyScalar(.5);l.scale.y=delta.length();l.quaternion.setFromUnitVectors(sightUp,delta.normalize());}
   const grenade=mesh(new THREE.SphereGeometry(.095,12,12),metal);grenade.castShadow=true;
   const halo=ring(.43,'#eee8ce');
   // Procedural radial alpha: camera-facing soft particles, no external images.
@@ -133,7 +144,7 @@ export function createArena(container, {quality='high', mode='cinematic'}={}) {
   soft.addColorStop(0,'rgba(255,255,255,1)');soft.addColorStop(.25,'rgba(255,255,255,.95)');soft.addColorStop(.55,'rgba(255,255,255,.64)');soft.addColorStop(.8,'rgba(255,255,255,.20)');soft.addColorStop(1,'rgba(255,255,255,0)');smokeCtx.fillStyle=soft;smokeCtx.fillRect(0,0,256,256);
   const smokeTex=new THREE.CanvasTexture(smokeCanvas);textures.push(smokeTex);
   const smokeGroup=new THREE.Group();world.add(smokeGroup);const smokeClusters=[];
-  for(let c=0;c<2;c++){const group=new THREE.Group();smokeGroup.add(group);group.position.set(c===0?.15:2.8,0,c===0?-.3:-.65);const blobs=[];
+  for(let c=0;c<2;c++){const group=new THREE.Group();smokeGroup.add(group);group.position.set(SMOKES[c].x,0,SMOKES[c].z);const blobs=[];
     for(let j=0;j<36;j++){
       const mat=new THREE.SpriteMaterial({map:smokeTex,color:j%3===0?'#c5cdc0':j%3===1?'#adb8a9':'#b8c2b1',transparent:true,opacity:0,depthWrite:false,depthTest:true,fog:true});materials.push(mat);
       const b=new THREE.Sprite(mat);group.add(b);const a=rnd()*Math.PI*2,r=rnd()*.82;
@@ -142,27 +153,19 @@ export function createArena(container, {quality='high', mode='cinematic'}={}) {
     }smokeClusters.push({group,blobs});
   }
   const clamp=THREE.MathUtils.clamp;const smooth=(a,b,t)=>{const x=clamp((t-a)/(b-a),0,1);return x*x*(3-2*x);};
-  function pathAt(q){const pts=[[-10,2.25],[-6.5,2.2],[-3.4,1.2],[.1,.2],[3.1,-1.1],[5.1,-3.2],[7.4,-4.4]];const s=clamp(q,0,.999999)*(pts.length-1),i=Math.floor(s),u=s-i;return new THREE.Vector3(THREE.MathUtils.lerp(pts[i][0],pts[i+1][0],u),0,THREE.MathUtils.lerp(pts[i][1],pts[i+1][1],u));}
+  function pathAt(q){const p=routeAt(q);return new THREE.Vector3(p.x,0,p.z);}
   function resize(){const w=container.clientWidth||1280,h=container.clientHeight||720;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
   resize();let observer;if(typeof ResizeObserver!=='undefined'){observer=new ResizeObserver(resize);observer.observe(container);}
   function render(time, opts={}){
     const t=clamp(Number(time)||0,0,84),hack=opts.hack!==false,currentMode=opts.mode||mode;
-    let q;
-    if(t<8.5) q=smooth(.4,6.7,t)*.43;
-    else if(t<18) q=smooth(8.7,15.3,t)*.60;
-    else if(t<28)q=.2;
-    else if(t<40)q=.2;
-    else if(t<50)q=.2+smooth(40,48,t)*.43;
-    else if(t<64)q=.2;
-    else q=.2+smooth(64,78,t)*.8;
-    const pos=pathAt(q);actor.g.position.copy(pos);const ahead=pathAt(Math.min(.999,q+.025));const heading=Math.atan2(ahead.x-pos.x,ahead.z-pos.z);actor.g.rotation.set(0,heading,0);
-    const walking=(t<6.7||(t>=8.5&&t<15.3)||(t>=40&&t<48)||(t>=64&&t<78));const gait=walking?Math.sin(t*8)*.43:0;actor.limbs[0].rotation.x=gait;actor.limbs[2].rotation.x=-gait;actor.limbs[1].rotation.x=-gait*.5-.25;actor.limbs[3].rotation.x=gait*.5-.55;
-    if((t>=6.7&&t<8.5)||(t>=15.3&&t<18)||(t>=48&&t<50)){actor.g.rotation.z=-.62;actor.g.position.y=-.15;}
+    const state=sceneState(t),q=state.q;
+    const pos=pathAt(q);actor.g.position.copy(pos);const ahead=pathAt(Math.min(1,q+.025));const heading=q>.999?Math.PI:Math.atan2(ahead.x-pos.x,ahead.z-pos.z);actor.g.rotation.set(0,heading,0);
+    const walking=state.walking;const gait=walking?Math.sin(t*8)*.43:0;actor.limbs[0].rotation.x=gait;actor.limbs[2].rotation.x=-gait;actor.limbs[1].rotation.x=-gait*.5-.25;actor.limbs[3].rotation.x=gait*.5-.55;
+    if(state.failed){actor.g.rotation.z=-.62;actor.g.position.y=-.15;}
     else actor.g.position.y=walking?Math.abs(Math.sin(t*8))*.025:0;
     halo.position.set(pos.x,.13,pos.z);halo.material.opacity=.35+.12*Math.sin(t*3);
-    const activeSmoke=t>=34;const firstStrength=activeSmoke?(t<50?smooth(34,38,t):smooth(52,59,t)):0;
-    const secondStrength=smooth(58,63,t);
-    smokeClusters.forEach(({group,blobs},i)=>{const strength=i===0?firstStrength:secondStrength;group.visible=strength>.005;group.scale.setScalar(.12+strength*.97);blobs.forEach((b,j)=>{b.position.copy(b.userData.base);b.position.x+=Math.sin(t*.33+j)*.09;b.position.y+=Math.sin(t*.38+j)*.08;b.position.z+=Math.cos(t*.28+j)*.09;b.material.rotation=.05*Math.sin(t*.09+j);b.scale.setScalar(b.userData.size*(1+.035*Math.sin(t*.3+j)));b.material.opacity=strength*(.24+(j%3)*.018);});});
+    const firstStrength=state.smokes[0].strength,secondStrength=state.smokes[1].strength;
+    smokeClusters.forEach(({group,blobs},i)=>{const strength=i===0?firstStrength:secondStrength;group.visible=strength>.005;group.scale.setScalar((.08+strength*.92)*SMOKES[i].radius/2.4);blobs.forEach((b,j)=>{b.position.copy(b.userData.base);b.position.x+=Math.sin(t*.33+j)*.09;b.position.y+=Math.sin(t*.38+j)*.08;b.position.z+=Math.cos(t*.28+j)*.09;b.material.rotation=.05*Math.sin(t*.09+j);b.scale.setScalar(b.userData.size*(1+.035*Math.sin(t*.3+j)));b.material.opacity=strength*(.24+(j%3)*.018);});});
     toolLayer.visible=hack;const design=t>=18;
     const firstArc=smooth(28,34,t);throwOne.visible=t>=28&&t<50;reveal(throwOne,firstArc);
     throwTwo.visible=t>=53;reveal(throwTwo,smooth(53,59,t));
@@ -170,19 +173,20 @@ export function createArena(container, {quality='high', mode='cinematic'}={}) {
     rings[0].visible=t>=28;rings[1].visible=t>=53;rings[0].material.opacity=t>=50?.35:.7;rings[1].material.opacity=.5+.2*Math.sin(t*2);
     rings[2].position.set(pos.x,.145,pos.z);rings[2].visible=design;
     safeLine.visible=t>=59;safeLine.material.opacity=.72+.12*Math.sin(t*1.6);reveal(safeLine,t>=64?1:smooth(59,63,t));
-    sightA.visible=t>=3&&t<18;sightB.visible=t>=10&&t<18;sightC.visible=t>=12&&t<18||(t>=43&&t<50);
-    updateSight(sightA,[8.4,1.15,-4.55],[pos.x,.98,pos.z]);updateSight(sightB,[10.4,1.15,3.35],[pos.x,.98,pos.z]);updateSight(sightC,[7.2,3.13,-7.7],[pos.x,.98,pos.z]);
+    state.rays.forEach((ray,i)=>{rays[i].visible=true;updateSight(rays[i],ray.from,ray.end);hits[i].visible=ray.status==='smoke';hitGround[i].visible=ray.status==='smoke';hits[i].position.set(ray.end.x,ray.end.y,ray.end.z);hitGround[i].position.set(ray.end.x,.15,ray.end.z);});
+    arrivalRing.material.opacity=state.reached?.9:.3;arrivalRing.scale.setScalar(state.reached?1+.06*Math.sin(t*3):1);verifiedFlag.visible=state.reached;
+    smokeLabels.forEach((l,i)=>{l.visible=state.smokes[i].strength>.4;});
     grenade.visible=t>=28&&t<34||t>=53&&t<59;
-    if(grenade.visible){const s=t<34?firstArc:smooth(53,59,t),ex=t<34?.15:2.8,ez=t<34?-.3:-.65,peak=t<34?4.8:5.8;grenade.position.set(THREE.MathUtils.lerp(-6.5,ex,s),THREE.MathUtils.lerp(1.4,.15,s)+Math.sin(s*Math.PI)*peak,THREE.MathUtils.lerp(2.2,ez,s));}
+    if(grenade.visible){const s=t<34?firstArc:smooth(53,59,t),ex=SMOKES[t<34?0:1].x,ez=SMOKES[t<34?0:1].z,peak=t<34?4.8:5.8;grenade.position.set(THREE.MathUtils.lerp(-6.5,ex,s),THREE.MathUtils.lerp(1.4,.15,s)+Math.sin(s*Math.PI)*peak,THREE.MathUtils.lerp(2.2,ez,s));}
     actor.g.visible=currentMode!=='pov';
     if(currentMode==='top'){camera.fov=35;camera.position.set(0,36,8);camera.up.set(0,1,0);camera.lookAt(0,0,-.3);}
-    else if(currentMode==='pov'){camera.fov=66;camera.position.set(pos.x,1.48,pos.z);const target=pathAt(Math.min(.999,q+.12));target.y=1.2;if(t>=18&&t<64)target.set(2.2,1.35,-.4);camera.lookAt(target);}
+    else if(currentMode==='pov'){camera.fov=66;camera.position.set(pos.x,1.48,pos.z);const target=pathAt(Math.min(1,q+.12));target.y=1.2;if(q>.999)target.set(EXIT.x,1.35,EXIT.z-2);if(t>=18&&t<64)target.set(2.2,1.35,-1.5);camera.lookAt(target);}
     else {camera.fov=39;const orbit=.055*Math.sin(t*.035);camera.position.set(19.2+Math.sin(orbit)*16,18.3+.55*Math.sin(t*.018),23.4+Math.cos(orbit)*.8);camera.lookAt(.1,1.1,-1.0);}
     // The first-person view loses visibility inside a smoke volume.
     let occlusion=0;
-    if(currentMode==='pov')smokeClusters.forEach(({group},i)=>{const strength=i===0?firstStrength:secondStrength;const distance=Math.hypot(pos.x-group.position.x,pos.z-group.position.z);occlusion=Math.max(occlusion,strength*(1-smooth(.55,2.0,distance)));});
+    if(currentMode==='pov')smokeClusters.forEach(({group},i)=>{const strength=i===0?firstStrength:secondStrength;const distance=Math.hypot(pos.x-group.position.x,pos.z-group.position.z);occlusion=Math.max(occlusion,strength*(1-smooth(.55,SMOKES[i].radius*.83,distance)));});
     scene.fog.near=THREE.MathUtils.lerp(33,.12,occlusion);scene.fog.far=THREE.MathUtils.lerp(76,3.0,occlusion);scene.fog.color.set(occlusion>.15?'#b6c0b0':'#c7cec8');
-    camera.updateProjectionMatrix();renderer.render(scene,camera);
+    [...smokeLabels,...observerLabels].forEach(l=>l.quaternion.copy(camera.quaternion));camera.updateProjectionMatrix();renderer.render(scene,camera);
   }
   render(0);
   function dispose(){observer?.disconnect();for(const g of geometries)g.dispose();for(const m of materials)m.dispose();for(const t of textures)t.dispose();renderer.dispose();renderer.domElement.remove();}
