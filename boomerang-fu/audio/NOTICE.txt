@@ -1,0 +1,7 @@
+FMOD Studio HTML5 runtime 2.03.08, Firelight Technologies Pty Ltd.
+Official source: https://www.fmod.com/assets/html5/studio_api/load_banks.html
+Runtime files: fmodstudio.js and fmodstudio.wasm from that official example.
+The Master Bank files are byte-for-byte copies of the locally installed Boomerang Fu game.
+Original game audio content belongs to its respective copyright holders.
+Source hashes, native runtime version and validation scope are recorded in evidence/audio-source-contract.json.
+No account or license agreement was accepted by the build tools.
