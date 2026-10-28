@@ -42,6 +42,15 @@ func run() -> void:
 	var wall_disc := OriginalDiscMotion.new()
 	if not destructable.is_empty(): behavior.interact_disc_wall(wall_disc,int(destructable.game_object),Vector2(18.0,0.0))
 	check("Disc wall callback reaches the exact destructable collider",not destructable.is_empty() and destructable.destroyed and not destructable.node.visible,{"object_id":destructable.get("game_object",-1),"disc_active":wall_disc.active})
-	var report={"passed":checks.all(func(c):return c.passed),"checks":checks,"scope":"LevelSlideTraps serialized MovingObstacle/Switch sidecar and source timing state machine."}
+	behavior.reset()
+	if not destructable.is_empty():
+		var melee_actor:OriginalActorMotion = game.actors[0]
+		melee_actor.position = Vector2(destructable.node.global_position.x, destructable.node.global_position.y)
+		melee_actor.rotation_z = 0.0
+		melee_actor.is_attacking = true
+		behavior.interact_melee(game.actors,game.combat)
+		melee_actor.is_attacking = false
+	check("Player melee polygon reaches destructable obstacles",not destructable.is_empty() and destructable.destroyed and not destructable.node.visible,{"object_id":destructable.get("game_object",-1)})
+	var report={"passed":checks.all(func(c):return c.passed),"checks":checks,"scope":"LevelSlideTraps serialized MovingObstacle/Switch sidecar, source timing state machine, projectile wall callbacks and player melee obstacle callbacks."}
 	FileAccess.open("res://../evidence/godot-level3-behavior-check.json",FileAccess.WRITE).store_string(JSON.stringify(report,"  "))
 	print("BF_LEVEL3_BEHAVIOR_TEST "+JSON.stringify(report));game.queue_free();await process_frame;quit(0 if report.passed else 1)

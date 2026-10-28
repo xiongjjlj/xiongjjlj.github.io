@@ -6,7 +6,7 @@
   "default_scene": "LevelEnclosed",
   "optional_scene": "LevelSlideTraps (?map=slide)",
   "source_files": 1228,
-  "source_bytes": 67569204,
+  "source_bytes": 67571525,
   "full_game_parity_verified": false,
   "limitations": [
     "This is a stable scoped FFA browser build, not a claim of full original-game parity.",
@@ -16,8 +16,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 34860,
-      "sha256": "48aef96151218ebad8bde162c4dc5876c6e1f5993e6952dd61b7acb0cbbfa77e"
+      "bytes": 34746,
+      "sha256": "9ce94c34f68d7391d8a81659a18e9c0b114c4d9b8467adb3851c2b990c03849c"
     },
     {
       "path": "evidence/godot-level3-behavior-check.json",
@@ -2831,8 +2831,8 @@
     },
     {
       "path": "godot/core/original_level3_behaviors.gd",
-      "bytes": 15764,
-      "sha256": "a5aa84ba17a6655a26601e00742c32c50d7f4002b02903f877a9b46078125296"
+      "bytes": 17448,
+      "sha256": "d4749f01721956d99f1c0b3ce89be98d8d1b08b8d7854188fa2393065b904e1f"
     },
     {
       "path": "godot/core/original_level_boundary.gd",
@@ -2946,8 +2946,8 @@
     },
     {
       "path": "godot/main.gd",
-      "bytes": 67348,
-      "sha256": "04cc0ab3f8f583dcaa0f04c6048e8e52c52be2201127e7e622f040f6c28ad12f"
+      "bytes": 67475,
+      "sha256": "d45f63e3fc6aeac5345e5550cde1b03ca3d06f21dc372d0869a71f1f6faf716c"
     },
     {
       "path": "godot/main.tscn",
@@ -3186,8 +3186,8 @@
     },
     {
       "path": "godot/tests/level3_behaviors_test.gd",
-      "bytes": 4851,
-      "sha256": "b69d1ebadb98d9b18db5e82402420d9ef57b57f55298051eda4454020603c715"
+      "bytes": 5475,
+      "sha256": "31f599fd4c79aef76881caa16104aa657aec2bdd477c56d7e6be79913616a9e0"
     },
     {
       "path": "godot/tests/melee_combat_test.gd",
@@ -6152,7 +6152,7 @@
     {
       "path": "VERSION.json",
       "bytes": 225481,
-      "sha256": "f798ab83830b0cbec27f5efa787a5b2e3c8acf0efaf390d703459920483c0a00"
+      "sha256": "288b917802ed19c850909eaeda2e4f10b8d87caca8111fcfb7dfe2d1b9fd420d"
     }
   ]
 }

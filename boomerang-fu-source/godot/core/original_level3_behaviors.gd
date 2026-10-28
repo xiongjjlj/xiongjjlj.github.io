@@ -230,6 +230,38 @@ func interact_disc_wall(motion, object_id: int, force: Vector2) -> void:
 		if float(interaction_cooldowns.get(key, 0.0)) <= 0.0:
 			_destructable_hit(item, force); interaction_cooldowns[key] = 0.2
 
+func interact_melee(actors: Array, combat_world) -> void:
+	# Player melee/disarm colliders are trigger shapes in Unity. Use the exact
+	# serialized melee polygon from OriginalCombatWorld so obstacle callbacks
+	# share the same geometry as actor damage and parry checks.
+	if combat_world == null: return
+	for index in actors.size():
+		var actor = actors[index]
+		if actor == null or actor.state == OriginalActorMotion.State.DEAD or not actor.is_attacking: continue
+		var polygon: PackedVector2Array = combat_world.melee_polygon(index)
+		var force := Vector2(-sin(actor.rotation_z), cos(actor.rotation_z)) * 30.0
+		for w in wobbles.values():
+			var key := "%d:melee:%d" % [int(w.component_id), index]
+			if float(interaction_cooldowns.get(key, 0.0)) > 0.0: continue
+			if _polygon_touches_object(polygon, int(w.game_object)):
+				_wobble_apply(w, force); interaction_cooldowns[key] = 0.12
+		for item in destructables.values():
+			if item.destroyed: continue
+			var key := "%d:melee:%d" % [int(item.component_id), index]
+			if float(interaction_cooldowns.get(key, 0.0)) > 0.0: continue
+			if _polygon_touches_object(polygon, int(item.game_object)):
+				_destructable_hit(item, force); interaction_cooldowns[key] = 0.2
+
+func _polygon_touches_object(polygon: PackedVector2Array, object_id: int) -> bool:
+	for shape in collision_world.shapes:
+		if shape.actor or int(shape.object_id) != object_id or int(shape.layer) == 0: continue
+		if shape.kind in ["polygon", "edge"]:
+			if not Geometry2D.intersect_polygons(polygon, shape.vertices).is_empty(): return true
+		else:
+			for point in polygon:
+				if point.distance_to(shape.center) <= float(shape.radius) + 0.1: return true
+	return false
+
 func _interact_disc(motion) -> void:
 	if motion == null or not motion.active: return
 	for w in wobbles.values():

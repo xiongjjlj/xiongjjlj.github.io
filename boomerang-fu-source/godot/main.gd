@@ -1102,6 +1102,8 @@ func _process(delta: float) -> void:
 	if movement_enabled and round_state.simulation_running():
 		cell_grid.current_time = clock.time_counter
 		update_movement(scaled_delta)
+		if active_scene.name == "LevelSlideTraps" and level_behaviors.initialized:
+			level_behaviors.interact_melee(actors, combat)
 		level_behaviors.step(scaled_delta, actors, flying_discs)
 		for behavior_event in level_behaviors.drain_events(): print("BF_LEVEL3_EVENT " + JSON.stringify(behavior_event))
 		advance_explosions(scaled_delta)
