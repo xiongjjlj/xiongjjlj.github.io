@@ -1,30 +1,3868 @@
 {
   "passed": true,
-  "engine": "workerd via miniflare 5.20260930.0-alpha",
-  "local_compatibility_date": "2026-10-07",
-  "production_compatibility_date": "2026-10-28",
-  "verified_files": 16,
-  "checks": [
-    "all original byte sizes and SHA-256 values",
-    "correct MIME",
-    "HEAD for full PCK",
-    "304 ETag revalidation",
-    "unknown and internal paths return 404",
-    "POST returns 405",
-    "cross-origin isolation header",
-    "version endpoint"
+  "results": [
+    {
+      "test": "map_behavior_adapter_test",
+      "map": "level3",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": "level3",
+              "name": "loaded requested map with decoded behaviors",
+              "passed": true
+            },
+            {
+              "details": [
+                2316,
+                2317
+              ],
+              "name": "switch resolves serialized component references",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "walking near switch does not activate an attack trigger",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "actual melee polygon activates switch",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "activation reaches the linked mover",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "continuous overlap does not retrigger after cooldown",
+              "passed": true
+            },
+            {
+              "details": 1,
+              "name": "moving/rotating geometry updates actual collision vertices",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "disarm re-entry activates after melee exits",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores rotation, direction and trigger state",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "projectile approaching from rejected direction stays inactive",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "projectile re-entry from accepted direction triggers",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fresh throw exception includes original Z distance",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "near-owner fresh throw bypasses direction restriction",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "one-shot switch disables and resets",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores one-shot activation state",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor_ticks": 3,
+                "map_ticks": 3
+              },
+              "name": "main-loop obstacle and actor physics steps stay aligned",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "zero-time frame does not tick map behaviors",
+              "passed": true
+            }
+          ],
+          "map": "level3",
+          "passed": true,
+          "scope": "Real-scene switch trigger, mover transforms/colliders, reset, and shared physics scheduling; no Unity frame-parity claim."
+        }
+      ]
+    },
+    {
+      "test": "map_behavior_adapter_test",
+      "map": "level4",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": "level4",
+              "name": "loaded requested map with decoded behaviors",
+              "passed": true
+            },
+            {
+              "details": [
+                1424
+              ],
+              "name": "switch resolves serialized component references",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "walking near switch does not activate an attack trigger",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "actual melee polygon activates switch",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "activation reaches the linked mover",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "continuous overlap does not retrigger after cooldown",
+              "passed": true
+            },
+            {
+              "details": 1,
+              "name": "moving/rotating geometry updates actual collision vertices",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "disarm re-entry activates after melee exits",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores rotation, direction and trigger state",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "projectile approaching from rejected direction stays inactive",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "projectile re-entry from accepted direction triggers",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fresh throw exception includes original Z distance",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "near-owner fresh throw bypasses direction restriction",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "one-shot switch disables and resets",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores one-shot activation state",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "inactive original obstacle remains static",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor_ticks": 3,
+                "map_ticks": 3
+              },
+              "name": "main-loop obstacle and actor physics steps stay aligned",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "zero-time frame does not tick map behaviors",
+              "passed": true
+            }
+          ],
+          "map": "level4",
+          "passed": true,
+          "scope": "Real-scene switch trigger, mover transforms/colliders, reset, and shared physics scheduling; no Unity frame-parity claim."
+        }
+      ]
+    },
+    {
+      "test": "map_behavior_adapter_test",
+      "map": "level48",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": "level48",
+              "name": "loaded requested map with decoded behaviors",
+              "passed": true
+            },
+            {
+              "details": [
+                1052,
+                1054,
+                1053,
+                1055
+              ],
+              "name": "switch resolves serialized component references",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "walking near switch does not activate an attack trigger",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "actual melee polygon activates switch",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "activation reaches the linked mover",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "continuous overlap does not retrigger after cooldown",
+              "passed": true
+            },
+            {
+              "details": 1,
+              "name": "moving/rotating geometry updates actual collision vertices",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "disarm re-entry activates after melee exits",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores rotation, direction and trigger state",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "projectile approaching from rejected direction stays inactive",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "projectile re-entry from accepted direction triggers",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fresh throw exception includes original Z distance",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "near-owner fresh throw bypasses direction restriction",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "one-shot switch disables and resets",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores one-shot activation state",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor_ticks": 3,
+                "map_ticks": 3
+              },
+              "name": "main-loop obstacle and actor physics steps stay aligned",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "zero-time frame does not tick map behaviors",
+              "passed": true
+            }
+          ],
+          "map": "level48",
+          "passed": true,
+          "scope": "Real-scene switch trigger, mover transforms/colliders, reset, and shared physics scheduling; no Unity frame-parity claim."
+        }
+      ]
+    },
+    {
+      "test": "map_behavior_adapter_test",
+      "map": "level55",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": "level55",
+              "name": "loaded requested map with decoded behaviors",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "rotating parent updates child colliders",
+              "passed": true
+            }
+          ],
+          "map": "level55",
+          "passed": true,
+          "scope": "Real-scene switch trigger, mover transforms/colliders, reset, and shared physics scheduling; no Unity frame-parity claim."
+        }
+      ]
+    },
+    {
+      "test": "moving_floor_scene_test",
+      "map": "level24",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all normal moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(-15.27351, -1.697056)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 2177,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 6.11858413321897e-05,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(-20.3665, -2.39222)",
+                "actor_z": 0.0,
+                "disc": "(-20.3665, -2.39222)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 2177
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start enables floor movement",
+              "passed": true
+            }
+          ],
+          "map": "LevelSplit",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "moving_floor_scene_test",
+      "map": "level26",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all normal moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(-14.4, 1.6)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 1129,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 5.7220458984375e-06,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(-20.52561, 3.664134)",
+                "actor_z": 0.0,
+                "disc": "(-20.52561, 3.664134)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 1129
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start enables floor movement",
+              "passed": true
+            }
+          ],
+          "map": "LevelDrift",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "moving_floor_scene_test",
+      "map": "level27",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all normal moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(0.4, -10.8)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 3304,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 0.0,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(-3.721856, -10.8)",
+                "actor_z": 0.0,
+                "disc": "(-3.721856, -10.8)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 3304
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start enables floor movement",
+              "passed": true
+            }
+          ],
+          "map": "LevelTracks",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "moving_floor_scene_test",
+      "map": "level29",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all normal moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(-14.12678, -13.87659)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 1370,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 5.88270959269721e-05,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(19.08084, -5.296168)",
+                "actor_z": 0.0,
+                "disc": "(19.08084, -5.296168)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 1370
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start enables floor movement",
+              "passed": true
+            }
+          ],
+          "map": "LevelSpin",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "moving_floor_scene_test",
+      "map": "level44",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all normal moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(-22.4, 2.8)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 2557,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 7.40987161407247e-05,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(-17.81959, -13.85877)",
+                "actor_z": 0.0,
+                "disc": "(-17.81959, -13.85877)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 2557
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start enables floor movement",
+              "passed": true
+            }
+          ],
+          "map": "LevelDonut",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "moving_floor_scene_test",
+      "map": "level45",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all normal moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(2.4, -15.7)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 2614,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 4.1405284719076e-05,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(12.3573, -19.20293)",
+                "actor_z": 0.0,
+                "disc": "(12.3573, -19.20293)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 2614
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start enables floor movement",
+              "passed": true
+            }
+          ],
+          "map": "LevelFourCogs",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "moving_floor_scene_test",
+      "map": "level50",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all normal moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(-33.63597, -5.565965)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 2173,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 3.39091238856781e-05,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(-27.37259, 9.555216)",
+                "actor_z": 0.0,
+                "disc": "(-27.37259, 9.555216)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 2173
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start enables floor movement",
+              "passed": true
+            }
+          ],
+          "map": "LevelRaftCrusher",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "moving_floor_native_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "failures": [],
+          "key": "level24-2177",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "rotation": 0.0,
+            "target_duration": 0.0,
+            "velocity": 0.000230663048569113
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level24-2178",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "rotation": 0.0,
+            "target_duration": 0.0,
+            "velocity": 0.000255950988503173
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level24-2179",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "rotation": 0.0,
+            "target_duration": 0.0,
+            "velocity": 0.000230663048569113
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level24-2180",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "rotation": 0.0,
+            "target_duration": 0.0,
+            "velocity": 0.000255950988503173
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level26-1129",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 1.19209289550781e-07,
+            "position": 2.13248063118954e-06,
+            "rotation": 0.0,
+            "target_duration": 0.0,
+            "velocity": 0.000114500522613525
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level26-1130",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 1.19209289550781e-07,
+            "position": 1.34869912926661e-06,
+            "rotation": 0.0,
+            "target_duration": 0.0,
+            "velocity": 8.09219491202384e-05
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level27-3304",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 4.65661287307739e-10,
+            "position": 0.0,
+            "rotation": 0.0,
+            "target_duration": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level27-3305",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 4.65661287307739e-10,
+            "position": 0.0,
+            "rotation": 0.0,
+            "target_duration": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level29-1370",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 1.19209289550781e-07,
+            "position": 0.0,
+            "rotation": 6.59658092594384e-07,
+            "target_duration": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level44-2557",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 1.19209289550781e-07,
+            "position": 0.0,
+            "rotation": 6.59658092594384e-07,
+            "target_duration": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level45-2614",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 1.19209289550781e-07,
+            "position": 0.0,
+            "rotation": 5.89441672360635e-07,
+            "target_duration": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level45-2615",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "rotation": 5.94740109605141e-07,
+            "target_duration": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level45-2616",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "rotation": 5.94740109605141e-07,
+            "target_duration": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level45-2617",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 1.19209289550781e-07,
+            "position": 0.0,
+            "rotation": 5.89441672360635e-07,
+            "target_duration": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level50-2173",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 9.31322574615479e-10,
+            "position": 0.0,
+            "rotation": 0.0,
+            "target_duration": 0.0,
+            "velocity": 0.000362120161298662
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "failures": [],
+          "key": "level50-2174",
+          "max_errors": {
+            "duration": 0.0,
+            "index": 0.0,
+            "percent": 9.31322574615479e-10,
+            "position": 0.0,
+            "rotation": 0.0,
+            "target_duration": 0.0,
+            "velocity": 0.000362120161298662
+          },
+          "passed": true,
+          "samples": 2401
+        },
+        {
+          "cases": 16,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "reactive_floor_native_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "failures": [],
+          "key": "level40-2678",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 8.09430202934891e-05
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level40-2678",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level40-2678",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 8.09219491202384e-05
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level41-2764",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 1.62961449667876e-07,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level41-2764",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level41-2764",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 1.62961449667876e-07,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level46-2343",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 1.49011611938477e-08,
+            "position": 9.5367431640625e-07,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 5.7220458984375e-05
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level46-2343",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level46-2343",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 1.49011611938477e-08,
+            "position": 9.5367431640625e-07,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 5.7220458984375e-05
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level46-2344",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 1.49011611938477e-08,
+            "position": 9.5367431640625e-07,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 5.7220458984375e-05
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level46-2344",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level46-2344",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 1.49011611938477e-08,
+            "position": 9.5367431640625e-07,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 5.7220458984375e-05
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level51-1691",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level51-1691",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level51-1691",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level51-1692",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level51-1692",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level51-1692",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2772",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2772",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2772",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2773",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2773",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2773",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2774",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2774",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2774",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2775",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2775",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level52-2775",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3303",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3303",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3303",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3304",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3304",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3304",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3305",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3305",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3305",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3306",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3306",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            5.0
+          ]
+        },
+        {
+          "failures": [],
+          "key": "level53-3306",
+          "max_errors": {
+            "index": 0.0,
+            "percent": 0.0,
+            "position": 0.0,
+            "reverse": 0.0,
+            "rotation": 0.0,
+            "spring_back": 0.0,
+            "state": 0.0,
+            "velocity": 0.0
+          },
+          "passed": true,
+          "samples": 901,
+          "triggers": [
+            0.0,
+            70.0
+          ]
+        },
+        {
+          "cases": 42,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "reactive_floor_scene_test",
+      "map": "level40",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all reactive moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reactive floor waits for switch",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "serialized switch resolves reactive floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real melee polygon activates linked floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(-26.87006, -9.899494)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 2678,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "paired rolling pin responds to platform velocity",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "paired rolling pin responds to platform velocity",
+              "passed": true
+            },
+            {
+              "details": 9.93150024442002e-05,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(-17.02718, -0.056539)",
+                "actor_z": 0.0,
+                "disc": "(-17.02718, -0.056539)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 2678
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start leaves reactive floor waiting",
+              "passed": true
+            }
+          ],
+          "map": "LevelBigRaft",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "reactive_floor_scene_test",
+      "map": "level41",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all reactive moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reactive floor waits for switch",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "serialized switch resolves reactive floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real melee polygon activates linked floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(-12.0, -9.0)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 2764,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 1.72256386576919e-05,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(13.79425, -5.892303)",
+                "actor_z": 0.0,
+                "disc": "(13.79425, -5.892303)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 2764
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start leaves reactive floor waiting",
+              "passed": true
+            }
+          ],
+          "map": "LevelCircleMaze",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "reactive_floor_scene_test",
+      "map": "level46",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all reactive moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reactive floor waits for switch",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "serialized switch resolves reactive floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real melee polygon activates linked floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(12.0, -9.0)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 2343,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 0.0,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(-16.0, -9.0)",
+                "actor_z": 0.0,
+                "disc": "(-16.0, -9.0)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 2343
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start leaves reactive floor waiting",
+              "passed": true
+            }
+          ],
+          "map": "LevelIslandPair",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "reactive_floor_scene_test",
+      "map": "level51",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all reactive moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reactive floor waits for switch",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "serialized switch resolves reactive floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real melee polygon activates linked floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(-23.6, 1.2)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 1691,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 3.814697265625e-06,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(4.4, 1.2)",
+                "actor_z": 0.0,
+                "disc": "(4.4, 1.2)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 1691
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start leaves reactive floor waiting",
+              "passed": true
+            }
+          ],
+          "map": "LevelRaftPair",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "reactive_floor_scene_test",
+      "map": "level52",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all reactive moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reactive floor waits for switch",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "serialized switch resolves reactive floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real melee polygon activates linked floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(-29.0, -13.0)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 2772,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 9.5367431640625e-07,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(-29.0, 5.779078)",
+                "actor_z": 0.0,
+                "disc": "(-29.0, 5.779078)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 2772
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start leaves reactive floor waiting",
+              "passed": true
+            }
+          ],
+          "map": "LevelRaftSwitches",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "reactive_floor_scene_test",
+      "map": "level53",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "all reactive moving floors bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reactive floor waits for switch",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "serialized switch resolves reactive floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real melee polygon activates linked floor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "real floor colliders reference runtime floor",
+              "passed": true
+            },
+            {
+              "details": "(-8.0, -24.0)",
+              "name": "found actual walkable platform point",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger attaches actor to original collider",
+              "passed": true
+            },
+            {
+              "details": 3303,
+              "name": "dropped disc attaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform follows original trajectory",
+              "passed": true
+            },
+            {
+              "details": 2.86102294921875e-06,
+              "name": "actor remains at its local platform position",
+              "passed": true
+            },
+            {
+              "details": {
+                "actor": "(-8.0, -9.915694)",
+                "actor_z": 0.0,
+                "disc": "(-8.0, -9.915694)",
+                "disc_z": 0.0,
+                "error": 0.0,
+                "floor": 3303
+              },
+              "name": "dropped disc follows same platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collision shapes remain bound to moving scene",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trigger exit detaches actor",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "recalled disc detaches",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "reset restores pose and awaits StartMoving",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round start leaves reactive floor waiting",
+              "passed": true
+            }
+          ],
+          "map": "LevelRaftSwitches2",
+          "passed": true,
+          "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+        }
+      ]
+    },
+    {
+      "test": "reactive_floor_game_loop_test",
+      "map": "level40",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "central rider survives full outward and return journey",
+              "passed": true
+            },
+            {
+              "details": 0.000347322114976123,
+              "name": "full game loop preserves platform-local rider position",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "platform finishes its return and retains rider",
+              "passed": true
+            },
+            {
+              "details": {
+                "fall_tick": 394,
+                "roller_contact_tick": 307
+              },
+              "name": "edge rider contacts original fixed roller before losing ground",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "edge fall is ground loss, not broken platform attachment",
+              "passed": true
+            }
+          ],
+          "passed": true,
+          "scope": "Full Godot game loop on actual Big Raft: central rider round trip and fixed-roller obstruction. Original full-scene callback ordering is not established by this test."
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level24",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 45
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level24",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level26",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 27
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level26",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level27",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 27
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level27",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level29",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 18
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level29",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level44",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 18
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level44",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level45",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 45
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level45",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level50",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 27
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level50",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level40",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 18
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level40",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level41",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 9
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level41",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level46",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 27
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level46",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level51",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 27
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level51",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level52",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 45
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level52",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level53",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 45
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level53",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_platform_ai_test",
+      "map": "level40",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "real map has a traversable platform path",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "live bot binds returned path to its platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "failed replan reports unreachable start",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_error": 3.814697265625e-06,
+                "travel": 13.9200687408447
+              },
+              "name": "retained waypoint follows platform without recalculating",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "failed replan retains source coordinates and platform binding",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores retained waypoint pose",
+              "passed": true
+            }
+          ],
+          "map": "level40",
+          "passed": true,
+          "scope": "Actual bot path provider and completion callback, moving platform waypoint retention, failed replan, round reset; not a full native match comparison."
+        }
+      ]
+    },
+    {
+      "test": "navigation_platform_ai_test",
+      "map": "level45",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "real map has a traversable platform path",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "live bot binds returned path to its platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "failed replan reports unreachable start",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_error": 1.01852458556095e-06,
+                "travel": 9.49325084686279
+              },
+              "name": "retained waypoint follows platform without recalculating",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "failed replan retains source coordinates and platform binding",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores retained waypoint pose",
+              "passed": true
+            }
+          ],
+          "map": "level45",
+          "passed": true,
+          "scope": "Actual bot path provider and completion callback, moving platform waypoint retention, failed replan, round reset; not a full native match comparison."
+        }
+      ]
+    },
+    {
+      "test": "navigation_selection_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "differences": [],
+          "maps": 13,
+          "maximum_transform_error": 4.26496126237907e-06,
+          "passed": true,
+          "queries": 1134,
+          "scope": "Original native platform transform methods and unchanged graph selection, sampled initial/translated/rotated poses; runtime obstacle rescan is separate.",
+          "tolerance": 5e-05,
+          "transform_points": 540
+        }
+      ]
+    },
+    {
+      "test": "player_ai_game_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "cases": [
+            {
+              "commands": 4,
+              "deaths_at_round_end": 1,
+              "difficulty": 0,
+              "distance": 210.201049684576,
+              "frames": 1200,
+              "records": 2,
+              "retained_old_ai": 2,
+              "rounds": 1,
+              "states": [
+                0,
+                2,
+                4,
+                8
+              ]
+            },
+            {
+              "commands": 18,
+              "deaths_at_round_end": 2,
+              "difficulty": 1,
+              "distance": 205.876004363003,
+              "frames": 1200,
+              "records": 6,
+              "retained_old_ai": 2,
+              "rounds": 2,
+              "states": [
+                0,
+                4,
+                2,
+                8,
+                3,
+                5
+              ]
+            },
+            {
+              "commands": 59,
+              "deaths_at_round_end": 4,
+              "difficulty": 2,
+              "distance": 144.227632309507,
+              "frames": 1200,
+              "records": 3,
+              "retained_old_ai": 2,
+              "rounds": 4,
+              "states": [
+                0,
+                2,
+                8,
+                4
+              ]
+            },
+            {
+              "commands": 174,
+              "deaths_at_round_end": 3,
+              "difficulty": 3,
+              "distance": 171.483854799084,
+              "frames": 1200,
+              "records": 4,
+              "retained_old_ai": 2,
+              "rounds": 3,
+              "states": [
+                0,
+                2,
+                3,
+                4,
+                1,
+                8
+              ]
+            }
+          ],
+          "failures": [],
+          "mixed_bots": 5,
+          "mixed_players": 6,
+          "native_full_match_parity": false,
+          "passed": true,
+          "retained_after_dispose": 0
+        }
+      ]
+    },
+    {
+      "test": "level3_behaviors_test",
+      "map": "level3",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "level3 sidecar preserves two MovingObstacle and four Switch behaviours",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "moving obstacle starts at serialized position",
+              "passed": true
+            },
+            {
+              "details": {
+                "elapsed": 0.283321976661682,
+                "state": 1,
+                "y": -1.89120423793793
+              },
+              "name": "serialized preMove delay and EaseOut motion move the first brush",
+              "passed": true
+            },
+            {
+              "details": {
+                "elapsed": 0.0,
+                "percent": 0.0,
+                "state": 3,
+                "y": -21.7000007629395
+              },
+              "name": "moveDur reaches the serialized target before spring pause",
+              "passed": true
+            },
+            {
+              "details": {
+                "spring": true,
+                "state": 1,
+                "y": -20.4833202362061
+              },
+              "name": "springPauseDur releases the spring wind-back",
+              "passed": true
+            },
+            {
+              "details": {
+                "spring": true,
+                "state": 0,
+                "y": 0.0
+              },
+              "name": "springWindBackDur returns the brush to its original slot",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "Toggle while pre-moving reverses without creating a second obstacle",
+              "passed": true
+            },
+            {
+              "details": {
+                "wobbles": 25
+              },
+              "name": "serialized WobblyObstacle records resolve spring targets",
+              "passed": true
+            },
+            {
+              "details": {
+                "debris": 45
+              },
+              "name": "serialized Debris3D movement constants are retained",
+              "passed": true
+            },
+            {
+              "details": {
+                "offset": [
+                  0.333326697349548,
+                  0.0555544421076775
+                ],
+                "rotation": 0.0166663359850645
+              },
+              "name": "WobblyObstacle spring force changes the rendered root",
+              "passed": true
+            },
+            {
+              "details": {
+                "debris": 4,
+                "game_object": 41
+              },
+              "name": "DestructableObstacle hides its collider and releases debris",
+              "passed": true
+            },
+            {
+              "details": {
+                "disc_active": true,
+                "object_id": 41
+              },
+              "name": "Disc wall callback reaches the exact destructable collider",
+              "passed": true
+            },
+            {
+              "details": {
+                "object_id": 41
+              },
+              "name": "Player melee polygon reaches destructable obstacles",
+              "passed": true
+            }
+          ],
+          "passed": true,
+          "scope": "LevelSlideTraps serialized MovingObstacle/Switch sidecar, source timing state machine, projectile wall callbacks and player melee obstacle callbacks."
+        }
+      ]
+    },
+    {
+      "test": "ffa_shell_test",
+      "map": "level4",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "six distinct original characters and source spawn points",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "all 72 character clips bind with no missing targets",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "frozen visuals cover all six players",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "six fire emitters have independent bounded state",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "six player kills lead to one round result",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "next round keeps scores and resets six actors",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "tiebreak only enables the two finalists",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "first tiebreak kill ends match with one winner",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "new two-player long match resets roster score and queries",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "lobby hides validation controls and suspends simulation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "menu start selects characters and match length",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "ready phase holds actor simulation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "source one-second ready leads to gameplay",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "pause freezes world and slow-motion timers",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "resume preserves pre-pause time scale",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "normal match exposes round scoreboard",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "continue returns to ready preserving points",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "focus loss pauses ready countdown",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "gamepad edge routes only to its assigned slot",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "gamepad press consumed once",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original FFA score goals for lengths and player counts",
+              "passed": true
+            },
+            {
+              "details": {
+                "after": 990,
+                "baseline": 990
+              },
+              "name": "repeated two/six player setup reclaims scene nodes",
+              "passed": true
+            }
+          ],
+          "passed": true,
+          "scope": "Actual imported scene and six models, full local FFA shell, input adapter routing and node reclamation. Gamepad hardware/browser mapping, original menu pixels, full native scene scheduling and character-specific effects are not proven."
+        }
+      ]
+    },
+    {
+      "test": "duel_integration_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "native_frame_parity_verified": false,
+          "nodes_after_restart": 1192,
+          "nodes_before": 1192,
+          "passed": true,
+          "reached_default_medium_goal": true,
+          "rounds": [
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 1,
+              "round": 1
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 2,
+              "round": 2
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 3,
+              "round": 3
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 4,
+              "round": 4
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 5,
+              "round": 5
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 6,
+              "round": 6
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 7,
+              "round": 7
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 8,
+              "round": 8
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 9,
+              "round": 9
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 10,
+              "round": 10
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 11,
+              "round": 11
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 12,
+              "round": 12
+            },
+            {
+              "frames": 143,
+              "passed": true,
+              "phase": 3,
+              "points": 13,
+              "round": 13
+            },
+            {
+              "frames": 7,
+              "passed": true,
+              "phase": 4,
+              "points": 14,
+              "round": 14
+            }
+          ],
+          "scope": "Actual scene, source map queries, flight, damage, source death clip, score persistence, 14-round preview victory and restart; excludes melee/powers/complete original presentation"
+        }
+      ]
+    }
   ],
   "source_sha256": {
-    "package.json": "5ccd208284a91bf02b8b0adcb64c29856ca0085a0d27d08388d963cca8be6e6c",
-    "package-lock.json": "c0033b5e573f9d7ddda951c0084b550558c20348a696e153a852267baa8c5220",
-    ".gitignore": "21cc51417dd30e7af20dadff0073906f0ec0072617178b35d7383b5b3c77931c",
-    "README.md": "74e5e28dd08f006d759c2ef1c66b1c29cb022bdbd7913be341ee453b53edc51d",
-    "cloudflare.config.ts": "074c4d41f3d94434d1351981c34d42436953672f4114c58a28c97bca86a3c41e",
-    "scripts/build.mjs": "ee709a3d4d09321e8c8a33255d954d56a4810b50467d28b202469a419d2d44b3",
-    "src/worker.mjs": "11384e98001913ab6d969d4f8a58d5445c711700e59d69a73f32203e0dbab7a8",
-    "src/serve.mjs": "7fd4fe47f9f8d5bf792969c7aeac04f92900f22ab423edbb723eddd048fff82c",
-    "test/hosting.test.mjs": "719e38cacbd931f37ddef08020f7ad5547133cab1ae82e561c6b52e89ae73bd1"
+    "assets/original/level10/behaviors.json": "1e331b377e8f9dc367a9ddcb3d1a38768a2a9ffc7bcb9d9d285a554c9db87732",
+    "assets/original/level11/behaviors.json": "1500f5b6d8ff1c29298e1b40705adaf3e6ae7526942a14498c2db46bce0f2f12",
+    "assets/original/level12/behaviors.json": "460aed0a24ab0ca519f488b78b5b83aa5869fce13dee1eb7bd2699b9b18c0aa9",
+    "assets/original/level13/behaviors.json": "02ca2111495041ac9eac1da73580d3f2a1ca403740e1f6bb39d864f4756f559c",
+    "assets/original/level14/behaviors.json": "ba76633d72a123be877a3a51fdbd6149b19859a68b585709416d05e92a7fd1b1",
+    "assets/original/level15/behaviors.json": "eceb1cb8a73186e409a822a4a4c72e55aee6008ebb17aab5a0952bac6c836610",
+    "assets/original/level16/behaviors.json": "cafefa95058ddc8b01a33f6abda899f02756c5b188e2c86cb8ca527333d28e88",
+    "assets/original/level17/behaviors.json": "36d6b45e7f7f6f19491efa8c4e1c238bbffa1942e18ade0ef498a89860fc3bc3",
+    "assets/original/level18/behaviors.json": "782d71cb3867fe95ca090122e19901c156a610fecaf13dafcd071bdae1e99afd",
+    "assets/original/level19/behaviors.json": "1a6809057d754b9fe69236204d5a11a8f132ad01d766839dbe99a1a09c4a654c",
+    "assets/original/level2/behaviors.json": "ae5e4419d1f3130e02923f20101d8198f4fe9e64a186f731ee78b0c715b53715",
+    "assets/original/level20/behaviors.json": "77ad3547af8057527ba800cae711076517390e88d14ce77e37621f9b20964dd6",
+    "assets/original/level21/behaviors.json": "a791691ead95b26e9d78d1302f90d45bef9328ff9d2dc9fe99346ea5449b9d46",
+    "assets/original/level22/behaviors.json": "bc0b0efb05cf7a81afec29765086e5b7634f0a9b689a65351478ff6b8cb838cf",
+    "assets/original/level23/behaviors.json": "3fcbfd27728f95a5823fe4d0d3caba9c3c2165e1c8995326e383e716e9bfc41d",
+    "assets/original/level24/behaviors.json": "766a048fb22193ae4701c330dfb163370c12c5a35c780a59357e913b9497062f",
+    "assets/original/level25/behaviors.json": "186a9ba1bb79b1f0defab39286f4db5db09631892e9c6a93620383c2e7d2786e",
+    "assets/original/level26/behaviors.json": "f6df3d975c2b20967f7e4597a80d0ef080e0b269552f323d29774be2b65b9fbd",
+    "assets/original/level27/behaviors.json": "d9ac58cc05c4be3044e02bce1cddfce3965cc165725eecda77a7c5b74eb0cddc",
+    "assets/original/level28/behaviors.json": "17dda00b8321af93b6ff0d007b9a10811b9a30fd839d1e195920f60cfde30f50",
+    "assets/original/level29/behaviors.json": "b80b9d3ece0c1b14ed97390097b9fb43ba1d060dd2ca775daa5364e72ebba56c",
+    "assets/original/level3/behaviors.json": "1427c50ca7b8c8bb865fc59b0605c74f50da180c85de76883b4e2a8d98d238c5",
+    "assets/original/level30/behaviors.json": "957e63c67eab60720858e425cad79c4522bcfeaf7848a7267e045a9e0bb923c6",
+    "assets/original/level31/behaviors.json": "94a16955577170e0175f67b9e7c4e86331384da18b1138f8ae783113f346e8f7",
+    "assets/original/level32/behaviors.json": "7331941cf694153c9868bf14831a7e0fc984c5bfd20096ecaa9df12d94a4af8b",
+    "assets/original/level33/behaviors.json": "675a6a56715e5cb7ba5e1e0735aa0a9f9fa59d410bd4848864bb70987a3e52f9",
+    "assets/original/level34/behaviors.json": "0d00cad9c81ad7ddda3371d5a9d776a1c9fbf7358ec61d9411e28501c0a1e988",
+    "assets/original/level35/behaviors.json": "4c2e084b35e9e12980977989fbe651e8f1a4b6dd1bec96c380c304e408ce81db",
+    "assets/original/level36/behaviors.json": "84ffa16a554376fa9bd507b3f738cf9290293dc56187ab9c21ea63329edf7ce4",
+    "assets/original/level37/behaviors.json": "904750897e8d4be3974d7c8b110e04e68a95d00857b34eba82efec0917e95614",
+    "assets/original/level38/behaviors.json": "be4a88e486fc336497fad32875681af5afcbd8d857888bf3a462df2117282f75",
+    "assets/original/level39/behaviors.json": "733304d5ed16659a1897393f2e03238f82de04992be5ee80efc1bc2b8b05875c",
+    "assets/original/level4/behaviors.json": "52720ba1f63cbe2e2eebfd689d5340303bf8239f856ad9fd6b79d81bb4030f55",
+    "assets/original/level40/behaviors.json": "8645ce53e6e6686c7c4871c5cc28a86338a6aec56ab5af3f6fb16a4737df8066",
+    "assets/original/level41/behaviors.json": "06bcaf8c1dfaaa51cf243c66cb26b3370b1f8a19f10e0e892bc0ffa40b8a66eb",
+    "assets/original/level42/behaviors.json": "457d3aaff376c9611bac82de67b8c8acde9b5c32e42bb9cf4b79ec4bea42c16a",
+    "assets/original/level43/behaviors.json": "e2fa3b05518829350139d4203a9fe4783ef2c536d2651a4c4efdee57f89d3bdf",
+    "assets/original/level44/behaviors.json": "7fcbd4b45a44e98fc2d4a3bd279064ac103e45d1d3845b34770f0a0f48727d73",
+    "assets/original/level45/behaviors.json": "11ee2010417b257358c0b3379ad20b7ee0259b3e3179cc3a89efdd579e8f918d",
+    "assets/original/level46/behaviors.json": "bcd617026ca74a329772e8f57ab9c04a5c724ab4a5e4fb59b040d0db0c2ccbba",
+    "assets/original/level47/behaviors.json": "f4657a6004548368f8446f613737931ae1df2e2e9e3e7abcb0f214ddfc973416",
+    "assets/original/level48/behaviors.json": "7d266db0a4e92cf57d02134a88fd6cc97c95ceec9a9046fa1a46d203dfc2bd0b",
+    "assets/original/level49/behaviors.json": "e75b86181f5ae315d18ffe8b9504ead819310d25811c3423f505b0275df6e97e",
+    "assets/original/level5/behaviors.json": "da48b27a18fbe332b3ca9ae1e49c6d4d7a236d7ccea334df1e9a76865dc19bca",
+    "assets/original/level50/behaviors.json": "dde865995d51174ab4b01daa1a1d16346286cbfdf862880c71e6bc9c31ddfc12",
+    "assets/original/level51/behaviors.json": "467ed73a9ae918ba2729ff509bda7111a064f41b3317f854ee61ef6c31503658",
+    "assets/original/level52/behaviors.json": "5921aa7017702494dedffcdecc1256fd3d10f14940bdbe2013b1d51f6af928b3",
+    "assets/original/level53/behaviors.json": "26098d4e6fb0622e932df5c917f9878c151a2f5f2e0691674bd7f0f74e25a856",
+    "assets/original/level54/behaviors.json": "66cdf8c706992741c8ceea4f8e978fc1f0a378d9b6c13c750f8fd92b903c346f",
+    "assets/original/level55/behaviors.json": "5273fe7f2abdbbe6e9c20695895b19eed7643a2aa69de1e0108e696d5e139bb6",
+    "assets/original/level56/behaviors.json": "55ec5c9e23288d3d8de8b8c22c5f4c22db657900de3b0edb658f000252684f36",
+    "assets/original/level57/behaviors.json": "adea4331451bf8a0cdae83bbe1575c53b7bfb91e67ebf84ab0604cab51e4c2f4",
+    "assets/original/level58/behaviors.json": "f46d424b9fcdcd52042616be0cae507edd0dc6a1e366c18e4f6f8eac61fd354a",
+    "assets/original/level59/behaviors.json": "9640850283a9f9c03084ec04d92d5a4d53307fb7fcc2513c60e2fbadfde86ca3",
+    "assets/original/level6/behaviors.json": "066bb532f0008241e43e805df9d682e33273e9e4904a2b994d9154ae954f87a7",
+    "assets/original/level60/behaviors.json": "12184a1f125eedae9d6f133715e7bda91fb2e515cc1f6b86352acc12c25b5361",
+    "assets/original/level7/behaviors.json": "a4b127bb41446c851ca425affb2b43d9cf9e69dcb941407e35bf1f1b3ac3d7b7",
+    "assets/original/level8/behaviors.json": "04beb8a59d1d34c06cbb3701cbaf603816058a115cf66e54de38eae253881b29",
+    "assets/original/level9/behaviors.json": "96bf47cc3b28b2a10f999a74ea7f6df77c1047a77d0e81557f60bb4db1bac6ad",
+    "assets/original/navigation/level10.json": "41070a731b648a9314e4cab47d0d055beee4db0b7d3af49e726d418c1dfe032f",
+    "assets/original/navigation/level11.json": "6fae806f0faec31899df6af527435b539a40fdc2c075fa20bcc4e308549209a0",
+    "assets/original/navigation/level12.json": "59e539dbb55921581723c298fef5bacba93bd098d73f45ac40ecbd9a5205a4c3",
+    "assets/original/navigation/level13.json": "ad2ca14784dfc47c9b7f36d14b611ea0733c91c7652f2a7f86feba8be1593d92",
+    "assets/original/navigation/level14.json": "617bf8f25563c6b263cfb4beedacc9925fb1758d7565759733868e5868ad4a69",
+    "assets/original/navigation/level15.json": "84f725099cf2e13b959322110858fcd0f89bbca269214acfb30e7be26a1121e6",
+    "assets/original/navigation/level16.json": "40450481fbd3b1bf392a19c66211851cb29959823159c75fc7fc04e721a0d890",
+    "assets/original/navigation/level17.json": "c9a292e814ce0eb97c1a0a652f4f3e9d9443da107cf69abcff112030f340732a",
+    "assets/original/navigation/level18.json": "7db48cfec2ba5f3b986e7abac415a873297473fe9da310cd8f49490b8bf4057a",
+    "assets/original/navigation/level19.json": "eb27d99d0c891d233b86f450e13a736bd38aade6a0c47b8c1082de389c6e7059",
+    "assets/original/navigation/level2.json": "07adc25618f9f6a4bd53aa7bbb8c2d91f49ad6b266f5439667a845ee7a6c85d3",
+    "assets/original/navigation/level20.json": "6217b71357e7f2ab2635dd0e50254432b2c136ca2f1dc67dbe9f6ec2c174cc23",
+    "assets/original/navigation/level21.json": "67ead3f1e2361a560b204eb6a28cc16008e1dad319439ab5d3c490b1b6dbae01",
+    "assets/original/navigation/level22.json": "2aeae135ec3f915da3cdc1ec5fcea3af52d246952aa43c55514b02bb7d690c48",
+    "assets/original/navigation/level23.json": "6aae7019b8e46b5fd6a281d65850d1fb144670841bee12bf2829b868edb72358",
+    "assets/original/navigation/level24.json": "42451f9745e60ed55d35c995028b42d4ea83eb007939d30b00c2e511155dc4b6",
+    "assets/original/navigation/level25.json": "a06df189c8a6571320311387182c8f5abcb54736cf93756407b3cb5b03a5bab0",
+    "assets/original/navigation/level26.json": "41377eff7cb17250f982be935ee80b17113e18dd972a44438ce3f15fbc7f9c22",
+    "assets/original/navigation/level27.json": "c715d5c6d5b6e352d89329c4c853da018488d39968ab118cc2380e3f8dff925d",
+    "assets/original/navigation/level28.json": "916a262e8c014a7d17663a89fd20ee7382f0aefb00be1d85d1708e78d09a03ca",
+    "assets/original/navigation/level29.json": "98c4f9feaa46bacf13df6c3707f0ddbd40b543a005b197362e0e77cc2e2ebca1",
+    "assets/original/navigation/level3.json": "05c6624125ba7395b09bc82771c39a98d0981b9f697b12b891daa1b2dcb77060",
+    "assets/original/navigation/level30.json": "fc035b6ebdb7348c7e38038359589c0aaec1abe2bf0c04d3c9ebad7b3d7746b0",
+    "assets/original/navigation/level31.json": "773ef1a884ccc7417616347d7f7d07397a74a23198cfe092cef0e6331f0b1746",
+    "assets/original/navigation/level32.json": "fca6e403ffbc7f37b73dd316071b75e20cdb17e775cf358020cb2535009cca51",
+    "assets/original/navigation/level33.json": "65192688a7f1e597dc5aca979e04c561e59830dae1e7d8746e1db99c7284d361",
+    "assets/original/navigation/level34.json": "19c58085be5ab464e883dfee1414606095b66efc7f53fb01805aa5468ed7043c",
+    "assets/original/navigation/level35.json": "4dbb2464e2c3463fca60843777ef3d18ff4335197fff6e23676d07dbf28472b5",
+    "assets/original/navigation/level36.json": "bfc8158f4d41c2291fdbe4368ba41194fea44c3b84c3e8f1cf8abf388e4b1ac6",
+    "assets/original/navigation/level37.json": "e174d8da473e2dd074c6ac7cbe4e90911414ed5ab7171786c6b4e479beffaee1",
+    "assets/original/navigation/level38.json": "d6143798b5f115185c7d6ab91f74db969fc150c61d0fccc87045c4ef7adaaa61",
+    "assets/original/navigation/level39.json": "c17d47a9df6a944217236cd5b0b2ff6f6e261b7c85ef695d79b4c8c178a505f2",
+    "assets/original/navigation/level4.json": "7c4157f54d09605861f5626e1fc874af75b30a0a76421f053425697c7cda47ba",
+    "assets/original/navigation/level40.json": "5d82db750a573fbbd61ecabb1034fc4d5a0b576402208d60fdf701675c322fc6",
+    "assets/original/navigation/level41.json": "9243685248e0316a2017721e744886c98c677715544b49992d8fb85370b208a7",
+    "assets/original/navigation/level42.json": "6c8e8bf2d3825867070c9d64755c1cb4108240289a5dbace7321bce97954565e",
+    "assets/original/navigation/level43.json": "1f4457d10b763e9dc7193f7bfca20c9439095ec01d54c1bc81333efde2cfa3b5",
+    "assets/original/navigation/level44.json": "e8a339609c78ddcc99cb8e4951e06049a974b98784bc25753b5484b6391c8483",
+    "assets/original/navigation/level45.json": "4e5a43856b8a426207ac5d7a5c20b89b42e490491cb39125781cb832a18a93c2",
+    "assets/original/navigation/level46.json": "78e7b5ae2546a2b795130239ff836b30cda542a41e73f1aea2aac489c8434525",
+    "assets/original/navigation/level47.json": "bc0cbde91f43058e1aab3ad1fd3aef5054dc546eaa5a4b796723b85936c6cae4",
+    "assets/original/navigation/level48.json": "f2ec3b6d68b7d3ccb55d80aebb40af494f30fbc5b0d35364725a871a1310512e",
+    "assets/original/navigation/level49.json": "37995a842c08d6cc4bdb2df2768714442012fe448833e3c5409e561d0cde11bd",
+    "assets/original/navigation/level5.json": "900e766c446ee7e1737e74351825644f50d91564358c3e307540672c75160550",
+    "assets/original/navigation/level50.json": "e76c7da44e54ff36bf17d4f7569516028757859a517ea7a9e8800f69e024bf5b",
+    "assets/original/navigation/level51.json": "00fbb88a63adce76443a450daf9de8540d0276af9d1884f8d90e5fb0f887952e",
+    "assets/original/navigation/level52.json": "fc78ff18b2770e03b1e625afcf31d66c4ce91f1007df8688a1944e991b029aa6",
+    "assets/original/navigation/level53.json": "2da9bc7250f7d6d920381696fdf870c5c8eb15006691dec5b37d81f4fe3df855",
+    "assets/original/navigation/level54.json": "a5d6411984ea4c6f6073f76161e2dce3214e78d20481c220208386ff39d905b4",
+    "assets/original/navigation/level55.json": "e8943a9be15b3b897aa66255f7a3da87cad79f0a105c5039b62eb1dfaa819b19",
+    "assets/original/navigation/level56.json": "ff084594982d7f54ec367c53a64a77b2330af52b3d027757f70934b6b66e0c37",
+    "assets/original/navigation/level57.json": "8eb723c91d980c4f5676affcd4c95fc9f505f69ea04054d82c851d1fc1b1c24a",
+    "assets/original/navigation/level58.json": "29634187b0369eccd770567e4f00514d44d189ecfe7ad166bf910e77f1fdeb53",
+    "assets/original/navigation/level59.json": "14c26119967835d1fd422aca5a3a55b5d10657ded3f6d874760ca3ff7ff17ac4",
+    "assets/original/navigation/level6.json": "ffa64e7ce89b7a8d4791ce4cfc24d9d6a6523f9eefa7cba8c8de3aa6d380ed37",
+    "assets/original/navigation/level60.json": "31df66ab60ac22037da5636bd0a67dcdd4dae25b17b48f5f694c230c8c3fcbfc",
+    "assets/original/navigation/level7.json": "183cdc08ecd72b4edc589f146704e0bfc41de948db06cb9646cb890eb63b2b33",
+    "assets/original/navigation/level8.json": "f17d76d6d6de215f3a156cf711b8ba1d589811d6c1e568940945e621de2ec517",
+    "assets/original/navigation/level9.json": "9052908e9cfc70edca5aafa0b782d30fbe7eb9976f07b435176bb11965f5b3a5",
+    "core/original_actor_bounds.gd": "acd08859257c379930a7ee5faacfd8ecdfbd00d3520b27ee90baa2425fd4e8a5",
+    "core/original_actor_elements.gd": "40fdc6f30b0150d4a97082d4b7a0e45c8ffba8dab90e32c30cc98c5f74347067",
+    "core/original_actor_environment.gd": "4fff615a4c814fb26c9d2002e0fbdba533bce37ea294bd3e6664a1cad6a204be",
+    "core/original_actor_motion.gd": "cf0a9e3550825eddbb5f19482092b146a8390945989305981076d303752787b4",
+    "core/original_boundary_preview.gd": "7f43b7dc5e9b097b4decc6c5881427632d933aabbd1232102d582441282bfccd",
+    "core/original_camera_rig.gd": "080726c67ca7389fe16f679772cebbe1f12932f7e7395c97ab740c32ca62ab97",
+    "core/original_cell_grid.gd": "efb014740e0b893b3c3adc03e6c6f755c668f8f09d4b15cfae37a82d5e3ee773",
+    "core/original_cell_preview.gd": "3f142fa2ae75e95d5aa7c14b57166794bb4d2949b8582345889a697c9045ccf2",
+    "core/original_character_preview.gd": "ed0e6b925df00baf5b4c6d506f230aefa99de8c367b8e918e19f2cc87404353e",
+    "core/original_collision_world.gd": "6f184c40ac5c97eb0b07b947c9cfb1d4d6318212ccaa9d91ff287e601d0a6145",
+    "core/original_combat_world.gd": "b79b71a723fd3a373894e12a2d7e70f8da0a30f7be632bc7d348e007594bea51",
+    "core/original_decoy_ai.gd": "5eb6f84f9e15d5bc5eae28596161fea227e4585b3d19637beab451106a05948d",
+    "core/original_decoy_elements.gd": "cb7136541cc58cc9cc3d7f26aea995bc929d6671687679ee6025acae66e75768",
+    "core/original_decoy_input.gd": "996a9e1f2db5d2e67a298ac6ef8208f806b8f9585395fcaffb0e10d64d66ec43",
+    "core/original_decoy_motion.gd": "d682669ff63ff7ffc9a5b24ad1b0a9d64890f1181368691f73ac3d78e7a0dfdf",
+    "core/original_decoy_world.gd": "f33e6965cd255d108acce022f9d47247e33c1f3f9a0908b393432d08a504af8e",
+    "core/original_disc_motion.gd": "63187f0ee15e273703360a1e441c135b101459399c48314259a50e46f4bb7900",
+    "core/original_disc_preview.gd": "a28198310984cf8535d834c3e405299c162fa48de76e1e857b72bbe149ee9957",
+    "core/original_disc_trail.gd": "3d232599209f911d87709f648543754267218b7d9763b2b22f00785316b0392d",
+    "core/original_disguise.gd": "4f11663f700ed6375f921272ccdce6c570b38e10c095ade5d7f287482b921b03",
+    "core/original_disguise_preview.gd": "ea2826322ae87d1de460e993fb579ebbc4398b2e9a997a47ba460e4ea1c07634",
+    "core/original_explosion.gd": "21509488f9b5e85d6b36c1ba2d3442aa00c9da6836239326d337688433d8011f",
+    "core/original_explosion_preview.gd": "4600e1948cee761036c9d8d32137eb2d14748c1bb85393e1401c8ad91722fbea",
+    "core/original_ffa_round.gd": "7b2855274fc9ea7182c0e09fdaab88d7f70ddbda28ba8dd0ba1c8b9edac83c0f",
+    "core/original_ffa_score.gd": "41db8c61d10977797c02de09d139a46d693cfcba55208b31c398b5d9e119993d",
+    "core/original_grenade.gd": "6b5ddd63e69302cc43b6d4d62649717ec79f47d3c91cd50f857571734bc38ad6",
+    "core/original_ground_queries.gd": "225eeaf3d44f3735b84be90668e5d7512e74ddaa11a986e5918e9bb54ca62506",
+    "core/original_level3_behaviors.gd": "0a8ddc302d30fa97559a104ac3fe21fbf7425dd322a9c9b0e8b5513131b9dcaa",
+    "core/original_level_boundary.gd": "280b19da2259369f87d6b71535da9e8b5916036365035fe5d8905fe1f2c316e3",
+    "core/original_moving_floors.gd": "14d523b1a6d305c7b3ed245f057090245b3081f54a38da9a66b27d3f090b7dd0",
+    "core/original_navigation.gd": "b0e18da2f1e901b0b4f9ce2d47e20d9631ab65132c3b54f7c5cde6c45e2d28a2",
+    "core/original_navigation_world.gd": "56c6d9122b5099095539e05c63d5848d47de6c51e3a56799019997df50caeb5c",
+    "core/original_player_ai.gd": "50f9f0b4b0caec0c704d4bebccc116aab60653b94e26fe7b7b0832934bcc368b",
+    "core/original_player_ai_actions.gd": "da917b0ac0088f2b5d5d8a9fc505d3ec0735800609170ee0e81cbff906426284",
+    "core/original_player_ai_buttons.gd": "5596237593a95a6a60f2918b1bdaf7f0238829e860e23079226ac2b7fad680a2",
+    "core/original_player_ai_policy.gd": "8825b86830df29e207652be1d4e7a1e74e97cfa4cc19c4c841c8b37697a07184",
+    "core/original_player_ai_targeting.gd": "d10988c683234488b6819681a42fc83f96ccba29c732d6fe67d5251bb69a64f7",
+    "core/original_player_ai_world.gd": "298a6e089872e2a2b13a6ce02732b20f03ecec8cadaec7bfaffc51c11ef75fcb",
+    "core/original_player_input.gd": "8df6d7457ed56a740e39dfa90d563016dbfc563d428accf51d74d3ce429788c0",
+    "core/original_player_powers.gd": "ec6edc2c504d062d531ba7939ea5ddca8e28a5e57f10e2e6de000c1844f17d65",
+    "core/original_player_weapons.gd": "469face003d89c464a9a535df060108a58726060ddee53f935f7f107b7cb143b",
+    "core/original_powerup_preview.gd": "67282268e3ec46f6467d4500f16d82c1cd47797299e3857560dc2227be456b43",
+    "core/original_powerup_world.gd": "96fdd87907349bd55693face2d4e759886ff43482de2750a0aa9ae6548915e48",
+    "core/original_scene_materials.gd": "dd8255608c4d1daa3dea08eb2b2f50c187e7e4336f17257826f691d07f5bec04",
+    "core/original_system_random.gd": "adc47354646a125d7f8d69b2f0e7a2b718d569303d22e50cfa41d980d02639f6",
+    "core/original_teleport.gd": "6af9be272bdf4046817b409e6b3fc9575c5fcd894a66790cd7f95a2696cb1f47",
+    "core/original_timekeeper.gd": "627e8b52ae78f88ff162851d5d9269bd3aabd6992caeec6de2e1ede710fc13ca",
+    "core/original_transform.gd": "63343baf053e5ed373ff4be33e331cc6d738262268a022eaad70ac382aa792d2",
+    "core/original_unity_random.gd": "fc2ce8b28c5dadb129286ed61634e2b93956bec22b98d6b811d95ae60af8acb2",
+    "ffa_setup.gd": "c6463eb561df16c5195714717e24be001fc179d54d9fa1808a599f1e25fa06e7",
+    "ffa_shell.gd": "9debf084f08a9db4bd982da215813ff17c973739451adba41bbc8d01cbdbd609",
+    "local_controllers.gd": "49f41dbf1ebbaa726e60362252e255822d8cb7b6411e0474706128145dd2cfd4",
+    "main.gd": "2c3798a7031bfcfa374ec750e256b0de1881fe473794db3bafa5c0aaf12119c7",
+    "original_audio.gd": "16da9b923bad24499f876b32e499152ec7f5145b1aaf729416cddf98418ce7ea",
+    "tests/duel_integration_test.gd": "9188991405fa0f7fa767de0e79cf5ce4e3042ca7910e2275cd4d3b2a8051c1b1",
+    "tests/ffa_shell_test.gd": "28341982eff05a130c545ab38706ae9ed713b065c8af211cac5e2ff28a851d24",
+    "tests/level3_behaviors_test.gd": "31f599fd4c79aef76881caa16104aa657aec2bdd477c56d7e6be79913616a9e0",
+    "tests/map_behavior_adapter_test.gd": "b255ba840046930167020bb122164d93c1d8c94eeb815ee1d4f6ff1de4c4fedc",
+    "tests/moving_floor_native_test.gd": "7db03f4f0ab64cd58afbec582d0c7e9b0effb29ab1c2fd91e368b3bfd9adfca9",
+    "tests/moving_floor_scene_test.gd": "d4270fe1ac7acd5588c645c11cd604f592a77cc4304ee30e707ffd23a2331979",
+    "tests/navigation_platform_ai_test.gd": "957ffa6204d648c66e3eb28fd783d5a780ec49720c1446d02d58d7759e1054ce",
+    "tests/navigation_scene_test.gd": "af1d7588c9d1fc2ec30b16f1f0c64fb12ad5b5bcb33fc950d306f00407eab8d5",
+    "tests/navigation_selection_test.gd": "731e64a58d6b9d4a393f6ce06c35f0416f1aa83ad0c615b59ffb22a647600398",
+    "tests/player_ai_game_test.gd": "e0f45759163899b6ceebb166e7e6a73b33af82aaeef136aba38ed2b8df41245a",
+    "tests/reactive_floor_game_loop_test.gd": "d6f0fd5196c438271e7eb1d0c0c90fe803ea02ebb53f5cfbe088b7a0d3336013",
+    "tests/reactive_floor_native_test.gd": "b31539394a9461df6166efff8c0ec41b64674b3b272dea062ea9a23e3acfdccc",
+    "tests/reactive_floor_scene_test.gd": "ea1c1f9a8b519541945fdc4dcad07f05fd138e4e8c2067ed88ee86a9807d6c36"
   },
-  "note": "Runtime test hashes refer to the Worker and build files; the live verification script is a separate check.",
-  "duration_ms": 808.512167
+  "generated_at": "2026-10-28T02:05:23.021025+00:00",
+  "process_limit": 1,
+  "per_test_timeout_seconds": 45,
+  "scope": "Real-scene native Godot tests; no original Unity runtime, browser, visual or frame-parity claim.",
+  "targeted_revalidation": {
+    "generated_at": "2026-10-28T02:06:06.249782+00:00",
+    "prior_report_sha256": "55b93c408edd79d35063b98aeb38c2db74dc61ffcf21db0b20fe753e654412fa",
+    "changed_sources": [
+      "tests/player_ai_game_test.gd"
+    ],
+    "unchanged_implementation_verified": true,
+    "test": "player_ai_game_test",
+    "map": "level2",
+    "log_sha256": "871341f7f814ffeb15535450fd504fb499c86804200f7a70dd20a72d3c055824",
+    "reason": "Test harness retained its final AI loop variable; production disposal independently verified with five active bots, then full 4-difficulty match test rerun."
+  }
 }

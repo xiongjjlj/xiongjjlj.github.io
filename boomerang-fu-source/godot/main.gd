@@ -92,8 +92,10 @@ func _ready() -> void:
 	var scene_boundary_path := ROOT + "boundary-inputs-" + scene_key + ".json"
 	boundary_inputs=read_json(scene_boundary_path if FileAccess.file_exists(scene_boundary_path) else ROOT+"boundary-inputs.json")
 	decoys.inputs=read_json(ROOT+"decoy-inputs.json")
-	decoys.navigation=OriginalNavigation.new()
-	decoys.navigation.initialize(read_json(ROOT+"navigation-enclosed.json"))
+	var navigation_world := OriginalNavigationWorld.new()
+	decoys.navigation=navigation_world
+	var navigation_path := ROOT+"navigation/"+scene_key+".json"
+	decoys.navigation.initialize(read_json(navigation_path))
 	for item in JSON.parse_string(FileAccess.get_file_as_string(ROOT+"explosion-inputs.json")):
 		if item.script == "Explosion": explosion_parameters[item.name] = item.data
 	load_original_scene(active_scene.file)
@@ -104,6 +106,7 @@ func _ready() -> void:
 	var behavior_path := ROOT + scene_key + "/behaviors.json"
 	if FileAccess.file_exists(behavior_path):
 		level_behaviors.initialize(read_json(behavior_path), nodes, collision_world, decoys.rng)
+	navigation_world.bind_moving_floors(level_behaviors.moving_floors)
 	ground_queries.world = collision_world
 	ground_queries.water_mask = 16 # Original serialized Water layer (index 4).
 	create_characters()
@@ -642,11 +645,7 @@ func load_original_scene(path: String) -> void:
 			transforms[parent_id].node.add_child(node)
 		else:
 			add_child(node)
-		var q: Dictionary = data.m_LocalRotation
-		node.quaternion = Quaternion(-q.x, -q.y, q.z, q.w)
-		node.position = unity_vector(data.m_LocalPosition)
-		var s: Dictionary = data.m_LocalScale
-		node.scale = Vector3(s.x, s.y, s.z)
+		node.transform = preload("res://core/original_transform.gd").from_source(data)
 	for object in scene.nodes:
 		var node: Node3D = nodes[int(object.id)]
 		if object.has("mesh") and object.mesh.resource != null and object.mesh.enabled:

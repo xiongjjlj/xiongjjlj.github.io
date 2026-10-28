@@ -23,7 +23,7 @@ func initialize(sidecar: Dictionary, nodes: Dictionary, collision: OriginalColli
 		for p in data.get("positions" if reactive else "positionRotations", []): points.append(Vector3(p.x, p.y, p.z))
 		if points.size() < 2: continue
 		var floor := {"component_id":int(record.component_id), "game_object":int(record.game_object), "node":node,
-			"points":points, "initial":node.transform, "reactive":reactive,
+			"points":points, "initial":node.transform, "initial_global":node.global_transform, "reactive":reactive,
 			"initial_state":int(data.get("movementState",0)), "is_spring":bool(data.get("isSpring",0)),
 			"pre_duration":float(data.get("preMoveDur",0.35)), "pause_duration":float(data.get("springPauseDur",0.25)), "windback_duration":float(data.get("springWindBackDur",2.0)), "initial_index":int(data.posIndex),
 			"initial_percent":float(data.movePercent), "use_rotations":bool(data.useRotations),
@@ -150,6 +150,51 @@ func carry(f: Dictionary, position: Vector2, z: float) -> Vector2:
 
 func rotation_delta(f: Dictionary) -> float:
 	return wrapf(f.node.global_transform.basis.get_euler().z-f.previous_transform.basis.get_euler().z,-PI,PI)
+
+static func path_point(f: Dictionary, point: Vector3, inverse := false) -> Vector3:
+	if f.is_empty(): return point
+	# MovingFloorReactive keeps rotating-platform paths in world coordinates
+	# and queues obstacle rescans rather than transforming the waypoints.
+	if f.get("reactive",false) and f.use_rotations: return point
+	if not f.has("path_transform") or f.path_transform!=f.node.global_transform:
+		refresh_path_transform(f)
+	if f.path_translation_only:
+		return point-f.path_translation if inverse else point+f.path_translation
+	return OriginalNavigation.transform_point(f.path_inverse if inverse else f.path_matrix,point)
+
+static func refresh_path_transform(f: Dictionary) -> void:
+	# Original GraphTransform is current.localToWorld * original.worldToLocal.
+	# Graph coordinates retain source Z, unlike imported Godot scene nodes.
+	var original: Transform3D = f.initial_global
+	# All 30 original platform hierarchies have unit scale. Unity's Transform
+	# builds their inverse from the rotation transpose, retaining quaternion
+	# roundoff; a mathematical affine inverse would remove that roundoff.
+	var initial_inverse := original.basis.transposed()
+	var initial_matrix := source_matrix(Transform3D(initial_inverse,Vector3.ZERO))
+	var origin := Vector3(original.origin.x,original.origin.y,-original.origin.z)
+	var translation := -OriginalNavigation.transform_point(initial_matrix,origin)
+	initial_matrix[3]=translation.x; initial_matrix[7]=translation.y; initial_matrix[11]=translation.z
+	var current := source_matrix(f.node.global_transform)
+	var matrix: Array = []; matrix.resize(16)
+	for row in 4:
+		for column in 4:
+			var sum := 0.0
+			for k in 4: sum += current[row*4+k]*initial_matrix[k*4+column]
+			matrix[row*4+column]=C.f32(sum)
+	var transform := godot_matrix(matrix)
+	# GraphTransform.MatrixIsTranslational uses Unity's approximate Vector4 ==.
+	# It ignores tiny basis noise and uses addition/subtraction, not inversion.
+	f.path_translation_only=(transform.basis.x-Vector3.RIGHT).length_squared()<1e-10 and (transform.basis.y-Vector3.UP).length_squared()<1e-10 and (transform.basis.z-Vector3.BACK).length_squared()<1e-10
+	f.path_transform=f.node.global_transform
+	f.path_matrix=matrix
+	f.path_inverse=source_matrix(transform.affine_inverse())
+	f.path_translation=Vector3(transform.origin.x,transform.origin.y,-transform.origin.z)
+
+static func source_matrix(t: Transform3D) -> Array:
+	return [t.basis.x.x,t.basis.y.x,-t.basis.z.x,t.origin.x,t.basis.x.y,t.basis.y.y,-t.basis.z.y,t.origin.y,-t.basis.x.z,-t.basis.y.z,t.basis.z.z,-t.origin.z,0.0,0.0,0.0,1.0]
+
+static func godot_matrix(m: Array) -> Transform3D:
+	return Transform3D(Basis(Vector3(m[0],m[4],-m[8]),Vector3(m[1],m[5],-m[9]),Vector3(-m[2],-m[6],m[10])),Vector3(m[3],m[7],-m[11]))
 
 func update_actor(environment: OriginalActorEnvironment) -> void:
 	var actor := environment.actor

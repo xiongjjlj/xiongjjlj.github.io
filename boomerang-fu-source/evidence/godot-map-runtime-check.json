@@ -394,15 +394,15 @@
               "passed": true
             },
             {
-              "details": 4.78556648886297e-05,
+              "details": 6.11858413321897e-05,
               "name": "actor remains at its local platform position",
               "passed": true
             },
             {
               "details": {
-                "actor": "(-20.36639, -2.392202)",
+                "actor": "(-20.3665, -2.39222)",
                 "actor_z": 0.0,
-                "disc": "(-20.36639, -2.392202)",
+                "disc": "(-20.3665, -2.39222)",
                 "disc_z": 0.0,
                 "error": 0.0,
                 "floor": 2177
@@ -658,15 +658,15 @@
               "passed": true
             },
             {
-              "details": 5.20277208124753e-05,
+              "details": 5.88270959269721e-05,
               "name": "actor remains at its local platform position",
               "passed": true
             },
             {
               "details": {
-                "actor": "(19.08084, -5.296158)",
+                "actor": "(19.08084, -5.296168)",
                 "actor_z": 0.0,
-                "disc": "(19.08084, -5.296158)",
+                "disc": "(19.08084, -5.296168)",
                 "disc_z": 0.0,
                 "error": 0.0,
                 "floor": 1370
@@ -922,15 +922,15 @@
               "passed": true
             },
             {
-              "details": 4.04159945901483e-05,
+              "details": 3.39091238856781e-05,
               "name": "actor remains at its local platform position",
               "passed": true
             },
             {
               "details": {
-                "actor": "(-27.37262, 9.555183)",
+                "actor": "(-27.37259, 9.555216)",
                 "actor_z": 0.0,
-                "disc": "(-27.37262, 9.555183)",
+                "disc": "(-27.37259, 9.555216)",
                 "disc_z": 0.0,
                 "error": 0.0,
                 "floor": 2173
@@ -2127,15 +2127,15 @@
               "passed": true
             },
             {
-              "details": 4.9920090532396e-05,
+              "details": 9.93150024442002e-05,
               "name": "actor remains at its local platform position",
               "passed": true
             },
             {
               "details": {
-                "actor": "(-17.02703, -0.056515)",
+                "actor": "(-17.02718, -0.056539)",
                 "actor_z": 0.0,
-                "disc": "(-17.02703, -0.056515)",
+                "disc": "(-17.02718, -0.056539)",
                 "disc_z": 0.0,
                 "error": 0.0,
                 "floor": 2678
@@ -2705,7 +2705,7 @@
               "passed": true
             },
             {
-              "details": 0.000204337935429066,
+              "details": 0.000347322114976123,
               "name": "full game loop preserves platform-local rider position",
               "passed": true
             },
@@ -2730,6 +2730,574 @@
           ],
           "passed": true,
           "scope": "Full Godot game loop on actual Big Raft: central rider round trip and fixed-roller obstruction. Original full-scene callback ordering is not established by this test."
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level24",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 45
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level24",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level26",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 27
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level26",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level27",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 27
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level27",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level29",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 18
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level29",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level44",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 18
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level44",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level45",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 45
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level45",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level50",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 27
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level50",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level40",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 18
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level40",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level41",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 9
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level41",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level46",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 27
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level46",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level51",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 27
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level51",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level52",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 45
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level52",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_scene_test",
+      "map": "level53",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": 0.0,
+              "name": "imported source platform transforms",
+              "passed": true
+            },
+            {
+              "details": {
+                "differences": [],
+                "queries": 45
+              },
+              "name": "original graph selection in imported scene",
+              "passed": true
+            }
+          ],
+          "map": "level53",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "navigation_platform_ai_test",
+      "map": "level40",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "real map has a traversable platform path",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "live bot binds returned path to its platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "failed replan reports unreachable start",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_error": 3.814697265625e-06,
+                "travel": 13.9200687408447
+              },
+              "name": "retained waypoint follows platform without recalculating",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "failed replan retains source coordinates and platform binding",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores retained waypoint pose",
+              "passed": true
+            }
+          ],
+          "map": "level40",
+          "passed": true,
+          "scope": "Actual bot path provider and completion callback, moving platform waypoint retention, failed replan, round reset; not a full native match comparison."
+        }
+      ]
+    },
+    {
+      "test": "navigation_platform_ai_test",
+      "map": "level45",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": null,
+              "name": "real map has a traversable platform path",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "live bot binds returned path to its platform",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "failed replan reports unreachable start",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_error": 1.01852458556095e-06,
+                "travel": 9.49325084686279
+              },
+              "name": "retained waypoint follows platform without recalculating",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "failed replan retains source coordinates and platform binding",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores retained waypoint pose",
+              "passed": true
+            }
+          ],
+          "map": "level45",
+          "passed": true,
+          "scope": "Actual bot path provider and completion callback, moving platform waypoint retention, failed replan, round reset; not a full native match comparison."
+        }
+      ]
+    },
+    {
+      "test": "navigation_selection_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "differences": [],
+          "maps": 13,
+          "maximum_transform_error": 4.26496126237907e-06,
+          "passed": true,
+          "queries": 1134,
+          "scope": "Original native platform transform methods and unchanged graph selection, sampled initial/translated/rotated poses; runtime obstacle rescan is separate.",
+          "tolerance": 5e-05,
+          "transform_points": 540
+        }
+      ]
+    },
+    {
+      "test": "player_ai_game_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "cases": [
+            {
+              "commands": 4,
+              "deaths_at_round_end": 1,
+              "difficulty": 0,
+              "distance": 210.201049684576,
+              "frames": 1200,
+              "records": 2,
+              "retained_old_ai": 2,
+              "rounds": 1,
+              "states": [
+                0,
+                2,
+                4,
+                8
+              ]
+            },
+            {
+              "commands": 18,
+              "deaths_at_round_end": 2,
+              "difficulty": 1,
+              "distance": 205.876004363003,
+              "frames": 1200,
+              "records": 6,
+              "retained_old_ai": 2,
+              "rounds": 2,
+              "states": [
+                0,
+                4,
+                2,
+                8,
+                3,
+                5
+              ]
+            },
+            {
+              "commands": 59,
+              "deaths_at_round_end": 4,
+              "difficulty": 2,
+              "distance": 144.227632309507,
+              "frames": 1200,
+              "records": 3,
+              "retained_old_ai": 2,
+              "rounds": 4,
+              "states": [
+                0,
+                2,
+                8,
+                4
+              ]
+            },
+            {
+              "commands": 174,
+              "deaths_at_round_end": 3,
+              "difficulty": 3,
+              "distance": 171.483854799084,
+              "frames": 1200,
+              "records": 4,
+              "retained_old_ai": 2,
+              "rounds": 3,
+              "states": [
+                0,
+                2,
+                3,
+                4,
+                1,
+                8
+              ]
+            }
+          ],
+          "failures": [],
+          "mixed_bots": 5,
+          "mixed_players": 6,
+          "native_full_match_parity": false,
+          "passed": true,
+          "retained_after_dispose": 0
         }
       ]
     },
@@ -3154,6 +3722,65 @@
     "assets/original/level7/behaviors.json": "a4b127bb41446c851ca425affb2b43d9cf9e69dcb941407e35bf1f1b3ac3d7b7",
     "assets/original/level8/behaviors.json": "04beb8a59d1d34c06cbb3701cbaf603816058a115cf66e54de38eae253881b29",
     "assets/original/level9/behaviors.json": "96bf47cc3b28b2a10f999a74ea7f6df77c1047a77d0e81557f60bb4db1bac6ad",
+    "assets/original/navigation/level10.json": "41070a731b648a9314e4cab47d0d055beee4db0b7d3af49e726d418c1dfe032f",
+    "assets/original/navigation/level11.json": "6fae806f0faec31899df6af527435b539a40fdc2c075fa20bcc4e308549209a0",
+    "assets/original/navigation/level12.json": "59e539dbb55921581723c298fef5bacba93bd098d73f45ac40ecbd9a5205a4c3",
+    "assets/original/navigation/level13.json": "ad2ca14784dfc47c9b7f36d14b611ea0733c91c7652f2a7f86feba8be1593d92",
+    "assets/original/navigation/level14.json": "617bf8f25563c6b263cfb4beedacc9925fb1758d7565759733868e5868ad4a69",
+    "assets/original/navigation/level15.json": "84f725099cf2e13b959322110858fcd0f89bbca269214acfb30e7be26a1121e6",
+    "assets/original/navigation/level16.json": "40450481fbd3b1bf392a19c66211851cb29959823159c75fc7fc04e721a0d890",
+    "assets/original/navigation/level17.json": "c9a292e814ce0eb97c1a0a652f4f3e9d9443da107cf69abcff112030f340732a",
+    "assets/original/navigation/level18.json": "7db48cfec2ba5f3b986e7abac415a873297473fe9da310cd8f49490b8bf4057a",
+    "assets/original/navigation/level19.json": "eb27d99d0c891d233b86f450e13a736bd38aade6a0c47b8c1082de389c6e7059",
+    "assets/original/navigation/level2.json": "07adc25618f9f6a4bd53aa7bbb8c2d91f49ad6b266f5439667a845ee7a6c85d3",
+    "assets/original/navigation/level20.json": "6217b71357e7f2ab2635dd0e50254432b2c136ca2f1dc67dbe9f6ec2c174cc23",
+    "assets/original/navigation/level21.json": "67ead3f1e2361a560b204eb6a28cc16008e1dad319439ab5d3c490b1b6dbae01",
+    "assets/original/navigation/level22.json": "2aeae135ec3f915da3cdc1ec5fcea3af52d246952aa43c55514b02bb7d690c48",
+    "assets/original/navigation/level23.json": "6aae7019b8e46b5fd6a281d65850d1fb144670841bee12bf2829b868edb72358",
+    "assets/original/navigation/level24.json": "42451f9745e60ed55d35c995028b42d4ea83eb007939d30b00c2e511155dc4b6",
+    "assets/original/navigation/level25.json": "a06df189c8a6571320311387182c8f5abcb54736cf93756407b3cb5b03a5bab0",
+    "assets/original/navigation/level26.json": "41377eff7cb17250f982be935ee80b17113e18dd972a44438ce3f15fbc7f9c22",
+    "assets/original/navigation/level27.json": "c715d5c6d5b6e352d89329c4c853da018488d39968ab118cc2380e3f8dff925d",
+    "assets/original/navigation/level28.json": "916a262e8c014a7d17663a89fd20ee7382f0aefb00be1d85d1708e78d09a03ca",
+    "assets/original/navigation/level29.json": "98c4f9feaa46bacf13df6c3707f0ddbd40b543a005b197362e0e77cc2e2ebca1",
+    "assets/original/navigation/level3.json": "05c6624125ba7395b09bc82771c39a98d0981b9f697b12b891daa1b2dcb77060",
+    "assets/original/navigation/level30.json": "fc035b6ebdb7348c7e38038359589c0aaec1abe2bf0c04d3c9ebad7b3d7746b0",
+    "assets/original/navigation/level31.json": "773ef1a884ccc7417616347d7f7d07397a74a23198cfe092cef0e6331f0b1746",
+    "assets/original/navigation/level32.json": "fca6e403ffbc7f37b73dd316071b75e20cdb17e775cf358020cb2535009cca51",
+    "assets/original/navigation/level33.json": "65192688a7f1e597dc5aca979e04c561e59830dae1e7d8746e1db99c7284d361",
+    "assets/original/navigation/level34.json": "19c58085be5ab464e883dfee1414606095b66efc7f53fb01805aa5468ed7043c",
+    "assets/original/navigation/level35.json": "4dbb2464e2c3463fca60843777ef3d18ff4335197fff6e23676d07dbf28472b5",
+    "assets/original/navigation/level36.json": "bfc8158f4d41c2291fdbe4368ba41194fea44c3b84c3e8f1cf8abf388e4b1ac6",
+    "assets/original/navigation/level37.json": "e174d8da473e2dd074c6ac7cbe4e90911414ed5ab7171786c6b4e479beffaee1",
+    "assets/original/navigation/level38.json": "d6143798b5f115185c7d6ab91f74db969fc150c61d0fccc87045c4ef7adaaa61",
+    "assets/original/navigation/level39.json": "c17d47a9df6a944217236cd5b0b2ff6f6e261b7c85ef695d79b4c8c178a505f2",
+    "assets/original/navigation/level4.json": "7c4157f54d09605861f5626e1fc874af75b30a0a76421f053425697c7cda47ba",
+    "assets/original/navigation/level40.json": "5d82db750a573fbbd61ecabb1034fc4d5a0b576402208d60fdf701675c322fc6",
+    "assets/original/navigation/level41.json": "9243685248e0316a2017721e744886c98c677715544b49992d8fb85370b208a7",
+    "assets/original/navigation/level42.json": "6c8e8bf2d3825867070c9d64755c1cb4108240289a5dbace7321bce97954565e",
+    "assets/original/navigation/level43.json": "1f4457d10b763e9dc7193f7bfca20c9439095ec01d54c1bc81333efde2cfa3b5",
+    "assets/original/navigation/level44.json": "e8a339609c78ddcc99cb8e4951e06049a974b98784bc25753b5484b6391c8483",
+    "assets/original/navigation/level45.json": "4e5a43856b8a426207ac5d7a5c20b89b42e490491cb39125781cb832a18a93c2",
+    "assets/original/navigation/level46.json": "78e7b5ae2546a2b795130239ff836b30cda542a41e73f1aea2aac489c8434525",
+    "assets/original/navigation/level47.json": "bc0cbde91f43058e1aab3ad1fd3aef5054dc546eaa5a4b796723b85936c6cae4",
+    "assets/original/navigation/level48.json": "f2ec3b6d68b7d3ccb55d80aebb40af494f30fbc5b0d35364725a871a1310512e",
+    "assets/original/navigation/level49.json": "37995a842c08d6cc4bdb2df2768714442012fe448833e3c5409e561d0cde11bd",
+    "assets/original/navigation/level5.json": "900e766c446ee7e1737e74351825644f50d91564358c3e307540672c75160550",
+    "assets/original/navigation/level50.json": "e76c7da44e54ff36bf17d4f7569516028757859a517ea7a9e8800f69e024bf5b",
+    "assets/original/navigation/level51.json": "00fbb88a63adce76443a450daf9de8540d0276af9d1884f8d90e5fb0f887952e",
+    "assets/original/navigation/level52.json": "fc78ff18b2770e03b1e625afcf31d66c4ce91f1007df8688a1944e991b029aa6",
+    "assets/original/navigation/level53.json": "2da9bc7250f7d6d920381696fdf870c5c8eb15006691dec5b37d81f4fe3df855",
+    "assets/original/navigation/level54.json": "a5d6411984ea4c6f6073f76161e2dce3214e78d20481c220208386ff39d905b4",
+    "assets/original/navigation/level55.json": "e8943a9be15b3b897aa66255f7a3da87cad79f0a105c5039b62eb1dfaa819b19",
+    "assets/original/navigation/level56.json": "ff084594982d7f54ec367c53a64a77b2330af52b3d027757f70934b6b66e0c37",
+    "assets/original/navigation/level57.json": "8eb723c91d980c4f5676affcd4c95fc9f505f69ea04054d82c851d1fc1b1c24a",
+    "assets/original/navigation/level58.json": "29634187b0369eccd770567e4f00514d44d189ecfe7ad166bf910e77f1fdeb53",
+    "assets/original/navigation/level59.json": "14c26119967835d1fd422aca5a3a55b5d10657ded3f6d874760ca3ff7ff17ac4",
+    "assets/original/navigation/level6.json": "ffa64e7ce89b7a8d4791ce4cfc24d9d6a6523f9eefa7cba8c8de3aa6d380ed37",
+    "assets/original/navigation/level60.json": "31df66ab60ac22037da5636bd0a67dcdd4dae25b17b48f5f694c230c8c3fcbfc",
+    "assets/original/navigation/level7.json": "183cdc08ecd72b4edc589f146704e0bfc41de948db06cb9646cb890eb63b2b33",
+    "assets/original/navigation/level8.json": "f17d76d6d6de215f3a156cf711b8ba1d589811d6c1e568940945e621de2ec517",
+    "assets/original/navigation/level9.json": "9052908e9cfc70edca5aafa0b782d30fbe7eb9976f07b435176bb11965f5b3a5",
     "core/original_actor_bounds.gd": "acd08859257c379930a7ee5faacfd8ecdfbd00d3520b27ee90baa2425fd4e8a5",
     "core/original_actor_elements.gd": "40fdc6f30b0150d4a97082d4b7a0e45c8ffba8dab90e32c30cc98c5f74347067",
     "core/original_actor_environment.gd": "4fff615a4c814fb26c9d2002e0fbdba533bce37ea294bd3e6664a1cad6a204be",
@@ -3165,7 +3792,7 @@
     "core/original_character_preview.gd": "ed0e6b925df00baf5b4c6d506f230aefa99de8c367b8e918e19f2cc87404353e",
     "core/original_collision_world.gd": "6f184c40ac5c97eb0b07b947c9cfb1d4d6318212ccaa9d91ff287e601d0a6145",
     "core/original_combat_world.gd": "b79b71a723fd3a373894e12a2d7e70f8da0a30f7be632bc7d348e007594bea51",
-    "core/original_decoy_ai.gd": "c9527d92e9392ce801b84184b245066186edd2f73f0a85a5dec865f222a4618c",
+    "core/original_decoy_ai.gd": "5eb6f84f9e15d5bc5eae28596161fea227e4585b3d19637beab451106a05948d",
     "core/original_decoy_elements.gd": "cb7136541cc58cc9cc3d7f26aea995bc929d6671687679ee6025acae66e75768",
     "core/original_decoy_input.gd": "996a9e1f2db5d2e67a298ac6ef8208f806b8f9585395fcaffb0e10d64d66ec43",
     "core/original_decoy_motion.gd": "d682669ff63ff7ffc9a5b24ad1b0a9d64890f1181368691f73ac3d78e7a0dfdf",
@@ -3183,14 +3810,15 @@
     "core/original_ground_queries.gd": "225eeaf3d44f3735b84be90668e5d7512e74ddaa11a986e5918e9bb54ca62506",
     "core/original_level3_behaviors.gd": "0a8ddc302d30fa97559a104ac3fe21fbf7425dd322a9c9b0e8b5513131b9dcaa",
     "core/original_level_boundary.gd": "280b19da2259369f87d6b71535da9e8b5916036365035fe5d8905fe1f2c316e3",
-    "core/original_moving_floors.gd": "642c3798c42872582ef177f1198da1f2f8d97cecac8c38428e7cdc1cb5a0848e",
-    "core/original_navigation.gd": "ec4393608415f56d750dfed746ab70a605363f6f5b1a401b1878f3c1eec16c3a",
-    "core/original_player_ai.gd": "19476c3f229e9070f4d6d63275f063102f528a20d12dbcc2eccc5c68c973cd4d",
+    "core/original_moving_floors.gd": "14d523b1a6d305c7b3ed245f057090245b3081f54a38da9a66b27d3f090b7dd0",
+    "core/original_navigation.gd": "b0e18da2f1e901b0b4f9ce2d47e20d9631ab65132c3b54f7c5cde6c45e2d28a2",
+    "core/original_navigation_world.gd": "56c6d9122b5099095539e05c63d5848d47de6c51e3a56799019997df50caeb5c",
+    "core/original_player_ai.gd": "50f9f0b4b0caec0c704d4bebccc116aab60653b94e26fe7b7b0832934bcc368b",
     "core/original_player_ai_actions.gd": "da917b0ac0088f2b5d5d8a9fc505d3ec0735800609170ee0e81cbff906426284",
     "core/original_player_ai_buttons.gd": "5596237593a95a6a60f2918b1bdaf7f0238829e860e23079226ac2b7fad680a2",
     "core/original_player_ai_policy.gd": "8825b86830df29e207652be1d4e7a1e74e97cfa4cc19c4c841c8b37697a07184",
     "core/original_player_ai_targeting.gd": "d10988c683234488b6819681a42fc83f96ccba29c732d6fe67d5251bb69a64f7",
-    "core/original_player_ai_world.gd": "12c058bfd8649fdec199e77bf9b0e0f06c9c27989c3d21f6806cbbf6867c630f",
+    "core/original_player_ai_world.gd": "298a6e089872e2a2b13a6ce02732b20f03ecec8cadaec7bfaffc51c11ef75fcb",
     "core/original_player_input.gd": "8df6d7457ed56a740e39dfa90d563016dbfc563d428accf51d74d3ce429788c0",
     "core/original_player_powers.gd": "ec6edc2c504d062d531ba7939ea5ddca8e28a5e57f10e2e6de000c1844f17d65",
     "core/original_player_weapons.gd": "469face003d89c464a9a535df060108a58726060ddee53f935f7f107b7cb143b",
@@ -3200,11 +3828,12 @@
     "core/original_system_random.gd": "adc47354646a125d7f8d69b2f0e7a2b718d569303d22e50cfa41d980d02639f6",
     "core/original_teleport.gd": "6af9be272bdf4046817b409e6b3fc9575c5fcd894a66790cd7f95a2696cb1f47",
     "core/original_timekeeper.gd": "627e8b52ae78f88ff162851d5d9269bd3aabd6992caeec6de2e1ede710fc13ca",
+    "core/original_transform.gd": "63343baf053e5ed373ff4be33e331cc6d738262268a022eaad70ac382aa792d2",
     "core/original_unity_random.gd": "fc2ce8b28c5dadb129286ed61634e2b93956bec22b98d6b811d95ae60af8acb2",
     "ffa_setup.gd": "c6463eb561df16c5195714717e24be001fc179d54d9fa1808a599f1e25fa06e7",
     "ffa_shell.gd": "9debf084f08a9db4bd982da215813ff17c973739451adba41bbc8d01cbdbd609",
     "local_controllers.gd": "49f41dbf1ebbaa726e60362252e255822d8cb7b6411e0474706128145dd2cfd4",
-    "main.gd": "5cf585ec10c04cc9ed6a7de161b4eac293c4d21e2ca726a2c3f4dc9b7098522e",
+    "main.gd": "2c3798a7031bfcfa374ec750e256b0de1881fe473794db3bafa5c0aaf12119c7",
     "original_audio.gd": "16da9b923bad24499f876b32e499152ec7f5145b1aaf729416cddf98418ce7ea",
     "tests/duel_integration_test.gd": "9188991405fa0f7fa767de0e79cf5ce4e3042ca7910e2275cd4d3b2a8051c1b1",
     "tests/ffa_shell_test.gd": "28341982eff05a130c545ab38706ae9ed713b065c8af211cac5e2ff28a851d24",
@@ -3212,12 +3841,28 @@
     "tests/map_behavior_adapter_test.gd": "b255ba840046930167020bb122164d93c1d8c94eeb815ee1d4f6ff1de4c4fedc",
     "tests/moving_floor_native_test.gd": "7db03f4f0ab64cd58afbec582d0c7e9b0effb29ab1c2fd91e368b3bfd9adfca9",
     "tests/moving_floor_scene_test.gd": "d4270fe1ac7acd5588c645c11cd604f592a77cc4304ee30e707ffd23a2331979",
+    "tests/navigation_platform_ai_test.gd": "957ffa6204d648c66e3eb28fd783d5a780ec49720c1446d02d58d7759e1054ce",
+    "tests/navigation_scene_test.gd": "af1d7588c9d1fc2ec30b16f1f0c64fb12ad5b5bcb33fc950d306f00407eab8d5",
+    "tests/navigation_selection_test.gd": "731e64a58d6b9d4a393f6ce06c35f0416f1aa83ad0c615b59ffb22a647600398",
+    "tests/player_ai_game_test.gd": "e0f45759163899b6ceebb166e7e6a73b33af82aaeef136aba38ed2b8df41245a",
     "tests/reactive_floor_game_loop_test.gd": "d6f0fd5196c438271e7eb1d0c0c90fe803ea02ebb53f5cfbe088b7a0d3336013",
     "tests/reactive_floor_native_test.gd": "b31539394a9461df6166efff8c0ec41b64674b3b272dea062ea9a23e3acfdccc",
     "tests/reactive_floor_scene_test.gd": "ea1c1f9a8b519541945fdc4dcad07f05fd138e4e8c2067ed88ee86a9807d6c36"
   },
-  "generated_at": "2026-10-28T01:54:32.288946+00:00",
+  "generated_at": "2026-10-28T02:05:23.021025+00:00",
   "process_limit": 1,
   "per_test_timeout_seconds": 45,
-  "scope": "Real-scene native Godot tests; no original Unity runtime, browser, visual or frame-parity claim."
+  "scope": "Real-scene native Godot tests; no original Unity runtime, browser, visual or frame-parity claim.",
+  "targeted_revalidation": {
+    "generated_at": "2026-10-28T02:06:06.249782+00:00",
+    "prior_report_sha256": "55b93c408edd79d35063b98aeb38c2db74dc61ffcf21db0b20fe753e654412fa",
+    "changed_sources": [
+      "tests/player_ai_game_test.gd"
+    ],
+    "unchanged_implementation_verified": true,
+    "test": "player_ai_game_test",
+    "map": "level2",
+    "log_sha256": "871341f7f814ffeb15535450fd504fb499c86804200f7a70dd20a72d3c055824",
+    "reason": "Test harness retained its final AI loop variable; production disposal independently verified with five active bots, then full 4-difficulty match test rerun."
+  }
 }

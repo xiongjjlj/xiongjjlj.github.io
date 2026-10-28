@@ -1,0 +1,420 @@
+{
+  "maps": [
+    {
+      "map": "level2",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 173120,
+      "sha256": "07adc25618f9f6a4bd53aa7bbb8c2d91f49ad6b266f5439667a845ee7a6c85d3"
+    },
+    {
+      "map": "level3",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 149204,
+      "sha256": "05c6624125ba7395b09bc82771c39a98d0981b9f697b12b891daa1b2dcb77060"
+    },
+    {
+      "map": "level4",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 142600,
+      "sha256": "7c4157f54d09605861f5626e1fc874af75b30a0a76421f053425697c7cda47ba"
+    },
+    {
+      "map": "level5",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 176400,
+      "sha256": "900e766c446ee7e1737e74351825644f50d91564358c3e307540672c75160550"
+    },
+    {
+      "map": "level6",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 175744,
+      "sha256": "ffa64e7ce89b7a8d4791ce4cfc24d9d6a6523f9eefa7cba8c8de3aa6d380ed37"
+    },
+    {
+      "map": "level7",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 175408,
+      "sha256": "183cdc08ecd72b4edc589f146704e0bfc41de948db06cb9646cb890eb63b2b33"
+    },
+    {
+      "map": "level8",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 173592,
+      "sha256": "f17d76d6d6de215f3a156cf711b8ba1d589811d6c1e568940945e621de2ec517"
+    },
+    {
+      "map": "level9",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 172328,
+      "sha256": "9052908e9cfc70edca5aafa0b782d30fbe7eb9976f07b435176bb11965f5b3a5"
+    },
+    {
+      "map": "level10",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 176964,
+      "sha256": "41070a731b648a9314e4cab47d0d055beee4db0b7d3af49e726d418c1dfe032f"
+    },
+    {
+      "map": "level11",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 167472,
+      "sha256": "6fae806f0faec31899df6af527435b539a40fdc2c075fa20bcc4e308549209a0"
+    },
+    {
+      "map": "level12",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 176156,
+      "sha256": "59e539dbb55921581723c298fef5bacba93bd098d73f45ac40ecbd9a5205a4c3"
+    },
+    {
+      "map": "level13",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 172388,
+      "sha256": "ad2ca14784dfc47c9b7f36d14b611ea0733c91c7652f2a7f86feba8be1593d92"
+    },
+    {
+      "map": "level14",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 168048,
+      "sha256": "617bf8f25563c6b263cfb4beedacc9925fb1758d7565759733868e5868ad4a69"
+    },
+    {
+      "map": "level15",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 144180,
+      "sha256": "84f725099cf2e13b959322110858fcd0f89bbca269214acfb30e7be26a1121e6"
+    },
+    {
+      "map": "level16",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 166148,
+      "sha256": "40450481fbd3b1bf392a19c66211851cb29959823159c75fc7fc04e721a0d890"
+    },
+    {
+      "map": "level17",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 169484,
+      "sha256": "c9a292e814ce0eb97c1a0a652f4f3e9d9443da107cf69abcff112030f340732a"
+    },
+    {
+      "map": "level18",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 165456,
+      "sha256": "7db48cfec2ba5f3b986e7abac415a873297473fe9da310cd8f49490b8bf4057a"
+    },
+    {
+      "map": "level19",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 166912,
+      "sha256": "eb27d99d0c891d233b86f450e13a736bd38aade6a0c47b8c1082de389c6e7059"
+    },
+    {
+      "map": "level20",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 166724,
+      "sha256": "6217b71357e7f2ab2635dd0e50254432b2c136ca2f1dc67dbe9f6ec2c174cc23"
+    },
+    {
+      "map": "level21",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 172896,
+      "sha256": "67ead3f1e2361a560b204eb6a28cc16008e1dad319439ab5d3c490b1b6dbae01"
+    },
+    {
+      "map": "level22",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 151332,
+      "sha256": "2aeae135ec3f915da3cdc1ec5fcea3af52d246952aa43c55514b02bb7d690c48"
+    },
+    {
+      "map": "level23",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 175996,
+      "sha256": "6aae7019b8e46b5fd6a281d65850d1fb144670841bee12bf2829b868edb72358"
+    },
+    {
+      "map": "level24",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 169188,
+      "sha256": "42451f9745e60ed55d35c995028b42d4ea83eb007939d30b00c2e511155dc4b6"
+    },
+    {
+      "map": "level25",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 182252,
+      "sha256": "a06df189c8a6571320311387182c8f5abcb54736cf93756407b3cb5b03a5bab0"
+    },
+    {
+      "map": "level26",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 165832,
+      "sha256": "41377eff7cb17250f982be935ee80b17113e18dd972a44438ce3f15fbc7f9c22"
+    },
+    {
+      "map": "level27",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 177800,
+      "sha256": "c715d5c6d5b6e352d89329c4c853da018488d39968ab118cc2380e3f8dff925d"
+    },
+    {
+      "map": "level28",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 184228,
+      "sha256": "916a262e8c014a7d17663a89fd20ee7382f0aefb00be1d85d1708e78d09a03ca"
+    },
+    {
+      "map": "level29",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 168056,
+      "sha256": "98c4f9feaa46bacf13df6c3707f0ddbd40b543a005b197362e0e77cc2e2ebca1"
+    },
+    {
+      "map": "level30",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 178648,
+      "sha256": "fc035b6ebdb7348c7e38038359589c0aaec1abe2bf0c04d3c9ebad7b3d7746b0"
+    },
+    {
+      "map": "level31",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 175244,
+      "sha256": "773ef1a884ccc7417616347d7f7d07397a74a23198cfe092cef0e6331f0b1746"
+    },
+    {
+      "map": "level32",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 173624,
+      "sha256": "fca6e403ffbc7f37b73dd316071b75e20cdb17e775cf358020cb2535009cca51"
+    },
+    {
+      "map": "level33",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 173596,
+      "sha256": "65192688a7f1e597dc5aca979e04c561e59830dae1e7d8746e1db99c7284d361"
+    },
+    {
+      "map": "level34",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 178348,
+      "sha256": "19c58085be5ab464e883dfee1414606095b66efc7f53fb01805aa5468ed7043c"
+    },
+    {
+      "map": "level35",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 153620,
+      "sha256": "4dbb2464e2c3463fca60843777ef3d18ff4335197fff6e23676d07dbf28472b5"
+    },
+    {
+      "map": "level36",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 145864,
+      "sha256": "bfc8158f4d41c2291fdbe4368ba41194fea44c3b84c3e8f1cf8abf388e4b1ac6"
+    },
+    {
+      "map": "level37",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 144120,
+      "sha256": "e174d8da473e2dd074c6ac7cbe4e90911414ed5ab7171786c6b4e479beffaee1"
+    },
+    {
+      "map": "level38",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 148836,
+      "sha256": "d6143798b5f115185c7d6ab91f74db969fc150c61d0fccc87045c4ef7adaaa61"
+    },
+    {
+      "map": "level39",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 148520,
+      "sha256": "c17d47a9df6a944217236cd5b0b2ff6f6e261b7c85ef695d79b4c8c178a505f2"
+    },
+    {
+      "map": "level40",
+      "graphs": 2,
+      "nodes": 33360,
+      "bytes": 152564,
+      "sha256": "5d82db750a573fbbd61ecabb1034fc4d5a0b576402208d60fdf701675c322fc6"
+    },
+    {
+      "map": "level41",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 152276,
+      "sha256": "9243685248e0316a2017721e744886c98c677715544b49992d8fb85370b208a7"
+    },
+    {
+      "map": "level42",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 158196,
+      "sha256": "6c8e8bf2d3825867070c9d64755c1cb4108240289a5dbace7321bce97954565e"
+    },
+    {
+      "map": "level43",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 148440,
+      "sha256": "1f4457d10b763e9dc7193f7bfca20c9439095ec01d54c1bc81333efde2cfa3b5"
+    },
+    {
+      "map": "level44",
+      "graphs": 8,
+      "nodes": 37892,
+      "bytes": 171864,
+      "sha256": "e8a339609c78ddcc99cb8e4951e06049a974b98784bc25753b5484b6391c8483"
+    },
+    {
+      "map": "level45",
+      "graphs": 5,
+      "nodes": 34516,
+      "bytes": 164384,
+      "sha256": "4e5a43856b8a426207ac5d7a5c20b89b42e490491cb39125781cb832a18a93c2"
+    },
+    {
+      "map": "level46",
+      "graphs": 3,
+      "nodes": 32600,
+      "bytes": 144324,
+      "sha256": "78e7b5ae2546a2b795130239ff836b30cda542a41e73f1aea2aac489c8434525"
+    },
+    {
+      "map": "level47",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 148316,
+      "sha256": "bc0cbde91f43058e1aab3ad1fd3aef5054dc546eaa5a4b796723b85936c6cae4"
+    },
+    {
+      "map": "level48",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 147048,
+      "sha256": "f2ec3b6d68b7d3ccb55d80aebb40af494f30fbc5b0d35364725a871a1310512e"
+    },
+    {
+      "map": "level49",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 145492,
+      "sha256": "37995a842c08d6cc4bdb2df2768714442012fe448833e3c5409e561d0cde11bd"
+    },
+    {
+      "map": "level50",
+      "graphs": 3,
+      "nodes": 32640,
+      "bytes": 146480,
+      "sha256": "e76c7da44e54ff36bf17d4f7569516028757859a517ea7a9e8800f69e024bf5b"
+    },
+    {
+      "map": "level51",
+      "graphs": 8,
+      "nodes": 35060,
+      "bytes": 164248,
+      "sha256": "00fbb88a63adce76443a450daf9de8540d0276af9d1884f8d90e5fb0f887952e"
+    },
+    {
+      "map": "level52",
+      "graphs": 8,
+      "nodes": 35892,
+      "bytes": 162632,
+      "sha256": "fc78ff18b2770e03b1e625afcf31d66c4ce91f1007df8688a1944e991b029aa6"
+    },
+    {
+      "map": "level53",
+      "graphs": 8,
+      "nodes": 35732,
+      "bytes": 173388,
+      "sha256": "2da9bc7250f7d6d920381696fdf870c5c8eb15006691dec5b37d81f4fe3df855"
+    },
+    {
+      "map": "level54",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 154680,
+      "sha256": "a5d6411984ea4c6f6073f76161e2dce3214e78d20481c220208386ff39d905b4"
+    },
+    {
+      "map": "level55",
+      "graphs": 2,
+      "nodes": 36000,
+      "bytes": 160020,
+      "sha256": "e8943a9be15b3b897aa66255f7a3da87cad79f0a105c5039b62eb1dfaa819b19"
+    },
+    {
+      "map": "level56",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 141968,
+      "sha256": "ff084594982d7f54ec367c53a64a77b2330af52b3d027757f70934b6b66e0c37"
+    },
+    {
+      "map": "level57",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 141876,
+      "sha256": "8eb723c91d980c4f5676affcd4c95fc9f505f69ea04054d82c851d1fc1b1c24a"
+    },
+    {
+      "map": "level58",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 142712,
+      "sha256": "29634187b0369eccd770567e4f00514d44d189ecfe7ad166bf910e77f1fdeb53"
+    },
+    {
+      "map": "level59",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 144020,
+      "sha256": "14c26119967835d1fd422aca5a3a55b5d10657ded3f6d874760ca3ff7ff17ac4"
+    },
+    {
+      "map": "level60",
+      "graphs": 1,
+      "nodes": 32400,
+      "bytes": 149608,
+      "sha256": "31df66ab60ac22037da5636bd0a67dcdd4dae25b17b48f5f694c230c8c3fcbfc"
+    }
+  ],
+  "total_bytes": 9560864,
+  "expected_paths_excluded": true,
+  "scope": "Original serialized grids and original startup boundary tags. Runtime rescans and teleport edges remain separate."
+}

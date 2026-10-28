@@ -1,0 +1,9 @@
+{
+  "batch": 8,
+  "differences": [],
+  "maps": 6,
+  "maximum_error": 0.0,
+  "passed": true,
+  "paths": 232,
+  "scope": "Native Astar paths on per-map grids including platform graphs; no runtime collider rescan or callback-order claim."
+}

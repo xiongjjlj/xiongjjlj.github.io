@@ -1,0 +1,51 @@
+{
+  "source": "Original AstarPathfindingProject.dll and sharedassets2.assets:64 graphEnclosed; unchanged LevelManager.SetOutOfBoundsTags",
+  "graphs": 8,
+  "static_nodes": 32400,
+  "walkable": 5439,
+  "settings_source": "level1:9006 AstarPath",
+  "settings": "navigation-source-settings.json",
+  "runtime": "Original UnityPlayer Mono, isolated copy, worker count forced to None for bounded deterministic fixture execution",
+  "query_and_path_parameters": "Original scene heuristic Euclidean, scale 1, max nearest distance 100; AI tag penalty 4000; original StartEndModifier and PathEdgeModifier, SimpleSmooth maxSegmentLength=1/strength=.5/iterations=1",
+  "native_fixture_sha256": "106bbe657450e55dfefded14358d53c19a0b3304e5b4a26e0e1fb47496c92f08",
+  "strict_native_and_browser": {
+    "comparisons": 78993,
+    "differences": [],
+    "maximum_error": {
+      "clamped_end": 0,
+      "clamped_start": 0,
+      "end_node": 0,
+      "geometric_graph": 0,
+      "geometric_node": 0,
+      "h_target": 0,
+      "nearest": 0,
+      "nearest_position": 0,
+      "node_ids": 0,
+      "raw": 0,
+      "smoothed": 0,
+      "snapped": 0,
+      "special_node": 0,
+      "start_node": 0,
+      "total_length": 0,
+      "trimmed": 0
+    },
+    "passed": true,
+    "paths": 116,
+    "queries": 169,
+    "scope": "Original Enclosed static traversal and all eight graphs for unconstrained endpoints: nearest, ABPath node selection, original four-way heap ties, endpoint/edge/smoothing modifiers. Dynamic graph updates and asynchronous scheduling remain pending.",
+    "searched_nodes": 113922,
+    "strict_equal": true
+  },
+  "web_report": "godot-navigation-web-check.json",
+  "browser_errors": [],
+  "implementation_notes": [
+    "Original four-ary heap tie rules preserved.",
+    "ABPath unconstrained endpoint query includes all eight graphs even when traversal selects graph 0.",
+    "Mono matrix expressions retain precision until float-field assignment; premature float rounding changes nearest-graph selection.",
+    "Production navigation input contains node data and transforms only; no prerecorded routes."
+  ],
+  "limitations": [
+    "Dynamic graph updates, moving-floor traversal, native async callback scheduling and full AI remain pending.",
+    "This does not establish full-game or image frame parity."
+  ]
+}

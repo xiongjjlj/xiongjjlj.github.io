@@ -20,8 +20,12 @@ def main():
     tests += [('reactive_floor_native_test', 'level2')]
     tests += [('reactive_floor_scene_test', key) for key in ('level40','level41','level46','level51','level52','level53')]
     tests += [('reactive_floor_game_loop_test', 'level40')]
+    tests += [('navigation_scene_test', key) for key in ('level24','level26','level27','level29','level44','level45','level50','level40','level41','level46','level51','level52','level53')]
+    tests += [('navigation_platform_ai_test', key) for key in ('level40','level45')]
+    tests += [('navigation_selection_test', 'level2'), ('player_ai_game_test', 'level2')]
     tests += [('level3_behaviors_test', 'level3'), ('ffa_shell_test', 'level4'), ('duel_integration_test', 'level2')]
     paths = [*args.project.glob('*.gd'), *args.project.glob('core/*.gd'), *args.project.glob('assets/original/level*/behaviors.json')]
+    paths += list(args.project.glob('assets/original/navigation/*.json'))
     paths += [args.project / ('tests/' + name + '.gd') for name in sorted({t[0] for t in tests})]
     hashes = {str(p.relative_to(args.project)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
     results = []

@@ -1,0 +1,78 @@
+{
+  "cases": [
+    {
+      "commands": 4,
+      "deaths_at_round_end": 1,
+      "difficulty": 0,
+      "distance": 210.201049684576,
+      "frames": 1200,
+      "records": 2,
+      "retained_old_ai": 2,
+      "rounds": 1,
+      "states": [
+        0,
+        2,
+        4,
+        8
+      ]
+    },
+    {
+      "commands": 18,
+      "deaths_at_round_end": 2,
+      "difficulty": 1,
+      "distance": 205.876004363003,
+      "frames": 1200,
+      "records": 6,
+      "retained_old_ai": 2,
+      "rounds": 2,
+      "states": [
+        0,
+        4,
+        2,
+        8,
+        3,
+        5
+      ]
+    },
+    {
+      "commands": 59,
+      "deaths_at_round_end": 4,
+      "difficulty": 2,
+      "distance": 144.227632309507,
+      "frames": 1200,
+      "records": 3,
+      "retained_old_ai": 2,
+      "rounds": 4,
+      "states": [
+        0,
+        2,
+        8,
+        4
+      ]
+    },
+    {
+      "commands": 174,
+      "deaths_at_round_end": 3,
+      "difficulty": 3,
+      "distance": 171.483854799084,
+      "frames": 1200,
+      "records": 4,
+      "retained_old_ai": 2,
+      "rounds": 3,
+      "states": [
+        0,
+        2,
+        3,
+        4,
+        1,
+        8
+      ]
+    }
+  ],
+  "failures": [],
+  "mixed_bots": 5,
+  "mixed_players": 6,
+  "native_full_match_parity": false,
+  "passed": true,
+  "retained_after_dispose": 0
+}

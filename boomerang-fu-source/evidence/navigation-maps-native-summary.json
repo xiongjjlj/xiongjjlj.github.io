@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "maps": 59,
+  "graphs": 300,
+  "path_cases": 992,
+  "assembly_sha256": "12fd98e0e509ab568db7a3cc89b515f8f1fe8cf1c11c14b582440a695c605c0d",
+  "batches": 10,
+  "concurrency": 1,
+  "scope": "Original serialized Astar graphs with original boundary tagging, sampled native paths. Runtime obstacle rescans and teleportal connections are not applied."
+}

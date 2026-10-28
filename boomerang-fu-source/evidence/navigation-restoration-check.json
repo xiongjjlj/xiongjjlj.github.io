@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "generated_at": "2026-10-28T02:06:30.799562+00:00",
+  "maps": 59,
+  "graphs": 300,
+  "paths": 992,
+  "path_maximum_error": 0.0,
+  "graph_selection_cases": 1134,
+  "transform_cases": 540,
+  "transform_maximum_error": 4.26496126237907e-06,
+  "runtime_suites": 40,
+  "inputs_exclude_expected_paths": true,
+  "unit_scale_platform_hierarchies": 30,
+  "native_selection_assembly_sha256": "ff9107bc5f88990300c50f58c84c5647c8675c79fc6722941b12b9f37e7f3709",
+  "pending": [
+    "Runtime obstacle rescans and rotating-maze graph updates",
+    "Teleportal graph connections",
+    "Full native callback scheduling and random-stream ordering"
+  ],
+  "scope": "Per-map original grid paths, original platform graph selection and transformations, imported scene integration. Does not establish full-match or visual parity."
+}

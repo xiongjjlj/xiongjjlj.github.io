@@ -1,0 +1,19 @@
+{
+  "checks": [
+    {
+      "details": 0.0,
+      "name": "imported source platform transforms",
+      "passed": true
+    },
+    {
+      "details": {
+        "differences": [],
+        "queries": 27
+      },
+      "name": "original graph selection in imported scene",
+      "passed": true
+    }
+  ],
+  "map": "level50",
+  "passed": true
+}

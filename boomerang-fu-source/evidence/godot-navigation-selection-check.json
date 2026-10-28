@@ -1,0 +1,10 @@
+{
+  "differences": [],
+  "maps": 13,
+  "maximum_transform_error": 0.00000426496126237907,
+  "passed": true,
+  "queries": 1134,
+  "scope": "Original native platform transform methods and unchanged graph selection, sampled initial/translated/rotated poses; runtime obstacle rescan is separate.",
+  "tolerance": 0.00005,
+  "transform_points": 540
+}

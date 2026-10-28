@@ -1,0 +1,30 @@
+{
+  "comparisons": 80007,
+  "differences": [],
+  "maximum_error": {
+    "clamped_end": 0.0,
+    "clamped_start": 0.0,
+    "end_node": 0.0,
+    "force_node": 0.0,
+    "force_position": 0.0,
+    "geometric_graph": 0.0,
+    "geometric_node": 0.0,
+    "h_target": 0.0,
+    "nearest": 0.0,
+    "nearest_position": 0.0,
+    "node_ids": 0.0,
+    "raw": 0.0,
+    "smoothed": 0.0,
+    "snapped": 0.0,
+    "special_node": 0.0,
+    "start_node": 0.0,
+    "total_length": 0.0,
+    "trimmed": 0.0
+  },
+  "passed": true,
+  "paths": 116,
+  "queries": 169,
+  "scope": "Original Enclosed static traversal and all eight graphs for unconstrained endpoints: nearest, ABPath node selection, original four-way heap ties, endpoint/edge/smoothing modifiers. Dynamic graph updates and asynchronous scheduling remain pending.",
+  "searched_nodes": 113922,
+  "strict_equal": true
+}

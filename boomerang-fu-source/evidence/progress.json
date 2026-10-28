@@ -10,10 +10,10 @@
   "recovered_scene_assets": 61,
   "blocking_input": null,
   "next_actions": [
-    "Repair per-map and moving-platform navigation; all maps currently reuse Enclosed navigation.",
-    "Implement falling/trap floors and teleportal scene wiring; MovingDoor is confined to the tutorial.",
-    "Restore moving-platform audio, flash, trails and rope presentation.",
-    "Compare complete scene scheduling, global random draw order, trigger callback order, shaders, animation and audio against the original."
+    "Finish navigation browser export, verify arkevo.ai deployment and publish source checkpoint.",
+    "Implement dynamic obstacle rescans and teleportal graph connections.",
+    "Implement falling/trap floors and teleportal scene behaviour.",
+    "Restore platform audio, flash, ropes, particles, original materials/animation and verify full-scene callback and random-stream ordering."
   ],
   "validation_limitations": [
     "Recovered C# compilation is not engine/runtime equivalence",
@@ -51,11 +51,11 @@
     "native_dxbc_disassembled": true,
     "partial_map_shader_webgl_verified": true
   },
-  "updated_at": "2026-10-28T01:54:54.712222+00:00",
+  "updated_at": "2026-10-28T02:06:30.799562+00:00",
   "implementation_engine": "Godot 4.7.2",
   "browser_language": "GDScript",
   "browser_development_preview": true,
-  "current_work": "0.5.1-dev.3: 14 reactive moving floors across six maps, switch reversal, spring return and paired rollers implemented. 37,842 source-method frames and 23 real-scene suites pass. Big Raft browser journey and reversal verified. Full game parity remains unverified.",
+  "current_work": "0.5.1-dev.4 navigation: original per-map grids for 59 maps, platform graph selection and retained moving waypoints implemented. 992 native paths, 1134 graph selections and 40 real-scene suites pass. Web export and deployment verification in progress.",
   "godot_scene_preview": {
     "scene": "LevelEnclosed",
     "nodes": 548,
@@ -3759,5 +3759,26 @@
       "no_browser_errors": true
     },
     "full_game_parity_verified": false
+  },
+  "navigation_restoration": {
+    "passed": true,
+    "generated_at": "2026-10-28T02:06:30.799562+00:00",
+    "maps": 59,
+    "graphs": 300,
+    "paths": 992,
+    "path_maximum_error": 0.0,
+    "graph_selection_cases": 1134,
+    "transform_cases": 540,
+    "transform_maximum_error": 4.26496126237907e-06,
+    "runtime_suites": 40,
+    "inputs_exclude_expected_paths": true,
+    "unit_scale_platform_hierarchies": 30,
+    "native_selection_assembly_sha256": "ff9107bc5f88990300c50f58c84c5647c8675c79fc6722941b12b9f37e7f3709",
+    "pending": [
+      "Runtime obstacle rescans and rotating-maze graph updates",
+      "Teleportal graph connections",
+      "Full native callback scheduling and random-stream ordering"
+    ],
+    "scope": "Per-map original grid paths, original platform graph selection and transformations, imported scene integration. Does not establish full-match or visual parity."
   }
 }

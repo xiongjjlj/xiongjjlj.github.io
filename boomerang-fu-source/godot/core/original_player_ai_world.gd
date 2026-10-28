@@ -1,6 +1,6 @@
 class_name OriginalPlayerAiWorld
 extends RefCounted
-## Live FFA adapter for LevelEnclosed. Keeps target dictionaries alive across
+## Live FFA adapter. Keeps target dictionaries alive across
 ## frames; removal marks retained targets inactive. No controller samples bots.
 const AI=preload("res://core/original_player_ai.gd")
 const C=preload("res://core/original_timekeeper.gd")

@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "version": "0.5.1-dev.4",
+  "generated_at": "2026-10-28T02:09:08.431955+00:00",
+  "maps": [
+    {
+      "map": "LevelFourCogs",
+      "bot_melee_kill": true,
+      "round_scores": true,
+      "console_errors": 0,
+      "log": "navigation-four-cogs-browser-log.json"
+    },
+    {
+      "map": "LevelBigRaft",
+      "bot_melee_kill": true,
+      "round_scores": true,
+      "console_errors": 0,
+      "log": "navigation-big-raft-browser-log.json"
+    }
+  ],
+  "checks": [
+    "Two maps load original per-map grids in WebGL",
+    "Bot traverses Four Cogs moving platforms and completes melee kill",
+    "Bot traverses Big Raft and completes melee kill",
+    "Round continuation and score reset function in browser"
+  ],
+  "evidence": [
+    "navigation-four-cogs-start.png",
+    "navigation-four-cogs-play.png",
+    "navigation-big-raft-start.png"
+  ],
+  "scope": "Browser gameplay and source-grid integration. This pass did not activate the reactive raft switch; that behavior has separate real-scene tests. Extra human movement intentionally remains recorded, including walks off the edge. No full-game visual, audio or callback parity claim."
+}

@@ -25,6 +25,7 @@ var last_state:=AIState.WANDERING
 var target:=Vector3.ZERO
 var move_dir:=Vector2.ZERO
 var path:Array[Vector3]=[]
+var path_floor:Dictionary={}
 var has_path:=false
 var current_waypoint:=0
 var path_length:=0.0
@@ -54,6 +55,7 @@ var events:Array[Dictionary]=[]
 var snaps:=0
 
 func position3()->Vector3:return Vector3(actor.position.x,actor.position.y,actor.source_z)
+func waypoint(index:int)->Vector3:return OriginalMovingFloors.path_point(path_floor,path[index])
 func forward()->Vector2:
 	if forward_override!=Vector2.ZERO:return forward_override
 	return Vector2(C.f32(-sin(actor.rotation_z)),C.f32(cos(actor.rotation_z)))
@@ -124,6 +126,7 @@ func deliver_path_result()->void:
 	recalculating=false
 	if pending_result.get("error","")=="":
 		path.assign(pending_result.smoothed)
+		path_floor=pending_result.get("moving_floor",{})
 		has_path=true
 		current_waypoint=0
 		path_length=pending_result.total_length
@@ -184,9 +187,9 @@ func move_on_path(delta:float,wandering:=true)->void:
 		if not recalculating:reached_end=true
 		return
 	var threshold:=C.f32(next_waypoint_distance*(2.0 if actor.on_wet_floor else 1.0))
-	while current_waypoint<path.size() and N.magnitude(position3()-path[current_waypoint])<threshold:
+	while current_waypoint<path.size() and N.magnitude(position3()-waypoint(current_waypoint))<threshold:
 		current_waypoint+=1
-		if current_waypoint==path.size()-1 and is_point_hazard(path[current_waypoint]):
+		if current_waypoint==path.size()-1 and is_point_hazard(waypoint(current_waypoint)):
 			# Chance.PercentageTrue uses integer Random.Range(0,100) <= threshold.
 			if rng.range_int(0,100)<=25 and has_parent:change_state(AIState.IDLE)
 			else:current_waypoint=path.size()
@@ -198,7 +201,7 @@ func move_on_path(delta:float,wandering:=true)->void:
 		elif not actor.is_dashing and touches_hazard(position3()+Vector3(forward().x,forward().y,0)) and N.magnitude(target-position3())>5.0:
 			dash(forward(),true,true,false)
 	else:
-		var direction:=normalized3(path[current_waypoint]-position3())
+		var direction:=normalized3(waypoint(current_waypoint)-position3())
 		move_dir=lerp2(actor.input_move,Vector2(direction.x,direction.y),C.f32(move_input_speed*delta))
 		if not actor.is_dashing and avoidance_query.is_valid():
 			var point:Variant=avoidance_query.call(move_dir,diverting_distance)

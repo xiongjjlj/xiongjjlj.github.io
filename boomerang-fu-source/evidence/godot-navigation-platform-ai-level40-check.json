@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "details": null,
+      "name": "real map has a traversable platform path",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "live bot binds returned path to its platform",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "failed replan reports unreachable start",
+      "passed": true
+    },
+    {
+      "details": {
+        "maximum_error": 0.000003814697265625,
+        "travel": 13.9200687408447
+      },
+      "name": "retained waypoint follows platform without recalculating",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "failed replan retains source coordinates and platform binding",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "round reset restores retained waypoint pose",
+      "passed": true
+    }
+  ],
+  "map": "level40",
+  "passed": true,
+  "scope": "Actual bot path provider and completion callback, moving platform waypoint retention, failed replan, round reset; not a full native match comparison."
+}

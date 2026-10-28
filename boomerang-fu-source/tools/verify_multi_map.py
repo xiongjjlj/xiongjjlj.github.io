@@ -9,7 +9,7 @@ maps=[f'level{i}' for i in range(2,61)]
 ready=re.compile(r'BF_GODOT_READY (\{.*\})')
 rows=[]
 project=Path(args.project)
-source_sha256={str(p.relative_to(project)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted([project/'main.gd',*project.glob('core/*.gd'),*project.glob('assets/original/level*/behaviors.json')])}
+source_sha256={str(p.relative_to(project)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted([project/'main.gd',*project.glob('core/*.gd'),*project.glob('assets/original/level*/behaviors.json'),*project.glob('assets/original/navigation/*.json')])}
 for name in maps:
     try:
         p=subprocess.run([args.godot,'--headless','--path',args.project,'--quit-after','60','--','--map='+name],capture_output=True,text=True,timeout=45)

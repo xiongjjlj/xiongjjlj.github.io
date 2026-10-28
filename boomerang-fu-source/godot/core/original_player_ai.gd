@@ -49,7 +49,7 @@ func sight(point:Vector3)->bool:return bool(query("sight",[point],true))
 func chance(percent:float)->bool:return rng.range_int(0,100)<=percent
 func valid_target(item:Dictionary)->bool:return not item.is_empty() and item.get("active",true)
 func distance_to(point:Vector3)->float:return N.magnitude(point-position3())
-func target_pathable()->bool:return has_path and not path.is_empty() and N.magnitude(path[-1]-target)<=2.0
+func target_pathable()->bool:return has_path and not path.is_empty() and N.magnitude(waypoint(-1)-target)<=2.0
 
 func initialize()->void:
 	buttons.cancel_all();has_path=false;reached_end=true;move_dir=Vector2.ZERO
@@ -201,7 +201,7 @@ func deliver_path_result()->void:
 		var best:=targeting.best_throw(own,facts.players,facts.decoys)
 		if state==AIState.ATTACKING and not best.is_empty() and action_timer>action_delay*0.25:throw_target(best);return
 		if not victim.is_empty() and state in [AIState.ATTACKING,AIState.DIVERTING] and not buttons.held and buttons.input_timer>=buttons.input_delay and policy.can_see_target(victim) and victim.alive and distance_to(victim.position)<=34.0*C.f32(1.33) and distance_to(victim.position)>17.0 and not bool(query("obstacle_ray",[Policy.direction(position3(),victim.position),25.5],false)) and aim_disc(rng.range_float(1.0,1.5)):return
-	if (has_path and not path.is_empty() and bool(query("dash_safe_from",[path[-1],target-normalized3(path[-1]),false,true,true],false))) or not own.completed_tutorial:return
+	if (has_path and not path.is_empty() and bool(query("dash_safe_from",[waypoint(-1),target-normalized3(waypoint(-1)),false,true,true],false))) or not own.completed_tutorial:return
 	if own.has_parent:
 		if state!=AIState.DIVERTING and chance(20.0):target=query("random_floor_target",[],target);change_state(AIState.DIVERTING);return
 		if chance(66.0):change_state(AIState.IDLE);return
@@ -299,9 +299,9 @@ func walk_path(dt:float,on_end:Callable=Callable())->void:
 	if not has_path:
 		if not recalculating:reached_end=true
 		return
-	while current_waypoint<path.size() and distance_to(path[current_waypoint])<next_waypoint_distance*(2.0 if actor.on_wet_floor else 1.0):
+	while current_waypoint<path.size() and distance_to(waypoint(current_waypoint))<next_waypoint_distance*(2.0 if actor.on_wet_floor else 1.0):
 		current_waypoint+=1
-		if current_waypoint==path.size()-1 and is_point_hazard(path[current_waypoint]):
+		if current_waypoint==path.size()-1 and is_point_hazard(waypoint(current_waypoint)):
 			if chance(25.0) and own.has_parent:change_state(AIState.IDLE)
 			else:current_waypoint=path.size()
 	if current_waypoint>=path.size():
@@ -309,7 +309,7 @@ func walk_path(dt:float,on_end:Callable=Callable())->void:
 		if on_end.is_valid():on_end.call()
 		elif not actor.is_dashing and touches_hazard(position3()+own.forward) and distance_to(target)>5.0:dash(forward(),true,true,false)
 	else:
-		var direction:=Policy.direction(position3(),path[current_waypoint])
+		var direction:=Policy.direction(position3(),waypoint(current_waypoint))
 		move_dir=-lerp2(-output_move,direction,C.f32(move_input_speed*dt)) if own.reverse else lerp2(output_move,direction,C.f32(move_input_speed*dt))
 		if not actor.is_dashing and avoidance_query.is_valid():
 			var avoid:Variant=avoidance_query.call(move_dir,diverting_distance)

@@ -1,0 +1,139 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 8
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 16777216,
+    "m_PathID": 12297699328
+  },
+  "m_Name": "",
+  "version": 1,
+  "data": {
+    "dataString": "UEsDBBQAAAgIAABQIexc34lokQIAAKAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VN9v2jAQ/leQn9cqYYWKvW1A6Sa1Rc2mPix9MPGFWDh25B8FWvG/7+wETLMWISW5u+/uvs93fiNcmgYKq/RCc3anGJBvA+LfyZdBdN7Cjq6VzPgrHGOeOLOVD6Ih5pFartCeephRNVjNi+9yLXxwgkYneal0PWdrmCpjDZpLKgygSyvr0RJNbwOyw8fEI/Yd8tU/Bwd8K0Ba0DHs4ygnC0HrBphvNwYP0/Flgr901KGiIcAkEusQ6eXQV1NCcNP1Rey+CbyzpgINnjjjFGmGfnx4BXxd2e7jhH0oSwO261HT/YxrVKtNSn6oVsKamk3b6AsVzpcZjsahqTbp3X/+izS4S63q22PdNPE1bMWLzSPdF9TYM43PzbPYeBr02lKxoSsBTxXIe7XQykmGTqudhzoDw1n8PFGbVlBsor1ttWcshVK6Z3PN5yeItA5BkN1U8HrVefAzEyroHyYDNJ7VT2QQxsZ0UWj1bf0x8Juuz+erc9xwbSy6OtrS97tSTvtQMg8ienrOTpWWoM8zNCCpsPsl5rH9Q+35PkfdUL9KXfXOd9yQHiSYY3yS9FxLtY3HZ+CXq5ul4tJmQHVRneUzldregakenBVcQs9zjzJOlZTtRJoPcJnTJS0gHp6FnXUaZtTSsBbYFA4OO4eipAEhnRB+BAINn/wv0vD/Zy9zRbGuCGZyr2TYqHfPZz8Ia8fZ+8knV2XJJtdXY5qUK1ithheMXsHXJJ3AaFRMxpNrElaDSxSdimWr2klFnCIZ2UhchOOFN1ho2oR1ZJpuF/y1ViZGclmqrNAA8qHNcKILGsvgvcHmjCPRDKzlMswfecuJUMUGWH5KlAdp5zuraR6z5KThL8p6S06m4ZbLyYEc/gFQSwMEFAAACAgAAFAh7NB60HxsAAAAdwAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSs9BRUEovSizIKAYKGII4pZkpIHa0kklaWoqluYlZokFaUmpSkpFuSqJJqrGBoWWqqWmypZmluVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAUCHsXN+JaJECAACgBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAUCHs0HrQfGwAAAB3AAAACQAkAAAAAAAAAAAAAADeAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAJUDAAAAAA==",
+    "upgradeData": [],
+    "file_cachedStartup": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "data_cachedStartup": [],
+    "cacheStartup": 0
+  },
+  "showNavGraphs": 1,
+  "showUnwalkableNodes": 0,
+  "debugMode": 6,
+  "debugFloor": 0.0,
+  "debugRoof": 1.0,
+  "manualDebugFloorRoof": 0,
+  "showSearchTree": 0,
+  "unwalkableNodeDebugSize": 0.30000001192092896,
+  "logPathResults": 0,
+  "maxNearestNodeDistance": 100.0,
+  "scanOnStartup": 0,
+  "fullGetNearestSearch": 0,
+  "prioritizeGraphs": 0,
+  "prioritizeGraphsLimit": 1.0,
+  "colorSettings": {
+    "_SolidColor": {
+      "r": 0.11764705926179886,
+      "g": 0.4000000059604645,
+      "b": 0.7882353067398071,
+      "a": 0.8999999761581421
+    },
+    "_UnwalkableNode": {
+      "r": 1.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.5
+    },
+    "_BoundsHandles": {
+      "r": 0.28999999165534973,
+      "g": 0.45399999618530273,
+      "b": 0.7409999966621399,
+      "a": 0.8999999761581421
+    },
+    "_ConnectionLowLerp": {
+      "r": 0.0,
+      "g": 1.0,
+      "b": 0.0,
+      "a": 0.5
+    },
+    "_ConnectionHighLerp": {
+      "r": 1.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.5
+    },
+    "_MeshEdgeColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.5
+    },
+    "_AreaColors": [
+      {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25,
+        "a": 1.0
+      },
+      {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.5,
+        "a": 1.0
+      }
+    ]
+  },
+  "tagNames": [
+    "Basic Ground",
+    "OutOfBounds",
+    "Candidates",
+    "Teleportal",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31"
+  ],
+  "heuristic": 2,
+  "heuristicScale": 1.0,
+  "threadCount": -1,
+  "maxFrameTime": 10.0,
+  "batchGraphUpdates": 0,
+  "graphUpdateBatchingInterval": 0.15000000596046448,
+  "euclideanEmbedding": {
+    "mode": 0,
+    "seed": 0,
+    "pivotPointRoot": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "spreadOutCount": 1
+  },
+  "showGraphs": 1
+}

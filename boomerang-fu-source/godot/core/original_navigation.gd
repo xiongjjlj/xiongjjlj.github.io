@@ -1,7 +1,8 @@
 class_name OriginalNavigation
 extends RefCounted
 ## Source GridGraph/ABPath + 4-ary BinaryHeap + original path modifiers.
-## Static graph 0 only. Input is the original serialized grid, never recorded paths.
+## One serialized source grid; OriginalNavigationWorld selects each map's
+## static or platform grid. Input contains node data, never recorded paths.
 const C=preload("res://core/original_timekeeper.gd")
 var width:=0
 var depth:=0
@@ -29,8 +30,10 @@ var target:=Vector3.ZERO
 var targets:Dictionary={}
 var searches:=0
 var heuristic_scale:=1.0
+var graph_index:=0
 
 func initialize(data:Dictionary)->void:
+	graph_index=int(data.get("index",0))
 	width=data.width
 	depth=data.depth
 	node_size=C.f32(data.node_size)
@@ -82,7 +85,7 @@ static func magnitude(p:Vector3)->float:
 
 func geometric_nearest(point:Vector3)->Dictionary:
 	var best:=nearest(point,-1,false)
-	best.graph=0
+	best.graph=graph_index
 	var distance:=magnitude(best.point-point)
 	# ABPath's unconstrained endpoint query checks all serialized graphs even
 	# when the traversal mask selects static graph 0. This changes edge handling.
@@ -94,7 +97,9 @@ func geometric_nearest(point:Vector3)->Dictionary:
 		var y:=transform_point(graph.inverse_matrix,graph.positions[index]).y
 		var clamped:=transform_point(graph.matrix,Vector3(clampf(local.x,x,x+1),y,clampf(local.z,z,z+1)))
 		var d:=magnitude(clamped-point)
-		if d<distance:
+		# AstarPath.GetNearest visits graphs in index order and only replaces
+		# on a smaller distance, including when this grid is not graph zero.
+		if d<distance or (d==distance and int(graph.index)<int(best.graph)):
 			distance=d
 			best={"node":index,"point":clamped,"graph":graph.index}
 	return best
@@ -254,7 +259,7 @@ func find_path(start:Vector3,end:Vector3)->Dictionary:
 	var geometric:=geometric_nearest(end)
 	var geometric_node:int=geometric.node
 	var special_node:=-1
-	if geometric.graph==0 and end_node!=geometric_node and absi(end_node%width-geometric_node%width)<=1 and absi(end_node/width-geometric_node/width)<=1:
+	if geometric.graph==graph_index and end_node!=geometric_node and absi(end_node%width-geometric_node%width)<=1 and absi(end_node/width-geometric_node/width)<=1:
 		special_node=geometric_node
 		target=integer_positions[geometric_node]
 		targets.clear()
