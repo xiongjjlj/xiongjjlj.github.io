@@ -1,0 +1,1 @@
+{"name":"DisguiseInit","source_clip":"sharedassets1.assets_1243","source_prefab":"Disguise","start":0.0,"duration":0.0,"loop":false,"sample_rate":60.0,"tracks":[{"node":"Object__2625","source_transform_path":"Object","property":"node_active","curves":[{"type":"cubic","keys":[[0.0,[0.0,0.0,0.0,0.0]]],"times":[0.0]}]}],"resampled":false,"runtime_parity_verified":false}

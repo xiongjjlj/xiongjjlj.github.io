@@ -1,0 +1,3551 @@
+{
+  "types": [
+    {
+      "type": 2,
+      "node": 2509
+    },
+    {
+      "type": 4,
+      "node": 2648
+    },
+    {
+      "type": 8,
+      "node": 3422
+    },
+    {
+      "type": 16,
+      "node": 3302
+    },
+    {
+      "type": 32,
+      "node": 3314
+    },
+    {
+      "type": 1,
+      "node": 2793
+    },
+    {
+      "type": 64,
+      "node": 3170
+    },
+    {
+      "type": 128,
+      "node": 2898
+    },
+    {
+      "type": 256,
+      "node": 2870
+    },
+    {
+      "type": 512,
+      "node": 2638
+    },
+    {
+      "type": 1024,
+      "node": 3697
+    },
+    {
+      "type": 4096,
+      "node": 3740
+    },
+    {
+      "type": 8192,
+      "node": 3819
+    },
+    {
+      "type": 16384,
+      "node": 3971
+    },
+    {
+      "type": 32768,
+      "node": 3958
+    },
+    {
+      "type": 65536,
+      "node": 4330
+    }
+  ],
+  "nodes": [
+    {
+      "id": 2263,
+      "name": "Disguise",
+      "active": true,
+      "layer": 9,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6104,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2263
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 5957
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 4716
+            }
+          }
+        }
+      ],
+      "animator": {
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 2263
+          },
+          "m_Enabled": 1,
+          "m_Avatar": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Controller": {
+            "m_FileID": 0,
+            "m_PathID": 1723
+          },
+          "m_CullingMode": 0,
+          "m_UpdateMode": 0,
+          "m_ApplyRootMotion": false,
+          "m_LinearVelocityBlending": false,
+          "m_StabilizeFeet": false,
+          "m_HasTransformHierarchy": true,
+          "m_AllowConstantClipSamplingOptimization": true,
+          "m_KeepAnimatorStateOnDisable": false,
+          "m_WriteDefaultValuesOnDisable": false
+        },
+        "controller": "sharedassets1.assets_1723",
+        "avatar": null
+      }
+    },
+    {
+      "id": 2509,
+      "name": "StoneLantern",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 5927,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2509
+            },
+            "m_LocalRotation": {
+              "x": -0.7071068286895752,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 0.7071068286895752
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.3909775018692017,
+              "y": 1.3909815549850464,
+              "z": 1.3909815549850464
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          848
+        ],
+        "resource": "sharedassets1.assets_848",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_124"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 2625,
+      "name": "Object",
+      "active": true,
+      "layer": 9,
+      "tag": 0,
+      "components": [
+        {
+          "id": 5957,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2625
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 5927
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 5962
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 5558
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 4811
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 5071
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 5286
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 5671
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 5760
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 5457
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 5453
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6599
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6280
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6760
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6307
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6595
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6818
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6104
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 2638,
+      "name": "OnsenStool",
+      "active": true,
+      "layer": 8,
+      "tag": 0,
+      "components": [
+        {
+          "id": 5453,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2638
+            },
+            "m_LocalRotation": {
+              "x": -0.7071068286895752,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 0.7071068286895752
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 0.9398496150970459,
+              "y": 0.9398494362831116,
+              "z": 0.9398494362831116
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          870
+        ],
+        "resource": "sharedassets1.assets_870",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_127"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 2648,
+      "name": "Crate",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 5962,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2648
+            },
+            "m_LocalRotation": {
+              "x": -0.5,
+              "y": -0.5,
+              "z": 0.5,
+              "w": 0.5
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.5037593841552734,
+              "y": 1.5037593841552734,
+              "z": 1.5037593841552734
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          876
+        ],
+        "resource": "sharedassets1.assets_876",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_119"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 2793,
+      "name": "Rock",
+      "active": true,
+      "layer": 8,
+      "tag": 0,
+      "components": [
+        {
+          "id": 5286,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2793
+            },
+            "m_LocalRotation": {
+              "x": -0.5,
+              "y": 0.5,
+              "z": -0.5,
+              "w": 0.5
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.25
+            },
+            "m_LocalScale": {
+              "x": 0.6000000238418579,
+              "y": 1.25,
+              "z": 0.6000000238418579
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          951
+        ],
+        "resource": "sharedassets1.assets_951",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_125"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 2841,
+      "name": "Bamboo_Foliage 1",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6109,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2841
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": -0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5071
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          942
+        ],
+        "resource": "sharedassets1.assets_942",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_117"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 2870,
+      "name": "OnsenBucketLarge",
+      "active": true,
+      "layer": 8,
+      "tag": 0,
+      "components": [
+        {
+          "id": 5457,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2870
+            },
+            "m_LocalRotation": {
+              "x": -0.7071068286895752,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 0.7071068286895752
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.3157894611358643,
+              "y": 1.3157901763916016,
+              "z": 1.3157901763916016
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          864
+        ],
+        "resource": "sharedassets1.assets_864",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_127"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 2898,
+      "name": "Plinth_Boomerang",
+      "active": true,
+      "layer": 8,
+      "tag": 0,
+      "components": [
+        {
+          "id": 5760,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2898
+            },
+            "m_LocalRotation": {
+              "x": -0.5,
+              "y": -0.5,
+              "z": 0.5,
+              "w": 0.5
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 0.4962409436702728,
+              "y": 0.4962409436702728,
+              "z": 0.4962409734725952
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          846
+        ],
+        "resource": "sharedassets1.assets_846",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_130"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 3170,
+      "name": "Flag_Mast",
+      "active": true,
+      "layer": 8,
+      "tag": 0,
+      "components": [
+        {
+          "id": 5671,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3170
+            },
+            "m_LocalRotation": {
+              "x": -0.7071068286895752,
+              "y": -2.115964889526367e-06,
+              "z": 2.115964889526367e-06,
+              "w": 0.7071068286895752
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 0.7518807649612427,
+              "y": 0.7518804669380188,
+              "z": 0.7518804669380188
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          871
+        ],
+        "resource": "sharedassets1.assets_871",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_128"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 3302,
+      "name": "PotPlant",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 4811,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3302
+            },
+            "m_LocalRotation": {
+              "x": -0.5,
+              "y": -0.5,
+              "z": 0.5,
+              "w": 0.5
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.5037593841552734,
+              "y": 1.5037593841552734,
+              "z": 1.5037593841552734
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          844
+        ],
+        "resource": "sharedassets1.assets_844",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_120"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 3314,
+      "name": "Bamboo",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 5071,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3314
+            },
+            "m_LocalRotation": {
+              "x": -0.672654926776886,
+              "y": 0.024792909622192383,
+              "z": 0.0083999028429389,
+              "w": 0.739493191242218
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 0.800000011920929,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 6109
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          877
+        ],
+        "resource": "sharedassets1.assets_877",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_118"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 3422,
+      "name": "Vase",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 5558,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3422
+            },
+            "m_LocalRotation": {
+              "x": -0.30955374240875244,
+              "y": 0.6357488036155701,
+              "z": -0.6357487440109253,
+              "w": 0.30955368280410767
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.25,
+              "y": 1.25,
+              "z": 1.25
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          897
+        ],
+        "resource": "sharedassets1.assets_897",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_123"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 3681,
+      "name": "Shrub_Green_02",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6616,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3681
+            },
+            "m_LocalRotation": {
+              "x": 0.004751300904899836,
+              "y": 0.7070908546447754,
+              "z": -0.7070908546447754,
+              "w": -0.004751300904899836
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 0.699999988079071,
+              "y": 0.699999988079071,
+              "z": 0.699999988079071
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6760
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          739
+        ],
+        "resource": "sharedassets1.assets_739",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_115"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 3697,
+      "name": "TikiTorch",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6599,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3697
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": -0.7071068286895752,
+              "z": 0.7071068286895752,
+              "w": 0.0
+            },
+            "m_LocalPosition": {
+              "x": -0.0,
+              "y": 0.0,
+              "z": -3.0999999046325684
+            },
+            "m_LocalScale": {
+              "x": 0.699999988079071,
+              "y": 0.699999988079071,
+              "z": 0.699999988079071
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 6458
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          1079
+        ],
+        "resource": "sharedassets1.assets_1079",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_113"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 3740,
+      "name": "RockJungle",
+      "active": true,
+      "layer": 8,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6280,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3740
+            },
+            "m_LocalRotation": {
+              "x": -0.7071068286895752,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 0.7071068286895752
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -1.25
+            },
+            "m_LocalScale": {
+              "x": 0.6000000238418579,
+              "y": 1.25,
+              "z": 0.6000000238418579
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          1036
+        ],
+        "resource": "sharedassets1.assets_1036",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_114"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 3819,
+      "name": "ShrubGreen",
+      "active": true,
+      "layer": 9,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6760,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3819
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 6926
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6616
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        },
+        {
+          "id": 9890,
+          "type": "MonoBehaviour",
+          "class": "RandomEnabler",
+          "assembly": "Assembly-CSharp",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3819
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": 472
+            },
+            "m_Name": "",
+            "gameObjects": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 4541
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 3681
+              }
+            ]
+          },
+          "resources": {},
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "id": 3867,
+      "name": "Shrub_Red_02",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6992,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3867
+            },
+            "m_LocalRotation": {
+              "x": 0.004751300904899836,
+              "y": 0.7070908546447754,
+              "z": -0.7070908546447754,
+              "w": -0.004751300904899836
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 0.5,
+              "y": 0.5,
+              "z": 0.5
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6595
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          800
+        ],
+        "resource": "sharedassets1.assets_800",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_110"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 3894,
+      "name": "OnFirePFX",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6458,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3894
+            },
+            "m_LocalRotation": {
+              "x": 0.7071068286895752,
+              "y": -0.0,
+              "z": -0.0,
+              "w": -0.7071068286895752
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 4.820003986358643,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.5,
+              "y": 1.5,
+              "z": 1.5
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 7144
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6459
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 7107
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6599
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 3895,
+      "name": "Smoke",
+      "active": false,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6459,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3895
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.4000000059604645
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6458
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 3904,
+      "name": "Glow (1)",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 7107,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3904
+            },
+            "m_LocalRotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": -0.0,
+              "z": 0.8500000238418579
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6458
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 3917,
+      "name": "Shrub_Orange_01",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6906,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3917
+            },
+            "m_LocalRotation": {
+              "x": -0.7071068286895752,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 0.7071068286895752
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 0.5,
+              "y": 0.5,
+              "z": 0.5
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6307
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          1065
+        ],
+        "resource": "sharedassets1.assets_1065",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_111"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 3958,
+      "name": "ShrubRed",
+      "active": true,
+      "layer": 9,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6595,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3958
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 6535
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6992
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        },
+        {
+          "id": 9977,
+          "type": "MonoBehaviour",
+          "class": "RandomEnabler",
+          "assembly": "Assembly-CSharp",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3958
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": 472
+            },
+            "m_Name": "",
+            "gameObjects": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 4492
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 3867
+              }
+            ]
+          },
+          "resources": {},
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "id": 3971,
+      "name": "ShrubOrange",
+      "active": true,
+      "layer": 9,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6307,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3971
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 6906
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 7270
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        },
+        {
+          "id": 9966,
+          "type": "MonoBehaviour",
+          "class": "RandomEnabler",
+          "assembly": "Assembly-CSharp",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3971
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": 472
+            },
+            "m_Name": "",
+            "gameObjects": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 3917
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 4469
+              }
+            ]
+          },
+          "resources": {},
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "id": 4036,
+      "name": "TempleBlock_Pillar_01",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6289,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 4036
+            },
+            "m_LocalRotation": {
+              "x": 1.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 0.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -0.125
+            },
+            "m_LocalScale": {
+              "x": 56.0,
+              "y": 56.0,
+              "z": 56.0
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6818
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          796
+        ],
+        "resource": "sharedassets1.assets_796",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_112"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 4330,
+      "name": "TemplePillar",
+      "active": true,
+      "layer": 9,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6818,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 4330
+            },
+            "m_LocalRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 6289
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6794
+              }
+            ],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 5957
+            }
+          }
+        },
+        {
+          "id": 9972,
+          "type": "MonoBehaviour",
+          "class": "RandomEnabler",
+          "assembly": "Assembly-CSharp",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 4330
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 1,
+              "m_PathID": 472
+            },
+            "m_Name": "",
+            "gameObjects": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 4036
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 4450
+              }
+            ]
+          },
+          "resources": {},
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "id": 4377,
+      "name": "Glow",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 7144,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 4377
+            },
+            "m_LocalRotation": {
+              "x": -0.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 1.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6458
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 4450,
+      "name": "TempleBlock_Pillar_01",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6794,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 4450
+            },
+            "m_LocalRotation": {
+              "x": 1.0,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 0.0
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -0.125
+            },
+            "m_LocalScale": {
+              "x": 56.0,
+              "y": 56.0,
+              "z": 56.0
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6818
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          780
+        ],
+        "resource": "sharedassets1.assets_780",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_112"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 4469,
+      "name": "Shrub_Orange_02",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 7270,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 4469
+            },
+            "m_LocalRotation": {
+              "x": 0.004751300904899836,
+              "y": 0.7070908546447754,
+              "z": -0.7070908546447754,
+              "w": -0.004751300904899836
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 0.699999988079071,
+              "y": 0.699999988079071,
+              "z": 0.699999988079071
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6307
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          1016
+        ],
+        "resource": "sharedassets1.assets_1016",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_111"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 4492,
+      "name": "Shrub_Red_01",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6535,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 4492
+            },
+            "m_LocalRotation": {
+              "x": -0.7071068286895752,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 0.7071068286895752
+            },
+            "m_LocalPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "m_LocalScale": {
+              "x": 0.699999988079071,
+              "y": 0.699999988079071,
+              "z": 0.699999988079071
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6595
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          768
+        ],
+        "resource": "sharedassets1.assets_768",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_110"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    },
+    {
+      "id": 4541,
+      "name": "Shrub_Green_01",
+      "active": true,
+      "layer": 0,
+      "tag": 0,
+      "components": [
+        {
+          "id": 6926,
+          "type": "Transform",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 4541
+            },
+            "m_LocalRotation": {
+              "x": -0.7071068286895752,
+              "y": -0.0,
+              "z": -0.0,
+              "w": 0.7071068286895752
+            },
+            "m_LocalPosition": {
+              "x": 0.30000001192092896,
+              "y": -1.059999942779541,
+              "z": -0.5
+            },
+            "m_LocalScale": {
+              "x": 0.5,
+              "y": 0.5,
+              "z": 0.5
+            },
+            "m_Children": [],
+            "m_Father": {
+              "m_FileID": 0,
+              "m_PathID": 6760
+            }
+          }
+        }
+      ],
+      "mesh": {
+        "source": [
+          "sharedassets1.assets",
+          1006
+        ],
+        "resource": "sharedassets1.assets_1006",
+        "enabled": true,
+        "materials": [
+          "sharedassets1.assets_115"
+        ],
+        "static_batch": {
+          "firstSubMesh": 0,
+          "subMeshCount": 0
+        }
+      }
+    }
+  ],
+  "materials": {
+    "sharedassets1.assets_110": {
+      "name": "Shrub_Jungle_01_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.8196078538894653,
+          "g": 0.8078431487083435,
+          "b": 0.9058823585510254,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_465.png",
+        "name": "Shrub_Jungle_01_TEX",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 465
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_111": {
+      "name": "Shrub_Jungle_02_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_GroundTint": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.8196078538894653,
+          "g": 0.8078431487083435,
+          "b": 0.9058823585510254,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_CullMode": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_GroundTintMaxDepth": 10.0,
+        "_GroundTintMinDepth": 0.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_655.png",
+        "name": "Shrub_Jungle_02_TEX",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 655
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_112": {
+      "name": "TempleBlock_Pillar_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 0.800000011920929,
+          "g": 0.800000011920929,
+          "b": 0.800000011920929,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.6000000238418579,
+          "g": 0.6823529601097107,
+          "b": 0.7686274647712708,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_625.png",
+        "name": "TempleBlock_Pillar",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 625
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_113": {
+      "name": "TikiTorch_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.8196078538894653,
+          "g": 0.8078431487083435,
+          "b": 0.9058823585510254,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_300.png",
+        "name": "TikiTorch_TEX",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 300
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_114": {
+      "name": "VertexColor_Jungle_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.8194904327392578,
+          "g": 0.8074047565460205,
+          "b": 0.9056603908538818,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_115": {
+      "name": "Shrub_Jungle_03_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.06896551698446274,
+          "g": 0.10000000149011612,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.8196078538894653,
+          "g": 0.8078431487083435,
+          "b": 0.9058823585510254,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_481.png",
+        "name": "Shrub_Jungle_03_TEX",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 481
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_117": {
+      "name": "Bamboo_Leaf_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7568627595901489,
+          "g": 0.8627451062202454,
+          "b": 0.9725490212440491,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_315.png",
+        "name": "Bamboo_Foliage_DIF",
+        "width": 128,
+        "height": 128
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 315
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1118
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_118": {
+      "name": "Bamboo_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7651383876800537,
+          "g": 0.8529411554336548,
+          "b": 0.8275086283683777,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_691.png",
+        "name": "StylizedBamboo_DIF",
+        "width": 256,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 691
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1128
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_119": {
+      "name": "Crate_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.770902693271637,
+          "g": 0.5958760380744934,
+          "b": 0.9580000042915344,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_341.png",
+        "name": "Crate_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 341
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1120
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_120": {
+      "name": "GrassVase_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_448.png",
+        "name": "GrassVase_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 448
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1128
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_123": {
+      "name": "Pottery_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_AdditiveColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.8529411554336548,
+          "g": 0.7318338751792908,
+          "b": 0.6773356199264526,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_665.png",
+        "name": "Pottery_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 665
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1120
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_124": {
+      "name": "StoneLantern_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_630.png",
+        "name": "StoneLantern_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 630
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1128
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_125": {
+      "name": "VertexColor_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7564878463745117,
+          "g": 0.8642764091491699,
+          "b": 0.970588207244873,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_127": {
+      "name": "OnsenProps",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.9686274528503418,
+          "g": 0.9137254953384399,
+          "b": 0.8235294222831726,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_607.png",
+        "name": "OnsenProps",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 607
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_128": {
+      "name": "FlagMast",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.9686274528503418,
+          "g": 0.9137254953384399,
+          "b": 0.8235294222831726,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_394.png",
+        "name": "FlagMast",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 394
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_130": {
+      "name": "Plinth_Boomerang",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.9647058844566345,
+          "g": 0.9098039269447327,
+          "b": 0.8235294222831726,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_667.png",
+        "name": "Plinth_Boomerang",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 667
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    }
+  },
+  "shader_inputs": {
+    "sharedassets1.assets_110": {
+      "shader": "UU/Unlit/Shadow",
+      "textures": {
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_465.png",
+            "sha256": "fcea23bd463229ac2b26552bbfc458dded8ec936a6ae3587e816c7a8bff3f13a"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_111": {
+      "shader": "UU/Unlit/Shadow",
+      "textures": {
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_655.png",
+            "sha256": "0953fabeef90e7c906357dddb08160202eaf9d5f0de7913f89e2a153bd62a67e"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_112": {
+      "shader": "UU/Unlit/Shadow",
+      "textures": {
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_625.png",
+            "sha256": "b44ab06805cb82c258dd647b76caffdf19bc4c490dcea4b8974f3e0e888400ec"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_113": {
+      "shader": "UU/Unlit/Shadow",
+      "textures": {
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_300.png",
+            "sha256": "dbbfe5a2aa805328ea334d2b71d8344e52693e7740b48b40ad389a8f5fe3eca2"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_114": {
+      "shader": "UU/Unlit/Shadow",
+      "textures": {
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": null
+        }
+      }
+    },
+    "sharedassets1.assets_115": {
+      "shader": "UU/Unlit/Shadow",
+      "textures": {
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_481.png",
+            "sha256": "e5bb342483ef36f798506add54e922e78ac42a8ffaa6b8245e2f0afded32d103"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_117": {
+      "shader": "UU/Unlit/Alpha/Shadow_Cutout",
+      "textures": {
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_315.png",
+            "sha256": "085f2d04471173323312c20e1098fe0786b28e27b65d1479b74de99ffae4460e"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_118": {
+      "shader": "UU/Unlit/Shadow_Grain",
+      "textures": {
+        "_GrainTex": {
+          "scale": [
+            0.125,
+            0.125
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": null
+        },
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_691.png",
+            "sha256": "6b9083c67a7f347cf64abacf4ba396b3b5a3044b43b98a0170ee4d2718d40168"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_119": {
+      "shader": "Toon/Unlit/Shadow_Grain",
+      "textures": {
+        "_GrainTex": {
+          "scale": [
+            0.125,
+            0.125
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": null
+        },
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_341.png",
+            "sha256": "d928d4e0b728fa7e59a5f010046a31d969efba3604141d5245284a697edcf789"
+          }
+        },
+        "_Ramp": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_608.png",
+            "sha256": "39724cccf58424dada8cf37d6a7fe295f26913ea7321a6bbc4f34a34ebfff835"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_120": {
+      "shader": "UU/Unlit/Shadow_Grain",
+      "textures": {
+        "_GrainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": null
+        },
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_448.png",
+            "sha256": "c0dbb8b8f500a3f81d006d6af01542a3dc62a9f6a4531dfff018b8c72a2f5a7c"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_123": {
+      "shader": "Toon/Unlit/Shadow_Grain",
+      "textures": {
+        "_GrainTex": {
+          "scale": [
+            0.125,
+            0.125
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": null
+        },
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_665.png",
+            "sha256": "7ad3636fc87341c000bdc9c48ad0c47dd6c89159083ea84ecdbc0d2a128f0c47"
+          }
+        },
+        "_Ramp": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_608.png",
+            "sha256": "39724cccf58424dada8cf37d6a7fe295f26913ea7321a6bbc4f34a34ebfff835"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_124": {
+      "shader": "UU/Unlit/Shadow_Grain",
+      "textures": {
+        "_GrainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": null
+        },
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_630.png",
+            "sha256": "a71ef717ec96cc87f67e3a6c003dc7b0c7bd18cb4e039b263bd4931ec3082bcd"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_125": {
+      "shader": "UU/Unlit/Shadow",
+      "textures": {
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": null
+        }
+      }
+    },
+    "sharedassets1.assets_127": {
+      "shader": "UU/Unlit/Shadow",
+      "textures": {
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_607.png",
+            "sha256": "3e8cef54f49e7cb2c812fe4ce3400cf1c7fc343a1f95441c7ab17451d500abd3"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_128": {
+      "shader": "UU/Unlit/Shadow",
+      "textures": {
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_394.png",
+            "sha256": "3a1a3d7688e5d0389b3905b0e44b7133e384269f78d70088310f9d3aa9793514"
+          }
+        }
+      }
+    },
+    "sharedassets1.assets_130": {
+      "shader": "UU/Unlit/Shadow",
+      "textures": {
+        "_MainTex": {
+          "scale": [
+            1.0,
+            1.0
+          ],
+          "offset": [
+            0.0,
+            0.0
+          ],
+          "texture": {
+            "path": "shader-textures/sharedassets1.assets_667.png",
+            "sha256": "12140e6eaec24092b858f1a808a2dc357e1c2552155c407b29e76a828762d516"
+          }
+        }
+      }
+    }
+  },
+  "obstacles": [
+    {
+      "node": 168,
+      "type": 32
+    },
+    {
+      "node": 202,
+      "type": 32
+    },
+    {
+      "node": 209,
+      "type": 32
+    },
+    {
+      "node": 212,
+      "type": 32
+    },
+    {
+      "node": 211,
+      "type": 32
+    },
+    {
+      "node": 218,
+      "type": 32
+    },
+    {
+      "node": 216,
+      "type": 32
+    },
+    {
+      "node": 214,
+      "type": 32
+    },
+    {
+      "node": 215,
+      "type": 32
+    },
+    {
+      "node": 169,
+      "type": 32
+    },
+    {
+      "node": 167,
+      "type": 32
+    },
+    {
+      "node": 213,
+      "type": 32
+    },
+    {
+      "node": 170,
+      "type": 32
+    },
+    {
+      "node": 171,
+      "type": 32
+    },
+    {
+      "node": 166,
+      "type": 32
+    },
+    {
+      "node": 203,
+      "type": 32
+    },
+    {
+      "node": 217,
+      "type": 32
+    },
+    {
+      "node": 121,
+      "type": 8
+    },
+    {
+      "node": 239,
+      "type": 8
+    },
+    {
+      "node": 241,
+      "type": 8
+    },
+    {
+      "node": 237,
+      "type": 8
+    },
+    {
+      "node": 315,
+      "type": 16
+    },
+    {
+      "node": 236,
+      "type": 8
+    },
+    {
+      "node": 122,
+      "type": 8
+    },
+    {
+      "node": 238,
+      "type": 8
+    },
+    {
+      "node": 316,
+      "type": 16
+    }
+  ],
+  "available": [
+    32,
+    8
+  ]
+}

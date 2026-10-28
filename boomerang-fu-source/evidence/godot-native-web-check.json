@@ -1,0 +1,902 @@
+{
+  "all_scoped_checks_passed": true,
+  "checks": [
+    {
+      "name": "spatial_math",
+      "passed": true,
+      "report": {
+        "actual_original_managed_assembly": true,
+        "cases": 363,
+        "different_cases": 0,
+        "first_differences": [],
+        "native_engine_execution": true,
+        "original_player_execution": true,
+        "scope": "Actual original UnityEngine.CoreModule.dll managed Vector3 magnitude/normalized and Vector2 Reflect; math only; no spatial queries",
+        "source_runtime": "Original UnityPlayer Mono; actual Unity math; injected scene/time/game services",
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "disc_parry_motion",
+      "passed": true,
+      "report": {
+        "cases": 30,
+        "different_cases": 0,
+        "first_differences": [],
+        "native_parity_verified": false,
+        "original_player_execution": true,
+        "scope": "Unmodified original Disc/Projectile OnTriggerEnter2D, Bounce, StartThrow and StartFreeform; fake colliders/queries/coroutines ; math implementation recorded in runtime; excludes Actor response",
+        "source_runtime": "Original UnityPlayer Mono; actual Unity math; injected scene/time/game services",
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "disc_motion",
+      "passed": true,
+      "report": {
+        "different_steps": 0,
+        "first_differences": [],
+        "maximum_absolute_difference": 0.0,
+        "native_unity_parity_verified": false,
+        "original_player_execution": true,
+        "scenarios": 24,
+        "scope": "Flight arithmetic from original C# methods; engine/API and spatial-query substitutes; no damage or native collision validation",
+        "source_disc_z": -0.75,
+        "source_runtime": "Original UnityPlayer Mono; actual Unity math; injected scene/time/game services",
+        "steps": 4800,
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "disc_clash_motion",
+      "passed": true,
+      "report": {
+        "different_steps": 0,
+        "first_differences": [],
+        "native_parity_verified": false,
+        "original_player_execution": true,
+        "scenarios": 10,
+        "scope": "Original collision-response and flight arithmetic with injected contacts; excludes native spatial queries and protection coroutine scheduling",
+        "source_runtime": "Original UnityPlayer Mono; actual Unity math; injected scene/time/game services",
+        "steps": 1200,
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "actor_motion",
+      "passed": true,
+      "report": {
+        "compared_fields": [
+          "position",
+          "velocity",
+          "stored",
+          "dash_timer",
+          "cooldown",
+          "dashing",
+          "can_walk",
+          "can_dash",
+          "slide",
+          "drag",
+          "push_timer",
+          "push_strength",
+          "stun_timer",
+          "stunned"
+        ],
+        "different_frames": 0,
+        "first_differences": [],
+        "frames": 3060,
+        "maximum_absolute_difference": 0.0,
+        "native_unity_parity_verified": false,
+        "original_player_execution": true,
+        "scenarios": 17,
+        "scope": "Movement/contact arithmetic against extracted original C# methods; engine substitutes and injected contacts",
+        "source_runtime": "Original UnityPlayer Mono; actual Unity math; injected scene/time/game services",
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "melee_motion",
+      "passed": true,
+      "report": {
+        "different_frames": 0,
+        "first_differences": [],
+        "frames": 2340,
+        "maximum_absolute_difference": 0.0,
+        "native_unity_parity_verified": false,
+        "original_player_execution": true,
+        "scenarios": 13,
+        "scope": "Armed melee/lunge arithmetic against extracted original C# methods; engine queries and Animator replaced",
+        "source_runtime": "Original UnityPlayer Mono; actual Unity math; injected scene/time/game services",
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "timekeeper",
+      "passed": true,
+      "report": {
+        "differences": 0,
+        "first_differences": [],
+        "frames": 1800,
+        "maximum_absolute_error": 0.0,
+        "native_game_or_browser_parity_proven": false,
+        "original_player_execution": true,
+        "scope": "Recovered C# TimeKeeper with injected time and game services; execution runtime recorded separately",
+        "source_runtime": "Original UnityPlayer Mono; actual Unity math; injected scene/time/game services",
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "native_probe",
+      "passed": true,
+      "report": {
+        "arbitrary_rotation_differences": [],
+        "cases": 22,
+        "circle_cases": 6,
+        "circle_differences": [
+          {
+            "actual_distance": 1.93999996185303,
+            "actual_hit": true,
+            "expected_distance": 1.94500005245209,
+            "expected_hit": true,
+            "kind": "circle",
+            "name": "unit"
+          },
+          {
+            "actual_distance": 1.93999996185303,
+            "actual_hit": true,
+            "expected_distance": 1.94500005245209,
+            "expected_hit": true,
+            "kind": "circle",
+            "name": "half"
+          },
+          {
+            "actual_distance": 1.93999996185303,
+            "actual_hit": true,
+            "expected_distance": 1.94500005245209,
+            "expected_hit": true,
+            "kind": "circle",
+            "name": "double"
+          },
+          {
+            "actual_distance": 1.93999996185303,
+            "actual_hit": true,
+            "expected_distance": 1.94500005245209,
+            "expected_hit": true,
+            "kind": "circle",
+            "name": "spatial"
+          },
+          {
+            "actual_distance": 1.93999996185303,
+            "actual_hit": true,
+            "expected_distance": 1.94500005245209,
+            "expected_hit": true,
+            "kind": "circle",
+            "name": "tiny"
+          }
+        ],
+        "differences": [],
+        "full_native_query_parity_verified": false,
+        "gameplay_rotation_and_ray_samples_equal": true,
+        "gameplay_rotation_cases": 6,
+        "ray_cases": 6,
+        "rotation_cases": 16,
+        "scope": "Actual original Windows UnityPlayer 16 rotation outputs and six axis-aligned ray distances; circle-cast differences remain. Broader 512-angle diagnostic is in multidisc_lifecycle_test.",
+        "strict_equal": true,
+        "unity": "2022.3.62f2"
+      }
+    },
+    {
+      "name": "power_lifecycle",
+      "passed": true,
+      "report": {
+        "cases": 14,
+        "differences": [],
+        "full_game_parity_verified": false,
+        "original_player_execution": true,
+        "passed": true,
+        "source_runtime": "Original UnityPlayer Mono; unchanged Player power lifecycle methods; UI/world effects injected",
+        "states": 3077
+      }
+    },
+    {
+      "name": "power_combat",
+      "passed": true,
+      "report": {
+        "checks": [
+          {
+            "name": "shield damage guards normal",
+            "passed": true
+          },
+          {
+            "name": "shield contact does not score normal",
+            "passed": true
+          },
+          {
+            "name": "shield consumed and removed from history normal",
+            "passed": true
+          },
+          {
+            "name": "disc reflects without melee freeform bonus normal",
+            "passed": true
+          },
+          {
+            "name": "post-shield same-tick damage rejected normal",
+            "passed": true
+          },
+          {
+            "name": "duplicate shield callback rejected normal",
+            "passed": true
+          },
+          {
+            "name": "source stun duration normal",
+            "passed": true
+          },
+          {
+            "name": "shield damage guards charged",
+            "passed": true
+          },
+          {
+            "name": "shield contact does not score charged",
+            "passed": true
+          },
+          {
+            "name": "shield consumed and removed from history charged",
+            "passed": true
+          },
+          {
+            "name": "disc reflects without melee freeform bonus charged",
+            "passed": true
+          },
+          {
+            "name": "post-shield same-tick damage rejected charged",
+            "passed": true
+          },
+          {
+            "name": "duplicate shield callback rejected charged",
+            "passed": true
+          },
+          {
+            "name": "source stun duration charged",
+            "passed": true
+          },
+          {
+            "name": "shield damage guards owner",
+            "passed": true
+          },
+          {
+            "name": "shield contact does not score owner",
+            "passed": true
+          },
+          {
+            "name": "shield damage guards dash",
+            "passed": true
+          },
+          {
+            "name": "shield contact does not score dash",
+            "passed": true
+          },
+          {
+            "name": "shield damage guards wall",
+            "passed": true
+          },
+          {
+            "name": "shield contact does not score wall",
+            "passed": true
+          },
+          {
+            "name": "shield damage guards frontal_melee",
+            "passed": true
+          },
+          {
+            "name": "shield contact does not score frontal_melee",
+            "passed": true
+          },
+          {
+            "name": "unscaled invulnerability still active before .85",
+            "passed": true
+          },
+          {
+            "name": "crossing duration still yields one frame",
+            "passed": true
+          },
+          {
+            "name": "unscaled timer expires and enables stay damage",
+            "passed": true
+          },
+          {
+            "name": "blink half-tick rounds to even",
+            "passed": true
+          },
+          {
+            "name": "pause does not consume shield immunity",
+            "passed": true
+          },
+          {
+            "name": "melee breaks shield without killing",
+            "passed": true
+          },
+          {
+            "name": "shield stops attacking actor's lunge",
+            "passed": true
+          },
+          {
+            "name": "next round preserves haste and two discs",
+            "passed": true
+          },
+          {
+            "name": "haste increases source movement speed",
+            "passed": true
+          },
+          {
+            "name": "bamboozle reverses movement",
+            "passed": true
+          },
+          {
+            "name": "death removes shield and temporary effects",
+            "passed": true
+          }
+        ],
+        "failed": [],
+        "full_game_parity_verified": false,
+        "native_contact_order_verified": false,
+        "passed": true
+      }
+    },
+    {
+      "name": "camera_framing",
+      "passed": true,
+      "report": {
+        "cases": 6,
+        "differences": [],
+        "frames": 3600,
+        "full_game_parity_verified": false,
+        "original_player_execution": true,
+        "passed": true,
+        "scope": "Source camera framing with supplied targets and zero noise/shake; unrotated LevelEnclosed; no camera matrix comparison"
+      }
+    },
+    {
+      "name": "camera_tracking",
+      "passed": true,
+      "report": {
+        "differences": [],
+        "frames": 420,
+        "full_game_parity_verified": false,
+        "original_player_execution": true,
+        "passed": true,
+        "scope": "Original Camera3D add/remove coroutines with explicit scheduler; supplied transforms; no full native frame replay"
+      }
+    },
+    {
+      "name": "ground_queries",
+      "passed": true,
+      "report": {
+        "actual_unity_physics2d": true,
+        "different_samples": 0,
+        "first_differences": [],
+        "full_game_parity_verified": false,
+        "passed": true,
+        "samples": 2904,
+        "scope": "Supplied box/circle floors, wall and water; source nine-point hazard predicates including exact boundaries; no full level collision parity"
+      }
+    },
+    {
+      "name": "fall_lifecycle",
+      "passed": true,
+      "report": {
+        "cases": 16,
+        "different_frames": 0,
+        "first_differences": [],
+        "frames": 2880,
+        "full_game_parity_verified": false,
+        "passed": true,
+        "scope": "Unchanged Actor fall methods and extracted update branches in original UnityPlayer, with real Physics2D; controlled time/positions and explicit death/audio/animation adapters. Full moving-floor motion, death effects and Animator rendering are not covered.",
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "dash_walls",
+      "passed": true,
+      "report": {
+        "cases": 13,
+        "first_differences": [],
+        "frames": 1170,
+        "full_game_parity_verified": false,
+        "mismatched_fields": 0,
+        "passed": true,
+        "queries": 430,
+        "scope": "Original Actor/Player dash and hazard guard bodies, native Unity math and Physics2D; controlled transforms and audiovisual adapters. Static supplied floors/walls, default FFA safety flags. Full movement and native rendering are not covered.",
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "timeimmune_lifecycle",
+      "passed": true,
+      "report": {
+        "cases": 12,
+        "differences": [],
+        "frames": 4320,
+        "mismatch_count": 0,
+        "passed": true,
+        "scope": "Five unchanged Player/Disc blocks + complete TimeKeeper, original UnityPlayer Mono/math; injected time/game/particle/collision-request adapters"
+      }
+    },
+    {
+      "name": "multidisc_lifecycle",
+      "passed": true,
+      "report": {
+        "cases": 54,
+        "diagnostic_rotation_cases": 512,
+        "diagnostic_rotation_gaps": [
+          {
+            "actual": [
+              0.998629629611969,
+              -0.0523360967636108
+            ],
+            "angle": -93.0,
+            "expected": [
+              0.99862957,
+              -0.05233586
+            ]
+          },
+          {
+            "actual": [
+              -0.998629629611969,
+              -0.0523360967636108
+            ],
+            "angle": 93.0,
+            "expected": [
+              -0.99862957,
+              -0.05233586
+            ]
+          }
+        ],
+        "first_differences": [],
+        "frames": 1200,
+        "full_game_parity_verified": false,
+        "initial_discs": 243,
+        "maximum_absolute_error": 0.0,
+        "mismatched_fields": 0,
+        "passed": true,
+        "pickup_cases": 12,
+        "scope": "Unchanged MultiDisc burst/spawn/recycle/pickup methods and source flight; native Unity quaternion/Transform math; world and normal-pickup effects injected"
+      }
+    },
+    {
+      "name": "controlled_lifecycle",
+      "passed": true,
+      "report": {
+        "cases": 23,
+        "first_differences": [],
+        "frames": 4140,
+        "full_game_parity_verified": false,
+        "maximum_absolute_error": 0.0,
+        "mismatched_fields": 0,
+        "passed": true,
+        "scope": "Original Disc.FixedUpdate, CalculateControlled and two unchanged update blocks; actual Unity math; injected input/time, empty world queries, no original rendering/audio/full scene schedule"
+      }
+    },
+    {
+      "name": "teleport_lifecycle",
+      "passed": true,
+      "report": {
+        "cases": 35,
+        "first_differences": [],
+        "full_game_parity_verified": false,
+        "mismatched_fields": 0,
+        "passed": true,
+        "scope": "Unchanged native Teleport/Dash/hazard/raycast/overlap/Disc.Explode bodies. Pickup, death, respawn scheduling and cosmetic services injected; supplied random selections replayed. Full RNG stream, Animator, shaders and runtime callback parity unverified.",
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "explosive_lifecycle",
+      "passed": true,
+      "report": {
+        "cases": 24,
+        "differences": [],
+        "frames": 1074,
+        "mismatch_count": 0,
+        "passed": true,
+        "scope": "Fuse/blink timing and explicit inventory coroutine resumptions; blast curves/damage/rendering are separate"
+      }
+    },
+    {
+      "name": "explosion_geometry",
+      "passed": true,
+      "report": {
+        "cases": 10,
+        "curve_samples": 3003,
+        "differences": [],
+        "frames": 364,
+        "max_color_error": 1.19209289550781e-07,
+        "max_curve_error": 2.38418579101562e-07,
+        "max_radius_error": 2.38418579101562e-06,
+        "max_vertex_error": 2.69739825853321e-06,
+        "mismatch_count": 0,
+        "passed": true,
+        "scope": "Original Explosion source in Unity: timer state, damage callback counts, triangle indices exact; radius/gradient and ray-fan vertices have explicit measured tolerances; not full game parity",
+        "tolerances": {
+          "color": 3e-07,
+          "curve": 5e-07,
+          "radius": 5e-06,
+          "vertex": 3e-05
+        }
+      }
+    },
+    {
+      "name": "explosion_combat",
+      "passed": true,
+      "report": {
+        "cases": 12,
+        "differences": [],
+        "full_game_parity_verified": false,
+        "passed": true,
+        "scope": "Original damage/shield methods with the native fixture's injected null initial killer; pushback request compared. Native adapter records pushback instead of simulating subsequent actor velocity; shield counter after injected death is outside this comparison."
+      }
+    },
+    {
+      "name": "cell_grid",
+      "passed": true,
+      "report": {
+        "coordinates": 2646,
+        "differences": [],
+        "full_game_parity_verified": false,
+        "mismatch_count": 0,
+        "passed": true,
+        "radii": 54,
+        "scope": "Unchanged complete CellManager; original Unity math. Static grid; spawn predicates/audio/decals injected; particles disabled; moving grids and full world integration pending.",
+        "steps": 30
+      }
+    },
+    {
+      "name": "cell_trail",
+      "passed": true,
+      "report": {
+        "cases": 17,
+        "differences": [],
+        "frames": 2040,
+        "full_game_parity_verified": false,
+        "mismatch_count": 0,
+        "passed": true,
+        "scope": "Original Disc gate blocks and trail method with injected base movement, time, audio, spawn predicates; full flight and world schedule are separate"
+      }
+    },
+    {
+      "name": "cell_actor",
+      "passed": true,
+      "report": {
+        "cases": 19,
+        "differences": [],
+        "frames": 11400,
+        "full_game_parity_verified": false,
+        "mismatch_count": 0,
+        "passed": true,
+        "scope": "Unchanged Actor/Player fire/ice blocks and methods; explicit fixed/frame sequence, injected movement/death/audio/visuals and invulnerability inputs; freeze random rotation/chipping and full-match order separate"
+      }
+    },
+    {
+      "name": "cell_chip",
+      "passed": true,
+      "report": {
+        "cases": 6,
+        "differences": [],
+        "frames": 1080,
+        "full_game_parity_verified": false,
+        "mismatch_count": 0,
+        "passed": true,
+        "scope": "Unchanged native ChipOutOfFrozen and timer blocks; same sampled random directions injected, RNG engine equivalence not asserted"
+      }
+    },
+    {
+      "name": "disguise_lifecycle",
+      "passed": true,
+      "report": {
+        "cases": 23,
+        "differences": [],
+        "frames": 4140,
+        "full_game_parity_verified": false,
+        "nearest": 18,
+        "passed": true,
+        "scope": "Original FFA disguise update, setter, selection and nearest-prop method. Time/actor flags/render endpoints injected; original Unity random calls recorded for replay, RNG algorithm equivalence not asserted."
+      }
+    },
+    {
+      "name": "boundary_lifecycle",
+      "passed": true,
+      "report": {
+        "comparisons": 74955,
+        "differences": [],
+        "frames": 8400,
+        "full_game_parity_verified": false,
+        "game_cases": 6,
+        "killer_cases": 18,
+        "maximum_error": {
+          "clamp": 1.9073486328125e-06,
+          "game": 0.0,
+          "geometry": 8.58306884765625e-06,
+          "killer": 0.0,
+          "outside": 0.0,
+          "pulse": 3.814697265625e-06,
+          "shrink": 0.0
+        },
+        "outside_cases": 8,
+        "passed": true,
+        "queries": 63,
+        "scope": "Unchanged native source block fixtures. Shrink position and Quaternion clamp tolerances 2e-5; visual pulse tolerance 1e-5. Timers, state decisions, death frames and killer IDs exact. Random sudden-death target distribution/RNG not compared.",
+        "shrink_cases": 7
+      }
+    },
+    {
+      "name": "navigation",
+      "passed": true,
+      "report": {
+        "comparisons": 80007,
+        "differences": [],
+        "maximum_error": {
+          "clamped_end": 0.0,
+          "clamped_start": 0.0,
+          "end_node": 0.0,
+          "force_node": 0.0,
+          "force_position": 0.0,
+          "geometric_graph": 0.0,
+          "geometric_node": 0.0,
+          "h_target": 0.0,
+          "nearest": 0.0,
+          "nearest_position": 0.0,
+          "node_ids": 0.0,
+          "raw": 0.0,
+          "smoothed": 0.0,
+          "snapped": 0.0,
+          "special_node": 0.0,
+          "start_node": 0.0,
+          "total_length": 0.0,
+          "trimmed": 0.0
+        },
+        "passed": true,
+        "paths": 116,
+        "queries": 169,
+        "scope": "Original Enclosed static traversal and all eight graphs for unconstrained endpoints: nearest, ABPath node selection, original four-way heap ties, endpoint/edge/smoothing modifiers. Dynamic graph updates and asynchronous scheduling remain pending.",
+        "searched_nodes": 113922,
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "decoy_input",
+      "passed": true,
+      "report": {
+        "comparisons": 105670,
+        "differences": [],
+        "frames": 2880,
+        "maximum_error": {
+          "dash_success": 0.0,
+          "input": 0.0,
+          "motion": 0.0,
+          "speed": 0.0
+        },
+        "passed": true,
+        "scope": "Original Decoy speed/dash, original bounded input buffer and end-of-frame enabling; shared Actor locomotion. Native scene physics, full AI, pool scheduling and presentation are not covered.",
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "unity_random",
+      "passed": true,
+      "report": {
+        "calls": 900,
+        "comparisons": 8260,
+        "differences": [],
+        "passed": true,
+        "scope": "Actual UnityPlayer RNG initialization, xorshift state, scalar values, float/integer ranges including equal/reversed limits and insideUnitCircle. Whole-game random-call interleaving is not yet reproduced.",
+        "seeds": 10,
+        "state_transitions": 960,
+        "strict_equal": true
+      }
+    },
+    {
+      "name": "decoy_ai",
+      "passed": true,
+      "report": {
+        "comparisons": 30508,
+        "differences": [],
+        "geometry_tolerance": 2e-05,
+        "maximum_error": {
+          "divert": 9.5367431640625e-07,
+          "force": 0.0,
+          "move": 0.0,
+          "target": 1.9073486328125e-06,
+          "timers": 0.0
+        },
+        "passed": true,
+        "samples": 868,
+        "scope": "Original random targets, diversion, waypoint following, timers and forced dash decisions; exact discrete/RNG state, explicit vector tolerance. Uses injected facing, spatial predicates and path-response endpoints; native scene/scheduler remains outside scope."
+      }
+    },
+    {
+      "name": "player_ai_policy",
+      "passed": true,
+      "report": {
+        "comparisons": 3472,
+        "differences": [],
+        "exact_float32_or_discrete": 3472,
+        "full_player_ai_verified": false,
+        "groups": {
+          "desires": 240,
+          "difficulty": 16,
+          "interests": 240,
+          "visibility": 128
+        },
+        "max_absolute_error": 0.0,
+        "non_exact": [],
+        "passed": true,
+        "tolerance": 0.0
+      }
+    },
+    {
+      "name": "flee_navigation",
+      "passed": true,
+      "report": {
+        "comparisons": 18046,
+        "differences": [],
+        "maximum_error": {
+          "aim": 0.0,
+          "clamped_end": 0.0,
+          "clamped_start": 0.0,
+          "end_node": 0.0,
+          "node_ids": 0.0,
+          "raw": 0.0,
+          "searched": 0.0,
+          "smoothed": 0.0,
+          "snapped": 0.0,
+          "start_node": 0.0,
+          "system_random": 0.0,
+          "total_length": 0.0,
+          "trimmed": 0.0
+        },
+        "passed": true,
+        "paths": 96,
+        "scope": "Original FleePath and RandomPath on Enclosed graph, seeded Mono System.Random and source modifiers. Live pooled seed scheduling and complete PlayerAI are separate.",
+        "strict_equal": true,
+        "system_random_seeds": 7
+      }
+    },
+    {
+      "name": "player_ai_targeting",
+      "passed": true,
+      "report": {
+        "comparisons": 9216,
+        "differences": [],
+        "full_player_ai_verified": false,
+        "max_absolute_error": 0.0,
+        "passed": true,
+        "scenarios": 256,
+        "selected_counts": {
+          "attack": 172,
+          "block": 142,
+          "throw": 75
+        },
+        "tolerance": 0.0
+      }
+    },
+    {
+      "name": "player_ai_actions",
+      "passed": true,
+      "report": {
+        "all_comparisons_exact": false,
+        "commands": {
+          "button_attack": 201,
+          "button_dash": 224,
+          "button_throwdisc": 239,
+          "create_path": 20,
+          "divert_after_throw": 56,
+          "find_safe_dash": 57,
+          "rotate": 456,
+          "stop_hold": 214,
+          "teleport": 20
+        },
+        "comparisons": 17773,
+        "differences": [],
+        "exact_comparisons": 17769,
+        "full_player_ai_verified": false,
+        "max_absolute_error": 5.96046447753906e-08,
+        "non_exact": [
+          {
+            "absolute_error": 5.96046447753906e-08,
+            "expected": 0.992277860641479,
+            "got": 0.992277920246124,
+            "path": "action[872].block.events[2].vector[0]"
+          },
+          {
+            "absolute_error": 5.96046447753906e-08,
+            "expected": 0.992277860641479,
+            "got": 0.992277920246124,
+            "path": "action[872].block.move[0]"
+          },
+          {
+            "absolute_error": 5.96046447753906e-08,
+            "expected": 0.992277860641479,
+            "got": 0.992277920246124,
+            "path": "action[872].block.input_move[0]"
+          },
+          {
+            "absolute_error": 5.96046447753906e-08,
+            "expected": 0.992277860641479,
+            "got": 0.992277920246124,
+            "path": "action[872].block.last_rotation[0]"
+          }
+        ],
+        "other_values_tolerance": 0.0,
+        "passed": true,
+        "rotation_component_tolerance": 1.2e-07,
+        "scenarios": 1024,
+        "scope": "Immediate original action branches with injected safety predicates and recorded world/button/coroutine endpoints. Command order, RNG and discrete states require exact equality. Native Quaternion.AngleAxis cosine has a known 1-ULP component gap; full angular/frame parity is not established."
+      }
+    },
+    {
+      "name": "player_ai_buttons",
+      "passed": true,
+      "report": {
+        "comparisons": 82944,
+        "differences": [],
+        "frames": 3072,
+        "full_player_ai_verified": false,
+        "maximum_pending_routines": 2,
+        "passed": true,
+        "scenarios": 96,
+        "scope": "Original button bodies and real Unity coroutine phases, with scripted calls and the normal active-play PlayerInput release reset. Full bot/world scheduling remains separate.",
+        "tolerance": 0.0
+      }
+    }
+  ],
+  "core_sha256": {
+    "original_actor_bounds.gd": "acd08859257c379930a7ee5faacfd8ecdfbd00d3520b27ee90baa2425fd4e8a5",
+    "original_actor_elements.gd": "40fdc6f30b0150d4a97082d4b7a0e45c8ffba8dab90e32c30cc98c5f74347067",
+    "original_actor_environment.gd": "440e36dccd18c75d0fda45d5da81eb3d0f54bbaf485ee79fd11bb292c1fefcbb",
+    "original_actor_motion.gd": "cf0a9e3550825eddbb5f19482092b146a8390945989305981076d303752787b4",
+    "original_boundary_preview.gd": "7f43b7dc5e9b097b4decc6c5881427632d933aabbd1232102d582441282bfccd",
+    "original_camera_rig.gd": "080726c67ca7389fe16f679772cebbe1f12932f7e7395c97ab740c32ca62ab97",
+    "original_cell_grid.gd": "efb014740e0b893b3c3adc03e6c6f755c668f8f09d4b15cfae37a82d5e3ee773",
+    "original_cell_preview.gd": "3f142fa2ae75e95d5aa7c14b57166794bb4d2949b8582345889a697c9045ccf2",
+    "original_character_preview.gd": "ed0e6b925df00baf5b4c6d506f230aefa99de8c367b8e918e19f2cc87404353e",
+    "original_collision_world.gd": "3cb9de0766b352b00adf4ef23bb9da48de56a6d0165e56cc5836e331cf9e5f86",
+    "original_combat_world.gd": "b79b71a723fd3a373894e12a2d7e70f8da0a30f7be632bc7d348e007594bea51",
+    "original_decoy_ai.gd": "c9527d92e9392ce801b84184b245066186edd2f73f0a85a5dec865f222a4618c",
+    "original_decoy_elements.gd": "cb7136541cc58cc9cc3d7f26aea995bc929d6671687679ee6025acae66e75768",
+    "original_decoy_input.gd": "996a9e1f2db5d2e67a298ac6ef8208f806b8f9585395fcaffb0e10d64d66ec43",
+    "original_decoy_motion.gd": "d682669ff63ff7ffc9a5b24ad1b0a9d64890f1181368691f73ac3d78e7a0dfdf",
+    "original_decoy_world.gd": "f33e6965cd255d108acce022f9d47247e33c1f3f9a0908b393432d08a504af8e",
+    "original_disc_motion.gd": "63187f0ee15e273703360a1e441c135b101459399c48314259a50e46f4bb7900",
+    "original_disc_preview.gd": "a28198310984cf8535d834c3e405299c162fa48de76e1e857b72bbe149ee9957",
+    "original_disc_trail.gd": "3d232599209f911d87709f648543754267218b7d9763b2b22f00785316b0392d",
+    "original_disguise.gd": "4f11663f700ed6375f921272ccdce6c570b38e10c095ade5d7f287482b921b03",
+    "original_disguise_preview.gd": "ea2826322ae87d1de460e993fb579ebbc4398b2e9a997a47ba460e4ea1c07634",
+    "original_explosion.gd": "21509488f9b5e85d6b36c1ba2d3442aa00c9da6836239326d337688433d8011f",
+    "original_explosion_preview.gd": "4600e1948cee761036c9d8d32137eb2d14748c1bb85393e1401c8ad91722fbea",
+    "original_ffa_round.gd": "7b2855274fc9ea7182c0e09fdaab88d7f70ddbda28ba8dd0ba1c8b9edac83c0f",
+    "original_ffa_score.gd": "41db8c61d10977797c02de09d139a46d693cfcba55208b31c398b5d9e119993d",
+    "original_grenade.gd": "6b5ddd63e69302cc43b6d4d62649717ec79f47d3c91cd50f857571734bc38ad6",
+    "original_ground_queries.gd": "225eeaf3d44f3735b84be90668e5d7512e74ddaa11a986e5918e9bb54ca62506",
+    "original_level_boundary.gd": "280b19da2259369f87d6b71535da9e8b5916036365035fe5d8905fe1f2c316e3",
+    "original_navigation.gd": "ec4393608415f56d750dfed746ab70a605363f6f5b1a401b1878f3c1eec16c3a",
+    "original_player_ai.gd": "19476c3f229e9070f4d6d63275f063102f528a20d12dbcc2eccc5c68c973cd4d",
+    "original_player_ai_actions.gd": "da917b0ac0088f2b5d5d8a9fc505d3ec0735800609170ee0e81cbff906426284",
+    "original_player_ai_buttons.gd": "5596237593a95a6a60f2918b1bdaf7f0238829e860e23079226ac2b7fad680a2",
+    "original_player_ai_policy.gd": "8825b86830df29e207652be1d4e7a1e74e97cfa4cc19c4c841c8b37697a07184",
+    "original_player_ai_targeting.gd": "d10988c683234488b6819681a42fc83f96ccba29c732d6fe67d5251bb69a64f7",
+    "original_player_ai_world.gd": "16de4df777928cffd3e486f73b806e1466aac8ff55cd8163f0776aa00ea029e7",
+    "original_player_input.gd": "8df6d7457ed56a740e39dfa90d563016dbfc563d428accf51d74d3ce429788c0",
+    "original_player_powers.gd": "ec6edc2c504d062d531ba7939ea5ddca8e28a5e57f10e2e6de000c1844f17d65",
+    "original_player_weapons.gd": "469face003d89c464a9a535df060108a58726060ddee53f935f7f107b7cb143b",
+    "original_powerup_preview.gd": "67282268e3ec46f6467d4500f16d82c1cd47797299e3857560dc2227be456b43",
+    "original_powerup_world.gd": "96fdd87907349bd55693face2d4e759886ff43482de2750a0aa9ae6548915e48",
+    "original_scene_materials.gd": "dd8255608c4d1daa3dea08eb2b2f50c187e7e4336f17257826f691d07f5bec04",
+    "original_system_random.gd": "adc47354646a125d7f8d69b2f0e7a2b718d569303d22e50cfa41d980d02639f6",
+    "original_teleport.gd": "6af9be272bdf4046817b409e6b3fc9575c5fcd894a66790cd7f95a2696cb1f47",
+    "original_timekeeper.gd": "627e8b52ae78f88ff162851d5d9269bd3aabd6992caeec6de2e1ede710fc13ca",
+    "original_unity_random.gd": "fc2ce8b28c5dadb129286ed61634e2b93956bec22b98d6b811d95ae60af8acb2"
+  },
+  "full_game_parity_verified": false,
+  "generated_at": "2026-10-28T00:00:00+08:00",
+  "execution": "Godot headless validation runner after current source staging; exported Web artifact is hash-bound below.",
+  "browser_executed": false
+}

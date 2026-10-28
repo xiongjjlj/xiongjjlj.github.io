@@ -1,0 +1,21 @@
+{
+  "source_prefab": "Powerup",
+  "collider_radius": 0.6660000085830688,
+  "root_scale": 1.75,
+  "book": "book__2207",
+  "book_transform": "BookTransform__3304",
+  "root": "Powerup__2066",
+  "destroy_delay": 0.20000000298023224,
+  "spawn_duration": 0.3499999940395355,
+  "floor_mask": 1073807360,
+  "avoid_close": 2097408,
+  "avoid_far": 49664,
+  "level_size": [
+    43,
+    43
+  ],
+  "level_center": [
+    0,
+    0
+  ]
+}

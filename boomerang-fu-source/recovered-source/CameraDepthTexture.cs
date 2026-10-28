@@ -1,0 +1,13 @@
+using UnityEngine;
+
+[ExecuteInEditMode]
+public class CameraDepthTexture : MonoBehaviour
+{
+	private Camera cam;
+
+	private void Start()
+	{
+		cam = GetComponent<Camera>();
+		cam.depthTextureMode = DepthTextureMode.Depth;
+	}
+}

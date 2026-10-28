@@ -1,0 +1,4601 @@
+{
+  "source_engine": "Unity 2022.3.62f2",
+  "scenes": [
+    {
+      "file": "scenes/level2.json",
+      "name": "LevelEnclosed",
+      "nodes": 548,
+      "counts": {
+        "Transform": 548,
+        "MeshFilter": 193,
+        "MeshRenderer": 193,
+        "BoxCollider2D": 23,
+        "MonoBehaviour": 102,
+        "Camera": 1,
+        "CircleCollider2D": 100,
+        "Rigidbody2D": 63,
+        "Rigidbody": 26,
+        "SpriteRenderer": 33,
+        "Light": 6,
+        "PolygonCollider2D": 21,
+        "ParticleSystem": 1,
+        "ParticleSystemRenderer": 1,
+        "Animator": 1
+      }
+    },
+    {
+      "file": "level3/scenes/level3.json",
+      "name": "LevelSlideTraps",
+      "nodes": 710,
+      "counts": {
+        "Transform": 710,
+        "MeshFilter": 283,
+        "MeshRenderer": 283,
+        "MonoBehaviour": 142,
+        "Rigidbody2D": 50,
+        "CircleCollider2D": 75,
+        "BoxCollider2D": 100,
+        "Light": 7,
+        "Camera": 1,
+        "PolygonCollider2D": 19,
+        "Rigidbody": 25,
+        "SkinnedMeshRenderer": 2,
+        "Animator": 4,
+        "SpriteRenderer": 23,
+        "ParticleSystem": 4,
+        "ParticleSystemRenderer": 4
+      }
+    }
+  ],
+  "meshes": {
+    "level2_2": {
+      "path": "meshes/level2_2.json",
+      "vertices": 4,
+      "name": "pb_Mesh233602"
+    },
+    "level2_6": {
+      "path": "meshes/level2_6.json",
+      "vertices": 4,
+      "name": "pb_Mesh233646"
+    },
+    "level2_4": {
+      "path": "meshes/level2_4.json",
+      "vertices": 4,
+      "name": "pb_Mesh233704"
+    },
+    "level2_5": {
+      "path": "meshes/level2_5.json",
+      "vertices": 4,
+      "name": "pb_Mesh233806"
+    },
+    "level2_3": {
+      "path": "meshes/level2_3.json",
+      "vertices": 4,
+      "name": "pb_Mesh233972"
+    },
+    "level2_1": {
+      "path": "meshes/level2_1.json",
+      "vertices": 4,
+      "name": "pb_Mesh234144"
+    },
+    "sharedassets2.assets_57": {
+      "path": "meshes/sharedassets2.assets_57.json",
+      "vertices": 212,
+      "name": "Pottery_Shattered_07"
+    },
+    "sharedassets2.assets_41": {
+      "path": "meshes/sharedassets2.assets_41.json",
+      "vertices": 119,
+      "name": "Plateau_02"
+    },
+    "sharedassets2.assets_36": {
+      "path": "meshes/sharedassets2.assets_36.json",
+      "vertices": 105,
+      "name": "Bamboo_04"
+    },
+    "sharedassets2.assets_52": {
+      "path": "meshes/sharedassets2.assets_52.json",
+      "vertices": 12,
+      "name": "Vine_02"
+    },
+    "sharedassets2.assets_59": {
+      "path": "meshes/sharedassets2.assets_59.json",
+      "vertices": 124,
+      "name": "Pottery_Shattered_05"
+    },
+    "sharedassets2.assets_35": {
+      "path": "meshes/sharedassets2.assets_35.json",
+      "vertices": 4186,
+      "name": "ShrineFrame"
+    },
+    "sharedassets2.assets_56": {
+      "path": "meshes/sharedassets2.assets_56.json",
+      "vertices": 73,
+      "name": "Foliage_03"
+    },
+    "sharedassets2.assets_24": {
+      "path": "meshes/sharedassets2.assets_24.json",
+      "vertices": 52,
+      "name": "Terrain_Enclosed"
+    },
+    "sharedassets2.assets_33": {
+      "path": "meshes/sharedassets2.assets_33.json",
+      "vertices": 2322,
+      "name": "Gong"
+    },
+    "sharedassets2.assets_30": {
+      "path": "meshes/sharedassets2.assets_30.json",
+      "vertices": 870,
+      "name": "Gong_Ropes"
+    },
+    "sharedassets1.assets_897": {
+      "path": "meshes/sharedassets1.assets_897.json",
+      "vertices": 226,
+      "name": "Pottery_02"
+    },
+    "sharedassets2.assets_45": {
+      "path": "meshes/sharedassets2.assets_45.json",
+      "vertices": 447,
+      "name": "Trunk_01"
+    },
+    "sharedassets2.assets_31": {
+      "path": "meshes/sharedassets2.assets_31.json",
+      "vertices": 112,
+      "name": "Rock_Slab_02"
+    },
+    "sharedassets2.assets_37": {
+      "path": "meshes/sharedassets2.assets_37.json",
+      "vertices": 287,
+      "name": "Pottery_04"
+    },
+    "sharedassets1.assets_877": {
+      "path": "meshes/sharedassets1.assets_877.json",
+      "vertices": 98,
+      "name": "Bamboo_02"
+    },
+    "sharedassets2.assets_55": {
+      "path": "meshes/sharedassets2.assets_55.json",
+      "vertices": 80,
+      "name": "Cliff_02"
+    },
+    "sharedassets2.assets_43": {
+      "path": "meshes/sharedassets2.assets_43.json",
+      "vertices": 72,
+      "name": "Pottery_Shattered_03"
+    },
+    "sharedassets2.assets_58": {
+      "path": "meshes/sharedassets2.assets_58.json",
+      "vertices": 89,
+      "name": "Cliff_03"
+    },
+    "sharedassets2.assets_54": {
+      "path": "meshes/sharedassets2.assets_54.json",
+      "vertices": 152,
+      "name": "Pottery_Shattered_04"
+    },
+    "sharedassets2.assets_51": {
+      "path": "meshes/sharedassets2.assets_51.json",
+      "vertices": 287,
+      "name": "Trunk_03"
+    },
+    "sharedassets2.assets_28": {
+      "path": "meshes/sharedassets2.assets_28.json",
+      "vertices": 6,
+      "name": "LeafLitter_01"
+    },
+    "sharedassets2.assets_49": {
+      "path": "meshes/sharedassets2.assets_49.json",
+      "vertices": 72,
+      "name": "Pottery_Shattered_02"
+    },
+    "sharedassets2.assets_60": {
+      "path": "meshes/sharedassets2.assets_60.json",
+      "vertices": 216,
+      "name": "Pottery_Shattered_06"
+    },
+    "sharedassets2.assets_48": {
+      "path": "meshes/sharedassets2.assets_48.json",
+      "vertices": 16,
+      "name": "Bamboo_Foliage"
+    },
+    "sharedassets2.assets_39": {
+      "path": "meshes/sharedassets2.assets_39.json",
+      "vertices": 12,
+      "name": "Bamboo_Foliage"
+    },
+    "sharedassets2.assets_29": {
+      "path": "meshes/sharedassets2.assets_29.json",
+      "vertices": 118,
+      "name": "Cracked_StoneWall_01"
+    },
+    "sharedassets2.assets_44": {
+      "path": "meshes/sharedassets2.assets_44.json",
+      "vertices": 122,
+      "name": "Plateau_03"
+    },
+    "sharedassets2.assets_40": {
+      "path": "meshes/sharedassets2.assets_40.json",
+      "vertices": 60,
+      "name": "Pottery_Shattered_01"
+    },
+    "sharedassets2.assets_47": {
+      "path": "meshes/sharedassets2.assets_47.json",
+      "vertices": 554,
+      "name": "Trunk_02"
+    },
+    "sharedassets2.assets_46": {
+      "path": "meshes/sharedassets2.assets_46.json",
+      "vertices": 12,
+      "name": "Vine_01"
+    },
+    "sharedassets2.assets_26": {
+      "path": "meshes/sharedassets2.assets_26.json",
+      "vertices": 120,
+      "name": "Rock_Slab_01"
+    },
+    "sharedassets2.assets_42": {
+      "path": "meshes/sharedassets2.assets_42.json",
+      "vertices": 80,
+      "name": "Foliage_01"
+    },
+    "sharedassets2.assets_27": {
+      "path": "meshes/sharedassets2.assets_27.json",
+      "vertices": 25,
+      "name": "Canopy_Autumn"
+    },
+    "sharedassets2.assets_25": {
+      "path": "meshes/sharedassets2.assets_25.json",
+      "vertices": 257,
+      "name": "Pottery_01"
+    },
+    "sharedassets2.assets_53": {
+      "path": "meshes/sharedassets2.assets_53.json",
+      "vertices": 100,
+      "name": "Foliage_02"
+    },
+    "sharedassets2.assets_38": {
+      "path": "meshes/sharedassets2.assets_38.json",
+      "vertices": 111,
+      "name": "Plateau_01"
+    },
+    "sharedassets2.assets_32": {
+      "path": "meshes/sharedassets2.assets_32.json",
+      "vertices": 5,
+      "name": "LeafLitter_02"
+    },
+    "sharedassets2.assets_50": {
+      "path": "meshes/sharedassets2.assets_50.json",
+      "vertices": 80,
+      "name": "Cliff_01"
+    },
+    "sharedassets2.assets_34": {
+      "path": "meshes/sharedassets2.assets_34.json",
+      "vertices": 84,
+      "name": "Bamboo_03"
+    },
+    "sharedassets1.assets_942": {
+      "path": "meshes/sharedassets1.assets_942.json",
+      "vertices": 12,
+      "name": "Bamboo_Foliage"
+    },
+    "sharedassets1.assets_844": {
+      "path": "meshes/sharedassets1.assets_844.json",
+      "vertices": 867,
+      "name": "GrassVase"
+    },
+    "level3/level3_6": {
+      "path": "level3/meshes/level3_6.json",
+      "vertices": 4,
+      "name": "pb_Mesh206670"
+    },
+    "level3/sharedassets3.assets_74": {
+      "path": "level3/meshes/sharedassets3.assets_74.json",
+      "vertices": 12,
+      "name": "Vine_04"
+    },
+    "level3/sharedassets3.assets_70": {
+      "path": "level3/meshes/sharedassets3.assets_70.json",
+      "vertices": 78,
+      "name": "Rock_Slab_04"
+    },
+    "level3/sharedassets1.assets_909": {
+      "path": "level3/meshes/sharedassets1.assets_909.json",
+      "vertices": 262,
+      "name": "WoodCrate_01_Shattered_02"
+    },
+    "level3/sharedassets1.assets_893": {
+      "path": "level3/meshes/sharedassets1.assets_893.json",
+      "vertices": 340,
+      "name": "WoodCrate_01_Shattered_01"
+    },
+    "level3/level3_1": {
+      "path": "level3/meshes/level3_1.json",
+      "vertices": 4,
+      "name": "pb_Mesh206958"
+    },
+    "level3/level3_8": {
+      "path": "level3/meshes/level3_8.json",
+      "vertices": 4,
+      "name": "pb_Mesh206982"
+    },
+    "level3/sharedassets1.assets_924": {
+      "path": "level3/meshes/sharedassets1.assets_924.json",
+      "vertices": 182,
+      "name": "WoodCrate_01_Shattered_03"
+    },
+    "level3/sharedassets1.assets_844": {
+      "path": "level3/meshes/sharedassets1.assets_844.json",
+      "vertices": 867,
+      "name": "GrassVase"
+    },
+    "level3/sharedassets2.assets_52": {
+      "path": "level3/meshes/sharedassets2.assets_52.json",
+      "vertices": 12,
+      "name": "Vine_02"
+    },
+    "level3/sharedassets2.assets_46": {
+      "path": "level3/meshes/sharedassets2.assets_46.json",
+      "vertices": 12,
+      "name": "Vine_01"
+    },
+    "level3/sharedassets1.assets_940": {
+      "path": "level3/meshes/sharedassets1.assets_940.json",
+      "vertices": 274,
+      "name": "WoodCrate_01_Shattered_04"
+    },
+    "level3/unity_default_resources_10202": {
+      "path": "level3/meshes/unity_default_resources_10202.json",
+      "vertices": 24,
+      "name": "Cube"
+    },
+    "level3/level3_4": {
+      "path": "level3/meshes/level3_4.json",
+      "vertices": 4,
+      "name": "pb_Mesh207372"
+    },
+    "level3/sharedassets1.assets_876": {
+      "path": "level3/meshes/sharedassets1.assets_876.json",
+      "vertices": 336,
+      "name": "WoodCrate_01"
+    },
+    "level3/level3_5": {
+      "path": "level3/meshes/level3_5.json",
+      "vertices": 4,
+      "name": "pb_Mesh207560"
+    },
+    "level3/level3_7": {
+      "path": "level3/meshes/level3_7.json",
+      "vertices": 4,
+      "name": "pb_Mesh207658"
+    },
+    "level3/sharedassets3.assets_48": {
+      "path": "level3/meshes/sharedassets3.assets_48.json",
+      "vertices": 612,
+      "name": "Cube.026"
+    },
+    "level3/sharedassets3.assets_64": {
+      "path": "level3/meshes/sharedassets3.assets_64.json",
+      "vertices": 75,
+      "name": "pasted__polySurface1"
+    },
+    "level3/sharedassets2.assets_36": {
+      "path": "level3/meshes/sharedassets2.assets_36.json",
+      "vertices": 105,
+      "name": "Bamboo_04"
+    },
+    "level3/sharedassets3.assets_58": {
+      "path": "level3/meshes/sharedassets3.assets_58.json",
+      "vertices": 437,
+      "name": "Cube.019"
+    },
+    "level3/sharedassets2.assets_59": {
+      "path": "level3/meshes/sharedassets2.assets_59.json",
+      "vertices": 124,
+      "name": "Pottery_Shattered_05"
+    },
+    "level3/sharedassets3.assets_68": {
+      "path": "level3/meshes/sharedassets3.assets_68.json",
+      "vertices": 185,
+      "name": "BathBrush"
+    },
+    "level3/sharedassets1.assets_864": {
+      "path": "level3/meshes/sharedassets1.assets_864.json",
+      "vertices": 498,
+      "name": "OnsenBucketLarge"
+    },
+    "level3/level3_2": {
+      "path": "level3/meshes/level3_2.json",
+      "vertices": 18,
+      "name": "pb_Mesh188736"
+    },
+    "level3/sharedassets2.assets_43": {
+      "path": "level3/meshes/sharedassets2.assets_43.json",
+      "vertices": 72,
+      "name": "Pottery_Shattered_03"
+    },
+    "level3/sharedassets3.assets_63": {
+      "path": "level3/meshes/sharedassets3.assets_63.json",
+      "vertices": 485,
+      "name": "Cliff_Autumn_02"
+    },
+    "level3/sharedassets3.assets_50": {
+      "path": "level3/meshes/sharedassets3.assets_50.json",
+      "vertices": 91,
+      "name": "Bamboo_01"
+    },
+    "level3/sharedassets2.assets_56": {
+      "path": "level3/meshes/sharedassets2.assets_56.json",
+      "vertices": 73,
+      "name": "Foliage_03"
+    },
+    "level3/sharedassets3.assets_69": {
+      "path": "level3/meshes/sharedassets3.assets_69.json",
+      "vertices": 6,
+      "name": "LeafLitter_03"
+    },
+    "level3/sharedassets2.assets_57": {
+      "path": "level3/meshes/sharedassets2.assets_57.json",
+      "vertices": 212,
+      "name": "Pottery_Shattered_07"
+    },
+    "level3/sharedassets2.assets_37": {
+      "path": "level3/meshes/sharedassets2.assets_37.json",
+      "vertices": 287,
+      "name": "Pottery_04"
+    },
+    "level3/sharedassets1.assets_877": {
+      "path": "level3/meshes/sharedassets1.assets_877.json",
+      "vertices": 98,
+      "name": "Bamboo_02"
+    },
+    "level3/sharedassets2.assets_55": {
+      "path": "level3/meshes/sharedassets2.assets_55.json",
+      "vertices": 80,
+      "name": "Cliff_02"
+    },
+    "level3/sharedassets2.assets_54": {
+      "path": "level3/meshes/sharedassets2.assets_54.json",
+      "vertices": 152,
+      "name": "Pottery_Shattered_04"
+    },
+    "level3/sharedassets2.assets_51": {
+      "path": "level3/meshes/sharedassets2.assets_51.json",
+      "vertices": 287,
+      "name": "Trunk_03"
+    },
+    "level3/sharedassets3.assets_44": {
+      "path": "level3/meshes/sharedassets3.assets_44.json",
+      "vertices": 472,
+      "name": "Cliff_Autumn_01"
+    },
+    "level3/sharedassets3.assets_51": {
+      "path": "level3/meshes/sharedassets3.assets_51.json",
+      "vertices": 344,
+      "name": "Cube.018"
+    },
+    "level3/sharedassets3.assets_45": {
+      "path": "level3/meshes/sharedassets3.assets_45.json",
+      "vertices": 469,
+      "name": "FallenLog_Short"
+    },
+    "level3/sharedassets3.assets_60": {
+      "path": "level3/meshes/sharedassets3.assets_60.json",
+      "vertices": 782,
+      "name": "BathHosueSideBuilding"
+    },
+    "level3/sharedassets3.assets_52": {
+      "path": "level3/meshes/sharedassets3.assets_52.json",
+      "vertices": 1152,
+      "name": "Terrain_SlideTraps"
+    },
+    "level3/sharedassets3.assets_54": {
+      "path": "level3/meshes/sharedassets3.assets_54.json",
+      "vertices": 76,
+      "name": "BallSwitch_Base"
+    },
+    "level3/sharedassets3.assets_49": {
+      "path": "level3/meshes/sharedassets3.assets_49.json",
+      "vertices": 560,
+      "name": "BathHouseArchway"
+    },
+    "level3/sharedassets2.assets_28": {
+      "path": "level3/meshes/sharedassets2.assets_28.json",
+      "vertices": 6,
+      "name": "LeafLitter_01"
+    },
+    "level3/sharedassets3.assets_62": {
+      "path": "level3/meshes/sharedassets3.assets_62.json",
+      "vertices": 74,
+      "name": "polySurface1"
+    },
+    "level3/sharedassets2.assets_48": {
+      "path": "level3/meshes/sharedassets2.assets_48.json",
+      "vertices": 16,
+      "name": "Bamboo_Foliage"
+    },
+    "level3/sharedassets3.assets_65": {
+      "path": "level3/meshes/sharedassets3.assets_65.json",
+      "vertices": 118,
+      "name": "BathTiles"
+    },
+    "level3/sharedassets3.assets_72": {
+      "path": "level3/meshes/sharedassets3.assets_72.json",
+      "vertices": 73,
+      "name": "Rock_Slab_05"
+    },
+    "level3/sharedassets3.assets_73": {
+      "path": "level3/meshes/sharedassets3.assets_73.json",
+      "vertices": 5,
+      "name": "LeafLitter_05"
+    },
+    "level3/sharedassets2.assets_39": {
+      "path": "level3/meshes/sharedassets2.assets_39.json",
+      "vertices": 12,
+      "name": "Bamboo_Foliage"
+    },
+    "level3/sharedassets3.assets_66": {
+      "path": "level3/meshes/sharedassets3.assets_66.json",
+      "vertices": 184,
+      "name": "BallSwitch"
+    },
+    "level3/unity_default_resources_10210": {
+      "path": "level3/meshes/unity_default_resources_10210.json",
+      "vertices": 4,
+      "name": "Quad"
+    },
+    "level3/sharedassets3.assets_67": {
+      "path": "level3/meshes/sharedassets3.assets_67.json",
+      "vertices": 195,
+      "name": "WoodFence_02"
+    },
+    "level3/sharedassets3.assets_71": {
+      "path": "level3/meshes/sharedassets3.assets_71.json",
+      "vertices": 4,
+      "name": "LeafLitter_04"
+    },
+    "level3/sharedassets3.assets_57": {
+      "path": "level3/meshes/sharedassets3.assets_57.json",
+      "vertices": 186,
+      "name": "WoodFence_01"
+    },
+    "level3/sharedassets3.assets_55": {
+      "path": "level3/meshes/sharedassets3.assets_55.json",
+      "vertices": 735,
+      "name": "Flag_Pole"
+    },
+    "level3/sharedassets2.assets_49": {
+      "path": "level3/meshes/sharedassets2.assets_49.json",
+      "vertices": 72,
+      "name": "Pottery_Shattered_02"
+    },
+    "level3/sharedassets1.assets_870": {
+      "path": "level3/meshes/sharedassets1.assets_870.json",
+      "vertices": 136,
+      "name": "OnsenStool"
+    },
+    "level3/sharedassets2.assets_47": {
+      "path": "level3/meshes/sharedassets2.assets_47.json",
+      "vertices": 554,
+      "name": "Trunk_02"
+    },
+    "level3/sharedassets2.assets_27": {
+      "path": "level3/meshes/sharedassets2.assets_27.json",
+      "vertices": 25,
+      "name": "Canopy_Autumn"
+    },
+    "level3/sharedassets3.assets_59": {
+      "path": "level3/meshes/sharedassets3.assets_59.json",
+      "vertices": 541,
+      "name": "Cube.007"
+    },
+    "level3/sharedassets1.assets_897": {
+      "path": "level3/meshes/sharedassets1.assets_897.json",
+      "vertices": 226,
+      "name": "Pottery_02"
+    },
+    "level3/sharedassets2.assets_40": {
+      "path": "level3/meshes/sharedassets2.assets_40.json",
+      "vertices": 60,
+      "name": "Pottery_Shattered_01"
+    },
+    "level3/sharedassets3.assets_61": {
+      "path": "level3/meshes/sharedassets3.assets_61.json",
+      "vertices": 408,
+      "name": "BathHouseLowLatticedWalls"
+    },
+    "level3/sharedassets3.assets_56": {
+      "path": "level3/meshes/sharedassets3.assets_56.json",
+      "vertices": 488,
+      "name": "FallenLog_Long"
+    },
+    "level3/level3_3": {
+      "path": "level3/meshes/level3_3.json",
+      "vertices": 18,
+      "name": "pb_Mesh188762"
+    },
+    "level3/sharedassets3.assets_53": {
+      "path": "level3/meshes/sharedassets3.assets_53.json",
+      "vertices": 1499,
+      "name": "WeaponsRack_B"
+    },
+    "level3/sharedassets2.assets_53": {
+      "path": "level3/meshes/sharedassets2.assets_53.json",
+      "vertices": 100,
+      "name": "Foliage_02"
+    },
+    "level3/sharedassets3.assets_46": {
+      "path": "level3/meshes/sharedassets3.assets_46.json",
+      "vertices": 1869,
+      "name": "WeaponsRack_A"
+    },
+    "level3/sharedassets2.assets_32": {
+      "path": "level3/meshes/sharedassets2.assets_32.json",
+      "vertices": 5,
+      "name": "LeafLitter_02"
+    },
+    "level3/sharedassets3.assets_47": {
+      "path": "level3/meshes/sharedassets3.assets_47.json",
+      "vertices": 603,
+      "name": "CampSiteSideBuilding"
+    },
+    "level3/sharedassets2.assets_50": {
+      "path": "level3/meshes/sharedassets2.assets_50.json",
+      "vertices": 80,
+      "name": "Cliff_01"
+    },
+    "level3/sharedassets2.assets_34": {
+      "path": "level3/meshes/sharedassets2.assets_34.json",
+      "vertices": 84,
+      "name": "Bamboo_03"
+    },
+    "level3/sharedassets2.assets_60": {
+      "path": "level3/meshes/sharedassets2.assets_60.json",
+      "vertices": 216,
+      "name": "Pottery_Shattered_06"
+    },
+    "level3/sharedassets1.assets_942": {
+      "path": "level3/meshes/sharedassets1.assets_942.json",
+      "vertices": 12,
+      "name": "Bamboo_Foliage"
+    },
+    "level3/sharedassets3.assets_43": {
+      "path": "level3/meshes/sharedassets3.assets_43.json",
+      "vertices": 175,
+      "name": "Trunk_A"
+    },
+    "level3/sharedassets3.assets_42": {
+      "path": "level3/meshes/sharedassets3.assets_42.json",
+      "vertices": 408,
+      "name": "Foliage_B"
+    },
+    "level3/sharedassets3.assets_75": {
+      "path": "level3/meshes/sharedassets3.assets_75.json",
+      "vertices": 270,
+      "name": "Foliage_A_Alpha"
+    },
+    "level3/sharedassets3.assets_76": {
+      "path": "level3/meshes/sharedassets3.assets_76.json",
+      "vertices": 578,
+      "name": "Foliage_A"
+    },
+    "level3/sharedassets3.assets_78": {
+      "path": "level3/meshes/sharedassets3.assets_78.json",
+      "vertices": 126,
+      "name": "Trunk_B"
+    },
+    "level3/sharedassets1.assets_848": {
+      "path": "level3/meshes/sharedassets1.assets_848.json",
+      "vertices": 438,
+      "name": "StoneLantern"
+    },
+    "level3/sharedassets3.assets_77": {
+      "path": "level3/meshes/sharedassets3.assets_77.json",
+      "vertices": 270,
+      "name": "Foliage_B_Alpha"
+    }
+  },
+  "materials": {
+    "sharedassets1.assets_206": {
+      "name": "Floor",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 0.7490196228027344,
+          "g": 0.9058824181556702,
+          "b": 0.49803924560546875,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_EmissionColorUI": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_HColor": {
+          "r": 0.49803921580314636,
+          "g": 0.49803921580314636,
+          "b": 0.49803921580314636,
+          "a": 1.0
+        },
+        "_SColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.8266666531562805,
+          "g": 0.8966901898384094,
+          "b": 0.9725490212440491,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "PixelSnap": 1.0,
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_EmissionScaleUI": 0.0,
+        "_Glossiness": 0.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_RampSmooth": 1.0,
+        "_RampThreshold": 0.5,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1133
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_123": {
+      "name": "Pottery_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_AdditiveColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.8529411554336548,
+          "g": 0.7318338751792908,
+          "b": 0.6773356199264526,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_665.png",
+        "name": "Pottery_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 665
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1120
+      ],
+      "shader_ported": false
+    },
+    "sharedassets2.assets_13": {
+      "name": "VertexColor_No_Overlay_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7564878463745117,
+          "g": 0.8642764091491699,
+          "b": 0.970588207244873,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_118": {
+      "name": "Bamboo_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7651383876800537,
+          "g": 0.8529411554336548,
+          "b": 0.8275086283683777,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_691.png",
+        "name": "StylizedBamboo_DIF",
+        "width": 256,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 691
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1128
+      ],
+      "shader_ported": false
+    },
+    "sharedassets2.assets_7": {
+      "name": "Mountains_VineLeafs_Atlas_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_HColor": {
+          "r": 0.7850000262260437,
+          "g": 0.7850000262260437,
+          "b": 0.7850000262260437,
+          "a": 1.0
+        },
+        "_SColor": {
+          "r": 0.19499999284744263,
+          "g": 0.19499999284744263,
+          "b": 0.19499999284744263,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.5513083934783936,
+          "g": 0.7279411554336548,
+          "b": 0.5817623138427734,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_RampSmooth": 0.10000000149011612,
+        "_RampThreshold": 0.5,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets2.assets_17.png",
+        "name": "VineAtlas_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 17
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1106
+      ],
+      "shader_ported": false
+    },
+    "sharedassets2.assets_5": {
+      "name": "GongShrine_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets2.assets_16.png",
+        "name": "GongShrine_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 16
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1128
+      ],
+      "shader_ported": false
+    },
+    "sharedassets2.assets_2": {
+      "name": "BirchFoliage_Red_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 0.8616632223129272,
+          "b": 0.7720588445663452,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets2.assets_18.png",
+        "name": "FoliageAtlas_Red_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 18
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1118
+      ],
+      "shader_ported": false
+    },
+    "sharedassets2.assets_11": {
+      "name": "VertexColor_Ground_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7564878463745117,
+          "g": 0.8642764091491699,
+          "b": 0.970588207244873,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1133
+      ],
+      "shader_ported": false
+    },
+    "sharedassets2.assets_10": {
+      "name": "TreeBark_01_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7758975028991699,
+          "g": 0.8292655944824219,
+          "b": 0.9338235259056091,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_FogMaxDepth": 10.0,
+        "_FogMinDepth": 0.0,
+        "_FogScrollSpeed": 1.0,
+        "_FogWaveIntensity": 1.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets2.assets_22.png",
+        "name": "BirchTree_DIF",
+        "width": 512,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 22
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets2.assets_9": {
+      "name": "TreeBark_01_HeightFog_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7758975028991699,
+          "g": 0.8292655944824219,
+          "b": 0.9338235259056091,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_FogMaxDepth": 10.0,
+        "_FogMinDepth": 0.0,
+        "_FogScrollSpeed": 1.0,
+        "_FogWaveIntensity": 1.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets2.assets_22.png",
+        "name": "BirchTree_DIF",
+        "width": 512,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 22
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets2.assets",
+        61
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_125": {
+      "name": "VertexColor_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7564878463745117,
+          "g": 0.8642764091491699,
+          "b": 0.970588207244873,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets2.assets_12": {
+      "name": "VertexColor_Heightfog_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7564878463745117,
+          "g": 0.8642764091491699,
+          "b": 0.970588207244873,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_FogHigh": 10.0,
+        "_FogLow": 5.0,
+        "_FogMaxDepth": 19.0,
+        "_FogMinDepth": -10.0,
+        "_FogScrollSpeed": 0.125,
+        "_FogWaveIntensity": 0.10000000149011612,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets2.assets",
+        61
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_117": {
+      "name": "Bamboo_Leaf_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7568627595901489,
+          "g": 0.8627451062202454,
+          "b": 0.9725490212440491,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_315.png",
+        "name": "Bamboo_Foliage_DIF",
+        "width": 128,
+        "height": 128
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 315
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1118
+      ],
+      "shader_ported": false
+    },
+    "sharedassets2.assets_4": {
+      "name": "Cracked_StoneWall_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets2.assets_21.png",
+        "name": "UU_Stonewall_Subtle_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 21
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "sharedassets2.assets_3": {
+      "name": "Canopy_Green_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.4156862795352936,
+          "g": 0.7529411911964417,
+          "b": 0.6853480339050293,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets2.assets_23.png",
+        "name": "Foliage_Canopy_Green_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 23
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1118
+      ],
+      "shader_ported": false
+    },
+    "sharedassets1.assets_120": {
+      "name": "GrassVase_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "textures/sharedassets1.assets_448.png",
+        "name": "GrassVase_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 448
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1128
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets1.assets_206": {
+      "name": "Floor",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 0.7490196228027344,
+          "g": 0.9058824181556702,
+          "b": 0.49803924560546875,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_EmissionColorUI": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_HColor": {
+          "r": 0.49803921580314636,
+          "g": 0.49803921580314636,
+          "b": 0.49803921580314636,
+          "a": 1.0
+        },
+        "_SColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.8266666531562805,
+          "g": 0.8966901898384094,
+          "b": 0.9725490212440491,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "PixelSnap": 1.0,
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_EmissionScaleUI": 0.0,
+        "_Glossiness": 0.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_RampSmooth": 1.0,
+        "_RampThreshold": 0.5,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1133
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets2.assets_7": {
+      "name": "Mountains_VineLeafs_Atlas_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_HColor": {
+          "r": 0.7850000262260437,
+          "g": 0.7850000262260437,
+          "b": 0.7850000262260437,
+          "a": 1.0
+        },
+        "_SColor": {
+          "r": 0.19499999284744263,
+          "g": 0.19499999284744263,
+          "b": 0.19499999284744263,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.5513083934783936,
+          "g": 0.7279411554336548,
+          "b": 0.5817623138427734,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_RampSmooth": 0.10000000149011612,
+        "_RampThreshold": 0.5,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets2.assets_17.png",
+        "name": "VineAtlas_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 17
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1106
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets1.assets_125": {
+      "name": "VertexColor_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7564878463745117,
+          "g": 0.8642764091491699,
+          "b": 0.970588207244873,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets1.assets_119": {
+      "name": "Crate_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.770902693271637,
+          "g": 0.5958760380744934,
+          "b": 0.9580000042915344,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets1.assets_341.png",
+        "name": "Crate_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 341
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1120
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets1.assets_120": {
+      "name": "GrassVase_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets1.assets_448.png",
+        "name": "GrassVase_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 448
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1128
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets1.assets_215": {
+      "name": "Obstacle",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 0.46274513006210327,
+          "g": 0.5137255191802979,
+          "b": 0.7843137979507446,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_HColor": {
+          "r": 0.9230000376701355,
+          "g": 0.9230000376701355,
+          "b": 0.9230000376701355,
+          "a": 1.0
+        },
+        "_OutlineColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_SColor": {
+          "r": 0.11946667730808258,
+          "g": 0.13123726844787598,
+          "b": 0.250980406999588,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.6770564913749695,
+          "g": 0.7717742323875427,
+          "b": 0.8700000047683716,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_Glossiness": 0.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Outline": 0.004999999888241291,
+        "_Parallax": 0.019999999552965164,
+        "_RampSmooth": 0.10000000149011612,
+        "_RampThreshold": 0.5,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_19": {
+      "name": "RoyalTempleRock",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7832432985305786,
+          "g": 0.7969189882278442,
+          "b": 0.9200000166893005,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_33.png",
+        "name": "RoyalTempleRock",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 33
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_5": {
+      "name": "BathTiles_Wet_MAT",
+      "colors": {
+        "_Color": {
+          "r": 0.8639999628067017,
+          "g": 0.9073548316955566,
+          "b": 0.9599999785423279,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.8274509906768799,
+          "g": 0.8980392217636108,
+          "b": 0.9725490212440491,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_38.png",
+        "name": "UU_BathTiles_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 38
+        },
+        "m_Scale": {
+          "x": 0.02500000037252903,
+          "y": 0.02500000037252903
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets3.assets",
+        79
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets1.assets_118": {
+      "name": "Bamboo_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7651383876800537,
+          "g": 0.8529411554336548,
+          "b": 0.8275086283683777,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets1.assets_691.png",
+        "name": "StylizedBamboo_DIF",
+        "width": 256,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 691
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1128
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets1.assets_123": {
+      "name": "Pottery_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_AdditiveColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.8529411554336548,
+          "g": 0.7318338751792908,
+          "b": 0.6773356199264526,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets1.assets_665.png",
+        "name": "Pottery_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 665
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1120
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_3": {
+      "name": "BathBrush_Mover_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_26.png",
+        "name": "BathBrush_Mover_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 26
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets1.assets_127": {
+      "name": "OnsenProps",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.9686274528503418,
+          "g": 0.9137254953384399,
+          "b": 0.8235294222831726,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets1.assets_607.png",
+        "name": "OnsenProps",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 607
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_23": {
+      "name": "MovingObstacle",
+      "colors": {
+        "_Color": {
+          "r": 0.47999998927116394,
+          "g": 0.4998530149459839,
+          "b": 0.75,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1096
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets2.assets_2": {
+      "name": "BirchFoliage_Red_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 0.8616632223129272,
+          "b": 0.7720588445663452,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets2.assets_18.png",
+        "name": "FoliageAtlas_Red_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 18
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1118
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets2.assets_10": {
+      "name": "TreeBark_01_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7758975028991699,
+          "g": 0.8292655944824219,
+          "b": 0.9338235259056091,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_FogMaxDepth": 10.0,
+        "_FogMinDepth": 0.0,
+        "_FogScrollSpeed": 1.0,
+        "_FogWaveIntensity": 1.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets2.assets_22.png",
+        "name": "BirchTree_DIF",
+        "width": 512,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 22
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_17": {
+      "name": "FallenLogs",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.9686274528503418,
+          "g": 0.9137254953384399,
+          "b": 0.8235294222831726,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_35.png",
+        "name": "FallenLogs",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 35
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_15": {
+      "name": "BathHosueSideBuilding",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.8274509906768799,
+          "g": 0.8980392217636108,
+          "b": 0.9725490212440491,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_34.png",
+        "name": "BathHouseSideBuilding",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 34
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_11": {
+      "name": "VertexColor_Autumn_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.9200000166893005,
+          "g": 0.8940322995185852,
+          "b": 0.8420968055725098,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": null,
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_2": {
+      "name": "BallSwitch_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_IllumColor": {
+          "r": 0.0,
+          "g": 0.8166666030883789,
+          "b": 1.0,
+          "a": 0.5529412031173706
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_25.png",
+        "name": "BallSwitch_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 25
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets3.assets",
+        80
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_13": {
+      "name": "BathHouseArchway",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.8274509906768799,
+          "g": 0.8980392217636108,
+          "b": 0.9725490212440491,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_30.png",
+        "name": "BathHouseArchway",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 30
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets1.assets_117": {
+      "name": "Bamboo_Leaf_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.7568627595901489,
+          "g": 0.8627451062202454,
+          "b": 0.9725490212440491,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets1.assets_315.png",
+        "name": "Bamboo_Foliage_DIF",
+        "width": 128,
+        "height": 128
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 315
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1118
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_4": {
+      "name": "BathTiles_Dry_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.8274509906768799,
+          "g": 0.8980392217636108,
+          "b": 0.9725490212440491,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_38.png",
+        "name": "UU_BathTiles_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 38
+        },
+        "m_Scale": {
+          "x": 0.02500000037252903,
+          "y": 0.02500000037252903
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets3.assets",
+        79
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_22": {
+      "name": "BathhouseRef",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_EmissionColorUI": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_HColor": {
+          "r": 0.49803921580314636,
+          "g": 0.49803921580314636,
+          "b": 0.49803921580314636,
+          "a": 1.0
+        },
+        "_SColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.8266666531562805,
+          "g": 0.8966901898384094,
+          "b": 0.9725490212440491,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "PixelSnap": 1.0,
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_EmissionScaleUI": 0.0,
+        "_Glossiness": 0.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_RampSmooth": 1.0,
+        "_RampThreshold": 0.5,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_27.png",
+        "name": "bathhouse-paper-design",
+        "width": 1000,
+        "height": 750
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 27
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1133
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_12": {
+      "name": "WoodenFence_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 0.6177992224693298,
+          "g": 0.5128676295280457,
+          "b": 0.6838235259056091,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_32.png",
+        "name": "WoodFence_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 32
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1128
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_18": {
+      "name": "FlagPole",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_39.png",
+        "name": "FlagPole",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 39
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_7": {
+      "name": "Canopy_Autumn_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 0.9089999794960022,
+          "b": 0.9626666903495789,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.7547169923782349,
+          "g": 0.41651833057403564,
+          "b": 0.41651833057403564,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_41.png",
+        "name": "Foliage_Canopy_Autumn_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 41
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1118
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_6": {
+      "name": "BirchFoliage_Green_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 0.8616632223129272,
+          "b": 0.7720588445663452,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_37.png",
+        "name": "FoliageAtlas_Green_DIF",
+        "width": 512,
+        "height": 512
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 37
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1118
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_14": {
+      "name": "BathHouseLowLatticedWalls",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.9686274528503418,
+          "g": 0.9137254953384399,
+          "b": 0.8235294222831726,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_31.png",
+        "name": "BathHouseLowLatticedWalls",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 31
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_21": {
+      "name": "WeaponsRack1",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_28.png",
+        "name": "WeaponsRack",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 28
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1096
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_20": {
+      "name": "WeaponsRack",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.9686274528503418,
+          "g": 0.9137254953384399,
+          "b": 0.8235294222831726,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_28.png",
+        "name": "WeaponsRack",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 28
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_16": {
+      "name": "CampSiteSideBuilding",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.8274509906768799,
+          "g": 0.8980392217636108,
+          "b": 0.9725490212440491,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_24.png",
+        "name": "CampSiteSideBuilding",
+        "width": 2048,
+        "height": 2048
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 24
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1117
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_10": {
+      "name": "FluffyTree_Trunk_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.7564878463745117,
+          "g": 0.8642764091491699,
+          "b": 0.970588207244873,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_RampBias": -0.1080000028014183,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_40.png",
+        "name": "UU_FluffyTree_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 40
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets3.assets",
+        82
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_9": {
+      "name": "FluffyTree_Green_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.9289822578430176,
+          "g": 0.949999988079071,
+          "b": 0.7860619425773621,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_RampBias": -0.1080000028014183,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_29.png",
+        "name": "UU_FluffyTree_Green_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 29
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets3.assets",
+        82
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets3.assets_8": {
+      "name": "FluffyTree_Green_Alpha_MAT",
+      "colors": {
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "_ShadowColor": {
+          "r": 0.9289822578430176,
+          "g": 0.949999988079071,
+          "b": 0.7860619425773621,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cull": 2.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 10.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.0,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 3.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_RampBias": 0.574999988079071,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 0.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets3.assets_29.png",
+        "name": "UU_FluffyTree_Green_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 29
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets3.assets",
+        81
+      ],
+      "shader_ported": false
+    },
+    "level3/sharedassets1.assets_124": {
+      "name": "StoneLantern_MAT",
+      "colors": {
+        "_AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_Color": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "_EmissionColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "_ShadowColor": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        }
+      },
+      "floats": {
+        "_BumpScale": 1.0,
+        "_Cutoff": 0.5,
+        "_DetailNormalMapScale": 1.0,
+        "_DstBlend": 0.0,
+        "_GlossMapScale": 1.0,
+        "_Glossiness": 0.5,
+        "_GlossyReflections": 1.0,
+        "_Metallic": 0.0,
+        "_Mode": 0.0,
+        "_OcclusionStrength": 1.0,
+        "_Parallax": 0.019999999552965164,
+        "_SmoothnessTextureChannel": 0.0,
+        "_SpecularHighlights": 1.0,
+        "_SrcBlend": 1.0,
+        "_UVSec": 0.0,
+        "_ZWrite": 1.0
+      },
+      "main_texture": {
+        "path": "level3/textures/sharedassets1.assets_630.png",
+        "name": "StoneLantern_DIF",
+        "width": 1024,
+        "height": 1024
+      },
+      "main_texture_transform": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 630
+        },
+        "m_Scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "m_Offset": {
+          "x": 0.0,
+          "y": 0.0
+        }
+      },
+      "source_shader": [
+        "sharedassets1.assets",
+        1128
+      ],
+      "shader_ported": false
+    }
+  },
+  "textures": {
+    "sharedassets1.assets_665": {
+      "path": "textures/sharedassets1.assets_665.png",
+      "name": "Pottery_DIF",
+      "width": 512,
+      "height": 512
+    },
+    "sharedassets1.assets_691": {
+      "path": "textures/sharedassets1.assets_691.png",
+      "name": "StylizedBamboo_DIF",
+      "width": 256,
+      "height": 1024
+    },
+    "sharedassets2.assets_17": {
+      "path": "textures/sharedassets2.assets_17.png",
+      "name": "VineAtlas_DIF",
+      "width": 1024,
+      "height": 1024
+    },
+    "sharedassets2.assets_16": {
+      "path": "textures/sharedassets2.assets_16.png",
+      "name": "GongShrine_DIF",
+      "width": 1024,
+      "height": 1024
+    },
+    "sharedassets2.assets_18": {
+      "path": "textures/sharedassets2.assets_18.png",
+      "name": "FoliageAtlas_Red_DIF",
+      "width": 512,
+      "height": 512
+    },
+    "sharedassets2.assets_22": {
+      "path": "textures/sharedassets2.assets_22.png",
+      "name": "BirchTree_DIF",
+      "width": 512,
+      "height": 1024
+    },
+    "sharedassets1.assets_315": {
+      "path": "textures/sharedassets1.assets_315.png",
+      "name": "Bamboo_Foliage_DIF",
+      "width": 128,
+      "height": 128
+    },
+    "sharedassets2.assets_21": {
+      "path": "textures/sharedassets2.assets_21.png",
+      "name": "UU_Stonewall_Subtle_DIF",
+      "width": 1024,
+      "height": 1024
+    },
+    "sharedassets2.assets_23": {
+      "path": "textures/sharedassets2.assets_23.png",
+      "name": "Foliage_Canopy_Green_DIF",
+      "width": 512,
+      "height": 512
+    },
+    "sharedassets1.assets_448": {
+      "path": "textures/sharedassets1.assets_448.png",
+      "name": "GrassVase_DIF",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets2.assets_17": {
+      "path": "level3/textures/sharedassets2.assets_17.png",
+      "name": "VineAtlas_DIF",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets1.assets_341": {
+      "path": "level3/textures/sharedassets1.assets_341.png",
+      "name": "Crate_DIF",
+      "width": 512,
+      "height": 512
+    },
+    "level3/sharedassets1.assets_448": {
+      "path": "level3/textures/sharedassets1.assets_448.png",
+      "name": "GrassVase_DIF",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets3.assets_33": {
+      "path": "level3/textures/sharedassets3.assets_33.png",
+      "name": "RoyalTempleRock",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets3.assets_38": {
+      "path": "level3/textures/sharedassets3.assets_38.png",
+      "name": "UU_BathTiles_DIF",
+      "width": 512,
+      "height": 512
+    },
+    "level3/sharedassets1.assets_691": {
+      "path": "level3/textures/sharedassets1.assets_691.png",
+      "name": "StylizedBamboo_DIF",
+      "width": 256,
+      "height": 1024
+    },
+    "level3/sharedassets1.assets_665": {
+      "path": "level3/textures/sharedassets1.assets_665.png",
+      "name": "Pottery_DIF",
+      "width": 512,
+      "height": 512
+    },
+    "level3/sharedassets3.assets_26": {
+      "path": "level3/textures/sharedassets3.assets_26.png",
+      "name": "BathBrush_Mover_DIF",
+      "width": 512,
+      "height": 512
+    },
+    "level3/sharedassets1.assets_607": {
+      "path": "level3/textures/sharedassets1.assets_607.png",
+      "name": "OnsenProps",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets2.assets_18": {
+      "path": "level3/textures/sharedassets2.assets_18.png",
+      "name": "FoliageAtlas_Red_DIF",
+      "width": 512,
+      "height": 512
+    },
+    "level3/sharedassets2.assets_22": {
+      "path": "level3/textures/sharedassets2.assets_22.png",
+      "name": "BirchTree_DIF",
+      "width": 512,
+      "height": 1024
+    },
+    "level3/sharedassets3.assets_35": {
+      "path": "level3/textures/sharedassets3.assets_35.png",
+      "name": "FallenLogs",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets3.assets_34": {
+      "path": "level3/textures/sharedassets3.assets_34.png",
+      "name": "BathHouseSideBuilding",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets3.assets_25": {
+      "path": "level3/textures/sharedassets3.assets_25.png",
+      "name": "BallSwitch_DIF",
+      "width": 512,
+      "height": 512
+    },
+    "level3/sharedassets3.assets_30": {
+      "path": "level3/textures/sharedassets3.assets_30.png",
+      "name": "BathHouseArchway",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets1.assets_315": {
+      "path": "level3/textures/sharedassets1.assets_315.png",
+      "name": "Bamboo_Foliage_DIF",
+      "width": 128,
+      "height": 128
+    },
+    "level3/sharedassets3.assets_27": {
+      "path": "level3/textures/sharedassets3.assets_27.png",
+      "name": "bathhouse-paper-design",
+      "width": 1000,
+      "height": 750
+    },
+    "level3/sharedassets3.assets_32": {
+      "path": "level3/textures/sharedassets3.assets_32.png",
+      "name": "WoodFence_DIF",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets3.assets_39": {
+      "path": "level3/textures/sharedassets3.assets_39.png",
+      "name": "FlagPole",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets3.assets_41": {
+      "path": "level3/textures/sharedassets3.assets_41.png",
+      "name": "Foliage_Canopy_Autumn_DIF",
+      "width": 512,
+      "height": 512
+    },
+    "level3/sharedassets3.assets_37": {
+      "path": "level3/textures/sharedassets3.assets_37.png",
+      "name": "FoliageAtlas_Green_DIF",
+      "width": 512,
+      "height": 512
+    },
+    "level3/sharedassets3.assets_31": {
+      "path": "level3/textures/sharedassets3.assets_31.png",
+      "name": "BathHouseLowLatticedWalls",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets3.assets_28": {
+      "path": "level3/textures/sharedassets3.assets_28.png",
+      "name": "WeaponsRack",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets3.assets_24": {
+      "path": "level3/textures/sharedassets3.assets_24.png",
+      "name": "CampSiteSideBuilding",
+      "width": 2048,
+      "height": 2048
+    },
+    "level3/sharedassets3.assets_40": {
+      "path": "level3/textures/sharedassets3.assets_40.png",
+      "name": "UU_FluffyTree_DIF",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets3.assets_29": {
+      "path": "level3/textures/sharedassets3.assets_29.png",
+      "name": "UU_FluffyTree_Green_DIF",
+      "width": 1024,
+      "height": 1024
+    },
+    "level3/sharedassets1.assets_630": {
+      "path": "level3/textures/sharedassets1.assets_630.png",
+      "name": "StoneLantern_DIF",
+      "width": 1024,
+      "height": 1024
+    }
+  },
+  "verified_source_files": [
+    "globalgamemanagers",
+    "level2",
+    "level2.resS",
+    "sharedassets1.assets",
+    "sharedassets1.assets.resS",
+    "sharedassets2.assets",
+    "sharedassets2.assets.resS"
+  ],
+  "missing_references": [],
+  "limitations": [
+    "Original shaders, postprocessing and light response are not ported",
+    "MonoBehaviour gameplay, skinned meshes, animations and particles require separate conversion",
+    "Static batched renderers require source submesh selection before visual parity can be asserted",
+    "LevelSlideTraps is staged under level3/ with prefixed resource IDs; runtime selection is opt-in via map=slide or --map=slide."
+  ],
+  "visual_parity_verified": false,
+  "animations": {
+    "level3/sharedassets3.assets_86": {
+      "path": "level3/animation/sharedassets3.assets_86.json",
+      "type": "AnimatorController",
+      "name": "AC_TriggerSwitch"
+    },
+    "level3/sharedassets3.assets_84": {
+      "path": "level3/animation/sharedassets3.assets_84.json",
+      "type": "AnimationClip",
+      "name": "ANM_TriggerSwitch_OffIdle"
+    },
+    "level3/sharedassets3.assets_85": {
+      "path": "level3/animation/sharedassets3.assets_85.json",
+      "type": "AnimationClip",
+      "name": "ANM_TriggerSwitch_On"
+    }
+  }
+}

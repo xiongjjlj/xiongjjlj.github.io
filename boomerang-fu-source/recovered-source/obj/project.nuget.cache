@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ivfNA9l7mXw=",
+  "success": true,
+  "projectFilePath": "/Users/feixiong/Documents/Codex/2026-10-27/boomerang-fu/outputs/boomerang-fu-web/recovered-source/Assembly-CSharp.csproj",
+  "expectedPackageFiles": [
+    "/Users/feixiong/.nuget/packages/netstandard.library.ref/2.1.0/netstandard.library.ref.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

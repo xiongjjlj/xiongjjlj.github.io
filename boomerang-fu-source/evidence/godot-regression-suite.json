@@ -1,0 +1,60 @@
+{
+  "tests/powerup_book_test.gd": {
+    "returncode": 0,
+    "seconds": 1.22,
+    "log": "work/powerup_book_test-rerun.log",
+    "tail": [
+      "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "BF_ROUND_START {\"goal\":14,\"round\":1}",
+      "{\"checks\":[{\"name\":\"no book before source round threshold 1\",\"passed\":true},{\"name\":\"no book before source round threshold 2\",\"passed\":true},{\"name\":\"no book before source round threshold 3\",\"passed\":true},{\"name\":\"no book before source round threshold 4\",\"passed\":true},{\"name\":\"round-five source placement can find clear floor\",\"passed\":true},{\"name\":\"automatic location passes all nine floor samples and exclusion radii\",\"passed\":true},{\"name\":\"only one concurrent book\",\"passed\":true},{\"name\":\"source book mesh and spawn tracks bind\",\"passed\":true},{\"name\":\"source idle motion and four material channels bind\",\"passed\":true},{\"name\":\"spawn overrides serialized prefab root position\",\"passed\":true},{\"name\":\"enter alone does not collect a book\",\"passed\":true},{\"name\":\"pickup Stay collects once and applies source power\",\"passed\":true},{\"name\":\"original collection clip binds\",\"passed\":true},{\"name\":\"disabled pickup cannot apply twice\",\"passed\":true},{\"name\":\"collection waits until end of collection frame\",\"passed\":true},{\"name\":\"book remains before .2-second delay\",\"passed\":true},{\"name\":\"book is removed after source delay\",\"passed\":true},{\"name\":\"book lifecycle leaves no nodes\",\"passed\":true},{\"name\":\"useful pool selects shield when haste owned and hands full\",\"passed\":true},{\"name\":\"source cooldown queue reinserts oldest after four exclusions\",\"passed\":true},{\"name\":\"new match clears powers and books\",\"passed\":true}],\"failed\":[],\"full_game_parity_verified\":false,\"native_spawn_rng_verified\":false,\"nodes_after\":1192,\"nodes_before\":1192,\"passed\":true}"
+    ]
+  },
+  "tests/power_lifecycle_test.gd": {
+    "returncode": 0,
+    "seconds": 0.4,
+    "log": "work/power_lifecycle_test-rerun.log",
+    "tail": [
+      "{\"cases\":14,\"differences\":[],\"full_game_parity_verified\":false,\"original_player_execution\":true,\"passed\":true,\"source_runtime\":\"Original UnityPlayer Mono; unchanged Player power lifecycle methods; UI/world effects injected\",\"states\":3077}"
+    ]
+  },
+  "tests/ffa_shell_test.gd": {
+    "returncode": 0,
+    "seconds": 4.99,
+    "log": "work/ffa_shell_test-rerun.log",
+    "tail": [
+      "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise1\",\"skeletons\":0,\"tracks\":1}",
+      "BF_MATCH_CONFIG {\"characters\":[\"Bread\",\"Coffee\"],\"goal\":14,\"positions\":[[-13.0,13.0],[13.0,-13.0]],\"sources\":[-1,-2]}",
+      "BF_FFA_SHELL {\"checks\":[{\"details\":null,\"name\":\"six distinct original characters and source spawn points\",\"passed\":true},{\"details\":null,\"name\":\"all 72 character clips bind with no missing targets\",\"passed\":true},{\"details\":null,\"name\":\"frozen visuals cover all six players\",\"passed\":true},{\"details\":null,\"name\":\"six fire emitters have independent bounded state\",\"passed\":true},{\"details\":null,\"name\":\"six player kills lead to one round result\",\"passed\":true},{\"details\":null,\"name\":\"next round keeps scores and resets six actors\",\"passed\":true},{\"details\":null,\"name\":\"tiebreak only enables the two finalists\",\"passed\":true},{\"details\":null,\"name\":\"first tiebreak kill ends match with one winner\",\"passed\":true},{\"details\":null,\"name\":\"new two-player long match resets roster score and queries\",\"passed\":true},{\"details\":null,\"name\":\"lobby hides validation controls and suspends simulation\",\"passed\":true},{\"details\":null,\"name\":\"menu start selects characters and match length\",\"passed\":true},{\"details\":null,\"name\":\"ready phase holds actor simulation\",\"passed\":true},{\"details\":null,\"name\":\"source one-second ready leads to gameplay\",\"passed\":true},{\"details\":null,\"name\":\"pause freezes world and slow-motion timers\",\"passed\":true},{\"details\":null,\"name\":\"resume preserves pre-pause time scale\",\"passed\":true},{\"details\":null,\"name\":\"normal match exposes round scoreboard\",\"passed\":true},{\"details\":null,\"name\":\"continue returns to ready preserving points\",\"passed\":true},{\"details\":null,\"name\":\"focus loss pauses ready countdown\",\"passed\":true},{\"details\":null,\"name\":\"gamepad edge routes only to its assigned slot\",\"passed\":true},{\"details\":null,\"name\":\"gamepad press consumed once\",\"passed\":true},{\"details\":null,\"name\":\"original FFA score goals for lengths and player counts\",\"passed\":true},{\"details\":{\"after\":1195,\"baseline\":1195},\"name\":\"repeated two/six player setup reclaims scene nodes\",\"passed\":true}],\"passed\":true,\"scope\":\"Actual imported scene and six models, full local FFA shell, input adapter routing and node reclamation. Gamepad hardware/browser mapping, original menu pixels, full native scene scheduling and character-specific effects are not proven.\"}"
+    ]
+  },
+  "tests/decoy_scene_test.gd": {
+    "returncode": 0,
+    "seconds": 1.74,
+    "log": "work/decoy_scene_test-rerun.log",
+    "tail": [
+      "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "BF_ROUND_START {\"goal\":14,\"round\":1}",
+      "BF_DECOY_SCENE {\"checks\":[{\"detail\":null,\"name\":\"pickup alone does not spawn\",\"passed\":true},{\"detail\":null,\"name\":\"failed dash does not spawn\",\"passed\":true},{\"detail\":null,\"name\":\"first accepted dash spawns once\",\"passed\":true},{\"detail\":null,\"name\":\"copies owner and at least one held disc\",\"passed\":true},{\"detail\":null,\"name\":\"decoy is outside player score roster\",\"passed\":true},{\"detail\":null,\"name\":\"source collision mask is obstacle only\",\"passed\":true},{\"detail\":null,\"name\":\"AI moves in the actual imported map\",\"passed\":true},{\"detail\":null,\"name\":\"source navigational route requested\",\"passed\":true},{\"detail\":null,\"name\":\"later dashes do not create another clone\",\"passed\":true},{\"detail\":null,\"name\":\"clone melee damage ignores cosmetic shield and immunity\",\"passed\":true},{\"detail\":null,\"name\":\"clone death leaves scores unchanged\",\"passed\":true},{\"detail\":null,\"name\":\"dead clone removes view and query shape\",\"passed\":true},{\"detail\":null,\"name\":\"owner death respects realtime delay\",\"passed\":true},{\"detail\":null,\"name\":\"owner death removes clone after delay\",\"passed\":true},{\"detail\":null,\"name\":\"fire immediately removes a shielded clone\",\"passed\":true},{\"detail\":null,\"name\":\"telefrag bypasses clone dash and immunity\",\"passed\":true},{\"detail\":null,\"name\":\"round reset reclaims clone physics and visuals\",\"passed\":true},{\"detail\":{\"after\":1192,\"before\":1192},\"name\":\"scene nodes return to baseline\",\"passed\":true}],\"passed\":true,\"scope\":\"Actual main scene, source assets and spatial queries; integration checks for spawn, movement, damage, owner delay, score isolation and cleanup. Not a native full-match frame comparison.\",\"trace\":[{\"active\":true,\"dashing\":true,\"frame\":0,\"path\":true,\"position\":[-3.78421258926392,-8.92361354827881],\"state\":0,\"waypoint\":0},{\"active\":true,\"dashing\":false,\"frame\":30,\"path\":true,\"position\":[-6.7499475479126,-18.5614414215088],\"state\":0,\"waypoint\":2},{\"active\":true,\"dashing\":false,\"frame\":60,\"path\":true,\"position\":[-6.79575967788696,-13.0740900039673],\"state\":0,\"waypoint\":6},{\"active\":true,\"dashing\":false,\"frame\":90,\"path\":true,\"position\":[-10.2140560150146,-7.24913024902344],\"state\":0,\"waypoint\":3},{\"active\":true,\"dashing\":false,\"frame\":120,\"path\":true,\"position\":[-13.4615345001221,-1.48708307743073],\"state\":0,\"waypoint\":10},{\"active\":true,\"dashing\":false,\"frame\":150,\"path\":true,\"position\":[-13.7448558807373,5.31585264205933],\"state\":0,\"waypoint\":17},{\"active\":true,\"dashing\":false,\"frame\":180,\"path\":true,\"position\":[-14.2339944839478,12.4341974258423],\"state\":0,\"waypoint\":2},{\"active\":true,\"dashing\":false,\"frame\":210,\"path\":true,\"position\":[-9.94076824188232,10.8741931915283],\"state\":0,\"waypoint\":6}]}"
+    ]
+  },
+  "tests/disguise_scene_test.gd": {
+    "returncode": 0,
+    "seconds": 0.95,
+    "log": "work/disguise_scene_test-rerun.log",
+    "tail": [
+      "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "BF_ROUND_START {\"goal\":14,\"round\":1}",
+      "BF_DISGUISE_SCENE {\"checks\":[{\"name\":\"Disguise in normal book pool\",\"passed\":true},{\"name\":\"16 original props and exact animation bindings\",\"passed\":true},{\"name\":\"stationary player becomes disguised\",\"passed\":true},{\"name\":\"original prop replaces character\",\"passed\":true},{\"name\":\"nearest active original obstacle selected\",\"passed\":true},{\"name\":\"attack breaks disguise\",\"passed\":true},{\"name\":\"character returns after attack\",\"passed\":true},{\"name\":\"aim breaks disguise before charge threshold\",\"passed\":true},{\"name\":\"failed empty throw still breaks disguise\",\"passed\":true},{\"name\":\"disguise hides shield without removing protection\",\"passed\":true},{\"name\":\"ignition immediately breaks disguise\",\"passed\":true},{\"name\":\"stun immediately breaks disguise\",\"passed\":true},{\"name\":\"death clears disguise\",\"passed\":true},{\"name\":\"reset restores node count and original visibility\",\"passed\":true}],\"full_game_parity_verified\":false,\"node_after\":1192,\"node_baseline\":1192,\"passed\":true}"
+    ]
+  },
+  "tests/boundary_scene_test.gd": {
+    "returncode": 0,
+    "seconds": 0.94,
+    "log": "work/boundary_scene_test-rerun.log",
+    "tail": [
+      "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "BF_ROUND_START {\"goal\":14,\"round\":1}",
+      "BF_BOUNDARY_SCENE {\"checks\":[{\"name\":\"Shrink available in normal power pool\",\"passed\":true},{\"name\":\"original bounds size and mesh\",\"passed\":true},{\"name\":\"source glow hidden initially\",\"passed\":true},{\"name\":\"instant power starts shrinking without a history entry\",\"passed\":true},{\"name\":\"source width determines duration\",\"passed\":true},{\"name\":\"shrink disables duplicate book selection and shows glow\",\"passed\":true},{\"name\":\"out-of-bounds bypasses shield and immunity\",\"passed\":true},{\"name\":\"boundary owner receives kill\",\"passed\":true},{\"name\":\"out-of-bounds hides actor without slicing\",\"passed\":true},{\"name\":\"last survivor stops contraction\",\"passed\":true},{\"name\":\"new match clears boundary owner and sudden death\",\"passed\":true},{\"name\":\"three-minute sudden death starts ownerless shrinking\",\"passed\":true},{\"name\":\"repeat reset restores node count\",\"passed\":true}],\"full_game_parity_verified\":false,\"node_after\":1192,\"node_baseline\":1192,\"passed\":true}"
+    ]
+  }
+}

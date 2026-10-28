@@ -1,0 +1,2863 @@
+{
+  "Player": [
+    {
+      "id": 9661,
+      "type": "MonoBehaviour",
+      "class": "Player",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2068
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 701
+        },
+        "m_Name": "",
+        "characterID": 0,
+        "playerID": 0,
+        "team": 0,
+        "physicsCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8435
+        },
+        "meleeCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8613
+        },
+        "damageCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8480
+        },
+        "obstacleLayer": {
+          "m_Bits": 256
+        },
+        "physicsColliderRadius": 0.0,
+        "playerLayer": {
+          "m_Bits": 512
+        },
+        "hazardLayers": {
+          "m_Bits": 1073872896
+        },
+        "floorLayers": {
+          "m_Bits": 1610678272
+        },
+        "destructablesLayer": {
+          "m_Bits": 32768
+        },
+        "triggerLayers": {
+          "m_Bits": 3145728
+        },
+        "interpolatedTransform": {
+          "m_FileID": 0,
+          "m_PathID": 9645
+        },
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "actorState": 0,
+        "canWalk": 1,
+        "canDash": 1,
+        "canRotate": 1,
+        "isShowingOff": 0,
+        "isSpawningIn": 0,
+        "isWading": 0,
+        "_isAiming": 0,
+        "isCoolingAttack": 0,
+        "isLunging": 0,
+        "attacksLeft": 0,
+        "justBecomeVulernable": 0,
+        "speedLimit": 40.0,
+        "slideFactor": 0.25,
+        "inputMove": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "lastInputMove": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "lastRotation": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "velocityStored": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "dashDistanceInvulnerable": 9.449999809265137,
+        "dashDistance": 11.0600004196167,
+        "attackDistance": 4.400000095367432,
+        "walkVelocity": 14.25,
+        "movingFloor": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "attackCooldownTimer": 0.0,
+        "meleeTimer": 0.0,
+        "lungeCooldownTimer": 0.0,
+        "lungeTimer": 0.0,
+        "aimTimer": 0.0,
+        "aimPower": 0.0,
+        "aimMaxPower": 1.0,
+        "aimDuration": 0.8999999761581421,
+        "killer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "isOnFire": 0,
+        "fireOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "fireDistance": 0.0,
+        "_isSlimed": 0,
+        "slimeTimer": 0.0,
+        "isSlimeTiming": 0,
+        "freezeTimer": 0.0,
+        "timeScaler": 1.0,
+        "reviveTimer": 0.0,
+        "gettingRevivedThisFrame": 0,
+        "character": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "appearance": {
+          "m_FileID": 0,
+          "m_PathID": 4686
+        },
+        "actorPFX": {
+          "m_FileID": 0,
+          "m_PathID": 6049
+        },
+        "shadow": {
+          "m_FileID": 0,
+          "m_PathID": 2671
+        },
+        "onFirePFXPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 8909
+        },
+        "frozenBlockPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 8662
+        },
+        "frozenParticlesPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 8896
+        },
+        "dustTrailPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 9063
+        },
+        "slidingPFXPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 9062
+        },
+        "dashTrail": {
+          "m_FileID": 0,
+          "m_PathID": 8969
+        },
+        "playerType": 0,
+        "metadata": {
+          "MoveDistance": 0.0,
+          "Dashes": 0,
+          "Attacks": 0,
+          "Throws": 0,
+          "Pushes": 0,
+          "TimeAiming": 0.0,
+          "TimeRetrieving": 0.0,
+          "TimeControllingDisc": 0.0,
+          "SpinAngle": 0.0,
+          "OrbitalThrows": 0,
+          "FlippedSwitches": 0,
+          "Teleports": 0,
+          "MeleeKills": 0,
+          "ThrowKills": 0,
+          "ExplosiveKills": 0,
+          "PushKills": 0,
+          "TeleportKills": 0,
+          "FireKills": 0,
+          "TeamKills": 0,
+          "DoubleKills": 0,
+          "TripleKills": 0,
+          "MultiKills": 0,
+          "SquishKills": 0,
+          "FrozenKills": 0,
+          "TimeImmuneKills": 0,
+          "ControlledKills": 0,
+          "LongestKillDistance": 0.0,
+          "KillsAfterDeath": 0.0,
+          "KillsWhileBamboozled": 0.0,
+          "KillsWhileDisarmed": 0.0,
+          "KillsWhileTimeImmune": 0,
+          "TotalKills": 0,
+          "FinalScore": 0,
+          "Blocks": 0,
+          "Deflections": 0,
+          "SelfDeflections": 0,
+          "Dodges": 0,
+          "DashesOverHazards": 0,
+          "FiresExtinguished": 0,
+          "Deaths": 0,
+          "TeleportDeaths": 0,
+          "SquishDeaths": 0,
+          "FallSuicides": 0,
+          "ExplosiveSuicides": 0,
+          "OutOfBoundsSuicides": 0,
+          "TimeInPlants": 0.0,
+          "TimeOutOfBounds": 0.0,
+          "TimeDisguised": 0.0,
+          "LastPlayerStanding": 0,
+          "TeamDeaths": 0,
+          "DiscsCaught": 0,
+          "PowerupsCollected": 0,
+          "DiscsStolen": 0,
+          "TimeDisarmed": 0.0,
+          "TimeBamboozled": 0.0,
+          "TimeSlimed": 0.0,
+          "TimeOnFire": 0.0,
+          "TimeHoldingGoldenDisc": 0.0,
+          "PlayersDisarmed": 0,
+          "DisarmedByPlayers": 0,
+          "DecoysSpawned": 0,
+          "EnemyDecoysKilled": 0,
+          "MyDecoysKilled": 0
+        },
+        "killsThisRound": 0,
+        "playerInput": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "shieldCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8436
+        },
+        "disarmCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8614
+        },
+        "insidesCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8431
+        },
+        "pickupCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8433
+        },
+        "deathCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8483
+        },
+        "shield": {
+          "m_FileID": 0,
+          "m_PathID": 3341
+        },
+        "revivingPFX": {
+          "m_FileID": 0,
+          "m_PathID": 9001
+        },
+        "outOfBoundsArrow": {
+          "m_FileID": 0,
+          "m_PathID": 9703
+        },
+        "meleeTrailRight": {
+          "m_FileID": 0,
+          "m_PathID": 8971
+        },
+        "meleeTrailLeft": {
+          "m_FileID": 0,
+          "m_PathID": 8917
+        },
+        "seekerPFX": {
+          "m_FileID": 0,
+          "m_PathID": 8894
+        },
+        "hiderPFX": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "_isHidden": 0,
+        "_hasDiscs": -1,
+        "disarmsLeft": 0,
+        "_isShielded": 0,
+        "decoy": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "hasCreatedDecoy": 0,
+        "thrownDiscs": [],
+        "hasCompletedTutorial": 1,
+        "_hasGoldenDisc": 0,
+        "thrownGoldenDisc": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "goldenHoldTime": 0.0,
+        "goldenDiscKills": 0,
+        "goldenDiscPFX": {
+          "m_FileID": 0,
+          "m_PathID": 5312
+        },
+        "goldenPlayerPFX": {
+          "m_FileID": 0,
+          "m_PathID": 3310
+        },
+        "goldenWinPFX": {
+          "m_FileID": 0,
+          "m_PathID": 2739
+        },
+        "timeImmunePFX": {
+          "m_FileID": 0,
+          "m_PathID": 8947
+        },
+        "illuminatePFX": {
+          "m_FileID": 0,
+          "m_PathID": 9038
+        },
+        "skullPFX": {
+          "m_FileID": 0,
+          "m_PathID": 9082
+        },
+        "isInTheLead": 0,
+        "alertBar": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "dropInAIOnTimeOut": 0,
+        "outOfBoundsTimer": 0.0,
+        "isOutOfBounds": 0,
+        "discPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 2058
+        },
+        "grenadePrefab": {
+          "m_FileID": 0,
+          "m_PathID": 9670
+        },
+        "activePowerup": 0,
+        "powerupHistory": [],
+        "shieldHitsLeft": 0,
+        "pendingDiscs": 0,
+        "miniDiscsCollected": 0,
+        "miniDiscsRequired": 0,
+        "retrieveCharge": 0.0,
+        "disguises": [
+          {
+            "type": 2,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2509
+            }
+          },
+          {
+            "type": 4,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2648
+            }
+          },
+          {
+            "type": 8,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3422
+            }
+          },
+          {
+            "type": 16,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3302
+            }
+          },
+          {
+            "type": 32,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3314
+            }
+          },
+          {
+            "type": 1,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2793
+            }
+          },
+          {
+            "type": 64,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3170
+            }
+          },
+          {
+            "type": 128,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2898
+            }
+          },
+          {
+            "type": 256,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2870
+            }
+          },
+          {
+            "type": 512,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 2638
+            }
+          },
+          {
+            "type": 1024,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3697
+            }
+          },
+          {
+            "type": 4096,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3740
+            }
+          },
+          {
+            "type": 8192,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3819
+            }
+          },
+          {
+            "type": 16384,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3971
+            }
+          },
+          {
+            "type": 32768,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3958
+            }
+          },
+          {
+            "type": 65536,
+            "gameObject": {
+              "m_FileID": 0,
+              "m_PathID": 4330
+            }
+          }
+        ],
+        "disguiseAnimator": {
+          "m_FileID": 0,
+          "m_PathID": 8685
+        },
+        "disguiseObstacle": {
+          "m_FileID": 0,
+          "m_PathID": 5957
+        },
+        "disguiseTimer": 0.0,
+        "_isDisguised": 0,
+        "moveFasterPFX": {
+          "m_FileID": 0,
+          "m_PathID": 8979
+        },
+        "lastTeleportTimestamp": 0.0,
+        "seekAttemptsRemaining": 0,
+        "timeInCurrentDisguise": 0.0
+      },
+      "resources": {},
+      "decoded": true
+    }
+  ],
+  "Disc": [
+    {
+      "id": 9647,
+      "type": "MonoBehaviour",
+      "class": "Disc",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2058
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1007
+        },
+        "m_Name": "",
+        "movement": 0,
+        "owner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "minDistanceFromOwner": 3.0,
+        "canCollideWithOwner": 0,
+        "wasJustDeflected": 0,
+        "projectileStartedDropped": 0,
+        "projectileCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8432
+        },
+        "collisionLayers": {
+          "m_Bits": 6306816
+        },
+        "collisionLayersDropped": {
+          "m_Bits": 8192
+        },
+        "playerLayer": {
+          "m_Bits": 512
+        },
+        "obstacleLayer": {
+          "m_Bits": 256
+        },
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "bounciness": 0.800000011920929,
+        "interpolatedTransform": {
+          "m_FileID": 0,
+          "m_PathID": 9637
+        },
+        "throwDuration": 0.5,
+        "throwSpeed": 190.0,
+        "speedLimit": 45.0,
+        "throwDirection": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "canBePickedUp": 1,
+        "timeScaler": 1.0,
+        "projectileColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "discPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 2058
+        },
+        "discPowerup": 0,
+        "discTrail": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "pfxDiscSpin": {
+          "m_FileID": 0,
+          "m_PathID": 8978
+        },
+        "discAnimator": {
+          "m_FileID": 0,
+          "m_PathID": 8657
+        },
+        "discRenderer": {
+          "m_FileID": 0,
+          "m_PathID": 7448
+        },
+        "discColorPublic": {
+          "r": 0.658823549747467,
+          "g": 0.658823549747467,
+          "b": 0.658823549747467,
+          "a": 1.0
+        },
+        "retrievePFXDefaultSize": 2.25,
+        "retrievePFXControlledSize": 4.5,
+        "retrievePFX": {
+          "m_FileID": 0,
+          "m_PathID": 8973
+        },
+        "controlledPFX": {
+          "m_FileID": 0,
+          "m_PathID": 8903
+        },
+        "controlledBoundaryPFX": {
+          "m_FileID": 0,
+          "m_PathID": 8952
+        },
+        "floatingPFX": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "aimPower": 0.0,
+        "spinAngle": 0.0,
+        "orbitIsCharged": 0,
+        "homingRadius": 5.0,
+        "canBeControlled": 0,
+        "explosiveTimer": 1.5,
+        "explosionPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 2064
+        },
+        "isMiniDisc": 0,
+        "shardSprite": {
+          "m_FileID": 0,
+          "m_PathID": 1748
+        },
+        "grenadeInstance": {
+          "m_FileID": 0,
+          "m_PathID": 9968
+        },
+        "fireDistance": 0.0,
+        "isBurning": 0,
+        "slimeDistance": 0.0,
+        "isSliming": 0,
+        "_isGoldenDisc": 0,
+        "goldenDiscPFX": {
+          "m_FileID": 0,
+          "m_PathID": 2169
+        },
+        "goldenDiscSpawnPFX": {
+          "m_FileID": 0,
+          "m_PathID": 2575
+        }
+      },
+      "resources": {},
+      "decoded": true
+    }
+  ],
+  "AvocadoChar": [
+    {
+      "id": 9786,
+      "type": "MonoBehaviour",
+      "class": "CharacterPlayer",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3028
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 759
+        },
+        "m_Name": "",
+        "characterMode": 0,
+        "characterType": 2,
+        "characterOffset": {
+          "x": 0.0,
+          "y": -0.4000000059604645,
+          "z": 0.0
+        },
+        "shadowOffset": {
+          "x": 0.0,
+          "y": 0.30000001192092896,
+          "z": 0.0
+        },
+        "idleFace": 0,
+        "blinkFace": 11,
+        "victoryFace": 6,
+        "spawnFace": 0,
+        "facialExpressionTimer": 0.0,
+        "actor": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "anim": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "animControllerGameplay": {
+          "m_FileID": 0,
+          "m_PathID": 2011
+        },
+        "animControllerUI": {
+          "m_FileID": 0,
+          "m_PathID": 2012
+        },
+        "colorDefault": {
+          "r": 0.6078431606292725,
+          "g": 0.9372549653053284,
+          "b": 0.35686275362968445,
+          "a": 1.0
+        },
+        "colorTeamOne": {
+          "r": 1.0,
+          "g": 0.3607843220233917,
+          "b": 0.3294117748737335,
+          "a": 1.0
+        },
+        "colorTeamTwo": {
+          "r": 0.3999999761581421,
+          "g": 0.6509803533554077,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "colorableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 8761
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8742
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8708
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8733
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8747
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8751
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8785
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7556
+          }
+        ],
+        "lobbySpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 1959
+        },
+        "lobbySpriteHappy": {
+          "m_FileID": 0,
+          "m_PathID": 1821
+        },
+        "scoresSpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 1966
+        },
+        "_bodyMatNormal": {
+          "m_FileID": 0,
+          "m_PathID": 9
+        },
+        "bodyMatBurnt": {
+          "m_FileID": 0,
+          "m_PathID": 8
+        },
+        "visibleBits": [],
+        "faceplate": {
+          "m_FileID": 0,
+          "m_PathID": 8762
+        },
+        "leftHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5691
+        },
+        "rightHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5539
+        },
+        "neckJoint": {
+          "m_FileID": 0,
+          "m_PathID": 4752
+        },
+        "hipJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5229
+        },
+        "hatJoint": {
+          "m_FileID": 0,
+          "m_PathID": 6375
+        },
+        "faceJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5764
+        },
+        "equippedHat": 0,
+        "hipJointPosZ": 0.0,
+        "leftDisc": {
+          "m_FileID": 0,
+          "m_PathID": 3066
+        },
+        "rightDisc": {
+          "m_FileID": 0,
+          "m_PathID": 2341
+        },
+        "_isVisible": 0,
+        "_isSliced": 0,
+        "_dangerEffect": 0.0,
+        "_isBurnt": 0,
+        "_isSlimed": 0,
+        "_hasGoldenDisc": 0,
+        "_isSquished": 0,
+        "squishableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2816
+          }
+        ],
+        "bodySquished": {
+          "m_FileID": 0,
+          "m_PathID": 2744
+        },
+        "groundSlamDelayOnSpawn": 0.4332999885082245,
+        "slicedFaceplantDelay": 0.6000000238418579,
+        "shadowScale": 1.0,
+        "bodyNormal": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 3535
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2574
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2817
+          }
+        ],
+        "bodySliced": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2649
+          }
+        ],
+        "deathSlice": {
+          "m_FileID": 0,
+          "m_PathID": 9782
+        },
+        "_bodyMatTeamOne": {
+          "m_FileID": 0,
+          "m_PathID": 10
+        },
+        "_bodyMatTeamTwo": {
+          "m_FileID": 0,
+          "m_PathID": 11
+        },
+        "_discColor": {
+          "r": 0.4117647111415863,
+          "g": 0.7215686440467834,
+          "b": 0.32549020648002625,
+          "a": 1.0
+        },
+        "uiShadowPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 2791
+        },
+        "uiShadow": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "resources": {
+        "animControllerGameplay": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2011"
+        },
+        "animControllerUI": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2012"
+        },
+        "_bodyMatNormal": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_9"
+        },
+        "bodyMatBurnt": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_8"
+        },
+        "_bodyMatTeamOne": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_10"
+        },
+        "_bodyMatTeamTwo": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_11"
+        }
+      },
+      "decoded": true
+    }
+  ],
+  "WatermelonChar": [
+    {
+      "id": 9802,
+      "type": "MonoBehaviour",
+      "class": "CharacterWatermelon",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2232
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 650
+        },
+        "m_Name": "",
+        "characterMode": 0,
+        "characterType": 16,
+        "characterOffset": {
+          "x": 0.0,
+          "y": -0.4000000059604645,
+          "z": 0.0
+        },
+        "shadowOffset": {
+          "x": 0.0,
+          "y": 0.30000001192092896,
+          "z": 0.0
+        },
+        "idleFace": 1,
+        "blinkFace": 13,
+        "victoryFace": 6,
+        "spawnFace": 1,
+        "facialExpressionTimer": 0.0,
+        "actor": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "anim": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "animControllerGameplay": {
+          "m_FileID": 0,
+          "m_PathID": 2053
+        },
+        "animControllerUI": {
+          "m_FileID": 0,
+          "m_PathID": 2054
+        },
+        "colorDefault": {
+          "r": 0.8999999761581421,
+          "g": 0.13499997556209564,
+          "b": 0.25200000405311584,
+          "a": 1.0
+        },
+        "colorTeamOne": {
+          "r": 1.0,
+          "g": 0.3607843220233917,
+          "b": 0.3294117748737335,
+          "a": 1.0
+        },
+        "colorTeamTwo": {
+          "r": 0.4000000059604645,
+          "g": 0.6509804129600525,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "colorableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 8863
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8862
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8860
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8859
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8858
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8857
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7401
+          }
+        ],
+        "lobbySpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 1795
+        },
+        "lobbySpriteHappy": {
+          "m_FileID": 0,
+          "m_PathID": 1972
+        },
+        "scoresSpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 1802
+        },
+        "_bodyMatNormal": {
+          "m_FileID": 0,
+          "m_PathID": 107
+        },
+        "bodyMatBurnt": {
+          "m_FileID": 0,
+          "m_PathID": 106
+        },
+        "visibleBits": [],
+        "faceplate": {
+          "m_FileID": 0,
+          "m_PathID": 8861
+        },
+        "leftHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 7022
+        },
+        "rightHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 7034
+        },
+        "neckJoint": {
+          "m_FileID": 0,
+          "m_PathID": 7026
+        },
+        "hipJoint": {
+          "m_FileID": 0,
+          "m_PathID": 7008
+        },
+        "hatJoint": {
+          "m_FileID": 0,
+          "m_PathID": 6812
+        },
+        "faceJoint": {
+          "m_FileID": 0,
+          "m_PathID": 7012
+        },
+        "equippedHat": 0,
+        "hipJointPosZ": 0.0,
+        "leftDisc": {
+          "m_FileID": 0,
+          "m_PathID": 3016
+        },
+        "rightDisc": {
+          "m_FileID": 0,
+          "m_PathID": 2934
+        },
+        "_isVisible": 0,
+        "_isSliced": 0,
+        "_dangerEffect": 0.0,
+        "_isBurnt": 0,
+        "_isSlimed": 0,
+        "_hasGoldenDisc": 0,
+        "_isSquished": 0,
+        "squishableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 4394
+          }
+        ],
+        "bodySquished": {
+          "m_FileID": 0,
+          "m_PathID": 2711
+        },
+        "groundSlamDelayOnSpawn": 0.616599977016449,
+        "slicedFaceplantDelay": 0.75,
+        "shadowScale": 1.0,
+        "bodyNormal": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 4393
+          }
+        ],
+        "bodySliced": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 4392
+          }
+        ],
+        "deathSlice": {
+          "m_FileID": 0,
+          "m_PathID": 9836
+        },
+        "_bodyMatTeamOne": {
+          "m_FileID": 0,
+          "m_PathID": 107
+        },
+        "_bodyMatTeamTwo": {
+          "m_FileID": 0,
+          "m_PathID": 108
+        },
+        "_discColor": {
+          "r": 0.9019607901573181,
+          "g": 0.13725490868091583,
+          "b": 0.2549019753932953,
+          "a": 1.0
+        },
+        "uiShadowPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 2791
+        },
+        "uiShadow": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "resources": {
+        "animControllerGameplay": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2053"
+        },
+        "animControllerUI": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2054"
+        },
+        "_bodyMatNormal": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_107"
+        },
+        "bodyMatBurnt": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_106"
+        },
+        "_bodyMatTeamOne": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_107"
+        },
+        "_bodyMatTeamTwo": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_108"
+        }
+      },
+      "decoded": true
+    }
+  ],
+  "BreadChar": [
+    {
+      "id": 9724,
+      "type": "MonoBehaviour",
+      "class": "CharacterDonut",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2769
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 688
+        },
+        "m_Name": "",
+        "characterMode": 0,
+        "characterType": 512,
+        "characterOffset": {
+          "x": 0.0,
+          "y": -0.4000000059604645,
+          "z": 0.0
+        },
+        "shadowOffset": {
+          "x": 0.0,
+          "y": 0.30000001192092896,
+          "z": 0.0
+        },
+        "idleFace": 0,
+        "blinkFace": 11,
+        "victoryFace": 6,
+        "spawnFace": 0,
+        "facialExpressionTimer": 0.0,
+        "actor": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "anim": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "animControllerGameplay": {
+          "m_FileID": 0,
+          "m_PathID": 2017
+        },
+        "animControllerUI": {
+          "m_FileID": 0,
+          "m_PathID": 2018
+        },
+        "colorDefault": {
+          "r": 0.6745098233222961,
+          "g": 0.5490196347236633,
+          "b": 0.29019609093666077,
+          "a": 1.0
+        },
+        "colorTeamOne": {
+          "r": 1.0,
+          "g": 0.3607843220233917,
+          "b": 0.3294117748737335,
+          "a": 1.0
+        },
+        "colorTeamTwo": {
+          "r": 0.4000000059604645,
+          "g": 0.6509804129600525,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "colorableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 8746
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8740
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8727
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8724
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8723
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8759
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7379
+          }
+        ],
+        "lobbySpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 1904
+        },
+        "lobbySpriteHappy": {
+          "m_FileID": 0,
+          "m_PathID": 1829
+        },
+        "scoresSpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 1964
+        },
+        "_bodyMatNormal": {
+          "m_FileID": 0,
+          "m_PathID": 20
+        },
+        "bodyMatBurnt": {
+          "m_FileID": 0,
+          "m_PathID": 19
+        },
+        "visibleBits": [],
+        "faceplate": {
+          "m_FileID": 0,
+          "m_PathID": 8729
+        },
+        "leftHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5705
+        },
+        "rightHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5270
+        },
+        "neckJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5941
+        },
+        "hipJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5980
+        },
+        "hatJoint": {
+          "m_FileID": 0,
+          "m_PathID": 6752
+        },
+        "faceJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5307
+        },
+        "equippedHat": 0,
+        "hipJointPosZ": 0.0,
+        "leftDisc": {
+          "m_FileID": 0,
+          "m_PathID": 2778
+        },
+        "rightDisc": {
+          "m_FileID": 0,
+          "m_PathID": 2413
+        },
+        "_isVisible": 0,
+        "_isSliced": 0,
+        "_dangerEffect": 0.0,
+        "_isBurnt": 0,
+        "_isSlimed": 0,
+        "_hasGoldenDisc": 0,
+        "_isSquished": 0,
+        "squishableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 3301
+          }
+        ],
+        "bodySquished": {
+          "m_FileID": 0,
+          "m_PathID": 2305
+        },
+        "groundSlamDelayOnSpawn": 0.616599977016449,
+        "slicedFaceplantDelay": 0.75,
+        "shadowScale": 1.0,
+        "bodyNormal": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 3448
+          }
+        ],
+        "bodySliced": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2867
+          }
+        ],
+        "deathSlice": {
+          "m_FileID": 0,
+          "m_PathID": 9815
+        },
+        "_bodyMatTeamOne": {
+          "m_FileID": 0,
+          "m_PathID": 21
+        },
+        "_bodyMatTeamTwo": {
+          "m_FileID": 0,
+          "m_PathID": 22
+        },
+        "_discColor": {
+          "r": 0.6745098233222961,
+          "g": 0.5490196347236633,
+          "b": 0.29019609093666077,
+          "a": 1.0
+        },
+        "uiShadowPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 2791
+        },
+        "uiShadow": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "resources": {
+        "animControllerGameplay": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2017"
+        },
+        "animControllerUI": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2018"
+        },
+        "_bodyMatNormal": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_20"
+        },
+        "bodyMatBurnt": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_19"
+        },
+        "_bodyMatTeamOne": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_21"
+        },
+        "_bodyMatTeamTwo": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_22"
+        }
+      },
+      "decoded": true
+    },
+    {
+      "id": 9815,
+      "type": "MonoBehaviour",
+      "class": "DeathSlice",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3076
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 839
+        },
+        "m_Name": "",
+        "debris": {
+          "m_FileID": 0,
+          "m_PathID": 4931
+        },
+        "rb": {
+          "m_FileID": 0,
+          "m_PathID": 8350
+        },
+        "hasCircleCollider": 1,
+        "speed": 20.0,
+        "speedZ": 12.0,
+        "gravityMod": 6.0,
+        "bounciness": 0.800000011920929,
+        "floorThreshold": -0.5,
+        "speedLimit": 40.0,
+        "velocityZ": 0.0,
+        "isLanded": 0,
+        "spinSpeedStart": -100.0,
+        "spinSpeedBounce": 62.0,
+        "numBounces": 0,
+        "lifetimeDuration": 0.0,
+        "vanishDuration": 0.75,
+        "debrisInitZ": -1.399999976158142,
+        "ignorePlayerCollisions": 0,
+        "parent": {
+          "m_FileID": 0,
+          "m_PathID": 4950
+        },
+        "isSticky": 0,
+        "orientUpwards": 0,
+        "orientRandom": 0
+      },
+      "resources": {},
+      "decoded": true
+    },
+    {
+      "id": 9719,
+      "type": "MonoBehaviour",
+      "class": "AnimatorFootsteps",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3301
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 47
+        },
+        "m_Name": ""
+      },
+      "resources": {},
+      "decoded": true
+    }
+  ],
+  "BananaChar": [
+    {
+      "id": 9821,
+      "type": "MonoBehaviour",
+      "class": "DeathSlice",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2527
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 839
+        },
+        "m_Name": "",
+        "debris": {
+          "m_FileID": 0,
+          "m_PathID": 5003
+        },
+        "rb": {
+          "m_FileID": 0,
+          "m_PathID": 8306
+        },
+        "hasCircleCollider": 1,
+        "speed": 8.0,
+        "speedZ": 0.0,
+        "gravityMod": 7.0,
+        "bounciness": 0.699999988079071,
+        "floorThreshold": -0.4000000059604645,
+        "speedLimit": 40.0,
+        "velocityZ": 0.0,
+        "isLanded": 0,
+        "spinSpeedStart": 150.0,
+        "spinSpeedBounce": 65.0,
+        "numBounces": 0,
+        "lifetimeDuration": 0.0,
+        "vanishDuration": 0.75,
+        "debrisInitZ": -1.6139999628067017,
+        "ignorePlayerCollisions": 0,
+        "parent": {
+          "m_FileID": 0,
+          "m_PathID": 4980
+        },
+        "isSticky": 0,
+        "orientUpwards": 0,
+        "orientRandom": 0
+      },
+      "resources": {},
+      "decoded": true
+    },
+    {
+      "id": 9689,
+      "type": "MonoBehaviour",
+      "class": "DeathSlice",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2548
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 839
+        },
+        "m_Name": "",
+        "debris": {
+          "m_FileID": 0,
+          "m_PathID": 5191
+        },
+        "rb": {
+          "m_FileID": 0,
+          "m_PathID": 8354
+        },
+        "hasCircleCollider": 1,
+        "speed": 16.0,
+        "speedZ": 3.0,
+        "gravityMod": 7.0,
+        "bounciness": 0.699999988079071,
+        "floorThreshold": -0.4000000059604645,
+        "speedLimit": 40.0,
+        "velocityZ": 0.0,
+        "isLanded": 0,
+        "spinSpeedStart": -50.0,
+        "spinSpeedBounce": 63.0,
+        "numBounces": 0,
+        "lifetimeDuration": 0.0,
+        "vanishDuration": 0.75,
+        "debrisInitZ": -1.6139999628067017,
+        "ignorePlayerCollisions": 0,
+        "parent": {
+          "m_FileID": 0,
+          "m_PathID": 4980
+        },
+        "isSticky": 0,
+        "orientUpwards": 0,
+        "orientRandom": 0
+      },
+      "resources": {},
+      "decoded": true
+    },
+    {
+      "id": 9692,
+      "type": "MonoBehaviour",
+      "class": "AnimatorFootsteps",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2775
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 47
+        },
+        "m_Name": ""
+      },
+      "resources": {},
+      "decoded": true
+    },
+    {
+      "id": 9809,
+      "type": "MonoBehaviour",
+      "class": "DeathSlice",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2973
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 839
+        },
+        "m_Name": "",
+        "debris": {
+          "m_FileID": 0,
+          "m_PathID": 5690
+        },
+        "rb": {
+          "m_FileID": 0,
+          "m_PathID": 8342
+        },
+        "hasCircleCollider": 1,
+        "speed": 20.0,
+        "speedZ": 12.0,
+        "gravityMod": 7.0,
+        "bounciness": 0.699999988079071,
+        "floorThreshold": -0.4000000059604645,
+        "speedLimit": 40.0,
+        "velocityZ": 0.0,
+        "isLanded": 0,
+        "spinSpeedStart": -100.0,
+        "spinSpeedBounce": 62.0,
+        "numBounces": 0,
+        "lifetimeDuration": 0.0,
+        "vanishDuration": 0.75,
+        "debrisInitZ": -1.6139999628067017,
+        "ignorePlayerCollisions": 0,
+        "parent": {
+          "m_FileID": 0,
+          "m_PathID": 4980
+        },
+        "isSticky": 0,
+        "orientUpwards": 0,
+        "orientRandom": 0
+      },
+      "resources": {},
+      "decoded": true
+    },
+    {
+      "id": 9862,
+      "type": "MonoBehaviour",
+      "class": "CharacterBanana",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3154
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 435
+        },
+        "m_Name": "",
+        "characterMode": 0,
+        "characterType": 4,
+        "characterOffset": {
+          "x": 0.0,
+          "y": -0.4000000059604645,
+          "z": 0.0
+        },
+        "shadowOffset": {
+          "x": 0.0,
+          "y": 0.30000001192092896,
+          "z": 0.0
+        },
+        "idleFace": 14,
+        "blinkFace": 15,
+        "victoryFace": 6,
+        "spawnFace": 14,
+        "facialExpressionTimer": 0.0,
+        "actor": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "anim": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "animControllerGameplay": {
+          "m_FileID": 0,
+          "m_PathID": 2015
+        },
+        "animControllerUI": {
+          "m_FileID": 0,
+          "m_PathID": 2016
+        },
+        "colorDefault": {
+          "r": 0.8980392813682556,
+          "g": 0.8196079134941101,
+          "b": 0.2196078598499298,
+          "a": 1.0
+        },
+        "colorTeamOne": {
+          "r": 1.0,
+          "g": 0.3607843220233917,
+          "b": 0.3294117748737335,
+          "a": 1.0
+        },
+        "colorTeamTwo": {
+          "r": 0.4000000059604645,
+          "g": 0.6509804129600525,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "colorableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 8786
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8749
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8718
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8770
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8774
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8784
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7541
+          }
+        ],
+        "lobbySpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 1815
+        },
+        "lobbySpriteHappy": {
+          "m_FileID": 0,
+          "m_PathID": 1871
+        },
+        "scoresSpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 1917
+        },
+        "_bodyMatNormal": {
+          "m_FileID": 0,
+          "m_PathID": 16
+        },
+        "bodyMatBurnt": {
+          "m_FileID": 0,
+          "m_PathID": 15
+        },
+        "visibleBits": [],
+        "faceplate": {
+          "m_FileID": 0,
+          "m_PathID": 8778
+        },
+        "leftHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5612
+        },
+        "rightHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 4933
+        },
+        "neckJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5908
+        },
+        "hipJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5645
+        },
+        "hatJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5081
+        },
+        "faceJoint": {
+          "m_FileID": 0,
+          "m_PathID": 6036
+        },
+        "equippedHat": 0,
+        "hipJointPosZ": 0.0,
+        "leftDisc": {
+          "m_FileID": 0,
+          "m_PathID": 2267
+        },
+        "rightDisc": {
+          "m_FileID": 0,
+          "m_PathID": 2503
+        },
+        "_isVisible": 0,
+        "_isSliced": 0,
+        "_dangerEffect": 0.0,
+        "_isBurnt": 0,
+        "_isSlimed": 0,
+        "_hasGoldenDisc": 0,
+        "_isSquished": 0,
+        "squishableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2775
+          }
+        ],
+        "bodySquished": {
+          "m_FileID": 0,
+          "m_PathID": 3308
+        },
+        "groundSlamDelayOnSpawn": 0.4332999885082245,
+        "slicedFaceplantDelay": 0.75,
+        "shadowScale": 1.0,
+        "bodyNormal": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2845
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2562
+          }
+        ],
+        "bodySliced": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2901
+          }
+        ],
+        "deathSlice": {
+          "m_FileID": 0,
+          "m_PathID": 9809
+        },
+        "_bodyMatTeamOne": {
+          "m_FileID": 0,
+          "m_PathID": 17
+        },
+        "_bodyMatTeamTwo": {
+          "m_FileID": 0,
+          "m_PathID": 18
+        },
+        "_discColor": {
+          "r": 0.8196078538894653,
+          "g": 0.7098039388656616,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "uiShadowPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 2791
+        },
+        "uiShadow": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "extraSlices": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 9689
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 9790
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 9821
+          }
+        ]
+      },
+      "resources": {
+        "animControllerGameplay": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2015"
+        },
+        "animControllerUI": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2016"
+        },
+        "_bodyMatNormal": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_16"
+        },
+        "bodyMatBurnt": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_15"
+        },
+        "_bodyMatTeamOne": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_17"
+        },
+        "_bodyMatTeamTwo": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_18"
+        }
+      },
+      "decoded": true
+    },
+    {
+      "id": 9790,
+      "type": "MonoBehaviour",
+      "class": "DeathSlice",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3486
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 839
+        },
+        "m_Name": "",
+        "debris": {
+          "m_FileID": 0,
+          "m_PathID": 4905
+        },
+        "rb": {
+          "m_FileID": 0,
+          "m_PathID": 8339
+        },
+        "hasCircleCollider": 1,
+        "speed": 12.0,
+        "speedZ": 2.0,
+        "gravityMod": 7.0,
+        "bounciness": 0.699999988079071,
+        "floorThreshold": -0.4000000059604645,
+        "speedLimit": 40.0,
+        "velocityZ": 0.0,
+        "isLanded": 0,
+        "spinSpeedStart": 50.0,
+        "spinSpeedBounce": 64.0,
+        "numBounces": 0,
+        "lifetimeDuration": 0.0,
+        "vanishDuration": 0.75,
+        "debrisInitZ": -1.6139999628067017,
+        "ignorePlayerCollisions": 0,
+        "parent": {
+          "m_FileID": 0,
+          "m_PathID": 4980
+        },
+        "isSticky": 0,
+        "orientUpwards": 0,
+        "orientRandom": 0
+      },
+      "resources": {},
+      "decoded": true
+    }
+  ],
+  "MilkChar": [
+    {
+      "id": 9813,
+      "type": "MonoBehaviour",
+      "class": "AnimatorFootsteps",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2294
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 47
+        },
+        "m_Name": ""
+      },
+      "resources": {},
+      "decoded": true
+    },
+    {
+      "id": 9825,
+      "type": "MonoBehaviour",
+      "class": "CharacterMilk",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3123
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 605
+        },
+        "m_Name": "",
+        "characterMode": 0,
+        "characterType": 8,
+        "characterOffset": {
+          "x": 0.0,
+          "y": -0.4000000059604645,
+          "z": 0.0
+        },
+        "shadowOffset": {
+          "x": 0.0,
+          "y": 0.30000001192092896,
+          "z": 0.0
+        },
+        "idleFace": 0,
+        "blinkFace": 11,
+        "victoryFace": 6,
+        "spawnFace": 0,
+        "facialExpressionTimer": 0.0,
+        "actor": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "anim": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "animControllerGameplay": {
+          "m_FileID": 0,
+          "m_PathID": 2041
+        },
+        "animControllerUI": {
+          "m_FileID": 0,
+          "m_PathID": 2042
+        },
+        "colorDefault": {
+          "r": 0.35686275362968445,
+          "g": 0.6745098233222961,
+          "b": 0.9843137264251709,
+          "a": 1.0
+        },
+        "colorTeamOne": {
+          "r": 1.0,
+          "g": 0.3607843220233917,
+          "b": 0.3294117748737335,
+          "a": 1.0
+        },
+        "colorTeamTwo": {
+          "r": 0.4000000059604645,
+          "g": 0.6509804129600525,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "colorableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 8735
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8750
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8753
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8775
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8745
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8715
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7494
+          }
+        ],
+        "lobbySpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 1894
+        },
+        "lobbySpriteHappy": {
+          "m_FileID": 0,
+          "m_PathID": 2001
+        },
+        "scoresSpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 1943
+        },
+        "_bodyMatNormal": {
+          "m_FileID": 0,
+          "m_PathID": 79
+        },
+        "bodyMatBurnt": {
+          "m_FileID": 0,
+          "m_PathID": 78
+        },
+        "visibleBits": [],
+        "faceplate": {
+          "m_FileID": 0,
+          "m_PathID": 8738
+        },
+        "leftHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 4902
+        },
+        "rightHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5770
+        },
+        "neckJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5260
+        },
+        "hipJoint": {
+          "m_FileID": 0,
+          "m_PathID": 6063
+        },
+        "hatJoint": {
+          "m_FileID": 0,
+          "m_PathID": 6911
+        },
+        "faceJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5680
+        },
+        "equippedHat": 0,
+        "hipJointPosZ": 0.0,
+        "leftDisc": {
+          "m_FileID": 0,
+          "m_PathID": 2991
+        },
+        "rightDisc": {
+          "m_FileID": 0,
+          "m_PathID": 3036
+        },
+        "_isVisible": 0,
+        "_isSliced": 0,
+        "_dangerEffect": 0.0,
+        "_isBurnt": 0,
+        "_isSlimed": 0,
+        "_hasGoldenDisc": 0,
+        "_isSquished": 0,
+        "squishableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2294
+          }
+        ],
+        "bodySquished": {
+          "m_FileID": 0,
+          "m_PathID": 3115
+        },
+        "groundSlamDelayOnSpawn": 0.616599977016449,
+        "slicedFaceplantDelay": 0.75,
+        "shadowScale": 1.0,
+        "bodyNormal": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2998
+          }
+        ],
+        "bodySliced": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2605
+          }
+        ],
+        "deathSlice": {
+          "m_FileID": 0,
+          "m_PathID": 9682
+        },
+        "_bodyMatTeamOne": {
+          "m_FileID": 0,
+          "m_PathID": 80
+        },
+        "_bodyMatTeamTwo": {
+          "m_FileID": 0,
+          "m_PathID": 81
+        },
+        "_discColor": {
+          "r": 0.30811747908592224,
+          "g": 0.5935790538787842,
+          "b": 0.8745098114013672,
+          "a": 1.0
+        },
+        "uiShadowPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 2791
+        },
+        "uiShadow": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "milkPourPFX": {
+          "m_FileID": 0,
+          "m_PathID": 3147
+        },
+        "milkSplatPFX": {
+          "m_FileID": 0,
+          "m_PathID": 2100
+        },
+        "liquidSurface": {
+          "m_FileID": 0,
+          "m_PathID": 2880
+        },
+        "milkDecalPositions": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 5832
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 4805
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 4838
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 5028
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 5091
+          }
+        ]
+      },
+      "resources": {
+        "animControllerGameplay": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2041"
+        },
+        "animControllerUI": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2042"
+        },
+        "_bodyMatNormal": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_79"
+        },
+        "bodyMatBurnt": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_78"
+        },
+        "_bodyMatTeamOne": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_80"
+        },
+        "_bodyMatTeamTwo": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_81"
+        }
+      },
+      "decoded": true
+    },
+    {
+      "id": 9682,
+      "type": "MonoBehaviour",
+      "class": "DeathSlice",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3451
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 839
+        },
+        "m_Name": "",
+        "debris": {
+          "m_FileID": 0,
+          "m_PathID": 5496
+        },
+        "rb": {
+          "m_FileID": 0,
+          "m_PathID": 8324
+        },
+        "hasCircleCollider": 1,
+        "speed": 20.0,
+        "speedZ": 10.0,
+        "gravityMod": 7.0,
+        "bounciness": 0.699999988079071,
+        "floorThreshold": -0.4000000059604645,
+        "speedLimit": 40.0,
+        "velocityZ": 0.0,
+        "isLanded": 0,
+        "spinSpeedStart": -100.0,
+        "spinSpeedBounce": 60.0,
+        "numBounces": 0,
+        "lifetimeDuration": 0.0,
+        "vanishDuration": 0.75,
+        "debrisInitZ": -1.399999976158142,
+        "ignorePlayerCollisions": 0,
+        "parent": {
+          "m_FileID": 0,
+          "m_PathID": 5039
+        },
+        "isSticky": 0,
+        "orientUpwards": 0,
+        "orientRandom": 0
+      },
+      "resources": {},
+      "decoded": true
+    }
+  ],
+  "CoffeeChar": [
+    {
+      "id": 9793,
+      "type": "MonoBehaviour",
+      "class": "DeathSlice",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2183
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 839
+        },
+        "m_Name": "",
+        "debris": {
+          "m_FileID": 0,
+          "m_PathID": 6107
+        },
+        "rb": {
+          "m_FileID": 0,
+          "m_PathID": 8336
+        },
+        "hasCircleCollider": 1,
+        "speed": 10.0,
+        "speedZ": 5.0,
+        "gravityMod": 10.0,
+        "bounciness": 0.5,
+        "floorThreshold": -1.0,
+        "speedLimit": 40.0,
+        "velocityZ": 0.0,
+        "isLanded": 0,
+        "spinSpeedStart": -50.0,
+        "spinSpeedBounce": 50.0,
+        "numBounces": 0,
+        "lifetimeDuration": 0.0,
+        "vanishDuration": 0.75,
+        "debrisInitZ": -1.0,
+        "ignorePlayerCollisions": 0,
+        "parent": {
+          "m_FileID": 0,
+          "m_PathID": 5042
+        },
+        "isSticky": 0,
+        "orientUpwards": 0,
+        "orientRandom": 0
+      },
+      "resources": {},
+      "decoded": true
+    },
+    {
+      "id": 9745,
+      "type": "MonoBehaviour",
+      "class": "DeathSlice",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2758
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 839
+        },
+        "m_Name": "",
+        "debris": {
+          "m_FileID": 0,
+          "m_PathID": 5600
+        },
+        "rb": {
+          "m_FileID": 0,
+          "m_PathID": 8344
+        },
+        "hasCircleCollider": 1,
+        "speed": 15.0,
+        "speedZ": 10.0,
+        "gravityMod": 9.0,
+        "bounciness": 0.6000000238418579,
+        "floorThreshold": -0.4000000059604645,
+        "speedLimit": 40.0,
+        "velocityZ": 0.0,
+        "isLanded": 0,
+        "spinSpeedStart": -60.0,
+        "spinSpeedBounce": 40.0,
+        "numBounces": 0,
+        "lifetimeDuration": 0.0,
+        "vanishDuration": 0.75,
+        "debrisInitZ": -1.0,
+        "ignorePlayerCollisions": 0,
+        "parent": {
+          "m_FileID": 0,
+          "m_PathID": 5042
+        },
+        "isSticky": 0,
+        "orientUpwards": 0,
+        "orientRandom": 0
+      },
+      "resources": {},
+      "decoded": true
+    },
+    {
+      "id": 9830,
+      "type": "MonoBehaviour",
+      "class": "AnimatorFootsteps",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2946
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 47
+        },
+        "m_Name": ""
+      },
+      "resources": {},
+      "decoded": true
+    },
+    {
+      "id": 9715,
+      "type": "MonoBehaviour",
+      "class": "CharacterCoffee",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3126
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1373
+        },
+        "m_Name": "",
+        "characterMode": 0,
+        "characterType": 64,
+        "characterOffset": {
+          "x": 0.0,
+          "y": -0.4000000059604645,
+          "z": 0.0
+        },
+        "shadowOffset": {
+          "x": 0.0,
+          "y": 0.30000001192092896,
+          "z": 0.0
+        },
+        "idleFace": 0,
+        "blinkFace": 11,
+        "victoryFace": 6,
+        "spawnFace": 0,
+        "facialExpressionTimer": 0.0,
+        "actor": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "anim": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "animControllerGameplay": {
+          "m_FileID": 0,
+          "m_PathID": 2029
+        },
+        "animControllerUI": {
+          "m_FileID": 0,
+          "m_PathID": 2030
+        },
+        "colorDefault": {
+          "r": 0.8500000238418579,
+          "g": 0.8450871109962463,
+          "b": 0.8219339847564697,
+          "a": 1.0
+        },
+        "colorTeamOne": {
+          "r": 1.0,
+          "g": 0.3607843220233917,
+          "b": 0.3294117748737335,
+          "a": 1.0
+        },
+        "colorTeamTwo": {
+          "r": 0.4000000059604645,
+          "g": 0.6509804129600525,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "colorableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 8763
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8754
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8710
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8711
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8737
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8773
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7359
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7616
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7514
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7469
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7548
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7573
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7312
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7342
+          }
+        ],
+        "lobbySpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 2005
+        },
+        "lobbySpriteHappy": {
+          "m_FileID": 0,
+          "m_PathID": 1855
+        },
+        "scoresSpriteIdle": {
+          "m_FileID": 0,
+          "m_PathID": 1866
+        },
+        "_bodyMatNormal": {
+          "m_FileID": 0,
+          "m_PathID": 45
+        },
+        "bodyMatBurnt": {
+          "m_FileID": 0,
+          "m_PathID": 44
+        },
+        "visibleBits": [],
+        "faceplate": {
+          "m_FileID": 0,
+          "m_PathID": 8714
+        },
+        "leftHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 4921
+        },
+        "rightHandJoint": {
+          "m_FileID": 0,
+          "m_PathID": 4945
+        },
+        "neckJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5083
+        },
+        "hipJoint": {
+          "m_FileID": 0,
+          "m_PathID": 5061
+        },
+        "hatJoint": {
+          "m_FileID": 0,
+          "m_PathID": 6195
+        },
+        "faceJoint": {
+          "m_FileID": 0,
+          "m_PathID": 6048
+        },
+        "equippedHat": 0,
+        "hipJointPosZ": 0.0,
+        "leftDisc": {
+          "m_FileID": 0,
+          "m_PathID": 2994
+        },
+        "rightDisc": {
+          "m_FileID": 0,
+          "m_PathID": 3039
+        },
+        "_isVisible": 0,
+        "_isSliced": 0,
+        "_dangerEffect": 0.0,
+        "_isBurnt": 0,
+        "_isSlimed": 0,
+        "_hasGoldenDisc": 0,
+        "_isSquished": 0,
+        "squishableBits": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2946
+          }
+        ],
+        "bodySquished": {
+          "m_FileID": 0,
+          "m_PathID": 3118
+        },
+        "groundSlamDelayOnSpawn": 0.4332999885082245,
+        "slicedFaceplantDelay": 0.30000001192092896,
+        "shadowScale": 1.0,
+        "bodyNormal": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 3273
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 3002
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2458
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 3515
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 3024
+          }
+        ],
+        "bodySliced": [],
+        "deathSlice": {
+          "m_FileID": 0,
+          "m_PathID": 9793
+        },
+        "_bodyMatTeamOne": {
+          "m_FileID": 0,
+          "m_PathID": 46
+        },
+        "_bodyMatTeamTwo": {
+          "m_FileID": 0,
+          "m_PathID": 47
+        },
+        "_discColor": {
+          "r": 0.3686274588108063,
+          "g": 0.21176470816135406,
+          "b": 0.14901961386203766,
+          "a": 1.0
+        },
+        "uiShadowPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 2791
+        },
+        "uiShadow": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "extraSlices": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 9775
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 9745
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 9684
+          }
+        ],
+        "sliceVectors": [
+          {
+            "x": -0.20000000298023224,
+            "y": 1.0
+          },
+          {
+            "x": 0.20000000298023224,
+            "y": -1.0
+          },
+          {
+            "x": -1.0,
+            "y": 0.0
+          },
+          {
+            "x": 0.800000011920929,
+            "y": 0.5
+          }
+        ],
+        "milkPourPFX": {
+          "m_FileID": 0,
+          "m_PathID": 3150
+        },
+        "milkSplatPFX": {
+          "m_FileID": 0,
+          "m_PathID": 2102
+        },
+        "milkDecalPositions": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 5835
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 4808
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 4841
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 5031
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 5093
+          }
+        ],
+        "coffeeLiquidColor": {
+          "r": 0.3686274588108063,
+          "g": 0.21176470816135406,
+          "b": 0.14901961386203766,
+          "a": 1.0
+        }
+      },
+      "resources": {
+        "animControllerGameplay": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2029"
+        },
+        "animControllerUI": {
+          "type": "AnimatorOverrideController",
+          "resource": "sharedassets1.assets_2030"
+        },
+        "_bodyMatNormal": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_45"
+        },
+        "bodyMatBurnt": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_44"
+        },
+        "_bodyMatTeamOne": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_46"
+        },
+        "_bodyMatTeamTwo": {
+          "type": "Material",
+          "resource": "sharedassets1.assets_47"
+        }
+      },
+      "decoded": true
+    },
+    {
+      "id": 9775,
+      "type": "MonoBehaviour",
+      "class": "DeathSlice",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3223
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 839
+        },
+        "m_Name": "",
+        "debris": {
+          "m_FileID": 0,
+          "m_PathID": 4965
+        },
+        "rb": {
+          "m_FileID": 0,
+          "m_PathID": 8302
+        },
+        "hasCircleCollider": 1,
+        "speed": 9.0,
+        "speedZ": 5.0,
+        "gravityMod": 10.0,
+        "bounciness": 0.5,
+        "floorThreshold": -0.800000011920929,
+        "speedLimit": 40.0,
+        "velocityZ": 0.0,
+        "isLanded": 0,
+        "spinSpeedStart": -50.0,
+        "spinSpeedBounce": 50.0,
+        "numBounces": 0,
+        "lifetimeDuration": 0.0,
+        "vanishDuration": 0.75,
+        "debrisInitZ": -0.800000011920929,
+        "ignorePlayerCollisions": 0,
+        "parent": {
+          "m_FileID": 0,
+          "m_PathID": 5042
+        },
+        "isSticky": 0,
+        "orientUpwards": 0,
+        "orientRandom": 0
+      },
+      "resources": {},
+      "decoded": true
+    },
+    {
+      "id": 9684,
+      "type": "MonoBehaviour",
+      "class": "DeathSlice",
+      "assembly": "Assembly-CSharp",
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3453
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 839
+        },
+        "m_Name": "",
+        "debris": {
+          "m_FileID": 0,
+          "m_PathID": 5498
+        },
+        "rb": {
+          "m_FileID": 0,
+          "m_PathID": 8326
+        },
+        "hasCircleCollider": 1,
+        "speed": 15.0,
+        "speedZ": 10.0,
+        "gravityMod": 9.0,
+        "bounciness": 0.6000000238418579,
+        "floorThreshold": -0.5,
+        "speedLimit": 40.0,
+        "velocityZ": 0.0,
+        "isLanded": 0,
+        "spinSpeedStart": -50.0,
+        "spinSpeedBounce": 70.0,
+        "numBounces": 0,
+        "lifetimeDuration": 0.0,
+        "vanishDuration": 0.75,
+        "debrisInitZ": -1.25,
+        "ignorePlayerCollisions": 0,
+        "parent": {
+          "m_FileID": 0,
+          "m_PathID": 5042
+        },
+        "isSticky": 0,
+        "orientUpwards": 0,
+        "orientRandom": 0
+      },
+      "resources": {},
+      "decoded": true
+    }
+  ]
+}

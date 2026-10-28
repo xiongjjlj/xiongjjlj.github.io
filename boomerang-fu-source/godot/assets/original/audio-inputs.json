@@ -1,0 +1,286 @@
+{
+  "level": "Level",
+  "ambient": "event:/atmos/mountains",
+  "clip_events": {
+    "sharedassets1.assets_1230": [],
+    "sharedassets1.assets_1231": [],
+    "sharedassets1.assets_1238": [],
+    "sharedassets1.assets_1243": [],
+    "sharedassets1.assets_1244": [],
+    "sharedassets1.assets_1245": [],
+    "sharedassets1.assets_1246": [],
+    "sharedassets1.assets_1247": [],
+    "sharedassets1.assets_1260": [],
+    "sharedassets1.assets_1262": [],
+    "sharedassets1.assets_1263": [],
+    "sharedassets1.assets_1264": [],
+    "sharedassets1.assets_1293": [],
+    "sharedassets1.assets_1295": [],
+    "sharedassets1.assets_1298": [],
+    "sharedassets1.assets_1301": [],
+    "sharedassets1.assets_1303": [],
+    "sharedassets1.assets_1304": [],
+    "sharedassets1.assets_1318": [
+      {
+        "time": 0.02924346551299095,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      },
+      {
+        "time": 0.3562370836734772,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      }
+    ],
+    "sharedassets1.assets_1320": [
+      {
+        "time": 0.017280099913477898,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      },
+      {
+        "time": 0.35357874631881714,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      }
+    ],
+    "sharedassets1.assets_1323": [
+      {
+        "time": 0.021267887204885483,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      },
+      {
+        "time": 0.3575665056705475,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      }
+    ],
+    "sharedassets1.assets_1326": [
+      {
+        "time": 0.025255674496293068,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      },
+      {
+        "time": 0.3615540564060211,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      }
+    ],
+    "sharedassets1.assets_1328": [
+      {
+        "time": 0.02133479155600071,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      },
+      {
+        "time": 0.35224953293800354,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      }
+    ],
+    "sharedassets1.assets_1329": [
+      {
+        "time": 0.017280099913477898,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      },
+      {
+        "time": 0.3602249026298523,
+        "functionName": "Footstep",
+        "data": "",
+        "objectReferenceParameter": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "floatParameter": 0.0,
+        "intParameter": 0,
+        "messageOptions": 0
+      }
+    ],
+    "sharedassets1.assets_1353": [],
+    "sharedassets1.assets_1366": [],
+    "sharedassets1.assets_1369": [],
+    "sharedassets1.assets_1371": [],
+    "sharedassets1.assets_1374": [],
+    "sharedassets1.assets_1377": [],
+    "sharedassets1.assets_1379": [],
+    "sharedassets1.assets_1380": [],
+    "sharedassets1.assets_1382": [],
+    "sharedassets1.assets_1384": [],
+    "sharedassets1.assets_1387": [],
+    "sharedassets1.assets_1390": [],
+    "sharedassets1.assets_1392": [],
+    "sharedassets1.assets_1393": [],
+    "sharedassets1.assets_1394": [],
+    "sharedassets1.assets_1396": [],
+    "sharedassets1.assets_1399": [],
+    "sharedassets1.assets_1402": [],
+    "sharedassets1.assets_1405": [],
+    "sharedassets1.assets_1406": [],
+    "sharedassets1.assets_1408": [],
+    "sharedassets1.assets_1411": [],
+    "sharedassets1.assets_1414": [],
+    "sharedassets1.assets_1417": [],
+    "sharedassets1.assets_1418": [],
+    "sharedassets1.assets_1420": [],
+    "sharedassets1.assets_1423": [],
+    "sharedassets1.assets_1426": [],
+    "sharedassets1.assets_1428": [],
+    "sharedassets1.assets_1429": [],
+    "sharedassets1.assets_1430": [],
+    "sharedassets1.assets_1432": [],
+    "sharedassets1.assets_1435": [],
+    "sharedassets1.assets_1438": [],
+    "sharedassets1.assets_1440": [],
+    "sharedassets1.assets_1441": [],
+    "sharedassets1.assets_1442": [],
+    "sharedassets1.assets_1444": [],
+    "sharedassets1.assets_1447": [],
+    "sharedassets1.assets_1450": [],
+    "sharedassets1.assets_1452": [],
+    "sharedassets1.assets_1453": [],
+    "sharedassets1.assets_1466": [],
+    "sharedassets1.assets_1468": [],
+    "sharedassets1.assets_1471": [],
+    "sharedassets1.assets_1474": [],
+    "sharedassets1.assets_1476": [],
+    "sharedassets1.assets_1477": [],
+    "sharedassets1.assets_1514": [],
+    "sharedassets1.assets_1516": [],
+    "sharedassets1.assets_1519": [],
+    "sharedassets1.assets_1522": [],
+    "sharedassets1.assets_1524": [],
+    "sharedassets1.assets_1525": [],
+    "sharedassets1.assets_1526": [],
+    "sharedassets1.assets_1528": [],
+    "sharedassets1.assets_1531": [],
+    "sharedassets1.assets_1534": [],
+    "sharedassets1.assets_1536": [],
+    "sharedassets1.assets_1537": []
+  },
+  "obstacle_materials": {
+    "215": 2,
+    "214": 2,
+    "216": 2,
+    "211": 2,
+    "210": 2,
+    "209": 2,
+    "212": 2,
+    "213": 2,
+    "218": 2,
+    "217": 2,
+    "300": 0,
+    "137": 3,
+    "237": 0,
+    "236": 0,
+    "238": 0,
+    "240": 0,
+    "239": 0,
+    "241": 0,
+    "281": 3,
+    "280": 3,
+    "282": 3,
+    "283": 3,
+    "284": 3,
+    "138": 3,
+    "136": 3,
+    "171": 2,
+    "170": 2,
+    "168": 2,
+    "169": 2,
+    "166": 2,
+    "167": 2,
+    "202": 2,
+    "203": 2,
+    "121": 0,
+    "122": 0,
+    "315": 0,
+    "316": 0
+  },
+  "particle_audio": {
+    "3": "event:/combat/spawnin_land",
+    "6": "event:/death/splash_medium",
+    "17": "event:/environment/splash_small",
+    "19": "event:/environment/cloud_puff",
+    "20": "event:/environment/cloud_puff_mini"
+  }
+}

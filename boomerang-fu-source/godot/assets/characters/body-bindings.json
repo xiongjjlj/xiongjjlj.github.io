@@ -1,0 +1,121 @@
+{
+  "Avocado": {
+    "bodyNormal": [
+      "Avo_Body__3535",
+      "Avo_Stone__2574",
+      "Avo_Faceplate__2817"
+    ],
+    "bodySliced": [
+      "Avo_Body_Death__2649"
+    ],
+    "squishableBits": [
+      "Avocado__2816"
+    ],
+    "bodySquished": "Squished__2744",
+    "squishedMesh": "Squished__3367",
+    "colorDefault": {
+      "r": 0.6078431606292725,
+      "g": 0.9372549653053284,
+      "b": 0.35686275362968445,
+      "a": 1.0
+    }
+  },
+  "Watermelon": {
+    "bodyNormal": [
+      "WaterMelon_Body__4393"
+    ],
+    "bodySliced": [
+      "WaterMelon_BodyBottom_Death__4392"
+    ],
+    "squishableBits": [
+      "Watermelon__4394"
+    ],
+    "bodySquished": "Squished__2711",
+    "squishedMesh": "Squished__3373",
+    "colorDefault": {
+      "r": 0.8999999761581421,
+      "g": 0.13499997556209564,
+      "b": 0.25200000405311584,
+      "a": 1.0
+    }
+  },
+  "Bread": {
+    "bodyNormal": [
+      "Bread_Body__3448"
+    ],
+    "bodySliced": [
+      "Bread_Death_BodyLower__2867"
+    ],
+    "squishableBits": [
+      "Bread__3301"
+    ],
+    "bodySquished": "Squished__2305",
+    "squishedMesh": "Squished__2249",
+    "colorDefault": {
+      "r": 0.6745098233222961,
+      "g": 0.5490196347236633,
+      "b": 0.29019609093666077,
+      "a": 1.0
+    }
+  },
+  "Banana": {
+    "bodyNormal": [
+      "Banana_Body__2845",
+      "Banana_Faceplate__2562"
+    ],
+    "bodySliced": [
+      "Banana_Death_BodyBottom__2901"
+    ],
+    "squishableBits": [
+      "Banana__2775"
+    ],
+    "bodySquished": "Squished__3308",
+    "squishedMesh": "Squished__2954",
+    "colorDefault": {
+      "r": 0.8980392813682556,
+      "g": 0.8196079134941101,
+      "b": 0.2196078598499298,
+      "a": 1.0
+    }
+  },
+  "Milk": {
+    "bodyNormal": [
+      "MilkCarton_Body__2998"
+    ],
+    "bodySliced": [
+      "MilkCarton_Death_BodyBottom__2605"
+    ],
+    "squishableBits": [
+      "Milk__2294"
+    ],
+    "bodySquished": "Squished__3115",
+    "squishedMesh": "Squished__2325",
+    "colorDefault": {
+      "r": 0.35686275362968445,
+      "g": 0.6745098233222961,
+      "b": 0.9843137264251709,
+      "a": 1.0
+    }
+  },
+  "Coffee": {
+    "bodyNormal": [
+      "Coffee__3273",
+      "CoffeeCup_Body__3002",
+      "CoffeeCup_Faceplate__2458",
+      "CoffeeCup_RFoot__3515",
+      "CoffeeCup_LFoot__3024"
+    ],
+    "bodySliced": [],
+    "squishableBits": [
+      "CoffeeCup__2946"
+    ],
+    "bodySquished": "Squished__3118",
+    "squishedMesh": "Squished__2328",
+    "colorDefault": {
+      "r": 0.8500000238418579,
+      "g": 0.8450871109962463,
+      "b": 0.8219339847564697,
+      "a": 1.0
+    }
+  }
+}

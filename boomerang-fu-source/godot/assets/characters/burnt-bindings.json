@@ -1,0 +1,142 @@
+{
+  "Avocado": {
+    "nodes": [
+      "Avo_Body__3535",
+      "Avo_Body_Death__2649",
+      "Avo_LFoot__3406",
+      "Avo_LHand__2755",
+      "Avo_RFoot__3135",
+      "Avo_RHand__2610",
+      "Avo_Stone__2574",
+      "Avo_Stone_Death__2480"
+    ],
+    "texture": "Avocado-burnt.png",
+    "texture_sha256": "b43bb258e9a9f492ba52b60510caa1274bdeb7218cdcc099458499df24a18c34",
+    "color": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "shader": "Toony Colors Pro 2/Mobile",
+    "source_material": 8,
+    "scope": "Recovered texture/color/renderer bindings; original character toon shader pending"
+  },
+  "Watermelon": {
+    "nodes": [
+      "WaterMelon_Body__4393",
+      "WaterMelon_BodyBottom_Death__4392",
+      "WaterMelon_LFoot__4390",
+      "WaterMelon_LHand__4389",
+      "WaterMelon_RFoot__4388",
+      "WaterMelon_RHand__4387",
+      "WaterMelon_BodyTop_Death__2187"
+    ],
+    "texture": "Watermelon-burnt.png",
+    "texture_sha256": "1344c982d37304c5ba77f649ccd3caa40acc9b753d51c54a96dc1a55ddbad3f1",
+    "color": [
+      0.6000000238418579,
+      0.6000000238418579,
+      0.6000000238418579,
+      1.0
+    ],
+    "shader": "Toony Colors Pro 2/Mobile",
+    "source_material": 106,
+    "scope": "Recovered texture/color/renderer bindings; original character toon shader pending"
+  },
+  "Bread": {
+    "nodes": [
+      "Bread_Body__3448",
+      "Bread_Death_BodyLower__2867",
+      "Bread_LFoot__3253",
+      "Bread_LHand__3321",
+      "Bread_RFoot__2301",
+      "Bread_RHand__3323",
+      "Bread_Death_BodyUpper__3110"
+    ],
+    "texture": "Bread-burnt.png",
+    "texture_sha256": "e806804e38f8588121b927fb65bf8cd56d1aea5c2c712e9a25987a77c5d017b4",
+    "color": [
+      0.49000000953674316,
+      0.49000000953674316,
+      0.49000000953674316,
+      1.0
+    ],
+    "shader": "Hidden/Toony Colors Pro 2/Variants/Mobile Specular",
+    "source_material": 19,
+    "scope": "Original texture/color/renderer bindings; character toon shader pending"
+  },
+  "Banana": {
+    "nodes": [
+      "Banana_Body__2845",
+      "Banana_Death_BodyBottom__2901",
+      "Banana_LFoot__2698",
+      "Banana_LHand__2766",
+      "Banana_RFoot__3403",
+      "Banana_RHand__2558",
+      "Banana_Death_BodyTop__2735"
+    ],
+    "texture": "Banana-burnt.png",
+    "texture_sha256": "43e8789e78e6416af9be2a1915c532f60edd56aa75800257c1cc5c7f6d2344ea",
+    "color": [
+      0.7941176295280457,
+      0.7941176295280457,
+      0.7941176295280457,
+      1.0
+    ],
+    "shader": "Toony Colors Pro 2/Mobile",
+    "source_material": 15,
+    "scope": "Original texture/color/renderer bindings; character toon shader pending"
+  },
+  "Milk": {
+    "nodes": [
+      "MilkCarton_Body__2998",
+      "MilkCarton_Death_BodyBottom__2605",
+      "MilkCarton_LFoot__3519",
+      "MilkCarton_LHand__3541",
+      "MilkCarton_RFoot__2709",
+      "MilkCarton_RHand__2890",
+      "MilkCarton_Death_BodyTop__3218"
+    ],
+    "texture": "Milk-burnt.png",
+    "texture_sha256": "dc8cf5125d23dd8cfd041a0e6dd44bcd0ef7b1a2bd06b504c79f86ce31a34a97",
+    "color": [
+      0.7132352590560913,
+      0.7132352590560913,
+      0.7132352590560913,
+      1.0
+    ],
+    "shader": "Toony Colors Pro 2/Mobile",
+    "source_material": 78,
+    "scope": "Original texture/color/renderer bindings; character toon shader pending"
+  },
+  "Coffee": {
+    "nodes": [
+      "Coffee__3273",
+      "CoffeeCup_Body__3002",
+      "CoffeeCup_LFoot__3024",
+      "CoffeeCup_LHand__2633",
+      "CoffeeCup_RFoot__3515",
+      "CoffeeCup_RHand__2172",
+      "CoffeeCup_Death_RFoot__3339",
+      "CoffeeCup_Death_Piece04__2238",
+      "CoffeeCup_Death_LFoot__2109",
+      "CoffeeCup_Death_Piece01__3044",
+      "CoffeeCup_Death_Piece02__2555",
+      "CoffeeCup_Death_Piece03__3247",
+      "CoffeeCup_Death_LHand__2930",
+      "CoffeeCup_Death_RHand__2285"
+    ],
+    "texture": "Coffee-burnt.png",
+    "texture_sha256": "a7175344bb7442b64b208754d562b5811d42e087cba2249d1007a70aa3ae3103",
+    "color": [
+      0.7058823108673096,
+      0.7058823108673096,
+      0.7058823108673096,
+      1.0
+    ],
+    "shader": "Toony Colors Pro 2/Mobile",
+    "source_material": 44,
+    "scope": "Original texture/color/renderer bindings; character toon shader pending"
+  }
+}

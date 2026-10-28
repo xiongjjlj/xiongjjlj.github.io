@@ -1,0 +1,435 @@
+[
+  {
+    "source_file": "level1",
+    "path_id": 8970,
+    "script": "LevelManager",
+    "name": "LevelManager",
+    "data": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 4
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 1037
+      },
+      "m_Name": "",
+      "currentScene": "",
+      "level": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "levelAssets": [
+        {
+          "m_FileID": 2,
+          "m_PathID": 9422
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9423
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9431
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9425
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9428
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9430
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9433
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9437
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9444
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9440
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9442
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9445
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9449
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9451
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9443
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9424
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9453
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9421
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9441
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9438
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9429
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9446
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9447
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9450
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9448
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9452
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9426
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9435
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9434
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9420
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9454
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9418
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9419
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9427
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9432
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9439
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9436
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9417
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9414
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9406
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9413
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9411
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9405
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9407
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9409
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9408
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9397
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9403
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9400
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9416
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9399
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9402
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9401
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9415
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9410
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9398
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9412
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9404
+        }
+      ],
+      "switchIncompatibleLevels": [
+        {
+          "m_FileID": 2,
+          "m_PathID": 9437
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 9447
+        }
+      ],
+      "nextLevelLoaded": 1,
+      "matchPlaylist": [],
+      "matchIndex": 0,
+      "levelBoundary": {
+        "m_FileID": 0,
+        "m_PathID": 2890
+      },
+      "levelBoundaryLine": {
+        "m_FileID": 0,
+        "m_PathID": 9891
+      },
+      "shrinkingBoundsMarker": {
+        "m_FileID": 0,
+        "m_PathID": 2999
+      },
+      "isLevelBoundaryShrinking": 0,
+      "levelBoundaryOwner": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "shrinkCurve": {
+        "m_Curve": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inSlope": -0.09615211188793182,
+            "outSlope": -0.09615211188793182,
+            "weightedMode": 0,
+            "inWeight": 0.3333333432674408,
+            "outWeight": 0.07637510448694229
+          },
+          {
+            "time": 0.8998180031776428,
+            "value": 0.9163225889205933,
+            "inSlope": 2.18933367729187,
+            "outSlope": 2.18933367729187,
+            "weightedMode": 0,
+            "inWeight": 0.04920782148838043,
+            "outWeight": 0.6775476932525635
+          },
+          {
+            "time": 1.0,
+            "value": 1.0,
+            "inSlope": 0.0,
+            "outSlope": 0.0,
+            "weightedMode": 0,
+            "inWeight": 0.07012629508972168,
+            "outWeight": 0.3333333432674408
+          }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+      },
+      "pathfinder": {
+        "m_FileID": 0,
+        "m_PathID": 9006
+      },
+      "floorLayers": {
+        "m_Bits": 1073807360
+      },
+      "extinguishingLayers": {
+        "m_Bits": 603979776
+      },
+      "possiblePowerups": [],
+      "usefulPowerups": [],
+      "powerupPrefab": {
+        "m_FileID": 2,
+        "m_PathID": 2066
+      },
+      "powerupSpawnAvoidLayersClose": {
+        "m_Bits": 2097408
+      },
+      "powerupSpawnAvoidLayersFar": {
+        "m_Bits": 49664
+      },
+      "powerupSpawnDelay": 0.0,
+      "powerupsCollectedThreshold": 0.0,
+      "powerupSpawnPoints": [],
+      "levelChunks": [
+        {
+          "m_FileID": 2,
+          "m_PathID": 2336
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 2255
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 2804
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 3082
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 3105
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 3106
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 2807
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 2535
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 2560
+        },
+        {
+          "m_FileID": 2,
+          "m_PathID": 2919
+        }
+      ],
+      "numEnemies": 0
+    }
+  },
+  {
+    "source_file": "level1",
+    "path_id": 10791,
+    "script": "CellManager",
+    "name": "CellManager",
+    "data": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 865
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 1416
+      },
+      "m_Name": "",
+      "fireSystem": {
+        "m_FileID": 0,
+        "m_PathID": 3011
+      },
+      "steamSystem": {
+        "m_FileID": 0,
+        "m_PathID": 3020
+      },
+      "glowSystem": {
+        "m_FileID": 0,
+        "m_PathID": 3017
+      },
+      "iceSparkleSystem": {
+        "m_FileID": 0,
+        "m_PathID": 3029
+      },
+      "leafBurstSystem": {
+        "m_FileID": 0,
+        "m_PathID": 3021
+      },
+      "leafBurstAutumnSystem": {
+        "m_FileID": 0,
+        "m_PathID": 3016
+      },
+      "numFireCells": 0,
+      "firePositions": []
+    }
+  }
+]

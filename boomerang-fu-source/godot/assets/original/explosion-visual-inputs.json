@@ -1,0 +1,24 @@
+{
+  "source_material": [
+    "sharedassets1.assets",
+    207
+  ],
+  "shader": [
+    "resources.assets",
+    104,
+    "Legacy Shaders/Particles/Alpha Blended"
+  ],
+  "texture": "shader-textures/sharedassets1.assets_552.png",
+  "texture_sha256": "602d4e0846fc7e9aca4a0e5ca7c4b13f7275c877cb69456fb7f7a8a9f1e6f9aa",
+  "scale": [
+    1.0,
+    1.0
+  ],
+  "offset": [
+    0.5,
+    0.5
+  ],
+  "filter": 1,
+  "wrap_u": 0,
+  "wrap_v": 0
+}

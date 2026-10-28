@@ -1,0 +1,485 @@
+{
+  "source_components": [
+    {
+      "script": "Assembly-CSharp::DecoyInput",
+      "id": 9658,
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2067
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 243
+        },
+        "m_Name": "",
+        "decoy": {
+          "m_FileID": 0,
+          "m_PathID": 9660
+        },
+        "inputMove": {
+          "x": 0.0,
+          "y": -1.0
+        },
+        "inputDash": 0,
+        "inputWave": 0,
+        "inputIsEnabled": 1,
+        "roundsSinceLastInputReceived": 0,
+        "timeSinceLastInputReceived": 0.0
+      }
+    },
+    {
+      "script": "Assembly-CSharp::Decoy",
+      "id": 9660,
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2067
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1315
+        },
+        "m_Name": "",
+        "characterID": 0,
+        "playerID": 0,
+        "team": 0,
+        "physicsCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8434
+        },
+        "meleeCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8612
+        },
+        "damageCollider": {
+          "m_FileID": 0,
+          "m_PathID": 8479
+        },
+        "obstacleLayer": {
+          "m_Bits": 256
+        },
+        "physicsColliderRadius": 0.0,
+        "playerLayer": {
+          "m_Bits": 512
+        },
+        "hazardLayers": {
+          "m_Bits": 1073872896
+        },
+        "floorLayers": {
+          "m_Bits": 1610678272
+        },
+        "destructablesLayer": {
+          "m_Bits": 32768
+        },
+        "triggerLayers": {
+          "m_Bits": 3145728
+        },
+        "interpolatedTransform": {
+          "m_FileID": 0,
+          "m_PathID": 9644
+        },
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "actorState": 0,
+        "canWalk": 1,
+        "canDash": 1,
+        "canRotate": 1,
+        "isShowingOff": 0,
+        "isSpawningIn": 0,
+        "isWading": 0,
+        "_isAiming": 0,
+        "isCoolingAttack": 0,
+        "isLunging": 0,
+        "attacksLeft": 0,
+        "justBecomeVulernable": 0,
+        "speedLimit": 40.0,
+        "slideFactor": 0.25,
+        "inputMove": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "lastInputMove": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "lastRotation": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "velocityStored": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "dashDistanceInvulnerable": 9.449999809265137,
+        "dashDistance": 11.0600004196167,
+        "attackDistance": 4.400000095367432,
+        "walkVelocity": 14.25,
+        "movingFloor": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "attackCooldownTimer": 0.0,
+        "meleeTimer": 0.0,
+        "lungeCooldownTimer": 0.0,
+        "lungeTimer": 0.0,
+        "aimTimer": 0.0,
+        "aimPower": 0.0,
+        "aimMaxPower": 1.0,
+        "aimDuration": 0.8999999761581421,
+        "killer": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "isOnFire": 0,
+        "fireOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "fireDistance": 0.0,
+        "_isSlimed": 0,
+        "slimeTimer": 0.0,
+        "isSlimeTiming": 0,
+        "freezeTimer": 0.0,
+        "timeScaler": 1.0,
+        "reviveTimer": 0.0,
+        "gettingRevivedThisFrame": 0,
+        "character": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "appearance": {
+          "m_FileID": 0,
+          "m_PathID": 4685
+        },
+        "actorPFX": {
+          "m_FileID": 0,
+          "m_PathID": 4715
+        },
+        "shadow": {
+          "m_FileID": 0,
+          "m_PathID": 2670
+        },
+        "onFirePFXPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 8909
+        },
+        "frozenBlockPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 8662
+        },
+        "frozenParticlesPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 8896
+        },
+        "dustTrailPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 9063
+        },
+        "slidingPFXPrefab": {
+          "m_FileID": 0,
+          "m_PathID": 9062
+        },
+        "dashTrail": {
+          "m_FileID": 0,
+          "m_PathID": 8968
+        },
+        "playerType": 1,
+        "decoyInput": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "outOfBoundsArrow": {
+          "m_FileID": 0,
+          "m_PathID": 9702
+        },
+        "shieldAnimator": {
+          "m_FileID": 0,
+          "m_PathID": 8696
+        },
+        "shield": {
+          "m_FileID": 0,
+          "m_PathID": 4242
+        },
+        "_isShielded": 0,
+        "_isHidden": 0,
+        "_hasDiscs": -1,
+        "outOfBoundsTimer": 0.0,
+        "isOutOfBounds": 0,
+        "activePowerup": 0,
+        "moveFasterPFX": {
+          "m_FileID": 0,
+          "m_PathID": 9102
+        },
+        "owner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "spawnedTimestamp": 0.0
+      }
+    },
+    {
+      "script": "Assembly-CSharp::InterpolatedTransformUpdater",
+      "id": 9642,
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2067
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1357
+        },
+        "m_Name": ""
+      }
+    },
+    {
+      "script": "Assembly-CSharp::InterpolatedTransform",
+      "id": 9644,
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2067
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 813
+        },
+        "m_Name": ""
+      }
+    },
+    {
+      "script": "Assembly-CSharp::DecoyAI",
+      "id": 9964,
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 2067
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1179
+        },
+        "m_Name": "",
+        "reasonForLastDash": "",
+        "stateChangeReluctanceCooldown": 0.0,
+        "stateChangeReluctance": 0.0,
+        "stateChangeReluctanceDefault": 0.699999988079071,
+        "targetObject": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "targetPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "currentWaypoint": 0,
+        "pathLength": 0.0,
+        "reachedEndOfPath": 0,
+        "recalculatingPath": 0,
+        "moveDir": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "scanTimer": 0.0,
+        "actionTimer": 0.0,
+        "actionDelay": 0.20000000298023224,
+        "desireTarget": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "victimTarget": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "threatTarget": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "ambientInterestLevel": 0.0,
+        "bestDesireSoFar": 0.0,
+        "bestVictimSoFar": 0.0,
+        "bestThreatSoFar": 0.0,
+        "totalDesireLevel": 0.0,
+        "totalVictimLevel": 0.0,
+        "totalThreatLevel": 0.0,
+        "ambientInterestMod": 1.0,
+        "aggressionMod": 1.0,
+        "nervousMod": 1.0,
+        "greedyMod": 1.0,
+        "printState": "",
+        "decoyInput": {
+          "m_FileID": 0,
+          "m_PathID": 9658
+        }
+      }
+    }
+  ],
+  "physics": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 2067
+    },
+    "m_Enabled": 1,
+    "m_Density": 1.0,
+    "m_Material": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_IncludeLayers": {
+      "m_Bits": 0
+    },
+    "m_ExcludeLayers": {
+      "m_Bits": 0
+    },
+    "m_LayerOverridePriority": 0,
+    "m_ForceSendLayers": {
+      "m_Bits": 4294967295
+    },
+    "m_ForceReceiveLayers": {
+      "m_Bits": 4294967295
+    },
+    "m_ContactCaptureLayers": {
+      "m_Bits": 4294967295
+    },
+    "m_CallbackLayers": {
+      "m_Bits": 4294967295
+    },
+    "m_IsTrigger": false,
+    "m_UsedByEffector": false,
+    "m_UsedByComposite": false,
+    "m_Offset": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "m_Radius": 0.6600000262260437
+  },
+  "damage": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 2923
+    },
+    "m_Enabled": 1,
+    "m_Density": 1.0,
+    "m_Material": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "m_IncludeLayers": {
+      "m_Bits": 0
+    },
+    "m_ExcludeLayers": {
+      "m_Bits": 0
+    },
+    "m_LayerOverridePriority": 0,
+    "m_ForceSendLayers": {
+      "m_Bits": 4294967295
+    },
+    "m_ForceReceiveLayers": {
+      "m_Bits": 4294967295
+    },
+    "m_ContactCaptureLayers": {
+      "m_Bits": 4294967295
+    },
+    "m_CallbackLayers": {
+      "m_Bits": 4294967295
+    },
+    "m_IsTrigger": true,
+    "m_UsedByEffector": false,
+    "m_UsedByComposite": false,
+    "m_Offset": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "m_Radius": 0.75
+  },
+  "shield_nodes": [
+    {
+      "name": "Shield",
+      "id": 4242,
+      "components": [
+        "Transform",
+        "MeshFilter",
+        "MeshRenderer",
+        "Animator"
+      ]
+    },
+    {
+      "name": "Distortion",
+      "id": 3829,
+      "components": [
+        "Transform",
+        "MeshFilter",
+        "MeshRenderer"
+      ]
+    }
+  ],
+  "transform": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": 2067
+    },
+    "m_LocalRotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 1.0
+    },
+    "m_LocalPosition": {
+      "x": 30.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "m_LocalScale": {
+      "x": 1.3300000429153442,
+      "y": 1.3300000429153442,
+      "z": 1.3300000429153442
+    },
+    "m_Children": [
+      {
+        "m_FileID": 0,
+        "m_PathID": 4687
+      },
+      {
+        "m_FileID": 0,
+        "m_PathID": 5464
+      },
+      {
+        "m_FileID": 0,
+        "m_PathID": 5183
+      },
+      {
+        "m_FileID": 0,
+        "m_PathID": 4696
+      },
+      {
+        "m_FileID": 0,
+        "m_PathID": 6076
+      },
+      {
+        "m_FileID": 0,
+        "m_PathID": 5295
+      },
+      {
+        "m_FileID": 0,
+        "m_PathID": 5192
+      },
+      {
+        "m_FileID": 0,
+        "m_PathID": 4685
+      }
+    ],
+    "m_Father": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  }
+}

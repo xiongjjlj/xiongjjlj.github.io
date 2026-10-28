@@ -1,0 +1,550 @@
+[
+  {
+    "source_file": "sharedassets1.assets",
+    "path_id": 9650,
+    "script": "Explosion",
+    "name": "ExplosionFreeze",
+    "data": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 2063
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 1247
+      },
+      "m_Name": "",
+      "radiusFinal": 17.0,
+      "explosionDuration": 0.6000000238418579,
+      "fadeDuration": 0.30000001192092896,
+      "killLayers": {
+        "m_Bits": 2117632
+      },
+      "obstacleLayer": {
+        "m_Bits": 256
+      },
+      "owner": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "meshFilter": {
+        "m_FileID": 0,
+        "m_PathID": 8202
+      },
+      "explosionCollider": {
+        "m_FileID": 0,
+        "m_PathID": 8487
+      },
+      "explosionRenderer": {
+        "m_FileID": 0,
+        "m_PathID": 7288
+      },
+      "radiusCurve": {
+        "m_Curve": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inSlope": 1.0,
+            "outSlope": 5.309569358825684,
+            "weightedMode": 0,
+            "inWeight": 0.3333333432674408,
+            "outWeight": 0.3333333432674408
+          },
+          {
+            "time": 0.15034648776054382,
+            "value": 0.7982751131057739,
+            "inSlope": 5.309569358825684,
+            "outSlope": 1.229090690612793,
+            "weightedMode": 0,
+            "inWeight": 0.3333333432674408,
+            "outWeight": 0.1900416761636734
+          },
+          {
+            "time": 0.4775699973106384,
+            "value": 0.9911880493164062,
+            "inSlope": 0.1336030811071396,
+            "outSlope": 0.017032071948051453,
+            "weightedMode": 0,
+            "inWeight": 0.20150451362133026,
+            "outWeight": 0.3333333432674408
+          },
+          {
+            "time": 0.9948914647102356,
+            "value": 0.9999991059303284,
+            "inSlope": 0.0,
+            "outSlope": 0.0,
+            "weightedMode": 0,
+            "inWeight": 0.3333333432674408,
+            "outWeight": 0.3333333432674408
+          }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+      },
+      "gradient": {
+        "key0": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "key1": {
+          "r": 0.16470585763454437,
+          "g": 0.9762770533561707,
+          "b": 0.9921568632125854,
+          "a": 0.14901961386203766
+        },
+        "key2": {
+          "r": 0.18823528289794922,
+          "g": 0.7841539978981018,
+          "b": 0.9725490212440491,
+          "a": 0.0
+        },
+        "key3": {
+          "r": 0.18823528289794922,
+          "g": 0.7841539978981018,
+          "b": 0.9725490212440491,
+          "a": 0.0
+        },
+        "key4": {
+          "r": 0.9716981053352356,
+          "g": 0.20051349699497223,
+          "b": 0.18792273104190826,
+          "a": 0.0
+        },
+        "key5": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key6": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key7": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "ctime0": 0,
+        "ctime1": 19275,
+        "ctime2": 49151,
+        "ctime3": 45489,
+        "ctime4": 45489,
+        "ctime5": 65535,
+        "ctime6": 0,
+        "ctime7": 0,
+        "atime0": 0,
+        "atime1": 31997,
+        "atime2": 65535,
+        "atime3": 65535,
+        "atime4": 0,
+        "atime5": 0,
+        "atime6": 0,
+        "atime7": 0,
+        "m_Mode": 0,
+        "m_ColorSpace": -1,
+        "m_NumColorKeys": 3,
+        "m_NumAlphaKeys": 3
+      },
+      "isFireExplosion": 0,
+      "hasSpawnedFireCells": 0,
+      "explosionSoundBig": "event:/powerups/explosion_ice",
+      "explosionSoundMini": "event:/powerups/explosion_mini_ice"
+    }
+  },
+  {
+    "source_file": "sharedassets1.assets",
+    "path_id": 9651,
+    "script": "Explosion",
+    "name": "Explosion",
+    "data": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 2064
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 1247
+      },
+      "m_Name": "",
+      "radiusFinal": 12.0,
+      "explosionDuration": 0.800000011920929,
+      "fadeDuration": 0.10000000149011612,
+      "killLayers": {
+        "m_Bits": 2117632
+      },
+      "obstacleLayer": {
+        "m_Bits": 256
+      },
+      "owner": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "meshFilter": {
+        "m_FileID": 0,
+        "m_PathID": 8262
+      },
+      "explosionCollider": {
+        "m_FileID": 0,
+        "m_PathID": 8488
+      },
+      "explosionRenderer": {
+        "m_FileID": 0,
+        "m_PathID": 7289
+      },
+      "radiusCurve": {
+        "m_Curve": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inSlope": 2.9525105953216553,
+            "outSlope": 2.7154362201690674,
+            "weightedMode": 0,
+            "inWeight": 0.3333333432674408,
+            "outWeight": 0.12791556119918823
+          },
+          {
+            "time": 0.2573642432689667,
+            "value": 0.6988561749458313,
+            "inSlope": 2.7154362201690674,
+            "outSlope": 2.4896461963653564,
+            "weightedMode": 2,
+            "inWeight": 0.2069234848022461,
+            "outWeight": 0.10501907765865326
+          },
+          {
+            "time": 0.997772216796875,
+            "value": 1.0,
+            "inSlope": 0.028620969504117966,
+            "outSlope": 0.028620969504117966,
+            "weightedMode": 0,
+            "inWeight": 0.1029789075255394,
+            "outWeight": 0.3333333432674408
+          }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+      },
+      "gradient": {
+        "key0": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "key1": {
+          "r": 0.9905660152435303,
+          "g": 0.9514166712760925,
+          "b": 0.16353681683540344,
+          "a": 1.0
+        },
+        "key2": {
+          "r": 1.0,
+          "g": 0.6000000238418579,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key3": {
+          "r": 0.9716981053352356,
+          "g": 0.20051349699497223,
+          "b": 0.18792273104190826,
+          "a": 0.0
+        },
+        "key4": {
+          "r": 0.34558820724487305,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key5": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key6": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key7": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "ctime0": 0,
+        "ctime1": 13685,
+        "ctime2": 25636,
+        "ctime3": 45489,
+        "ctime4": 65535,
+        "ctime5": 65535,
+        "ctime6": 0,
+        "ctime7": 0,
+        "atime0": 0,
+        "atime1": 40092,
+        "atime2": 65535,
+        "atime3": 65535,
+        "atime4": 0,
+        "atime5": 0,
+        "atime6": 0,
+        "atime7": 0,
+        "m_Mode": 0,
+        "m_ColorSpace": -1,
+        "m_NumColorKeys": 4,
+        "m_NumAlphaKeys": 3
+      },
+      "isFireExplosion": 0,
+      "hasSpawnedFireCells": 0,
+      "explosionSoundBig": "event:/powerups/explosion",
+      "explosionSoundMini": "event:/powerups/explosion_mini"
+    }
+  },
+  {
+    "source_file": "sharedassets1.assets",
+    "path_id": 9652,
+    "script": "Explosion",
+    "name": "ExplosionFire",
+    "data": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 2065
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 1247
+      },
+      "m_Name": "",
+      "radiusFinal": 12.0,
+      "explosionDuration": 0.30000001192092896,
+      "fadeDuration": 0.10000000149011612,
+      "killLayers": {
+        "m_Bits": 2117632
+      },
+      "obstacleLayer": {
+        "m_Bits": 256
+      },
+      "owner": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "meshFilter": {
+        "m_FileID": 0,
+        "m_PathID": 8136
+      },
+      "explosionCollider": {
+        "m_FileID": 0,
+        "m_PathID": 8489
+      },
+      "explosionRenderer": {
+        "m_FileID": 0,
+        "m_PathID": 7290
+      },
+      "radiusCurve": {
+        "m_Curve": [
+          {
+            "time": 0.0,
+            "value": 0.0,
+            "inSlope": 2.9525105953216553,
+            "outSlope": 2.7154362201690674,
+            "weightedMode": 0,
+            "inWeight": 0.3333333432674408,
+            "outWeight": 0.12791556119918823
+          },
+          {
+            "time": 0.2573642432689667,
+            "value": 0.6988561749458313,
+            "inSlope": 2.7154362201690674,
+            "outSlope": 2.4896461963653564,
+            "weightedMode": 2,
+            "inWeight": 0.2069234848022461,
+            "outWeight": 0.10501907765865326
+          },
+          {
+            "time": 0.997772216796875,
+            "value": 1.0,
+            "inSlope": 0.028620969504117966,
+            "outSlope": 0.028620969504117966,
+            "weightedMode": 0,
+            "inWeight": 0.1029789075255394,
+            "outWeight": 0.3333333432674408
+          }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+      },
+      "gradient": {
+        "key0": {
+          "r": 1.0,
+          "g": 1.0,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "key1": {
+          "r": 0.9905660152435303,
+          "g": 0.9514166712760925,
+          "b": 0.16353681683540344,
+          "a": 1.0
+        },
+        "key2": {
+          "r": 1.0,
+          "g": 0.6000000238418579,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key3": {
+          "r": 0.9716981053352356,
+          "g": 0.20051349699497223,
+          "b": 0.18792273104190826,
+          "a": 0.0
+        },
+        "key4": {
+          "r": 0.34558820724487305,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key5": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key6": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key7": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "ctime0": 0,
+        "ctime1": 13685,
+        "ctime2": 25636,
+        "ctime3": 45489,
+        "ctime4": 65535,
+        "ctime5": 65535,
+        "ctime6": 0,
+        "ctime7": 0,
+        "atime0": 0,
+        "atime1": 32575,
+        "atime2": 65535,
+        "atime3": 65535,
+        "atime4": 0,
+        "atime5": 0,
+        "atime6": 0,
+        "atime7": 0,
+        "m_Mode": 0,
+        "m_ColorSpace": -1,
+        "m_NumColorKeys": 4,
+        "m_NumAlphaKeys": 3
+      },
+      "isFireExplosion": 1,
+      "hasSpawnedFireCells": 0,
+      "explosionSoundBig": "event:/powerups/explosion_fire",
+      "explosionSoundMini": "event:/powerups/explosion_mini_fire"
+    }
+  },
+  {
+    "source_file": "sharedassets1.assets",
+    "path_id": 9670,
+    "script": "Grenade",
+    "name": "Grenade",
+    "data": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 2091
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 1343
+      },
+      "m_Name": "",
+      "discOwner": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "parentDisc": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "explosiveTimer": 1.3300000429153442,
+      "blinkPFX": {
+        "m_FileID": 0,
+        "m_PathID": 8895
+      },
+      "blinkColorFire": {
+        "r": 0.9607843160629272,
+        "g": 0.7333333492279053,
+        "b": 0.4156862795352936,
+        "a": 1.0
+      },
+      "blinkColorSlime": {
+        "r": 0.4156862795352936,
+        "g": 0.800000011920929,
+        "b": 0.9607843160629272,
+        "a": 1.0
+      }
+    }
+  },
+  {
+    "source_file": "sharedassets1.assets",
+    "path_id": 9968,
+    "script": "Grenade",
+    "name": "Grenade",
+    "data": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 4464
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 1343
+      },
+      "m_Name": "",
+      "discOwner": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "parentDisc": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "explosiveTimer": 1.3300000429153442,
+      "blinkPFX": {
+        "m_FileID": 0,
+        "m_PathID": 9104
+      },
+      "blinkColorFire": {
+        "r": 0.9607843160629272,
+        "g": 0.7333333492279053,
+        "b": 0.4156862795352936,
+        "a": 1.0
+      },
+      "blinkColorSlime": {
+        "r": 0.4156862795352936,
+        "g": 0.800000011920929,
+        "b": 0.9607843160629272,
+        "a": 1.0
+      }
+    }
+  }
+]

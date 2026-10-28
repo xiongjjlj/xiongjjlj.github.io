@@ -1,0 +1,547 @@
+{
+  "sharedassets1.assets_206": {
+    "shader": "UU/Unlit/Shadow_No_Overlay",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      }
+    },
+    "source_material": "sharedassets1.assets_206"
+  },
+  "sharedassets1.assets_123": {
+    "shader": "Toon/Unlit/Shadow_Grain",
+    "textures": {
+      "_GrainTex": {
+        "scale": [
+          0.125,
+          0.125
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      },
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets1.assets_665.png",
+          "name": "Pottery_DIF",
+          "sha256": "7ad3636fc87341c000bdc9c48ad0c47dd6c89159083ea84ecdbc0d2a128f0c47",
+          "width": 512,
+          "height": 512,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      },
+      "_Ramp": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets1.assets_608.png",
+          "name": "Ramp_Toon",
+          "sha256": "39724cccf58424dada8cf37d6a7fe295f26913ea7321a6bbc4f34a34ebfff835",
+          "width": 256,
+          "height": 4,
+          "filter": 1,
+          "wrap_u": 1,
+          "wrap_v": 1,
+          "aniso": 1
+        }
+      }
+    },
+    "source_material": "sharedassets1.assets_123"
+  },
+  "sharedassets2.assets_13": {
+    "shader": "UU/Unlit/Shadow",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      }
+    },
+    "source_material": "sharedassets2.assets_13"
+  },
+  "sharedassets1.assets_118": {
+    "shader": "UU/Unlit/Shadow_Grain",
+    "textures": {
+      "_GrainTex": {
+        "scale": [
+          0.125,
+          0.125
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      },
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets1.assets_691.png",
+          "name": "StylizedBamboo_DIF",
+          "sha256": "6b9083c67a7f347cf64abacf4ba396b3b5a3044b43b98a0170ee4d2718d40168",
+          "width": 256,
+          "height": 1024,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      }
+    },
+    "source_material": "sharedassets1.assets_118"
+  },
+  "sharedassets2.assets_7": {
+    "shader": "Unlit/Transparent Cutout",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets2.assets_17.png",
+          "name": "VineAtlas_DIF",
+          "sha256": "d8bb0e19a6cf5ced13d6f5d52ec060e584d92d35784f2e3eb7e239edd3edd4d1",
+          "width": 1024,
+          "height": 1024,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      }
+    },
+    "source_material": "sharedassets2.assets_7"
+  },
+  "sharedassets2.assets_5": {
+    "shader": "UU/Unlit/Shadow_Grain",
+    "textures": {
+      "_GrainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      },
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets2.assets_16.png",
+          "name": "GongShrine_DIF",
+          "sha256": "b3f755e2f64dceab05f857179f2727593b10878896def5b122280d94453e8c47",
+          "width": 1024,
+          "height": 1024,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      }
+    },
+    "source_material": "sharedassets2.assets_5"
+  },
+  "sharedassets2.assets_2": {
+    "shader": "UU/Unlit/Alpha/Shadow_Cutout",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets2.assets_18.png",
+          "name": "FoliageAtlas_Red_DIF",
+          "sha256": "6cda81f117176dc3b815929086aff8ba72894e66d4de5bb1e392ea0e4ce90a22",
+          "width": 512,
+          "height": 512,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      }
+    },
+    "source_material": "sharedassets2.assets_2"
+  },
+  "sharedassets2.assets_11": {
+    "shader": "UU/Unlit/Shadow_No_Overlay",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      }
+    },
+    "source_material": "sharedassets2.assets_11"
+  },
+  "sharedassets2.assets_10": {
+    "shader": "UU/Unlit/Shadow",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets2.assets_22.png",
+          "name": "BirchTree_DIF",
+          "sha256": "11141c52e83f8243b5d56d82883dd2f41a5075a36a665dbf3668cd1a588ccfb1",
+          "width": 512,
+          "height": 1024,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      }
+    },
+    "source_material": "sharedassets2.assets_10"
+  },
+  "sharedassets2.assets_9": {
+    "shader": "UU/Unlit/Shadow_Heightfog",
+    "textures": {
+      "_FogGradientTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      },
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets2.assets_22.png",
+          "name": "BirchTree_DIF",
+          "sha256": "11141c52e83f8243b5d56d82883dd2f41a5075a36a665dbf3668cd1a588ccfb1",
+          "width": 512,
+          "height": 1024,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      },
+      "_NoiseTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      }
+    },
+    "source_material": "sharedassets2.assets_9"
+  },
+  "sharedassets1.assets_125": {
+    "shader": "UU/Unlit/Shadow",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      }
+    },
+    "source_material": "sharedassets1.assets_125"
+  },
+  "sharedassets2.assets_12": {
+    "shader": "UU/Unlit/Shadow_Heightfog",
+    "textures": {
+      "_FogGradientTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets2.assets_19.png",
+          "name": "FogGradient_Soft",
+          "sha256": "700abda056c44b152f427f37d5135f2cacb54579b8448844d7cbad7f980380ae",
+          "width": 16,
+          "height": 256,
+          "filter": 1,
+          "wrap_u": 1,
+          "wrap_v": 1,
+          "aniso": 1
+        }
+      },
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      },
+      "_NoiseTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets2.assets_15.png",
+          "name": "BlueNoise_DIF",
+          "sha256": "66d354b098248140ae8e9835474cf4ad71c703f12af2873420beec5a20119511",
+          "width": 32,
+          "height": 32,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      }
+    },
+    "source_material": "sharedassets2.assets_12"
+  },
+  "sharedassets1.assets_117": {
+    "shader": "UU/Unlit/Alpha/Shadow_Cutout",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets1.assets_315.png",
+          "name": "Bamboo_Foliage_DIF",
+          "sha256": "085f2d04471173323312c20e1098fe0786b28e27b65d1479b74de99ffae4460e",
+          "width": 128,
+          "height": 128,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      }
+    },
+    "source_material": "sharedassets1.assets_117"
+  },
+  "sharedassets2.assets_4": {
+    "shader": "UU/Unlit/Shadow",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets2.assets_21.png",
+          "name": "UU_Stonewall_Subtle_DIF",
+          "sha256": "d694dd4b50a93cf79e43c06c82431231c2e8ef5d2976c402e2f8b521fe491549",
+          "width": 1024,
+          "height": 1024,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      }
+    },
+    "source_material": "sharedassets2.assets_4"
+  },
+  "sharedassets2.assets_3": {
+    "shader": "UU/Unlit/Alpha/Shadow_Cutout",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets2.assets_23.png",
+          "name": "Foliage_Canopy_Green_DIF",
+          "sha256": "28490283e47b0e2751f9dabf2c4f013210ab44ac7d16a6391051a91b6d5af3bb",
+          "width": 512,
+          "height": 512,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      }
+    },
+    "source_material": "sharedassets2.assets_3"
+  },
+  "sharedassets1.assets_120": {
+    "shader": "UU/Unlit/Shadow_Grain",
+    "textures": {
+      "_GrainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      },
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets1.assets_448.png",
+          "name": "GrassVase_DIF",
+          "sha256": "c0dbb8b8f500a3f81d006d6af01542a3dc62a9f6a4531dfff018b8c72a2f5a7c",
+          "width": 1024,
+          "height": 1024,
+          "filter": 1,
+          "wrap_u": 0,
+          "wrap_v": 0,
+          "aniso": 1
+        }
+      }
+    },
+    "source_material": "sharedassets1.assets_120"
+  },
+  "sharedassets2.assets_6": {
+    "shader": "PK/SpritesDiffuseWave",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      }
+    },
+    "source_material": "sharedassets2.assets_6"
+  },
+  "sharedassets2.assets_8": {
+    "shader": "UU/Unlit/Shadow_Receiver",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": null
+      }
+    },
+    "source_material": "sharedassets2.assets_8"
+  }
+}
