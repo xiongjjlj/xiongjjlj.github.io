@@ -1,0 +1,1001 @@
+{
+  "logs": [
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"ready\"}",
+      "timestamp": "2026-10-28T02:53:31.954Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_READY {\"version\":\"20308\",\"bank_events\":167,\"heap_bytes\":134217728}",
+      "timestamp": "2026-10-28T02:53:31.954Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "timestamp": "2026-10-28T02:53:39.745Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL",
+      "timestamp": "2026-10-28T02:53:39.893Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support.",
+      "timestamp": "2026-10-28T02:53:40.046Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_SPRITES_READY {\"imported\":29,\"pending_wave_shader\":4}",
+      "timestamp": "2026-10-28T02:53:40.630Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_BEHAVIORS {\"destructable_obstacles\":0,\"moving_obstacles\":0,\"source_counts\":{\"FallingFloor\":31.0,\"GoldenTotem\":1.0,\"WobblyObstacle\":3.0},\"switches\":0,\"wobbly_obstacles\":3}",
+      "timestamp": "2026-10-28T02:53:40.634Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:53:40.701Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:53:40.749Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:53:40.755Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:53:40.758Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_START {\"goal\":14,\"round\":1}",
+      "timestamp": "2026-10-28T02:53:40.759Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_MOTION_READY {\"fixed_delta\":0.0166660007089376,\"radius\":0.877800047397614,\"shapes\":75}",
+      "timestamp": "2026-10-28T02:53:40.759Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock0\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T02:53:40.775Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock1\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T02:53:40.775Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock2\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T02:53:40.775Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock3\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T02:53:40.776Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock4\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T02:53:40.776Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock5\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T02:53:40.777Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise0\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T02:53:40.907Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise1\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T02:53:40.992Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW lobby",
+      "timestamp": "2026-10-28T02:53:41.065Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_GODOT_READY {\"meshes\":133,\"missing\":0,\"nodes\":356,\"scene\":\"LevelFalling\",\"scene_index\":12}",
+      "timestamp": "2026-10-28T02:53:41.065Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round reset\",\"serial\":1}",
+      "timestamp": "2026-10-28T02:53:41.228Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"music filter\",\"value\":0}",
+      "timestamp": "2026-10-28T02:53:41.228Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"music\",\"path\":\"event:/music/menu\"}",
+      "timestamp": "2026-10-28T02:53:41.228Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"enabled\",\"value\":true}",
+      "timestamp": "2026-10-28T02:54:10.385Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "Resetting audio driver based on user input.",
+      "timestamp": "2026-10-28T02:54:10.385Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/fmodstudio.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"ambient\",\"path\":\"event:/atmos/mountains\"}",
+      "timestamp": "2026-10-28T02:54:10.386Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:54:10.470Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:54:10.516Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:54:10.523Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:54:10.525Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_START {\"goal\":14,\"round\":1}",
+      "timestamp": "2026-10-28T02:54:10.528Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_MOTION_READY {\"fixed_delta\":0.0166660007089376,\"radius\":0.877800047397614,\"shapes\":75}",
+      "timestamp": "2026-10-28T02:54:10.528Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise0\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T02:54:10.664Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise1\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T02:54:10.666Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_MATCH_CONFIG {\"characters\":[\"Avocado\",\"Watermelon\"],\"goal\":14,\"positions\":[[2.12131881713867,29.6984882354736],[-7.77817630767822,-29.6984844207764]],\"sources\":[-1,-101]}",
+      "timestamp": "2026-10-28T02:54:10.674Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW ready",
+      "timestamp": "2026-10-28T02:54:10.677Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round reset\",\"serial\":2}",
+      "timestamp": "2026-10-28T02:54:10.737Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"music\",\"path\":\"event:/music/gameplay_trap\"}",
+      "timestamp": "2026-10-28T02:54:10.737Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":0}",
+      "timestamp": "2026-10-28T02:54:10.737Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/submit\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:10.737Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/spawnin_whoosh\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:10.737Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/roundtitle_ready\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:10.737Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"ambient\",\"path\":\"event:/atmos/mountains\"}",
+      "timestamp": "2026-10-28T02:54:10.737Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_SIGNAL {\"peak\":0.007265227381139994,\"channels\":2,\"samples\":2048}",
+      "timestamp": "2026-10-28T02:54:10.800Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW playing",
+      "timestamp": "2026-10-28T02:54:11.529Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/roundtitle_go\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:11.532Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:54:11.658Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:11.673Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DASH {\"actor\":1,\"tick\":12}",
+      "timestamp": "2026-10-28T02:54:11.722Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/dash\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:11.724Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1160,\"object_id\":318,\"position\":\"(2.121318, 29.69849)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:11.904Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1160,\"object_id\":318,\"position\":\"(2.121318, 29.69849)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:54:11.904Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_1160\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:11.907Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/dash_end\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:11.957Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:12.009Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:54:12.158Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1174,\"object_id\":328,\"position\":\"(12.02082, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:12.180Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1174,\"object_id\":328,\"position\":\"(12.02082, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:54:12.180Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_1174\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:12.182Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:54:12.324Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:12.340Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1159,\"object_id\":317,\"position\":\"(21.92031, 9.899494)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:12.421Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1159,\"object_id\":317,\"position\":\"(21.92031, 9.899494)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:54:12.421Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_1159\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:12.424Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/death/outofbounds_warning\",\"parameters\":{\"pitch\":0.136981546878815}}",
+      "timestamp": "2026-10-28T02:54:12.557Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:12.673Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1161,\"object_id\":307,\"position\":\"(16.97056, 14.84924)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:12.688Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1161,\"object_id\":307,\"position\":\"(16.97056, 14.84924)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:54:12.688Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_1161\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:12.690Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1180,\"object_id\":323,\"position\":\"(-2.828426, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:12.955Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1180,\"object_id\":323,\"position\":\"(-2.828426, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:54:12.955Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_1180\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:12.957Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:12.990Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/death/outofbounds_warning\",\"parameters\":{\"pitch\":0.328832685947418}}",
+      "timestamp": "2026-10-28T02:54:13.141Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1165,\"object_id\":309,\"position\":\"(21.92031, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:13.221Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1165,\"object_id\":309,\"position\":\"(21.92031, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:54:13.221Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_1165\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:13.224Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:13.324Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1179,\"object_id\":322,\"position\":\"(2.121321, 19.79899)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:13.471Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1179,\"object_id\":322,\"position\":\"(2.121321, 19.79899)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:54:13.471Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_1179\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:13.474Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/death/outofbounds_warning\",\"parameters\":{\"pitch\":0.471454501152039}}",
+      "timestamp": "2026-10-28T02:54:13.481Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:13.640Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1158,\"object_id\":319,\"position\":\"(16.97056, 4.949747)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:13.738Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1158,\"object_id\":319,\"position\":\"(16.97056, 4.949747)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:54:13.738Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_1158\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:13.740Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/death/outofbounds_warning\",\"parameters\":{\"pitch\":0.594742894172668}}",
+      "timestamp": "2026-10-28T02:54:13.748Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1160,\"object_id\":318,\"position\":\"(2.121318, 29.69849)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:54:13.912Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1160,\"object_id\":318,\"position\":\"(2.121318, 29.69849)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:54:13.913Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1160,\"object_id\":318,\"position\":\"(2.121318, 29.69849)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:54:13.913Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1160,\"object_id\":318,\"position\":\"(2.121318, 29.69849)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:54:13.913Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1160,\"object_id\":318,\"position\":\"(2.121318, 29.69849)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:54:13.913Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1160,\"object_id\":318,\"position\":\"(2.121318, 29.69849)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:54:13.913Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:13.923Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_1160\"}",
+      "timestamp": "2026-10-28T02:54:13.923Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_START {\"actor\":0,\"tick\":142}",
+      "timestamp": "2026-10-28T02:54:13.926Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Fall\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:54:13.930Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:13.973Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1181,\"object_id\":324,\"position\":\"(7.071068, 14.84924)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:14.004Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1181,\"object_id\":324,\"position\":\"(7.071068, 14.84924)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:54:14.004Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_1181\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:14.007Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/hop\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:14.015Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1174,\"object_id\":328,\"position\":\"(12.02082, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:54:14.172Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1174,\"object_id\":328,\"position\":\"(12.02082, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:54:14.172Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1174,\"object_id\":328,\"position\":\"(12.02082, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:54:14.172Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1174,\"object_id\":328,\"position\":\"(12.02082, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:54:14.172Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1174,\"object_id\":328,\"position\":\"(12.02082, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:54:14.172Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1174,\"object_id\":328,\"position\":\"(12.02082, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:54:14.172Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:14.183Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_1174\"}",
+      "timestamp": "2026-10-28T02:54:14.183Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1178,\"object_id\":321,\"position\":\"(12.02082, 9.899493)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:14.269Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1178,\"object_id\":321,\"position\":\"(12.02082, 9.899493)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:54:14.270Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_1178\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:14.272Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:14.289Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1159,\"object_id\":317,\"position\":\"(21.92031, 9.899494)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:54:14.420Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1159,\"object_id\":317,\"position\":\"(21.92031, 9.899494)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:54:14.420Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1159,\"object_id\":317,\"position\":\"(21.92031, 9.899494)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:54:14.420Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1159,\"object_id\":317,\"position\":\"(21.92031, 9.899494)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:54:14.420Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1159,\"object_id\":317,\"position\":\"(21.92031, 9.899494)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:54:14.421Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1159,\"object_id\":317,\"position\":\"(21.92031, 9.899494)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:54:14.421Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:14.430Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_1159\"}",
+      "timestamp": "2026-10-28T02:54:14.430Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1168,\"object_id\":314,\"position\":\"(21.92031, -9.899496)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:14.546Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1168,\"object_id\":314,\"position\":\"(21.92031, -9.899496)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:54:14.546Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_1168\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:54:14.549Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_DEATH {\"actor\":0,\"tick\":183}",
+      "timestamp": "2026-10-28T02:54:14.596Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DeathSliced\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:54:14.598Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DEATH {\"cause\":\"fall\",\"killer\":0,\"scores\":[0,0],\"tick\":183,\"victim\":0}",
+      "timestamp": "2026-10-28T02:54:14.598Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1158,\"object_id\":319,\"position\":\"(16.97056, 4.949747)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:54:14.599Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1161,\"object_id\":307,\"position\":\"(16.97056, 14.84924)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:54:14.599Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1165,\"object_id\":309,\"position\":\"(21.92031, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:54:14.599Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1168,\"object_id\":314,\"position\":\"(21.92031, -9.899496)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:54:14.599Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1178,\"object_id\":321,\"position\":\"(12.02082, 9.899493)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:54:14.599Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1179,\"object_id\":322,\"position\":\"(2.121321, 19.79899)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:54:14.599Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1180,\"object_id\":323,\"position\":\"(-2.828426, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:54:14.599Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1181,\"object_id\":324,\"position\":\"(7.071068, 14.84924)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:54:14.599Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_1161\"}",
+      "timestamp": "2026-10-28T02:54:14.601Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_1180\"}",
+      "timestamp": "2026-10-28T02:54:14.601Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_1165\"}",
+      "timestamp": "2026-10-28T02:54:14.601Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_1179\"}",
+      "timestamp": "2026-10-28T02:54:14.601Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_1158\"}",
+      "timestamp": "2026-10-28T02:54:14.601Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_1181\"}",
+      "timestamp": "2026-10-28T02:54:14.601Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_1178\"}",
+      "timestamp": "2026-10-28T02:54:14.601Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_1168\"}",
+      "timestamp": "2026-10-28T02:54:14.602Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ELEMENT {\"actor\":0,\"event\":\"fire_changed\",\"tick\":183}",
+      "timestamp": "2026-10-28T02:54:14.607Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_HIDDEN {\"actor\":0,\"tick\":183}",
+      "timestamp": "2026-10-28T02:54:14.607Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/death/splash_medium\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:14.609Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:14.631Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1160,\"object_id\":318,\"position\":\"(2.121318, 29.69849)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:54:14.687Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1174,\"object_id\":328,\"position\":\"(12.02082, 24.74874)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:54:15.554Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:15.597Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DASH {\"actor\":1,\"tick\":210}",
+      "timestamp": "2026-10-28T02:54:15.829Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/dash\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:15.831Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":1159,\"object_id\":317,\"position\":\"(21.92031, 9.899494)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:54:15.970Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/dash_end\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:54:16.081Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:16.081Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:54:16.264Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:54:16.431Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:16.446Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:54:16.781Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_SCORES {\"round\":1,\"scores\":[0,0]}",
+      "timestamp": "2026-10-28T02:54:16.854Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":1}",
+      "timestamp": "2026-10-28T02:54:16.855Z",
+      "url": "https://boomerang-fu.arkevo.ai/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW scores",
+      "timestamp": "2026-10-28T02:54:16.863Z",
+      "url": "https://boomerang-fu.arkevo.ai/index.js"
+    }
+  ],
+  "errors": []
+}

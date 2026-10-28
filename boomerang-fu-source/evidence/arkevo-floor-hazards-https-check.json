@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "version": {
+    "version": "0.5.1-dev.6",
+    "files": {
+      "/Godot-LICENSE.txt": {
+        "bytes": 1149,
+        "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"
+      },
+      "/Godot-THIRDPARTY.json": {
+        "bytes": 114894,
+        "sha256": "0e012ef5f7fe547457e51cf56ef477c5383bc5d319ae1473587438f6e446f538"
+      },
+      "/README-hosting.txt": {
+        "bytes": 1547,
+        "sha256": "b33a9b4e4c87639ae5c130b1bf65f2de2d1d69d932d1248b9d3d7ffc12ef253b"
+      },
+      "/audio/Master Bank.bank": {
+        "bytes": 34346400,
+        "sha256": "a3cc8b9c6b602d7e6aeda00fb9705e4df6f3d3b44bd1f95913923fb2233c52c2"
+      },
+      "/audio/Master Bank.strings.bank": {
+        "bytes": 9110,
+        "sha256": "0abd3722cd7a43f160f9b5bb202dbbd657d9a491dedeb7dd43e56055939cc9ed"
+      },
+      "/audio/NOTICE.txt": {
+        "bytes": 563,
+        "sha256": "f4833c4e9821033e749794cf12fc608fb3bf25d79c8390576561d361c64ae993"
+      },
+      "/audio/fmodstudio.js": {
+        "bytes": 131434,
+        "sha256": "7497a63744b940b2d5c9ff494e5017bf991aee8dd26739edcf86e1954f6e93e9"
+      },
+      "/audio/fmodstudio.wasm": {
+        "bytes": 2656574,
+        "sha256": "38007e3792e111b265af6c5499f8453c5e83809b13c200522b794efee8ad213e"
+      },
+      "/audio/runtime.js": {
+        "bytes": 8860,
+        "sha256": "144f0fada740e14f154d620892c6c453495d8ac2206581450e70173e8f5e7f57"
+      },
+      "/index.audio.position.worklet.js": {
+        "bytes": 2973,
+        "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+      },
+      "/index.audio.worklet.js": {
+        "bytes": 7298,
+        "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+      },
+      "/index.html": {
+        "bytes": 5398,
+        "sha256": "f0cf376cc38f8cea1ffab0a3e37331b38224f3db7163730d34c12accbfa3c94c"
+      },
+      "/index.js": {
+        "bytes": 279815,
+        "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
+      },
+      "/index.pck": {
+        "bytes": 152530148,
+        "sha256": "bca1bd53b0b1488b17d35aed93f3df54bb6cee126267e7818be59e9b076c882d"
+      },
+      "/index.png": {
+        "bytes": 21443,
+        "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
+      },
+      "/index.wasm": {
+        "bytes": 39514754,
+        "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+      }
+    }
+  },
+  "checked_at": "2026-10-28T02:53:45.145424+00:00",
+  "files": [
+    {
+      "path": "Godot-LICENSE.txt",
+      "bytes": 1149,
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+      "content_type": "text/plain; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "Godot-THIRDPARTY.json",
+      "bytes": 114894,
+      "sha256": "0e012ef5f7fe547457e51cf56ef477c5383bc5d319ae1473587438f6e446f538",
+      "content_type": "application/json",
+      "passed": true
+    },
+    {
+      "path": "README-hosting.txt",
+      "bytes": 1547,
+      "sha256": "b33a9b4e4c87639ae5c130b1bf65f2de2d1d69d932d1248b9d3d7ffc12ef253b",
+      "content_type": "text/plain; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "audio/Master Bank.bank",
+      "bytes": 34346400,
+      "sha256": "a3cc8b9c6b602d7e6aeda00fb9705e4df6f3d3b44bd1f95913923fb2233c52c2",
+      "content_type": "application/octet-stream",
+      "passed": true
+    },
+    {
+      "path": "audio/Master Bank.strings.bank",
+      "bytes": 9110,
+      "sha256": "0abd3722cd7a43f160f9b5bb202dbbd657d9a491dedeb7dd43e56055939cc9ed",
+      "content_type": "application/octet-stream",
+      "passed": true
+    },
+    {
+      "path": "audio/NOTICE.txt",
+      "bytes": 563,
+      "sha256": "f4833c4e9821033e749794cf12fc608fb3bf25d79c8390576561d361c64ae993",
+      "content_type": "text/plain; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "audio/fmodstudio.js",
+      "bytes": 131434,
+      "sha256": "7497a63744b940b2d5c9ff494e5017bf991aee8dd26739edcf86e1954f6e93e9",
+      "content_type": "text/javascript; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "audio/fmodstudio.wasm",
+      "bytes": 2656574,
+      "sha256": "38007e3792e111b265af6c5499f8453c5e83809b13c200522b794efee8ad213e",
+      "content_type": "application/wasm",
+      "passed": true
+    },
+    {
+      "path": "audio/runtime.js",
+      "bytes": 8860,
+      "sha256": "144f0fada740e14f154d620892c6c453495d8ac2206581450e70173e8f5e7f57",
+      "content_type": "text/javascript; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "index.audio.position.worklet.js",
+      "bytes": 2973,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "content_type": "text/javascript; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "index.audio.worklet.js",
+      "bytes": 7298,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "content_type": "text/javascript; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "index.html",
+      "bytes": 5398,
+      "sha256": "f0cf376cc38f8cea1ffab0a3e37331b38224f3db7163730d34c12accbfa3c94c",
+      "content_type": "text/html; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "index.js",
+      "bytes": 279815,
+      "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
+      "content_type": "text/javascript; charset=utf-8",
+      "passed": true
+    },
+    {
+      "path": "index.pck",
+      "bytes": 152530148,
+      "sha256": "bca1bd53b0b1488b17d35aed93f3df54bb6cee126267e7818be59e9b076c882d",
+      "content_type": "application/octet-stream",
+      "passed": true
+    },
+    {
+      "path": "index.png",
+      "bytes": 21443,
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+      "content_type": "image/png",
+      "passed": true
+    },
+    {
+      "path": "index.wasm",
+      "bytes": 39514754,
+      "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
+      "content_type": "application/wasm",
+      "passed": true
+    }
+  ],
+  "transport": "curl with default TLS verification"
+}

@@ -10,8 +10,9 @@
   "recovered_scene_assets": 61,
   "blocking_input": null,
   "next_actions": [
-    "Implement falling/trap floors and teleportal scene behaviour and navigation links.",
-    "Restore platform audio, flash, ropes, particles, original materials/animation and verify full-scene callback and random-stream ordering."
+    "Implement original map pool selection and cross-round rotation; prioritize the 36 base maps and track 21 DLC maps separately.",
+    "Complete floor particles, debris hazards and projectile attachment.",
+    "Implement teleportals and navigation links, restore original rendering/audio and verify complete callback/random-stream order."
   ],
   "validation_limitations": [
     "Recovered C# compilation is not engine/runtime equivalence",
@@ -49,11 +50,11 @@
     "native_dxbc_disassembled": true,
     "partial_map_shader_webgl_verified": true
   },
-  "updated_at": "2026-10-28T02:30:32.481177+00:00",
+  "updated_at": "2026-10-28T02:55:37.213686+00:00",
   "implementation_engine": "Godot 4.7.2",
   "browser_language": "GDScript",
   "browser_development_preview": true,
-  "current_work": "Floor hazards in progress: 21 native state sequences / 17005 samples, 14 native collapse schedules / 56252 comparisons and 12 map adapter checks pass. Original floor graph tagging matches 15 scenarios / 525720 nodes. Top-mapped floor shader ported; browser rendering validation pending. Full-game regression exposed disc render-material teardown error; detach geometry before retirement fixes level18 reproduction, three-map regression next. Public development remains verified 0.5.1-dev.5.",
+  "current_work": "0.5.1-dev.6 deployed on arkevo.ai: collapsing/trap floor state, navigation, book hazards, extinguishing and round reset. 64 runtime suites pass; original isolated state/collapse/tag comparisons match. The 59 imported scene resources are 36 base FFA maps + 21 DLC maps + tutorial + duplicate Toaster build entry. Original filtering/rotation, floor effects/attachment, teleportals and full visual/audio/scheduling fidelity remain unfinished.",
   "godot_scene_preview": {
     "scene": "LevelEnclosed",
     "nodes": 548,
@@ -3742,23 +3743,26 @@
   },
   "company_development_deployment": {
     "passed": true,
-    "version": "0.5.1-dev.5",
+    "version": "0.5.1-dev.6",
     "url": "https://boomerang-fu.arkevo.ai/",
     "worker": "arkevo-boomerang-fu",
-    "worker_version": "8b96065a-5058-454f-a795-a18937091d45",
+    "worker_version": "399c9a2f-30c9-478a-83c4-30d0f7900c8d",
     "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
-    "source_commit": "f0a5f2dc6d2360c82b54272ab957b7b89313ba9e",
-    "checked_at": "2026-10-28T02:24:35.951969+00:00",
+    "source_commit": "b71275e036834a5ca5696bc2a4e5d19ea562112d",
+    "checked_at": "2026-10-28T02:55:37.213686+00:00",
     "checks": {
       "all_16_files_match": true,
       "live_scene_loaded": true,
+      "live_floor_events": true,
       "no_browser_errors": true,
-      "native_paths": 992,
-      "native_graph_selections": 1134,
-      "runtime_suites": 46,
-      "dynamic_paths": 66,
-      "dynamic_comparisons": 6230791,
-      "maps_load": 59
+      "runtime_suites": 64,
+      "floor_state_comparisons": 259752,
+      "floor_collapse_comparisons": 56252,
+      "floor_navigation_comparisons": 525720,
+      "affected_scene_suites": 12,
+      "regular_ffa_maps": 57,
+      "base_ffa_maps": 36,
+      "dlc_ffa_maps": 21
     },
     "full_game_parity_verified": false
   },

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "version": "0.5.1-dev.6",
+  "url": "https://boomerang-fu.arkevo.ai/",
+  "worker": "arkevo-boomerang-fu",
+  "worker_version": "399c9a2f-30c9-478a-83c4-30d0f7900c8d",
+  "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
+  "source_commit": "b71275e036834a5ca5696bc2a4e5d19ea562112d",
+  "checked_at": "2026-10-28T02:55:37.213686+00:00",
+  "checks": {
+    "all_16_files_match": true,
+    "live_scene_loaded": true,
+    "live_floor_events": true,
+    "no_browser_errors": true,
+    "runtime_suites": 64,
+    "floor_state_comparisons": 259752,
+    "floor_collapse_comparisons": 56252,
+    "floor_navigation_comparisons": 525720,
+    "affected_scene_suites": 12,
+    "regular_ffa_maps": 57,
+    "base_ffa_maps": 36,
+    "dlc_ffa_maps": 21
+  },
+  "full_game_parity_verified": false
+}

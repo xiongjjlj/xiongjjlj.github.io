@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
   "version": "0.5.1-dev.6",
-  "generated_at": "2026-10-28T02:51:58.594598+00:00",
+  "generated_at": "2026-10-28T02:55:37.213686+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 3128,
-  "source_bytes": 308661975,
+  "source_files": 3133,
+  "source_bytes": 308715792,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -97,8 +97,8 @@
     },
     {
       "path": "evidence/arkevo-hosting-runtime-check.json",
-      "bytes": 131920,
-      "sha256": "9d4c0dd18a70c0770479df7d9598e722ec3021b2a9ec1bd322fc30de50b72e60"
+      "bytes": 353,
+      "sha256": "993410d72a5ca530a38da82e360b01ed1d351ed9d0cdc27319cda01bd15cdaae"
     },
     {
       "path": "evidence/arkevo-https-check.json",
@@ -247,8 +247,8 @@
     },
     {
       "path": "evidence/progress.json",
-      "bytes": 129612,
-      "sha256": "14bd5038ee0191aa65d4a1017966fb92028c4298ee3fdaa82602dc0d0d4e32bf"
+      "bytes": 129796,
+      "sha256": "83205b7e384dbcba35fc8ea412e2d562f949fbf659b69069def616905bd6cf4b"
     },
     {
       "path": "evidence/public-deploy-check.json",
@@ -15669,6 +15669,31 @@
       "path": "tools/floor-shader-native/Program.cs",
       "bytes": 2482,
       "sha256": "700b13d66cac7200911c93bb39e81b9886307a7b7324c64398c89e2fe9c87ccf"
+    },
+    {
+      "path": "evidence/arkevo-floor-hazards-browser-log.json",
+      "bytes": 44605,
+      "sha256": "70a5f538e4d0bd417086330eec89959b4dc2530decadfcb32e48b2769f9932e9"
+    },
+    {
+      "path": "evidence/arkevo-floor-hazards-deployment.json",
+      "bytes": 801,
+      "sha256": "dad75dc12f6aac2fb7c8f455582218687b1518be8fa44a8b793415d9635de61c"
+    },
+    {
+      "path": "evidence/arkevo-floor-hazards-https-check.json",
+      "bytes": 6201,
+      "sha256": "54e2d0ca34d5eb5b8529f188d4d440c1fe424ae7499a52e898bac139bb9c1279"
+    },
+    {
+      "path": "evidence/arkevo-floor-hazards-live.png",
+      "bytes": 40901,
+      "sha256": "7454efd6417243250344aba7453354cc21b2dd1c43b817b1f917b56328d8c893"
+    },
+    {
+      "path": "evidence/arkevo-floor-hazards-next-round.png",
+      "bytes": 92692,
+      "sha256": "b5df7de00cfcdae929eac7eb3dbb26f552c273d56262ae9b1068bf8746508d47"
     }
   ],
   "deployment": {
@@ -15681,23 +15706,26 @@
   },
   "company_development_deployment": {
     "passed": true,
-    "version": "0.5.1-dev.5",
+    "version": "0.5.1-dev.6",
     "url": "https://boomerang-fu.arkevo.ai/",
     "worker": "arkevo-boomerang-fu",
-    "worker_version": "8b96065a-5058-454f-a795-a18937091d45",
+    "worker_version": "399c9a2f-30c9-478a-83c4-30d0f7900c8d",
     "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
-    "source_commit": "f0a5f2dc6d2360c82b54272ab957b7b89313ba9e",
-    "checked_at": "2026-10-28T02:24:35.951969+00:00",
+    "source_commit": "b71275e036834a5ca5696bc2a4e5d19ea562112d",
+    "checked_at": "2026-10-28T02:55:37.213686+00:00",
     "checks": {
       "all_16_files_match": true,
       "live_scene_loaded": true,
+      "live_floor_events": true,
       "no_browser_errors": true,
-      "native_paths": 992,
-      "native_graph_selections": 1134,
-      "runtime_suites": 46,
-      "dynamic_paths": 66,
-      "dynamic_comparisons": 6230791,
-      "maps_load": 59
+      "runtime_suites": 64,
+      "floor_state_comparisons": 259752,
+      "floor_collapse_comparisons": 56252,
+      "floor_navigation_comparisons": 525720,
+      "affected_scene_suites": 12,
+      "regular_ffa_maps": 57,
+      "base_ffa_maps": 36,
+      "dlc_ffa_maps": 21
     },
     "full_game_parity_verified": false
   }
