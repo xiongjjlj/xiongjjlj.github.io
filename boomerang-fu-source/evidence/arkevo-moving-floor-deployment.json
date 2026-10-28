@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "version": "0.5.1-dev.2",
+  "url": "https://boomerang-fu.arkevo.ai/",
+  "worker": "arkevo-boomerang-fu",
+  "worker_version": "2efa1f5a-31d4-49de-8d04-2f1d3c12dec0",
+  "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
+  "source_commit": "4deae16e0cbf49c054a16d5e7496a3dbcbc5d919",
+  "checked_at": "2026-10-28T01:51:12.661505+00:00",
+  "checks": {
+    "all_16_files_match": true,
+    "scene_loaded": true,
+    "bot_combat": true,
+    "next_round": true,
+    "no_browser_errors": true
+  },
+  "full_game_parity_verified": false
+}

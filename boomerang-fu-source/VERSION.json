@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
   "version": "0.5.1-dev.2",
-  "generated_at": "2026-10-28T01:48:04.579406+00:00",
+  "generated_at": "2026-10-28T01:51:12.661505+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 2627,
-  "source_bytes": 175780383,
+  "source_files": 2631,
+  "source_bytes": 175864771,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -13162,6 +13162,26 @@
       "path": "tools/native-probe/run_oracle.py",
       "bytes": 5001,
       "sha256": "1ebdcbfd2da6cebb9cf4db3d8513cc96bed489dedd62c024be689ba5ba17ee55"
+    },
+    {
+      "path": "evidence/arkevo-moving-floor-https-check.json",
+      "bytes": 7180,
+      "sha256": "11fdace7bc0f6e3ea94640dcf3062ead27d754147bd9fe14acd2f505da8537d4"
+    },
+    {
+      "path": "evidence/arkevo-moving-floor-browser-log.json",
+      "bytes": 14898,
+      "sha256": "815f74380f3ec7a05bc99f0ccf9ad8f9935407949f10cc490cd2d55f727e5723"
+    },
+    {
+      "path": "evidence/arkevo-moving-floor-playing.png",
+      "bytes": 61757,
+      "sha256": "8aab879af5a11ed246871b3fff854b2eb9cd999dbbd026eb7d563d52fb5f11e5"
+    },
+    {
+      "path": "evidence/arkevo-moving-floor-deployment.json",
+      "bytes": 553,
+      "sha256": "af777a6fb1c8e93705f08358224a094c5ff8fa3b9dba5597700c0abb638f00f8"
     }
   ],
   "deployment": {
