@@ -28,7 +28,7 @@ func load_scene(scene: Dictionary, scene_nodes: Dictionary) -> void:
 			var data: Dictionary = component.data
 			if not data.m_Enabled: continue
 			var record := {"id": int(component.id), "object_id": int(object.id), "name": object.name,
-				"layer": 1 << int(object.layer), "trigger": data.m_IsTrigger, "actor": false, "path_index": 0}
+				"layer": 1 << int(object.layer), "base_layer": 1 << int(object.layer), "trigger": data.m_IsTrigger, "actor": false, "path_index": 0}
 			var offset := Vector2(data.m_Offset.x, data.m_Offset.y)
 			if component.type == "CircleCollider2D":
 				record.kind = "circle"
@@ -106,6 +106,16 @@ func sync_scene_object(object_id: int) -> void:
 				for p in vertices: bounds = bounds.expand(p)
 				shape.bounds = bounds.grow(shape.get("edge_radius", 0.0))
 		shapes[shape_index] = shape
+
+func set_scene_object_enabled(object_id: int, enabled: bool) -> void:
+	# Unity disables a destroyed obstacle collider with its GameObject. Keep the
+	# source layer so reset can restore the exact query mask.
+	if source_nodes.has(object_id):
+		var node: Node3D = source_nodes[object_id]
+		node.visible = enabled
+	for shape in shapes:
+		if shape.actor or int(shape.object_id) != object_id: continue
+		shape.layer = int(shape.get("base_layer", shape.layer)) if enabled else 0
 
 func register_actor(actor: OriginalActorMotion) -> void:
 	actor.query_id = next_actor_id

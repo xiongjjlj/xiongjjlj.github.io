@@ -1,28 +1,28 @@
 {
   "name": "boomerang-fu-web",
-  "version": "0.2.0-stable",
+  "version": "0.3.0-stable",
   "generated_at": "2026-10-28",
   "runtime": "Godot 4.7 Web",
   "default_scene": "LevelEnclosed",
   "optional_scene": "LevelSlideTraps (?map=slide)",
-  "source_files": 1227,
-  "source_bytes": 67295224,
+  "source_files": 1228,
+  "source_bytes": 67565662,
   "full_game_parity_verified": false,
   "limitations": [
     "This is a stable scoped FFA browser build, not a claim of full original-game parity.",
-    "LevelSlideTraps now includes serialized MovingObstacle timing, scene collision refresh and Switch targets/cooldown; WobblyObstacle spring reactions, destructible obstacle effects, remaining maps and full visual/audio/frame parity remain incomplete.",
+    "LevelSlideTraps now includes MovingObstacle, Switch, WobblyObstacle spring reactions, destructible obstacle collider/debris reactions, remaining maps and full visual/audio/frame parity are incomplete.",
     "Original recovered C# is provided as reference/source material; do not redistribute proprietary game assets outside authorized use."
   ],
   "files": [
     {
       "path": "README.md",
-      "bytes": 34746,
-      "sha256": "9ce94c34f68d7391d8a81659a18e9c0b114c4d9b8467adb3851c2b990c03849c"
+      "bytes": 34812,
+      "sha256": "bfcdcd46831835d508ec4101ac36152702efb0ef365c9b216da49134dd5b4a87"
     },
     {
       "path": "evidence/godot-level3-behavior-check.json",
-      "bytes": 1431,
-      "sha256": "f8f37da91edb0f47636232c16f640d629a5df71ad6af2a6d374cdc1228527df5"
+      "bytes": 2036,
+      "sha256": "3981fb3e77f4e9ab25376219de417848137a0260d7ba73c901f87a75692a1870"
     },
     {
       "path": "evidence/godot-map-selector-check.json",
@@ -31,18 +31,18 @@
     },
     {
       "path": "evidence/godot-native-web-check.json",
-      "bytes": 33261,
-      "sha256": "5bc3298a0aeacafd7c69afc69e4e20843123fa0bdca00fc32ba6642d0b07cae4"
+      "bytes": 33456,
+      "sha256": "e4aa54ba89343a4ed57846bcb635f4ef4aeab9e359f8af81c743387ca1443fa3"
     },
     {
       "path": "evidence/godot-regression-suite.json",
-      "bytes": 11578,
-      "sha256": "e2e37946002910b202c818ecbe9dbfe060c553ac8f3ab94f51f5f1c56d119747"
+      "bytes": 11579,
+      "sha256": "a4325ab1ba9d6f075163cb11eec393b7f9972811a16000c39ab62ee0f49e0ada"
     },
     {
       "path": "evidence/web-package-check.json",
-      "bytes": 1970,
-      "sha256": "5fc9a235d9633f69ab9c80a14b85f1138dc44fb95c6b0da1d7f791cbe51bbc51"
+      "bytes": 1774,
+      "sha256": "176add26542916862327e054a7dba040d9d751095a5c52edb3a3f0129d2407a3"
     },
     {
       "path": "godot/assets/characters/ActorFrozenBlock-idle.json",
@@ -956,8 +956,8 @@
     },
     {
       "path": "godot/assets/original/level3/behaviors.json",
-      "bytes": 277103,
-      "sha256": "034aab018fbba8f420918ee6ffc266e8f8a5c529eaa4592bf64917cfc2c3e25b"
+      "bytes": 314231,
+      "sha256": "0b82ce9b381ef8503878f759d10f242f744e7a80494ab18c2e01c2aee993205c"
     },
     {
       "path": "godot/assets/original/level3/manifest.json",
@@ -2741,8 +2741,8 @@
     },
     {
       "path": "godot/core/original_collision_world.gd",
-      "bytes": 12854,
-      "sha256": "28ee764c4824347764365c554811cc9bec7fd70a105e90ab326f8b6b9d970bba"
+      "bytes": 13365,
+      "sha256": "f21c73ab6f25723952005c8ce70b1d9e704d41ac17031ee2b671a9de45254f54"
     },
     {
       "path": "godot/core/original_combat_world.gd",
@@ -2831,8 +2831,8 @@
     },
     {
       "path": "godot/core/original_level3_behaviors.gd",
-      "bytes": 8230,
-      "sha256": "e70d950c183e16563f767dd3e436940bbc63a4fc24eeecd1193df0a9c6d5610d"
+      "bytes": 13448,
+      "sha256": "13fea353dcf53cdeb48b2f90fe928c782088fac7416b5da863ce65052eba7ab1"
     },
     {
       "path": "godot/core/original_level_boundary.gd",
@@ -3186,8 +3186,8 @@
     },
     {
       "path": "godot/tests/level3_behaviors_test.gd",
-      "bytes": 2709,
-      "sha256": "fafd4d3e21fee392e53abe85ab31b0631479d9710c2caed4e9968a7b4de0fb9b"
+      "bytes": 4199,
+      "sha256": "c399dc4ae863185ae498b551679bdaf7533432fea513621db25ff2a31191a09f"
     },
     {
       "path": "godot/tests/melee_combat_test.gd",
@@ -6148,6 +6148,11 @@
       "path": "recovered-source/vertex.cs",
       "bytes": 116,
       "sha256": "2d525ba16027cd0efad75999a0e487fa2737f0c33d2347e576a8d263bbf09a46"
+    },
+    {
+      "path": "VERSION.json",
+      "bytes": 225420,
+      "sha256": "477d932eb53849caefe1d182ce310e27679cd6cc361486db946798735564a60f"
     }
   ]
 }

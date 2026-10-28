@@ -62,8 +62,8 @@
     "seconds": 1.1,
     "log": "outputs/boomerang-fu-web/evidence/godot-level3-behavior-check.json",
     "tail": [
-      "BF_LEVEL3_BEHAVIOR_TEST passed=true; 7 checks"
+      "BF_LEVEL3_BEHAVIOR_TEST passed=true; 10 checks"
     ]
   },
-  "generated_at": "2026-10-28T08:18:00+08:00"
+  "generated_at": "2026-10-28T08:25:59+08:00"
 }

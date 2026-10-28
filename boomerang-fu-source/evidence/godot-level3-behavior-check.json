@@ -51,6 +51,32 @@
       "details": null,
       "name": "Toggle while pre-moving reverses without creating a second obstacle",
       "passed": true
+    },
+    {
+      "details": {
+        "wobbles": 25
+      },
+      "name": "serialized WobblyObstacle records resolve spring targets",
+      "passed": true
+    },
+    {
+      "details": {
+        "offset": [
+          0.333333343267441,
+          0.0555555559694767
+        ],
+        "rotation": 0.0166666675359011
+      },
+      "name": "WobblyObstacle spring force changes the rendered root",
+      "passed": true
+    },
+    {
+      "details": {
+        "debris": 4,
+        "game_object": 41
+      },
+      "name": "DestructableObstacle hides its collider and releases debris",
+      "passed": true
     }
   ],
   "passed": true,
