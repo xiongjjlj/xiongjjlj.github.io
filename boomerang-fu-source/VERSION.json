@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
   "version": "0.5.1-dev.1",
-  "generated_at": "2026-10-28T01:29:11.728539+00:00",
+  "generated_at": "2026-10-28T01:35:27.899410+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 2569,
-  "source_bytes": 169517358,
+  "source_files": 2586,
+  "source_bytes": 169723129,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -31,13 +31,98 @@
   "files": [
     {
       "path": "DEVELOPMENT.md",
-      "bytes": 4371,
-      "sha256": "b014705aeafc0d4fd76bf185ee522ac8bdfecb035d55d804c84ba143a79eacaa"
+      "bytes": 4789,
+      "sha256": "f89ceaa5188ee9a7bf2ef61d8a2cc1b4b5a3af0534d0c54642b5459710e876c2"
     },
     {
       "path": "README.md",
       "bytes": 35673,
       "sha256": "9608cc02643c4317b87bafd20fa1482f702a3ceeb950681d1cf97e7b40b19b37"
+    },
+    {
+      "path": "deploy/cloudflare/.gitignore",
+      "bytes": 69,
+      "sha256": "21cc51417dd30e7af20dadff0073906f0ec0072617178b35d7383b5b3c77931c"
+    },
+    {
+      "path": "deploy/cloudflare/README.md",
+      "bytes": 2855,
+      "sha256": "74e5e28dd08f006d759c2ef1c66b1c29cb022bdbd7913be341ee453b53edc51d"
+    },
+    {
+      "path": "deploy/cloudflare/cloudflare.config.ts",
+      "bytes": 640,
+      "sha256": "074c4d41f3d94434d1351981c34d42436953672f4114c58a28c97bca86a3c41e"
+    },
+    {
+      "path": "deploy/cloudflare/package-lock.json",
+      "bytes": 39716,
+      "sha256": "c0033b5e573f9d7ddda951c0084b550558c20348a696e153a852267baa8c5220"
+    },
+    {
+      "path": "deploy/cloudflare/package.json",
+      "bytes": 489,
+      "sha256": "5ccd208284a91bf02b8b0adcb64c29856ca0085a0d27d08388d963cca8be6e6c"
+    },
+    {
+      "path": "deploy/cloudflare/scripts/build.mjs",
+      "bytes": 2782,
+      "sha256": "ee709a3d4d09321e8c8a33255d954d56a4810b50467d28b202469a419d2d44b3"
+    },
+    {
+      "path": "deploy/cloudflare/scripts/verify_live.py",
+      "bytes": 2198,
+      "sha256": "f14a07c1d6172ca5b8213e349bca4f5d344dcc8566b3f81686ce420805774f1f"
+    },
+    {
+      "path": "deploy/cloudflare/src/serve.mjs",
+      "bytes": 3330,
+      "sha256": "7fd4fe47f9f8d5bf792969c7aeac04f92900f22ab423edbb723eddd048fff82c"
+    },
+    {
+      "path": "deploy/cloudflare/src/worker.mjs",
+      "bytes": 162,
+      "sha256": "11384e98001913ab6d969d4f8a58d5445c711700e59d69a73f32203e0dbab7a8"
+    },
+    {
+      "path": "deploy/cloudflare/test/hosting.test.mjs",
+      "bytes": 2843,
+      "sha256": "719e38cacbd931f37ddef08020f7ad5547133cab1ae82e561c6b52e89ae73bd1"
+    },
+    {
+      "path": "evidence/arkevo-deployment-check.json",
+      "bytes": 1033,
+      "sha256": "04fbd22b13864cb1c9d985d51999a912bd0f47602eefeefac39b6214fd39083a"
+    },
+    {
+      "path": "evidence/arkevo-hosting-runtime-check.json",
+      "bytes": 1457,
+      "sha256": "ea829eb3644c51650f4527c2ca6de1cec6ebb30e85a4ab87c1c5f1fd9959524e"
+    },
+    {
+      "path": "evidence/arkevo-https-check.json",
+      "bytes": 7180,
+      "sha256": "18ad38cd02b4d3acba276b0dc4894dc52b9d1db2c8eebb5e0ae15980e0f553d1"
+    },
+    {
+      "path": "evidence/arkevo-live-browser-log.json",
+      "bytes": 22280,
+      "sha256": "7a7d70f2f2a077f637a339067b457ad2084241747a25a8228107d2e58b2ab403"
+    },
+    {
+      "path": "evidence/arkevo-live-playing.png",
+      "bytes": 41336,
+      "sha256": "e82e26270cef14519092b2b8a3a6de4e3bb5315414fcd4c9627dcbfb60b39459"
+    },
+    {
+      "path": "evidence/arkevo-live-slide-log.json",
+      "bytes": 11321,
+      "sha256": "bad677a1b1f990096e32d0913c56e3fa32f36febaee2d80e51f5115c8f957dbd"
+    },
+    {
+      "path": "evidence/arkevo-live-slide-traps.png",
+      "bytes": 65662,
+      "sha256": "013d46d00cda322db467e0270797527ef76c4ac2f6ff1a821866d55485140e1e"
     },
     {
       "path": "evidence/development-snapshot-bootstrap-check.json",
@@ -12874,5 +12959,13 @@
       "bytes": 6737,
       "sha256": "6852b98247c0409f56d1269137fa6065d388a6fdbc0c5c5a0457c9f3858990e6"
     }
-  ]
+  ],
+  "deployment": {
+    "url": "https://boomerang-fu.arkevo.ai",
+    "version": "0.5.1-dev.1",
+    "worker_version": "c62533da-78ed-4095-aa44-57b9968e5c57",
+    "worker": "arkevo-boomerang-fu",
+    "account_id": "c0e2717206e00c30b9dcd1d456d744fc",
+    "version_endpoint": "https://boomerang-fu.arkevo.ai/version.json"
+  }
 }

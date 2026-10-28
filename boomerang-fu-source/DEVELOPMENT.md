@@ -4,7 +4,8 @@
 `ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1`，源码目录是 `boomerang-fu-source/`；
 `boomerang-fu-v0.5.0` 标签保留在该提交。`boomerang-fu-dev` 接受后续开发。
 
-本次开发版本为 `0.5.1-dev.1`。它修复共享地图机关；公开网页仍为此前的稳定构建。
+本次开发版本为 `0.5.1-dev.1`，修复共享地图机关，已部署到 <https://boomerang-fu.arkevo.ai/>。
+`feixiong.me` 上的网页及 `boomerang-fu-v0.5.0` 标签仍保持稳定版。
 源代码、浏览器包与证据分别有哈希，历史浏览器测试报告仅证明当时记录的构建。
 
 开发 Web 包为 `web-development-0.5.1-dev.1.zip`，解压后通过 HTTP(S) 托管。
@@ -79,3 +80,9 @@ python3 tools/export_scene_behaviors.py --data /path/to/Boomerang_Fu_Data \
 导出前校验安装文件；缺少类型信息或未完整解码会失败，不跳过记录。
 `schema: 2` 保留 Unity 的 `m_FileID/m_PathID`、`component_owners`、
 `active_in_hierarchy` 与 `resolved_refs`，方便其他项目消费。
+
+## 公司域名部署
+
+Cloudflare 的独立 Worker 配置、构建、验证与回滚说明见 `deploy/cloudflare/README.md`。
+<https://boomerang-fu.arkevo.ai/version.json> 提供版本及文件 SHA-256，便于其他项目核对依赖。
+部署在服务端把大文件分片流式还原，浏览器收到的仍是完整原文件。

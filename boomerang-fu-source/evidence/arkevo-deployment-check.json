@@ -1,0 +1,30 @@
+{
+  "url": "https://boomerang-fu.arkevo.ai",
+  "version": "0.5.1-dev.1",
+  "passed": true,
+  "checks": {
+    "default_scene_loaded": true,
+    "playing": true,
+    "keyboard_melee": true,
+    "keyboard_throw": true,
+    "pause_resume": true,
+    "audio_ready": true,
+    "round_complete": true,
+    "slide_traps_loaded": true,
+    "slide_traps_playing": true,
+    "no_errors_or_warnings": true
+  },
+  "checked_at": "2026-10-28T01:35:27.896848+00:00",
+  "worker_version": "c62533da-78ed-4095-aa44-57b9968e5c57",
+  "account_id": "c0e2717206e00c30b9dcd1d456d744fc",
+  "worker": "arkevo-boomerang-fu",
+  "screenshots": [
+    "arkevo-live-playing.png",
+    "arkevo-live-slide-traps.png"
+  ],
+  "notes": [
+    "Default scene interaction was checked on the first deployment; final deployment changes only the HTML no-transform response header.",
+    "Final deployment also passed full HTTPS byte verification and the Slide Traps browser check.",
+    "Bot navigation and unfinished map behaviors remain known development limitations."
+  ]
+}

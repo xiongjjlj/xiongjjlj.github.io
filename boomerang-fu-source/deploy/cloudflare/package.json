@@ -1,0 +1,16 @@
+{
+  "name": "arkevo-boomerang-fu",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "deploy:check": "cf deploy --prebuilt --dry-run --profile arkevo-brand-deploy",
+    "deploy": "cf deploy --prebuilt --profile arkevo-brand-deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/build-output-utils": "0.8.5",
+    "cf": "1.0.0-beta.12",
+    "miniflare": "5.20260930.0-alpha"
+  }
+}

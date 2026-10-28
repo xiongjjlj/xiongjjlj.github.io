@@ -1,0 +1,184 @@
+{
+  "url": "https://boomerang-fu.arkevo.ai",
+  "version": "0.5.1-dev.1",
+  "checked_at": "2026-10-28T01:34:50.523569+00:00",
+  "files": {
+    "Godot-LICENSE.txt": {
+      "bytes": 1149,
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "1149",
+        "ETag": "\"b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "Godot-THIRDPARTY.json": {
+      "bytes": 114894,
+      "sha256": "0e012ef5f7fe547457e51cf56ef477c5383bc5d319ae1473587438f6e446f538",
+      "headers": {
+        "Content-Type": "application/json",
+        "Content-Length": "114894",
+        "ETag": "\"0e012ef5f7fe547457e51cf56ef477c5383bc5d319ae1473587438f6e446f538\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "README-hosting.txt": {
+      "bytes": 891,
+      "sha256": "d777271b1bdf084a280e7179f02bbc249874cc286b2c5cdec169c8fb30c9ce3a",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "891",
+        "ETag": "\"d777271b1bdf084a280e7179f02bbc249874cc286b2c5cdec169c8fb30c9ce3a\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "audio/Master Bank.bank": {
+      "bytes": 34346400,
+      "sha256": "a3cc8b9c6b602d7e6aeda00fb9705e4df6f3d3b44bd1f95913923fb2233c52c2",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "34346400",
+        "ETag": "\"a3cc8b9c6b602d7e6aeda00fb9705e4df6f3d3b44bd1f95913923fb2233c52c2\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "audio/Master Bank.strings.bank": {
+      "bytes": 9110,
+      "sha256": "0abd3722cd7a43f160f9b5bb202dbbd657d9a491dedeb7dd43e56055939cc9ed",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "9110",
+        "ETag": "\"0abd3722cd7a43f160f9b5bb202dbbd657d9a491dedeb7dd43e56055939cc9ed\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "audio/NOTICE.txt": {
+      "bytes": 563,
+      "sha256": "f4833c4e9821033e749794cf12fc608fb3bf25d79c8390576561d361c64ae993",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Content-Length": "563",
+        "ETag": "\"f4833c4e9821033e749794cf12fc608fb3bf25d79c8390576561d361c64ae993\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "audio/fmodstudio.js": {
+      "bytes": 131434,
+      "sha256": "7497a63744b940b2d5c9ff494e5017bf991aee8dd26739edcf86e1954f6e93e9",
+      "headers": {
+        "Content-Type": "text/javascript; charset=utf-8",
+        "Content-Length": "131434",
+        "ETag": "\"7497a63744b940b2d5c9ff494e5017bf991aee8dd26739edcf86e1954f6e93e9\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "audio/fmodstudio.wasm": {
+      "bytes": 2656574,
+      "sha256": "38007e3792e111b265af6c5499f8453c5e83809b13c200522b794efee8ad213e",
+      "headers": {
+        "Content-Type": "application/wasm",
+        "Content-Length": "2656574",
+        "ETag": "\"38007e3792e111b265af6c5499f8453c5e83809b13c200522b794efee8ad213e\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "audio/runtime.js": {
+      "bytes": 8860,
+      "sha256": "144f0fada740e14f154d620892c6c453495d8ac2206581450e70173e8f5e7f57",
+      "headers": {
+        "Content-Type": "text/javascript; charset=utf-8",
+        "Content-Length": "8860",
+        "ETag": "\"144f0fada740e14f154d620892c6c453495d8ac2206581450e70173e8f5e7f57\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "index.audio.position.worklet.js": {
+      "bytes": 2973,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "headers": {
+        "Content-Type": "text/javascript; charset=utf-8",
+        "Content-Length": "2973",
+        "ETag": "\"be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "index.audio.worklet.js": {
+      "bytes": 7298,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "headers": {
+        "Content-Type": "text/javascript; charset=utf-8",
+        "Content-Length": "7298",
+        "ETag": "\"5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "index.html": {
+      "bytes": 5398,
+      "sha256": "166fb51d2983b525a0254bc54d872debec010e997c5cf9e4dde91dd1bb074362",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Content-Length": "5398",
+        "ETag": "\"166fb51d2983b525a0254bc54d872debec010e997c5cf9e4dde91dd1bb074362\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "index.js": {
+      "bytes": 315645,
+      "sha256": "ffc3898b59fba6f5af0c02f76e5ee526cc061e65c7d2d6f4f98186876cea15c4",
+      "headers": {
+        "Content-Type": "text/javascript; charset=utf-8",
+        "Content-Length": "315645",
+        "ETag": "\"ffc3898b59fba6f5af0c02f76e5ee526cc061e65c7d2d6f4f98186876cea15c4\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "index.pck": {
+      "bytes": 142511504,
+      "sha256": "755200afa49b72c81c9e64fe8b1907edf228c3c1e3a6048138c0acc17bd944b9",
+      "headers": {
+        "Content-Type": "application/octet-stream",
+        "Content-Length": "142511504",
+        "ETag": "\"755200afa49b72c81c9e64fe8b1907edf228c3c1e3a6048138c0acc17bd944b9\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "index.png": {
+      "bytes": 21443,
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+      "headers": {
+        "Content-Type": "image/png",
+        "Content-Length": "21443",
+        "ETag": "\"3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    },
+    "index.wasm": {
+      "bytes": 37902138,
+      "sha256": "11ea19645368f8e73cf337b59cfd7ceeb4ebb51f7a3bbf77d1a5c3ddfedbc522",
+      "headers": {
+        "Content-Type": "application/wasm",
+        "Content-Length": "37902138",
+        "ETag": "\"11ea19645368f8e73cf337b59cfd7ceeb4ebb51f7a3bbf77d1a5c3ddfedbc522\"",
+        "X-Game-Version": "0.5.1-dev.1",
+        "Cross-Origin-Embedder-Policy": "require-corp"
+      }
+    }
+  },
+  "passed": true
+}

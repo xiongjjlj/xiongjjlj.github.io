@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "engine": "workerd via miniflare 5.20260930.0-alpha",
+  "local_compatibility_date": "2026-10-07",
+  "production_compatibility_date": "2026-10-28",
+  "verified_files": 16,
+  "checks": [
+    "all original byte sizes and SHA-256 values",
+    "correct MIME",
+    "HEAD for full PCK",
+    "304 ETag revalidation",
+    "unknown and internal paths return 404",
+    "POST returns 405",
+    "cross-origin isolation header",
+    "version endpoint"
+  ],
+  "source_sha256": {
+    "package.json": "5ccd208284a91bf02b8b0adcb64c29856ca0085a0d27d08388d963cca8be6e6c",
+    "package-lock.json": "c0033b5e573f9d7ddda951c0084b550558c20348a696e153a852267baa8c5220",
+    ".gitignore": "21cc51417dd30e7af20dadff0073906f0ec0072617178b35d7383b5b3c77931c",
+    "README.md": "74e5e28dd08f006d759c2ef1c66b1c29cb022bdbd7913be341ee453b53edc51d",
+    "cloudflare.config.ts": "074c4d41f3d94434d1351981c34d42436953672f4114c58a28c97bca86a3c41e",
+    "scripts/build.mjs": "ee709a3d4d09321e8c8a33255d954d56a4810b50467d28b202469a419d2d44b3",
+    "src/worker.mjs": "11384e98001913ab6d969d4f8a58d5445c711700e59d69a73f32203e0dbab7a8",
+    "src/serve.mjs": "7fd4fe47f9f8d5bf792969c7aeac04f92900f22ab423edbb723eddd048fff82c",
+    "test/hosting.test.mjs": "719e38cacbd931f37ddef08020f7ad5547133cab1ae82e561c6b52e89ae73bd1"
+  },
+  "note": "Runtime test hashes refer to the Worker and build files; the live verification script is a separate check.",
+  "duration_ms": 808.512167
+}
