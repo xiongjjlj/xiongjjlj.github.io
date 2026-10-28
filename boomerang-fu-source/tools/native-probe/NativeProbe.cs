@@ -124,6 +124,9 @@ public sealed class NativeProbe : BaseUnityPlugin {
             RunOracle(report,"NavigationMapsOracle.Native.dll","navigation-maps-native",new[] { "graphs" });
             RunOracle(report,"NavigationSelectionOracle.Native.dll","navigation-selection",new[] { "native" });
             RunOracle(report,"NavigationUpdatesOracle.Native.dll","navigation-updates",new[] { "native" });
+            RunOracle(report,"FloorHazardsOracle.Native.dll","floor-hazards",new[] { "native" });
+            RunOracle(report,"FloorNavigationOracle.Native.dll","floor-navigation",new[] { "native" });
+            RunOracle(report,"FloorShaderOracle.Native.dll","floor-shader",new[] { "disassembly" });
             RunOracle(report,"DecoyOracle.Native.dll","decoy-native",new[] { "lifecycle","random" });
             RunOracle(report,"DecoyAiOracle.Native.dll","decoy-ai-native",new[] { "decisions" });
             RunOracle(report,"AudioOracle.Native.dll","audio-native",new[] { "catalog" });

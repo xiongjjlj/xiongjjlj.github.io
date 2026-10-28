@@ -1,0 +1,1362 @@
+{
+  "logs": [
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"enabled\",\"value\":true}",
+      "timestamp": "2026-10-28T02:39:34.398Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "Resetting audio driver based on user input.",
+      "timestamp": "2026-10-28T02:39:34.398Z",
+      "url": "http://127.0.0.1:49946/audio/fmodstudio.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"ambient\",\"path\":\"event:/atmos/mountains\"}",
+      "timestamp": "2026-10-28T02:39:34.399Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_SIGNAL {\"peak\":0.011952182278037071,\"channels\":2,\"samples\":2048}",
+      "timestamp": "2026-10-28T02:39:34.682Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:39:37.732Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:39:37.778Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:39:37.782Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:39:37.785Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_START {\"goal\":14,\"round\":1}",
+      "timestamp": "2026-10-28T02:39:37.785Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_MOTION_READY {\"fixed_delta\":0.0166660007089376,\"radius\":0.877800047397614,\"shapes\":157}",
+      "timestamp": "2026-10-28T02:39:37.785Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise0\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T02:39:37.921Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise1\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T02:39:37.923Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_MATCH_CONFIG {\"characters\":[\"Avocado\",\"Watermelon\"],\"goal\":14,\"positions\":[[-3.53553485870361,-26.1629524230957],[3.53553485870361,26.1629524230957]],\"sources\":[-1,-2]}",
+      "timestamp": "2026-10-28T02:39:37.930Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW ready",
+      "timestamp": "2026-10-28T02:39:37.933Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round reset\",\"serial\":2}",
+      "timestamp": "2026-10-28T02:39:37.989Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"music\",\"path\":\"event:/music/gameplay_trap\"}",
+      "timestamp": "2026-10-28T02:39:37.989Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":0}",
+      "timestamp": "2026-10-28T02:39:37.989Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/submit\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:39:37.989Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/spawnin_whoosh\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:39:37.989Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/spawnin_whoosh\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:39:37.989Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/roundtitle_ready\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:39:37.989Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"ambient\",\"path\":\"event:/atmos/mountains\"}",
+      "timestamp": "2026-10-28T02:39:37.989Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW playing",
+      "timestamp": "2026-10-28T02:39:38.783Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/roundtitle_go\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:39:38.785Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:39:58.928Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:39:58.950Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:39:59.275Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:39:59.599Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:39:59.926Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:40:00.250Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:40:00.576Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:40:00.744Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:40:18.444Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:40:18.467Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:40:18.793Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:40:19.117Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:40:19.443Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_START {\"actor\":0,\"tick\":2449}",
+      "timestamp": "2026-10-28T02:40:19.608Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Fall\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:40:19.612Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/hop\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:40:19.701Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_DEATH {\"actor\":0,\"tick\":2490}",
+      "timestamp": "2026-10-28T02:40:20.274Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DeathSliced\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:40:20.277Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DEATH {\"cause\":\"fall\",\"killer\":0,\"scores\":[0,0],\"tick\":2490,\"victim\":0}",
+      "timestamp": "2026-10-28T02:40:20.277Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ELEMENT {\"actor\":0,\"event\":\"fire_changed\",\"tick\":2490}",
+      "timestamp": "2026-10-28T02:40:20.284Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_HIDDEN {\"actor\":0,\"tick\":2490}",
+      "timestamp": "2026-10-28T02:40:20.284Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/death/splash_medium\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:40:20.286Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_SCORES {\"round\":1,\"scores\":[0,0]}",
+      "timestamp": "2026-10-28T02:40:22.532Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":1}",
+      "timestamp": "2026-10-28T02:40:22.533Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW scores",
+      "timestamp": "2026-10-28T02:40:22.541Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise0\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T02:41:10.310Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise1\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T02:41:10.310Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:41:10.313Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:41:10.316Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_START {\"goal\":14,\"round\":2}",
+      "timestamp": "2026-10-28T02:41:10.316Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW ready",
+      "timestamp": "2026-10-28T02:41:10.319Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round reset\",\"serial\":3}",
+      "timestamp": "2026-10-28T02:41:10.319Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":0}",
+      "timestamp": "2026-10-28T02:41:10.320Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/submit\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:41:10.320Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/spawnin_whoosh\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:41:10.320Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/spawnin_whoosh\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:41:10.320Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/roundtitle_ready\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:41:10.320Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"ambient\",\"path\":\"event:/atmos/mountains\"}",
+      "timestamp": "2026-10-28T02:41:10.320Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW playing",
+      "timestamp": "2026-10-28T02:41:11.316Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/roundtitle_go\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:41:11.318Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:41:12.160Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:41:12.176Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:41:12.509Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:41:12.831Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:41:21.194Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:41:21.209Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:41:21.543Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_START {\"actor\":1,\"tick\":3195}",
+      "timestamp": "2026-10-28T02:41:21.625Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Fall\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:41:21.629Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/hop\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:41:21.717Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_DEATH {\"actor\":1,\"tick\":3236}",
+      "timestamp": "2026-10-28T02:41:22.291Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DeathSliced\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:41:22.293Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DEATH {\"cause\":\"fall\",\"killer\":1,\"scores\":[0,0],\"tick\":3236,\"victim\":1}",
+      "timestamp": "2026-10-28T02:41:22.293Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ELEMENT {\"actor\":1,\"event\":\"fire_changed\",\"tick\":3236}",
+      "timestamp": "2026-10-28T02:41:22.300Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_HIDDEN {\"actor\":1,\"tick\":3236}",
+      "timestamp": "2026-10-28T02:41:22.300Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/death/splash_medium\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:41:22.302Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_SCORES {\"round\":2,\"scores\":[0,0]}",
+      "timestamp": "2026-10-28T02:41:24.568Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":1}",
+      "timestamp": "2026-10-28T02:41:24.568Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW scores",
+      "timestamp": "2026-10-28T02:41:24.568Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW lobby",
+      "timestamp": "2026-10-28T02:42:03.784Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"music\",\"path\":\"event:/music/menu\"}",
+      "timestamp": "2026-10-28T02:42:03.791Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/submit\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:42:03.791Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:11.614Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:11.660Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:11.664Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:11.667Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_START {\"goal\":14,\"round\":1}",
+      "timestamp": "2026-10-28T02:42:11.668Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_MOTION_READY {\"fixed_delta\":0.0166660007089376,\"radius\":0.877800047397614,\"shapes\":157}",
+      "timestamp": "2026-10-28T02:42:11.668Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise0\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T02:42:11.798Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise1\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T02:42:11.799Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_MATCH_CONFIG {\"characters\":[\"Avocado\",\"Watermelon\"],\"goal\":14,\"positions\":[[-3.53553485870361,-26.1629524230957],[3.53553485870361,26.1629524230957]],\"sources\":[-100,-101]}",
+      "timestamp": "2026-10-28T02:42:11.806Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW ready",
+      "timestamp": "2026-10-28T02:42:11.808Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round reset\",\"serial\":4}",
+      "timestamp": "2026-10-28T02:42:11.809Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"music\",\"path\":\"event:/music/gameplay_surf\"}",
+      "timestamp": "2026-10-28T02:42:11.809Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":0}",
+      "timestamp": "2026-10-28T02:42:11.809Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/submit\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:42:11.809Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/spawnin_whoosh\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:42:11.809Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/spawnin_whoosh\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:42:11.810Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/roundtitle_ready\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:42:11.810Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"ambient\",\"path\":\"event:/atmos/mountains\"}",
+      "timestamp": "2026-10-28T02:42:11.810Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW playing",
+      "timestamp": "2026-10-28T02:42:12.648Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/ui/roundtitle_go\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:42:12.650Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:12.718Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:42:12.722Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:12.736Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:12.741Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:13.068Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:13.068Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:13.384Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:13.392Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:13.717Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:13.717Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:13.752Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:13.785Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:13.809Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:14.034Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:14.135Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:14.366Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:14.459Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:14.683Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:14.784Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:15.017Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:15.109Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:15.243Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:15.261Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:15.283Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:15.333Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:15.609Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:15.667Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:15.727Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:42:15.761Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:15.776Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:15.934Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:16.109Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:16.260Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:16.426Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:16.560Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:16.584Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DiscSpin\",\"missing\":[],\"model\":\"Disc\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T02:42:16.800Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_THROW {\"actor\":1,\"aim\":0.164512157440186,\"position\":[-11.9821043014526,-0.231230825185776],\"spin\":-5.13892650604248,\"tick\":3572}",
+      "timestamp": "2026-10-28T02:42:16.800Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/throw\",\"parameters\":{\"aimPower\":0.164512157440186}}",
+      "timestamp": "2026-10-28T02:42:16.802Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2893,\"force\":[39.7151756286621,-34.6523857116699],\"type\":\"wobbly_obstacle_hit\"}",
+      "timestamp": "2026-10-28T02:42:16.841Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:16.911Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2985,\"force\":[41.1989669799805,-32.8744201660156],\"type\":\"wobbly_obstacle_hit\"}",
+      "timestamp": "2026-10-28T02:42:16.992Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DISC_BOUNCE {\"actor\":1,\"position\":[-3.95665502548218,-7.07240772247314],\"tick\":3584}",
+      "timestamp": "2026-10-28T02:42:17.007Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/disc_rico_stone\",\"parameters\":{\"velocity\":0.999999940395355}}",
+      "timestamp": "2026-10-28T02:42:17.011Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:42:17.046Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:17.061Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DISC_BOUNCE {\"actor\":1,\"position\":[-6.8422212600708,-12.7119770050049],\"tick\":3593}",
+      "timestamp": "2026-10-28T02:42:17.157Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/disc_rico_stone\",\"parameters\":{\"velocity\":0.900199592113495}}",
+      "timestamp": "2026-10-28T02:42:17.162Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:17.235Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:17.279Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:42:17.462Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:17.477Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2966,\"force\":[7.41792964935303,12.1305456161499],\"type\":\"wobbly_obstacle_hit\"}",
+      "timestamp": "2026-10-28T02:42:17.509Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DASH {\"actor\":1,\"tick\":3616}",
+      "timestamp": "2026-10-28T02:42:17.533Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/dash\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:42:17.535Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:17.561Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2966,\"force\":[-14.1280698776245,14.9613571166992],\"type\":\"wobbly_obstacle_hit\"}",
+      "timestamp": "2026-10-28T02:42:17.643Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/dash_end\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:42:17.762Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:17.811Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:17.885Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:17.945Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CATCH {\"actor\":1,\"tick\":3649}",
+      "timestamp": "2026-10-28T02:42:18.091Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/catch\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:42:18.093Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:42:18.111Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:18.126Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:18.209Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:18.460Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:18.534Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:18.560Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:18.577Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:18.600Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DiscSpin\",\"missing\":[],\"model\":\"Disc\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T02:42:18.634Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_THROW {\"actor\":0,\"aim\":0.0,\"position\":[-1.37153744697571,-26.8545417785645],\"spin\":0.0,\"tick\":3682}",
+      "timestamp": "2026-10-28T02:42:18.634Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/throw\",\"parameters\":{\"aimPower\":0}}",
+      "timestamp": "2026-10-28T02:42:18.636Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DISC_BOUNCE {\"actor\":0,\"position\":[-2.47133088111877,-23.259693145752],\"tick\":3687}",
+      "timestamp": "2026-10-28T02:42:18.724Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/disc_rico_stone\",\"parameters\":{\"velocity\":1}}",
+      "timestamp": "2026-10-28T02:42:18.727Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:18.776Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:18.928Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:19.110Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:19.251Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:19.428Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:19.445Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:42:19.480Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:19.495Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:19.578Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:19.827Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DISC_BOUNCE {\"actor\":0,\"position\":[-9.17419338226318,-16.1310348510742],\"tick\":3755}",
+      "timestamp": "2026-10-28T02:42:19.857Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/disc_rico_stone\",\"parameters\":{\"velocity\":0.999999940395355}}",
+      "timestamp": "2026-10-28T02:42:19.861Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:19.901Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:20.143Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:20.178Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:42:20.212Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:20.227Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:20.227Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":0}}",
+      "timestamp": "2026-10-28T02:42:20.550Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:20.560Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DISC_BOUNCE {\"actor\":0,\"position\":[-8.77764701843262,-27.2026386260986],\"tick\":3798}",
+      "timestamp": "2026-10-28T02:42:20.574Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/disc_rico_stone\",\"parameters\":{\"velocity\":0.107223689556122}}",
+      "timestamp": "2026-10-28T02:42:20.577Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"retrieve_-9223371690422037850\",\"path\":\"event:/combat/retrieve\"}",
+      "timestamp": "2026-10-28T02:42:20.660Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DiscSpin\",\"missing\":[],\"model\":\"Disc2\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T02:42:20.793Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_THROW {\"actor\":1,\"aim\":0.0151922702789307,\"position\":[-9.50402069091797,2.91979146003723],\"spin\":46.9048385620117,\"tick\":3812}",
+      "timestamp": "2026-10-28T02:42:20.793Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/throw\",\"parameters\":{\"aimPower\":0.0151922702789307}}",
+      "timestamp": "2026-10-28T02:42:20.795Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:20.828Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:20.845Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:42:21.028Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:21.044Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DEATH {\"cause\":\"disc\",\"killer\":1,\"scores\":[0,1],\"tick\":3840,\"victim\":0}",
+      "timestamp": "2026-10-28T02:42:21.274Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DeathSliced\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:21.278Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/death/sliced\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:42:21.280Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"retrieve_-9223371690422037850\"}",
+      "timestamp": "2026-10-28T02:42:21.280Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:21.392Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:22.442Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:22.828Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:23.143Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:42:23.328Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:42:23.362Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:42:23.377Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_SCORES {\"round\":1,\"scores\":[0,1]}",
+      "timestamp": "2026-10-28T02:42:23.532Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":1}",
+      "timestamp": "2026-10-28T02:42:23.534Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW scores",
+      "timestamp": "2026-10-28T02:42:23.541Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    }
+  ],
+  "errors": [],
+  "scope": "Load and two-bot disc kill; no trap contact was observed in these routes."
+}

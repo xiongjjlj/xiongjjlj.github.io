@@ -7,6 +7,13 @@ var on_ground := false
 var base_color := Color.WHITE
 var blink_white := false
 
+func retire() -> void:
+	# Detach render geometry before releasing its per-disc material overrides.
+	# Otherwise a queued shader-parameter update can inspect a freed material RID.
+	for mesh: MeshInstance3D in find_children("*", "MeshInstance3D", true, false):
+		mesh.mesh = null
+	queue_free()
+
 func initialize(color: Color) -> void:
 	name = "Disc"
 	base_color = color

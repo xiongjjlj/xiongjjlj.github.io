@@ -1,0 +1,73 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bound": 3,
+        "expected": 3
+      },
+      "name": "every enabled floor is bound",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "dashing does not trigger trap",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "stationary contact triggers warning",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "fire exists before floor sinks",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "sinking removes floor collision",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "original renderer hierarchy moves",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "falling ground removes overlapping powerup",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "falling ground removes decals",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "falling ground extinguishes fire",
+      "passed": true
+    },
+    {
+      "details": {
+        "maximum_queue": 1,
+        "updates": 3
+      },
+      "name": "floor changes rescan navigation",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "trap rises and restores collision",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "round reset restores floor state and visuals",
+      "passed": true
+    }
+  ],
+  "map": "level42",
+  "passed": true,
+  "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+}

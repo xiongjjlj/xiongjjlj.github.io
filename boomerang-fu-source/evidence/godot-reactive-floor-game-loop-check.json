@@ -6,6 +6,11 @@
       "passed": true
     },
     {
+      "details": null,
+      "name": "passive observer survives the journey",
+      "passed": true
+    },
+    {
       "details": 0.000347322114976123,
       "name": "full game loop preserves platform-local rider position",
       "passed": true

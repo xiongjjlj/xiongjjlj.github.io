@@ -2705,6 +2705,11 @@
               "passed": true
             },
             {
+              "details": null,
+              "name": "passive observer survives the journey",
+              "passed": true
+            },
+            {
               "details": 0.000347322114976123,
               "name": "full game loop preserves platform-local rider position",
               "passed": true
@@ -3440,7 +3445,7 @@
               "details": {
                 "changed_node_samples": 28161,
                 "maximum_queue": 4,
-                "rescan_milliseconds": 339.355,
+                "rescan_milliseconds": 307.943,
                 "targets": 2,
                 "updates": 26
               },
@@ -3493,7 +3498,7 @@
               "details": {
                 "changed_node_samples": 27981,
                 "maximum_queue": 1,
-                "rescan_milliseconds": 483.199,
+                "rescan_milliseconds": 450.407,
                 "targets": 1,
                 "updates": 28
               },
@@ -3546,7 +3551,7 @@
               "details": {
                 "changed_node_samples": 7584,
                 "maximum_queue": 4,
-                "rescan_milliseconds": 8.571,
+                "rescan_milliseconds": 8.499,
                 "targets": 4,
                 "updates": 13
               },
@@ -3594,7 +3599,7 @@
               "details": {
                 "changed_node_samples": 22326,
                 "maximum_queue": 4,
-                "rescan_milliseconds": 1063.333,
+                "rescan_milliseconds": 1099.825,
                 "targets": 4,
                 "updates": 256
               },
@@ -3631,6 +3636,1039 @@
           "map": "level55",
           "passed": true,
           "scope": "Real map mechanism callbacks, queued graph rescans, retained-path invalidation and round reset. No native callback ordering or visual parity claim."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "cases": 21,
+          "comparisons": 259752,
+          "differences": [],
+          "maximum_error": 0.0,
+          "passed": true,
+          "samples": 17005,
+          "scope": "Unchanged recovered floor methods in original UnityPlayer versus Godot state, transforms, flash and service-call timing. Scene child operations tested separately."
+        }
+      ]
+    },
+    {
+      "test": "floor_collapse_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "cases": 14,
+          "comparisons": 56252,
+          "differences": [],
+          "maximum_error": 0.0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "floor_navigation_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "cases": 15,
+          "comparisons": 525720,
+          "differences": [],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level14",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 31,
+                "expected": 31
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "level scheduler activates floors",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fire exists before floor sinks",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "sinking removes floor collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original renderer hierarchy moves",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes overlapping powerup",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes decals",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground extinguishes fire",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_queue": 1,
+                "updates": 9
+              },
+              "name": "floor changes rescan navigation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collapsed floor remains hidden",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores floor state and visuals",
+              "passed": true
+            }
+          ],
+          "map": "level14",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level18",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 98,
+                "expected": 98
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "level scheduler activates floors",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fire exists before floor sinks",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "sinking removes floor collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original renderer hierarchy moves",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes overlapping powerup",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes decals",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground extinguishes fire",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_queue": 1,
+                "updates": 36
+              },
+              "name": "floor changes rescan navigation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "collapsed floor remains hidden",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores floor state and visuals",
+              "passed": true
+            }
+          ],
+          "map": "level18",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level19",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 0,
+                "expected": 0
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "only disabled source floors may be absent",
+              "passed": true
+            }
+          ],
+          "map": "level19",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level40",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 58,
+                "expected": 58
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "dashing does not trigger trap",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "stationary contact triggers warning",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fire exists before floor sinks",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "sinking removes floor collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original renderer hierarchy moves",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes overlapping powerup",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes decals",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground extinguishes fire",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_queue": 1,
+                "updates": 4
+              },
+              "name": "floor changes rescan navigation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trap rises and restores collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores floor state and visuals",
+              "passed": true
+            }
+          ],
+          "map": "level40",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level42",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 3,
+                "expected": 3
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "dashing does not trigger trap",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "stationary contact triggers warning",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fire exists before floor sinks",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "sinking removes floor collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original renderer hierarchy moves",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes overlapping powerup",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes decals",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground extinguishes fire",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_queue": 1,
+                "updates": 3
+              },
+              "name": "floor changes rescan navigation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trap rises and restores collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores floor state and visuals",
+              "passed": true
+            }
+          ],
+          "map": "level42",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level46",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 10,
+                "expected": 10
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "dashing does not trigger trap",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "stationary contact triggers warning",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fire exists before floor sinks",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "sinking removes floor collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original renderer hierarchy moves",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes overlapping powerup",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes decals",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground extinguishes fire",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_queue": 1,
+                "updates": 5
+              },
+              "name": "floor changes rescan navigation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trap rises and restores collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores floor state and visuals",
+              "passed": true
+            }
+          ],
+          "map": "level46",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level49",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 68,
+                "expected": 68
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "dashing does not trigger trap",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "stationary contact triggers warning",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fire exists before floor sinks",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "sinking removes floor collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original renderer hierarchy moves",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes overlapping powerup",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes decals",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground extinguishes fire",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_queue": 1,
+                "updates": 3
+              },
+              "name": "floor changes rescan navigation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trap rises and restores collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores floor state and visuals",
+              "passed": true
+            }
+          ],
+          "map": "level49",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level51",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 16,
+                "expected": 16
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "dashing does not trigger trap",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "stationary contact triggers warning",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fire exists before floor sinks",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "sinking removes floor collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original renderer hierarchy moves",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes overlapping powerup",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes decals",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground extinguishes fire",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_queue": 1,
+                "updates": 10
+              },
+              "name": "floor changes rescan navigation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trap rises and restores collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores floor state and visuals",
+              "passed": true
+            }
+          ],
+          "map": "level51",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level54",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 24,
+                "expected": 24
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "dashing does not trigger trap",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "stationary contact triggers warning",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fire exists before floor sinks",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "sinking removes floor collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original renderer hierarchy moves",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes overlapping powerup",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes decals",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground extinguishes fire",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_queue": 1,
+                "updates": 3
+              },
+              "name": "floor changes rescan navigation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trap rises and restores collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores floor state and visuals",
+              "passed": true
+            }
+          ],
+          "map": "level54",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level57",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 66,
+                "expected": 66
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "dashing does not trigger trap",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "stationary contact triggers warning",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fire exists before floor sinks",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "sinking removes floor collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original renderer hierarchy moves",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes overlapping powerup",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes decals",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground extinguishes fire",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_queue": 1,
+                "updates": 3
+              },
+              "name": "floor changes rescan navigation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trap rises and restores collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores floor state and visuals",
+              "passed": true
+            }
+          ],
+          "map": "level57",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level58",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 32,
+                "expected": 32
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "dashing does not trigger trap",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "stationary contact triggers warning",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fire exists before floor sinks",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "sinking removes floor collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original renderer hierarchy moves",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes overlapping powerup",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes decals",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground extinguishes fire",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_queue": 1,
+                "updates": 3
+              },
+              "name": "floor changes rescan navigation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trap rises and restores collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores floor state and visuals",
+              "passed": true
+            }
+          ],
+          "map": "level58",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_scene_test",
+      "map": "level59",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": [
+            {
+              "details": {
+                "bound": 120,
+                "expected": 120
+              },
+              "name": "every enabled floor is bound",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "dashing does not trigger trap",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "stationary contact triggers warning",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "fire exists before floor sinks",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "sinking removes floor collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "original renderer hierarchy moves",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes overlapping powerup",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground removes decals",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "falling ground extinguishes fire",
+              "passed": true
+            },
+            {
+              "details": {
+                "maximum_queue": 1,
+                "updates": 3
+              },
+              "name": "floor changes rescan navigation",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "trap rises and restores collision",
+              "passed": true
+            },
+            {
+              "details": null,
+              "name": "round reset restores floor state and visuals",
+              "passed": true
+            }
+          ],
+          "map": "level59",
+          "passed": true,
+          "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_game_test",
+      "map": "level14",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "active_discs": 0,
+          "active_tile_frames": 4397,
+          "disc_views": 0,
+          "distance": 155.824438659306,
+          "finite": true,
+          "frames": 900,
+          "hole_frames": 1748,
+          "map": "level14",
+          "passed": true,
+          "round_resets": 2
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_game_test",
+      "map": "level18",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "active_discs": 0,
+          "active_tile_frames": 16232,
+          "disc_views": 0,
+          "distance": 140.960253074591,
+          "finite": true,
+          "frames": 900,
+          "hole_frames": 6517,
+          "map": "level18",
+          "passed": true,
+          "round_resets": 2
+        }
+      ]
+    },
+    {
+      "test": "floor_hazards_game_test",
+      "map": "level40",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "active_discs": 0,
+          "active_tile_frames": 710,
+          "disc_views": 0,
+          "distance": 157.836336712497,
+          "finite": true,
+          "frames": 900,
+          "hole_frames": 178,
+          "map": "level40",
+          "passed": true,
+          "round_resets": 2
         }
       ]
     },
@@ -3996,6 +5034,8 @@
     }
   ],
   "source_sha256": {
+    "assets/original/floor-inputs.json": "cd4c92fad2c44aecd66e18fce290ca2f36904a8959af2fccc8c60ab1a8133391",
+    "assets/original/floor-materials.json": "3ce8ee47a2a4fb9e57ef52aa94155d46cca28e582334418cedd3c733534cc514",
     "assets/original/level10/behaviors.json": "1e331b377e8f9dc367a9ddcb3d1a38768a2a9ffc7bcb9d9d285a554c9db87732",
     "assets/original/level11/behaviors.json": "1500f5b6d8ff1c29298e1b40705adaf3e6ae7526942a14498c2db46bce0f2f12",
     "assets/original/level12/behaviors.json": "460aed0a24ab0ca519f488b78b5b83aa5869fce13dee1eb7bd2699b9b18c0aa9",
@@ -4131,7 +5171,7 @@
     "core/original_decoy_motion.gd": "d682669ff63ff7ffc9a5b24ad1b0a9d64890f1181368691f73ac3d78e7a0dfdf",
     "core/original_decoy_world.gd": "f33e6965cd255d108acce022f9d47247e33c1f3f9a0908b393432d08a504af8e",
     "core/original_disc_motion.gd": "63187f0ee15e273703360a1e441c135b101459399c48314259a50e46f4bb7900",
-    "core/original_disc_preview.gd": "a28198310984cf8535d834c3e405299c162fa48de76e1e857b72bbe149ee9957",
+    "core/original_disc_preview.gd": "279ded68a0cd358cfc73babd4194fee4a411605bed32932e0099c8f72addb82c",
     "core/original_disc_trail.gd": "3d232599209f911d87709f648543754267218b7d9763b2b22f00785316b0392d",
     "core/original_disguise.gd": "4f11663f700ed6375f921272ccdce6c570b38e10c095ade5d7f287482b921b03",
     "core/original_disguise_preview.gd": "ea2826322ae87d1de460e993fb579ebbc4398b2e9a997a47ba460e4ea1c07634",
@@ -4139,14 +5179,16 @@
     "core/original_explosion_preview.gd": "4600e1948cee761036c9d8d32137eb2d14748c1bb85393e1401c8ad91722fbea",
     "core/original_ffa_round.gd": "7b2855274fc9ea7182c0e09fdaab88d7f70ddbda28ba8dd0ba1c8b9edac83c0f",
     "core/original_ffa_score.gd": "41db8c61d10977797c02de09d139a46d693cfcba55208b31c398b5d9e119993d",
+    "core/original_floor_hazard.gd": "59e76472a3944dd9bca66bca912b383596efb792054bd4208262f599336e1aac",
+    "core/original_floor_hazards.gd": "e0387144364d96f5ed3e1cabc61fb0b1e08f1f097848c5b93071142556f85c3e",
     "core/original_grenade.gd": "6b5ddd63e69302cc43b6d4d62649717ec79f47d3c91cd50f857571734bc38ad6",
     "core/original_ground_queries.gd": "225eeaf3d44f3735b84be90668e5d7512e74ddaa11a986e5918e9bb54ca62506",
     "core/original_level3_behaviors.gd": "0b2494093627c96dc307742f9a926882d45ae42f77202dd6ad276996d27cbebb",
     "core/original_level_boundary.gd": "280b19da2259369f87d6b71535da9e8b5916036365035fe5d8905fe1f2c316e3",
     "core/original_moving_floors.gd": "ade71a17850732e7720d8812be3bb42eb2f959c28b4db9ce3c7c646dfe3ddcc5",
     "core/original_navigation.gd": "23b27620c00e89375abb054aa499c3056791e8f9f971b3184a58847fb30a97d7",
-    "core/original_navigation_updates.gd": "ffdc0149d9ed55b154926d1d40ea4be94db0457b7aead272aac5a14ec3e5e6d4",
-    "core/original_navigation_world.gd": "4027f5e1eb581f1785574d067217acd03254d45f7c5c6ac92207de25af631ad7",
+    "core/original_navigation_updates.gd": "134a92e065222adf833bde0d5d861a6389d01a6ee08410ae05eb735644411b54",
+    "core/original_navigation_world.gd": "11edfa21b58bf8e040ae66f30792815a61ec6b7c6a1afcfe9b171ce920be17b5",
     "core/original_player_ai.gd": "50f9f0b4b0caec0c704d4bebccc116aab60653b94e26fe7b7b0832934bcc368b",
     "core/original_player_ai_actions.gd": "da917b0ac0088f2b5d5d8a9fc505d3ec0735800609170ee0e81cbff906426284",
     "core/original_player_ai_buttons.gd": "5596237593a95a6a60f2918b1bdaf7f0238829e860e23079226ac2b7fad680a2",
@@ -4157,8 +5199,8 @@
     "core/original_player_powers.gd": "ec6edc2c504d062d531ba7939ea5ddca8e28a5e57f10e2e6de000c1844f17d65",
     "core/original_player_weapons.gd": "469face003d89c464a9a535df060108a58726060ddee53f935f7f107b7cb143b",
     "core/original_powerup_preview.gd": "67282268e3ec46f6467d4500f16d82c1cd47797299e3857560dc2227be456b43",
-    "core/original_powerup_world.gd": "96fdd87907349bd55693face2d4e759886ff43482de2750a0aa9ae6548915e48",
-    "core/original_scene_materials.gd": "dd8255608c4d1daa3dea08eb2b2f50c187e7e4336f17257826f691d07f5bec04",
+    "core/original_powerup_world.gd": "1d93f2f88ef8a0012c0c381c3ab263cab2c4bd080dfca429358f9acce20c4e98",
+    "core/original_scene_materials.gd": "16759b4269d913ce92882c3641cf1ad31db464ae525533bb49a03598c025b907",
     "core/original_system_random.gd": "adc47354646a125d7f8d69b2f0e7a2b718d569303d22e50cfa41d980d02639f6",
     "core/original_teleport.gd": "6af9be272bdf4046817b409e6b3fc9575c5fcd894a66790cd7f95a2696cb1f47",
     "core/original_timekeeper.gd": "627e8b52ae78f88ff162851d5d9269bd3aabd6992caeec6de2e1ede710fc13ca",
@@ -4167,10 +5209,21 @@
     "ffa_setup.gd": "c6463eb561df16c5195714717e24be001fc179d54d9fa1808a599f1e25fa06e7",
     "ffa_shell.gd": "9debf084f08a9db4bd982da215813ff17c973739451adba41bbc8d01cbdbd609",
     "local_controllers.gd": "49f41dbf1ebbaa726e60362252e255822d8cb7b6411e0474706128145dd2cfd4",
-    "main.gd": "2bedc48b99e461b5b29fcf5caf720c9b5e9ca9d5465bd2031157efd752c51564",
-    "original_audio.gd": "16da9b923bad24499f876b32e499152ec7f5145b1aaf729416cddf98418ce7ea",
+    "main.gd": "075c44a5ffedcb71b231f06e0e80fac113277f3eaff0f1808004deb063d7c11c",
+    "original_audio.gd": "2b21f594120a1d54ad3522f3630d4524596d7fbace88c7ab2bf4da19e529332d",
+    "shaders/original_boundary.gdshader": "7deff366cfde3ee039589f20db2b8b96334489d50e543f7cd6f9a661e3b410b1",
+    "shaders/original_cell_particle.gdshader": "ba9da677015c30f45903e9c1f08af771c2439f5c9e594ada2e89a202136597f5",
+    "shaders/original_explosion.gdshader": "c4f6532a4a759261c41fdb59c4f2196e7bf084f6be8a6ab24fec94a55f9a786f",
+    "shaders/original_frozen.gdshader": "694c21f1f8e40c363f6b6c59652c4b1af3976db5e20ee41b15f253c3c59b266b",
+    "shaders/original_sprite_wave.gdshader": "7957b745a8ece15d4e2c16d374c140565566c2f774b4d05a797ac7de0c46558d",
+    "shaders/original_uu.gdshader": "a1e316e99d6db403b304ad7f080038b1e81ce7b2e678107744c280a1ed785075",
     "tests/duel_integration_test.gd": "9188991405fa0f7fa767de0e79cf5ce4e3042ca7910e2275cd4d3b2a8051c1b1",
     "tests/ffa_shell_test.gd": "28341982eff05a130c545ab38706ae9ed713b065c8af211cac5e2ff28a851d24",
+    "tests/floor_collapse_test.gd": "2d5bc5dc0ac2df8e3b927822d83e7df402933e0ab71c0b3ba1820596f63bf79f",
+    "tests/floor_hazards_game_test.gd": "3811902cf389246b5bfc6178bb8738f480aac09321c6414e0d599a43d71b58ee",
+    "tests/floor_hazards_scene_test.gd": "2965592109e838f0dcebef78be2d948876bb5efbb017d1ce99296c1502559da5",
+    "tests/floor_hazards_test.gd": "cda2c3fe1c65e6546e430720dd43070e7688e69b79f5ffb36d7c8bd150431590",
+    "tests/floor_navigation_test.gd": "e27f02730c92cdbdb3ada5383b2e4832928df536b8114be645f09999505b4d75",
     "tests/level3_behaviors_test.gd": "31f599fd4c79aef76881caa16104aa657aec2bdd477c56d7e6be79913616a9e0",
     "tests/map_behavior_adapter_test.gd": "b255ba840046930167020bb122164d93c1d8c94eeb815ee1d4f6ff1de4c4fedc",
     "tests/moving_floor_native_test.gd": "7db03f4f0ab64cd58afbec582d0c7e9b0effb29ab1c2fd91e368b3bfd9adfca9",
@@ -4181,12 +5234,66 @@
     "tests/navigation_updates_scene_test.gd": "d684a041767574595900fb91f1e2982f9c3e9328a0ea36bf632259b023b324a3",
     "tests/navigation_updates_test.gd": "fdcbeaf1cee5f60a4ba095a6581054ef42bca9e203c09900cfba778aa468c2c2",
     "tests/player_ai_game_test.gd": "e0f45759163899b6ceebb166e7e6a73b33af82aaeef136aba38ed2b8df41245a",
-    "tests/reactive_floor_game_loop_test.gd": "d6f0fd5196c438271e7eb1d0c0c90fe803ea02ebb53f5cfbe088b7a0d3336013",
+    "tests/reactive_floor_game_loop_test.gd": "6e3e974193e1e32db352a4b439515c7cf44615f63ec990e9c310821c82eb15da",
     "tests/reactive_floor_native_test.gd": "b31539394a9461df6166efff8c0ec41b64674b3b272dea062ea9a23e3acfdccc",
     "tests/reactive_floor_scene_test.gd": "ea1c1f9a8b519541945fdc4dcad07f05fd138e4e8c2067ed88ee86a9807d6c36"
   },
-  "generated_at": "2026-10-28T02:18:21.546217+00:00",
+  "generated_at": "2026-10-28T02:36:51.483533+00:00",
   "process_limit": 1,
   "per_test_timeout_seconds": 45,
-  "scope": "Real-scene native Godot tests; no original Unity runtime, browser, visual or frame-parity claim."
+  "scope": "Real-scene native Godot tests; no original Unity runtime, browser, visual or frame-parity claim.",
+  "verification_history": [
+    {
+      "generated_at": "2026-10-28T02:36:51.483327+00:00",
+      "retested": [
+        {
+          "test": "reactive_floor_game_loop_test",
+          "map": "level40",
+          "passed": false,
+          "returncode": 1,
+          "errors": [],
+          "reports": [
+            {
+              "checks": [
+                {
+                  "details": null,
+                  "name": "central rider survives full outward and return journey",
+                  "passed": true
+                },
+                {
+                  "details": 7.41907133487985e-05,
+                  "name": "full game loop preserves platform-local rider position",
+                  "passed": true
+                },
+                {
+                  "details": null,
+                  "name": "platform finishes its return and retains rider",
+                  "passed": false
+                },
+                {
+                  "details": {
+                    "fall_tick": -1,
+                    "roller_contact_tick": -1
+                  },
+                  "name": "edge rider contacts original fixed roller before losing ground",
+                  "passed": false
+                },
+                {
+                  "details": null,
+                  "name": "edge fall is ground loss, not broken platform attachment",
+                  "passed": false
+                }
+              ],
+              "passed": false,
+              "scope": "Full Godot game loop on actual Big Raft: central rider round trip and fixed-roller obstruction. Original full-scene callback ordering is not established by this test."
+            }
+          ]
+        }
+      ],
+      "changed_test_sources": [
+        "tests/reactive_floor_game_loop_test.gd"
+      ],
+      "reason": "Floor hazards invalidate the old Big Raft observer position: move the passive observer onto the safe raft interior so the movement scenario can finish. Production source hashes are unchanged."
+    }
+  ]
 }

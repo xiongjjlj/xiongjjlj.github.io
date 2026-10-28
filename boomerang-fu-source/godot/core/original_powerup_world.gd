@@ -149,6 +149,16 @@ func native_overlap_phase() -> void:
 				break
 		book.overlaps = now
 
+func fall_touching(polygon:PackedVector2Array)->void:
+	var radius:=C.f32(binding.collider_radius*binding.root_scale)
+	var shape:={"kind":"polygon","vertices":polygon,"edge_radius":0.0}
+	for i in range(books.size()-1,-1,-1):
+		var book:Dictionary=books[i]
+		if book.collected or world.penetration(book.position,radius,shape,true).is_empty():continue
+		events.append({"type":"book_fell","id":book.id,"position":book.position})
+		events.append({"type":"book_removed","id":book.id})
+		books.remove_at(i)
+
 func select_power(weapon: OriginalPlayerWeapons) -> int:
 	if available == P.Power.REVERSE_INPUTS: return P.Power.REVERSE_INPUTS
 	var useful := possible.duplicate()

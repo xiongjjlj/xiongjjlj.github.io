@@ -25,14 +25,19 @@ def main():
     tests += [('navigation_selection_test', 'level2'), ('player_ai_game_test', 'level2')]
     tests += [('navigation_updates_test', key) for key in ('level2','level48')]
     tests += [('navigation_updates_scene_test', key) for key in ('level3','level41','level48','level55')]
+    tests += [(name, 'level2') for name in ('floor_hazards_test','floor_collapse_test','floor_navigation_test')]
+    tests += [('floor_hazards_scene_test', key) for key in ('level14','level18','level19','level40','level42','level46','level49','level51','level54','level57','level58','level59')]
+    tests += [('floor_hazards_game_test', key) for key in ('level14','level18','level40')]
     tests += [('level3_behaviors_test', 'level3'), ('ffa_shell_test', 'level4'), ('duel_integration_test', 'level2')]
     paths = [*args.project.glob('*.gd'), *args.project.glob('core/*.gd'), *args.project.glob('assets/original/level*/behaviors.json')]
     paths += list(args.project.glob('assets/original/navigation/*.json'))
+    paths += list(args.project.glob('assets/original/floor-*.json')) + list(args.project.glob('shaders/*.gdshader'))
     paths += [args.project / ('tests/' + name + '.gd') for name in sorted({t[0] for t in tests})]
     hashes = {str(p.relative_to(args.project)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
     results = []
     for name, level in tests:
-        command = [args.godot, '--headless', '--path', str(args.project), '--script', 'res://tests/' + name + '.gd', '--quit-after', '120', '--', '--map=' + level]
+        frame_limit = '1200' if name == 'floor_hazards_game_test' else '120'
+        command = [args.godot, '--headless', '--path', str(args.project), '--script', 'res://tests/' + name + '.gd', '--quit-after', frame_limit, '--', '--map=' + level]
         try:
             process = subprocess.run(command, capture_output=True, text=True, timeout=45)
             log = process.stdout + '\n' + process.stderr

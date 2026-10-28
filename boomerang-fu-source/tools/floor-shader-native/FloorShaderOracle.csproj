@@ -1,0 +1,1 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFramework>netstandard2.1</TargetFramework><AssemblyName>FloorShaderOracle.Native</AssemblyName><LangVersion>latest</LangVersion><UseSharedCompilation>false</UseSharedCompilation></PropertyGroup><ItemGroup><Compile Include="../disc-motion-native/JsonSerializer.cs"/></ItemGroup></Project>

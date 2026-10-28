@@ -75,6 +75,11 @@ func flush_updates()->void:
 	pending_updates.clear()
 	update_microseconds+=Time.get_ticks_usec()-started
 
+func tag_area(polygon:PackedVector2Array)->void:
+	if polygon.is_empty():return
+	if pending_updates.size()>=512:flush_updates()
+	pending_updates.append(preload("res://core/original_navigation_updates.gd").tag_update(polygon))
+
 func recreate_invalid_paths(ais:Array)->void:
 	if not recreate_paths or not pending_updates.is_empty():return
 	recreate_paths=false

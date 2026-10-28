@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-28T02:50:05.235147+00:00",
+  "tested_export_manifest": "floor-hazards-browser-tested-build.json",
+  "cases": [
+    {
+      "name": "falling2",
+      "checks": [
+        "load",
+        "floor cracking and collapse",
+        "fall death",
+        "next round reset",
+        "keyboard movement/throw",
+        "pause/resume"
+      ],
+      "log": "floor-falling2-browser-log.json",
+      "log_sha256": "da64938f09c5d5aa9f9e61179df01c8916e4103ee9d397344acaa98719c02345",
+      "log_entries": 971,
+      "errors": []
+    },
+    {
+      "name": "courtyard",
+      "checks": [
+        "load",
+        "keyboard controls",
+        "two-bot disc kill; no trap contact observed"
+      ],
+      "log": "floor-courtyard-browser-log.json",
+      "log_sha256": "24d615ad48f8c2d3ed5cd19ac63f5d9e9e65044f796ffac476704a3be268abbc",
+      "log_entries": 226,
+      "errors": []
+    },
+    {
+      "name": "trap-maze",
+      "checks": [
+        "load",
+        "two- and six-bot rounds",
+        "trap cracking and sinking",
+        "navigation rescan events; round ended before rise was observed"
+      ],
+      "log": "floor-trap-maze-browser-log.json",
+      "log_sha256": "63c7133de0fb58e65d4464b277aa76dc232d44b6899944eb297acab4ce876213",
+      "log_entries": 630,
+      "errors": []
+    }
+  ],
+  "limits": [
+    "Browser trap recovery was not observed before the round ended; recovery is covered by native-state and scene tests.",
+    "Water/background and some obstacles are visually incomplete.",
+    "No claim of complete original rendering/audio or scheduling parity."
+  ]
+}

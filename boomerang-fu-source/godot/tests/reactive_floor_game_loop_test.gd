@@ -11,7 +11,10 @@ func run() -> void:
 	var local := Vector3(-8,0,0)
 	var start: Vector3 = floor.node.global_transform * local
 	game.actors[0].position = Vector2(start.x,start.y)
-	game.actors[1].position = Vector2(18.56155,-21.56155)
+	# Keep the passive observer on the raft interior: the old shore position
+	# is a trap tile and now correctly sinks, ending the round prematurely.
+	var observer: Vector3 = floor.node.global_transform * Vector3(-6,0,0)
+	game.actors[1].position = Vector2(observer.x,observer.y)
 	var maximum_error := 0.0; var remained_alive := true
 	for tick in 1250:
 		if tick == 60 or tick == 620: floors.toggle_reactive(floor)
@@ -20,12 +23,14 @@ func run() -> void:
 		maximum_error = maxf(maximum_error,game.actors[0].position.distance_to(Vector2(expected.x,expected.y)))
 		remained_alive = remained_alive and game.actors[0].state == OriginalActorMotion.State.ALIVE
 	check("central rider survives full outward and return journey",remained_alive)
+	check("passive observer survives the journey",game.actors[1].state == OriginalActorMotion.State.ALIVE)
 	check("full game loop preserves platform-local rider position",maximum_error < 0.002,maximum_error)
 	check("platform finishes its return and retains rider",floor.node.transform.is_equal_approx(floor.initial) and int(floor.state)==0 and game.actor_environments[0].parent_kind==1)
 	game.reset_motions(true)
 	start = floor.node.global_transform * Vector3(-8,12,0)
 	game.actors[0].position = Vector2(start.x,start.y)
-	game.actors[1].position = Vector2(18.56155,-21.56155)
+	observer = floor.node.global_transform * Vector3(-8,0,0)
+	game.actors[1].position = Vector2(observer.x,observer.y)
 	var roller_contact_tick := -1; var fall_tick := -1
 	for tick in 650:
 		if tick == 60: floors.toggle_reactive(floor)

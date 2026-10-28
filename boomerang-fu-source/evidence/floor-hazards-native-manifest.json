@@ -1,0 +1,9 @@
+{
+  "assembly_sha256": "05051a24d91e4d779578a9a71795441663fd76d615e9621d48059c2237949ec2",
+  "fixture_sha256": "a8ac5362c978592646993d199ca459efcaeac174cfc4acc3848ab7446f627b5a",
+  "cases": 21,
+  "samples": 17005,
+  "collapse_cases": 14,
+  "collapse_samples": 14000,
+  "scope": "Original UnityPlayer Transform/Physics2D/Random/Mathf; unchanged recovered floor method bodies with explicit frame time and presentation/service adapters"
+}

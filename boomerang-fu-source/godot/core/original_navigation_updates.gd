@@ -77,6 +77,10 @@ static func apply(grid:OriginalNavigation,world:OriginalCollisionWorld,update:Di
 	for index in cells(original,grid):
 		var p:Vector3=grid.positions[index]
 		if p.x<minimum.x or p.y<minimum.y or p.z<minimum.z or p.x>maximum.x or p.y>maximum.y or p.z>maximum.z:continue
+		if update.has("polygon"):
+			var forward:Vector3=update.shape_forward
+			var local:=Vector2(p.x,C.f32(p.dot(forward)/forward.length_squared()))
+			if not contains_convex(update.polygon,local):continue
 		if walkability>=0:grid.walkable[index]=walkability
 		if tag>=0:grid.tags[index]=tag
 		grid.base_penalties[index]+=int(update.get("add_penalty",0))
@@ -85,6 +89,29 @@ static func apply(grid:OriginalNavigation,world:OriginalCollisionWorld,update:Di
 		for index in cells(affected,grid):reconnect(grid,index,bool(settings.cut_corners))
 		grid.areas_dirty=true
 	return {"updated":updated,"physics_rect":physics,"affected_rect":affected}
+
+static func contains_convex(polygon:PackedVector2Array,p:Vector2)->bool:
+	var sign_value:=0.0
+	for i in polygon.size():
+		var a:=polygon[i];var b:=polygon[(i+1)%polygon.size()]
+		var cross_value:=(b-a).cross(p-a)
+		if cross_value==0.0:return false
+		if sign_value==0.0:sign_value=signf(cross_value)
+		elif signf(cross_value)!=sign_value:return false
+	return true
+
+static func tag_update(polygon:PackedVector2Array)->Dictionary:
+	# Serialized LevelManager X rotation is (-.7071068287, 0, 0, .7071068287).
+	# Keep its original non-unit float matrix: normalizing it changes edge tags.
+	var q:=C.f32(0.7071068286895752);var a:=C.f32(q*C.f32(q*2.0))
+	var up:=Vector3(0,C.f32(1.0-a),-a);var forward:=Vector3(0,a,C.f32(1.0-a))
+	var low:=Vector3(INF,INF,INF);var high:=-low
+	for p in polygon:
+		var base:=Vector3.RIGHT*p.x+forward*p.y
+		for extent in [-0.5,0.5]:
+			var point:Vector3=base+up*float(extent);low=low.min(point);high=high.max(point)
+	var center:=(low+high)*0.5;var size:=high-low
+	return {"bounds":{"center":[center.x,center.y,center.z],"size":[size.x,size.y,size.z]},"mask":-1,"physics":false,"tag":1,"polygon":polygon,"shape_forward":forward}
 
 static func reconnect(grid:OriginalNavigation,index:int,cut_corners:bool)->void:
 	var bits:=0

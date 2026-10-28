@@ -1,0 +1,7 @@
+{
+  "source_sha256": "8e37abcc9eb6ce739b3cfbf2628891b9ed8cf5130f37e4baa56820e06ecea558",
+  "init_fragment_sha256": "899e78b2960c844abbdc007881fd43ebfcc5cea56169ff2e7bcbbd42d96476be",
+  "update_fragment_sha256": "09d3986b25a56370897cfb02147bc75cb0361b10d2a0c96041b140e9fe276c60",
+  "body_edits": false,
+  "scope": "Original Level.Init floor playlist block and first two Level.Update collapse blocks; original FallingFloor type name retained by a subclass of its extracted implementation."
+}

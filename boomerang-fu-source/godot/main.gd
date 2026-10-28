@@ -26,6 +26,7 @@ var ground_queries := OriginalGroundQueries.new()
 var collision_world := OriginalCollisionWorld.new()
 const Level3Behaviors = preload("res://core/original_level3_behaviors.gd")
 var level_behaviors = Level3Behaviors.new()
+var floor_hazards = preload("res://core/original_floor_hazards.gd").new()
 var movement_enabled := true
 var movement_toggle: CheckButton
 var physics_accumulator := 0.0
@@ -106,10 +107,13 @@ func _ready() -> void:
 	var behavior_path := ROOT + scene_key + "/behaviors.json"
 	if FileAccess.file_exists(behavior_path):
 		level_behaviors.initialize(read_json(behavior_path), nodes, collision_world, decoys.rng)
+		var floor_inputs:=read_json(ROOT+"floor-inputs.json")
+		floor_hazards.initialize(read_json(behavior_path),nodes,collision_world,decoys.rng,floor_inputs.get(scene_key,{}),scene_materials)
 	navigation_world.bind_moving_floors(level_behaviors.moving_floors)
 	navigation_world.collision=weakref(collision_world)
 	level_behaviors.navigation=weakref(navigation_world)
 	level_behaviors.moving_floors.navigation=weakref(navigation_world)
+	floor_hazards.navigation=weakref(navigation_world)
 	ground_queries.world = collision_world
 	ground_queries.water_mask = 16 # Original serialized Water layer (index 4).
 	create_characters()
@@ -195,6 +199,7 @@ func create_characters() -> void:
 func reset_motions(new_match := true) -> void:
 	decoys.navigation.reset_grids()
 	if level_behaviors.initialized: level_behaviors.reset()
+	floor_hazards.reset()
 	if decoys.world!=null:decoys.reset_round()
 	for item in decoy_views.values():item.root.queue_free()
 	decoy_views.clear()
@@ -221,7 +226,7 @@ func reset_motions(new_match := true) -> void:
 		for actor in actors: saved_control_time.append(actor.time_controlling_disc)
 	for explosion in explosions: explosion.view.queue_free()
 	explosions.clear()
-	for disc in flying_discs: disc.view.queue_free()
+	for disc in flying_discs: disc.view.retire()
 	flying_discs.clear()
 	weapons.clear()
 	player_inputs.clear()
@@ -403,6 +408,9 @@ func update_movement(scaled_delta: float) -> void:
 				previous_rotations[index] += level_behaviors.moving_floors.rotation_delta(environment.parent_floor)
 			level_behaviors.moving_floors.update_actor(environment)
 		level_behaviors.moving_floors.update_discs(flying_discs)
+		var floor_actors:Array=actors.duplicate()
+		for item in decoys.members.values():floor_actors.append(item.actor)
+		floor_hazards.fixed_contacts(floor_actors,ground_queries,true)
 		collision_world.sync_actors()
 		physics_accumulator -= actors[0].fixed_delta
 		steps += 1
@@ -558,7 +566,7 @@ func cleanup_inactive_discs() -> void:
 	for item in flying_discs:
 		if not item.motion.active:
 			if item.camera_tracked: camera_rig.remove_target("disc_%d" % item.motion.get_instance_id(),Vector3(item.motion.position.x,item.motion.position.y,item.motion.source_z))
-			item.view.queue_free()
+			item.view.retire()
 	flying_discs = flying_discs.filter(func(item: Dictionary) -> bool: return item.motion.active)
 
 func consume_environment_events(index: int) -> void:
@@ -623,6 +631,7 @@ func consume_book_events() -> void:
 		elif event.type == "book_collected":
 			audio.play("event:/powerups/collect_power",actors[event.actor].position)
 			book_views[event.id].collect()
+		elif event.type == "book_fell":audio.play("event:/powerups/destroy_power",event.position)
 		elif event.type == "book_removed":
 			camera_rig.remove_target("book_%d" % event.id,book_views[event.id].position,0.5)
 			book_views[event.id].queue_free()
@@ -1119,6 +1128,19 @@ func consume_power_events() -> void:
 			elif event.type == "multidisc_burst": print("BF_MULTIDISC_BURST " + JSON.stringify({"actor":weapons.find(weapon),"count":event.count,"tick":simulated_ticks}))
 		weapon.powers.events.clear()
 
+func consume_floor_events()->void:
+	for event in floor_hazards.events:
+		var item:Dictionary=floor_hazards.floors[event.floor]
+		if event.type.begins_with("event:") and event.type!="event:/environment/floor_cracking":audio.play(event.type,event.position,{},event.source_z)
+		elif event.type=="powerups":powerup_world.fall_touching(floor_hazards.root_polygon(item))
+		elif event.type=="extinguish":
+			for key in cell_grid.entries:
+				if cell_grid.entries[key].type!=OriginalCellGrid.CellType.NONE and floor_hazards.contains(item,cell_grid.world_position(key)):cell_grid.deregister(key)
+		elif event.type=="remove_decals":cell_preview.decals=cell_preview.decals.filter(func(d):return not floor_hazards.contains(item,d.position))
+		elif event.type=="release_children":floor_hazards.release_children(item,level_behaviors)
+		print("BF_FLOOR_EVENT "+JSON.stringify(event))
+	floor_hazards.events.clear()
+
 func _process(delta: float) -> void:
 	if shell != null:
 		shell.frame(delta)
@@ -1136,6 +1158,8 @@ func _process(delta: float) -> void:
 		decoys.navigation.enabled=not bots.members.is_empty() or not decoys.members.is_empty()
 		cell_grid.current_time = clock.time_counter
 		update_movement(scaled_delta)
+		floor_hazards.frame_step(scaled_delta,true,actors.filter(func(a):return a.state!=OriginalActorMotion.State.DEAD).size(),actors[0].fixed_delta)
+		consume_floor_events()
 		level_behaviors.frame_step(scaled_delta)
 		decoys.navigation.flush_updates()
 		var ais:Array=bots.members.values()

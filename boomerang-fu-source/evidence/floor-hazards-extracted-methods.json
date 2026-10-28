@@ -1,0 +1,24 @@
+{
+  "body_edits": false,
+  "classes": {
+    "TrapFloor": {
+      "source_sha256": "a6569d7f7764dd9922b17120de7b5c46b059fff2cda87fe810a85e4192fce016",
+      "method_bodies": {
+        "Start": "55e6b10ffbcb8c0bbb6fc09ccff827f68986b1d7e00f62b3c7eca1e8bfb2cc67",
+        "Update": "6b258bcb5ebec79d5c338d485e3fd64b65d3fadd17c4578b7bc8edb26ef37f5c",
+        "StartFalling": "07d9a3e38bbdad241a289636d974adc7f38c5171f4c49356355a4e636062a0b8",
+        "OnDisable": "55055715c310f2335dac28b0301827a80bc58d56847eb2f77ce1fc04e5ce564f"
+      }
+    },
+    "FallingFloor": {
+      "source_sha256": "82a317643a72a2bf36737874385063599cafd38be777ebd57447864d31304507",
+      "method_bodies": {
+        "Start": "7d4dcc3844fe889db6c76092835028f7937b8b5671dbe17585803d01894e5cee",
+        "Update": "9dd6bdb3c62ed432930faa820044ad2438ed58750a15b76d22b3bc8d2236cbb9",
+        "StartFalling": "febbf552ec2771be6b39e536c9e1f919b3604127020bce711c244ae5f79139d7",
+        "OnDisable": "8913fcc222c0667fc482afb5f99e00f9970b87c531b0d3d386818cbe9dbe2bc6"
+      }
+    }
+  },
+  "adapters": "Explicit frame delta; material, sound, navigation and secondary effect collaborators. Unity Transform, Physics2D, Random and Mathf remain native."
+}

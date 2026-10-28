@@ -1,0 +1,68 @@
+{
+  "sharedassets14.assets_2": {
+    "shader": "UU/Unlit/Shadow_TopMapped_Masked_Flash",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets14.assets_10.png",
+          "sha256": "f845cdfe11945b743f533aadeaed3b2b537b76bae7a55cf965136c189e3fa40e"
+        }
+      },
+      "_TileTex": {
+        "scale": [
+          0.019999999552965164,
+          0.05000000074505806
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets14.assets_11.png",
+          "sha256": "aaf0eb0869433670051476b465dbb55aed959cb5697134f35d60ea44329ce5a3"
+        }
+      }
+    }
+  },
+  "sharedassets40.assets_7": {
+    "shader": "UU/Unlit/Shadow_TopMapped_Masked_Flash",
+    "textures": {
+      "_MainTex": {
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets40.assets_17.png",
+          "sha256": "19f1796013af85a5d308623215917eb1e41d9248a3cd27c0100e9b6b69891e51"
+        }
+      },
+      "_TileTex": {
+        "scale": [
+          0.019999999552965164,
+          0.05000000074505806
+        ],
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "texture": {
+          "path": "shader-textures/sharedassets40.assets_11.png",
+          "sha256": "cc0e62fd9ca40218d885b2f6188f40709b5ee3dc3355ef8a865bad5e8098fb4e"
+        }
+      }
+    }
+  }
+}

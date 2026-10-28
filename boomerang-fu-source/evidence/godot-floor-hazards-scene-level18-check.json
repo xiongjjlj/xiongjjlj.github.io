@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bound": 98,
+        "expected": 98
+      },
+      "name": "every enabled floor is bound",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "level scheduler activates floors",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "fire exists before floor sinks",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "sinking removes floor collision",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "original renderer hierarchy moves",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "falling ground removes overlapping powerup",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "falling ground removes decals",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "falling ground extinguishes fire",
+      "passed": true
+    },
+    {
+      "details": {
+        "maximum_queue": 1,
+        "updates": 36
+      },
+      "name": "floor changes rescan navigation",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "collapsed floor remains hidden",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "round reset restores floor state and visuals",
+      "passed": true
+    }
+  ],
+  "map": "level18",
+  "passed": true,
+  "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+}

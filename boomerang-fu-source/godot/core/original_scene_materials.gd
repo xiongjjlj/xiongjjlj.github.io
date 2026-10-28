@@ -12,6 +12,8 @@ var wave_materials: Array[ShaderMaterial] = []
 func initialize(asset_root: String) -> void:
 	root = asset_root
 	inputs = JSON.parse_string(FileAccess.get_file_as_string(root + "shader-inputs.json"))
+	if FileAccess.file_exists(root+"floor-materials.json"):
+		inputs.merge(JSON.parse_string(FileAccess.get_file_as_string(root+"floor-materials.json")),true)
 	lighting = JSON.parse_string(FileAccess.get_file_as_string(root + "lighting-inputs.json"))
 
 func color_value(data: Dictionary, property: String, fallback: Color) -> Color:
@@ -55,16 +57,18 @@ func make(id: String, data: Dictionary) -> ShaderMaterial:
 	material.set_shader_parameter("source_shadow", Vector3(shadow.r, shadow.g, shadow.b))
 	material.set_shader_parameter("source_has_grain", "Grain" in kind)
 	material.set_shader_parameter("source_has_ramp", kind.begins_with("Toon/"))
+	material.set_shader_parameter("source_has_topmapped", kind=="UU/Unlit/Shadow_TopMapped_Masked_Flash")
+	material.set_shader_parameter("source_flash",color_value(data,"_FlashColor",Color(0,0,0,0)))
 	material.set_shader_parameter("source_cutout", cutout)
 	material.set_shader_parameter("source_plain_cutout", plain)
 	material.set_shader_parameter("source_cutoff", data.floats.get("_Cutoff", 0.5))
 	material.set_shader_parameter("source_height_fog", "Heightfog" in kind)
 	material.set_shader_parameter("source_fog_depth", Vector2(data.floats.get("_FogMinDepth", 0.0), data.floats.get("_FogMaxDepth", 1.0)))
-	for pair in [["_MainTex", "source_main"], ["_GrainTex", "source_grain"], ["_Ramp", "source_ramp"], ["_NoiseTex", "source_noise"]]:
+	for pair in [["_MainTex", "source_main"], ["_GrainTex", "source_grain"], ["_Ramp", "source_ramp"], ["_NoiseTex", "source_noise"], ["_TileTex","source_tile"]]:
 		if not source.textures.has(pair[0]): continue
 		var texture: Dictionary = source.textures[pair[0]]
 		if texture.texture != null and texture.texture.has("path"): material.set_shader_parameter(pair[1], load(root + texture.texture.path))
-		if pair[0] in ["_MainTex", "_GrainTex"]:
+		if pair[0] in ["_MainTex", "_GrainTex","_TileTex"]:
 			material.set_shader_parameter(pair[1] + "_st", Vector4(texture.scale[0], texture.scale[1], texture.offset[0], texture.offset[1]))
 	materials.append(material)
 	return material

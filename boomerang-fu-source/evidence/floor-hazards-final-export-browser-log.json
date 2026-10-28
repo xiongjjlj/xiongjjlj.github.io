@@ -1,0 +1,3005 @@
+{
+  "logs": [
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2331,\"object_id\":383,\"position\":\"(26.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:39.858Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2331,\"object_id\":383,\"position\":\"(26.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:39.858Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2331,\"object_id\":383,\"position\":\"(26.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:39.858Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2331,\"object_id\":383,\"position\":\"(26.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:39.858Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2331,\"object_id\":383,\"position\":\"(26.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:39.858Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:39.864Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2331\"}",
+      "timestamp": "2026-10-28T02:50:39.864Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2276,\"object_id\":330,\"position\":\"(6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:39.877Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2276,\"object_id\":330,\"position\":\"(6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:39.877Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2276\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:39.879Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2316,\"object_id\":368,\"position\":\"(22.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:39.895Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2346,\"object_id\":367,\"position\":\"(6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:39.923Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2346,\"object_id\":367,\"position\":\"(6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:39.923Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2346,\"object_id\":367,\"position\":\"(6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:39.923Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2346,\"object_id\":367,\"position\":\"(6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:39.924Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2346,\"object_id\":367,\"position\":\"(6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:39.924Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2346,\"object_id\":367,\"position\":\"(6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:39.924Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:39.930Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2346\"}",
+      "timestamp": "2026-10-28T02:50:39.930Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2268,\"object_id\":333,\"position\":\"(14.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:39.944Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2268,\"object_id\":333,\"position\":\"(14.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:39.944Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2268\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:39.946Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2336,\"object_id\":347,\"position\":\"(26.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:39.959Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2238,\"object_id\":246,\"position\":\"(24.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:39.991Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2238,\"object_id\":246,\"position\":\"(24.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:39.991Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2238,\"object_id\":246,\"position\":\"(24.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:39.991Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2238,\"object_id\":246,\"position\":\"(24.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:39.991Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2238,\"object_id\":246,\"position\":\"(24.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:39.991Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2238,\"object_id\":246,\"position\":\"(24.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:39.991Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.003Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2238\"}",
+      "timestamp": "2026-10-28T02:50:40.003Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2272,\"object_id\":325,\"position\":\"(14.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.024Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2272,\"object_id\":325,\"position\":\"(14.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.024Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2272\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.026Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2323,\"object_id\":378,\"position\":\"(22.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.039Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2240,\"object_id\":248,\"position\":\"(16.0, 10.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.057Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2240,\"object_id\":248,\"position\":\"(16.0, 10.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.058Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2240,\"object_id\":248,\"position\":\"(16.0, 10.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.058Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2240,\"object_id\":248,\"position\":\"(16.0, 10.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.058Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2240,\"object_id\":248,\"position\":\"(16.0, 10.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.058Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2240,\"object_id\":248,\"position\":\"(16.0, 10.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.058Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.070Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2240\"}",
+      "timestamp": "2026-10-28T02:50:40.070Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:50:40.101Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2349,\"object_id\":357,\"position\":\"(10.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.108Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2349,\"object_id\":357,\"position\":\"(10.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.108Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2349\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.110Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2328,\"object_id\":382,\"position\":\"(14.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.116Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2344,\"object_id\":363,\"position\":\"(10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.132Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2344,\"object_id\":363,\"position\":\"(10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.155Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2344,\"object_id\":363,\"position\":\"(10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.155Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2344,\"object_id\":363,\"position\":\"(10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.155Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2344,\"object_id\":363,\"position\":\"(10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.155Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2344,\"object_id\":363,\"position\":\"(10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.163Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.163Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2344\"}",
+      "timestamp": "2026-10-28T02:50:40.164Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2351,\"object_id\":355,\"position\":\"(18.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.194Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2273,\"object_id\":326,\"position\":\"(-22.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.194Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2273,\"object_id\":326,\"position\":\"(-22.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.194Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2273\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.195Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2327,\"object_id\":380,\"position\":\"(22.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.204Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2327,\"object_id\":380,\"position\":\"(22.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.204Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2327,\"object_id\":380,\"position\":\"(22.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.204Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2327,\"object_id\":380,\"position\":\"(22.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.204Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2327,\"object_id\":380,\"position\":\"(22.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.204Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2327,\"object_id\":380,\"position\":\"(22.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.204Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.211Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2327\"}",
+      "timestamp": "2026-10-28T02:50:40.211Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2310,\"object_id\":316,\"position\":\"(-6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.256Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2310,\"object_id\":316,\"position\":\"(-6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.256Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2293,\"object_id\":313,\"position\":\"(22.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.256Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2310\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.259Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2285,\"object_id\":342,\"position\":\"(18.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.274Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2285,\"object_id\":342,\"position\":\"(18.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.274Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2285,\"object_id\":342,\"position\":\"(18.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.275Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2285,\"object_id\":342,\"position\":\"(18.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.275Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2285,\"object_id\":342,\"position\":\"(18.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.275Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2285,\"object_id\":342,\"position\":\"(18.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.275Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.281Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2285\"}",
+      "timestamp": "2026-10-28T02:50:40.281Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2279,\"object_id\":346,\"position\":\"(10.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.315Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2271,\"object_id\":324,\"position\":\"(6.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.324Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2271,\"object_id\":324,\"position\":\"(6.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.324Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2271\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.326Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2304,\"object_id\":321,\"position\":\"(22.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.341Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2304,\"object_id\":321,\"position\":\"(22.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.341Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2304,\"object_id\":321,\"position\":\"(22.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.341Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2304,\"object_id\":321,\"position\":\"(22.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.341Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2304,\"object_id\":321,\"position\":\"(22.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.341Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2304,\"object_id\":321,\"position\":\"(22.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.341Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.348Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2304\"}",
+      "timestamp": "2026-10-28T02:50:40.348Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2247,\"object_id\":255,\"position\":\"(24.0, 2.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.384Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2320,\"object_id\":387,\"position\":\"(-18.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.398Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2320,\"object_id\":387,\"position\":\"(-18.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.398Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2320\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.401Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:50:40.410Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2266,\"object_id\":332,\"position\":\"(22.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.415Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2266,\"object_id\":332,\"position\":\"(22.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.415Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2266,\"object_id\":332,\"position\":\"(22.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.415Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2266,\"object_id\":332,\"position\":\"(22.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.416Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2266,\"object_id\":332,\"position\":\"(22.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.416Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2266,\"object_id\":332,\"position\":\"(22.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.416Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.422Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2266\"}",
+      "timestamp": "2026-10-28T02:50:40.422Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2290,\"object_id\":308,\"position\":\"(14.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.458Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2299,\"object_id\":307,\"position\":\"(-10.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.474Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2299,\"object_id\":307,\"position\":\"(-10.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.474Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2299\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.476Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2288,\"object_id\":340,\"position\":\"(6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.492Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2288,\"object_id\":340,\"position\":\"(6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.492Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2288,\"object_id\":340,\"position\":\"(6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.493Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2288,\"object_id\":340,\"position\":\"(6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.493Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2288,\"object_id\":340,\"position\":\"(6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.493Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2288,\"object_id\":340,\"position\":\"(6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.493Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.499Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2288\"}",
+      "timestamp": "2026-10-28T02:50:40.499Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2334,\"object_id\":353,\"position\":\"(26.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.536Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2322,\"object_id\":388,\"position\":\"(-14.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.551Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2322,\"object_id\":388,\"position\":\"(-14.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.551Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2322\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.554Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2321,\"object_id\":386,\"position\":\"(10.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.566Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2321,\"object_id\":386,\"position\":\"(10.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.567Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2321,\"object_id\":386,\"position\":\"(10.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.567Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2321,\"object_id\":386,\"position\":\"(10.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.567Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2321,\"object_id\":386,\"position\":\"(10.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.567Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2321,\"object_id\":386,\"position\":\"(10.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.567Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.573Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2321\"}",
+      "timestamp": "2026-10-28T02:50:40.573Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2331,\"object_id\":383,\"position\":\"(26.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.609Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2243,\"object_id\":251,\"position\":\"(0.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.615Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2243,\"object_id\":251,\"position\":\"(0.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.615Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2243\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.618Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2307,\"object_id\":315,\"position\":\"(-6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.641Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2307,\"object_id\":315,\"position\":\"(-6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.641Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2307,\"object_id\":315,\"position\":\"(-6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.641Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2307,\"object_id\":315,\"position\":\"(-6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.641Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2307,\"object_id\":315,\"position\":\"(-6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.641Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2307,\"object_id\":315,\"position\":\"(-6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.641Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.648Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2307\"}",
+      "timestamp": "2026-10-28T02:50:40.648Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2346,\"object_id\":367,\"position\":\"(6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.687Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2274,\"object_id\":327,\"position\":\"(-26.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.694Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2274,\"object_id\":327,\"position\":\"(-26.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.694Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2274\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.697Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2286,\"object_id\":341,\"position\":\"(-10.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.718Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2286,\"object_id\":341,\"position\":\"(-10.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.718Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2286,\"object_id\":341,\"position\":\"(-10.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.718Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2286,\"object_id\":341,\"position\":\"(-10.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.718Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2286,\"object_id\":341,\"position\":\"(-10.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.718Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2286,\"object_id\":341,\"position\":\"(-10.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.718Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.725Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2286\"}",
+      "timestamp": "2026-10-28T02:50:40.725Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:50:40.746Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2238,\"object_id\":246,\"position\":\"(24.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.753Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2291,\"object_id\":309,\"position\":\"(10.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.760Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2291,\"object_id\":309,\"position\":\"(10.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.760Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2291\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.762Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2309,\"object_id\":317,\"position\":\"(-14.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.781Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2309,\"object_id\":317,\"position\":\"(-14.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.782Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2309,\"object_id\":317,\"position\":\"(-14.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.782Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2309,\"object_id\":317,\"position\":\"(-14.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.782Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2309,\"object_id\":317,\"position\":\"(-14.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.782Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2309,\"object_id\":317,\"position\":\"(-14.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.782Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.789Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2309\"}",
+      "timestamp": "2026-10-28T02:50:40.789Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2240,\"object_id\":248,\"position\":\"(16.0, 10.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.811Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2311,\"object_id\":371,\"position\":\"(6.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.834Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2311,\"object_id\":371,\"position\":\"(6.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.834Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2311\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.837Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2297,\"object_id\":304,\"position\":\"(18.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.858Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2297,\"object_id\":304,\"position\":\"(18.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.858Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2297,\"object_id\":304,\"position\":\"(18.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.858Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2297,\"object_id\":304,\"position\":\"(18.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.858Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2297,\"object_id\":304,\"position\":\"(18.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.858Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2297,\"object_id\":304,\"position\":\"(18.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.859Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.865Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2297\"}",
+      "timestamp": "2026-10-28T02:50:40.865Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2344,\"object_id\":363,\"position\":\"(10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.886Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2317,\"object_id\":370,\"position\":\"(-22.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.908Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2317,\"object_id\":370,\"position\":\"(-22.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.908Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2317\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.910Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2305,\"object_id\":323,\"position\":\"(14.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.932Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2305,\"object_id\":323,\"position\":\"(14.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.932Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2305,\"object_id\":323,\"position\":\"(14.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.932Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2305,\"object_id\":323,\"position\":\"(14.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.932Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2305,\"object_id\":323,\"position\":\"(14.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.932Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2305,\"object_id\":323,\"position\":\"(14.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.932Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:40.939Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2305\"}",
+      "timestamp": "2026-10-28T02:50:40.939Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2327,\"object_id\":380,\"position\":\"(22.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:40.958Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2244,\"object_id\":252,\"position\":\"(8.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.981Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2244,\"object_id\":252,\"position\":\"(8.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:40.981Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2244\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:40.984Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2337,\"object_id\":349,\"position\":\"(18.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:40.998Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2337,\"object_id\":349,\"position\":\"(18.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:40.998Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2337,\"object_id\":349,\"position\":\"(18.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:40.998Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2337,\"object_id\":349,\"position\":\"(18.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:40.998Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2337,\"object_id\":349,\"position\":\"(18.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:40.998Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2337,\"object_id\":349,\"position\":\"(18.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:40.998Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.004Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2337\"}",
+      "timestamp": "2026-10-28T02:50:41.004Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2285,\"object_id\":342,\"position\":\"(18.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.026Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2339,\"object_id\":348,\"position\":\"(-6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.057Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2339,\"object_id\":348,\"position\":\"(-6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.057Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:50:41.059Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2339\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.059Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2282,\"object_id\":337,\"position\":\"(18.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.064Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2282,\"object_id\":337,\"position\":\"(18.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.064Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2282,\"object_id\":337,\"position\":\"(18.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.065Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2282,\"object_id\":337,\"position\":\"(18.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.065Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2282,\"object_id\":337,\"position\":\"(18.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.065Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2282,\"object_id\":337,\"position\":\"(18.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.065Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.071Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2282\"}",
+      "timestamp": "2026-10-28T02:50:41.071Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2304,\"object_id\":321,\"position\":\"(22.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.098Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2312,\"object_id\":372,\"position\":\"(-18.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.133Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2312,\"object_id\":372,\"position\":\"(-18.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.133Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2312\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.135Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2325,\"object_id\":379,\"position\":\"(6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.141Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2325,\"object_id\":379,\"position\":\"(6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.141Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2325,\"object_id\":379,\"position\":\"(6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.141Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2325,\"object_id\":379,\"position\":\"(6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.141Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2325,\"object_id\":379,\"position\":\"(6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.141Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2325,\"object_id\":379,\"position\":\"(6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.141Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.147Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2325\"}",
+      "timestamp": "2026-10-28T02:50:41.147Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2266,\"object_id\":332,\"position\":\"(22.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.174Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2298,\"object_id\":306,\"position\":\"(-26.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.207Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2298,\"object_id\":306,\"position\":\"(-26.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.207Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2298\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.209Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2269,\"object_id\":334,\"position\":\"(18.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.216Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2269,\"object_id\":334,\"position\":\"(18.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.216Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2269,\"object_id\":334,\"position\":\"(18.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.216Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2269,\"object_id\":334,\"position\":\"(18.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.216Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2269,\"object_id\":334,\"position\":\"(18.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.216Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2269,\"object_id\":334,\"position\":\"(18.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.216Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.221Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2269\"}",
+      "timestamp": "2026-10-28T02:50:41.222Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2288,\"object_id\":340,\"position\":\"(6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.248Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2329,\"object_id\":381,\"position\":\"(-10.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.281Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2329,\"object_id\":381,\"position\":\"(-10.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.281Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2329\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.283Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2270,\"object_id\":335,\"position\":\"(10.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.294Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2270,\"object_id\":335,\"position\":\"(10.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.294Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2270,\"object_id\":335,\"position\":\"(10.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.294Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2270,\"object_id\":335,\"position\":\"(10.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.294Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2270,\"object_id\":335,\"position\":\"(10.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.294Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2270,\"object_id\":335,\"position\":\"(10.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.294Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.301Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2270\"}",
+      "timestamp": "2026-10-28T02:50:41.301Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2321,\"object_id\":386,\"position\":\"(10.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.320Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2315,\"object_id\":375,\"position\":\"(-14.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.349Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2315,\"object_id\":375,\"position\":\"(-14.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.349Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2315\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.351Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2242,\"object_id\":250,\"position\":\"(16.0, -2.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.356Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2242,\"object_id\":250,\"position\":\"(16.0, -2.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.356Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2242,\"object_id\":250,\"position\":\"(16.0, -2.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.356Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2242,\"object_id\":250,\"position\":\"(16.0, -2.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.356Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2242,\"object_id\":250,\"position\":\"(16.0, -2.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.356Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2242,\"object_id\":250,\"position\":\"(16.0, -2.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.356Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.367Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2242\"}",
+      "timestamp": "2026-10-28T02:50:41.367Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:50:41.389Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2307,\"object_id\":315,\"position\":\"(-6.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.393Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2319,\"object_id\":385,\"position\":\"(6.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.423Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2319,\"object_id\":385,\"position\":\"(6.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.423Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2348,\"object_id\":365,\"position\":\"(-22.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.423Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2348,\"object_id\":365,\"position\":\"(-22.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.423Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2348,\"object_id\":365,\"position\":\"(-22.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.423Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2348,\"object_id\":365,\"position\":\"(-22.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.423Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2348,\"object_id\":365,\"position\":\"(-22.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.423Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2348,\"object_id\":365,\"position\":\"(-22.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.423Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.430Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2319\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.430Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2348\"}",
+      "timestamp": "2026-10-28T02:50:41.430Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2286,\"object_id\":341,\"position\":\"(-10.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.465Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2295,\"object_id\":302,\"position\":\"(-6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.489Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2295,\"object_id\":302,\"position\":\"(-6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.489Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2295,\"object_id\":302,\"position\":\"(-6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.489Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2295,\"object_id\":302,\"position\":\"(-6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.490Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2295,\"object_id\":302,\"position\":\"(-6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.490Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2295,\"object_id\":302,\"position\":\"(-6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.490Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.495Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2295\"}",
+      "timestamp": "2026-10-28T02:50:41.495Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2333,\"object_id\":352,\"position\":\"(6.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.501Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2333,\"object_id\":352,\"position\":\"(6.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.502Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2333\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.504Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2309,\"object_id\":317,\"position\":\"(-14.0, 20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.532Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2318,\"object_id\":369,\"position\":\"(-18.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.557Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2318,\"object_id\":369,\"position\":\"(-18.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.557Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2318,\"object_id\":369,\"position\":\"(-18.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.557Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2318,\"object_id\":369,\"position\":\"(-18.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.557Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2318,\"object_id\":369,\"position\":\"(-18.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.557Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2318,\"object_id\":369,\"position\":\"(-18.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.557Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.563Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2318\"}",
+      "timestamp": "2026-10-28T02:50:41.563Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2313,\"object_id\":374,\"position\":\"(6.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.575Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2313,\"object_id\":374,\"position\":\"(6.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.575Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2313\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.578Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2297,\"object_id\":304,\"position\":\"(18.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.607Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2301,\"object_id\":319,\"position\":\"(-10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.640Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2301,\"object_id\":319,\"position\":\"(-10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.640Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2301,\"object_id\":319,\"position\":\"(-10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.640Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2301,\"object_id\":319,\"position\":\"(-10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.640Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2301,\"object_id\":319,\"position\":\"(-10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.640Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2301,\"object_id\":319,\"position\":\"(-10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.640Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.646Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2301\"}",
+      "timestamp": "2026-10-28T02:50:41.646Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2292,\"object_id\":311,\"position\":\"(-22.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.653Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2292,\"object_id\":311,\"position\":\"(-22.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.653Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2292\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.656Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2305,\"object_id\":323,\"position\":\"(14.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.684Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:50:41.701Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2324,\"object_id\":377,\"position\":\"(-14.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.706Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2324,\"object_id\":377,\"position\":\"(-14.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.706Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2324,\"object_id\":377,\"position\":\"(-14.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.706Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2324,\"object_id\":377,\"position\":\"(-14.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.707Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2324,\"object_id\":377,\"position\":\"(-14.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.707Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2324,\"object_id\":377,\"position\":\"(-14.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.707Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.712Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2324\"}",
+      "timestamp": "2026-10-28T02:50:41.713Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2237,\"object_id\":245,\"position\":\"(0.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.718Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2237,\"object_id\":245,\"position\":\"(0.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.718Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2237\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.721Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2337,\"object_id\":349,\"position\":\"(18.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.748Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DiscSpin\",\"missing\":[],\"model\":\"Disc\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T02:50:41.757Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_THROW {\"actor\":1,\"aim\":0.0,\"position\":[-5.66164541244507,-5.43157720565796],\"spin\":0.0,\"tick\":286}",
+      "timestamp": "2026-10-28T02:50:41.757Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/throw\",\"parameters\":{\"aimPower\":0}}",
+      "timestamp": "2026-10-28T02:50:41.760Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2314,\"object_id\":373,\"position\":\"(10.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.782Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2314,\"object_id\":373,\"position\":\"(10.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.782Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2314,\"object_id\":373,\"position\":\"(10.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.783Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2314,\"object_id\":373,\"position\":\"(10.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.783Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2314,\"object_id\":373,\"position\":\"(10.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.783Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2314,\"object_id\":373,\"position\":\"(10.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.783Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.789Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2314\"}",
+      "timestamp": "2026-10-28T02:50:41.789Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2277,\"object_id\":329,\"position\":\"(-6.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.793Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2277,\"object_id\":329,\"position\":\"(-6.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.794Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2277\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.796Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2282,\"object_id\":337,\"position\":\"(18.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.816Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2342,\"object_id\":361,\"position\":\"(-26.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.856Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2342,\"object_id\":361,\"position\":\"(-26.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.856Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2276,\"object_id\":330,\"position\":\"(6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.856Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2276,\"object_id\":330,\"position\":\"(6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.856Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2276,\"object_id\":330,\"position\":\"(6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.856Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2276,\"object_id\":330,\"position\":\"(6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.856Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2276,\"object_id\":330,\"position\":\"(6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.856Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2276,\"object_id\":330,\"position\":\"(6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.857Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.862Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2342\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.862Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2276\"}",
+      "timestamp": "2026-10-28T02:50:41.862Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2325,\"object_id\":379,\"position\":\"(6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.889Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2352,\"object_id\":358,\"position\":\"(2.0, -22.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.925Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2352,\"object_id\":358,\"position\":\"(2.0, -22.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.925Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2352\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.928Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2268,\"object_id\":333,\"position\":\"(14.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:41.933Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2268,\"object_id\":333,\"position\":\"(14.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:41.933Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2268,\"object_id\":333,\"position\":\"(14.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:41.933Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2268,\"object_id\":333,\"position\":\"(14.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:41.933Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2268,\"object_id\":333,\"position\":\"(14.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:41.933Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2268,\"object_id\":333,\"position\":\"(14.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:41.934Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:41.940Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2268\"}",
+      "timestamp": "2026-10-28T02:50:41.940Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2269,\"object_id\":334,\"position\":\"(18.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:41.966Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2306,\"object_id\":322,\"position\":\"(-18.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.991Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2306,\"object_id\":322,\"position\":\"(-18.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:41.991Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2306\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:41.993Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2272,\"object_id\":325,\"position\":\"(14.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:42.006Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2272,\"object_id\":325,\"position\":\"(14.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:42.006Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2272,\"object_id\":325,\"position\":\"(14.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.007Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2272,\"object_id\":325,\"position\":\"(14.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:42.007Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2272,\"object_id\":325,\"position\":\"(14.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:42.007Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2272,\"object_id\":325,\"position\":\"(14.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:42.007Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:42.012Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2272\"}",
+      "timestamp": "2026-10-28T02:50:42.012Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:50:42.034Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2270,\"object_id\":335,\"position\":\"(10.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:42.040Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2350,\"object_id\":356,\"position\":\"(-10.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:42.056Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2350,\"object_id\":356,\"position\":\"(-10.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:42.056Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2350\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:42.058Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2349,\"object_id\":357,\"position\":\"(10.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:42.090Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2349,\"object_id\":357,\"position\":\"(10.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:42.090Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2349,\"object_id\":357,\"position\":\"(10.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.090Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2349,\"object_id\":357,\"position\":\"(10.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:42.090Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2349,\"object_id\":357,\"position\":\"(10.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:42.090Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2349,\"object_id\":357,\"position\":\"(10.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:42.090Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:42.096Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2349\"}",
+      "timestamp": "2026-10-28T02:50:42.096Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2242,\"object_id\":250,\"position\":\"(16.0, -2.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:42.116Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2267,\"object_id\":331,\"position\":\"(-14.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:42.133Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2267,\"object_id\":331,\"position\":\"(-14.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:42.133Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2267\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:42.135Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DASH {\"actor\":1,\"tick\":311}",
+      "timestamp": "2026-10-28T02:50:42.174Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2273,\"object_id\":326,\"position\":\"(-22.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:42.175Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2273,\"object_id\":326,\"position\":\"(-22.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:42.175Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2273,\"object_id\":326,\"position\":\"(-22.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.175Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2273,\"object_id\":326,\"position\":\"(-22.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:42.175Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2273,\"object_id\":326,\"position\":\"(-22.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:42.176Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2273,\"object_id\":326,\"position\":\"(-22.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:42.176Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/dash\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:42.181Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:42.182Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2273\"}",
+      "timestamp": "2026-10-28T02:50:42.182Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2348,\"object_id\":365,\"position\":\"(-22.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:42.191Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2287,\"object_id\":343,\"position\":\"(2.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:42.206Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2287,\"object_id\":343,\"position\":\"(2.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:42.206Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2287\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:42.208Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2310,\"object_id\":316,\"position\":\"(-6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"rescan\"}",
+      "timestamp": "2026-10-28T02:50:42.241Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2310,\"object_id\":316,\"position\":\"(-6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_sink\"}",
+      "timestamp": "2026-10-28T02:50:42.241Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2310,\"object_id\":316,\"position\":\"(-6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.241Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2310,\"object_id\":316,\"position\":\"(-6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"powerups\"}",
+      "timestamp": "2026-10-28T02:50:42.241Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2310,\"object_id\":316,\"position\":\"(-6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"extinguish\"}",
+      "timestamp": "2026-10-28T02:50:42.241Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2310,\"object_id\":316,\"position\":\"(-6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"remove_decals\"}",
+      "timestamp": "2026-10-28T02:50:42.241Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/environment/floor_sink\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:42.246Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2310\"}",
+      "timestamp": "2026-10-28T02:50:42.246Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2295,\"object_id\":302,\"position\":\"(-6.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:42.252Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2300,\"object_id\":305,\"position\":\"(-26.0, -4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:42.266Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2300,\"object_id\":305,\"position\":\"(-26.0, -4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"tag\"}",
+      "timestamp": "2026-10-28T02:50:42.266Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop start\",\"key\":\"floor_2300\",\"path\":\"event:/environment/floor_cracking\"}",
+      "timestamp": "2026-10-28T02:50:42.268Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DEATH {\"cause\":\"disc\",\"killer\":1,\"scores\":[0,1],\"tick\":318,\"victim\":0}",
+      "timestamp": "2026-10-28T02:50:42.298Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DeathSliced\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:50:42.301Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2237,\"object_id\":245,\"position\":\"(0.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.301Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2243,\"object_id\":251,\"position\":\"(0.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.302Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2244,\"object_id\":252,\"position\":\"(8.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.302Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2267,\"object_id\":331,\"position\":\"(-14.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.302Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2271,\"object_id\":324,\"position\":\"(6.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.302Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2274,\"object_id\":327,\"position\":\"(-26.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.302Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2277,\"object_id\":329,\"position\":\"(-6.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.302Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2287,\"object_id\":343,\"position\":\"(2.0, -6.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.302Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2291,\"object_id\":309,\"position\":\"(10.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.303Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2292,\"object_id\":311,\"position\":\"(-22.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.303Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2298,\"object_id\":306,\"position\":\"(-26.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.303Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2299,\"object_id\":307,\"position\":\"(-10.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.303Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2300,\"object_id\":305,\"position\":\"(-26.0, -4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.303Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2306,\"object_id\":322,\"position\":\"(-18.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.303Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2311,\"object_id\":371,\"position\":\"(6.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.303Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2312,\"object_id\":372,\"position\":\"(-18.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.303Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2313,\"object_id\":374,\"position\":\"(6.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.303Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2315,\"object_id\":375,\"position\":\"(-14.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.304Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2317,\"object_id\":370,\"position\":\"(-22.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.304Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2319,\"object_id\":385,\"position\":\"(6.0, -20.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.304Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2320,\"object_id\":387,\"position\":\"(-18.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.304Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2322,\"object_id\":388,\"position\":\"(-14.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.304Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2329,\"object_id\":381,\"position\":\"(-10.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.304Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2333,\"object_id\":352,\"position\":\"(6.0, -16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.304Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2339,\"object_id\":348,\"position\":\"(-6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.304Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2342,\"object_id\":361,\"position\":\"(-26.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.304Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2350,\"object_id\":356,\"position\":\"(-10.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.305Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2352,\"object_id\":358,\"position\":\"(2.0, -22.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"stop_loop\"}",
+      "timestamp": "2026-10-28T02:50:42.305Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/death/sliced\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:42.306Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2271\"}",
+      "timestamp": "2026-10-28T02:50:42.306Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2320\"}",
+      "timestamp": "2026-10-28T02:50:42.306Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2299\"}",
+      "timestamp": "2026-10-28T02:50:42.306Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2322\"}",
+      "timestamp": "2026-10-28T02:50:42.306Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2243\"}",
+      "timestamp": "2026-10-28T02:50:42.306Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2274\"}",
+      "timestamp": "2026-10-28T02:50:42.306Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2291\"}",
+      "timestamp": "2026-10-28T02:50:42.306Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2311\"}",
+      "timestamp": "2026-10-28T02:50:42.306Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2317\"}",
+      "timestamp": "2026-10-28T02:50:42.306Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2244\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2339\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2312\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2298\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2329\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2315\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2319\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2333\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2313\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2292\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2237\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2277\"}",
+      "timestamp": "2026-10-28T02:50:42.307Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2342\"}",
+      "timestamp": "2026-10-28T02:50:42.308Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2352\"}",
+      "timestamp": "2026-10-28T02:50:42.308Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2306\"}",
+      "timestamp": "2026-10-28T02:50:42.308Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2350\"}",
+      "timestamp": "2026-10-28T02:50:42.308Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2267\"}",
+      "timestamp": "2026-10-28T02:50:42.308Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2287\"}",
+      "timestamp": "2026-10-28T02:50:42.308Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"loop stop\",\"key\":\"floor_2300\"}",
+      "timestamp": "2026-10-28T02:50:42.308Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2318,\"object_id\":369,\"position\":\"(-18.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:42.322Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2301,\"object_id\":319,\"position\":\"(-10.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:42.406Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/dash_end\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:42.428Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2324,\"object_id\":377,\"position\":\"(-14.0, 16.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:42.523Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2314,\"object_id\":373,\"position\":\"(10.0, 4.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:42.757Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T02:50:43.010Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2276,\"object_id\":330,\"position\":\"(6.0, 8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:43.132Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2268,\"object_id\":333,\"position\":\"(14.0, -8.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:43.416Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T02:50:43.527Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2272,\"object_id\":325,\"position\":\"(14.0, -12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:43.540Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:50:43.541Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CATCH {\"actor\":1,\"tick\":349}",
+      "timestamp": "2026-10-28T02:50:43.606Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/catch\",\"parameters\":{}}",
+      "timestamp": "2026-10-28T02:50:43.610Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2349,\"object_id\":357,\"position\":\"(10.0, 0.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:43.639Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2273,\"object_id\":326,\"position\":\"(-22.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:43.722Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOOR_EVENT {\"floor\":2310,\"object_id\":316,\"position\":\"(-6.0, 12.0)\",\"source_z\":0.0,\"trap\":false,\"type\":\"release_children\"}",
+      "timestamp": "2026-10-28T02:50:43.799Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:50:43.900Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:50:44.217Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"oneshot\",\"path\":\"event:/combat/footstep\",\"parameters\":{\"pitch\":2}}",
+      "timestamp": "2026-10-28T02:50:44.550Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_SCORES {\"round\":1,\"scores\":[0,1]}",
+      "timestamp": "2026-10-28T02:50:44.556Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":1}",
+      "timestamp": "2026-10-28T02:50:44.558Z",
+      "url": "http://127.0.0.1:49946/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW scores",
+      "timestamp": "2026-10-28T02:50:44.565Z",
+      "url": "http://127.0.0.1:49946/index.js"
+    }
+  ],
+  "errors": []
+}

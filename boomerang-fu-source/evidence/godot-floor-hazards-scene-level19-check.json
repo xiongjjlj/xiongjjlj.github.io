@@ -1,0 +1,20 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bound": 0,
+        "expected": 0
+      },
+      "name": "every enabled floor is bound",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "only disabled source floors may be absent",
+      "passed": true
+    }
+  ],
+  "map": "level19",
+  "passed": true,
+  "scope": "Real map hierarchy, floor triggers, collision holes, powerups, decals, rescans and round reset. Native callback ordering and pixels are separate."
+}

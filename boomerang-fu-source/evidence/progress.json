@@ -49,11 +49,11 @@
     "native_dxbc_disassembled": true,
     "partial_map_shader_webgl_verified": true
   },
-  "updated_at": "2026-10-28T02:24:35.951969+00:00",
+  "updated_at": "2026-10-28T02:30:32.481177+00:00",
   "implementation_engine": "Godot 4.7.2",
   "browser_language": "GDScript",
   "browser_development_preview": true,
-  "current_work": "0.5.1-dev.5 deployed on arkevo.ai: dynamic graph updates, moving mechanism rescan queues, retained-path invalidation and round reset. 66 dynamic paths and 6230791 comparisons match the original engine; 46 runtime suites, a full rotating-maze bot loop, 59 startups and browser checks pass. Falling/trap floors, teleportals and full visual/audio/scheduling fidelity remain in progress.",
+  "current_work": "Floor hazards in progress: 21 native state sequences / 17005 samples, 14 native collapse schedules / 56252 comparisons and 12 map adapter checks pass. Original floor graph tagging matches 15 scenarios / 525720 nodes. Top-mapped floor shader ported; browser rendering validation pending. Full-game regression exposed disc render-material teardown error; detach geometry before retirement fixes level18 reproduction, three-map regression next. Public development remains verified 0.5.1-dev.5.",
   "godot_scene_preview": {
     "scene": "LevelEnclosed",
     "nodes": 548,

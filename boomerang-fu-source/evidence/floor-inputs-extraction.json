@@ -1,0 +1,21 @@
+{
+  "maps": 12,
+  "verified_files": {
+    "level14": "a0e47752d25eff8f81cf4c1f4bfd1cc2050fde3ffbbf0e890230a093d7522cb7",
+    "globalgamemanagers.assets": "ad81e268ab47b64e362f4f949fcc9a792b4ca55d17085d1ffa3ffa2a3c09755b",
+    "sharedassets14.assets": "7e2398341b6f0c54b0c3e8d74a34b465be6d9edf5c2b629c5678a9e063b645c2",
+    "level18": "d2ceda49d5304791782e74ee0de2c8dbd9692543f1ba4b811eaacef4bbc09c62",
+    "level19": "c508e31950d41a6baefc4554532b64ecaceb7af4479e543a084077d4c9c1298c",
+    "level40": "c5ca0d45fe7744b8bf0620a08936cfe49fa83a0f636152bfd8c1963fd5a96bda",
+    "sharedassets40.assets": "2c049e970e50c90c69596a78ae378d763c60a5932c0fe4f3c4a03dc30780eb45",
+    "level42": "964e5fb81801fe2bd8a989b4aa3fcbeb2ebfbeda2978399496f286c902a768a6",
+    "level46": "9f004e1d174c8f30b71f4b673ab12f37bed6c8fde0f2241cbede131dbebd56bd",
+    "level49": "696e9d14c3a0041824e76f1b93e6bb7b313c8b086483d6348477bc67e471537c",
+    "level51": "fae9ddbf50c9ec11618e8b2e559aa57117f7ff3f117a6d4c25e5d2ba04814725",
+    "level54": "362b947bad81819124e8fa44bf01f43fb013fd4301cd996af7ca5d6e073c108e",
+    "level57": "0e179bef71d90b4a5404124ee58b72ff24af96f12e5db19b2d8b5b9c379e6ba5",
+    "level58": "3e3cec9efeb435d225289d7d845dee23d5cda9ac37038eeba732284368e34d6a",
+    "level59": "1d576b1427c0fa3e8dd0b41450fddd7155b291cafa15dd2b961e95494ce50e75"
+  },
+  "output_sha256": "cd4c92fad2c44aecd66e18fce290ca2f36904a8959af2fccc8c60ab1a8133391"
+}

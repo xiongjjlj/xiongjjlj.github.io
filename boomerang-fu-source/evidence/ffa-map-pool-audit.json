@@ -1,0 +1,96 @@
+{
+  "verified_files": {
+    "level1": "f51d58e0a085629b0b27a9c460bcfaf929892c3556505cc77a61cdba9ba6de39",
+    "globalgamemanagers": "92776e6a29019fa67439b8b00abb27be47a326c80998125713cd836f1267dde2",
+    "sharedassets1.assets": "7421b9f85a2afe32e478e457360eb26fa27e5fbcd9cb7555261d94f061ed7f3f"
+  },
+  "catalog_sha256": "f7ca675aea50db1a34a59d46f8a646ab7559f669d8a0c57ca2cf837de30c33fa",
+  "source_sha256": {
+    "LevelManager.cs": "743fdb9c86736478e65c40723a8186edd2f64757d2315a61863045736816fcc5",
+    "LevelAsset.cs": "68513d84df4e3715a06d37990097cd91b57b40a7105e764aeeed1378bd06d28d",
+    "SettingsManager.cs": "f24fdb01cd030cbe9e71567b760441acc3ffaac60ed97148e226377592020ee2",
+    "UIMatchSettingMapsModule.cs": "7736203a4929d36fc78c215176e20dbe344b075e65f59b3726ba7df0ed0e5edf",
+    "UIMenuMatchSettings.cs": "2823ba7018066b81423b6e74656b25ce2b47a3ecdfe1820a1a5df071a8440605"
+  },
+  "imported_scene_files": 59,
+  "catalog_entries": 58,
+  "regular_ffa_maps": 57,
+  "base_maps": 36,
+  "just_desserts_maps": 21,
+  "tutorials": [
+    "LevelTutorial"
+  ],
+  "duplicate_build_paths": [
+    {
+      "catalog_index": 24,
+      "source_file": "sharedassets1.assets",
+      "source_id": 9448,
+      "path": "Assets/Scenes/LevelToaster.unity",
+      "name": "LevelToaster",
+      "build_scene_keys": [
+        "level8",
+        "level33"
+      ],
+      "supported_match_types": [
+        0,
+        1,
+        3
+      ],
+      "complexity": 1,
+      "required_dlc": 0,
+      "min_players": 0,
+      "max_players": 6,
+      "force_first": false,
+      "solo": false,
+      "tricky_navigation": false
+    }
+  ],
+  "default_pool_counts_by_players": [
+    {
+      "players": 2,
+      "base": 36,
+      "just_desserts": 21,
+      "total": 57
+    },
+    {
+      "players": 3,
+      "base": 36,
+      "just_desserts": 21,
+      "total": 57
+    },
+    {
+      "players": 4,
+      "base": 36,
+      "just_desserts": 21,
+      "total": 57
+    },
+    {
+      "players": 5,
+      "base": 31,
+      "just_desserts": 21,
+      "total": 52
+    },
+    {
+      "players": 6,
+      "base": 31,
+      "just_desserts": 21,
+      "total": 52
+    }
+  ],
+  "small_maps_excluded_at_5_or_6": [
+    "LevelEnclosed",
+    "LevelMiniIsland",
+    "LevelPlants",
+    "LevelWheel",
+    "LevelTempleGarden"
+  ],
+  "unregistered_imported_scenes": [],
+  "rules": [
+    "FFA selects DeathMatch with teamMatch=false; every registered map in this installation supports DeathMatch.",
+    "Default playlist filters by min/max players and original DLC unlock state.",
+    "Custom maps bypass min/max player filtering but still require supported mode and unlocked DLC.",
+    "Tutorial is optional on the first match, excluded on rematch and from the regular map picker.",
+    "Repeated BuildSettings paths represent one LevelAsset, not additional selectable maps.",
+    "This audit does not establish the user account DLC entitlement or implement runtime playlist rotation."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "source": "sharedassets14.assets",
+  "source_sha256": "7e2398341b6f0c54b0c3e8d74a34b465be6d9edf5c2b629c5678a9e063b645c2",
+  "shader_id": 29,
+  "shader": "UU/Unlit/Shadow_TopMapped_Masked_Flash",
+  "bytes": 70476,
+  "blob_sha256": "9529471ecb3c8ac90b1f2b2964ee8c2480480576073dc49183bce442bcaaa969"
+}

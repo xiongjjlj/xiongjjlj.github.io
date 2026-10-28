@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "generated_at": "2026-10-28T02:43:47.992206+00:00",
+  "scope": "Native floor state transitions, original collapse scheduler and navigation tag shape comparisons; actual map scene integration and full-game regressions. Not complete game/frame/pixel/audio parity.",
+  "native": {
+    "godot-floor-hazards-check.json": {
+      "cases": 21,
+      "comparisons": 259752,
+      "maximum_error": 0.0,
+      "passed": true,
+      "samples": 17005
+    },
+    "godot-floor-collapse-check.json": {
+      "cases": 14,
+      "comparisons": 56252,
+      "maximum_error": 0.0,
+      "passed": true
+    },
+    "godot-floor-navigation-check.json": {
+      "cases": 15,
+      "comparisons": 525720,
+      "passed": true
+    }
+  },
+  "runtime_suites": 64,
+  "source_maps": 12,
+  "source_floor_components": 543,
+  "enabled_floors": 536,
+  "auto_collapsing_maps": [
+    "level14",
+    "level18"
+  ],
+  "inactive_source_collapsing_map": "level19",
+  "report_sha256": {
+    "godot-floor-hazards-check.json": "6eedc8bc5b3bf870b86da1a9f5b9bbded01afc602b8af20a9abac4a4d69fc0a8",
+    "godot-floor-collapse-check.json": "256e02352df1401c6317dbc4a86ee598d42300268c52169a1f5289c107e3da0e",
+    "godot-floor-navigation-check.json": "1535ae7c2767a23a63fd356a558aca341e77b51871e5ad393e58242e9dcf4dc1",
+    "godot-map-runtime-check.json": "5bdb9a2caa9230b374dd60d71813543c85deac5b57d28618968b364842682acf"
+  },
+  "limitations": [
+    "Native probes isolate recovered methods and adapt clocks and presentation services; full Unity callback order and shared random-stream order remain unverified.",
+    "Floor splash/debris particles and complete projectile-parenting behavior remain unfinished.",
+    "Original floor shader formula is ported; GPU pixel parity remains unverified.",
+    "Teleportal behavior/navigation links and complete original visual/audio parity remain unfinished."
+  ]
+}

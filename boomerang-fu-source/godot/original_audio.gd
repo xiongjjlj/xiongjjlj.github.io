@@ -100,6 +100,10 @@ func frame(scene:Node,delta:float,scaled_delta:float)->void:
 		commands.clear()
 		return
 	var loops:Array=[]
+	for item in scene.floor_hazards.floors.values():
+		if item.model.loop_active:
+			var p:Vector3=item.node.global_position
+			loops.append(loop_spec("floor_%d"%item.id,"event:/environment/floor_cracking",Vector2(p.x,p.y),{},-p.z))
 	if not str(inputs.ambient).is_empty():loops.append(loop_spec("ambient",inputs.ambient,Vector2.ZERO))
 	if scene.cell_grid.fire_count>0:loops.append(loop_spec("fire_cells","event:/environment/firecell_loop",fire_position,{"intensity":fire_intensity,"plants":0.0}))
 	for index in scene.actors.size():
