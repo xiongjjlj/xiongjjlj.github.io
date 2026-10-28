@@ -56,15 +56,15 @@
       "passed": true
     },
     {
-      "details": 0.000049920090532396,
+      "details": 0.0000993150024442002,
       "name": "actor remains at its local platform position",
       "passed": true
     },
     {
       "details": {
-        "actor": "(-17.02703, -0.056515)",
+        "actor": "(-17.02718, -0.056539)",
         "actor_z": 0.0,
-        "disc": "(-17.02703, -0.056515)",
+        "disc": "(-17.02718, -0.056539)",
         "disc_z": 0.0,
         "error": 0.0,
         "floor": 2678

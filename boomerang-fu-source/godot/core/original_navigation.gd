@@ -15,6 +15,10 @@ var integer_positions:=PackedVector3Array()
 var walkable:=PackedByteArray()
 var connections:=PackedByteArray()
 var penalties:=PackedInt32Array()
+var base_penalties:=PackedInt32Array()
+var tags:=PackedByteArray()
+var physics_settings:Dictionary={}
+var areas_dirty:=false
 var areas:=PackedInt32Array()
 var offsets:=PackedInt32Array()
 var costs:=PackedInt32Array()
@@ -34,6 +38,7 @@ var graph_index:=0
 
 func initialize(data:Dictionary)->void:
 	graph_index=int(data.get("index",0))
+	physics_settings=data.get("settings",{}).duplicate(true)
 	width=data.width
 	depth=data.depth
 	node_size=C.f32(data.node_size)
@@ -52,6 +57,8 @@ func initialize(data:Dictionary)->void:
 	walkable.resize(count)
 	connections.resize(count)
 	penalties.resize(count)
+	base_penalties.resize(count)
+	tags.resize(count)
 	areas.resize(count)
 	for row in data.nodes:
 		var i:int=row[0]
@@ -59,6 +66,8 @@ func initialize(data:Dictionary)->void:
 		positions[i]=integer_positions[i]*C.f32(0.001)
 		walkable[i]=row[4]
 		penalties[i]=row[5]+(4000 if row[6]==1 else 0)
+		base_penalties[i]=row[5]
+		tags[i]=row[6]
 		areas[i]=row[7]
 		connections[i]=row[8]
 	parent.resize(count)
@@ -245,6 +254,7 @@ func _open(node:int)->void:
 			_update_recursive(other)
 
 func find_path(start:Vector3,end:Vector3)->Dictionary:
+	ensure_areas()
 	heuristic_scale=1.0
 	var first:=nearest(start)
 	if first.is_empty():return {"error":"Couldn't find a node close to the start point"}
@@ -311,6 +321,7 @@ func actor_flee_path(start:Vector3,avoid:Vector3,random:RefCounted)->Dictionary:
 	return find_flee_path(start,avoid,random)
 
 func find_flee_path(start:Vector3,avoid:Vector3,random:RefCounted,length:=15000,spread:=1000,strength:=0.75)->Dictionary:
+	ensure_areas()
 	var first:=nearest(start)
 	if first.is_empty():return {"error":"Couldn't find close nodes to the start point"}
 	var start_node:int=first.node
@@ -393,3 +404,21 @@ static func smooth_path(points:Array)->Array[Vector3]:
 		result[i]=Vector3(C.lerp32(old.x,middle.x,0.5),C.lerp32(old.y,middle.y,0.5),C.lerp32(old.z,middle.z,0.5))
 		previous=old
 	return result
+
+func ensure_areas()->void:
+	if not areas_dirty:return
+	areas_dirty=false
+	# Area numbers are internal; preserve connectivity, not native allocator IDs.
+	areas.fill(0)
+	var area:=0
+	for index in walkable.size():
+		if not walkable[index] or areas[index]!=0:continue
+		area+=1;areas[index]=area
+		var queue:=PackedInt32Array([index]);var head:=0
+		while head<queue.size():
+			var current:int=queue[head];head+=1
+			for direction in 8:
+				if not (connections[current]&(1<<direction)):continue
+				var next:int=current+offsets[direction]
+				if areas[next]!=0:continue
+				areas[next]=area;queue.append(next)

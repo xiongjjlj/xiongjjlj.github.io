@@ -131,6 +131,18 @@ func set_scene_object_enabled(object_id: int, enabled: bool) -> void:
 		if shape.actor or int(shape.object_id) != object_id: continue
 		shape.layer = int(shape.get("base_layer", shape.layer)) if enabled else 0
 
+func scene_bounds(object_id:int)->Dictionary:
+	var found:=false;var collider_id:=-1;var bounds:=Rect2()
+	for shape in shapes:
+		if shape.actor or int(shape.object_id)!=object_id:continue
+		if found and int(shape.id)!=collider_id:continue
+		bounds=bounds.merge(shape.bounds) if found else shape.bounds
+		found=true;collider_id=int(shape.id)
+	if not found:return {}
+	var center:=bounds.get_center()
+	var source_z:float=-source_nodes[object_id].global_position.z if source_nodes.has(object_id) else 0.0
+	return {"center":[center.x,center.y,source_z],"size":[bounds.size.x,bounds.size.y,0.0]}
+
 func register_actor(actor: OriginalActorMotion) -> void:
 	actor.query_id = next_actor_id
 	next_actor_id+=1
@@ -261,6 +273,15 @@ static func penetration(origin: Vector2, radius: float, shape: Dictionary, query
 	if depth <= 0.0 and not (query_contact and depth > -OVERLAP_EPSILON): return {}
 	var normal := (closest - origin).normalized() if inside else (origin - closest).normalized()
 	return {"depth": depth, "normal": normal}
+
+func overlap_point(origin: Vector2, mask: int) -> bool:
+	# Physics2D.OverlapPoint does not use the polygon's circle-query skin.
+	for shape in shapes:
+		if int(shape.layer) & mask == 0: continue
+		if shape.kind == "circle":
+			if origin.distance_squared_to(shape.center) <= float(shape.radius)*float(shape.radius): return true
+		elif shape.kind == "polygon" and Geometry2D.is_point_in_polygon(origin,shape.vertices): return true
+	return false
 
 func overlap_circle(origin: Vector2, radius: float, mask: int) -> bool:
 	# Native near-contact detection is distinct from positive-depth resolution.

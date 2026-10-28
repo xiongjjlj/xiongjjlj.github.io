@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "details": {
+        "changed_node_samples": 7584,
+        "maximum_queue": 4,
+        "rescan_milliseconds": 8.571,
+        "targets": 4,
+        "updates": 13
+      },
+      "name": "live mechanisms update actual map navigation",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "navigation queue drains each frame",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "round reset restores every serialized static node and connection",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "map provides an initial path for invalidation",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "invalidated retained path requests replacement",
+      "passed": true
+    }
+  ],
+  "destroyed_obstacles": 0,
+  "map": "level48",
+  "passed": true,
+  "scope": "Real map mechanism callbacks, queued graph rescans, retained-path invalidation and round reset. No native callback ordering or visual parity claim."
+}

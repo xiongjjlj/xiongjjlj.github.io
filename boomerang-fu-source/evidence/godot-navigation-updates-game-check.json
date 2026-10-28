@@ -1,0 +1,10 @@
+{
+  "bot_distance": 78.3097927521449,
+  "finite_positions": true,
+  "frames": 360,
+  "graph_updates": 28,
+  "passed": true,
+  "pending_updates": 0,
+  "round_resets": 0,
+  "scope": "Full Godot game loop with two bots and a rotating reactive maze; native whole-frame parity remains unproven."
+}

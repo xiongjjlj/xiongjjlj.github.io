@@ -2,5 +2,98 @@
   "passed": true,
   "maps": 59,
   "paths": 992,
-  "max_error": 0.0
+  "max_error": 0.0,
+  "batches": [
+    {
+      "batch": 0,
+      "differences": [],
+      "maps": 6,
+      "maximum_error": 0.0,
+      "passed": true,
+      "paths": 48,
+      "scope": "Native Astar paths on per-map grids including platform graphs; no runtime collider rescan or callback-order claim."
+    },
+    {
+      "batch": 1,
+      "differences": [],
+      "maps": 6,
+      "maximum_error": 0.0,
+      "passed": true,
+      "paths": 48,
+      "scope": "Native Astar paths on per-map grids including platform graphs; no runtime collider rescan or callback-order claim."
+    },
+    {
+      "batch": 2,
+      "differences": [],
+      "maps": 6,
+      "maximum_error": 0.0,
+      "passed": true,
+      "paths": 48,
+      "scope": "Native Astar paths on per-map grids including platform graphs; no runtime collider rescan or callback-order claim."
+    },
+    {
+      "batch": 3,
+      "differences": [],
+      "maps": 6,
+      "maximum_error": 0.0,
+      "passed": true,
+      "paths": 104,
+      "scope": "Native Astar paths on per-map grids including platform graphs; no runtime collider rescan or callback-order claim."
+    },
+    {
+      "batch": 4,
+      "differences": [],
+      "maps": 6,
+      "maximum_error": 0.0,
+      "passed": true,
+      "paths": 216,
+      "scope": "Native Astar paths on per-map grids including platform graphs; no runtime collider rescan or callback-order claim."
+    },
+    {
+      "batch": 5,
+      "differences": [],
+      "maps": 6,
+      "maximum_error": 0.0,
+      "passed": true,
+      "paths": 48,
+      "scope": "Native Astar paths on per-map grids including platform graphs; no runtime collider rescan or callback-order claim."
+    },
+    {
+      "batch": 6,
+      "differences": [],
+      "maps": 6,
+      "maximum_error": 0.0,
+      "passed": true,
+      "paths": 56,
+      "scope": "Native Astar paths on per-map grids including platform graphs; no runtime collider rescan or callback-order claim."
+    },
+    {
+      "batch": 7,
+      "differences": [],
+      "maps": 6,
+      "maximum_error": 0.0,
+      "passed": true,
+      "paths": 152,
+      "scope": "Native Astar paths on per-map grids including platform graphs; no runtime collider rescan or callback-order claim."
+    },
+    {
+      "batch": 8,
+      "differences": [],
+      "maps": 6,
+      "maximum_error": 0.0,
+      "passed": true,
+      "paths": 232,
+      "scope": "Native Astar paths on per-map grids including platform graphs; no runtime collider rescan or callback-order claim."
+    },
+    {
+      "batch": 9,
+      "differences": [],
+      "maps": 5,
+      "maximum_error": 0.0,
+      "passed": true,
+      "paths": 40,
+      "scope": "Native Astar paths on per-map grids including platform graphs; no runtime collider rescan or callback-order claim."
+    }
+  ],
+  "generated_at": "2026-10-28T02:18:42.280102+00:00"
 }

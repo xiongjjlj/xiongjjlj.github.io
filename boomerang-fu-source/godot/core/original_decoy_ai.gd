@@ -26,6 +26,8 @@ var target:=Vector3.ZERO
 var move_dir:=Vector2.ZERO
 var path:Array[Vector3]=[]
 var path_floor:Dictionary={}
+var path_nodes:Array[int]=[]
+var path_graph:=0
 var has_path:=false
 var current_waypoint:=0
 var path_length:=0.0
@@ -127,6 +129,8 @@ func deliver_path_result()->void:
 	if pending_result.get("error","")=="":
 		path.assign(pending_result.smoothed)
 		path_floor=pending_result.get("moving_floor",{})
+		path_nodes.assign(pending_result.get("node_ids",[]))
+		path_graph=int(pending_result.get("graph_index",0))
 		has_path=true
 		current_waypoint=0
 		path_length=pending_result.total_length

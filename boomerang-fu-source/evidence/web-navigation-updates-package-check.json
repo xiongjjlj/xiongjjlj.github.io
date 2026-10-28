@@ -1,0 +1,74 @@
+{
+  "version": "0.5.1-dev.5",
+  "archive": "web-development-0.5.1-dev.5.zip",
+  "bytes": 92330709,
+  "sha256": "db470ae111ec0e66c92d75461165503ab062135ced509edf0ea033285aaf97da",
+  "files": {
+    "Godot-LICENSE.txt": {
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+      "bytes": 1149
+    },
+    "Godot-THIRDPARTY.json": {
+      "sha256": "0e012ef5f7fe547457e51cf56ef477c5383bc5d319ae1473587438f6e446f538",
+      "bytes": 114894
+    },
+    "README-hosting.txt": {
+      "sha256": "0b5486fb032acd817bc373b73341df4f893a20ac89278526cb282937eed0e386",
+      "bytes": 1113
+    },
+    "audio/Master Bank.bank": {
+      "sha256": "a3cc8b9c6b602d7e6aeda00fb9705e4df6f3d3b44bd1f95913923fb2233c52c2",
+      "bytes": 34346400
+    },
+    "audio/Master Bank.strings.bank": {
+      "sha256": "0abd3722cd7a43f160f9b5bb202dbbd657d9a491dedeb7dd43e56055939cc9ed",
+      "bytes": 9110
+    },
+    "audio/NOTICE.txt": {
+      "sha256": "f4833c4e9821033e749794cf12fc608fb3bf25d79c8390576561d361c64ae993",
+      "bytes": 563
+    },
+    "audio/fmodstudio.js": {
+      "sha256": "7497a63744b940b2d5c9ff494e5017bf991aee8dd26739edcf86e1954f6e93e9",
+      "bytes": 131434
+    },
+    "audio/fmodstudio.wasm": {
+      "sha256": "38007e3792e111b265af6c5499f8453c5e83809b13c200522b794efee8ad213e",
+      "bytes": 2656574
+    },
+    "audio/runtime.js": {
+      "sha256": "144f0fada740e14f154d620892c6c453495d8ac2206581450e70173e8f5e7f57",
+      "bytes": 8860
+    },
+    "index.audio.position.worklet.js": {
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "bytes": 2973
+    },
+    "index.audio.worklet.js": {
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "bytes": 7298
+    },
+    "index.html": {
+      "sha256": "0828384f757f600f651bb5b135280a126d3d99ea8a151fded41054e67270d683",
+      "bytes": 5398
+    },
+    "index.js": {
+      "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
+      "bytes": 279815
+    },
+    "index.pck": {
+      "sha256": "14255fbd6c3f9de318a5b1c1fbf46ee3c538961b63dbe0ababf04bd86667b0c1",
+      "bytes": 152157932
+    },
+    "index.png": {
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+      "bytes": 21443
+    },
+    "index.wasm": {
+      "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
+      "bytes": 39514754
+    }
+  },
+  "crc_verified": true,
+  "full_game_parity_verified": false
+}

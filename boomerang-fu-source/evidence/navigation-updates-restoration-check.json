@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "generated_at": "2026-10-28T02:18:27.838519+00:00",
+  "native_engine": "Original UnityPlayer and installed AstarPathfindingProject.dll",
+  "native_assembly_sha256": "5d1a10eacb9ba83e59f2dd750fc111063d7299780b20b97aa83904704c91d66f",
+  "fixtures": [
+    {
+      "map": "level2",
+      "fixture": "navigation-updates-native.json",
+      "sha256": "d0480b609d4672a85692949735b7fa8df5d78eb2c102e35163287611ca3d3603"
+    },
+    {
+      "map": "level48",
+      "fixture": "navigation-updates-native-level48.json",
+      "native_filename": "navigation-updates-native.json",
+      "retrieval_note": "NativeProbe uses a fixed output basename; the successful clean run was retrieved under a map-specific local filename.",
+      "sha256": "28b58283097862a217db9421e3685a400a5eeb7d9e105e933d1c5f310e4f9c4e"
+    }
+  ],
+  "physics_diameters": [
+    2,
+    1
+  ],
+  "change_sequences": 22,
+  "node_and_path_comparisons": 6230791,
+  "paths": 66,
+  "maximum_error": 0.0,
+  "scene_maps": [
+    "level3",
+    "level41",
+    "level48",
+    "level55"
+  ],
+  "runtime_suites": 46,
+  "scope": "Native graph physics update, node reconnection, retained tags and path parity; real map callback wiring and reset. Does not establish native scheduler, teleportal, visual/audio or full-game parity.",
+  "full_game_loop": {
+    "bot_distance": 78.3097927521449,
+    "finite_positions": true,
+    "frames": 360,
+    "graph_updates": 28,
+    "passed": true,
+    "pending_updates": 0,
+    "round_resets": 0,
+    "scope": "Full Godot game loop with two bots and a rotating reactive maze; native whole-frame parity remains unproven."
+  }
+}

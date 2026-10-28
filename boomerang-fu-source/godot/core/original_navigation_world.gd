@@ -6,6 +6,14 @@ extends OriginalNavigation
 var grids: Dictionary = {}
 var moving_floors: WeakRef
 var legacy := false
+var collision:WeakRef
+var enabled:=false
+var pending_updates:Array[Dictionary]=[]
+var initial_grids:Dictionary={}
+var recreate_paths:=false
+var updates_applied:=0
+var update_microseconds:=0
+const SNAPSHOT_FIELDS=["positions","integer_positions","walkable","connections","base_penalties","tags","penalties","areas"]
 
 static func decode_map(data: Dictionary) -> Dictionary:
 	if data.get("encoding","") != "gzip-base64": return data
@@ -22,6 +30,7 @@ static func decode_map(data: Dictionary) -> Dictionary:
 func initialize(data: Dictionary) -> void:
 	data = decode_map(data)
 	grids.clear()
+	initial_grids.clear();pending_updates.clear();recreate_paths=false
 	legacy = not data.has("graphs")
 	if legacy:
 		super.initialize(data); return
@@ -34,6 +43,48 @@ func initialize(data: Dictionary) -> void:
 		input.auxiliary_graphs = others
 		var grid := OriginalNavigation.new(); grid.initialize(input)
 		grids[int(entry.index)] = grid
+		var snapshot:Dictionary={}
+		for field in SNAPSHOT_FIELDS:snapshot[field]=grid.get(field).duplicate()
+		initial_grids[int(entry.index)]=snapshot
+
+func reset_grids()->void:
+	pending_updates.clear();recreate_paths=false;updates_applied=0;update_microseconds=0
+	for index in grids:
+		for field in SNAPSHOT_FIELDS:grids[index].set(field,initial_grids[index][field].duplicate())
+		grids[index].areas_dirty=false
+
+func request_recreate()->void:
+	if enabled:recreate_paths=true
+
+func rescan(bounds:Dictionary,mask:=1,walkability:=-1)->void:
+	if not enabled or bounds.is_empty():return
+	# Original map queues are small. Flush a full queue rather than losing a
+	# geometry change if a synthetic caller submits an unusually large burst.
+	if pending_updates.size()>=512:flush_updates()
+	pending_updates.append({"bounds":bounds,"mask":mask,"physics":true,"walkability":walkability})
+	recreate_paths=true
+
+func flush_updates()->void:
+	if pending_updates.is_empty() or collision==null or collision.get_ref()==null:return
+	var started:=Time.get_ticks_usec()
+	for update in pending_updates:
+		for index in grids:
+			if int(update.mask)&(1<<int(index)):
+				preload("res://core/original_navigation_updates.gd").apply(grids[index],collision.get_ref(),update)
+				updates_applied+=1
+	pending_updates.clear()
+	update_microseconds+=Time.get_ticks_usec()-started
+
+func recreate_invalid_paths(ais:Array)->void:
+	if not recreate_paths or not pending_updates.is_empty():return
+	recreate_paths=false
+	for ai:OriginalDecoyAI in ais:
+		if ai.recalculating or not ai.has_path or ai.path_nodes.size()<2:continue
+		var grid:OriginalNavigation=grids.get(ai.path_graph)
+		if grid==null:continue
+		for i in range(1,ai.path_nodes.size()):
+			if not grid.walkable[ai.path_nodes[i]]:
+				ai.create_path();break
 
 func bind_moving_floors(source: OriginalMovingFloors) -> void:
 	moving_floors = weakref(source)

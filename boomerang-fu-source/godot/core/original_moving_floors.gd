@@ -10,6 +10,7 @@ var rng: OriginalUnityRandom
 var disc_parents: Dictionary = {}
 var rollers: Array[Dictionary] = []
 var now := 0.0
+var navigation:WeakRef
 
 func initialize(sidecar: Dictionary, nodes: Dictionary, collision: OriginalCollisionWorld, random: OriginalUnityRandom) -> void:
 	world = collision; rng = random
@@ -60,6 +61,7 @@ func reset(consume_start_random := true) -> void:
 		f.z = f.node.position.z; f.moving = false; f.velocity = Vector2.ZERO
 		f.last_pos = Vector2(f.node.global_position.x, f.node.global_position.y)
 		f.previous_transform = f.node.global_transform
+		f.scan_timer=0.0;f.bounds_queue=[]
 		# Start consumes a random scan timer even though this port's collider
 		# synchronization is immediate. Retain its draw in the shared stream.
 		if consume_start_random and f.enabled: rng.range_float(C.f32(-0.05 * 0.75), 0.0)
@@ -276,7 +278,9 @@ func step_reactive(f: Dictionary, delta: float) -> void:
 		if C.f32(now-f.toggle_timestamp) < wait:
 			f.velocity = Vector2.ZERO; return
 		f.state = 1
+		if navigation!=null and navigation.get_ref()!=null:navigation.get_ref().request_recreate()
 	if int(f.state) != 1: return
+	var finished:=false
 	var point: Vector2
 	if f.move_percent < 1.0:
 		var duration: float = f.windback_duration if f.spring_back else f.move_duration
@@ -289,14 +293,27 @@ func step_reactive(f: Dictionary, delta: float) -> void:
 		point = f.target_pos
 		if f.use_rotations: f.node.rotation = Vector3(0,0,deg_to_rad(f.target_rotation))
 		f.state = 0
+		finished=true
 		if f.is_spring and not f.spring_back and int(f.pos_index)==1: toggle_reactive(f,true)
 		f.reverse = false
 	f.node.position = Vector3(point.x,point.y,f.z)
 	var current := Vector2(f.node.global_position.x,f.node.global_position.y)
 	f.velocity = (current-f.last_pos)/delta; f.last_pos = current
 	world.sync_scene_subtree(int(f.game_object))
+	if finished:
+		queue_reactive_bounds(f)
+		if navigation!=null and navigation.get_ref()!=null:navigation.get_ref().request_recreate()
+	if f.scan_timer<C.f32(0.15):f.scan_timer=C.f32(f.scan_timer+delta)
+	else:
+		f.scan_timer=0.0;queue_reactive_bounds(f)
+
+func queue_reactive_bounds(f:Dictionary)->void:
+	if f.use_rotations:preload("res://core/original_navigation_updates.gd").quadrants(f.bounds_queue,world.scene_bounds(int(f.game_object)))
 
 func frame_step(delta: float) -> void:
+	if navigation!=null and navigation.get_ref()!=null and navigation.get_ref().enabled:
+		for f in floors.values():
+			if f.enabled and f.reactive and f.use_rotations and not f.bounds_queue.is_empty():navigation.get_ref().rescan(f.bounds_queue.pop_front())
 	for item in rollers:
 		if not item.enabled: continue
 		var velocity: Vector2 = floors[item.floor].velocity

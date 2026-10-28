@@ -6,7 +6,7 @@
       "passed": true
     },
     {
-      "details": 0.000204337935429066,
+      "details": 0.000347322114976123,
       "name": "full game loop preserves platform-local rider position",
       "passed": true
     },

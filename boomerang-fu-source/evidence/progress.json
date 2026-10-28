@@ -10,9 +10,9 @@
   "recovered_scene_assets": 61,
   "blocking_input": null,
   "next_actions": [
-    "Implement dynamic obstacle rescans and teleportal graph connections.",
-    "Implement falling/trap floors and teleportal scene behaviour.",
-    "Restore platform audio, flash, ropes, particles, original materials/animation and verify full-scene callback and random-stream ordering."
+    "Verify and deploy 0.5.1-dev.5 browser build, then publish source checkpoint.",
+    "Implement falling/trap floors and teleportal scene behaviour and navigation links.",
+    "Restore remaining original materials, effects, audio and animation; verify full-scene callback and random-stream ordering."
   ],
   "validation_limitations": [
     "Recovered C# compilation is not engine/runtime equivalence",
@@ -50,11 +50,11 @@
     "native_dxbc_disassembled": true,
     "partial_map_shader_webgl_verified": true
   },
-  "updated_at": "2026-10-28T02:13:05.767319+00:00",
+  "updated_at": "2026-10-28T02:20:01.279310+00:00",
   "implementation_engine": "Godot 4.7.2",
   "browser_language": "GDScript",
   "browser_development_preview": true,
-  "current_work": "0.5.1-dev.4 deployed on arkevo.ai: 59 per-map grids, platform graph selection and retained moving waypoints. 992 native paths, 1134 graph selections, 40 runtime checks and 59 startup checks pass. Runtime obstacle rescans and full fidelity remain in progress.",
+  "current_work": "0.5.1-dev.5: dynamic navigation passes 6230791 comparisons and 66 paths, 46 runtime suites, 59 map startups, and full rotating-maze bot loop. Browser build validation and deployment are underway.",
   "godot_scene_preview": {
     "scene": "LevelEnclosed",
     "nodes": 548,
@@ -3781,5 +3781,51 @@
       "Full native callback scheduling and random-stream ordering"
     ],
     "scope": "Per-map original grid paths, original platform graph selection and transformations, imported scene integration. Does not establish full-match or visual parity."
+  },
+  "dynamic_navigation": {
+    "passed": true,
+    "generated_at": "2026-10-28T02:18:27.838519+00:00",
+    "native_engine": "Original UnityPlayer and installed AstarPathfindingProject.dll",
+    "native_assembly_sha256": "5d1a10eacb9ba83e59f2dd750fc111063d7299780b20b97aa83904704c91d66f",
+    "fixtures": [
+      {
+        "map": "level2",
+        "fixture": "navigation-updates-native.json",
+        "sha256": "d0480b609d4672a85692949735b7fa8df5d78eb2c102e35163287611ca3d3603"
+      },
+      {
+        "map": "level48",
+        "fixture": "navigation-updates-native-level48.json",
+        "native_filename": "navigation-updates-native.json",
+        "retrieval_note": "NativeProbe uses a fixed output basename; the successful clean run was retrieved under a map-specific local filename.",
+        "sha256": "28b58283097862a217db9421e3685a400a5eeb7d9e105e933d1c5f310e4f9c4e"
+      }
+    ],
+    "physics_diameters": [
+      2,
+      1
+    ],
+    "change_sequences": 22,
+    "node_and_path_comparisons": 6230791,
+    "paths": 66,
+    "maximum_error": 0.0,
+    "scene_maps": [
+      "level3",
+      "level41",
+      "level48",
+      "level55"
+    ],
+    "runtime_suites": 46,
+    "scope": "Native graph physics update, node reconnection, retained tags and path parity; real map callback wiring and reset. Does not establish native scheduler, teleportal, visual/audio or full-game parity.",
+    "full_game_loop": {
+      "bot_distance": 78.3097927521449,
+      "finite_positions": true,
+      "frames": 360,
+      "graph_updates": 28,
+      "passed": true,
+      "pending_updates": 0,
+      "round_resets": 0,
+      "scope": "Full Godot game loop with two bots and a rotating reactive maze; native whole-frame parity remains unproven."
+    }
   }
 }

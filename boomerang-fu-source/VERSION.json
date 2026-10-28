@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
-  "version": "0.5.1-dev.4",
-  "generated_at": "2026-10-28T02:13:05.767319+00:00",
+  "version": "0.5.1-dev.5",
+  "generated_at": "2026-10-28T02:21:31.081837+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 2859,
-  "source_bytes": 271902766,
+  "source_files": 2999,
+  "source_bytes": 298858966,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -15,23 +15,24 @@
   },
   "development_branch": "boomerang-fu-dev",
   "development_archive": {
-    "name": "web-development-0.5.1-dev.4.zip",
-    "bytes": 92279003,
-    "sha256": "538f4ed61a11f0f4fc95ae9e4da78a6fe432f7ced8b0d0639f2e07841458e909",
+    "name": "web-development-0.5.1-dev.5.zip",
+    "bytes": 92330709,
+    "sha256": "db470ae111ec0e66c92d75461165503ab062135ced509edf0ea033285aaf97da",
     "availability": "Local task deliverable; not stored in the Git repository"
   },
   "full_game_parity_verified": false,
   "limitations": [
     "Original-game frame/pixel/PCM parity remains unproven.",
-    "59 map grids and 992 original paths, 1134 platform graph selections and 540 coordinate transforms are verified, with explicit transform tolerance.",
-    "Runtime obstacle rescans, teleportal links, falling/trap floors, full callback ordering and original visual/audio effects remain unfinished.",
+    "59 map grids, 992 original paths and 1134 platform graph selections are verified.",
+    "Dynamic graph updates match 66 native paths and 6230791 node/path checks across two physics diameters.",
+    "Teleportal links, falling/trap floors, full callback ordering and original visual/audio effects remain unfinished.",
     "Stable static directory and boomerang-fu-v0.5.0 dependency remain unchanged."
   ],
   "files": [
     {
       "path": "DEVELOPMENT.md",
-      "bytes": 7453,
-      "sha256": "15de6f8ddc1fd3ac727160fe4ac6d832b57b5b5581d73af9098aeb3007877244"
+      "bytes": 8448,
+      "sha256": "2e5069723a31edc4a75ed75184f7de282a7119357f05e9233acdef7b9a7da2c5"
     },
     {
       "path": "README.md",
@@ -180,8 +181,8 @@
     },
     {
       "path": "evidence/godot-map-runtime-check.json",
-      "bytes": 122503,
-      "sha256": "271b31a019c033695d1dc8971f60c2d26b6752fb20a2ef2ff8d1bb127897bf0a"
+      "bytes": 131920,
+      "sha256": "9d4c0dd18a70c0770479df7d9598e722ec3021b2a9ec1bd322fc30de50b72e60"
     },
     {
       "path": "evidence/godot-map-selector-check.json",
@@ -190,8 +191,8 @@
     },
     {
       "path": "evidence/godot-multi-map-check.json",
-      "bytes": 32007,
-      "sha256": "3157895f85db277781e9e2e70dc9eb9173dfce28363ac0a1bb6b045926851b6e"
+      "bytes": 32118,
+      "sha256": "0aa00aa88268fc3fe2d088aeb6b5912d60d35b29597d0053521cbcd7895cc10d"
     },
     {
       "path": "evidence/godot-native-web-check.json",
@@ -245,8 +246,8 @@
     },
     {
       "path": "evidence/progress.json",
-      "bytes": 127629,
-      "sha256": "6c62a0de2aae2fddf78454168da7c32ae2e0cb8547e98a15d14f35aa15ec12b7"
+      "bytes": 129322,
+      "sha256": "58d06b9378de232babb2b3ece89a3b3c362ec94a0288b4d8ae7613fe7cae672a"
     },
     {
       "path": "evidence/public-deploy-check.json",
@@ -9515,8 +9516,8 @@
     },
     {
       "path": "godot/core/original_collision_world.gd",
-      "bytes": 13995,
-      "sha256": "6f184c40ac5c97eb0b07b947c9cfb1d4d6318212ccaa9d91ff287e601d0a6145"
+      "bytes": 15028,
+      "sha256": "35b6ba594a1695aed585456129247d3bb02090b95f22edfde072f8d41c5b350c"
     },
     {
       "path": "godot/core/original_combat_world.gd",
@@ -9525,8 +9526,8 @@
     },
     {
       "path": "godot/core/original_decoy_ai.gd",
-      "bytes": 10348,
-      "sha256": "5eb6f84f9e15d5bc5eae28596161fea227e4585b3d19637beab451106a05948d"
+      "bytes": 10504,
+      "sha256": "a03ac8969b6436238fcdfbd50b90088c3d496b26d477a3c79d181282274abe67"
     },
     {
       "path": "godot/core/original_decoy_elements.gd",
@@ -9605,8 +9606,8 @@
     },
     {
       "path": "godot/core/original_level3_behaviors.gd",
-      "bytes": 23939,
-      "sha256": "0a8ddc302d30fa97559a104ac3fe21fbf7425dd322a9c9b0e8b5513131b9dcaa"
+      "bytes": 25843,
+      "sha256": "0b2494093627c96dc307742f9a926882d45ae42f77202dd6ad276996d27cbebb"
     },
     {
       "path": "godot/core/original_level_boundary.gd",
@@ -9615,8 +9616,8 @@
     },
     {
       "path": "godot/core/original_navigation.gd",
-      "bytes": 15130,
-      "sha256": "b0e18da2f1e901b0b4f9ce2d47e20d9631ab65132c3b54f7c5cde6c45e2d28a2"
+      "bytes": 16045,
+      "sha256": "23b27620c00e89375abb054aa499c3056791e8f9f971b3184a58847fb30a97d7"
     },
     {
       "path": "godot/core/original_player_ai.gd",
@@ -9720,8 +9721,8 @@
     },
     {
       "path": "godot/main.gd",
-      "bytes": 68870,
-      "sha256": "2c3798a7031bfcfa374ec750e256b0de1881fe473794db3bafa5c0aaf12119c7"
+      "bytes": 69680,
+      "sha256": "2bedc48b99e461b5b29fcf5caf720c9b5e9ca9d5465bd2031157efd752c51564"
     },
     {
       "path": "godot/main.tscn",
@@ -12945,8 +12946,8 @@
     },
     {
       "path": "tools/verify_map_runtime.py",
-      "bytes": 3935,
-      "sha256": "6c126e6e3bb3d8da77ef5017ed6c2cbe93ca8805d66c15f675e29f72513e0c35"
+      "bytes": 4121,
+      "sha256": "85bdee39df8fac2b08a08be9baab974c89ebbad144d7504919a2c87fca849b6e"
     },
     {
       "path": "tools/verify_multi_map.py",
@@ -12970,8 +12971,8 @@
     },
     {
       "path": "evidence/godot-moving-floor-scene-22-check.json",
-      "bytes": 1837,
-      "sha256": "c73acb8513ed52047727d63b7e8580d3ccb987d44f8968b0153df28df9a894ed"
+      "bytes": 1833,
+      "sha256": "6d443c77297f5c08041b2029735326eda92d89bf65b039efb3643bef4867c424"
     },
     {
       "path": "evidence/godot-moving-floor-scene-24-check.json",
@@ -12986,7 +12987,7 @@
     {
       "path": "evidence/godot-moving-floor-scene-27-check.json",
       "bytes": 1834,
-      "sha256": "70bcedb60c9d6ee0df7b7c5c195503300d332f935c98e27fc87be361e2c7c2c1"
+      "sha256": "3be8d07b1de489ac191158e9a9534206d417c83b0110fbcb6c910b5554769a70"
     },
     {
       "path": "evidence/godot-moving-floor-scene-42-check.json",
@@ -13001,7 +13002,7 @@
     {
       "path": "evidence/godot-moving-floor-scene-48-check.json",
       "bytes": 1841,
-      "sha256": "f3df74d15677f05ba635c49b7a6efdaf105983a36fe6209c569e495ec2f38095"
+      "sha256": "7be5f40f08ef8103c217156c930d1c0cee93fc9e092e8e26e4436573c548fae6"
     },
     {
       "path": "evidence/moving-floor-development-build.json",
@@ -13080,8 +13081,8 @@
     },
     {
       "path": "godot/core/original_moving_floors.gd",
-      "bytes": 15879,
-      "sha256": "14d523b1a6d305c7b3ed245f057090245b3081f54a38da9a66b27d3f090b7dd0"
+      "bytes": 16764,
+      "sha256": "ade71a17850732e7720d8812be3bb42eb2f959c28b4db9ce3c7c646dfe3ddcc5"
     },
     {
       "path": "godot/core/original_moving_floors.gd.uid",
@@ -13145,8 +13146,8 @@
     },
     {
       "path": "tools/native-probe/NativeProbe.cs",
-      "bytes": 11236,
-      "sha256": "dd8861c4cab50444b2c07d9ec2e5b711a1765cf271ab332951897999666e3f67"
+      "bytes": 11344,
+      "sha256": "ab9e14c9bce9e416da6bfebff0163c52bbf1d8d3dfd49d03d9bee476cb00ba2c"
     },
     {
       "path": "tools/native-probe/NativeProbe.csproj",
@@ -13191,7 +13192,7 @@
     {
       "path": "evidence/godot-reactive-floor-game-loop-check.json",
       "bytes": 948,
-      "sha256": "1481b6215028adcb3172e988f0aeb42a90f0e696521db4ab923e445d3c0def27"
+      "sha256": "a292ab39da1ece6e6fa49525c8f4c936577110ab9011c5f70230c69bde57964d"
     },
     {
       "path": "evidence/godot-reactive-floor-native-check.json",
@@ -13200,8 +13201,8 @@
     },
     {
       "path": "evidence/godot-reactive-floor-scene-38-check.json",
-      "bytes": 2431,
-      "sha256": "6d3ac81580cc7d49c9cd09a0b61c8d63d59b5b84af4ed7f2152dcfedea6819f2"
+      "bytes": 2432,
+      "sha256": "7cbd4bd90b7f4f1409ba6fe6cf4082af9a23d400c2622c87aa71b6894f1dd57a"
     },
     {
       "path": "evidence/godot-reactive-floor-scene-39-check.json",
@@ -13455,8 +13456,8 @@
     },
     {
       "path": "evidence/godot-navigation-maps-check.json",
-      "bytes": 71,
-      "sha256": "cc01ceaf1ef2968ec00196743a80d9b05c6e7a4b3768d206667a381ad1f9660f"
+      "bytes": 2888,
+      "sha256": "928bc2accf947dd9746387dbf92fff7c773ca245f23c012d85f9bae7c1b62493"
     },
     {
       "path": "evidence/godot-navigation-platform-ai-level40-check.json",
@@ -13601,7 +13602,7 @@
     {
       "path": "evidence/navigation-map-export.json",
       "bytes": 11056,
-      "sha256": "b2de661361907b4eb1a04ebb7970725d956f844f25384f806c32f80aec8e4b4e"
+      "sha256": "96743089116bfc9745f0dcbc287597c0e3e11e35f65d57c36882a17b711c2b4a"
     },
     {
       "path": "evidence/navigation-maps-batch00-native-launch.json",
@@ -13875,298 +13876,298 @@
     },
     {
       "path": "godot/assets/original/navigation/level10.json",
-      "bytes": 176964,
-      "sha256": "41070a731b648a9314e4cab47d0d055beee4db0b7d3af49e726d418c1dfe032f"
+      "bytes": 178112,
+      "sha256": "c411326a07abe78b4ff340fd2d05aa6e87fa126f8bf321136d7fed83068ea216"
     },
     {
       "path": "godot/assets/original/navigation/level11.json",
-      "bytes": 167472,
-      "sha256": "6fae806f0faec31899df6af527435b539a40fdc2c075fa20bcc4e308549209a0"
+      "bytes": 168584,
+      "sha256": "8fb8f4a295eed1f5315058ca1d552b449df9db4dfbc1ca42a1dc9d7946dad4a2"
     },
     {
       "path": "godot/assets/original/navigation/level12.json",
-      "bytes": 176156,
-      "sha256": "59e539dbb55921581723c298fef5bacba93bd098d73f45ac40ecbd9a5205a4c3"
+      "bytes": 177308,
+      "sha256": "00c48aa06c3fd59895868c07de0161bea301cbdd1a3728503dd44c0e997e3713"
     },
     {
       "path": "godot/assets/original/navigation/level13.json",
-      "bytes": 172388,
-      "sha256": "ad2ca14784dfc47c9b7f36d14b611ea0733c91c7652f2a7f86feba8be1593d92"
+      "bytes": 173532,
+      "sha256": "207600b4d188e4f58d2f0171d870fbc66e4857402e66ab85ec692c8ee78f4052"
     },
     {
       "path": "godot/assets/original/navigation/level14.json",
-      "bytes": 168048,
-      "sha256": "617bf8f25563c6b263cfb4beedacc9925fb1758d7565759733868e5868ad4a69"
+      "bytes": 169164,
+      "sha256": "3be0c6d3d2f57ff95eed930991e33106fa192f67a18f3d298c57bba6f6847b15"
     },
     {
       "path": "godot/assets/original/navigation/level15.json",
-      "bytes": 144180,
-      "sha256": "84f725099cf2e13b959322110858fcd0f89bbca269214acfb30e7be26a1121e6"
+      "bytes": 144620,
+      "sha256": "d7779c8214ac8431525b430129799a134219ccfd6136f93d00d8455bde2a8218"
     },
     {
       "path": "godot/assets/original/navigation/level16.json",
-      "bytes": 166148,
-      "sha256": "40450481fbd3b1bf392a19c66211851cb29959823159c75fc7fc04e721a0d890"
+      "bytes": 167248,
+      "sha256": "34c784113e4490403b5e5b21509aebc723e785333a27ce0bee6c6b4c7e0a2907"
     },
     {
       "path": "godot/assets/original/navigation/level17.json",
-      "bytes": 169484,
-      "sha256": "c9a292e814ce0eb97c1a0a652f4f3e9d9443da107cf69abcff112030f340732a"
+      "bytes": 170616,
+      "sha256": "ea677fbf3dbff345d32e8dcf2ecae78e336abd5a65a649de2a09504f2afdcb9c"
     },
     {
       "path": "godot/assets/original/navigation/level18.json",
-      "bytes": 165456,
-      "sha256": "7db48cfec2ba5f3b986e7abac415a873297473fe9da310cd8f49490b8bf4057a"
+      "bytes": 166548,
+      "sha256": "6026fc6edee484e3f72c782d0b21fecdc5026b0f63c4501902d8977e060e6dc6"
     },
     {
       "path": "godot/assets/original/navigation/level19.json",
-      "bytes": 166912,
-      "sha256": "eb27d99d0c891d233b86f450e13a736bd38aade6a0c47b8c1082de389c6e7059"
+      "bytes": 168020,
+      "sha256": "b5904b0da5e1fa922b7818b18934c43b26c9c1a9d161a8c875c7c2ac0131d5f9"
     },
     {
       "path": "godot/assets/original/navigation/level2.json",
-      "bytes": 173120,
-      "sha256": "07adc25618f9f6a4bd53aa7bbb8c2d91f49ad6b266f5439667a845ee7a6c85d3"
+      "bytes": 174260,
+      "sha256": "945bff7317346c93f76a06afc2c5111f18708a7780b20b6a2849a5d7f5969f15"
     },
     {
       "path": "godot/assets/original/navigation/level20.json",
-      "bytes": 166724,
-      "sha256": "6217b71357e7f2ab2635dd0e50254432b2c136ca2f1dc67dbe9f6ec2c174cc23"
+      "bytes": 167836,
+      "sha256": "ad9079e4d01eacc05d8c2dae4c542d16ba17f5fa18512779f739779203af574f"
     },
     {
       "path": "godot/assets/original/navigation/level21.json",
-      "bytes": 172896,
-      "sha256": "67ead3f1e2361a560b204eb6a28cc16008e1dad319439ab5d3c490b1b6dbae01"
+      "bytes": 174036,
+      "sha256": "c3dc2bb2c438ceca29b21ea09b670f45ae897c2134d5dfb6d5f3825cb8d285b0"
     },
     {
       "path": "godot/assets/original/navigation/level22.json",
-      "bytes": 151332,
-      "sha256": "2aeae135ec3f915da3cdc1ec5fcea3af52d246952aa43c55514b02bb7d690c48"
+      "bytes": 151848,
+      "sha256": "6774ee08876d29f9437a553c184a5679f256d4a3550ffc5eb4acfdfab9903359"
     },
     {
       "path": "godot/assets/original/navigation/level23.json",
-      "bytes": 175996,
-      "sha256": "6aae7019b8e46b5fd6a281d65850d1fb144670841bee12bf2829b868edb72358"
+      "bytes": 177152,
+      "sha256": "ff52aacab169dc1ecfae06b3e14b00bc193cbd91158916619be880508d2269b5"
     },
     {
       "path": "godot/assets/original/navigation/level24.json",
-      "bytes": 169188,
-      "sha256": "42451f9745e60ed55d35c995028b42d4ea83eb007939d30b00c2e511155dc4b6"
+      "bytes": 170264,
+      "sha256": "b7f72083c696767cad0bce8a94d8503c8569444acb8ca1edd0074fb026dbe63c"
     },
     {
       "path": "godot/assets/original/navigation/level25.json",
-      "bytes": 182252,
-      "sha256": "a06df189c8a6571320311387182c8f5abcb54736cf93756407b3cb5b03a5bab0"
+      "bytes": 183436,
+      "sha256": "e685c60f26d3a85638e17091a9a686b6c2d0f224723709f2c34c8f5f821c36c4"
     },
     {
       "path": "godot/assets/original/navigation/level26.json",
-      "bytes": 165832,
-      "sha256": "41377eff7cb17250f982be935ee80b17113e18dd972a44438ce3f15fbc7f9c22"
+      "bytes": 166892,
+      "sha256": "ef4e9aa7cd2bac7687da3a0c00143d4e9b14b4461d147d2bd6ced76719b370e6"
     },
     {
       "path": "godot/assets/original/navigation/level27.json",
-      "bytes": 177800,
-      "sha256": "c715d5c6d5b6e352d89329c4c853da018488d39968ab118cc2380e3f8dff925d"
+      "bytes": 178940,
+      "sha256": "5a27723cab3a2d043ea2d579a087714bb11f1da15af9d44fc05487c55c972a56"
     },
     {
       "path": "godot/assets/original/navigation/level28.json",
-      "bytes": 184228,
-      "sha256": "916a262e8c014a7d17663a89fd20ee7382f0aefb00be1d85d1708e78d09a03ca"
+      "bytes": 185200,
+      "sha256": "0504c816ae04d5578cd8ef83cc50571abe6d66c1479e2104f1e949482ad8e52a"
     },
     {
       "path": "godot/assets/original/navigation/level29.json",
-      "bytes": 168056,
-      "sha256": "98c4f9feaa46bacf13df6c3707f0ddbd40b543a005b197362e0e77cc2e2ebca1"
+      "bytes": 169128,
+      "sha256": "be8a235163285cfdc3fe8e7dc1d4d36f205d88333be81962785b9753059977bf"
     },
     {
       "path": "godot/assets/original/navigation/level3.json",
-      "bytes": 149204,
-      "sha256": "05c6624125ba7395b09bc82771c39a98d0981b9f697b12b891daa1b2dcb77060"
+      "bytes": 149720,
+      "sha256": "3d461184470af9f0d64ed83112c56032334ca49bbc3872cbce8fd789fafa093d"
     },
     {
       "path": "godot/assets/original/navigation/level30.json",
-      "bytes": 178648,
-      "sha256": "fc035b6ebdb7348c7e38038359589c0aaec1abe2bf0c04d3c9ebad7b3d7746b0"
+      "bytes": 179820,
+      "sha256": "76e636e183fef4df3b2b53011b2c639f4f6fed317bdfc24b51e29e926c13cbd8"
     },
     {
       "path": "godot/assets/original/navigation/level31.json",
-      "bytes": 175244,
-      "sha256": "773ef1a884ccc7417616347d7f7d07397a74a23198cfe092cef0e6331f0b1746"
+      "bytes": 176396,
+      "sha256": "a0a427aa83bcc7056e9e6b30801009c9d4c5ebb28487c9b667f97bf05cdba900"
     },
     {
       "path": "godot/assets/original/navigation/level32.json",
-      "bytes": 173624,
-      "sha256": "fca6e403ffbc7f37b73dd316071b75e20cdb17e775cf358020cb2535009cca51"
+      "bytes": 174768,
+      "sha256": "921f971a00efb19817dd062f9a476341635af16109573d96be965ef109a88b68"
     },
     {
       "path": "godot/assets/original/navigation/level33.json",
-      "bytes": 173596,
-      "sha256": "65192688a7f1e597dc5aca979e04c561e59830dae1e7d8746e1db99c7284d361"
+      "bytes": 174736,
+      "sha256": "02627ee1bc34b4f1cdce17ec17c38d75d2d95aa6772887b3e5c43da109da32d5"
     },
     {
       "path": "godot/assets/original/navigation/level34.json",
-      "bytes": 178348,
-      "sha256": "19c58085be5ab464e883dfee1414606095b66efc7f53fb01805aa5468ed7043c"
+      "bytes": 179516,
+      "sha256": "511c7cd4b59f31f546e8ae1ec875071ceaea0f7e1a2db42ee0aa87112a002ed6"
     },
     {
       "path": "godot/assets/original/navigation/level35.json",
-      "bytes": 153620,
-      "sha256": "4dbb2464e2c3463fca60843777ef3d18ff4335197fff6e23676d07dbf28472b5"
+      "bytes": 154140,
+      "sha256": "3f704e3d2068360c657ef59205b8f33abd4dbf89ab1d97e3748c962149511ada"
     },
     {
       "path": "godot/assets/original/navigation/level36.json",
-      "bytes": 145864,
-      "sha256": "bfc8158f4d41c2291fdbe4368ba41194fea44c3b84c3e8f1cf8abf388e4b1ac6"
+      "bytes": 146348,
+      "sha256": "f7cedd207c85f6b9c441a2abd07c3ded8f34ef1dc5d6ee891bcc7a585edbafff"
     },
     {
       "path": "godot/assets/original/navigation/level37.json",
-      "bytes": 144120,
-      "sha256": "e174d8da473e2dd074c6ac7cbe4e90911414ed5ab7171786c6b4e479beffaee1"
+      "bytes": 144560,
+      "sha256": "972ebaaf2c88fa123adfe9656e2756b16a3b110faf8b131320746507520d561f"
     },
     {
       "path": "godot/assets/original/navigation/level38.json",
-      "bytes": 148836,
-      "sha256": "d6143798b5f115185c7d6ab91f74db969fc150c61d0fccc87045c4ef7adaaa61"
+      "bytes": 149336,
+      "sha256": "2872f31fb085ad6f464c55bd7a979daf48170bb294b3ecc8a520c06504afaeda"
     },
     {
       "path": "godot/assets/original/navigation/level39.json",
-      "bytes": 148520,
-      "sha256": "c17d47a9df6a944217236cd5b0b2ff6f6e261b7c85ef695d79b4c8c178a505f2"
+      "bytes": 149016,
+      "sha256": "ae038437b40cba01e45f270f4b3fa5cf6e4e57bc59805a824503186da1bcf6e4"
     },
     {
       "path": "godot/assets/original/navigation/level4.json",
-      "bytes": 142600,
-      "sha256": "7c4157f54d09605861f5626e1fc874af75b30a0a76421f053425697c7cda47ba"
+      "bytes": 143036,
+      "sha256": "ff053da5758208b6d798e24eb823d9c92fa8ec24aa51a486347f07d967e3aed9"
     },
     {
       "path": "godot/assets/original/navigation/level40.json",
-      "bytes": 152564,
-      "sha256": "5d82db750a573fbbd61ecabb1034fc4d5a0b576402208d60fdf701675c322fc6"
+      "bytes": 153060,
+      "sha256": "b824ff0372c6435de0cc587e7e7ebd4f1feb27dbc2f874ba7be0d62e0c534d37"
     },
     {
       "path": "godot/assets/original/navigation/level41.json",
-      "bytes": 152276,
-      "sha256": "9243685248e0316a2017721e744886c98c677715544b49992d8fb85370b208a7"
+      "bytes": 152788,
+      "sha256": "323a8f91537be57c6a03109cb4b94e9501cba0273fbff7ca24820d428b85cfc8"
     },
     {
       "path": "godot/assets/original/navigation/level42.json",
-      "bytes": 158196,
-      "sha256": "6c8e8bf2d3825867070c9d64755c1cb4108240289a5dbace7321bce97954565e"
+      "bytes": 158704,
+      "sha256": "99979c6a2fabe85d8a39e0d82ecca2d015fdd300d3b40f4be5c9791dec87b7dd"
     },
     {
       "path": "godot/assets/original/navigation/level43.json",
-      "bytes": 148440,
-      "sha256": "1f4457d10b763e9dc7193f7bfca20c9439095ec01d54c1bc81333efde2cfa3b5"
+      "bytes": 148936,
+      "sha256": "707c7845473605384a55d78ff43ae8c9898efd4012a4ec86d31e78ed64ba6c0e"
     },
     {
       "path": "godot/assets/original/navigation/level44.json",
-      "bytes": 171864,
-      "sha256": "e8a339609c78ddcc99cb8e4951e06049a974b98784bc25753b5484b6391c8483"
+      "bytes": 173020,
+      "sha256": "d4f34b2aefeef9862a37c0284849d0b757d4e4511418636ee0070a7eed303e15"
     },
     {
       "path": "godot/assets/original/navigation/level45.json",
-      "bytes": 164384,
-      "sha256": "4e5a43856b8a426207ac5d7a5c20b89b42e490491cb39125781cb832a18a93c2"
+      "bytes": 164968,
+      "sha256": "afad9df46e167195318f798ef7287215f213bd4982405679d77d28bb34a5cbe5"
     },
     {
       "path": "godot/assets/original/navigation/level46.json",
-      "bytes": 144324,
-      "sha256": "78e7b5ae2546a2b795130239ff836b30cda542a41e73f1aea2aac489c8434525"
+      "bytes": 144848,
+      "sha256": "5734be1872e438158435a042019a40fb1d2d4280ebb131aa8df86d28d8cb29de"
     },
     {
       "path": "godot/assets/original/navigation/level47.json",
-      "bytes": 148316,
-      "sha256": "bc0cbde91f43058e1aab3ad1fd3aef5054dc546eaa5a4b796723b85936c6cae4"
+      "bytes": 148808,
+      "sha256": "448d882bd04e46e7c810cc92d1195b61be309ef43f909976386c3bf1580281e4"
     },
     {
       "path": "godot/assets/original/navigation/level48.json",
-      "bytes": 147048,
-      "sha256": "f2ec3b6d68b7d3ccb55d80aebb40af494f30fbc5b0d35364725a871a1310512e"
+      "bytes": 147568,
+      "sha256": "4772bc07aab6e48559c7897f860040a2890ab41c601b85591bc37b4403cc778c"
     },
     {
       "path": "godot/assets/original/navigation/level49.json",
-      "bytes": 145492,
-      "sha256": "37995a842c08d6cc4bdb2df2768714442012fe448833e3c5409e561d0cde11bd"
+      "bytes": 145972,
+      "sha256": "548673754ef87d7c7e4d342575c93f265fd8bb49c4dba2ecef012b54b01d534d"
     },
     {
       "path": "godot/assets/original/navigation/level5.json",
-      "bytes": 176400,
-      "sha256": "900e766c446ee7e1737e74351825644f50d91564358c3e307540672c75160550"
+      "bytes": 177568,
+      "sha256": "be2c214a81b4b5212cb79f531cf2e85fbf99058af853caf80ee081a2bd4fccbc"
     },
     {
       "path": "godot/assets/original/navigation/level50.json",
-      "bytes": 146480,
-      "sha256": "e76c7da44e54ff36bf17d4f7569516028757859a517ea7a9e8800f69e024bf5b"
+      "bytes": 146988,
+      "sha256": "ed6115d12cb585b0857e9bd4738ca0490b12edf2bac3ac8ce589815fb04e194b"
     },
     {
       "path": "godot/assets/original/navigation/level51.json",
-      "bytes": 164248,
-      "sha256": "00fbb88a63adce76443a450daf9de8540d0276af9d1884f8d90e5fb0f887952e"
+      "bytes": 165320,
+      "sha256": "77535b9b687106daf78e595c522196b7e930821a7910fdcba19af81c1475965e"
     },
     {
       "path": "godot/assets/original/navigation/level52.json",
-      "bytes": 162632,
-      "sha256": "fc78ff18b2770e03b1e625afcf31d66c4ce91f1007df8688a1944e991b029aa6"
+      "bytes": 163736,
+      "sha256": "239faff531b5e5a40d8b30bddd9a98a7e801d66a560cbcf8b8f326f99948907c"
     },
     {
       "path": "godot/assets/original/navigation/level53.json",
-      "bytes": 173388,
-      "sha256": "2da9bc7250f7d6d920381696fdf870c5c8eb15006691dec5b37d81f4fe3df855"
+      "bytes": 174528,
+      "sha256": "7f439e0b6a4785983c24e0c392597cdf2c8d0b40f689359f1d42f136f9736f58"
     },
     {
       "path": "godot/assets/original/navigation/level54.json",
-      "bytes": 154680,
-      "sha256": "a5d6411984ea4c6f6073f76161e2dce3214e78d20481c220208386ff39d905b4"
+      "bytes": 155212,
+      "sha256": "579578ee90b79f064ed853652e740bba9ef34e5dc4c327bd3fd5cdb95dda5732"
     },
     {
       "path": "godot/assets/original/navigation/level55.json",
-      "bytes": 160020,
-      "sha256": "e8943a9be15b3b897aa66255f7a3da87cad79f0a105c5039b62eb1dfaa819b19"
+      "bytes": 160956,
+      "sha256": "bf943851dd307e76cf426278174d6f9b460789b4d7e6600f016c60d6a6e9d03d"
     },
     {
       "path": "godot/assets/original/navigation/level56.json",
-      "bytes": 141968,
-      "sha256": "ff084594982d7f54ec367c53a64a77b2330af52b3d027757f70934b6b66e0c37"
+      "bytes": 142400,
+      "sha256": "327093f3a76d46512bd7b4e4af5dff684196fa9ce366cd9d0618f284e2be6ea3"
     },
     {
       "path": "godot/assets/original/navigation/level57.json",
-      "bytes": 141876,
-      "sha256": "8eb723c91d980c4f5676affcd4c95fc9f505f69ea04054d82c851d1fc1b1c24a"
+      "bytes": 142308,
+      "sha256": "bc5f4606f3ae2accb2cfe9977df4e32c461815d92fdcc6d86108b78bfd6e8412"
     },
     {
       "path": "godot/assets/original/navigation/level58.json",
-      "bytes": 142712,
-      "sha256": "29634187b0369eccd770567e4f00514d44d189ecfe7ad166bf910e77f1fdeb53"
+      "bytes": 143144,
+      "sha256": "fd244ea1e5240b048e670f69b75c6dc237dfa763b77bd708757813342a0b17e8"
     },
     {
       "path": "godot/assets/original/navigation/level59.json",
-      "bytes": 144020,
-      "sha256": "14c26119967835d1fd422aca5a3a55b5d10657ded3f6d874760ca3ff7ff17ac4"
+      "bytes": 144456,
+      "sha256": "cfc24cbb8d45f60f0acaef91695cfdcd4383ab93faf1107c394de3bc7e81ee56"
     },
     {
       "path": "godot/assets/original/navigation/level6.json",
-      "bytes": 175744,
-      "sha256": "ffa64e7ce89b7a8d4791ce4cfc24d9d6a6523f9eefa7cba8c8de3aa6d380ed37"
+      "bytes": 176900,
+      "sha256": "2dfc31a5c374de4f39e6ed2d7691096b34944dc089c0fc6c4198c4d3793822f4"
     },
     {
       "path": "godot/assets/original/navigation/level60.json",
-      "bytes": 149608,
-      "sha256": "31df66ab60ac22037da5636bd0a67dcdd4dae25b17b48f5f694c230c8c3fcbfc"
+      "bytes": 150132,
+      "sha256": "5b61193371d357a972ac055acbeb432ed1e81cef7bbd8c21c64a677bcc0f5cb7"
     },
     {
       "path": "godot/assets/original/navigation/level7.json",
-      "bytes": 175408,
-      "sha256": "183cdc08ecd72b4edc589f146704e0bfc41de948db06cb9646cb890eb63b2b33"
+      "bytes": 176556,
+      "sha256": "4a574659f6188c994ea87dab567b82bfb2e0927861d002279c27e109c90fd409"
     },
     {
       "path": "godot/assets/original/navigation/level8.json",
-      "bytes": 173592,
-      "sha256": "f17d76d6d6de215f3a156cf711b8ba1d589811d6c1e568940945e621de2ec517"
+      "bytes": 174732,
+      "sha256": "5f0b5e1a7325b62044a0aaf8ab45d6066a7549cd8142eb71cad63f9348bf925e"
     },
     {
       "path": "godot/assets/original/navigation/level9.json",
-      "bytes": 172328,
-      "sha256": "9052908e9cfc70edca5aafa0b782d30fbe7eb9976f07b435176bb11965f5b3a5"
+      "bytes": 173460,
+      "sha256": "eea3dacf5a5fcdb2616c8b5cde384f86862d2a087c4830c54d754f512833bd46"
     },
     {
       "path": "godot/core/original_decoy_ai.gd.uid",
@@ -14180,8 +14181,8 @@
     },
     {
       "path": "godot/core/original_navigation_world.gd",
-      "bytes": 3862,
-      "sha256": "56c6d9122b5099095539e05c63d5848d47de6c51e3a56799019997df50caeb5c"
+      "bytes": 6021,
+      "sha256": "4027f5e1eb581f1785574d067217acd03254d45f7c5c6ac92207de25af631ad7"
     },
     {
       "path": "godot/core/original_navigation_world.gd.uid",
@@ -14255,8 +14256,8 @@
     },
     {
       "path": "tools/export_navigation_maps.py",
-      "bytes": 1979,
-      "sha256": "5abd7efd13342c09b97e5507ae63c2007cfcdeb4dd58c591e3e441110c372b1c"
+      "bytes": 2213,
+      "sha256": "2aaa0334031e0812f5b4841fa70c642ee66cc8045da9bc1c562bb4990da039b7"
     },
     {
       "path": "tools/navigation-maps-native/Cases.cs",
@@ -14322,6 +14323,706 @@
       "path": "evidence/arkevo-navigation-live.png",
       "bytes": 81640,
       "sha256": "d4d12de2ffbb06fc696ff06e8c51cb7ed08f88ed1fbd1062272531e76d60f989"
+    },
+    {
+      "path": "evidence/godot-navigation-updates-browser-check.json",
+      "bytes": 812,
+      "sha256": "d44c1fef3265fa148fc6e1d0f2fef3aabad8dbc9d2992502065dd7dc8a8b61d6"
+    },
+    {
+      "path": "evidence/godot-navigation-updates-check.json",
+      "bytes": 1010,
+      "sha256": "f8afecd7478f04b4063e03b088eb7eb4e0cb0ca25f04b4557c5fb8b313ce7070"
+    },
+    {
+      "path": "evidence/godot-navigation-updates-game-check.json",
+      "bytes": 292,
+      "sha256": "b0f05ff816a85a226330efdaf35cd7d12e69a3110dfe071f8f89396976e488f9"
+    },
+    {
+      "path": "evidence/godot-navigation-updates-level48-check.json",
+      "bytes": 1010,
+      "sha256": "ecd1d971a4b8ac7d59009403b871213463c27d54dd98ac9eb1f68a8d4b4b4512"
+    },
+    {
+      "path": "evidence/godot-navigation-updates-scene-level3-check.json",
+      "bytes": 1129,
+      "sha256": "6beab4234cb37c082f26f202e01b1b63c669582741bdb411670ec5063d3f71d7"
+    },
+    {
+      "path": "evidence/godot-navigation-updates-scene-level41-check.json",
+      "bytes": 1130,
+      "sha256": "4e0d139393d21bdb155450e9ec5ead93532cea96fd90d161529fcc17671008da"
+    },
+    {
+      "path": "evidence/godot-navigation-updates-scene-level48-check.json",
+      "bytes": 1009,
+      "sha256": "fc5603c1820d235240dced23f88b5bfe6535842787aad8180207c4a8a5b53be6"
+    },
+    {
+      "path": "evidence/godot-navigation-updates-scene-level55-check.json",
+      "bytes": 1132,
+      "sha256": "e0470ed9f7912403b744d3ae6794cfb14c0f44b0797d63102241175f18cabe34"
+    },
+    {
+      "path": "evidence/navigation-graph-settings.json",
+      "bytes": 259384,
+      "sha256": "65045391b3022feeddfe30949cfaf82cbf5a4f1401ffc5e9b33720c2581538ca"
+    },
+    {
+      "path": "evidence/navigation-updates-development-build.json",
+      "bytes": 22879,
+      "sha256": "98dc8e08727f28ac7d9f658f67a8b3455615129be3cb79a22977d10c7d8c77c8"
+    },
+    {
+      "path": "evidence/navigation-updates-level48-native-launch.json",
+      "bytes": 728,
+      "sha256": "5e8d9c946d8bfd92cf85e46ae3297ba2e0b298ac8168f8667cb90facf22a3188"
+    },
+    {
+      "path": "evidence/navigation-updates-level48-unity-native-player.log",
+      "bytes": 11359,
+      "sha256": "e55650b8ce69341008c0fa7fda38d051cf664a6c7b65347f8d884ecf63b4accf"
+    },
+    {
+      "path": "evidence/navigation-updates-level48-unity-native-probe.json",
+      "bytes": 4127,
+      "sha256": "073387cb54c7ebf8036e235bf999a2be51b8c601f539bb04933ce16965f8983a"
+    },
+    {
+      "path": "evidence/navigation-updates-maze-browser-log.json",
+      "bytes": 17287,
+      "sha256": "22fa18519afbed95e4d6cc1e73eb499ba545ee6b9e98c332718992a1b8585b11"
+    },
+    {
+      "path": "evidence/navigation-updates-maze-round2.png",
+      "bytes": 79663,
+      "sha256": "9539418782e863a9939f678f06b72d9937842d6c8720f700cddc144db9156bac"
+    },
+    {
+      "path": "evidence/navigation-updates-native-launch.json",
+      "bytes": 730,
+      "sha256": "5ac7f1a25b16fdaa2615ced3274af8b6f2cea9cd385fea3d0b97109a1d6175a7"
+    },
+    {
+      "path": "evidence/navigation-updates-native-level48.json",
+      "bytes": 13478238,
+      "sha256": "28b58283097862a217db9421e3685a400a5eeb7d9e105e933d1c5f310e4f9c4e"
+    },
+    {
+      "path": "evidence/navigation-updates-native-manifest.json",
+      "bytes": 497,
+      "sha256": "4b9f43f47876cc3929d80ca941c5da548d11e9e5ae6d199cc8df74a1419a9ab1"
+    },
+    {
+      "path": "evidence/navigation-updates-native.json",
+      "bytes": 12856059,
+      "sha256": "d0480b609d4672a85692949735b7fa8df5d78eb2c102e35163287611ca3d3603"
+    },
+    {
+      "path": "evidence/navigation-updates-restoration-check.json",
+      "bytes": 1626,
+      "sha256": "50d3d327ec11decf375476fcac3ba833e9f5aa137333a09cc992e933e5446937"
+    },
+    {
+      "path": "evidence/navigation-updates-roller-browser-log.json",
+      "bytes": 31764,
+      "sha256": "007615c8ac732857a7745451953fe3780165ddda7b0236523f8d4e5a7e52d7f9"
+    },
+    {
+      "path": "evidence/navigation-updates-roller-play.png",
+      "bytes": 65118,
+      "sha256": "2c4d3c963b5df3934a3f83e2c5a36d1e6d9838f7d871379beb47070e51d9be8e"
+    },
+    {
+      "path": "evidence/navigation-updates-unity-native-player.log",
+      "bytes": 11808,
+      "sha256": "32c79bcbcdde05c88d296c0a1d67ffd1119aebc63220ae9f748ee2f5f1f5114c"
+    },
+    {
+      "path": "evidence/navigation-updates-unity-native-probe.json",
+      "bytes": 4128,
+      "sha256": "f775152e5ffac15d741460727f91cb4ec3e70b9410e245a84391c6d8a3cacda8"
+    },
+    {
+      "path": "evidence/web-navigation-updates-package-check.json",
+      "bytes": 2496,
+      "sha256": "33a1a870617b17fd18b407258033b39a599321d210cbf60754c3ee592d7cdbce"
+    },
+    {
+      "path": "godot/core/original_actor_bounds.gd.uid",
+      "bytes": 20,
+      "sha256": "19982737dfd8d5127fd8a624fe32a2b3518339797a4009cf36d4e522dac54068"
+    },
+    {
+      "path": "godot/core/original_actor_elements.gd.uid",
+      "bytes": 19,
+      "sha256": "b40f3f2f8785f882e6ebbc3dbe77b3da192228a5b2def32a15c8505518c0cc8c"
+    },
+    {
+      "path": "godot/core/original_actor_motion.gd.uid",
+      "bytes": 20,
+      "sha256": "5fcb9149ae685a26694cdfde80a442f7509f2ca4a5fa4c933bec0be757242e57"
+    },
+    {
+      "path": "godot/core/original_boundary_preview.gd.uid",
+      "bytes": 20,
+      "sha256": "153c9df85e4c50a63ab5123097b25e1683abeca74b56c5a27b7dbfb0073a9e1b"
+    },
+    {
+      "path": "godot/core/original_camera_rig.gd.uid",
+      "bytes": 20,
+      "sha256": "1e9de3e0b8f8c3edc322efe4cc799a92afd84ab90de298af3da19a3fbfd83957"
+    },
+    {
+      "path": "godot/core/original_cell_grid.gd.uid",
+      "bytes": 20,
+      "sha256": "253d8c2c10d9718ff48314a7e72f0642325fb4f079116e0129b0a0a1afb2b3b7"
+    },
+    {
+      "path": "godot/core/original_cell_preview.gd.uid",
+      "bytes": 19,
+      "sha256": "b13c807eb14007b0b9e8d730147de0f09683d5d3ed787ccfc16ddf3eb9f021a9"
+    },
+    {
+      "path": "godot/core/original_character_preview.gd.uid",
+      "bytes": 19,
+      "sha256": "cd98ff88f33152629383c08ee36339c4bf32321fa4cc83ea2125a96fe31ca402"
+    },
+    {
+      "path": "godot/core/original_collision_world.gd.uid",
+      "bytes": 20,
+      "sha256": "1463c0d49e8ec35b38e77709eb03a0eea0e85dc1b93611f1b2172f7f89eb7fb9"
+    },
+    {
+      "path": "godot/core/original_combat_world.gd.uid",
+      "bytes": 19,
+      "sha256": "b6cbaea68a5e00ccd9c77c56560d7fb02ae60d48f99f0aeb1d97d623f52c7481"
+    },
+    {
+      "path": "godot/core/original_decoy_elements.gd.uid",
+      "bytes": 20,
+      "sha256": "d72e67411b9e7613154ab7f26b9d9701f37243ffaa13c1cc9a773a6cf7c8a292"
+    },
+    {
+      "path": "godot/core/original_decoy_input.gd.uid",
+      "bytes": 20,
+      "sha256": "a0571c8e480f06df1112ffde235974f9521c9873da4fddb58560bdca2a574892"
+    },
+    {
+      "path": "godot/core/original_decoy_motion.gd.uid",
+      "bytes": 20,
+      "sha256": "cb4efe263f347c913cd04cd421cf791557c0909394a985544957f392e0b76b6d"
+    },
+    {
+      "path": "godot/core/original_decoy_world.gd.uid",
+      "bytes": 20,
+      "sha256": "6ac36b3881c4a6ac85e07c5b788796e8c26fa8b9c97837cd9cf8453d6f86155e"
+    },
+    {
+      "path": "godot/core/original_disc_motion.gd.uid",
+      "bytes": 20,
+      "sha256": "6aec790cb9ac49dc1dfbb1726f2ead29d368d18f1cc437b32f2dd1f47eaa5e47"
+    },
+    {
+      "path": "godot/core/original_disc_preview.gd.uid",
+      "bytes": 20,
+      "sha256": "3ba4f4b43cf0d96b365ec27912cea93fa4bbdf547059ef3507be68796b0c5386"
+    },
+    {
+      "path": "godot/core/original_disc_trail.gd.uid",
+      "bytes": 20,
+      "sha256": "f00961e9bd195e204a8e5e3714b8cba905468b3db5d20d7bcf4f809964d7b658"
+    },
+    {
+      "path": "godot/core/original_disguise.gd.uid",
+      "bytes": 19,
+      "sha256": "0db566b8891ed1beb53c4913bd1e495094fc66dcd9d6648c59f6c6ec232b0a69"
+    },
+    {
+      "path": "godot/core/original_disguise_preview.gd.uid",
+      "bytes": 19,
+      "sha256": "b09751392b35d824f4494e95ce8f9ab8b008166c87e9513e75f411705667a572"
+    },
+    {
+      "path": "godot/core/original_explosion.gd.uid",
+      "bytes": 20,
+      "sha256": "0acc58d634d27b44099ef76ae883346a9aa3253dab92658a7e59024ff976e521"
+    },
+    {
+      "path": "godot/core/original_explosion_preview.gd.uid",
+      "bytes": 20,
+      "sha256": "37f840d8eb115a061e33d302523d994f1ddb8386cffb025ff043c41c0c6683df"
+    },
+    {
+      "path": "godot/core/original_ffa_round.gd.uid",
+      "bytes": 19,
+      "sha256": "939741fcb9dec74c845b9db7b543713fbee60c18e1860067d3c87730d52cb6f6"
+    },
+    {
+      "path": "godot/core/original_ffa_score.gd.uid",
+      "bytes": 19,
+      "sha256": "f13750a754987bb7e3aac206f71b0c64550b8c9cee6090a759b43e402d441a0e"
+    },
+    {
+      "path": "godot/core/original_grenade.gd.uid",
+      "bytes": 20,
+      "sha256": "ca8289e8bca41a1659c75c42b4c204a8d28022fa011aeaa242114ba621ebab0b"
+    },
+    {
+      "path": "godot/core/original_ground_queries.gd.uid",
+      "bytes": 19,
+      "sha256": "d8e661a03563a314f0d1e9d289de4787fa9b4bdc212147d431d2361f55e34aed"
+    },
+    {
+      "path": "godot/core/original_level_boundary.gd.uid",
+      "bytes": 20,
+      "sha256": "2e9f909eb4256da89ca2302cc64b293a9c84b871da24ab03447b440351bf27d8"
+    },
+    {
+      "path": "godot/core/original_navigation_updates.gd",
+      "bytes": 5512,
+      "sha256": "ffdc0149d9ed55b154926d1d40ea4be94db0457b7aead272aac5a14ec3e5e6d4"
+    },
+    {
+      "path": "godot/core/original_navigation_updates.gd.uid",
+      "bytes": 20,
+      "sha256": "46d4e0ff49b4439928a5fa34147eabdc1bf0df1c0858df385e5736c21b96206e"
+    },
+    {
+      "path": "godot/core/original_player_ai_actions.gd.uid",
+      "bytes": 20,
+      "sha256": "ab6072e64a24eeb25b06729863dbbae81d02795b0781838e7368c946fd6ed042"
+    },
+    {
+      "path": "godot/core/original_player_ai_buttons.gd.uid",
+      "bytes": 20,
+      "sha256": "cc3af2dd13612af202f48682b6fdbf1ae137d6433cdcbd77c8cf2c9b653183a1"
+    },
+    {
+      "path": "godot/core/original_player_ai_policy.gd.uid",
+      "bytes": 20,
+      "sha256": "3875949b9790f616f3855e5c27c0f8f0e4b774994b9f36d2b22f11ad8fad7939"
+    },
+    {
+      "path": "godot/core/original_player_ai_targeting.gd.uid",
+      "bytes": 20,
+      "sha256": "00bdd5b40bd37bc3565d1b4603f70e03c69386eaeb32f6323412f283ed758d45"
+    },
+    {
+      "path": "godot/core/original_player_input.gd.uid",
+      "bytes": 20,
+      "sha256": "500ad8482d171ccabc75ca94914bd785f5dbcd6b33a8b6e211bab7d01a4566a3"
+    },
+    {
+      "path": "godot/core/original_player_powers.gd.uid",
+      "bytes": 20,
+      "sha256": "3be9d75f7299778a978dccff6a5ecf149280f360b78b66c4fd0da2508a9416c0"
+    },
+    {
+      "path": "godot/core/original_player_weapons.gd.uid",
+      "bytes": 20,
+      "sha256": "18338a6da503399e4b6e3e60dc4e655d44381c592801c6397e294baa108cbb60"
+    },
+    {
+      "path": "godot/core/original_powerup_preview.gd.uid",
+      "bytes": 20,
+      "sha256": "cc9e79ed99a3b81df3cd1e26b1770b3e8382f7187833e9e49134c9abcc0d4d89"
+    },
+    {
+      "path": "godot/core/original_powerup_world.gd.uid",
+      "bytes": 20,
+      "sha256": "0fde198ec5d4362db1d129ddbe82ccf5771500c91c85872872320eb244e36305"
+    },
+    {
+      "path": "godot/core/original_scene_materials.gd.uid",
+      "bytes": 20,
+      "sha256": "fc036ad3f19df0644f691b52ffafb98d7485e8d78a43cef1f07c07a2234e5caa"
+    },
+    {
+      "path": "godot/core/original_system_random.gd.uid",
+      "bytes": 20,
+      "sha256": "a9fbb839ab90a151a153e8c070e9ff73101f7e2f5e1783c93f9e88edd38f709e"
+    },
+    {
+      "path": "godot/core/original_teleport.gd.uid",
+      "bytes": 19,
+      "sha256": "9e79948ee1d476c77cbc7c2624d150ba513f1f737d3c07b6997eec2618dd53c4"
+    },
+    {
+      "path": "godot/core/original_timekeeper.gd.uid",
+      "bytes": 20,
+      "sha256": "6b9ed7553768d81774d198d97d538735ae58933c7fca198a282b5b3f6170135d"
+    },
+    {
+      "path": "godot/core/original_unity_random.gd.uid",
+      "bytes": 20,
+      "sha256": "737e0ab413e6c9660af7139eec12853378aee8ccd0762032972d7df4cb5b5dce"
+    },
+    {
+      "path": "godot/tests/actor_motion_test.gd.uid",
+      "bytes": 20,
+      "sha256": "502783eb1f85b9ac21348522cbd43267acd7d1cebf959feae0edcf3cef58c66b"
+    },
+    {
+      "path": "godot/tests/boundary_lifecycle_test.gd.uid",
+      "bytes": 20,
+      "sha256": "135ad32f182a777177ec0b86d17dc7e0b1d5565f1f251adeaa1cbdd0770ba96c"
+    },
+    {
+      "path": "godot/tests/boundary_scene_test.gd.uid",
+      "bytes": 20,
+      "sha256": "fb25a268ceaea24ca040334b84e8af1efef3fca2b04554770b3eef24835509b9"
+    },
+    {
+      "path": "godot/tests/camera_framing_test.gd.uid",
+      "bytes": 18,
+      "sha256": "5fa302878e7fc605a1f13fe3e3721c59eacc0a3d1f13e97f54a074aac8ed4f1e"
+    },
+    {
+      "path": "godot/tests/camera_tracking_test.gd.uid",
+      "bytes": 20,
+      "sha256": "a4cda1b922e6ef0a927b1e0c2a53023fb978795f15158876a1f631c360a938bc"
+    },
+    {
+      "path": "godot/tests/cell_actor_test.gd.uid",
+      "bytes": 20,
+      "sha256": "cc26cffd4f49fefba32f5dbf53cda6dc76c7817a4a2bf9af3bc6d3fedba8bbbf"
+    },
+    {
+      "path": "godot/tests/cell_chip_test.gd.uid",
+      "bytes": 19,
+      "sha256": "caf5f6439600e2cdc8ffd57ae4d9bb929f0a75d1fbf4827c6732673ce108b9b9"
+    },
+    {
+      "path": "godot/tests/cell_grid_test.gd.uid",
+      "bytes": 20,
+      "sha256": "ceeb94cb6140f4fbe3dbfd6f75c58445ee022cc9928a854daca021773a025d9e"
+    },
+    {
+      "path": "godot/tests/cell_scene_test.gd.uid",
+      "bytes": 20,
+      "sha256": "d6f4fba225268214c4878ae5f7db1156c4bf9bf21c455e23e54a2c534204a1f6"
+    },
+    {
+      "path": "godot/tests/cell_trail_test.gd.uid",
+      "bytes": 19,
+      "sha256": "c68f721291aef0edda149a375ae546f5239d353308dd492724ecf6e357c29887"
+    },
+    {
+      "path": "godot/tests/character_import_test.gd.uid",
+      "bytes": 20,
+      "sha256": "7190ef50994d2821015039f09e2978421ae3e174db40335077671fbf93595ad6"
+    },
+    {
+      "path": "godot/tests/collision_world_test.gd.uid",
+      "bytes": 20,
+      "sha256": "098b60a8413a53a6bf33207e62bcdf1211cc10e3d7ab9f746cd05c397459c7eb"
+    },
+    {
+      "path": "godot/tests/combat_test.gd.uid",
+      "bytes": 20,
+      "sha256": "15f06a06ac460a25f915c448e5755cae236e6da5e9059066884ac261d7856de0"
+    },
+    {
+      "path": "godot/tests/controlled_lifecycle_test.gd.uid",
+      "bytes": 19,
+      "sha256": "74459ebea5b573afc70afd90b2dad0602d4edb50124b937eed0764d6ed2cee52"
+    },
+    {
+      "path": "godot/tests/controlled_scene_test.gd.uid",
+      "bytes": 20,
+      "sha256": "392a6e0b13ce704577ad395f1144162745163c5862ce8d6281e691561c9696d3"
+    },
+    {
+      "path": "godot/tests/dash_scene_test.gd.uid",
+      "bytes": 20,
+      "sha256": "30bf4fe8b74f9c14c85d1a467725664f2df9ce24028e5ccfb1242827c3ca2215"
+    },
+    {
+      "path": "godot/tests/dash_walls_test.gd.uid",
+      "bytes": 20,
+      "sha256": "ae5ac876d5d1c53ddb5d7a20ab19a1015dcb3cc3d48ff488b340ec733af21718"
+    },
+    {
+      "path": "godot/tests/decoy_ai_test.gd.uid",
+      "bytes": 19,
+      "sha256": "75766d768848f703f34d014ef6ec39bbdbc2b2c1440be1ec703a2435520782b8"
+    },
+    {
+      "path": "godot/tests/decoy_input_test.gd.uid",
+      "bytes": 20,
+      "sha256": "684461d2a705406dadd1a5507d9b7a8185c604f6c7cfb66d1f635862f2237ad1"
+    },
+    {
+      "path": "godot/tests/decoy_scene_test.gd.uid",
+      "bytes": 19,
+      "sha256": "cc97b50972acaf7ef4c5859a8cbf4c98b04c66084bab9171832b515463c6e949"
+    },
+    {
+      "path": "godot/tests/disarm_clash_scene_test.gd.uid",
+      "bytes": 19,
+      "sha256": "b5473e925f1b48943b3a709429be6d43727a65910c035347dcd225c75555d043"
+    },
+    {
+      "path": "godot/tests/disarm_test.gd.uid",
+      "bytes": 20,
+      "sha256": "11415d0ef26c474f9373b774264c88bedfffd01f6352b229d03d7ede56b24ec9"
+    },
+    {
+      "path": "godot/tests/disc_clash_motion_test.gd.uid",
+      "bytes": 20,
+      "sha256": "ce3ecb66fa04b2f5d1f93696e1caba8aa52529183019c50c86ce522397c538c0"
+    },
+    {
+      "path": "godot/tests/disc_motion_test.gd.uid",
+      "bytes": 20,
+      "sha256": "182637abd8cc5775d6bfc96d43e7ce2b051daa229d0614c7b2d075cfcc52be9f"
+    },
+    {
+      "path": "godot/tests/disc_parry_motion_test.gd.uid",
+      "bytes": 20,
+      "sha256": "6841030fa680f1ed4ef65bdca4642eef5361b4b109e27abd2d913e62090fbf9d"
+    },
+    {
+      "path": "godot/tests/disguise_lifecycle_test.gd.uid",
+      "bytes": 20,
+      "sha256": "27acbd8877e4a7c4ce59e16bf8d7bcc5093aba5211d6231f2049b71061e4ae01"
+    },
+    {
+      "path": "godot/tests/disguise_scene_test.gd.uid",
+      "bytes": 20,
+      "sha256": "ec03207110b2ec68fe04ee724951ea8ea5b96a6c64e5c4f9bad92434b822100d"
+    },
+    {
+      "path": "godot/tests/duel_integration_test.gd.uid",
+      "bytes": 20,
+      "sha256": "e78215dac6abfd8a74e1ef624f93d3246de5a7ff92f251acdc60060cca143c88"
+    },
+    {
+      "path": "godot/tests/explosion_combat_test.gd.uid",
+      "bytes": 20,
+      "sha256": "19f2988daa8295a4302b07673cc029302db4b14c98ca80d99adf88d836d50b63"
+    },
+    {
+      "path": "godot/tests/explosion_geometry_test.gd.uid",
+      "bytes": 19,
+      "sha256": "1f3f82858db71f638cb397cc84ce0f1ff8e54c5e995f4378a36bc4a622deb0d0"
+    },
+    {
+      "path": "godot/tests/explosive_lifecycle_test.gd.uid",
+      "bytes": 20,
+      "sha256": "2140e21e5903a43ac4d7f272f5b56072154ec8368cb5e74cbf983dfaae834b96"
+    },
+    {
+      "path": "godot/tests/explosive_scene_test.gd.uid",
+      "bytes": 20,
+      "sha256": "0ab421aa9839a17f88b9fb9c181369d6f79b21a16700e2731b0e80683aff7bc5"
+    },
+    {
+      "path": "godot/tests/fall_lifecycle_test.gd.uid",
+      "bytes": 19,
+      "sha256": "4109c847fa7f60ee6c9431e54de347fcc2787df7966b42a5d5b6cf5501efb0b5"
+    },
+    {
+      "path": "godot/tests/fall_scene_test.gd.uid",
+      "bytes": 19,
+      "sha256": "c8c577e3c25982321b6c9d4eeac583ab6cb38f9754b37b94009cec8cc0fcd7f2"
+    },
+    {
+      "path": "godot/tests/ffa_score_test.gd.uid",
+      "bytes": 20,
+      "sha256": "4fffba65f4c69cd89dbe554e7ac4bf8f2f048cc7cb539044663044023ea19d89"
+    },
+    {
+      "path": "godot/tests/ffa_shell_test.gd.uid",
+      "bytes": 20,
+      "sha256": "8277708f30c4a36b6f3f01ebd6c0ec4fbee725c4921fa2500c9878c8849832aa"
+    },
+    {
+      "path": "godot/tests/flee_navigation_test.gd.uid",
+      "bytes": 20,
+      "sha256": "d0a489823c5ea8a3bc34e094748b14bf6f182c33bac0c1a282b030b4737332b1"
+    },
+    {
+      "path": "godot/tests/ground_queries_test.gd.uid",
+      "bytes": 19,
+      "sha256": "af7fc04bfbb27166eda09771c31b0aa3f40829e6657891902b179f3c8397f9fb"
+    },
+    {
+      "path": "godot/tests/level3_behaviors_test.gd.uid",
+      "bytes": 20,
+      "sha256": "5ea14ddfea3b0deb6bfc266bcb28ab2e879ffafbccc1c2058e3edffc85435509"
+    },
+    {
+      "path": "godot/tests/map_behavior_adapter_test.gd.uid",
+      "bytes": 20,
+      "sha256": "97ccf40bbb9f54cafb996072041916b26af44bac6198e7894f16bc100312754f"
+    },
+    {
+      "path": "godot/tests/melee_combat_test.gd.uid",
+      "bytes": 20,
+      "sha256": "07b682f5bd3b05412763b91b78260db9f62388446e8d471a24a3c8e7348b72ec"
+    },
+    {
+      "path": "godot/tests/melee_motion_test.gd.uid",
+      "bytes": 20,
+      "sha256": "cea852bf196fb11fa3bb3f40a9c61ddd9ea39cac33bd3f60892c02526bd8889a"
+    },
+    {
+      "path": "godot/tests/melee_scene_test.gd.uid",
+      "bytes": 20,
+      "sha256": "7935ef52794d07e7b8245f672a5166cc9b4b3dbf1f803c170208bf6c42d6089a"
+    },
+    {
+      "path": "godot/tests/multidisc_lifecycle_test.gd.uid",
+      "bytes": 20,
+      "sha256": "efbd602c0aba96857d15ba00ac3f0a2b25967365699b155cf7f2024da7b3d104"
+    },
+    {
+      "path": "godot/tests/multidisc_scene_test.gd.uid",
+      "bytes": 19,
+      "sha256": "3d57fb0a2c567140c066a40168a434f96395a49678a174e2e05ea926f60c13ac"
+    },
+    {
+      "path": "godot/tests/native_probe_test.gd.uid",
+      "bytes": 20,
+      "sha256": "e769522990075c05f84ca62619c68aece809cde1e83793cb8509c16a5851cfec"
+    },
+    {
+      "path": "godot/tests/navigation_test.gd.uid",
+      "bytes": 20,
+      "sha256": "8bbe5707fb1dbcefa692f1b26f1caf90fd14cb28821ea925063bfcd20e091147"
+    },
+    {
+      "path": "godot/tests/navigation_updates_game_test.gd",
+      "bytes": 1881,
+      "sha256": "d136155ef7f6e91658b0031a149ab13fb3447530315fe400bd3bc9dcdff343bf"
+    },
+    {
+      "path": "godot/tests/navigation_updates_game_test.gd.uid",
+      "bytes": 20,
+      "sha256": "2e497cd29f0d8b763649147c9f398b0431cbc78a71d25ae1e3adb1241321a25e"
+    },
+    {
+      "path": "godot/tests/navigation_updates_scene_test.gd",
+      "bytes": 4048,
+      "sha256": "d684a041767574595900fb91f1e2982f9c3e9328a0ea36bf632259b023b324a3"
+    },
+    {
+      "path": "godot/tests/navigation_updates_scene_test.gd.uid",
+      "bytes": 20,
+      "sha256": "8c0d9a53635984586ae8c071fe978eb17a0ac08cfce1e33363f37e128e113d63"
+    },
+    {
+      "path": "godot/tests/navigation_updates_test.gd",
+      "bytes": 3816,
+      "sha256": "fdcbeaf1cee5f60a4ba095a6581054ef42bca9e203c09900cfba778aa468c2c2"
+    },
+    {
+      "path": "godot/tests/navigation_updates_test.gd.uid",
+      "bytes": 20,
+      "sha256": "2e1187b8a0e5d395536afd6af4f6569c9c986b6536ec94693933a575b1e5123d"
+    },
+    {
+      "path": "godot/tests/player_ai_actions_test.gd.uid",
+      "bytes": 19,
+      "sha256": "8ea7936191e2197f759e4bfd992fd954b2f76700a60df59dcc61ecaab456d813"
+    },
+    {
+      "path": "godot/tests/player_ai_buttons_test.gd.uid",
+      "bytes": 20,
+      "sha256": "73dd37b0e8b890c82eef8fd7d01930fa2398b8dff34f181e55c66d3120364422"
+    },
+    {
+      "path": "godot/tests/player_ai_policy_test.gd.uid",
+      "bytes": 20,
+      "sha256": "77aa5f9abc6cc690110113423eba307a4eb35c29a5e0fac2f4c7b953e9953149"
+    },
+    {
+      "path": "godot/tests/player_ai_targeting_test.gd.uid",
+      "bytes": 20,
+      "sha256": "dad4da1bf247c6f7b015b33324ce1d305a6cf6e291a7c08c815949b4ee9142aa"
+    },
+    {
+      "path": "godot/tests/player_input_test.gd.uid",
+      "bytes": 20,
+      "sha256": "877a9a362d1de2821cd919f17cdc154e9ba44d93d6efa292132ec9c3cdfbe97f"
+    },
+    {
+      "path": "godot/tests/power_combat_test.gd.uid",
+      "bytes": 20,
+      "sha256": "82d79c143f5c00ed94ba867dd2994fed6180fddf0f47f003dcf658b5f95444d2"
+    },
+    {
+      "path": "godot/tests/power_lifecycle_test.gd.uid",
+      "bytes": 20,
+      "sha256": "dcf1e569f5725f6f3c6798babc0b114c34ca532c83c06cdffc289139edb63972"
+    },
+    {
+      "path": "godot/tests/powerup_book_test.gd.uid",
+      "bytes": 19,
+      "sha256": "5ad8f4b98818cdd055d7c44c2ce1899fed7211ad198a4d5443f46dd18104e10a"
+    },
+    {
+      "path": "godot/tests/reactive_floor_game_loop_test.gd.uid",
+      "bytes": 20,
+      "sha256": "9f76e51cf78bf871ff3f2136ca51434cf1559f0e4e1302386ac1f28eaeb324d7"
+    },
+    {
+      "path": "godot/tests/spatial_math_test.gd.uid",
+      "bytes": 20,
+      "sha256": "3f528f929bcd0b3a4c610969237aaebccc9846e661c20b529e0a0873854a6465"
+    },
+    {
+      "path": "godot/tests/teleport_lifecycle_test.gd.uid",
+      "bytes": 20,
+      "sha256": "ea470ca00a654c980aecc72b7d1e3c20cca2d5ce601de4a13b1a8f200e117bf9"
+    },
+    {
+      "path": "godot/tests/teleport_scene_test.gd.uid",
+      "bytes": 20,
+      "sha256": "28368825589640233698ea643a779245b863a4ce0936dcc5d8145c854243f4e1"
+    },
+    {
+      "path": "godot/tests/timeimmune_lifecycle_test.gd.uid",
+      "bytes": 20,
+      "sha256": "48acf8963fec2b3c5ec5fcd23131f37f61ace82fcd3174de5e42a899f63f088e"
+    },
+    {
+      "path": "godot/tests/timeimmune_scene_test.gd.uid",
+      "bytes": 20,
+      "sha256": "f99f1936508ab583e133dcb69661457e9e2d1f05ace5e9527951b3cf2744dea2"
+    },
+    {
+      "path": "godot/tests/timekeeper_test.gd.uid",
+      "bytes": 20,
+      "sha256": "c73a1159fddeaf37b78e4abc098f7d72ddc284746d2c03fd0e1af177c4fd711d"
+    },
+    {
+      "path": "godot/tests/unity_random_test.gd.uid",
+      "bytes": 20,
+      "sha256": "81c855a086119b6aad4ed21f53bfb7333da64d161d0fe994b31cf7ef1087a13d"
+    },
+    {
+      "path": "godot/tests/weapon_integration_test.gd.uid",
+      "bytes": 20,
+      "sha256": "40fb5786b7fad45be336d3db001577dfb90b73798d672cb3c4f3ebf3fca24f68"
+    },
+    {
+      "path": "tools/export_navigation_settings.py",
+      "bytes": 2020,
+      "sha256": "864a2bcfef63054a4c1c25b20519c255013152720595ce0babaed23c79edfd9d"
+    },
+    {
+      "path": "tools/navigation-updates-native/NavigationUpdatesOracle.csproj",
+      "bytes": 953,
+      "sha256": "36ed74098d84c466bf0c8d7c6f9670ae399337fb90cc8e2898b50f96a17cd0f8"
+    },
+    {
+      "path": "tools/navigation-updates-native/Program.cs",
+      "bytes": 6660,
+      "sha256": "cd29d0e6a53355dd376fee2930df97314d37e7b823f25c8dd07eab1f452ff761"
     }
   ],
   "deployment": {

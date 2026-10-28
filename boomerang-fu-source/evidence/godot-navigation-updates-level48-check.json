@@ -1,0 +1,54 @@
+{
+  "comparisons": 3114800,
+  "differences": [],
+  "maximum_error": 0.0,
+  "passed": true,
+  "paths": 33,
+  "phases": [
+    {
+      "name": "replace static floor region",
+      "updated": 1152
+    },
+    {
+      "name": "add rotated box",
+      "updated": 80
+    },
+    {
+      "name": "move box",
+      "updated": 132
+    },
+    {
+      "name": "remove box",
+      "updated": 80
+    },
+    {
+      "name": "add circle",
+      "updated": 36
+    },
+    {
+      "name": "remove floor",
+      "updated": 728
+    },
+    {
+      "name": "restore floor",
+      "updated": 728
+    },
+    {
+      "name": "mark hazardous strip",
+      "updated": 0
+    },
+    {
+      "name": "refresh physics retains tags",
+      "updated": 120
+    },
+    {
+      "name": "disable walkability",
+      "updated": 0
+    },
+    {
+      "name": "enable walkability",
+      "updated": 0
+    }
+  ],
+  "scope": "Original Physics2D and GridGraph.UpdateArea with synthetic changing geometry. Scheduling and real scene callbacks are separate."
+}

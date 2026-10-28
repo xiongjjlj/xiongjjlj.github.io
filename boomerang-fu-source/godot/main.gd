@@ -107,6 +107,9 @@ func _ready() -> void:
 	if FileAccess.file_exists(behavior_path):
 		level_behaviors.initialize(read_json(behavior_path), nodes, collision_world, decoys.rng)
 	navigation_world.bind_moving_floors(level_behaviors.moving_floors)
+	navigation_world.collision=weakref(collision_world)
+	level_behaviors.navigation=weakref(navigation_world)
+	level_behaviors.moving_floors.navigation=weakref(navigation_world)
 	ground_queries.world = collision_world
 	ground_queries.water_mask = 16 # Original serialized Water layer (index 4).
 	create_characters()
@@ -190,6 +193,7 @@ func create_characters() -> void:
 		"fixed_delta": actors[0].fixed_delta, "radius": actors[0].radius}))
 
 func reset_motions(new_match := true) -> void:
+	decoys.navigation.reset_grids()
 	if level_behaviors.initialized: level_behaviors.reset()
 	if decoys.world!=null:decoys.reset_round()
 	for item in decoy_views.values():item.root.queue_free()
@@ -344,7 +348,12 @@ func reset_motions(new_match := true) -> void:
 		powerup_world.initialize(weapons, collision_world, power_binding)
 	powerup_world.begin_round(round_state.round_number, clock.time_counter, new_match)
 	level_behaviors.moving_floors.start_all()
+	decoys.navigation.enabled=setup.sources.any(func(source):return FfaSetup.is_bot(source))
+	for obstacle in level_behaviors.obstacles.values():
+		if obstacle.enabled and obstacle.randomized_start:level_behaviors.update_obstacle_paths(obstacle)
+	decoys.navigation.flush_updates()
 	bots.initialize(self)
+	decoys.navigation.enabled=not bots.members.is_empty()
 	clock.stop_slow_mo()
 	if next_round_button != null: next_round_button.visible = false
 	audio.round_started(new_match,actors)
@@ -1124,9 +1133,14 @@ func _process(delta: float) -> void:
 	var scaled_delta := OriginalTimekeeper.f32(OriginalTimekeeper.f32(delta) * clock.time_scale)
 	decoys.lifecycle_frame(scaled_delta,clock.time_counter,clock.unscaled_time_counter,movement_enabled and round_state.simulation_running())
 	if movement_enabled and round_state.simulation_running():
+		decoys.navigation.enabled=not bots.members.is_empty() or not decoys.members.is_empty()
 		cell_grid.current_time = clock.time_counter
 		update_movement(scaled_delta)
 		level_behaviors.frame_step(scaled_delta)
+		decoys.navigation.flush_updates()
+		var ais:Array=bots.members.values()
+		for item in decoys.members.values():ais.append(item.ai)
+		decoys.navigation.recreate_invalid_paths(ais)
 		for behavior_event in level_behaviors.drain_events(): print("BF_LEVEL3_EVENT " + JSON.stringify(behavior_event))
 		advance_explosions(scaled_delta)
 		for index in actor_elements.size():

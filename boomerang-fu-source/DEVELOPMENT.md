@@ -4,14 +4,14 @@
 `ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1`，源码目录是 `boomerang-fu-source/`；
 `boomerang-fu-v0.5.0` 标签保留在该提交。`boomerang-fu-dev` 接受后续开发。
 
-当前源码与开发 Web 包为 `0.5.1-dev.4`。公司预览位于
+当前源码与开发 Web 包为 `0.5.1-dev.5`。公司预览位于
 <https://boomerang-fu.arkevo.ai/>，线上实际版本以 `/version.json` 为准。
 稳定依赖 `0.5.0` 保留，后续开发不改变其提交和标签。
 源代码、浏览器包与证据分别有哈希，历史报告只证明当时记录的构建。
 
-开发包为 `web-development-0.5.1-dev.4.zip`，解压后通过 HTTP(S) 托管。
+开发包为 `web-development-0.5.1-dev.5.zip`，解压后通过 HTTP(S) 托管。
 完整 PCK 超过 100 MiB；附带的 Cloudflare Worker 会将存储分片合成为原文件响应。
-59 张已导入地图分别使用自己的原版寻路网格。运行时障碍重扫和传送门连接仍待完成。
+59 张已导入地图分别使用自己的原版寻路网格。运行时障碍重扫已接入；传送门连接仍待完成。
 
 普通 MovingFloor 已接入 Split、Drift、Tracks、Spin、Donut、Four Cogs、Raft Crusher。
 角色和落地回旋镖随平台移动，退出接触后解除附着，回合重置恢复初始轨迹。
@@ -25,7 +25,7 @@
 时钟、导航及呈现服务由探针适配，区别于原游戏完整场景执行。
 42 组轨迹共 37,842 个时点通过，位置最大差小于 0.000001，速度差小于 0.000081。
 
-`godot-map-runtime-check.json` 的 40 项检查包括六张响应式地图、平台寻路和完整游戏循环。
+`godot-map-runtime-check.json` 的 46 项检查包括六张响应式地图、平台寻路和完整游戏循环。
 Big Raft 浏览器实测了近战开关、平台载人、途中反向、滚轴、暂停恢复与完整单程。
 中央区域角色完整往返不掉落；外侧角色会受到固定滚轴阻挡，随后失去脚下平台。
 这项行为由 `godot-reactive-floor-game-loop-check.json` 单独覆盖，未据此声称原版回调一致。
@@ -37,13 +37,25 @@ Big Raft 浏览器实测了近战开关、平台载人、途中反向、滚轴�
 原版 `GraphTransform` 的近似平移判断、旋转四元数的浮点保留和矩阵计算规则均已接入。
 平移和旋转平台上的机器人保留原路径坐标，逐帧更新世界坐标；失败重算保留旧路径，
 回合重置恢复平台位置。Circle Maze 的响应式旋转机关按原版保留世界坐标路径。
-原版此处另有障碍重扫队列，该队列尚未实现，不能据此认为旋转迷宫寻路已经完整。
+此处已接入分区重扫队列；完整原版回调调度顺序仍未证明一致。
 相关报告为 `godot-navigation-maps-check.json`、`godot-navigation-selection-check.json`，
 以及各图的 `godot-navigation-scene-*-check.json` 和 `godot-navigation-platform-ai-*-check.json`。
 
-动态寻路、其他地形机关、完整 Unity 触发顺序、平台音效/闪烁/绳索/拖尾及地图波浪
+其他地形机关、传送门寻路连接、完整 Unity 触发顺序、平台音效/闪烁/绳索/拖尾及地图波浪
 仍待完成。探针输入生成器在 `tools/moving-floor-native/` 和 `tools/reactive-floor-native/`；
 使用已有隔离 Windows 副本，不需要 Unity 编辑器，每次一个进程、30 秒和 2 GiB 上限。
+
+动态寻路使用原版 `GridGraph.UpdateArea` 的受影响范围、物理检测、相邻节点连接、
+基础代价和危险标签规则。原 UnityPlayer 中两种扫描半径的 22 组地形变化，合计
+6,230,791 项比较和 66 条路径完全匹配。物理检测包含原版圆形与旋转矩形障碍、
+地板消失和恢复、可走性覆盖，以及重扫时保留危险标签。
+
+移动墙、连续旋转障碍和 Circle Maze 的响应式旋转机关已连接重扫队列，
+可破坏障碍消失后会刷新网格；已有路径上的节点失效时，AI 会请求新路径。
+重开一局恢复原始网格，再处理随机起点的移动墙。四张实际地图的机关、销毁和
+复位测试通过；Circle Maze 双机器人完整循环运行 360 帧、执行 28 次重扫。
+报告为 `navigation-updates-restoration-check.json`、`godot-navigation-updates-game-check.json`
+及 `godot-navigation-updates-scene-*-check.json`。原版整体调度和画面一致性仍待验证。
 
 ## 运行 Godot
 

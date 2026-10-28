@@ -28,6 +28,8 @@ var disc_contacts: Dictionary = {}
 var rng := OriginalUnityRandom.new(0xB00F1)
 var fixed_ticks := 0
 var moving_floors := OriginalMovingFloors.new()
+var navigation:WeakRef
+const NAV_UPDATES=preload("res://core/original_navigation_updates.gd")
 
 func initialize(sidecar: Dictionary, scene_nodes: Dictionary, world: OriginalCollisionWorld, shared_rng = null) -> void:
 	if shared_rng != null: rng = shared_rng
@@ -61,6 +63,7 @@ func initialize(sidecar: Dictionary, scene_nodes: Dictionary, world: OriginalCol
 				"rotating_dur": float(data.get("rotatingDur", 4.0)), "rotating_durations": data.get("rotatingDurations", []),
 				"initial_rotation": node.rotation.z, "initial_clockwise": int(data.get("isRotatingClockwise", 1)) != 0,
 				"initial_duration": float(data.get("rotatingDur", 4.0)), "angular_acceleration": 0.0,
+				"rescan_after":bool(data.get("rescanPathsAfterMoving",false)),"quadrants":bool(data.get("rescanInQuadrants",false)),"initial_bounds":world.scene_bounds(game_object),
 				"randomized_start": int(data.get("randomizedStart", 0)) != 0,
 				"enabled": int(data.get("m_Enabled", 1)) != 0 and bool(record.get("active_in_hierarchy", node.is_visible_in_tree())),
 				"start_pos": Vector2.ZERO, "target_pos": Vector2.ZERO, "velocity": Vector2.ZERO}
@@ -101,6 +104,7 @@ func initialize(sidecar: Dictionary, scene_nodes: Dictionary, world: OriginalCol
 			destructables[component_id] = {"component_id": component_id, "game_object": game_object, "node": nodes[game_object],
 				"parent": parent_node, "debris": debris, "hits_left": maxi(1, int(record.get("data", {}).get("hitsLeft", 1))),
 				"initial_hits": maxi(1, int(record.get("data", {}).get("hitsLeft", 1))),
+				"rescan":bool(record.data.get("rescanPathfindingWhenDestroyed",true)) and int(record.data.get("movingFloor",{}).get("m_PathID",0))==0,
 				"destroyed": false, "initial_visible": nodes[game_object].visible,
 				"enabled": bool(record.get("active_in_hierarchy", true)), "debris_transforms": debris.map(func(child): return child.transform)}
 	moving_floors.initialize(sidecar,nodes,world,rng)
@@ -116,8 +120,10 @@ func reset(randomize := true) -> void:
 		var node: Node3D = o.node
 		o.pos_index = 0; o.state = 0; o.reverse = false; o.springing_back = false; o.elapsed = 0.0; o.move_percent = 0.0
 		o.clockwise = o.initial_clockwise; o.rotating_dur = o.initial_duration; o.angular_acceleration = 0.0; o.velocity = Vector2.ZERO
+		o.scan_timer=0.0;o.bounds_queue=[];o.previous_bounds={"center":[0,0,0],"size":[0,0,0]}
 		node.position = o.initial; node.rotation.z = float(o.initial_rotation)
 		if randomize and o.enabled and o.randomized_start and o.positions.size() > 1 and rng.value() > 0.5:
+			o.previous_bounds=o.initial_bounds.duplicate(true)
 			o.pos_index = 1
 			# MovingObstacle.Start assigns Vector2 directly, setting local Z to zero.
 			node.position = Vector3(o.positions[1].x, o.positions[1].y, 0)
@@ -190,6 +196,7 @@ func _step_obstacle(o: Dictionary, delta: float) -> void:
 		var degrees := C.f32(C.f32(sign_value * 360.0 / float(o.rotating_dur)) * delta)
 		o.node.rotate_object_local(Vector3.BACK, deg_to_rad(degrees))
 		collision_world.sync_scene_subtree(int(o.game_object))
+		step_scan_timer(o,delta)
 		return
 	if o.state == 0: return
 	o.elapsed = C.f32(float(o.elapsed) + delta)
@@ -200,6 +207,7 @@ func _step_obstacle(o: Dictionary, delta: float) -> void:
 			return
 		o.state = MOVING
 	var before: Vector3 = o.node.global_position
+	var finished:=false
 	if o.move_percent < 1.0:
 		var duration := float(o.windback_dur if o.springing_back else o.move_dur)
 		o.move_percent = C.f32(float(o.move_percent) + C.f32(delta / duration))
@@ -211,11 +219,32 @@ func _step_obstacle(o: Dictionary, delta: float) -> void:
 		# The original transitions on the following FixedUpdate, not the tick
 		# that first increments movePercent past 1.
 		o.node.position = Vector3(o.target_pos.x, o.target_pos.y, o.z); o.state = 0
+		finished=true
 		if o.is_spring and not o.springing_back and int(o.pos_index) == 1: toggle(int(o.component_id), "spring_back")
 		o.reverse = false
 	var after: Vector3 = o.node.global_position
 	o.velocity = Vector2(after.x - before.x, after.y - before.y) / delta
 	collision_world.sync_scene_subtree(int(o.game_object))
+	if finished:update_obstacle_paths(o)
+	step_scan_timer(o,delta)
+
+func step_scan_timer(o:Dictionary,delta:float)->void:
+	if o.scan_timer<C.f32(0.15):o.scan_timer=C.f32(o.scan_timer+delta)
+	else:
+		o.scan_timer=0.0;update_obstacle_paths(o)
+
+func update_obstacle_paths(o:Dictionary)->void:
+	if not o.rescan_after:return
+	var current:=collision_world.scene_bounds(int(o.game_object))
+	if current.is_empty():return
+	var bounds:=NAV_UPDATES.union_bounds(current,o.previous_bounds)
+	if o.quadrants:NAV_UPDATES.quadrants(o.bounds_queue,bounds)
+	else:
+		if navigation!=null and navigation.get_ref()!=null:
+			if absf(bounds.size[0]*bounds.size[1])<absf(current.size[0]*current.size[1])+absf(o.previous_bounds.size[0]*o.previous_bounds.size[1]):navigation.get_ref().rescan(bounds)
+			else:
+				navigation.get_ref().rescan(o.previous_bounds);navigation.get_ref().rescan(current)
+		o.previous_bounds=current
 
 func _switch_activate(item: Dictionary, reason := "contact") -> void:
 	if not item.enabled or not item.active or item.cooldown > 0.0: return
@@ -242,6 +271,7 @@ func _step_wobble(w: Dictionary, delta: float) -> void:
 
 func _destroy(item: Dictionary, force: Vector2) -> void:
 	if item.destroyed: return
+	if item.rescan and navigation!=null and navigation.get_ref()!=null:navigation.get_ref().rescan(collision_world.scene_bounds(int(item.game_object)))
 	item.destroyed = true; item.node.visible = false
 	collision_world.set_scene_object_enabled(item.game_object, false)
 	var parent: Node3D = item.parent
@@ -387,6 +417,9 @@ func _switch_disc_contacts(flying_discs: Array) -> void:
 func frame_step(delta: float) -> void:
 	if not initialized: return
 	moving_floors.frame_step(delta)
+	if navigation!=null and navigation.get_ref()!=null:
+		for o in obstacles.values():
+			if o.enabled and int(o.state) not in [0,SPRING_PAUSING] and o.quadrants and not o.bounds_queue.is_empty():navigation.get_ref().rescan(o.bounds_queue.pop_front())
 	for item in switches.values():
 		if item.cooldown > 0.0: item.cooldown = C.f32(float(item.cooldown) - C.f32(delta))
 	for key in interaction_cooldowns.keys():

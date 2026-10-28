@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "version": "0.5.1-dev.5",
+  "generated_at": "2026-10-28T02:21:24.966723+00:00",
+  "maps": [
+    "level55",
+    "level41"
+  ],
+  "checks": [
+    "Roller Sweep loads and moving obstacles animate during human/bot play",
+    "Human movement, melee and throw actions; original audio produces nonzero stereo samples",
+    "Pause and resume function",
+    "Circle Maze bot completes melee kill and round continuation reaches round 2"
+  ],
+  "logs": [
+    "navigation-updates-roller-browser-log.json",
+    "navigation-updates-maze-browser-log.json"
+  ],
+  "scope": "WebGL gameplay smoke test. Maze switch activation is covered by native Godot integration, not this browser pass. Black maze material and stale audio-loading label remain known presentation gaps. No full native game parity claim."
+}

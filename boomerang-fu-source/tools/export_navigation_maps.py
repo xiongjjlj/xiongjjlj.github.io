@@ -9,6 +9,7 @@ from pathlib import Path
 root = Path(__file__).resolve().parents[1]
 evidence = root / 'evidence'
 source = json.loads((evidence / 'navigation-graph-extraction.json').read_text())
+settings = json.loads((evidence / 'navigation-graph-settings.json').read_text())['maps']
 maps = [m for i in range(10) for m in json.loads((evidence / f'navigation-maps-native-batch{i:02}.json').read_text())['maps']]
 assert [m['key'] for m in maps] == [m['map'] for m in source['maps']]
 output = root / 'godot/assets/original/navigation'
@@ -16,6 +17,9 @@ output.mkdir(exist_ok=True)
 records = []
 for data, original in zip(maps, source['maps']):
     graphs = [{k: v for k, v in graph.items() if k != 'paths'} for graph in data['graphs']]
+    for graph, config in zip(graphs, settings[data['key']]):
+        assert graph['index'] == config['index']
+        graph['settings'] = config
     assert all(g['extra_connections'] == 0 for g in graphs), data['key']
     payload = json.dumps({'map': data['key'], 'graphs': graphs}, separators=(',', ':')).encode()
     envelope = {'encoding': 'gzip-base64', 'uncompressed_bytes': len(payload),

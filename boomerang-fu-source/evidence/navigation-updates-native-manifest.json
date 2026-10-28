@@ -1,0 +1,15 @@
+{
+  "fixtures": [
+    {
+      "map": "level2",
+      "fixture": "navigation-updates-native.json"
+    },
+    {
+      "map": "level48",
+      "fixture": "navigation-updates-native-level48.json",
+      "native_filename": "navigation-updates-native.json",
+      "retrieval_note": "NativeProbe uses a fixed output basename; the successful clean run was retrieved under a map-specific local filename."
+    }
+  ],
+  "assembly_sha256": "5d1a10eacb9ba83e59f2dd750fc111063d7299780b20b97aa83904704c91d66f"
+}
