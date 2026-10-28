@@ -6,7 +6,7 @@
   "default_scene": "LevelEnclosed",
   "optional_scene": "LevelSlideTraps and 57 additional imported maps (?map=levelN)",
   "source_files": 2484,
-  "source_bytes": 163247502,
+  "source_bytes": 163247168,
   "full_game_parity_verified": false,
   "limitations": [
     "This is a stable scoped FFA browser build, not a claim of full original-game parity.",
@@ -58,8 +58,8 @@
     },
     {
       "path": "evidence/web-package-check.json",
-      "bytes": 2476,
-      "sha256": "2d5e7d0dbc6abe1f8310b7fb804d885dc78399b7facac488cb87953329a57833"
+      "bytes": 2142,
+      "sha256": "8bc3e0308531c4f3ad3e9f65eb79308831f2beb7b3a175904b9e6f8fa14a5259"
     },
     {
       "path": "evidence/web-pck-parts.json",
@@ -12434,7 +12434,7 @@
     {
       "path": "VERSION.json",
       "bytes": 460132,
-      "sha256": "80165ed01ce1f38bf2a2517ec61d700116919a0beebbdeb8ceaa12fbc551764d"
+      "sha256": "8966ab34dd4ca5c47a904b4ae3fd1745df36a871b0f489211651944040509873"
     }
   ]
 }
