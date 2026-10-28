@@ -65,5 +65,12 @@
       "BF_LEVEL3_BEHAVIOR_TEST passed=true; 13 checks"
     ]
   },
-  "generated_at": "2026-10-28T08:38:36+08:00"
+  "generated_at": "2026-10-28T08:54:28+08:00",
+  "tests/multi_map_smoke": {
+    "returncode": 0,
+    "log": "outputs/boomerang-fu-web/evidence/godot-multi-map-check.json",
+    "tail": [
+      "59/59 imported maps passed startup and shared FFA initialization"
+    ]
+  }
 }

@@ -1,12 +1,15 @@
 {
-  "bytes": 65809004,
-  "sha256": "87d2479aca138e6d667cb18c69fe006d24a0a87f3d296d91595a19cbcebfd4ed",
+  "bytes": 130516483,
+  "sha256": "63ba590c027948e9983b7f8f1f2a1db5b992b0f1ab094f7de67f40958cf3b936",
   "files": {
     "index.audio.position.worklet.js": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
     "index.audio.worklet.js": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
-    "index.html": "429d99ddfd596f2ea6f849871222aa1a13f631817ccbf161d432b34b002f7c87",
+    "index.html": "14d069d0c43613cb3781b87cbbea901cd8ebed946352b39ae0b6b6329fadf56c",
     "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
-    "index.pck": "645d4b3e0660d9d9ed81c81af14eaf8fff17f4560bbef2a45ef987679e080352",
+    "index.pck": "c6c281f4e04cea78b5356f7887b0bb2a41001bae198b6f6e6b93c9422a17a2a6",
+    "index.pck.part0": "308b1978847957d85b9630ecc60759a10218481e2d97ed10862bcf342f93c881",
+    "index.pck.part1": "90f1d6e7958dfd04ed948e8bc0137a80a39fdd5cda9437ef1973779a9490c1be",
+    "index.pck.part2": "fadb1fd5c91c56d3a1d838bdcd9d228ae7b8d5b4d23b54e0c2c7393d50940c28",
     "index.png": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
     "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
     "Godot-LICENSE.txt": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
@@ -24,9 +27,11 @@
   "validation_report": "godot-native-web-check.json",
   "audio_browser_report": "godot-audio-browser-repack-gate.json",
   "full_game_parity_verified": false,
-  "zip_bytes": 65809004,
-  "zip_sha256": "87d2479aca138e6d667cb18c69fe006d24a0a87f3d296d91595a19cbcebfd4ed",
-  "index_html_sha256": "429d99ddfd596f2ea6f849871222aa1a13f631817ccbf161d432b34b002f7c87",
-  "index_pck_sha256": "645d4b3e0660d9d9ed81c81af14eaf8fff17f4560bbef2a45ef987679e080352",
-  "generated_at": "2026-10-28T08:38:57+08:00"
+  "zip_bytes": 130516483,
+  "zip_sha256": "63ba590c027948e9983b7f8f1f2a1db5b992b0f1ab094f7de67f40958cf3b936",
+  "index_html_sha256": "14d069d0c43613cb3781b87cbbea901cd8ebed946352b39ae0b6b6329fadf56c",
+  "index_pck_sha256": "c6c281f4e04cea78b5356f7887b0bb2a41001bae198b6f6e6b93c9422a17a2a6",
+  "pck_parts_report": "web-pck-parts.json",
+  "service_worker": "web/boomerang-fu-sw.js",
+  "generated_at": "2026-10-28T08:56:47+08:00"
 }

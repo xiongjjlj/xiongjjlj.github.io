@@ -898,7 +898,7 @@
   },
   "full_game_parity_verified": false,
   "generated_at": "2026-10-28T08:33:49+08:00",
-  "execution": "Godot headless startup, Level3 behaviour timing test, default startup, and LevelSlideTraps FFA shell after dynamic obstacle integration; exported Web artifact is hash-bound below.",
+  "execution": "Godot headless startup, LevelSlideTraps behavior timing test, default startup, FFA shell and all 59 imported Unity build levels; exported Web artifact is hash-bound below.",
   "browser_executed": false,
   "main_sha256": "d45f63e3fc6aeac5345e5550cde1b03ca3d06f21dc372d0869a71f1f6faf716c",
   "dynamic_level3_behaviors": {
@@ -911,6 +911,8 @@
     "collider_disable_on_destroy": true,
     "behavior_test": "godot-level3-behavior-check.json",
     "player_melee_obstacle_callbacks": true,
-    "behavior_test_checks": 13
+    "behavior_test_checks": 13,
+    "imported_scene_count": 59,
+    "scene_manifest": "assets/original/manifest.json"
   }
 }

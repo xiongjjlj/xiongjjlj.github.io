@@ -88,7 +88,9 @@ func _ready() -> void:
 	active_scene = manifest.scenes[active_scene_index]
 	scene_materials.initialize(ROOT)
 	disguise_inputs=read_json(ROOT+"disguise-inputs.json")
-	boundary_inputs=read_json(ROOT+"boundary-inputs-level3.json" if active_scene.name == "LevelSlideTraps" else ROOT+"boundary-inputs.json")
+	var scene_key := str(active_scene.file).get_file().get_basename()
+	var scene_boundary_path := ROOT + "boundary-inputs-" + scene_key + ".json"
+	boundary_inputs=read_json(scene_boundary_path if FileAccess.file_exists(scene_boundary_path) else ROOT+"boundary-inputs.json")
 	decoys.inputs=read_json(ROOT+"decoy-inputs.json")
 	decoys.navigation=OriginalNavigation.new()
 	decoys.navigation.initialize(read_json(ROOT+"navigation-enclosed.json"))
@@ -130,9 +132,14 @@ func requested_scene_index() -> int:
 	if OS.has_feature("web"):
 		var browser_value = JavaScriptBridge.eval("new URLSearchParams(window.location.search).get('map')", true)
 		if browser_value != null and str(browser_value) != "": requested = str(browser_value).to_lower()
+	if requested.is_empty(): return 0
+	var aliases := {"slide":"levelslidetraps", "level3":"levelslidetraps"}
+	var wanted := str(aliases.get(requested, requested)).replace("_", "").replace("-", "")
 	for index in manifest.scenes.size():
 		var scene_name := str(manifest.scenes[index].name).to_lower()
-		if requested in ["slide", "level3", "levelslidetraps"] and scene_name == "levelslidetraps": return index
+		var compact := scene_name.replace("_", "").replace("-", "")
+		var file_key := str(manifest.scenes[index].file).get_file().get_basename().to_lower()
+		if wanted == compact or wanted == file_key: return index
 	return 0
 
 func read_json(path: String) -> Dictionary:
@@ -227,7 +234,9 @@ func reset_motions(new_match := true) -> void:
 	reported_stun_states.resize(characters.size()); reported_stun_states.fill(false)
 	var spawn_order: Array[int] = []
 	if setup.original_spawns: spawn_order = setup.spawn_indices(characters.size(), round_state.scores != null and round_state.scores.tie_breaker and not new_match, [] if round_state.scores == null else round_state.scores.winners)
-	var spawn_input: Dictionary = read_json(ROOT + ("ffa-spawn-inputs-level3.json" if active_scene.name == "LevelSlideTraps" else "ffa-spawn-inputs.json"))
+	var scene_key := str(active_scene.file).get_file().get_basename()
+	var spawn_path := ROOT + "ffa-spawn-inputs-" + scene_key + ".json"
+	var spawn_input: Dictionary = read_json(spawn_path if FileAccess.file_exists(spawn_path) else ROOT + "ffa-spawn-inputs.json")
 	for index in characters.size():
 		var motion := OriginalActorMotion.new()
 		if index < saved_control_time.size(): motion.time_controlling_disc = saved_control_time[index]

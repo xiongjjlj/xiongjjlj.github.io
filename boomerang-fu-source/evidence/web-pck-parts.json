@@ -1,0 +1,38 @@
+{
+  "source": "index.pck",
+  "source_bytes": 136433840,
+  "source_sha256": "c6c281f4e04cea78b5356f7887b0bb2a41001bae198b6f6e6b93c9422a17a2a6",
+  "chunk_bytes": 48000000,
+  "parts": [
+    {
+      "path": "index.pck.part0",
+      "offset": 0,
+      "bytes": 48000000,
+      "sha256": "308b1978847957d85b9630ecc60759a10218481e2d97ed10862bcf342f93c881"
+    },
+    {
+      "path": "index.pck.part1",
+      "offset": 48000000,
+      "bytes": 48000000,
+      "sha256": "90f1d6e7958dfd04ed948e8bc0137a80a39fdd5cda9437ef1973779a9490c1be"
+    },
+    {
+      "path": "index.pck.part2",
+      "offset": 96000000,
+      "bytes": 40433840,
+      "sha256": "fadb1fd5c91c56d3a1d838bdcd9d228ae7b8d5b4d23b54e0c2c7393d50940c28"
+    }
+  ],
+  "reconstructed_bytes": 136433840,
+  "reconstructed_sha256": "c6c281f4e04cea78b5356f7887b0bb2a41001bae198b6f6e6b93c9422a17a2a6",
+  "reconstructed_matches_source": true,
+  "service_worker_stream_contract": {
+    "part_order": [
+      "index.pck.part0",
+      "index.pck.part1",
+      "index.pck.part2"
+    ],
+    "response_content_length": 136433840,
+    "same_origin": true
+  }
+}
