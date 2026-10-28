@@ -873,7 +873,7 @@
     "original_cell_preview.gd": "3f142fa2ae75e95d5aa7c14b57166794bb4d2949b8582345889a697c9045ccf2",
     "original_combat_world.gd": "b79b71a723fd3a373894e12a2d7e70f8da0a30f7be632bc7d348e007594bea51",
     "original_player_ai_actions.gd": "da917b0ac0088f2b5d5d8a9fc505d3ec0735800609170ee0e81cbff906426284",
-    "original_level3_behaviors.gd": "13fea353dcf53cdeb48b2f90fe928c782088fac7416b5da863ce65052eba7ab1",
+    "original_level3_behaviors.gd": "a5aa84ba17a6655a26601e00742c32c50d7f4002b02903f877a9b46078125296",
     "original_player_ai_policy.gd": "8825b86830df29e207652be1d4e7a1e74e97cfa4cc19c4c841c8b37697a07184",
     "original_unity_random.gd": "fc2ce8b28c5dadb129286ed61634e2b93956bec22b98d6b811d95ae60af8acb2",
     "original_disguise_preview.gd": "ea2826322ae87d1de460e993fb579ebbc4398b2e9a997a47ba460e4ea1c07634",
@@ -897,24 +897,17 @@
     "original_player_ai_targeting.gd": "d10988c683234488b6819681a42fc83f96ccba29c732d6fe67d5251bb69a64f7"
   },
   "full_game_parity_verified": false,
-  "generated_at": "2026-10-28T09:00:00+08:00",
+  "generated_at": "2026-10-28T08:33:49+08:00",
   "execution": "Godot headless startup, Level3 behaviour timing test, default startup, and LevelSlideTraps FFA shell after dynamic obstacle integration; exported Web artifact is hash-bound below.",
   "browser_executed": false,
   "main_sha256": "a8f54e49c0b74f72807cc4627ab14646ea1e7bfa2510d934d779ebde44cdeb8f",
   "dynamic_level3_behaviors": {
-    "passed": true,
-    "report": "godot-level3-behavior-check.json",
     "moving_obstacles": 2,
     "switches": 4,
-    "serialized_timing": [
-      "preMoveDur=0.25",
-      "moveDur=0.6",
-      "springPauseDur=1.2",
-      "springWindBackDur=1.4"
-    ],
     "wobbly_obstacles": 25,
     "destructable_obstacles": 9,
-    "interactive_disc_hooks": true,
+    "debris3d_records": 45,
+    "interactive_disc_wall_callbacks": true,
     "collider_disable_on_destroy": true,
     "behavior_test": "godot-level3-behavior-check.json"
   }

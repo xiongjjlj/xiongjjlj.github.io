@@ -61,6 +61,13 @@
     },
     {
       "details": {
+        "debris": 45
+      },
+      "name": "serialized Debris3D movement constants are retained",
+      "passed": true
+    },
+    {
+      "details": {
         "offset": [
           0.333333343267441,
           0.0555555559694767
@@ -77,8 +84,17 @@
       },
       "name": "DestructableObstacle hides its collider and releases debris",
       "passed": true
+    },
+    {
+      "details": {
+        "disc_active": true,
+        "object_id": 41
+      },
+      "name": "Disc wall callback reaches the exact destructable collider",
+      "passed": true
     }
   ],
   "passed": true,
-  "scope": "LevelSlideTraps serialized MovingObstacle/Switch sidecar and source timing state machine."
+  "scope": "LevelSlideTraps serialized MovingObstacle/Switch/WobblyObstacle/DestructableObstacle/Debris3D sidecar, collider wall callbacks and source timing state machine.",
+  "generated_at": "2026-10-28T08:33:49+08:00"
 }

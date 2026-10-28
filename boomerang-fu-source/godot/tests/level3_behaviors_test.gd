@@ -22,6 +22,7 @@ func run() -> void:
 	behavior.reset();behavior.toggle(2316,"test");behavior.toggle(2316,"test")
 	check("Toggle while pre-moving reverses without creating a second obstacle",behavior.obstacles.size()==2 and behavior.obstacles[2316].reverse)
 	check("serialized WobblyObstacle records resolve spring targets",behavior.wobbles.size()==25 and behavior.wobbles.values().all(func(item): return item.target != null),{"wobbles":behavior.wobbles.size()})
+	check("serialized Debris3D movement constants are retained",behavior.debris_configs.size()==45 and behavior.debris_configs.values().all(func(item): return float(item.get("speed",0.0))>0.0),{"debris":behavior.debris_configs.size()})
 	var wobble:Dictionary = behavior.wobbles[behavior.wobbles.keys()[0]]
 	var wobble_angle := float(wobble.root.rotation.z)
 	behavior._wobble_apply(wobble,Vector2(30.0,5.0))
@@ -37,6 +38,10 @@ func run() -> void:
 		for shape in game.collision_world.shapes:
 			if int(shape.get("object_id",-1)) == int(destructable.game_object): disabled_shape = int(shape.layer)==0
 	check("DestructableObstacle hides its collider and releases debris",not destructable.is_empty() and not destroyed_before and destructable.destroyed and not destructable.node.visible and disabled_shape,{"game_object":destructable.get("game_object",-1),"debris":destructable.get("debris",[]).size()})
+	behavior.reset()
+	var wall_disc := OriginalDiscMotion.new()
+	if not destructable.is_empty(): behavior.interact_disc_wall(wall_disc,int(destructable.game_object),Vector2(18.0,0.0))
+	check("Disc wall callback reaches the exact destructable collider",not destructable.is_empty() and destructable.destroyed and not destructable.node.visible,{"object_id":destructable.get("game_object",-1),"disc_active":wall_disc.active})
 	var report={"passed":checks.all(func(c):return c.passed),"checks":checks,"scope":"LevelSlideTraps serialized MovingObstacle/Switch sidecar and source timing state machine."}
 	FileAccess.open("res://../evidence/godot-level3-behavior-check.json",FileAccess.WRITE).store_string(JSON.stringify(report,"  "))
 	print("BF_LEVEL3_BEHAVIOR_TEST "+JSON.stringify(report));game.queue_free();await process_frame;quit(0 if report.passed else 1)

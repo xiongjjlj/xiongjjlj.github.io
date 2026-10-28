@@ -9,6 +9,8 @@ const MOVING := 1
 const PRE_MOVING := 2
 const SPRING_PAUSING := 3
 var nodes: Dictionary = {}
+var node_to_id: Dictionary = {}
+var debris_configs: Dictionary = {}
 var collision_world: OriginalCollisionWorld
 var obstacles: Dictionary = {}
 var switches: Dictionary = {}
@@ -23,8 +25,10 @@ var interaction_cooldowns: Dictionary = {}
 
 func initialize(sidecar: Dictionary, scene_nodes: Dictionary, world: OriginalCollisionWorld) -> void:
 	nodes = scene_nodes
+	node_to_id.clear()
+	for object_id in nodes.keys(): node_to_id[nodes[object_id].get_instance_id()] = int(object_id)
 	collision_world = world
-	obstacles.clear(); switches.clear(); wobbles.clear(); destructables.clear(); debris_states.clear()
+	obstacles.clear(); switches.clear(); wobbles.clear(); destructables.clear(); debris_states.clear(); debris_configs.clear()
 	source_counts = sidecar.get("class_counts", {})
 	initialized = false
 	for record in sidecar.get("behaviours", []):
@@ -61,6 +65,10 @@ func initialize(sidecar: Dictionary, scene_nodes: Dictionary, world: OriginalCol
 				"drag": float(data.get("drag", 20.0)), "spring_force": float(data.get("springForce", 800.0)),
 				"max_distance": float(data.get("maxSpringDistance", 5.0)), "input_modifier": float(data.get("inputForceModifier", 1.0)),
 				"initial_root_rotation": nodes[int(refs.root)].rotation.z}
+		elif cls == "Debris3D":
+			# Keep the serialized movement constants with the corresponding
+			# rendered child; DestructableObstacle releases these objects later.
+			debris_configs[game_object] = record.get("data", {})
 		elif cls == "DestructableObstacle":
 			var refs: Dictionary = record.get("resolved_refs", {})
 			if not nodes.has(game_object): continue
@@ -175,7 +183,14 @@ func _destroy(item: Dictionary, force: Vector2) -> void:
 	for child in item.debris:
 		child.visible = true
 		var radial := Vector2(cos(float(index) * 2.4), sin(float(index) * 2.4))
-		debris_states.append({"node": child, "velocity": direction * (4.0 + index * 1.2) + radial * 2.0, "age": 0.0, "spin": (-2.0 if index % 2 == 0 else 2.0), "lifetime": 1.25})
+		var config: Dictionary = debris_configs.get(int(node_to_id.get(child.get_instance_id(), -1)), {})
+		var speed := float(config.get("speed", 10.0))
+		var spin_start := float(config.get("spinSpeedStart", 50.0))
+		var lifetime := maxf(0.25, float(config.get("lifetimeDuration", 0.5)) + float(config.get("vanishDuration", 0.75)))
+		debris_states.append({"node": child, "velocity": direction * speed + radial * (speed * 0.12), "age": 0.0,
+			"spin": deg_to_rad(-spin_start if index % 2 == 0 else spin_start), "lifetime": lifetime,
+			"z_velocity": -float(config.get("speedZ", 20.0)), "gravity": 9.82 * float(config.get("gravityMod", 1.0)),
+			"floor": float(config.get("floorThreshold", -0.3)), "bounciness": float(config.get("bounciness", 1.0)), "bounces": 0})
 		index += 1
 	events.append({"type": "destructable_destroy", "component_id": int(item.component_id), "game_object": int(item.game_object), "debris": item.debris.size()})
 
@@ -189,11 +204,31 @@ func _step_debris(delta: float) -> void:
 	for state in debris_states:
 		state.age = float(state.age) + delta
 		state.velocity.y = float(state.velocity.y) - 20.0 * delta
+		state.z_velocity = float(state.z_velocity) + float(state.gravity) * delta
 		var node: Node3D = state.node
-		node.position += Vector3(state.velocity.x * delta, state.velocity.y * delta, 0.0)
+		node.position += Vector3(state.velocity.x * delta, state.velocity.y * delta, state.z_velocity * delta)
+		if node.position.z <= float(state.floor) and state.z_velocity > 0.0 and int(state.bounces) < 2:
+			node.position.z = float(state.floor); state.z_velocity = -state.z_velocity * float(state.bounciness); state.bounces = int(state.bounces) + 1
 		node.rotation.z += float(state.spin) * delta
 		if state.age >= state.lifetime: node.visible = false
 	debris_states = debris_states.filter(func(state: Dictionary) -> bool: return float(state.age) < float(state.lifetime))
+
+func interact_disc_wall(motion, object_id: int, force: Vector2) -> void:
+	# Disc movement reports the exact collider that stopped the sweep. Unity's
+	# trigger callback reaches InteractiveObstacle before the next FixedUpdate;
+	# route that event directly so a high-speed disc cannot tunnel through a
+	# crate or bamboo spring between sampled positions.
+	if motion == null or not motion.active: return
+	for w in wobbles.values():
+		if int(w.game_object) == object_id:
+			var key := "%d:%d" % [int(w.component_id), motion.get_instance_id()]
+			if float(interaction_cooldowns.get(key, 0.0)) <= 0.0:
+				_wobble_apply(w, force); interaction_cooldowns[key] = 0.12
+	for item in destructables.values():
+		if int(item.game_object) != object_id or item.destroyed: continue
+		var key := "%d:%d" % [int(item.component_id), motion.get_instance_id()]
+		if float(interaction_cooldowns.get(key, 0.0)) <= 0.0:
+			_destructable_hit(item, force); interaction_cooldowns[key] = 0.2
 
 func _interact_disc(motion) -> void:
 	if motion == null or not motion.active: return

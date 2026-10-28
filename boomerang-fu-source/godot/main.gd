@@ -501,7 +501,10 @@ func step_discs() -> void:
 		disc.cell_owner = actors.find(disc.owner_actor)
 		disc.fixed_step()
 		for event in disc.events:
-			if event.type == "wall":audio.wall(event,disc.source_z)
+			if event.type == "wall":
+				audio.wall(event,disc.source_z)
+				if active_scene.name == "LevelSlideTraps" and level_behaviors.initialized:
+					level_behaviors.interact_disc_wall(disc,int(event.get("object_id",-1)),disc.velocity)
 			if event.type == "wall": print("BF_DISC_BOUNCE " + JSON.stringify({"actor": item.player, "tick": simulated_ticks, "position": [disc.position.x, disc.position.y]}))
 		disc.events.clear()
 	var discs: Array[OriginalDiscMotion] = []

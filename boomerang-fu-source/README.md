@@ -5,9 +5,9 @@
 
 在线试玩：[feixiong.me/boomerang-fu](https://feixiong.me/boomerang-fu/)。已实测公开地址加载、双人操作、音频及暂停恢复。当前为未完成还原的开发版本。
 
-稳定依赖点已发布到 GitHub：[源码快照 `boomerang-fu-v0.3.0`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.3.0/boomerang-fu-source)，对应提交 `a7c0db7`；[可继续开发的 `boomerang-fu-dev` 分支](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-dev)从同一版本开始。发布网页文件位于同一 tag 的 [`boomerang-fu/`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.3.0/boomerang-fu)。依赖项目可固定 tag，地图和视觉补全继续在 dev 分支推进。
+稳定依赖点已发布到 GitHub：[源码快照 `boomerang-fu-v0.4.0`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.4.0/boomerang-fu-source)，对应提交 `1388879`；[可继续开发的 `boomerang-fu-dev` 分支](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-dev)从同一版本开始。发布网页文件位于同一 tag 的 [`boomerang-fu/`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.4.0/boomerang-fu)。依赖项目可固定 tag，地图和视觉补全继续在 dev 分支推进。
 
-最新构建（2026-10-28）：已接入正常的角色选择、短/中/长局、开局提示、暂停恢复、回合结算、继续、加赛和重赛。可配置 2–6 个本地玩家，使用两套键盘、接入的手柄或机器人；机器人有 Easy / Medium / Hard / Impossible 四档难度，默认是一名键盘玩家对战机器人。手柄事件路由已检查，尚未用实际手柄验证。六个原角色为牛油果、西瓜、面包、香蕉、牛奶和咖啡，保留原始头像、字体、模型和动画曲线。默认运行时地图为 LevelEnclosed；第二张原始地图 LevelSlideTraps 已接入场景选择器，可用 `?map=slide`（或 Godot 用户参数 `-- --map=slide`）启动，并已通过完整 FFA shell 回归。该地图现在已接入场景专属行为 sidecar：两组 MovingObstacle 的原始预动作/移动/停顿/回弹时序、碰撞形状跟随、四个 Switch 的目标引用/冷却与角色或飞镖触发均已运行并通过独立测试；WobblyObstacle 已接入原始弹簧响应；可破坏障碍已接入飞镖触发、碰撞停用和碎片释放。粒子/音频细节、原始菜单像素和逐帧视觉一致性仍未完成。
+最新构建（2026-10-28）：已接入正常的角色选择、短/中/长局、开局提示、暂停恢复、回合结算、继续、加赛和重赛。可配置 2–6 个本地玩家，使用两套键盘、接入的手柄或机器人；机器人有 Easy / Medium / Hard / Impossible 四档难度，默认是一名键盘玩家对战机器人。手柄事件路由已检查，尚未用实际手柄验证。六个原角色为牛油果、西瓜、面包、香蕉、牛奶和咖啡，保留原始头像、字体、模型和动画曲线。默认运行时地图为 LevelEnclosed；第二张原始地图 LevelSlideTraps 已接入场景选择器，可用 `?map=slide`（或 Godot 用户参数 `-- --map=slide`）启动，并已通过完整 FFA shell 回归。该地图现在已接入场景专属行为 sidecar：两组 MovingObstacle 的原始预动作/移动/停顿/回弹时序、碰撞形状跟随、四个 Switch 的目标引用/冷却与角色或飞镖触发均已运行并通过独立测试；WobblyObstacle 已接入原始弹簧响应；可破坏障碍已接入飞镖墙面回调、碰撞停用、序列化 Debris3D 速度/重力/寿命和碎片释放。粒子/音频细节、原始菜单像素和逐帧视觉一致性仍未完成。
 
 浏览器实测双人操作、新角色选择、菜单/对局音乐、暂停滤波、计分和下一回合；无控制台错误。最新整合验证覆盖 37 组检查，包含六人计分、AI 跨回合复用、72 段动画绑定、六人火/冰效果、加赛和反复切换人数后的节点回收；对应报告记录 45 个核心脚本的 SHA-256。13 种普通道具（含伪装、缩小边界和诱饵）和原始 FMOD 音频库已接入，音频内存上限为 128 MiB；最新 Godot 回归套件覆盖道具书、六人 FFA、诱饵、伪装和边界，全部通过。
 
