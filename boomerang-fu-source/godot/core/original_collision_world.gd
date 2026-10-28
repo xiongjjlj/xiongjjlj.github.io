@@ -4,6 +4,9 @@ extends RefCounted
 ## Query semantics are isolated for native Unity comparison; numerical parity
 ## with Unity's Box2D implementation has not yet been established.
 var shapes: Array[Dictionary] = []
+var source_scene: Dictionary = {}
+var source_nodes: Dictionary = {}
+var source_components: Dictionary = {}
 var actor_shapes: Array[Dictionary] = []
 var next_actor_id:=1000000
 var ignored_actor_pairs:Dictionary={}
@@ -12,8 +15,12 @@ const OVERLAP_EPSILON := 1.1920928955078125e-6
 
 func load_scene(scene: Dictionary, scene_nodes: Dictionary) -> void:
 	shapes.clear()
+	source_scene = scene
+	source_nodes = scene_nodes
+	source_components.clear()
 	actor_shapes.clear()
 	for object in scene.nodes:
+		source_components[int(object.id)] = object.components
 		var node: Node3D = scene_nodes[int(object.id)]
 		if not node.is_visible_in_tree(): continue
 		for component in object.components:
@@ -21,7 +28,7 @@ func load_scene(scene: Dictionary, scene_nodes: Dictionary) -> void:
 			var data: Dictionary = component.data
 			if not data.m_Enabled: continue
 			var record := {"id": int(component.id), "object_id": int(object.id), "name": object.name,
-				"layer": 1 << int(object.layer), "trigger": data.m_IsTrigger, "actor": false}
+				"layer": 1 << int(object.layer), "trigger": data.m_IsTrigger, "actor": false, "path_index": 0}
 			var offset := Vector2(data.m_Offset.x, data.m_Offset.y)
 			if component.type == "CircleCollider2D":
 				record.kind = "circle"
@@ -43,8 +50,10 @@ func load_scene(scene: Dictionary, scene_nodes: Dictionary) -> void:
 					var points: Array = []
 					for p in data.m_Points: points.append(Vector2(p.x, p.y))
 					paths.append(points)
-				for path in paths:
+				for path_index in paths.size():
+					var path = paths[path_index]
 					var item := record.duplicate()
+					item.path_index = path_index
 					item.kind = "edge" if component.type == "EdgeCollider2D" else "polygon"
 					item.edge_radius = data.get("m_EdgeRadius", 0.0) * maxf(node.global_basis.x.length(), node.global_basis.y.length())
 					var vertices := PackedVector2Array()
@@ -58,6 +67,45 @@ func load_scene(scene: Dictionary, scene_nodes: Dictionary) -> void:
 static func point(node: Node3D, p: Vector2) -> Vector2:
 	var world := node.global_transform * Vector3(p.x, p.y, 0)
 	return Vector2(world.x, world.y)
+
+func sync_scene_object(object_id: int) -> void:
+	if not source_nodes.has(object_id): return
+	var node: Node3D = source_nodes[object_id]
+	var components: Array = source_components.get(object_id, [])
+	for shape_index in shapes.size():
+		var shape: Dictionary = shapes[shape_index]
+		if shape.actor or int(shape.object_id) != object_id: continue
+		var component: Dictionary = {}
+		for candidate in components:
+			if int(candidate.id) == int(shape.id): component = candidate; break
+		if component.is_empty(): continue
+		var data: Dictionary = component.data
+		var offset := Vector2(data.m_Offset.x, data.m_Offset.y)
+		if shape.kind == "circle":
+			shape.center = point(node, offset)
+			shape.radius = data.m_Radius * maxf(node.global_basis.x.length(), node.global_basis.y.length())
+			shape.bounds = Rect2(shape.center - Vector2.ONE * shape.radius, Vector2.ONE * shape.radius * 2.0)
+		else:
+			var path: Array = []
+			if component.type == "BoxCollider2D":
+				var half := Vector2(data.m_Size.x, data.m_Size.y) * 0.5
+				path = [Vector2(-half.x, -half.y), Vector2(half.x, -half.y), half, Vector2(-half.x, half.y)]
+			elif component.type == "PolygonCollider2D":
+				path = data.m_Points.m_Paths[int(shape.get("path_index", 0))]
+			else:
+				path = data.m_Points
+			var vertices := PackedVector2Array()
+			for p in path:
+				var point_value: Vector2 = Vector2.ZERO
+				if p is Dictionary: point_value = Vector2(p.x, p.y)
+				else: point_value = p
+				vertices.append(point(node, point_value + offset))
+			shape.vertices = vertices
+			if not vertices.is_empty():
+				var bounds := Rect2(vertices[0], Vector2.ZERO)
+				for p in vertices: bounds = bounds.expand(p)
+				shape.bounds = bounds.grow(shape.get("edge_radius", 0.0))
+		shapes[shape_index] = shape
 
 func register_actor(actor: OriginalActorMotion) -> void:
 	actor.query_id = next_actor_id

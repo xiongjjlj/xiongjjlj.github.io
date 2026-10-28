@@ -858,7 +858,7 @@
     "original_cell_grid.gd": "efb014740e0b893b3c3adc03e6c6f755c668f8f09d4b15cfae37a82d5e3ee773",
     "original_cell_preview.gd": "3f142fa2ae75e95d5aa7c14b57166794bb4d2949b8582345889a697c9045ccf2",
     "original_character_preview.gd": "ed0e6b925df00baf5b4c6d506f230aefa99de8c367b8e918e19f2cc87404353e",
-    "original_collision_world.gd": "3cb9de0766b352b00adf4ef23bb9da48de56a6d0165e56cc5836e331cf9e5f86",
+    "original_collision_world.gd": "28ee764c4824347764365c554811cc9bec7fd70a105e90ab326f8b6b9d970bba",
     "original_combat_world.gd": "b79b71a723fd3a373894e12a2d7e70f8da0a30f7be632bc7d348e007594bea51",
     "original_decoy_ai.gd": "c9527d92e9392ce801b84184b245066186edd2f73f0a85a5dec865f222a4618c",
     "original_decoy_elements.gd": "cb7136541cc58cc9cc3d7f26aea995bc929d6671687679ee6025acae66e75768",
@@ -893,10 +893,24 @@
     "original_system_random.gd": "adc47354646a125d7f8d69b2f0e7a2b718d569303d22e50cfa41d980d02639f6",
     "original_teleport.gd": "6af9be272bdf4046817b409e6b3fc9575c5fcd894a66790cd7f95a2696cb1f47",
     "original_timekeeper.gd": "627e8b52ae78f88ff162851d5d9269bd3aabd6992caeec6de2e1ede710fc13ca",
-    "original_unity_random.gd": "fc2ce8b28c5dadb129286ed61634e2b93956bec22b98d6b811d95ae60af8acb2"
+    "original_unity_random.gd": "fc2ce8b28c5dadb129286ed61634e2b93956bec22b98d6b811d95ae60af8acb2",
+    "original_level3_behaviors.gd": "e70d950c183e16563f767dd3e436940bbc63a4fc24eeecd1193df0a9c6d5610d"
   },
   "full_game_parity_verified": false,
-  "generated_at": "2026-10-28T00:00:00+08:00",
-  "execution": "Godot headless validation runner after current source staging; exported Web artifact is hash-bound below.",
-  "browser_executed": false
+  "generated_at": "2026-10-28T08:18:00+08:00",
+  "execution": "Godot headless startup, Level3 behaviour timing test, default startup, and LevelSlideTraps FFA shell after dynamic obstacle integration; exported Web artifact is hash-bound below.",
+  "browser_executed": false,
+  "main_sha256": "a8f54e49c0b74f72807cc4627ab14646ea1e7bfa2510d934d779ebde44cdeb8f",
+  "dynamic_level3_behaviors": {
+    "passed": true,
+    "report": "godot-level3-behavior-check.json",
+    "moving_obstacles": 2,
+    "switches": 4,
+    "serialized_timing": [
+      "preMoveDur=0.25",
+      "moveDur=0.6",
+      "springPauseDur=1.2",
+      "springWindBackDur=1.4"
+    ]
+  }
 }

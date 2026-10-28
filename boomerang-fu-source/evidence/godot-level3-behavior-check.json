@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "details": null,
+      "name": "level3 sidecar preserves two MovingObstacle and four Switch behaviours",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "moving obstacle starts at serialized position",
+      "passed": true
+    },
+    {
+      "details": {
+        "elapsed": 0.0333333333333333,
+        "state": 1,
+        "y": -2.83241844177246
+      },
+      "name": "serialized preMove delay and EaseOut motion move the first brush",
+      "passed": true
+    },
+    {
+      "details": {
+        "elapsed": 0.0333333333333333,
+        "percent": 0.0,
+        "state": 3,
+        "y": -21.7000007629395
+      },
+      "name": "moveDur reaches the serialized target before spring pause",
+      "passed": true
+    },
+    {
+      "details": {
+        "spring": true,
+        "state": 1,
+        "y": -19.2703723907471
+      },
+      "name": "springPauseDur releases the spring wind-back",
+      "passed": true
+    },
+    {
+      "details": {
+        "spring": false,
+        "state": 0,
+        "y": 0.0
+      },
+      "name": "springWindBackDur returns the brush to its original slot",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "Toggle while pre-moving reverses without creating a second obstacle",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "LevelSlideTraps serialized MovingObstacle/Switch sidecar and source timing state machine."
+}

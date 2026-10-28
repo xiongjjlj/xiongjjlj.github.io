@@ -56,5 +56,14 @@
       "BF_ROUND_START {\"goal\":14,\"round\":1}",
       "BF_BOUNDARY_SCENE {\"checks\":[{\"name\":\"Shrink available in normal power pool\",\"passed\":true},{\"name\":\"original bounds size and mesh\",\"passed\":true},{\"name\":\"source glow hidden initially\",\"passed\":true},{\"name\":\"instant power starts shrinking without a history entry\",\"passed\":true},{\"name\":\"source width determines duration\",\"passed\":true},{\"name\":\"shrink disables duplicate book selection and shows glow\",\"passed\":true},{\"name\":\"out-of-bounds bypasses shield and immunity\",\"passed\":true},{\"name\":\"boundary owner receives kill\",\"passed\":true},{\"name\":\"out-of-bounds hides actor without slicing\",\"passed\":true},{\"name\":\"last survivor stops contraction\",\"passed\":true},{\"name\":\"new match clears boundary owner and sudden death\",\"passed\":true},{\"name\":\"three-minute sudden death starts ownerless shrinking\",\"passed\":true},{\"name\":\"repeat reset restores node count\",\"passed\":true}],\"full_game_parity_verified\":false,\"node_after\":1192,\"node_baseline\":1192,\"passed\":true}"
     ]
-  }
+  },
+  "tests/level3_behaviors_test.gd": {
+    "returncode": 0,
+    "seconds": 1.1,
+    "log": "outputs/boomerang-fu-web/evidence/godot-level3-behavior-check.json",
+    "tail": [
+      "BF_LEVEL3_BEHAVIOR_TEST passed=true; 7 checks"
+    ]
+  },
+  "generated_at": "2026-10-28T08:18:00+08:00"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T00:00:00+08:00",
+  "generated_at": "2026-10-28T08:18:00+08:00",
   "status": "runtime_selectable_scoped",
   "selector": {
     "default": "LevelEnclosed",
@@ -341,5 +341,19 @@
     "LevelSlideTraps uses the recovered scene geometry and a generic material fallback for IDs absent from the LevelEnclosed shader sidecar.",
     "Level-specific Unity MonoBehaviour scheduling, moving traps, particles, audio, original menu pixels and full native/browser frame parity remain incomplete.",
     "Default map remains LevelEnclosed; select LevelSlideTraps with ?map=slide or the CLI user argument."
-  ]
+  ],
+  "dynamic_behaviors": {
+    "report": "godot-level3-behavior-check.json",
+    "passed": true,
+    "moving_obstacles": 2,
+    "switches": 4,
+    "serialized_class_counts": {
+      "MovingObstacle": 2,
+      "Switch": 4,
+      "WobblyObstacle": 25,
+      "DestructableObstacle": 9,
+      "InteractiveObstacle": 33
+    },
+    "runtime_scope": "MovingObstacle timing/state machine, scene collision refresh, actor/projectile switch trigger and cooldown"
+  }
 }
