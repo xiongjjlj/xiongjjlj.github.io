@@ -1,12 +1,12 @@
 {
   "name": "boomerang-fu-web",
-  "version": "0.4.3-stable",
+  "version": "0.4.4-stable",
   "generated_at": "2026-10-28",
   "runtime": "Godot 4.7 Web",
   "default_scene": "LevelEnclosed",
   "optional_scene": "LevelSlideTraps (?map=slide)",
-  "source_files": 1228,
-  "source_bytes": 67571525,
+  "source_files": 1229,
+  "source_bytes": 67573160,
   "full_game_parity_verified": false,
   "limitations": [
     "This is a stable scoped FFA browser build, not a claim of full original-game parity.",
@@ -38,6 +38,11 @@
       "path": "evidence/godot-regression-suite.json",
       "bytes": 11579,
       "sha256": "b2e6e569632477ba1a1cb68e2b75cbb0e65231bf01856bdb1b7927e738739853"
+    },
+    {
+      "path": "evidence/public-deploy-check.json",
+      "bytes": 1467,
+      "sha256": "2f3cd98c0ddf9eafdb6054f1a4042dd85ccb6d22530945b822e8d139e65fd792"
     },
     {
       "path": "evidence/web-package-check.json",
@@ -6151,8 +6156,8 @@
     },
     {
       "path": "VERSION.json",
-      "bytes": 225481,
-      "sha256": "288b917802ed19c850909eaeda2e4f10b8d87caca8111fcfb7dfe2d1b9fd420d"
+      "bytes": 225649,
+      "sha256": "236b0501b05b1f3bc55f3dc2a944b3eb9983ad2cb3c733e95829f2cf3a90af39"
     }
   ]
 }
