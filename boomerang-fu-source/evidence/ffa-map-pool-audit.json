@@ -4,7 +4,7 @@
     "globalgamemanagers": "92776e6a29019fa67439b8b00abb27be47a326c80998125713cd836f1267dde2",
     "sharedassets1.assets": "7421b9f85a2afe32e478e457360eb26fa27e5fbcd9cb7555261d94f061ed7f3f"
   },
-  "catalog_sha256": "f7ca675aea50db1a34a59d46f8a646ab7559f669d8a0c57ca2cf837de30c33fa",
+  "catalog_sha256": "303969f91302c18b8efaa44b2df495a814376bc8a45cfb99d2b9e343c8ac53be",
   "source_sha256": {
     "LevelManager.cs": "743fdb9c86736478e65c40723a8186edd2f64757d2315a61863045736816fcc5",
     "LevelAsset.cs": "68513d84df4e3715a06d37990097cd91b57b40a7105e764aeeed1378bd06d28d",

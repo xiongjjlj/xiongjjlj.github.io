@@ -22,6 +22,7 @@ var goal_label: Label
 var count_choice: OptionButton
 var difficulty_choice: OptionButton
 var length_choice: OptionButton
+var map_choice: OptionButton
 var device_choices: Array[OptionButton] = []
 var character_choices: Array[OptionButton] = []
 var portraits: Array[TextureRect] = []
@@ -111,6 +112,14 @@ func initialize(scene: Node) -> void:
 	difficulty_choice=OptionButton.new()
 	for level in ["Easy","Medium","Hard","Impossible"]:difficulty_choice.add_item(level)
 	difficulty_choice.select(1);settings.add_child(difficulty_choice)
+	settings.add_child(label("Maps",22))
+	map_choice=OptionButton.new()
+	if game.requested_map.is_empty():
+		map_choice.add_item("Base maps");map_choice.add_item("Base + DLC")
+	else:
+		map_choice.add_item("Selected arena");map_choice.disabled=true
+	map_choice.item_selected.connect(func(_index):validate_lobby())
+	settings.add_child(map_choice)
 	goal_label = label("", 22); settings.add_child(goal_label)
 	cards = HBoxContainer.new()
 	cards.alignment = BoxContainer.ALIGNMENT_CENTER
@@ -209,6 +218,10 @@ func build_cards() -> void:
 func validate_lobby() -> void:
 	var scene_name := str(game.active_scene.get("name", "Arena")).trim_prefix("Level").to_snake_case().capitalize()
 	var message := "Same-screen multiplayer · " + scene_name
+	if game.requested_map.is_empty():
+		var ids:Array=game.match_playlist.eligible({"count":player_count,"dlc":map_choice.selected==1})
+		var normal_count:=ids.filter(func(id):return int(game.match_playlist.entries[id].complexity)!=0).size()
+		message="Same-screen multiplayer · %d arenas"%normal_count
 	var used_devices: Array[int] = []
 	var used_names: Array[String] = []
 	var valid := true
@@ -290,8 +303,22 @@ func start_match() -> void:
 	var names:Array[String]=[];names.assign(selected_names.slice(0,player_count))
 	var devices:Array[int]=[];devices.assign(selected_devices.slice(0,player_count))
 	game.setup.bot_difficulty=difficulty_choice.selected
-	game.configure_match(names,devices,length_choice.selected)
-	begin_round()
+	if game.requested_map.is_empty():
+		game.start_playlist_match(names,devices,length_choice.selected,map_choice.selected==1)
+	else:
+		game.configure_match(names,devices,length_choice.selected)
+		begin_round()
+
+func match_options()->Dictionary:
+	return {"names":selected_names.duplicate(),"devices":selected_devices.duplicate(),"count":player_count,
+		"length":length_choice.selected,"difficulty":difficulty_choice.selected,"maps":map_choice.selected}
+
+func restore_match_options(options:Dictionary)->void:
+	if options.is_empty():return
+	selected_names.assign(options.names);selected_devices.assign(options.devices)
+	player_count=int(options.count);count_choice.select(player_count-2)
+	length_choice.select(int(options.length));difficulty_choice.select(int(options.difficulty));map_choice.select(int(options.maps))
+	build_cards()
 
 func begin_round() -> void:
 	mode=Mode.READY
@@ -358,6 +385,9 @@ func show_scores() -> void:
 	print("BF_FLOW "+("match_end" if won else "scores"))
 
 func continue_round() -> void:
+	if not game.playlist_options.is_empty():
+		game.advance_playlist_round(mode==Mode.MATCH_END or game.round_state.scores.winners.size()==1)
+		return
 	if mode==Mode.MATCH_END or game.round_state.scores.winners.size()==1:game.reset_motions(true)
 	else:game.next_round()
 	begin_round()

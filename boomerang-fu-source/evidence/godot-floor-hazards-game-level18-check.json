@@ -1,12 +1,12 @@
 {
   "active_discs": 0,
-  "active_tile_frames": 16232,
+  "active_tile_frames": 29843,
   "disc_views": 0,
-  "distance": 140.960253074591,
+  "distance": 147.152247923099,
   "finite": true,
   "frames": 900,
-  "hole_frames": 6517,
+  "hole_frames": 18498,
   "map": "level18",
   "passed": true,
-  "round_resets": 2
+  "round_resets": 1
 }

@@ -1,0 +1,38 @@
+{
+  "checks": 41,
+  "failures": [],
+  "passed": true,
+  "scope": "Actual Godot scene reloads: base/DLC player-count filtering, scores/powers/controller state, powerup RNG continuity, rematch and duplicate-input guard. Browser presentation and original transition timing are separate.",
+  "visited": [
+    {
+      "players": 2,
+      "pool": 36,
+      "round": 1,
+      "scene": "LevelBambooGrove"
+    },
+    {
+      "players": 2,
+      "pool": 36,
+      "round": 2,
+      "scene": "LevelMarketplace"
+    },
+    {
+      "players": 6,
+      "pool": 31,
+      "round": 1,
+      "scene": "LevelToaster"
+    },
+    {
+      "players": 6,
+      "pool": 31,
+      "round": 1,
+      "scene": "LevelClouds"
+    },
+    {
+      "players": 2,
+      "pool": 57,
+      "round": 1,
+      "scene": "LevelMarketplace"
+    }
+  ]
+}

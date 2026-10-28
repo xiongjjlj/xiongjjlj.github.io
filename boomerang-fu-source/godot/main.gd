@@ -81,11 +81,31 @@ var bots := OriginalPlayerAiWorld.new()
 var controllers := LocalControllers.new()
 var shell: FfaShell
 var debug_canvas: CanvasLayer
+const SESSION_META := "boomerang_ffa_scene_transition"
+var match_playlist=preload("res://core/original_match_playlist.gd").new()
+var playlist_options:Dictionary={}
+var requested_map := ""
+var transition_pending := false
+var carried_players:Array=[]
+var carried_powerups:Dictionary={}
 
 func _ready() -> void:
+	var incoming:Dictionary=get_tree().get_meta(SESSION_META,{})
+	if not incoming.is_empty():
+		get_tree().remove_meta(SESSION_META)
+		setup=incoming.setup;clock=incoming.clock;audio=incoming.audio
+		audio.buttons.clear();audio.button=null
+		match_playlist=incoming.playlist;playlist_options=incoming.options
+		if not incoming.new_match:
+			round_state.scores=incoming.scores;round_state.round_number=incoming.round_number
+			carried_players=incoming.players;carried_powerups=incoming.powerups
 	audio.initialize()
 	manifest = read_json(ROOT + "manifest.json")
+	if incoming.is_empty():match_playlist.initialize(read_json(ROOT+"map-catalog.json"))
 	active_scene_index = requested_scene_index()
+	if not incoming.is_empty():
+		active_scene_index=scene_index_for_key(incoming.scene_key)
+		requested_map="" # The active playlist now owns scene selection.
 	active_scene = manifest.scenes[active_scene_index]
 	scene_materials.initialize(ROOT)
 	disguise_inputs=read_json(ROOT+"disguise-inputs.json")
@@ -116,7 +136,7 @@ func _ready() -> void:
 	floor_hazards.navigation=weakref(navigation_world)
 	ground_queries.world = collision_world
 	ground_queries.water_mask = 16 # Original serialized Water layer (index 4).
-	create_characters()
+	create_characters(incoming.is_empty() or incoming.new_match)
 	add_child(cell_preview)
 	var original_material:ShaderMaterial=scene_materials.materials[0]
 	var sun:Vector3=original_material.get_shader_parameter("source_sun_direction")
@@ -137,6 +157,10 @@ func _ready() -> void:
 		shell = FfaShell.new()
 		add_child(shell)
 		shell.initialize(self)
+		if not incoming.is_empty():
+			shell.restore_match_options(incoming.lobby)
+			shell.begin_round()
+	elif not incoming.is_empty():clock.unpause_time()
 	print("BF_GODOT_READY " + JSON.stringify({"scene": active_scene.name, "scene_index": active_scene_index,
 		"nodes": nodes.size(), "meshes": mesh_count, "missing": manifest.missing_references.size()}))
 
@@ -147,6 +171,7 @@ func requested_scene_index() -> int:
 	if OS.has_feature("web"):
 		var browser_value = JavaScriptBridge.eval("new URLSearchParams(window.location.search).get('map')", true)
 		if browser_value != null and str(browser_value) != "": requested = str(browser_value).to_lower()
+	requested_map=requested
 	if requested.is_empty(): return 0
 	var aliases := {"slide":"levelslidetraps", "level3":"levelslidetraps"}
 	var wanted := str(aliases.get(requested, requested)).replace("_", "").replace("-", "")
@@ -157,10 +182,16 @@ func requested_scene_index() -> int:
 		if wanted == compact or wanted == file_key: return index
 	return 0
 
+func scene_index_for_key(key:String)->int:
+	for index in manifest.scenes.size():
+		if str(manifest.scenes[index].file).get_file().get_basename()==key:return index
+	push_error("Playlist references an unavailable scene: "+key)
+	return 0
+
 func read_json(path: String) -> Dictionary:
 	return JSON.parse_string(FileAccess.get_file_as_string(path))
 
-func create_characters() -> void:
+func create_characters(new_match:=true) -> void:
 	weapon_bindings = read_json("res://assets/characters/weapon-bindings.json")
 	body_bindings = read_json("res://assets/characters/body-bindings.json")
 	current_clips.resize(setup.roster.size())
@@ -190,7 +221,7 @@ func create_characters() -> void:
 		shield_material.albedo_color = Color(0.55, 0.88, 1.0, 0.2)
 		for mesh in shield.find_children("*", "MeshInstance3D", true, false): mesh.material_override = shield_material
 		shield_views.append(shield)
-	reset_motions()
+	reset_motions(new_match)
 	distance = 28.0
 	center = Vector3(0, -8, 1)
 	print("BF_MOTION_READY " + JSON.stringify({"shapes": collision_world.shapes.size(),
@@ -224,6 +255,12 @@ func reset_motions(new_match := true) -> void:
 	if not new_match:
 		for weapon in weapons: saved_powers.append(weapon.powers.round_snapshot())
 		for actor in actors: saved_control_time.append(actor.time_controlling_disc)
+		if not carried_players.is_empty():
+			saved_powers.clear();saved_control_time.clear();saved_teleports.clear()
+			for item in carried_players:
+				saved_powers.append(item.powers);saved_control_time.append(item.control_time)
+				saved_teleports.append(item.teleport)
+			carried_players.clear()
 	for explosion in explosions: explosion.view.queue_free()
 	explosions.clear()
 	for disc in flying_discs: disc.view.retire()
@@ -351,6 +388,9 @@ func reset_motions(new_match := true) -> void:
 	if powerup_world.binding.is_empty():
 		var power_binding := read_json("res://assets/powers/powerup-bindings-level3.json" if active_scene.name == "LevelSlideTraps" else "res://assets/powers/powerup-bindings.json")
 		powerup_world.initialize(weapons, collision_world, power_binding)
+	if not carried_powerups.is_empty():
+		powerup_world.restore_match(carried_powerups);carried_powerups.clear()
+	if not playlist_options.is_empty():powerup_world.last_round_before_powers=match_playlist.powerup_start_delay
 	powerup_world.begin_round(round_state.round_number, clock.time_counter, new_match)
 	level_behaviors.moving_floors.start_all()
 	decoys.navigation.enabled=setup.sources.any(func(source):return FfaSetup.is_bot(source))
@@ -365,6 +405,10 @@ func reset_motions(new_match := true) -> void:
 	print("BF_ROUND_START " + JSON.stringify({"round": round_state.round_number, "goal": round_state.scores.goal}))
 
 func next_round() -> void:
+	if not playlist_options.is_empty():
+		if round_state.phase in [OriginalFfaRound.Phase.SCORES,OriginalFfaRound.Phase.MATCH_END]:
+			advance_playlist_round(round_state.phase==OriginalFfaRound.Phase.MATCH_END or round_state.scores.winners.size()==1)
+		return
 	if round_state.phase == OriginalFfaRound.Phase.MATCH_END:
 		reset_motions(true)
 	elif round_state.phase == OriginalFfaRound.Phase.SCORES:
@@ -1142,6 +1186,7 @@ func consume_floor_events()->void:
 	floor_hazards.events.clear()
 
 func _process(delta: float) -> void:
+	if transition_pending:return
 	if shell != null:
 		shell.frame(delta)
 		if shell.blocks_simulation():
@@ -1351,6 +1396,50 @@ func configure_match(names: Array[String], devices: Array[int], length: int) -> 
 	camera_auto = true
 	clear_local_input()
 	print("BF_MATCH_CONFIG " + JSON.stringify({"characters":setup.roster,"sources":setup.sources,"goal":round_state.scores.goal,"positions":actors.map(func(a):return [a.position.x,a.position.y])}))
+
+func start_playlist_match(names:Array[String],devices:Array[int],length:int,dlc:bool,seed_value:Variant=null)->void:
+	if transition_pending:return
+	setup.roster.assign(names);setup.sources.assign(devices);setup.match_length=length
+	setup.original_spawns=true
+	var seed_number:=int(Time.get_ticks_usec())&0x7fffffff if seed_value==null else int(seed_value)
+	setup.spawn_rng=OriginalUnityRandom.new(seed_number)
+	match_playlist.initialize(read_json(ROOT+"map-catalog.json"))
+	# Tutorial scripting is outside the current FFA arena scope. Its playlist
+	# rule is preserved and tested independently, but not exposed as complete.
+	playlist_options={"count":names.size(),"bots":devices.filter(func(d):return FfaSetup.is_bot(d)).size(),"dlc":dlc,"tutorial":false,"rematch":false}
+	match_playlist.build(playlist_options,seed_number)
+	queue_playlist_scene(true)
+
+func advance_playlist_round(rematch:bool)->void:
+	if transition_pending:return
+	if rematch:
+		playlist_options.rematch=true
+		match_playlist.build(playlist_options)
+	else:
+		if round_state.scores.winners.size()>1:round_state.scores.tie_breaker=true
+		round_state.round_number+=1
+	queue_playlist_scene(rematch)
+
+func queue_playlist_scene(new_match:bool)->void:
+	if transition_pending:return
+	var next_id:int=match_playlist.consume_next()
+	if next_id<0:
+		push_error("No eligible FFA maps for this match")
+		return
+	var players:Array=[]
+	if not new_match:
+		for index in weapons.size():players.append({"powers":weapons[index].powers.round_snapshot(),
+			"control_time":actors[index].time_controlling_disc,"teleport":{"count":weapons[index].teleport.count,"timestamp":weapons[index].teleport.last_timestamp}})
+	var entry:Dictionary=match_playlist.entries[next_id]
+	var lobby_options:Dictionary=shell.match_options() if shell!=null else {}
+	var snapshot:Dictionary={"scene_key":str(entry.build_scene_keys[0]),"setup":setup,"clock":clock,
+		"audio":audio,"playlist":match_playlist,"options":playlist_options.duplicate(true),
+		"new_match":new_match,"scores":round_state.scores,"round_number":round_state.round_number,
+		"players":players,"powerups":powerup_world.match_snapshot(),"lobby":lobby_options}
+	get_tree().set_meta(SESSION_META,snapshot)
+	transition_pending=true;clock.pause_time();clear_local_input()
+	print("BF_MAP_TRANSITION "+JSON.stringify({"scene":entry.name,"key":snapshot.scene_key,"catalog_index":next_id,"new_match":new_match,"round":1 if new_match else round_state.round_number,"pool":match_playlist.playlist.size()}))
+	get_tree().call_deferred("change_scene_to_file","res://main.tscn")
 
 func clear_local_input() -> void:
 	controllers.block_held_buttons()

@@ -1,4 +1,8 @@
 {
+  "switch_incompatible_indices": [
+    7,
+    22
+  ],
   "match_types": {
     "DeathMatch": 0,
     "GoldenDisc": 1,

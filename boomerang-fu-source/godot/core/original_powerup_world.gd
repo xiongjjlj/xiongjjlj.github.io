@@ -28,6 +28,17 @@ var collectable_discs: Array[OriginalDiscMotion] = []
 var shrinking_allowed := true
 var rng := RandomNumberGenerator.new()
 
+func match_snapshot()->Dictionary:
+	return {"available":available,"possible":possible.duplicate(),"removed":removed.duplicate(),
+		"collected_total":collected_total,"frequency":frequency,"serial":serial,
+		"last_round_before_powers":last_round_before_powers,"rng_seed":rng.seed,"rng_state":rng.state}
+
+func restore_match(snapshot:Dictionary)->void:
+	available=int(snapshot.available);possible.assign(snapshot.possible);removed.assign(snapshot.removed)
+	collected_total=int(snapshot.collected_total);frequency=int(snapshot.frequency);serial=int(snapshot.serial)
+	last_round_before_powers=int(snapshot.last_round_before_powers)
+	rng.seed=int(snapshot.rng_seed);rng.state=int(snapshot.rng_state)
+
 func initialize(inventories: Array[OriginalPlayerWeapons], queries: OriginalCollisionWorld, data: Dictionary) -> void:
 	weapons = inventories
 	world = queries

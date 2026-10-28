@@ -7,11 +7,13 @@
 
 稳定依赖点已发布到 GitHub：[源码快照 `boomerang-fu-v0.5.0`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu-source)，该稳定版本固定在提交 `ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1`；[可继续开发的 `boomerang-fu-dev` 分支](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-dev)从同一版本开始。发布网页文件位于同一 tag 的 [`boomerang-fu/`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu)。依赖项目可固定 tag，地图和视觉补全继续在 dev 分支推进。
 
-开发分支 `0.5.1-dev.6`：塌陷与踩踏地板的预警、下沉、恢复、导航标签/重扫及回合重置已接入，64 项运行时检查通过。浏览器实测范围与剩余呈现缺口见 `DEVELOPMENT.md` 和 `evidence/floor-hazards-browser-check.json`。地图口径已修正为本体 36 张、Just Desserts DLC 21 张；59 是资源场景数，包含教程和重复 Toaster 条目。原版地图池与轮换尚待接入，见 `MAP_SCOPE.md`。
+开发分支 `0.5.1-dev.7` 已部署到 [公司预览](https://boomerang-fu.arkevo.ai/)（实际版本以 `/version.json` 为准）：默认仅本体地图，2–4 人 36 张、5–6 人 31 张；可选 Base + DLC 后为 57/52 张。已接入原版选图和跨回合轮换，保留比分、道具及玩家设置，重赛清零。304 组原版方法对照、53,916 项比较无差异；实际换图 41 项检查、66 项运行时回归及浏览器验证通过。教学流程、原菜单呈现和完整场景时序仍未完成，详见 `MAP_SCOPE.md` 和 `DEVELOPMENT.md`。
+
+`0.5.1-dev.6` 已接入塌陷与踩踏地板的预警、下沉、恢复、导航标签/重扫及回合重置。浏览器实测范围与剩余呈现缺口见 `evidence/floor-hazards-browser-check.json`。59 是资源场景数，包含教程和重复 Toaster 条目，不是常规地图数量。
 
 开发分支 `0.5.1-dev.1`（2026-10-28）：将 MovingObstacle、Switch、WobblyObstacle、DestructableObstacle、Debris3D 的共享适配器接入全部关卡的行为数据。修正组件引用、启用状态、开关 Enter 语义、机关重置、子节点碰撞同步及物理步调度。行为数据含原安装 SHA-256 和组件归属，6,904 条记录经场景图检查。真实场景测试覆盖 level3、level4、level48、level55；其余关卡仅做加载检查。移动地板、门、传送门、塌陷/陷阱地板和特效等仍有缺口；未验证 Unity 完整时序或逐帧一致。详细开发入口及测试命令见 `DEVELOPMENT.md`。开发包 `web-development-0.5.1-dev.1.zip` 已在浏览器验证：Turnstile 的旋转、投掷、暂停恢复和继续回合，以及 Slide Traps 的键盘近战触发开关、双刷移动与回弹。两个页面无控制台错误或警告；观察到机器人走落 Turnstile 平台，地图寻路仍需修复。以下历史浏览器记录对应此前发布的稳定版。
 
-最新构建（2026-10-28）：已接入正常的角色选择、短/中/长局、开局提示、暂停恢复、回合结算、继续、加赛和重赛。可配置 2–6 个本地玩家，使用两套键盘、接入的手柄或机器人；六个原角色、头像、字体、模型和动画曲线保留。Unity BuildSettings 中的 59 个资源场景（`level2`–`level60`）已经导入 Web 资源包；按原版 LevelAsset 核对，它们是 36 张本体常规地图、21 张 Just Desserts DLC 地图、1 张教程及 1 个重复 Toaster 构建条目，常规自由击杀最多 57 张。完整范围、人数限制和当前轮换缺口见 `MAP_SCOPE.md`。这些场景，可用 `?map=levelN`（例如 `?map=level38`，`slide` 仍是 `level3` 的别名）选择；逐张 Godot 启动与共享 FFA 初始化检查全部通过。LevelSlideTraps 另有 MovingObstacle、Switch、WobblyObstacle、可破坏障碍、飞镖墙面回调和玩家近战障碍回调适配；其他地图目前共享 FFA 运行时和原始几何/碰撞体，地图专属移动平台、传送门、落水、粒子、音频和 Animator 仍需逐项移植。
+最新构建（2026-10-28）：已接入正常的角色选择、短/中/长局、开局提示、暂停恢复、回合结算、继续、加赛和重赛。可配置 2–6 个本地玩家，使用两套键盘、接入的手柄或机器人；六个原角色、头像、字体、模型和动画曲线保留。Unity BuildSettings 中的 59 个资源场景（`level2`–`level60`）已经导入 Web 资源包；按原版 LevelAsset 核对，它们是 36 张本体常规地图、21 张 Just Desserts DLC 地图、1 张教程及 1 个重复 Toaster 构建条目，常规自由击杀最多 57 张。完整范围、人数限制和轮换实现见 `MAP_SCOPE.md`。这些场景，可用 `?map=levelN`（例如 `?map=level38`，`slide` 仍是 `level3` 的别名）选择；逐张 Godot 启动与共享 FFA 初始化检查全部通过。LevelSlideTraps 另有 MovingObstacle、Switch、WobblyObstacle、可破坏障碍、飞镖墙面回调和玩家近战障碍回调适配；其他地图目前共享 FFA 运行时和原始几何/碰撞体，地图专属移动平台、传送门、落水、粒子、音频和 Animator 仍需逐项移植。
 
 浏览器实测双人操作、新角色选择、菜单/对局音乐、暂停滤波、计分和下一回合；无控制台错误。最新整合验证覆盖 37 组检查，包含六人计分、AI 跨回合复用、72 段动画绑定、六人火/冰效果、加赛和反复切换人数后的节点回收；对应报告记录 45 个核心脚本的 SHA-256。13 种普通道具（含伪装、缩小边界和诱饵）和原始 FMOD 音频库已接入，音频内存上限为 128 MiB；最新 Godot 回归套件覆盖道具书、六人 FFA、诱饵、伪装和边界，全部通过。
 
@@ -54,7 +56,7 @@ Player、Disc 与两名角色的序列化组件已读取。TypeTreeGenerator 的
 
 `godot/core/original_timekeeper.gd` 已移植命中停顿、慢动作与暂停。当前基线在原安装的 UnityPlayer 2022.3.62f2 / Mono 中执行恢复的 TimeKeeper 方法及原版数学 API，注入时间与游戏服务；1,800 帧被比较字段逐值一致。Godot WebAssembly 也通过同一批对照。旧 CoreCLR 夹具只作为历史中间结果，不能替代原游戏运行时。
 
-`godot/core/original_ffa_score.gd` 已移植自由击杀计分决策，10 个边界场景检查通过；现已接入普通飞镖命中、角色死亡与回合分数。`original_ffa_round.gd` 保留最后存活者检查的 0.15 秒与 1.3 秒等待阶段，死亡事件会重新开始检查；等待期间仍可发生死后击杀和相互死亡。默认双人 Medium 对局目标为 14 分，来自 `SettingsManager.PrepareMatchLength`，并非使用字段初始化时的 10 分。原版菜单、转场、地图轮换和完整决胜表现尚未移植。
+`godot/core/original_ffa_score.gd` 已移植自由击杀计分决策，10 个边界场景检查通过；现已接入普通飞镖命中、角色死亡与回合分数。`original_ffa_round.gd` 保留最后存活者检查的 0.15 秒与 1.3 秒等待阶段，死亡事件会重新开始检查；等待期间仍可发生死后击杀和相互死亡。默认双人 Medium 对局目标为 14 分，来自 `SettingsManager.PrepareMatchLength`，并非使用字段初始化时的 10 分。地图轮换现已接入（见 0.5.1-dev.7）；原版菜单、转场和完整决胜表现尚未移植。
 
 `godot/core/original_actor_motion.gd` 已移植加速、滑行、冲刺、冷却、瞄准后移动恢复、湿地阻力、击退和眩晕。原游戏 Mono 运行时的 17 组、3,060 个时间步，与 Godot 桌面及 WebAssembly 的被比较状态逐值一致。接触时机仍由夹具注入，未证明完整原生碰撞、角色四元数旋转或 Animator 一致。
 

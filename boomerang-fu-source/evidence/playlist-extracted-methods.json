@@ -1,0 +1,37 @@
+{
+  "body_edits": false,
+  "source_sha256": "743fdb9c86736478e65c40723a8186edd2f64757d2315a61863045736816fcc5",
+  "chance_source_sha256": "c83ae9d59108c6efedfc08f5c402974d5c768d0319b9751aae90454b2268e894",
+  "methods": [
+    {
+      "method": "public void BuildMatchPlaylist(bool rematch = false)",
+      "body_sha256": "ed470f9f5a087b64eabb62544d068009a9643970506c3fe1be7a4808b24fa6e3"
+    },
+    {
+      "method": "private void FilterLevelsAndAddLevelToPlaylist(List<LevelAsset> masterListOfLevels, List<LevelAsset> candidateLevels, ref int baseInARow, ref int dlcInARow, int maximumLevelsInARow)",
+      "body_sha256": "e2616182c08d7f8d321f6557da42ecbe313c6120fc735662e515e82165435658"
+    },
+    {
+      "method": "private void AddLevelToPlaylist(List<LevelAsset> masterListOfLevels, List<LevelAsset> candidateLevels)",
+      "body_sha256": "49c957da11a3cb3a6be043ff333357d62100411ae6b11e8b512934e88ce2df16"
+    },
+    {
+      "method": "public bool IsLevelDisabledInMatchSettings(LevelAsset levelAsset)",
+      "body_sha256": "287a53995a825c325141ebd22803cc8635dd9e38fd5f6e2ccad6136779ad6788"
+    },
+    {
+      "method": "private bool IsLevelDisabledInMatchSettings(int index)",
+      "body_sha256": "8db1c2e39646a4bd07e75bca56b8eac29d201798737b2b7a7cdc7377f2d5d2e3"
+    },
+    {
+      "method": "private void MoveItemInPlaylist(ref List<LevelAsset> list, int oldIndex, int newIndex)",
+      "body_sha256": "024b8342f5a34a1326a10e044a724e43a2e128d44eab569df1785c2f3a758e07"
+    },
+    {
+      "method": "LoadNewLevel playlist selection/removal fragment",
+      "body_sha256": "8730cfe552dafcb5b8f8228201e30945f0ae0a0233af97b4b012124c74fecdee"
+    }
+  ],
+  "catalog_sha256": "303969f91302c18b8efaa44b2df495a814376bc8a45cfb99d2b9e343c8ac53be",
+  "scope": "Original LevelManager playlist method bodies and Chance.Shuffle; catalog/settings/entitlement are explicit fixture data, BuildPossiblePowerups is a call counter. Mono System.Random is seeded for repeatability; live seed timing remains separate."
+}

@@ -1,0 +1,12 @@
+{
+  "dll_sha256": "37d0b21915b79bc2688bbd2dabf932b907b73f913d90ccfbecc6f3e9dea84676",
+  "fixture_sha256": "56051e5717e74b6d5086a28226958eb1c8f7a7238de5c9cb99a8f93449e81733",
+  "cases": 304,
+  "source_sha256": {
+    "Catalog.cs": "69255449492f725cc6725acbc3a14621e7277432cdb02575e19978f63028ff24",
+    "ChanceReference.cs": "75389a5887cfe78f9ce6aa97860f0fa689e06e3912e7fdfbcf755d68744707e5",
+    "Collaborators.cs": "fe43da3e3a03de8621d85259699747ea39f7b5264471d52e5167ffd4fee3965c",
+    "Program.cs": "86fe20cd0fde0760f7715ef9193cd895d4e4ec4e659b09e02cb5b688737345a4",
+    "Reference.cs": "d525d9fd5c194c4db235bee325afb8a72426e66d8d46e0506bfa1f7a7c71344c"
+  }
+}

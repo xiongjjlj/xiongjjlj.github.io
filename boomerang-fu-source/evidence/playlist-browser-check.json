@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-28T04:49:01.325013+00:00",
+  "version": "0.5.1-dev.7",
+  "evidence": "playlist-final-export-browser-log.json",
+  "screenshots": [
+    "playlist-base-36.png",
+    "playlist-base-six-31.png",
+    "playlist-dlc-six-52.png",
+    "playlist-dlc-57.png",
+    "playlist-round2-score.png",
+    "playlist-round3-start.png",
+    "playlist-round3-score.png",
+    "playlist-return-lobby.png",
+    "playlist-base-before-fight.png",
+    "playlist-base-new-match.png"
+  ],
+  "checks": {
+    "base_2_player": 36,
+    "base_6_player": 31,
+    "dlc_2_player": 57,
+    "dlc_6_player": 52,
+    "round_2_to_3_score_preserved": [
+      1,
+      1
+    ],
+    "round_3_final_score": [
+      1,
+      2
+    ],
+    "return_lobby_keeps_settings": true,
+    "base_new_match_resets_round_and_score": true,
+    "console_errors": 0
+  },
+  "limits": [
+    "Earlier round 1/2 logs were lost when the tool session ended; screenshots remain. Persisted console evidence starts at round 3.",
+    "Original menu appearance, scene transition timing, tutorial flow and DLC ownership integration remain unverified or incomplete."
+  ]
+}

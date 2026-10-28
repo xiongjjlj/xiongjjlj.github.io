@@ -1,0 +1,13 @@
+{
+  "cases": 304,
+  "comparisons": 53916,
+  "differences": [],
+  "fixture_sha256": "56051e5717e74b6d5086a28226958eb1c8f7a7238de5c9cb99a8f93449e81733",
+  "passed": true,
+  "scope": "Original Mono playlist method bodies and Chance.Shuffle: selection, ordering, tutorial removal, wraparound and initial powerup delay. Full-game scene transition and live seed scheduling are separate.",
+  "source_sha256": {
+    "assets/original/map-catalog.json": "303969f91302c18b8efaa44b2df495a814376bc8a45cfb99d2b9e343c8ac53be",
+    "core/original_match_playlist.gd": "831466a3823b735a8e3fc94ba6eda6977d48e18c4982999d6e30c0959d7aa888",
+    "core/original_system_random.gd": "adc47354646a125d7f8d69b2f0e7a2b718d569303d22e50cfa41d980d02639f6"
+  }
+}

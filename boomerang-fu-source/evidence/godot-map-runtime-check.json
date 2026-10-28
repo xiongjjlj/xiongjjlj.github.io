@@ -3445,7 +3445,7 @@
               "details": {
                 "changed_node_samples": 28161,
                 "maximum_queue": 4,
-                "rescan_milliseconds": 307.943,
+                "rescan_milliseconds": 465.419,
                 "targets": 2,
                 "updates": 26
               },
@@ -3498,7 +3498,7 @@
               "details": {
                 "changed_node_samples": 27981,
                 "maximum_queue": 1,
-                "rescan_milliseconds": 450.407,
+                "rescan_milliseconds": 678.002,
                 "targets": 1,
                 "updates": 28
               },
@@ -3551,7 +3551,7 @@
               "details": {
                 "changed_node_samples": 7584,
                 "maximum_queue": 4,
-                "rescan_milliseconds": 8.499,
+                "rescan_milliseconds": 12.613,
                 "targets": 4,
                 "updates": 13
               },
@@ -3599,7 +3599,7 @@
               "details": {
                 "changed_node_samples": 22326,
                 "maximum_queue": 4,
-                "rescan_milliseconds": 1099.825,
+                "rescan_milliseconds": 1631.956,
                 "targets": 4,
                 "updates": 256
               },
@@ -4618,9 +4618,9 @@
       "reports": [
         {
           "active_discs": 0,
-          "active_tile_frames": 4397,
+          "active_tile_frames": 4396,
           "disc_views": 0,
-          "distance": 155.824438659306,
+          "distance": 160.080417139986,
           "finite": true,
           "frames": 900,
           "hole_frames": 1748,
@@ -4639,15 +4639,15 @@
       "reports": [
         {
           "active_discs": 0,
-          "active_tile_frames": 16232,
+          "active_tile_frames": 29843,
           "disc_views": 0,
-          "distance": 140.960253074591,
+          "distance": 147.152247923099,
           "finite": true,
           "frames": 900,
-          "hole_frames": 6517,
+          "hole_frames": 18498,
           "map": "level18",
           "passed": true,
-          "round_resets": 2
+          "round_resets": 1
         }
       ]
     },
@@ -5031,6 +5031,75 @@
           "scope": "Actual scene, source map queries, flight, damage, source death clip, score persistence, 14-round preview victory and restart; excludes melee/powers/complete original presentation"
         }
       ]
+    },
+    {
+      "test": "match_playlist_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "cases": 304,
+          "comparisons": 53916,
+          "differences": [],
+          "fixture_sha256": "56051e5717e74b6d5086a28226958eb1c8f7a7238de5c9cb99a8f93449e81733",
+          "passed": true,
+          "scope": "Original Mono playlist method bodies and Chance.Shuffle: selection, ordering, tutorial removal, wraparound and initial powerup delay. Full-game scene transition and live seed scheduling are separate.",
+          "source_sha256": {
+            "assets/original/map-catalog.json": "303969f91302c18b8efaa44b2df495a814376bc8a45cfb99d2b9e343c8ac53be",
+            "core/original_match_playlist.gd": "831466a3823b735a8e3fc94ba6eda6977d48e18c4982999d6e30c0959d7aa888",
+            "core/original_system_random.gd": "adc47354646a125d7f8d69b2f0e7a2b718d569303d22e50cfa41d980d02639f6"
+          }
+        }
+      ]
+    },
+    {
+      "test": "playlist_scene_transition_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": 41,
+          "failures": [],
+          "passed": true,
+          "scope": "Actual Godot scene reloads: base/DLC player-count filtering, scores/powers/controller state, powerup RNG continuity, rematch and duplicate-input guard. Browser presentation and original transition timing are separate.",
+          "visited": [
+            {
+              "players": 2,
+              "pool": 36,
+              "round": 1,
+              "scene": "LevelBambooGrove"
+            },
+            {
+              "players": 2,
+              "pool": 36,
+              "round": 2,
+              "scene": "LevelMarketplace"
+            },
+            {
+              "players": 6,
+              "pool": 31,
+              "round": 1,
+              "scene": "LevelToaster"
+            },
+            {
+              "players": 6,
+              "pool": 31,
+              "round": 1,
+              "scene": "LevelClouds"
+            },
+            {
+              "players": 2,
+              "pool": 57,
+              "round": 1,
+              "scene": "LevelMarketplace"
+            }
+          ]
+        }
+      ]
     }
   ],
   "source_sha256": {
@@ -5095,6 +5164,7 @@
     "assets/original/level7/behaviors.json": "a4b127bb41446c851ca425affb2b43d9cf9e69dcb941407e35bf1f1b3ac3d7b7",
     "assets/original/level8/behaviors.json": "04beb8a59d1d34c06cbb3701cbaf603816058a115cf66e54de38eae253881b29",
     "assets/original/level9/behaviors.json": "96bf47cc3b28b2a10f999a74ea7f6df77c1047a77d0e81557f60bb4db1bac6ad",
+    "assets/original/map-catalog.json": "303969f91302c18b8efaa44b2df495a814376bc8a45cfb99d2b9e343c8ac53be",
     "assets/original/navigation/level10.json": "c411326a07abe78b4ff340fd2d05aa6e87fa126f8bf321136d7fed83068ea216",
     "assets/original/navigation/level11.json": "8fb8f4a295eed1f5315058ca1d552b449df9db4dfbc1ca42a1dc9d7946dad4a2",
     "assets/original/navigation/level12.json": "00c48aa06c3fd59895868c07de0161bea301cbdd1a3728503dd44c0e997e3713",
@@ -5185,6 +5255,7 @@
     "core/original_ground_queries.gd": "225eeaf3d44f3735b84be90668e5d7512e74ddaa11a986e5918e9bb54ca62506",
     "core/original_level3_behaviors.gd": "0b2494093627c96dc307742f9a926882d45ae42f77202dd6ad276996d27cbebb",
     "core/original_level_boundary.gd": "280b19da2259369f87d6b71535da9e8b5916036365035fe5d8905fe1f2c316e3",
+    "core/original_match_playlist.gd": "831466a3823b735a8e3fc94ba6eda6977d48e18c4982999d6e30c0959d7aa888",
     "core/original_moving_floors.gd": "ade71a17850732e7720d8812be3bb42eb2f959c28b4db9ce3c7c646dfe3ddcc5",
     "core/original_navigation.gd": "23b27620c00e89375abb054aa499c3056791e8f9f971b3184a58847fb30a97d7",
     "core/original_navigation_updates.gd": "134a92e065222adf833bde0d5d861a6389d01a6ee08410ae05eb735644411b54",
@@ -5199,7 +5270,7 @@
     "core/original_player_powers.gd": "ec6edc2c504d062d531ba7939ea5ddca8e28a5e57f10e2e6de000c1844f17d65",
     "core/original_player_weapons.gd": "469face003d89c464a9a535df060108a58726060ddee53f935f7f107b7cb143b",
     "core/original_powerup_preview.gd": "67282268e3ec46f6467d4500f16d82c1cd47797299e3857560dc2227be456b43",
-    "core/original_powerup_world.gd": "1d93f2f88ef8a0012c0c381c3ab263cab2c4bd080dfca429358f9acce20c4e98",
+    "core/original_powerup_world.gd": "a81d2f2314421de2b6a0612df42de67ee5dea63a7857c615ae05a54120006e42",
     "core/original_scene_materials.gd": "16759b4269d913ce92882c3641cf1ad31db464ae525533bb49a03598c025b907",
     "core/original_system_random.gd": "adc47354646a125d7f8d69b2f0e7a2b718d569303d22e50cfa41d980d02639f6",
     "core/original_teleport.gd": "6af9be272bdf4046817b409e6b3fc9575c5fcd894a66790cd7f95a2696cb1f47",
@@ -5207,9 +5278,9 @@
     "core/original_transform.gd": "63343baf053e5ed373ff4be33e331cc6d738262268a022eaad70ac382aa792d2",
     "core/original_unity_random.gd": "fc2ce8b28c5dadb129286ed61634e2b93956bec22b98d6b811d95ae60af8acb2",
     "ffa_setup.gd": "c6463eb561df16c5195714717e24be001fc179d54d9fa1808a599f1e25fa06e7",
-    "ffa_shell.gd": "9debf084f08a9db4bd982da215813ff17c973739451adba41bbc8d01cbdbd609",
+    "ffa_shell.gd": "cbedd396f681a79308e66230a76a34372c1c027541e087e5bb1cf31557da1dc3",
     "local_controllers.gd": "49f41dbf1ebbaa726e60362252e255822d8cb7b6411e0474706128145dd2cfd4",
-    "main.gd": "075c44a5ffedcb71b231f06e0e80fac113277f3eaff0f1808004deb063d7c11c",
+    "main.gd": "91c4f33b4bfb38e7066e3e48845fd3af52a13b435d56be0e11fa5f7f2e0d0e92",
     "original_audio.gd": "2b21f594120a1d54ad3522f3630d4524596d7fbace88c7ab2bf4da19e529332d",
     "shaders/original_boundary.gdshader": "7deff366cfde3ee039589f20db2b8b96334489d50e543f7cd6f9a661e3b410b1",
     "shaders/original_cell_particle.gdshader": "ba9da677015c30f45903e9c1f08af771c2439f5c9e594ada2e89a202136597f5",
@@ -5226,6 +5297,7 @@
     "tests/floor_navigation_test.gd": "e27f02730c92cdbdb3ada5383b2e4832928df536b8114be645f09999505b4d75",
     "tests/level3_behaviors_test.gd": "31f599fd4c79aef76881caa16104aa657aec2bdd477c56d7e6be79913616a9e0",
     "tests/map_behavior_adapter_test.gd": "b255ba840046930167020bb122164d93c1d8c94eeb815ee1d4f6ff1de4c4fedc",
+    "tests/match_playlist_test.gd": "27115b1e1cfc26110a4e3467f97d2537983bed26f8f0d6307c5aeefc4b29fd12",
     "tests/moving_floor_native_test.gd": "7db03f4f0ab64cd58afbec582d0c7e9b0effb29ab1c2fd91e368b3bfd9adfca9",
     "tests/moving_floor_scene_test.gd": "d4270fe1ac7acd5588c645c11cd604f592a77cc4304ee30e707ffd23a2331979",
     "tests/navigation_platform_ai_test.gd": "957ffa6204d648c66e3eb28fd783d5a780ec49720c1446d02d58d7759e1054ce",
@@ -5234,66 +5306,13 @@
     "tests/navigation_updates_scene_test.gd": "d684a041767574595900fb91f1e2982f9c3e9328a0ea36bf632259b023b324a3",
     "tests/navigation_updates_test.gd": "fdcbeaf1cee5f60a4ba095a6581054ef42bca9e203c09900cfba778aa468c2c2",
     "tests/player_ai_game_test.gd": "e0f45759163899b6ceebb166e7e6a73b33af82aaeef136aba38ed2b8df41245a",
+    "tests/playlist_scene_transition_test.gd": "75d09929f91317c1066b671b6b02b2f9c6e7953ef49ef3b87737d6b1401267ec",
     "tests/reactive_floor_game_loop_test.gd": "6e3e974193e1e32db352a4b439515c7cf44615f63ec990e9c310821c82eb15da",
     "tests/reactive_floor_native_test.gd": "b31539394a9461df6166efff8c0ec41b64674b3b272dea062ea9a23e3acfdccc",
     "tests/reactive_floor_scene_test.gd": "ea1c1f9a8b519541945fdc4dcad07f05fd138e4e8c2067ed88ee86a9807d6c36"
   },
-  "generated_at": "2026-10-28T02:36:51.483533+00:00",
+  "generated_at": "2026-10-28T03:10:13.980844+00:00",
   "process_limit": 1,
   "per_test_timeout_seconds": 45,
-  "scope": "Real-scene native Godot tests; no original Unity runtime, browser, visual or frame-parity claim.",
-  "verification_history": [
-    {
-      "generated_at": "2026-10-28T02:36:51.483327+00:00",
-      "retested": [
-        {
-          "test": "reactive_floor_game_loop_test",
-          "map": "level40",
-          "passed": false,
-          "returncode": 1,
-          "errors": [],
-          "reports": [
-            {
-              "checks": [
-                {
-                  "details": null,
-                  "name": "central rider survives full outward and return journey",
-                  "passed": true
-                },
-                {
-                  "details": 7.41907133487985e-05,
-                  "name": "full game loop preserves platform-local rider position",
-                  "passed": true
-                },
-                {
-                  "details": null,
-                  "name": "platform finishes its return and retains rider",
-                  "passed": false
-                },
-                {
-                  "details": {
-                    "fall_tick": -1,
-                    "roller_contact_tick": -1
-                  },
-                  "name": "edge rider contacts original fixed roller before losing ground",
-                  "passed": false
-                },
-                {
-                  "details": null,
-                  "name": "edge fall is ground loss, not broken platform attachment",
-                  "passed": false
-                }
-              ],
-              "passed": false,
-              "scope": "Full Godot game loop on actual Big Raft: central rider round trip and fixed-roller obstruction. Original full-scene callback ordering is not established by this test."
-            }
-          ]
-        }
-      ],
-      "changed_test_sources": [
-        "tests/reactive_floor_game_loop_test.gd"
-      ],
-      "reason": "Floor hazards invalidate the old Big Raft observer position: move the passive observer onto the safe raft interior so the movement scenario can finish. Production source hashes are unchanged."
-    }
-  ]
+  "scope": "Real-scene native Godot tests; no original Unity runtime, browser, visual or frame-parity claim."
 }

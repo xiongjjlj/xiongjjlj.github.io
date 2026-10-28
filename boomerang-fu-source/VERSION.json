@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
-  "version": "0.5.1-dev.6",
-  "generated_at": "2026-10-28T02:55:37.213686+00:00",
+  "version": "0.5.1-dev.7",
+  "generated_at": "2026-10-28T04:49:27.257463+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 3133,
-  "source_bytes": 308715792,
+  "source_files": 3171,
+  "source_bytes": 310266180,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -15,15 +15,15 @@
   },
   "development_branch": "boomerang-fu-dev",
   "development_archive": {
-    "name": "web-development-0.5.1-dev.6.zip",
-    "bytes": 92573197,
-    "sha256": "69448164d39d421c7ca1a0119c65d9d3a6d29af29fe52215211ec96c71d77a9d",
+    "name": "web-development-0.5.1-dev.7.zip",
+    "bytes": 92581911,
+    "sha256": "603859cbb5e24f2a7e4fc64b868cf78b8d5cec0953eea77edabe3ae4d2d1e931",
     "availability": "Local task deliverable; not stored in the Git repository"
   },
   "full_game_parity_verified": false,
   "limitations": [
     "Original-game frame/pixel/PCM parity remains unproven.",
-    "59 imported scene resources contain 36 base maps, 21 DLC maps, a tutorial and a duplicate Toaster entry; original map filtering/rotation remains unfinished.",
+    "Map selection and rotation are implemented: base 36/31, base+DLC 57/52 at 2-4/5-6 players. Tutorial flow and DLC ownership checks remain unfinished.",
     "Dynamic graph updates match 66 native paths and 6230791 node/path checks across two physics diameters.",
     "Falling/trap floor state and collapse scheduling match isolated native fixtures; full callback order, projectile attachment and floor particles remain unfinished.",
     "Teleportal links and complete original visual/audio effects remain unfinished.",
@@ -32,13 +32,13 @@
   "files": [
     {
       "path": "DEVELOPMENT.md",
-      "bytes": 9521,
-      "sha256": "a122cd0b2fcf63d476078d88002384a0ab1f1379ac2f98668d4c71edd789c408"
+      "bytes": 10674,
+      "sha256": "5c7a64b8bac4312cdc8e7d54a8b63ed19487153634955047ed96c71624ea8e1c"
     },
     {
       "path": "README.md",
-      "bytes": 36350,
-      "sha256": "11dbadab748ac955573ddd9ccda0977bb0969d075febd7660b10fe51d426d089"
+      "bytes": 36785,
+      "sha256": "8a3c65490fb512f0055c88d97192954755b6940269e8351b6553cf73099668e1"
     },
     {
       "path": "deploy/cloudflare/.gitignore",
@@ -182,8 +182,8 @@
     },
     {
       "path": "evidence/godot-map-runtime-check.json",
-      "bytes": 164955,
-      "sha256": "5bdb9a2caa9230b374dd60d71813543c85deac5b57d28618968b364842682acf"
+      "bytes": 165679,
+      "sha256": "1320dabd4857ec15993e2e524ec8fef3650dbd145784f928b35d091844811f23"
     },
     {
       "path": "evidence/godot-map-selector-check.json",
@@ -9672,8 +9672,8 @@
     },
     {
       "path": "godot/core/original_powerup_world.gd",
-      "bytes": 8332,
-      "sha256": "1d93f2f88ef8a0012c0c381c3ab263cab2c4bd080dfca429358f9acce20c4e98"
+      "bytes": 9026,
+      "sha256": "a81d2f2314421de2b6a0612df42de67ee5dea63a7857c615ae05a54120006e42"
     },
     {
       "path": "godot/core/original_scene_materials.gd",
@@ -9712,8 +9712,8 @@
     },
     {
       "path": "godot/ffa_shell.gd",
-      "bytes": 17610,
-      "sha256": "9debf084f08a9db4bd982da215813ff17c973739451adba41bbc8d01cbdbd609"
+      "bytes": 19183,
+      "sha256": "cbedd396f681a79308e66230a76a34372c1c027541e087e5bb1cf31557da1dc3"
     },
     {
       "path": "godot/local_controllers.gd",
@@ -9722,8 +9722,8 @@
     },
     {
       "path": "godot/main.gd",
-      "bytes": 71351,
-      "sha256": "075c44a5ffedcb71b231f06e0e80fac113277f3eaff0f1808004deb063d7c11c"
+      "bytes": 76204,
+      "sha256": "91c4f33b4bfb38e7066e3e48845fd3af52a13b435d56be0e11fa5f7f2e0d0e92"
     },
     {
       "path": "godot/main.tscn",
@@ -12947,8 +12947,8 @@
     },
     {
       "path": "tools/verify_map_runtime.py",
-      "bytes": 4707,
-      "sha256": "b2a91a1fe6a8d9f441125af69e4e3cb7785f24fa0ef76096a142417b46db519d"
+      "bytes": 4897,
+      "sha256": "7367b8f8bd06d26e75a5d4c73ace6df1c268088da5cd2ea6a47116bfb3a9490a"
     },
     {
       "path": "tools/verify_multi_map.py",
@@ -13147,8 +13147,8 @@
     },
     {
       "path": "tools/native-probe/NativeProbe.cs",
-      "bytes": 11647,
-      "sha256": "a7ca7e0bd390261bc9d1324363819e3a1e1a34706ef32f70a16b58e7cd5042e0"
+      "bytes": 11736,
+      "sha256": "000ae77d0b2086c94586ab905ff75dbcfff826b1488570810db826580183e20f"
     },
     {
       "path": "tools/native-probe/NativeProbe.csproj",
@@ -14348,22 +14348,22 @@
     {
       "path": "evidence/godot-navigation-updates-scene-level3-check.json",
       "bytes": 1129,
-      "sha256": "ff8864d735ecc79ec3c45d686bdf196e1d744e86cb001596bd3535d692ae8271"
+      "sha256": "43cd47bb743d20805e029e2d5919263c952978e0ff0804635cb6c3e8eb8ee07d"
     },
     {
       "path": "evidence/godot-navigation-updates-scene-level41-check.json",
       "bytes": 1130,
-      "sha256": "3ca8de09b01b8f3f8bb1666e1b71dc57bc7ea9c3e51fb70e49bdd04cf189c09f"
+      "sha256": "e4819fc1a82d8077e69272ebdc787b7ab777bca873ecf597d812a5fc1480e347"
     },
     {
       "path": "evidence/godot-navigation-updates-scene-level48-check.json",
-      "bytes": 1009,
-      "sha256": "a5d9eef4379071f6a12e5bd80100ec160683873545782ecf93c7462b5ee66709"
+      "bytes": 1010,
+      "sha256": "ffa56d756af18fb590b7b2870e9175dc53532e73eaaf5956957de9e21038d91e"
     },
     {
       "path": "evidence/godot-navigation-updates-scene-level55-check.json",
       "bytes": 1132,
-      "sha256": "43312708a046d673b557308f4660e93f60c7f28d45d846c6cf9a06db1106eedf"
+      "sha256": "eaa99b7d278d0d4c144ee3f13c8af1b8c23d3f2b47f9b1e799ce4e72b10bb70c"
     },
     {
       "path": "evidence/navigation-graph-settings.json",
@@ -15047,13 +15047,13 @@
     },
     {
       "path": "MAP_SCOPE.md",
-      "bytes": 1728,
-      "sha256": "cc74ed74874ef37a998fc62b13fb46b3bfd247f088de9f7da615eb28357c9cf6"
+      "bytes": 2266,
+      "sha256": "98fdaca03d234216efcd4fe2e0d85eab27a2621d22784098e8f3fb15ca817507"
     },
     {
       "path": "evidence/ffa-map-pool-audit.json",
       "bytes": 2935,
-      "sha256": "1e5e22501f3e50e1e3d96b241c7a84327fed59f2a6177d0de05a74338a9ec787"
+      "sha256": "916cc9a5a894688eb7f593d58bd290301e9f39f2f4695c6c7c7d27e1e585baea"
     },
     {
       "path": "evidence/floor-collapse-extracted-methods.json",
@@ -15243,12 +15243,12 @@
     {
       "path": "evidence/godot-floor-hazards-game-level14-check.json",
       "bytes": 221,
-      "sha256": "80c38c9e6a5d81caeb4d1235012791c8780cce8e640d5ecf09ae772a6a9966dd"
+      "sha256": "a82a272793ce191e19e9f89c6737ae41a4f98215aadabf3cf73f3ca522240aca"
     },
     {
       "path": "evidence/godot-floor-hazards-game-level18-check.json",
-      "bytes": 222,
-      "sha256": "3d27e54bdc4ce99fab80602bb4808361146811d5959e3c6cc95e12b91e9fc23c"
+      "bytes": 223,
+      "sha256": "0b206c18fd9c260be16b6862adc721c9f7e39e387a65c6af3ef3ad379133bfa9"
     },
     {
       "path": "evidence/godot-floor-hazards-game-level40-check.json",
@@ -15337,8 +15337,8 @@
     },
     {
       "path": "godot/assets/original/map-catalog.json",
-      "bytes": 28740,
-      "sha256": "f7ca675aea50db1a34a59d46f8a646ab7559f669d8a0c57ca2cf837de30c33fa"
+      "bytes": 28794,
+      "sha256": "303969f91302c18b8efaa44b2df495a814376bc8a45cfb99d2b9e343c8ac53be"
     },
     {
       "path": "godot/assets/original/shader-textures/sharedassets1.assets_300.png.import",
@@ -15607,8 +15607,8 @@
     },
     {
       "path": "tools/export_map_catalog.py",
-      "bytes": 5593,
-      "sha256": "f361d4a9963f960fc88d46f9ceb711efdd51048b74d00a27eca97e337b0074c1"
+      "bytes": 5767,
+      "sha256": "51fa5e3c9e4bb9a60cb686152e67bb5167ae43c1c34a3325f27c417935cd62a6"
     },
     {
       "path": "tools/floor-hazards-native/Collaborators.cs",
@@ -15694,6 +15694,196 @@
       "path": "evidence/arkevo-floor-hazards-next-round.png",
       "bytes": 92692,
       "sha256": "b5df7de00cfcdae929eac7eb3dbb26f552c273d56262ae9b1068bf8746508d47"
+    },
+    {
+      "path": "evidence/godot-map-runtime-0.5.1-dev.6-check.json",
+      "bytes": 164955,
+      "sha256": "5bdb9a2caa9230b374dd60d71813543c85deac5b57d28618968b364842682acf"
+    },
+    {
+      "path": "evidence/godot-match-playlist-check.json",
+      "bytes": 730,
+      "sha256": "3812330c79ff6d242e74cd2df23e81d3c6216a142a709d22e83dfd813439d5ab"
+    },
+    {
+      "path": "evidence/godot-playlist-scene-transition-check.json",
+      "bytes": 812,
+      "sha256": "a3ba45a0d15aea6f235e9fde4dbce29d654bd8c470e8b29088f6d6076f1dab79"
+    },
+    {
+      "path": "evidence/playlist-base-36.png",
+      "bytes": 63915,
+      "sha256": "ff0c6083c08f05975db5f4af1eec3b21734018435d15b876bfd0b23c261bd4fc"
+    },
+    {
+      "path": "evidence/playlist-base-before-fight.png",
+      "bytes": 62812,
+      "sha256": "3a0a6ddb2dcf2afef138a60304af23faf116dbdaf2307078f9d256edc3a27d42"
+    },
+    {
+      "path": "evidence/playlist-base-new-match.png",
+      "bytes": 40085,
+      "sha256": "5f7f6a57a39bca23dbdaab8b4d9c1cd306154a11176c0d38eb4a45d58d1f7768"
+    },
+    {
+      "path": "evidence/playlist-base-six-31.png",
+      "bytes": 86140,
+      "sha256": "c2b7b7aecd2699febb1d183e2d9c3b6ca56163a5166b4bf6493904e705deae50"
+    },
+    {
+      "path": "evidence/playlist-browser-check.json",
+      "bytes": 1139,
+      "sha256": "2d1a07d0be407410673c412783d4c0427b056a3a7b6059dfd967e26585fb6994"
+    },
+    {
+      "path": "evidence/playlist-development-build.json",
+      "bytes": 318219,
+      "sha256": "a7a9f0fc35f808db09817f891966c4135425fc474902030aa6224be994b6bc69"
+    },
+    {
+      "path": "evidence/playlist-dlc-57.png",
+      "bytes": 62266,
+      "sha256": "a76c7bbaa415cc0f4f50258c89f7c64a2d982843144ffe61fed185e91cf58ae9"
+    },
+    {
+      "path": "evidence/playlist-dlc-six-52.png",
+      "bytes": 86108,
+      "sha256": "920d141e0ed97727b28d29dba55d1ab30c128451b4663fc513288eb61ef2c26f"
+    },
+    {
+      "path": "evidence/playlist-extracted-methods.json",
+      "bytes": 2008,
+      "sha256": "e9369fcfa90877897c906d0135030ffc0371c059b74b6b68149d047522e2560a"
+    },
+    {
+      "path": "evidence/playlist-final-export-browser-log.json",
+      "bytes": 42125,
+      "sha256": "8f86e0e3849bfde68f1fd44a0a1ca7ebb0e64e8cb20a9912700e2d18b4600809"
+    },
+    {
+      "path": "evidence/playlist-native-launch.json",
+      "bytes": 730,
+      "sha256": "a38d2b5739eceba540c84ca0502cb842c420b936eaba03281d52a0f144a3dd9c"
+    },
+    {
+      "path": "evidence/playlist-native-manifest.json",
+      "bytes": 662,
+      "sha256": "3e153f3d36dc237b185558448b42c5cc968091d6765f89058db01d912755d784"
+    },
+    {
+      "path": "evidence/playlist-native.json",
+      "bytes": 206181,
+      "sha256": "56051e5717e74b6d5086a28226958eb1c8f7a7238de5c9cb99a8f93449e81733"
+    },
+    {
+      "path": "evidence/playlist-return-lobby.png",
+      "bytes": 64249,
+      "sha256": "d3c1e533104235ae12b35b19e8bc3a9b81ace98540b8cc0670c3b1a65d8d5b8b"
+    },
+    {
+      "path": "evidence/playlist-round1-score.png",
+      "bytes": 36369,
+      "sha256": "650ed89176c87f28177af475e13b18cfcb330331dfbb0b7838a8c42fa841ea72"
+    },
+    {
+      "path": "evidence/playlist-round2-score.png",
+      "bytes": 39752,
+      "sha256": "1d1ac5daf0c565128933bafccf522f8f7e4480c7caab297a3bcea065991a5913"
+    },
+    {
+      "path": "evidence/playlist-round2-start.png",
+      "bytes": 89523,
+      "sha256": "f1cd839beea00e3f1fe5d99e7b045a72cd66143b7f71497e17555223da4c76f8"
+    },
+    {
+      "path": "evidence/playlist-round3-score.png",
+      "bytes": 38569,
+      "sha256": "d4a57acfdd176aeba1bc6f9ab9429aa8977993be65e29da3fac678127b66da86"
+    },
+    {
+      "path": "evidence/playlist-round3-start.png",
+      "bytes": 60051,
+      "sha256": "2691a380d50d092424de0a49c38aee2942eb4dbed4c704b1039c446ab3d3468c"
+    },
+    {
+      "path": "evidence/playlist-unity-native-player.log",
+      "bytes": 23201,
+      "sha256": "8ad7ce38cabca03459a0a59faaf851542c8985c552bf16ebcebc9a7364e9349b"
+    },
+    {
+      "path": "evidence/playlist-unity-native-probe.json",
+      "bytes": 4118,
+      "sha256": "f7a78525229fb5d585b2de3b76d594eb9f15f797e490718c048b7c59c3bf039c"
+    },
+    {
+      "path": "evidence/web-playlist-package-check.json",
+      "bytes": 291,
+      "sha256": "19caedb47b47a657403e6c69ca562a4c4bd298e2c2aa14cd06069003c24a5366"
+    },
+    {
+      "path": "godot/core/original_match_playlist.gd",
+      "bytes": 3689,
+      "sha256": "831466a3823b735a8e3fc94ba6eda6977d48e18c4982999d6e30c0959d7aa888"
+    },
+    {
+      "path": "godot/core/original_match_playlist.gd.uid",
+      "bytes": 20,
+      "sha256": "8eae02af5d5847756f9f4f401b23c6e5a2a32b7f33809f2149750ec080528664"
+    },
+    {
+      "path": "godot/tests/match_playlist_test.gd",
+      "bytes": 2761,
+      "sha256": "27115b1e1cfc26110a4e3467f97d2537983bed26f8f0d6307c5aeefc4b29fd12"
+    },
+    {
+      "path": "godot/tests/match_playlist_test.gd.uid",
+      "bytes": 19,
+      "sha256": "843f8a07efa0ae653cb4b54b1ded286bcda825fd9dffab4e1e93626ddd6f0430"
+    },
+    {
+      "path": "godot/tests/playlist_scene_transition_test.gd",
+      "bytes": 6025,
+      "sha256": "75d09929f91317c1066b671b6b02b2f9c6e7953ef49ef3b87737d6b1401267ec"
+    },
+    {
+      "path": "godot/tests/playlist_scene_transition_test.gd.uid",
+      "bytes": 20,
+      "sha256": "99358b4e5e81ab1c9fc23b791e575cc45aa29933aaf0f2cb617e045ba89a33eb"
+    },
+    {
+      "path": "tools/playlist-native/Catalog.cs",
+      "bytes": 17087,
+      "sha256": "69255449492f725cc6725acbc3a14621e7277432cdb02575e19978f63028ff24"
+    },
+    {
+      "path": "tools/playlist-native/ChanceReference.cs",
+      "bytes": 546,
+      "sha256": "75389a5887cfe78f9ce6aa97860f0fa689e06e3912e7fdfbcf755d68744707e5"
+    },
+    {
+      "path": "tools/playlist-native/Collaborators.cs",
+      "bytes": 1181,
+      "sha256": "fe43da3e3a03de8621d85259699747ea39f7b5264471d52e5167ffd4fee3965c"
+    },
+    {
+      "path": "tools/playlist-native/PlaylistOracle.csproj",
+      "bytes": 501,
+      "sha256": "4564630e33cdb6af65da3115faa472e1c9ac55e2c278347a508be55108c1ae6e"
+    },
+    {
+      "path": "tools/playlist-native/Program.cs",
+      "bytes": 2686,
+      "sha256": "86fe20cd0fde0760f7715ef9193cd895d4e4ec4e659b09e02cb5b688737345a4"
+    },
+    {
+      "path": "tools/playlist-native/Reference.cs",
+      "bytes": 6473,
+      "sha256": "d525d9fd5c194c4db235bee325afb8a72426e66d8d46e0506bfa1f7a7c71344c"
+    },
+    {
+      "path": "tools/playlist-native/extract.py",
+      "bytes": 3891,
+      "sha256": "496c3c0e08c945280d0e6146e6110e0e07aa37b3e5e102e8601408ad459cfa44"
     }
   ],
   "deployment": {

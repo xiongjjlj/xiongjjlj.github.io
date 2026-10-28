@@ -65,7 +65,9 @@ for count in range(2, 7):
     counts.append({'players': count, 'base': sum(x['required_dlc'] == 0 for x in eligible),
                    'just_desserts': sum(x['required_dlc'] == 2 for x in eligible),
                    'total': len(eligible)})
-catalog = {'match_types': {'DeathMatch': 0, 'GoldenDisc': 1, 'KingOfTheHill': 2, 'HideAndSeek': 3},
+ids = {x['source_id']: x['catalog_index'] for x in entries}
+catalog = {'switch_incompatible_indices': [ids[x['m_PathID']] for x in manager_data['switchIncompatibleLevels']],
+           'match_types': {'DeathMatch': 0, 'GoldenDisc': 1, 'KingOfTheHill': 2, 'HideAndSeek': 3},
            'dlc_ids': {'None': 0, 'FreshFlavorsPack': 1, 'JustDessertsPack': 2},
            'tutorial_complexity': 0, 'entries': entries}
 output = assets / 'map-catalog.json'
