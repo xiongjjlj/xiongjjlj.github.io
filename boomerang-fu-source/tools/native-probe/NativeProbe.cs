@@ -107,6 +107,7 @@ public sealed class NativeProbe : BaseUnityPlugin {
             RunOracle(report,"CameraOracle.Native.dll","camera-native",new[] { "framing", "tracking" });
             RunOracle(report,"GroundOracle.Native.dll","ground-native",new[] { "queries" });
             RunOracle(report,"MovingFloorOracle.Native.dll","moving-floor-native",new[] { "motion" });
+            RunOracle(report,"ReactiveFloorOracle.Native.dll","reactive-floor-native",new[] { "motion" });
             RunOracle(report,"FallOracle.Native.dll","fall-native",new[] { "lifecycle" });
             RunOracle(report,"DashOracle.Native.dll","dash-native",new[] { "walls" });
             RunOracle(report,"TimeimmuneOracle.Native.dll","timeimmune-native",new[] { "lifecycle" });

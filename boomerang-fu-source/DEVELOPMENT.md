@@ -4,29 +4,36 @@
 `ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1`，源码目录是 `boomerang-fu-source/`；
 `boomerang-fu-v0.5.0` 标签保留在该提交。`boomerang-fu-dev` 接受后续开发。
 
-本次开发版本为 `0.5.1-dev.2`。它修复共享地图机关；公开网页仍为此前的稳定构建。
-源代码、浏览器包与证据分别有哈希，历史浏览器测试报告仅证明当时记录的构建。
+当前源码与开发 Web 包为 `0.5.1-dev.3`。公司预览位于
+<https://boomerang-fu.arkevo.ai/>，线上实际版本以 `/version.json` 为准。
+稳定依赖 `0.5.0` 保留，后续开发不改变其提交和标签。
+源代码、浏览器包与证据分别有哈希，历史报告只证明当时记录的构建。
 
-开发 Web 包为 `web-development-0.5.1-dev.2.zip`，解压后通过 HTTP(S) 托管。
-上一版浏览器已实际验证 Turnstile 的旋转、投掷、暂停恢复、继续回合，以及 Slide Traps
-中用键盘近战命中开关、两根刷子移动与回弹；两个页面的控制台均无错误或警告。
-在 Turnstile 观察到机器人走落平台，地图专属寻路仍需修复。
-该包使用完整 PCK（超过 100 MiB），需托管端允许相应文件大小；未使用稳定版的分片加载器。
+开发包为 `web-development-0.5.1-dev.3.zip`，解压后通过 HTTP(S) 托管。
+完整 PCK 超过 100 MiB；附带的 Cloudflare Worker 会将存储分片合成为原文件响应。
+地图专属寻路尚未修复，机器人仍可能走落平台。
 
-本轮新增普通移动平台：Split、Drift、Tracks、Spin、Donut、Four Cogs、Raft Crusher。
-角色与落地回旋镖会随平台平移或旋转，退出接触后解除附着，回合重置恢复初始轨迹。
-原版探针直接调用安装程序集里的 `MovingFloor.ToggleTargetPosition/FixedUpdate`，
-每个平台比较 2,401 个时点，共 38,416 帧；运动位置最大差约 0.0000022，速度最大差
-约 0.000363。旋转、插值参数等也按报告中的显式容差检查，不能视为完整游戏逐帧相同。
+普通 MovingFloor 已接入 Split、Drift、Tracks、Spin、Donut、Four Cogs、Raft Crusher。
+角色和落地回旋镖随平台移动，退出接触后解除附着，回合重置恢复初始轨迹。
+探针直接调用原安装程序集的 `MovingFloor.ToggleTargetPosition/FixedUpdate`，
+比较 38,416 帧。位置最大差约 0.0000022，速度最大差约 0.000363；
+显式浮点容差不等于完整游戏逐帧一致。
 
-`evidence/godot-moving-floor-native-check.json`、`godot-map-runtime-check.json`
-和 `godot-moving-floor-browser-check.json` 记录本轮检查。后者包含浏览器 Spin 旋转、
-Drift 双角色随行、投掷接回、近战及暂停恢复；15 项运行时检查通过。
-动态寻路、响应式平台、完整 Unity 触发顺序、地图波浪材质与传送门仍未完成。
+响应式平台接入 `level40`、`level41`、`level46`、`level51`、`level52`、`level53`，
+共 14 个平台，包含开关启动、预备延迟、中途反向、弹簧等待和返回，以及配对滚轴。
+探针在原 UnityPlayer 内执行未改写的恢复源码方法体，使用真实 Transform/Mathf；
+时钟、导航及呈现服务由探针适配，区别于原游戏完整场景执行。
+42 组轨迹共 37,842 个时点通过，位置最大差小于 0.000001，速度差小于 0.000081。
 
-原版运动探针的输入生成器为 `tools/moving-floor-native/generate_inputs.py`。
-它从已有场景和行为 JSON 生成真实参数，不需要 Unity 编辑器。探针通过已有隔离
-Windows 副本执行；一次一个进程，30 秒和 2 GiB 限制，结束时确认进程退出。
+`godot-map-runtime-check.json` 的 23 项检查包括六张响应式地图和完整游戏循环。
+Big Raft 浏览器实测了近战开关、平台载人、途中反向、滚轴、暂停恢复与完整单程。
+中央区域角色完整往返不掉落；外侧角色会受到固定滚轴阻挡，随后失去脚下平台。
+这项行为由 `godot-reactive-floor-game-loop-check.json` 单独覆盖，未据此声称原版回调一致。
+对应报告为 `godot-reactive-floor-native-check.json` 和 `godot-reactive-floor-browser-check.json`。
+
+动态寻路、其他地形机关、完整 Unity 触发顺序、平台音效/闪烁/绳索/拖尾及地图波浪
+仍待完成。探针输入生成器在 `tools/moving-floor-native/` 和 `tools/reactive-floor-native/`；
+使用已有隔离 Windows 副本，不需要 Unity 编辑器，每次一个进程、30 秒和 2 GiB 上限。
 
 ## 运行 Godot
 
@@ -73,7 +80,7 @@ python3 tools/verify_multi_map.py --godot /absolute/path/to/godot \
 | 线性/旋转 MovingObstacle，Switch 近战、缴械和飞镖触发 | 共享适配器已接入；4 个真实关卡验证 |
 | WobblyObstacle、可破坏障碍和碎片 | 共享适配器已接入；仍有近似视觉/物理行为 |
 | 普通 MovingFloor | 7 个 FFA 关卡、16 个平台已接入；38,416 帧原版运动对照，仍有显式浮点容差 |
-| MovingFloorReactive / RollingPin | 数据已解码；待实现 |
+| MovingFloorReactive / RollingPin | 6 张地图、14 个平台已接入；37,842 个源码方法时点对照，完整呈现和回调顺序仍待验证 |
 | MovingDoor | 仅教程关卡使用；待实现 |
 | FallingFloor、TrapFloor、Teleportal | 数据已解码；完整关卡行为尚未完成 |
 | 原版 TimeKeeper 与 Unity 回调顺序、全局随机数交错 | 尚未证明完整场景一致 |

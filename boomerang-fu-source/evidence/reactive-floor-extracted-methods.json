@@ -1,0 +1,9 @@
+{
+  "source": "recovered-source/MovingFloorReactive.cs",
+  "sha256": {
+    "FixedUpdate": "28ced5a6c789c8c877164defc368dd1d168a8b83c6818ee7fee2cf25c06ac045",
+    "ToggleTargetPosition": "4e1df3414985f3e94fa2f4ea0bf55eefb066023fb210701e79f9615acee2959b"
+  },
+  "body_edits": false,
+  "scope": "Exact recovered FixedUpdate and ToggleTargetPosition bodies; native Unity transforms/math with explicit clock, navigation, camera and flash collaborators."
+}

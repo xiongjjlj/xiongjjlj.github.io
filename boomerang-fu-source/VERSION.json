@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
-  "version": "0.5.1-dev.2",
-  "generated_at": "2026-10-28T01:51:12.661505+00:00",
+  "version": "0.5.1-dev.3",
+  "generated_at": "2026-10-28T01:55:06.588307+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 2631,
-  "source_bytes": 175864771,
+  "source_files": 2667,
+  "source_bytes": 183756964,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -15,23 +15,23 @@
   },
   "development_branch": "boomerang-fu-dev",
   "development_archive": {
-    "name": "web-development-0.5.1-dev.2.zip",
-    "bytes": 88612976,
-    "sha256": "9fe982bc2160cf7c545a61fca4d9147f8866b91f271ac173b042f8e2e9f985e6",
+    "name": "web-development-0.5.1-dev.3.zip",
+    "bytes": 88616303,
+    "sha256": "e338dcdf87e8c9535b041aa78b55c9129437a169d29789fbb5ea75f847b75896",
     "availability": "Local task deliverable; not stored in the Git repository"
   },
   "full_game_parity_verified": false,
   "limitations": [
     "Original-game frame/pixel/PCM parity remains unproven.",
     "Normal MovingFloor motion was checked against 38,416 original Unity frames with explicit tolerances; scene scheduling and trigger ordering are not covered.",
-    "Reactive platforms, other hazards, map-specific navigation and original visual effects remain unfinished.",
+    "Reactive floor movement is compared over 37,842 recovered-method samples. Full callback ordering, map-specific navigation, other hazards and original visual effects remain unfinished.",
     "Stable static directory and boomerang-fu-v0.5.0 dependency remain unchanged."
   ],
   "files": [
     {
       "path": "DEVELOPMENT.md",
-      "bytes": 5753,
-      "sha256": "7989b2bf05b949a978c542f957f212680af2e7dfe6177648690d061232a985c4"
+      "bytes": 6257,
+      "sha256": "1d5c9bef4cb556c0b15d983d8831376d1b0b4d9b6a8e02e5b5e127ec1ad12c74"
     },
     {
       "path": "README.md",
@@ -180,8 +180,8 @@
     },
     {
       "path": "evidence/godot-map-runtime-check.json",
-      "bytes": 59648,
-      "sha256": "f14e67fdb5b2a0c0298c76fa77ebbf16d22772a4da60028d26f144217e5eedc0"
+      "bytes": 100105,
+      "sha256": "3ce9e0b2d463983264be25edf3aaae84066227d47b61b11746e7291bbb3788bc"
     },
     {
       "path": "evidence/godot-map-selector-check.json",
@@ -245,8 +245,8 @@
     },
     {
       "path": "evidence/progress.json",
-      "bytes": 125900,
-      "sha256": "d65a2f32e2dc701256319cbaa4fc9c79387861453d33390c2f57b18fb5f90b3c"
+      "bytes": 126173,
+      "sha256": "8bbd74c7bf96adfc8c7eea367f23959cfffea5cf0bf03e573054281739d1fac0"
     },
     {
       "path": "evidence/public-deploy-check.json",
@@ -9605,8 +9605,8 @@
     },
     {
       "path": "godot/core/original_level3_behaviors.gd",
-      "bytes": 23566,
-      "sha256": "d1ad2cd0537a17335070aaba36e60c9cf5906be39e45b91207e6841822e3d2fd"
+      "bytes": 23939,
+      "sha256": "0a8ddc302d30fa97559a104ac3fe21fbf7425dd322a9c9b0e8b5513131b9dcaa"
     },
     {
       "path": "godot/core/original_level_boundary.gd",
@@ -9720,8 +9720,8 @@
     },
     {
       "path": "godot/main.gd",
-      "bytes": 68800,
-      "sha256": "f86f66334a6ab136df6c058da43e2abb7e5cc76db28cbd18a34dcaac5b70b062"
+      "bytes": 68856,
+      "sha256": "5cf585ec10c04cc9ed6a7de161b4eac293c4d21e2ca726a2c3f4dc9b7098522e"
     },
     {
       "path": "godot/main.tscn",
@@ -12945,8 +12945,8 @@
     },
     {
       "path": "tools/verify_map_runtime.py",
-      "bytes": 3258,
-      "sha256": "2fdca1697532aa88ed646c9309d013083a4139f474db8c97625ed093e0c565ba"
+      "bytes": 3497,
+      "sha256": "bbf76e1afe2bf7b1ed88ccad2acd3b932e4dca26fbce89f26893a9dbd4b2d699"
     },
     {
       "path": "tools/verify_multi_map.py",
@@ -13080,8 +13080,8 @@
     },
     {
       "path": "godot/core/original_moving_floors.gd",
-      "bytes": 8783,
-      "sha256": "8cc61e6299fdc76cad43c40f2be50719f3ae84df87347911a66224123c0ff3a3"
+      "bytes": 13085,
+      "sha256": "642c3798c42872582ef177f1198da1f2f8d97cecac8c38428e7cdc1cb5a0848e"
     },
     {
       "path": "godot/core/original_moving_floors.gd.uid",
@@ -13145,8 +13145,8 @@
     },
     {
       "path": "tools/native-probe/NativeProbe.cs",
-      "bytes": 10908,
-      "sha256": "0e52d5cc77ded7892f698a8ea4a84356d57dcc5dbf8ced93444512b9121bfac5"
+      "bytes": 11015,
+      "sha256": "356f591b3f81d51580b45329478c290ec8baaad75d34f1a0f391218f911e4bef"
     },
     {
       "path": "tools/native-probe/NativeProbe.csproj",
@@ -13182,6 +13182,186 @@
       "path": "evidence/arkevo-moving-floor-deployment.json",
       "bytes": 553,
       "sha256": "af777a6fb1c8e93705f08358224a094c5ff8fa3b9dba5597700c0abb638f00f8"
+    },
+    {
+      "path": "evidence/godot-reactive-floor-browser-check.json",
+      "bytes": 859,
+      "sha256": "5edb7b8cbd9a41c469911208d4947d3fb5c44d578e53cbaf6d6de59eb6b1d8f0"
+    },
+    {
+      "path": "evidence/godot-reactive-floor-game-loop-check.json",
+      "bytes": 948,
+      "sha256": "1481b6215028adcb3172e988f0aeb42a90f0e696521db4ab923e445d3c0def27"
+    },
+    {
+      "path": "evidence/godot-reactive-floor-native-check.json",
+      "bytes": 16634,
+      "sha256": "8a80be0af7080da323df4a2c116400b44a35400653f06949ae0e928d3e06d8a4"
+    },
+    {
+      "path": "evidence/godot-reactive-floor-scene-38-check.json",
+      "bytes": 2431,
+      "sha256": "6d3ac81580cc7d49c9cd09a0b61c8d63d59b5b84af4ed7f2152dcfedea6819f2"
+    },
+    {
+      "path": "evidence/godot-reactive-floor-scene-39-check.json",
+      "bytes": 2178,
+      "sha256": "412a3a25ca215b43d325bc117677fa4b54c1236a1ca4a5adf1c62c04853e1314"
+    },
+    {
+      "path": "evidence/godot-reactive-floor-scene-44-check.json",
+      "bytes": 2143,
+      "sha256": "63decf78c17727f303f211a6329a0596845ecd2cc31de86a1a5d82acc6114fea"
+    },
+    {
+      "path": "evidence/godot-reactive-floor-scene-49-check.json",
+      "bytes": 2152,
+      "sha256": "ee9dd74a5fef3383fbc5ff4f0987aef987a09e9227b412c2c6d27f8ee430c8e9"
+    },
+    {
+      "path": "evidence/godot-reactive-floor-scene-50-check.json",
+      "bytes": 2174,
+      "sha256": "473934a1e224b7d4094dd6ec2c27e108c552b023f8646fdf74560851d3ed0d49"
+    },
+    {
+      "path": "evidence/godot-reactive-floor-scene-51-check.json",
+      "bytes": 2174,
+      "sha256": "1d24d7e7f3925195590105e16fa49c5e204224783fe6f14dee5d518b4a14be6c"
+    },
+    {
+      "path": "evidence/reactive-floor-center-before.png",
+      "bytes": 85562,
+      "sha256": "5126baadf791fcad826478d61ddf315d3e7d039edb37782be101103dd8584959"
+    },
+    {
+      "path": "evidence/reactive-floor-center-end.png",
+      "bytes": 86100,
+      "sha256": "83260962e2cc6a69189903ee4a78201647988b6d14b7691aea3a783f949abfa9"
+    },
+    {
+      "path": "evidence/reactive-floor-center-full-end.png",
+      "bytes": 80131,
+      "sha256": "89507ecbcf5aeebcd965d9f63f3eb6195a0c14f914d841a3554c923a03d6f2c4"
+    },
+    {
+      "path": "evidence/reactive-floor-center-return.png",
+      "bytes": 85850,
+      "sha256": "e1b834ffc48eb8d548deb1825b83f51d630f4fba85e0cd6407e33bfd86a1b501"
+    },
+    {
+      "path": "evidence/reactive-floor-development-build.json",
+      "bytes": 15404,
+      "sha256": "13dfbb93210bd9b463b654a4ae0eaad8c8f2f1ba8b1e456b6ee63879c52a9327"
+    },
+    {
+      "path": "evidence/reactive-floor-extracted-methods.json",
+      "bytes": 451,
+      "sha256": "d92430acba2c65d04f68871be00ec767895768580dddab1da6205800c32a1f1c"
+    },
+    {
+      "path": "evidence/reactive-floor-native-input.json",
+      "bytes": 108872,
+      "sha256": "543f80d86d836e7e38affc4e03d398ae00e7d128b207cc097b82d36106ff56a8"
+    },
+    {
+      "path": "evidence/reactive-floor-native-launch.json",
+      "bytes": 730,
+      "sha256": "55eaccfdb618848782b24a438a728ae6ee65f9309ec921c89e5c5b2e5b05ce50"
+    },
+    {
+      "path": "evidence/reactive-floor-native-motion.json",
+      "bytes": 7133375,
+      "sha256": "a3fe4bb769b09cc858d69204c3fe6ae2751ee04c7cb1ef316042096c72f28827"
+    },
+    {
+      "path": "evidence/reactive-floor-raft-browser-log.json",
+      "bytes": 24254,
+      "sha256": "43bfad25c613b7b0196200bd9dfca3c72559c016e07e75f0887578138b031ed8"
+    },
+    {
+      "path": "evidence/reactive-floor-raft-end.png",
+      "bytes": 44878,
+      "sha256": "a75106d6d5199fb4398bfd51a5f9371be2e0480696f4a0067e94daa9342c66aa"
+    },
+    {
+      "path": "evidence/reactive-floor-raft-moving.png",
+      "bytes": 95468,
+      "sha256": "50b866584d0b9ff145403796785f88823557e58e5910bfd289477ecb9c9c66db"
+    },
+    {
+      "path": "evidence/reactive-floor-unity-native-player.log",
+      "bytes": 11394,
+      "sha256": "58c45a7b2e670452919c61d2ea7e89f7241062243e48114268884dfc81907dff"
+    },
+    {
+      "path": "evidence/reactive-floor-unity-native-probe.json",
+      "bytes": 4131,
+      "sha256": "e6a0e7300f4644652bae5fd6b7da90f01c03589484213c567ac83eb8f61a717a"
+    },
+    {
+      "path": "evidence/web-reactive-floor-package-check.json",
+      "bytes": 2496,
+      "sha256": "e8c017becc862d94b520b1a4957d138acd41fae673c853b03e5baaec962704a1"
+    },
+    {
+      "path": "godot/tests/reactive_floor_game_loop_test.gd",
+      "bytes": 3075,
+      "sha256": "d6f0fd5196c438271e7eb1d0c0c90fe803ea02ebb53f5cfbe088b7a0d3336013"
+    },
+    {
+      "path": "godot/tests/reactive_floor_native_test.gd",
+      "bytes": 3314,
+      "sha256": "b31539394a9461df6166efff8c0ec41b64674b3b272dea062ea9a23e3acfdccc"
+    },
+    {
+      "path": "godot/tests/reactive_floor_native_test.gd.uid",
+      "bytes": 20,
+      "sha256": "d7032470f644cece0f73e0a76cb04efd7349defc31d1b571c4e760790d0b82e8"
+    },
+    {
+      "path": "godot/tests/reactive_floor_scene_test.gd",
+      "bytes": 5834,
+      "sha256": "ea1c1f9a8b519541945fdc4dcad07f05fd138e4e8c2067ed88ee86a9807d6c36"
+    },
+    {
+      "path": "godot/tests/reactive_floor_scene_test.gd.uid",
+      "bytes": 19,
+      "sha256": "844e23388ee12486b04afe0773dda94e93b8a170c8249fe10c379be33e69e7db"
+    },
+    {
+      "path": "tools/reactive-floor-native/Cases.cs",
+      "bytes": 9936,
+      "sha256": "6d0ea79ebf58c1f2d85e1f8c5a3e699a58296744bacbfa7dade7c6a367b6e0d4"
+    },
+    {
+      "path": "tools/reactive-floor-native/Collaborators.cs",
+      "bytes": 1521,
+      "sha256": "9b5ebe1dd97c0c9149446b1b40c9d971a29c8d976ba7d95fff55705310a5e678"
+    },
+    {
+      "path": "tools/reactive-floor-native/ExtractedReference.cs",
+      "bytes": 3910,
+      "sha256": "10e75138b6ee7b1c0fe408b25971ddfdc12d4f08c239d95aa72b52c4b265b8c3"
+    },
+    {
+      "path": "tools/reactive-floor-native/Program.cs",
+      "bytes": 2548,
+      "sha256": "bef506c80f2570ba275a129b1c6bbc3cb17f5dc61ca0d7e07d48b8af282698c2"
+    },
+    {
+      "path": "tools/reactive-floor-native/ReactiveFloorOracle.csproj",
+      "bytes": 847,
+      "sha256": "d9d58b893bb831156c80d8f2bcfd64080f47c9c26d4d11a8ddb7f698944892f3"
+    },
+    {
+      "path": "tools/reactive-floor-native/extract.py",
+      "bytes": 1203,
+      "sha256": "1ab50f21f0fea6def6b4bce5ba4505c3d16f272ba70627ac644c00ab63d72007"
+    },
+    {
+      "path": "tools/reactive-floor-native/generate_inputs.py",
+      "bytes": 2866,
+      "sha256": "cd3f1cc6b511fe5af05e8bb5b115c28af234c466cda059cefe39aff5e48576ad"
     }
   ],
   "deployment": {

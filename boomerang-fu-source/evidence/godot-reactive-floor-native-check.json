@@ -1,0 +1,833 @@
+{
+  "cases": [
+    {
+      "failures": [],
+      "key": "level40-2678",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0000809430202934891
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level40-2678",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level40-2678",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0000809219491202384
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level41-2764",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.000000162961449667876,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level41-2764",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level41-2764",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.000000162961449667876,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level46-2343",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0000000149011611938477,
+        "position": 0.00000095367431640625,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.000057220458984375
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level46-2343",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level46-2343",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0000000149011611938477,
+        "position": 0.00000095367431640625,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.000057220458984375
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level46-2344",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0000000149011611938477,
+        "position": 0.00000095367431640625,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.000057220458984375
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level46-2344",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level46-2344",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0000000149011611938477,
+        "position": 0.00000095367431640625,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.000057220458984375
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level51-1691",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level51-1691",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level51-1691",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level51-1692",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level51-1692",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level51-1692",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2772",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2772",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2772",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2773",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2773",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2773",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2774",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2774",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2774",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2775",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2775",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level52-2775",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3303",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3303",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3303",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3304",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3304",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3304",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3305",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3305",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3305",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3306",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3306",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        5.0
+      ]
+    },
+    {
+      "failures": [],
+      "key": "level53-3306",
+      "max_errors": {
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "reverse": 0.0,
+        "rotation": 0.0,
+        "spring_back": 0.0,
+        "state": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 901,
+      "triggers": [
+        0.0,
+        70.0
+      ]
+    }
+  ],
+  "passed": true,
+  "runtime": "Original UnityPlayer/Mono; unchanged recovered MovingFloorReactive motion bodies, explicit clock and side-effect stubs",
+  "scope": "Exact recovered motion bodies in original UnityPlayer; explicit clock and side-effect collaborators"
+}

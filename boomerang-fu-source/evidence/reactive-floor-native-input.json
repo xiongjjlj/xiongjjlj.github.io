@@ -1,0 +1,4443 @@
+{
+  "cases": [
+    {
+      "key": "level40-2678",
+      "seed": 3678,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.3826834261417389,
+            "w": 0.9238795638084412
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -14.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 37
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 8.0,
+        "moveDurMax": 8.0,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_obstacle_butter",
+        "graphMask": {
+          "value": 2
+        },
+        "cellGridWidth": 24.0,
+        "cellGridHeight": 40.0,
+        "movementState": 0,
+        "isSpring": 0,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": -14.0,
+            "y": 0.0,
+            "z": 3.60133705331478e-43
+          },
+          {
+            "x": 14.0,
+            "y": 0.0,
+            "z": 1.401298464324817e-43
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1726
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 1728
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 1727
+          }
+        ],
+        "dynamicRopes": [],
+        "speedTrailPFX": [],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 0.0028274627402424812,
+              "value": 0.4069777727127075,
+              "inSlope": 2.095438241958618,
+              "outSlope": 2.095438241958618,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.062277838587760925
+            },
+            {
+              "time": 0.48662590980529785,
+              "value": 0.8097355365753174,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -3.0921740531921387,
+              "outSlope": -3.0921740531921387,
+              "weightedMode": 0,
+              "inWeight": 0.042186055332422256,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 2678,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 37,
+        "game_object_name": "MovingFloorMain",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 37
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 8.0,
+          "moveDurMax": 8.0,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_obstacle_butter",
+          "graphMask": {
+            "value": 2
+          },
+          "cellGridWidth": 24.0,
+          "cellGridHeight": 40.0,
+          "movementState": 0,
+          "isSpring": 0,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": -14.0,
+              "y": 0.0,
+              "z": 3.60133705331478e-43
+            },
+            {
+              "x": 14.0,
+              "y": 0.0,
+              "z": 1.401298464324817e-43
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 1726
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 1728
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 1727
+            }
+          ],
+          "dynamicRopes": [],
+          "speedTrailPFX": [],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 0.0028274627402424812,
+                "value": 0.4069777727127075,
+                "inSlope": 2.095438241958618,
+                "outSlope": 2.095438241958618,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.062277838587760925
+              },
+              {
+                "time": 0.48662590980529785,
+                "value": 0.8097355365753174,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -3.0921740531921387,
+                "outSlope": -3.0921740531921387,
+                "weightedMode": 0,
+                "inWeight": 0.042186055332422256,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 37,
+          "renderers": [
+            95,
+            97,
+            96
+          ]
+        }
+      }
+    },
+    {
+      "key": "level41-2764",
+      "seed": 3764,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 3.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 44
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 120.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 240.0
+          }
+        ],
+        "useRotations": 1,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.5,
+        "moveDurMin": 1.100000023841858,
+        "moveDurMax": 1.100000023841858,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_obstacle",
+        "graphMask": {
+          "value": 2
+        },
+        "cellGridWidth": 30.0,
+        "cellGridHeight": 30.0,
+        "movementState": 0,
+        "isSpring": 0,
+        "springPauseDur": 0.25,
+        "springWindBackDur": 2.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 120.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 240.0
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1995
+          }
+        ],
+        "dynamicRopes": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2965
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2966
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2964
+          }
+        ],
+        "speedTrailPFX": [],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 0.0028274627402424812,
+              "value": 0.3001357316970825,
+              "inSlope": 0.8176804184913635,
+              "outSlope": 0.8176804184913635,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.48760247230529785,
+              "value": 0.6965267658233643,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -2.452416181564331,
+              "outSlope": -2.452416181564331,
+              "weightedMode": 0,
+              "inWeight": 0.05329243838787079,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 2764,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 44,
+        "game_object_name": "Spinner",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 44
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 120.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 240.0
+            }
+          ],
+          "useRotations": 1,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.5,
+          "moveDurMin": 1.100000023841858,
+          "moveDurMax": 1.100000023841858,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_obstacle",
+          "graphMask": {
+            "value": 2
+          },
+          "cellGridWidth": 30.0,
+          "cellGridHeight": 30.0,
+          "movementState": 0,
+          "isSpring": 0,
+          "springPauseDur": 0.25,
+          "springWindBackDur": 2.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 120.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 240.0
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 1995
+            }
+          ],
+          "dynamicRopes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2965
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2966
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 2964
+            }
+          ],
+          "speedTrailPFX": [],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 0.0028274627402424812,
+                "value": 0.3001357316970825,
+                "inSlope": 0.8176804184913635,
+                "outSlope": 0.8176804184913635,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.48760247230529785,
+                "value": 0.6965267658233643,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -2.452416181564331,
+                "outSlope": -2.452416181564331,
+                "weightedMode": 0,
+                "inWeight": 0.05329243838787079,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 44,
+          "renderers": [
+            844
+          ],
+          "dynamicRopes": [
+            839,
+            838,
+            840
+          ]
+        }
+      }
+    },
+    {
+      "key": "level46-2343",
+      "seed": 3343,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 16.0,
+            "y": -5.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 50
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 0.699999988079071,
+        "moveDurMax": 0.699999988079071,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 2
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 1,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.5,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": 16.0,
+            "y": -5.0,
+            "z": 0.0
+          },
+          {
+            "x": -12.0,
+            "y": -5.0,
+            "z": 0.0
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1550
+          }
+        ],
+        "dynamicRopes": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2524
+          }
+        ],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 61
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 2343,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 50,
+        "game_object_name": "MovingFloorBot",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 50
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 0.699999988079071,
+          "moveDurMax": 0.699999988079071,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 2
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 1,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.5,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": 16.0,
+              "y": -5.0,
+              "z": 0.0
+            },
+            {
+              "x": -12.0,
+              "y": -5.0,
+              "z": 0.0
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 1550
+            }
+          ],
+          "dynamicRopes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2524
+            }
+          ],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 61
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 50,
+          "renderers": [
+            232
+          ],
+          "dynamicRopes": [
+            728
+          ],
+          "speedTrailPFX": [
+            61
+          ]
+        }
+      }
+    },
+    {
+      "key": "level46-2344",
+      "seed": 3344,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -16.0,
+            "y": 5.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 69
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 0.699999988079071,
+        "moveDurMax": 0.699999988079071,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 4
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 1,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.5,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": -16.0,
+            "y": 5.0,
+            "z": 0.0
+          },
+          {
+            "x": 12.0,
+            "y": 5.0,
+            "z": 0.0
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1551
+          }
+        ],
+        "dynamicRopes": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2523
+          }
+        ],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 77
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 2344,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 69,
+        "game_object_name": "MovingFloorTop",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 69
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 0.699999988079071,
+          "moveDurMax": 0.699999988079071,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 4
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 1,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.5,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": -16.0,
+              "y": 5.0,
+              "z": 0.0
+            },
+            {
+              "x": 12.0,
+              "y": 5.0,
+              "z": 0.0
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 1551
+            }
+          ],
+          "dynamicRopes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2523
+            }
+          ],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 77
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 69,
+          "renderers": [
+            231
+          ],
+          "dynamicRopes": [
+            726
+          ],
+          "speedTrailPFX": [
+            77
+          ]
+        }
+      }
+    },
+    {
+      "key": "level51-1691",
+      "seed": 2691,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -14.0,
+            "y": 6.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 35
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 2.0,
+        "moveDurMax": 2.0,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 4
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 0,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": -14.0,
+            "y": 6.0,
+            "z": 3.60133705331478e-43
+          },
+          {
+            "x": 14.0,
+            "y": 6.0,
+            "z": 1.401298464324817e-43
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1137
+          }
+        ],
+        "dynamicRopes": [],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 37
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 1691,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 35,
+        "game_object_name": "MovingFloorBot",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 35
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 2.0,
+          "moveDurMax": 2.0,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 4
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 0,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": -14.0,
+              "y": 6.0,
+              "z": 3.60133705331478e-43
+            },
+            {
+              "x": 14.0,
+              "y": 6.0,
+              "z": 1.401298464324817e-43
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 1137
+            }
+          ],
+          "dynamicRopes": [],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 37
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 35,
+          "renderers": [
+            96
+          ],
+          "speedTrailPFX": [
+            37
+          ]
+        }
+      }
+    },
+    {
+      "key": "level51-1692",
+      "seed": 2692,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 14.0,
+            "y": -6.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 39
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 2.0,
+        "moveDurMax": 2.0,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 2
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 0,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": 14.0,
+            "y": -6.0,
+            "z": 0.0
+          },
+          {
+            "x": -14.0,
+            "y": -6.0,
+            "z": 0.0
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1136
+          }
+        ],
+        "dynamicRopes": [],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 51
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 1692,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 39,
+        "game_object_name": "MovingFloorTop",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 39
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 2.0,
+          "moveDurMax": 2.0,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 2
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 0,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": 14.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            {
+              "x": -14.0,
+              "y": -6.0,
+              "z": 0.0
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 1136
+            }
+          ],
+          "dynamicRopes": [],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 51
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 39,
+          "renderers": [
+            95
+          ],
+          "speedTrailPFX": [
+            51
+          ]
+        }
+      }
+    },
+    {
+      "key": "level52-2772",
+      "seed": 3772,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -25.0,
+            "y": -10.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 24
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 0.5,
+        "moveDurMax": 0.5,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 64
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 1,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": -25.0,
+            "y": -10.0,
+            "z": 3.60133705331478e-43
+          },
+          {
+            "x": -25.0,
+            "y": 10.0,
+            "z": 1.6815581571897805e-43
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1807
+          }
+        ],
+        "dynamicRopes": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2946
+          }
+        ],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 59
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 2772,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 24,
+        "game_object_name": "MovingFloorLeft",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 24
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 0.5,
+          "moveDurMax": 0.5,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 64
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 1,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": -25.0,
+              "y": -10.0,
+              "z": 3.60133705331478e-43
+            },
+            {
+              "x": -25.0,
+              "y": 10.0,
+              "z": 1.6815581571897805e-43
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 1807
+            }
+          ],
+          "dynamicRopes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2946
+            }
+          ],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 59
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 24,
+          "renderers": [
+            338
+          ],
+          "dynamicRopes": [
+            841
+          ],
+          "speedTrailPFX": [
+            59
+          ]
+        }
+      }
+    },
+    {
+      "key": "level52-2773",
+      "seed": 3773,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 15.0,
+            "y": -20.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 51
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 0.5,
+        "moveDurMax": 0.5,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 32
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 1,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": 15.0,
+            "y": -20.0,
+            "z": 3.60133705331478e-43
+          },
+          {
+            "x": -5.0,
+            "y": -20.0,
+            "z": 9.668959403841238e-44
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1806
+          }
+        ],
+        "dynamicRopes": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2945
+          }
+        ],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 65
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 2773,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 51,
+        "game_object_name": "MovingFloorBot",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 51
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 0.5,
+          "moveDurMax": 0.5,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 32
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 1,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": 15.0,
+              "y": -20.0,
+              "z": 3.60133705331478e-43
+            },
+            {
+              "x": -5.0,
+              "y": -20.0,
+              "z": 9.668959403841238e-44
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 1806
+            }
+          ],
+          "dynamicRopes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2945
+            }
+          ],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 65
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 51,
+          "renderers": [
+            337
+          ],
+          "dynamicRopes": [
+            844
+          ],
+          "speedTrailPFX": [
+            65
+          ]
+        }
+      }
+    },
+    {
+      "key": "level52-2774",
+      "seed": 3774,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 25.0,
+            "y": 10.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 69
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 0.5,
+        "moveDurMax": 0.5,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 16
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 1,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": 25.0,
+            "y": 10.0,
+            "z": 2.382207389352189e-44
+          },
+          {
+            "x": 25.0,
+            "y": -10.0,
+            "z": 0.0
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1808
+          }
+        ],
+        "dynamicRopes": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2948
+          }
+        ],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 27
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 2774,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 69,
+        "game_object_name": "MovingFloorRight",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 69
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 0.5,
+          "moveDurMax": 0.5,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 16
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 1,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": 25.0,
+              "y": 10.0,
+              "z": 2.382207389352189e-44
+            },
+            {
+              "x": 25.0,
+              "y": -10.0,
+              "z": 0.0
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 1808
+            }
+          ],
+          "dynamicRopes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2948
+            }
+          ],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 27
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 69,
+          "renderers": [
+            339
+          ],
+          "dynamicRopes": [
+            848
+          ],
+          "speedTrailPFX": [
+            27
+          ]
+        }
+      }
+    },
+    {
+      "key": "level52-2775",
+      "seed": 3775,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -15.0,
+            "y": 20.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 75
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 0.5,
+        "moveDurMax": 0.5,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 8
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 1,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": -15.0,
+            "y": 20.0,
+            "z": 262070.625
+          },
+          {
+            "x": 5.0,
+            "y": 20.0,
+            "z": 6.7682715826888665e-43
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1809
+          }
+        ],
+        "dynamicRopes": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2947
+          }
+        ],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 86
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 2775,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 75,
+        "game_object_name": "MovingFloorTop",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 75
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 0.5,
+          "moveDurMax": 0.5,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 8
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 1,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": -15.0,
+              "y": 20.0,
+              "z": 262070.625
+            },
+            {
+              "x": 5.0,
+              "y": 20.0,
+              "z": 6.7682715826888665e-43
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 1809
+            }
+          ],
+          "dynamicRopes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2947
+            }
+          ],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 86
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 75,
+          "renderers": [
+            336
+          ],
+          "dynamicRopes": [
+            842
+          ],
+          "speedTrailPFX": [
+            86
+          ]
+        }
+      }
+    },
+    {
+      "key": "level53-3303",
+      "seed": 4303,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -5.0,
+            "y": -20.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 23
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 0.5,
+        "moveDurMax": 0.5,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 32
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 1,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": -5.0,
+            "y": -20.0,
+            "z": 3.60133705331478e-43
+          },
+          {
+            "x": -5.0,
+            "y": -5.0,
+            "z": 1.6815581571897805e-43
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2174
+          }
+        ],
+        "dynamicRopes": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 3423
+          }
+        ],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 58
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 3303,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 23,
+        "game_object_name": "MovingFloorLeft",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 23
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 0.5,
+          "moveDurMax": 0.5,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 32
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 1,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": -5.0,
+              "y": -20.0,
+              "z": 3.60133705331478e-43
+            },
+            {
+              "x": -5.0,
+              "y": -5.0,
+              "z": 1.6815581571897805e-43
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2174
+            }
+          ],
+          "dynamicRopes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 3423
+            }
+          ],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 58
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 23,
+          "renderers": [
+            333
+          ],
+          "dynamicRopes": [
+            1015
+          ],
+          "speedTrailPFX": [
+            58
+          ]
+        }
+      }
+    },
+    {
+      "key": "level53-3304",
+      "seed": 4304,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 20.0,
+            "y": -5.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 47
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 0.5,
+        "moveDurMax": 0.5,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 16
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 1,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": 20.0,
+            "y": -5.0,
+            "z": 4.203895392974451e-44
+          },
+          {
+            "x": 5.0,
+            "y": -5.0,
+            "z": 0.0
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2173
+          }
+        ],
+        "dynamicRopes": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 3424
+          }
+        ],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 64
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 3304,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 47,
+        "game_object_name": "MovingFloorBot",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 47
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 0.5,
+          "moveDurMax": 0.5,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 16
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 1,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": 20.0,
+              "y": -5.0,
+              "z": 4.203895392974451e-44
+            },
+            {
+              "x": 5.0,
+              "y": -5.0,
+              "z": 0.0
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2173
+            }
+          ],
+          "dynamicRopes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 3424
+            }
+          ],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 64
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 47,
+          "renderers": [
+            332
+          ],
+          "dynamicRopes": [
+            1014
+          ],
+          "speedTrailPFX": [
+            64
+          ]
+        }
+      }
+    },
+    {
+      "key": "level53-3305",
+      "seed": 4305,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 5.0,
+            "y": 20.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 68
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 0.5,
+        "moveDurMax": 0.5,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 8
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 1,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": 5.0,
+            "y": 20.0,
+            "z": 4.203895392974451e-44
+          },
+          {
+            "x": 5.0,
+            "y": 5.0,
+            "z": 0.0
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2175
+          }
+        ],
+        "dynamicRopes": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 3425
+          }
+        ],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 24
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 3305,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 68,
+        "game_object_name": "MovingFloorRight",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 68
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 0.5,
+          "moveDurMax": 0.5,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 8
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 1,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": 5.0,
+              "y": 20.0,
+              "z": 4.203895392974451e-44
+            },
+            {
+              "x": 5.0,
+              "y": 5.0,
+              "z": 0.0
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2175
+            }
+          ],
+          "dynamicRopes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 3425
+            }
+          ],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 24
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 68,
+          "renderers": [
+            334
+          ],
+          "dynamicRopes": [
+            1020
+          ],
+          "speedTrailPFX": [
+            24
+          ]
+        }
+      }
+    },
+    {
+      "key": "level53-3306",
+      "seed": 4306,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -20.0,
+            "y": 5.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 73
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 149
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 0.5,
+        "moveDurMax": 0.5,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 64
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 10.0,
+        "movementState": 0,
+        "isSpring": 1,
+        "springPauseDur": 2.0,
+        "springWindBackDur": 3.0,
+        "preMoveDur": 0.3499999940395355,
+        "moveOwner": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "positions": [
+          {
+            "x": -20.0,
+            "y": 5.0,
+            "z": 4.203895392974451e-44
+          },
+          {
+            "x": -5.0,
+            "y": 5.0,
+            "z": 0.0
+          }
+        ],
+        "renderers": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 2176
+          }
+        ],
+        "dynamicRopes": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 3422
+          }
+        ],
+        "speedTrailPFX": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 81
+          }
+        ],
+        "audioCurve": {
+          "m_Curve": [
+            {
+              "time": 7.720664143562317e-07,
+              "value": 0.8008071184158325,
+              "inSlope": 0.3986106514930725,
+              "outSlope": 0.3986106514930725,
+              "weightedMode": 0,
+              "inWeight": 0.0,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 0.49041008949279785,
+              "value": 0.9962894916534424,
+              "inSlope": 0.0,
+              "outSlope": 0.0,
+              "weightedMode": 0,
+              "inWeight": 0.3333333432674408,
+              "outWeight": 0.3333333432674408
+            },
+            {
+              "time": 1.0,
+              "value": 0.0029323026537895203,
+              "inSlope": -5.667477607727051,
+              "outSlope": -5.667477607727051,
+              "weightedMode": 0,
+              "inWeight": 0.024320019409060478,
+              "outWeight": 0.3333333432674408
+            }
+          ],
+          "m_PreInfinity": 2,
+          "m_PostInfinity": 2,
+          "m_RotationOrder": 4
+        }
+      },
+      "record": {
+        "component_id": 3306,
+        "class": "MovingFloorReactive",
+        "assembly": "Assembly-CSharp",
+        "game_object": 73,
+        "game_object_name": "MovingFloorTop",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 73
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 149
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 0.5,
+          "moveDurMax": 0.5,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 64
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 10.0,
+          "movementState": 0,
+          "isSpring": 1,
+          "springPauseDur": 2.0,
+          "springWindBackDur": 3.0,
+          "preMoveDur": 0.3499999940395355,
+          "moveOwner": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "positions": [
+            {
+              "x": -20.0,
+              "y": 5.0,
+              "z": 4.203895392974451e-44
+            },
+            {
+              "x": -5.0,
+              "y": 5.0,
+              "z": 0.0
+            }
+          ],
+          "renderers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 2176
+            }
+          ],
+          "dynamicRopes": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 3422
+            }
+          ],
+          "speedTrailPFX": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 81
+            }
+          ],
+          "audioCurve": {
+            "m_Curve": [
+              {
+                "time": 7.720664143562317e-07,
+                "value": 0.8008071184158325,
+                "inSlope": 0.3986106514930725,
+                "outSlope": 0.3986106514930725,
+                "weightedMode": 0,
+                "inWeight": 0.0,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 0.49041008949279785,
+                "value": 0.9962894916534424,
+                "inSlope": 0.0,
+                "outSlope": 0.0,
+                "weightedMode": 0,
+                "inWeight": 0.3333333432674408,
+                "outWeight": 0.3333333432674408
+              },
+              {
+                "time": 1.0,
+                "value": 0.0029323026537895203,
+                "inSlope": -5.667477607727051,
+                "outSlope": -5.667477607727051,
+                "weightedMode": 0,
+                "inWeight": 0.024320019409060478,
+                "outWeight": 0.3333333432674408
+              }
+            ],
+            "m_PreInfinity": 2,
+            "m_PostInfinity": 2,
+            "m_RotationOrder": 4
+          }
+        },
+        "resolved_refs": {
+          "m_GameObject": 73,
+          "renderers": [
+            331
+          ],
+          "dynamicRopes": [
+            1017
+          ],
+          "speedTrailPFX": [
+            81
+          ]
+        }
+      }
+    }
+  ],
+  "ticks": 900,
+  "fixed_delta": 0.016666
+}

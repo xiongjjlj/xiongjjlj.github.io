@@ -367,6 +367,7 @@ func set_character_clip(clip_name: String) -> void:
 	current_clips.fill(clip_name)
 
 func update_movement(scaled_delta: float) -> void:
+	level_behaviors.moving_floors.now = clock.time_counter
 	physics_accumulator += minf(scaled_delta, 0.3333333432674408)
 	var steps := 0
 	while physics_accumulator >= actors[0].fixed_delta and steps < 20 and round_state.simulation_running():

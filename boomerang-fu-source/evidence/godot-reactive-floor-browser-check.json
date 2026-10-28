@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "version": "0.5.1-dev.3",
+  "map": "level40",
+  "generated_at": "2026-10-28T01:54:54.712222+00:00",
+  "checks": [
+    "Actual keyboard melee activates serialized switch and linked reactive floor",
+    "Mid-movement switch reversal returns raft and central rider",
+    "Full subsequent outward movement leaves both players alive",
+    "Paired rolling pins visibly rotate with the raft",
+    "Pause and resume operate without browser errors"
+  ],
+  "evidence": [
+    "reactive-floor-raft-browser-log.json",
+    "reactive-floor-center-before.png",
+    "reactive-floor-center-end.png",
+    "reactive-floor-center-return.png",
+    "reactive-floor-center-full-end.png"
+  ],
+  "scope": "Big Raft local WebGL browser check. Other reactive maps have native-Godot tests; full original-game visual, audio and callback parity remains unverified."
+}

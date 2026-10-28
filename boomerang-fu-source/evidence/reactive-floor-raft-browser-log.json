@@ -1,0 +1,600 @@
+{
+  "captured_at": "2026-10-28T01:54:44.372Z",
+  "logs": [
+    {
+      "level": "log",
+      "message": "BF_SPRITES_READY {\"imported\":33,\"pending_wave_shader\":0}",
+      "timestamp": "2026-10-28T01:51:44.009Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_BEHAVIORS {\"destructable_obstacles\":18,\"moving_obstacles\":0,\"source_counts\":{\"Debris3D\":99.0,\"DestructableObstacle\":18.0,\"DestructableObstacleDestroyer\":2.0,\"MovingFloorReactive\":1.0,\"MovingFloorRollingPin\":2.0,\"Switch\":2.0,\"TrapFloor\":58.0,\"WobblyObstacle\":18.0},\"switches\":2,\"wobbly_obstacles\":18}",
+      "timestamp": "2026-10-28T01:51:44.020Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:51:44.060Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:51:44.091Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:51:44.096Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:51:44.099Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_START {\"goal\":14,\"round\":1}",
+      "timestamp": "2026-10-28T01:51:44.099Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_MOTION_READY {\"fixed_delta\":0.0166660007089376,\"radius\":0.877800047397614,\"shapes\":212}",
+      "timestamp": "2026-10-28T01:51:44.099Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock0\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T01:51:44.110Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock1\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T01:51:44.111Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock2\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T01:51:44.111Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock3\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T01:51:44.111Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock4\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T01:51:44.112Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"PowerupShieldStayOn\",\"missing\":[],\"model\":\"FrozenBlock5\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T01:51:44.112Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise0\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T01:51:44.199Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise1\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T01:51:44.248Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW lobby",
+      "timestamp": "2026-10-28T01:51:44.299Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_GODOT_READY {\"meshes\":320,\"missing\":0,\"nodes\":814,\"scene\":\"LevelBigRaft\",\"scene_index\":38}",
+      "timestamp": "2026-10-28T01:51:44.299Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"ready\"}",
+      "timestamp": "2026-10-28T01:51:44.693Z",
+      "url": "http://127.0.0.1:56183/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_READY {\"version\":\"20308\",\"bank_events\":167,\"heap_bytes\":134217728}",
+      "timestamp": "2026-10-28T01:51:44.693Z",
+      "url": "http://127.0.0.1:56183/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round reset\",\"serial\":1}",
+      "timestamp": "2026-10-28T01:51:44.693Z",
+      "url": "http://127.0.0.1:56183/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"music filter\",\"value\":0}",
+      "timestamp": "2026-10-28T01:51:44.693Z",
+      "url": "http://127.0.0.1:56183/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"music\",\"path\":\"event:/music/menu\"}",
+      "timestamp": "2026-10-28T01:51:44.693Z",
+      "url": "http://127.0.0.1:56183/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "Resetting audio driver based on user input.",
+      "timestamp": "2026-10-28T01:51:51.740Z",
+      "url": "http://127.0.0.1:56183/audio/fmodstudio.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:51:55.136Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:51:55.167Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:51:55.172Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:51:55.174Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_START {\"goal\":14,\"round\":1}",
+      "timestamp": "2026-10-28T01:51:55.175Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_MOTION_READY {\"fixed_delta\":0.0166660007089376,\"radius\":0.877800047397614,\"shapes\":212}",
+      "timestamp": "2026-10-28T01:51:55.175Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise0\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T01:51:55.263Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise1\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T01:51:55.264Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_MATCH_CONFIG {\"characters\":[\"Avocado\",\"Watermelon\"],\"goal\":14,\"positions\":[[-24.0416316986084,-7.07106590270996],[4.24264001846313,-12.7279224395752]],\"sources\":[-1,-2]}",
+      "timestamp": "2026-10-28T01:51:55.269Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW ready",
+      "timestamp": "2026-10-28T01:51:55.271Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round reset\",\"serial\":2}",
+      "timestamp": "2026-10-28T01:51:55.313Z",
+      "url": "http://127.0.0.1:56183/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"music\",\"path\":\"event:/music/gameplay_trap\"}",
+      "timestamp": "2026-10-28T01:51:55.313Z",
+      "url": "http://127.0.0.1:56183/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":0}",
+      "timestamp": "2026-10-28T01:51:55.313Z",
+      "url": "http://127.0.0.1:56183/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW playing",
+      "timestamp": "2026-10-28T01:51:56.117Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T01:52:04.928Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:52:05.352Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T01:52:10.757Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:52:11.725Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T01:52:16.207Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WindUpRight\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:52:16.723Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ATTACK {\"actor\":1,\"tick\":1220}",
+      "timestamp": "2026-10-28T01:52:16.723Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2678,\"reason\":\"melee\",\"type\":\"moving_floor_toggle\"}",
+      "timestamp": "2026-10-28T01:52:16.740Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2930,\"game_object\":91,\"reason\":\"melee\",\"type\":\"switch_activate\"}",
+      "timestamp": "2026-10-28T01:52:16.740Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"MeleeRight\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:52:16.743Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:52:17.288Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_START {\"actor\":0,\"tick\":1555}",
+      "timestamp": "2026-10-28T01:52:22.325Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Fall\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:52:22.330Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_DEATH {\"actor\":0,\"tick\":1596}",
+      "timestamp": "2026-10-28T01:52:22.994Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DeathSliced\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:52:22.996Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DEATH {\"cause\":\"fall\",\"killer\":0,\"scores\":[0,0],\"tick\":1596,\"victim\":0}",
+      "timestamp": "2026-10-28T01:52:22.996Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ELEMENT {\"actor\":0,\"event\":\"fire_changed\",\"tick\":1596}",
+      "timestamp": "2026-10-28T01:52:23.001Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FALL_HIDDEN {\"actor\":0,\"tick\":1596}",
+      "timestamp": "2026-10-28T01:52:23.002Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_SCORES {\"round\":1,\"scores\":[0,0]}",
+      "timestamp": "2026-10-28T01:52:25.250Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":1}",
+      "timestamp": "2026-10-28T01:52:25.251Z",
+      "url": "http://127.0.0.1:56183/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW scores",
+      "timestamp": "2026-10-28T01:52:25.259Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise0\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T01:53:41.854Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DisguiseInit\",\"missing\":[],\"model\":\"Disguise1\",\"skeletons\":0,\"tracks\":1}",
+      "timestamp": "2026-10-28T01:53:41.855Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:53:41.856Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:53:41.858Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_START {\"goal\":14,\"round\":2}",
+      "timestamp": "2026-10-28T01:53:41.859Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW ready",
+      "timestamp": "2026-10-28T01:53:41.861Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round reset\",\"serial\":3}",
+      "timestamp": "2026-10-28T01:53:41.861Z",
+      "url": "http://127.0.0.1:56183/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":0}",
+      "timestamp": "2026-10-28T01:53:41.861Z",
+      "url": "http://127.0.0.1:56183/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW playing",
+      "timestamp": "2026-10-28T01:53:42.853Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:53:44.432Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:53:45.031Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T01:53:48.798Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:53:50.031Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:53:53.547Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T01:53:53.714Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:53:53.847Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WindUpRight\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:53:54.230Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ATTACK {\"actor\":1,\"tick\":2366}",
+      "timestamp": "2026-10-28T01:53:54.231Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2678,\"reason\":\"melee\",\"type\":\"moving_floor_toggle\"}",
+      "timestamp": "2026-10-28T01:53:54.247Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2930,\"game_object\":91,\"reason\":\"melee\",\"type\":\"switch_activate\"}",
+      "timestamp": "2026-10-28T01:53:54.247Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"MeleeRight\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:53:54.249Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:53:54.789Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WindUpRight\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:54:00.132Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ATTACK {\"actor\":1,\"tick\":2720}",
+      "timestamp": "2026-10-28T01:54:00.133Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2678,\"reason\":\"melee\",\"type\":\"moving_floor_toggle\"}",
+      "timestamp": "2026-10-28T01:54:00.149Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2930,\"game_object\":91,\"reason\":\"melee\",\"type\":\"switch_activate\"}",
+      "timestamp": "2026-10-28T01:54:00.149Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"MeleeRight\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:54:00.151Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:54:00.689Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WindUpRight\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:54:30.621Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ATTACK {\"actor\":1,\"tick\":4548}",
+      "timestamp": "2026-10-28T01:54:30.621Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"MeleeRight\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:54:30.639Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:54:31.180Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T01:54:34.265Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WindUpRight\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:54:34.531Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ATTACK {\"actor\":1,\"tick\":4783}",
+      "timestamp": "2026-10-28T01:54:34.531Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2678,\"reason\":\"melee\",\"type\":\"moving_floor_toggle\"}",
+      "timestamp": "2026-10-28T01:54:34.546Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_LEVEL3_EVENT {\"component_id\":2930,\"game_object\":91,\"reason\":\"melee\",\"type\":\"switch_activate\"}",
+      "timestamp": "2026-10-28T01:54:34.547Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"MeleeRight\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:54:34.549Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T01:54:35.088Z",
+      "url": "http://127.0.0.1:56183/index.js"
+    }
+  ],
+  "errors": [],
+  "investigation": {
+    "initial_observation": "P1 fell when standing on outer strip during raft movement.",
+    "cause": "Full Godot game loop identified stationary Roller (1), object 33, obstructing the rider before the floor moved away. Attachment remained intact; central strip completed return path.",
+    "reference": "godot-reactive-floor-game-loop-check.json",
+    "native_complete_scene_order_verified": false
+  }
+}

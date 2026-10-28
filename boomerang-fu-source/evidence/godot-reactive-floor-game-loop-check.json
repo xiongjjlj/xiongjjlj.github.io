@@ -1,0 +1,34 @@
+{
+  "checks": [
+    {
+      "details": null,
+      "name": "central rider survives full outward and return journey",
+      "passed": true
+    },
+    {
+      "details": 0.000204337935429066,
+      "name": "full game loop preserves platform-local rider position",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "platform finishes its return and retains rider",
+      "passed": true
+    },
+    {
+      "details": {
+        "fall_tick": 394,
+        "roller_contact_tick": 307
+      },
+      "name": "edge rider contacts original fixed roller before losing ground",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "edge fall is ground loss, not broken platform attachment",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Full Godot game loop on actual Big Raft: central rider round trip and fixed-roller obstruction. Original full-scene callback ordering is not established by this test."
+}

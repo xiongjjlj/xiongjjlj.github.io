@@ -67,7 +67,7 @@ func initialize(sidecar: Dictionary, scene_nodes: Dictionary, world: OriginalCol
 		elif cls == "Switch":
 			var data: Dictionary = record.get("data", {})
 			var targets: Array[int] = []
-			for ref in data.get("movingObstacles", []):
+			for ref in data.get("movingObstacles", []) + data.get("movingFloors", []):
 				var target := int(ref.get("m_PathID", ref.get("path_id", 0)))
 				if target != 0: targets.append(target)
 			if nodes.has(game_object):
@@ -138,6 +138,12 @@ func reset(randomize := true) -> void:
 			item.debris[i].visible = false
 
 func toggle(component_id: int, reason := "script") -> bool:
+	if moving_floors.floors.has(component_id):
+		var floor: Dictionary = moving_floors.floors[component_id]
+		if not floor.enabled or not floor.reactive: return false
+		moving_floors.toggle_reactive(floor)
+		events.append({"type":"moving_floor_toggle","component_id":component_id,"reason":reason})
+		return true
 	if not obstacles.has(component_id): return false
 	var o: Dictionary = obstacles[component_id]
 	if not o.enabled: return false
@@ -380,6 +386,7 @@ func _switch_disc_contacts(flying_discs: Array) -> void:
 
 func frame_step(delta: float) -> void:
 	if not initialized: return
+	moving_floors.frame_step(delta)
 	for item in switches.values():
 		if item.cooldown > 0.0: item.cooldown = C.f32(float(item.cooldown) - C.f32(delta))
 	for key in interaction_cooldowns.keys():

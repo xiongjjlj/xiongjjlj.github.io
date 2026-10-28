@@ -10,9 +10,9 @@
   "recovered_scene_assets": 61,
   "blocking_input": null,
   "next_actions": [
-    "Implement MovingFloorReactive and MovingFloorRollingPin using original callbacks and native traces.",
     "Repair per-map and moving-platform navigation; all maps currently reuse Enclosed navigation.",
     "Implement falling/trap floors and teleportal scene wiring; MovingDoor is confined to the tutorial.",
+    "Restore moving-platform audio, flash, trails and rope presentation.",
     "Compare complete scene scheduling, global random draw order, trigger callback order, shaders, animation and audio against the original."
   ],
   "validation_limitations": [
@@ -51,11 +51,11 @@
     "native_dxbc_disassembled": true,
     "partial_map_shader_webgl_verified": true
   },
-  "updated_at": "2026-10-28T01:47:21.521894+00:00",
+  "updated_at": "2026-10-28T01:54:54.712222+00:00",
   "implementation_engine": "Godot 4.7.2",
   "browser_language": "GDScript",
   "browser_development_preview": true,
-  "current_work": "0.5.1-dev.2: normal MovingFloor motion, actor and dropped-disc parenting integrated in seven FFA maps. 38,416 original UnityPlayer frames compared with explicit tolerances; 15 bounded runtime suites and local-browser Spin/Drift checks passed. Full game parity remains unverified.",
+  "current_work": "0.5.1-dev.3: 14 reactive moving floors across six maps, switch reversal, spring return and paired rollers implemented. 37,842 source-method frames and 23 real-scene suites pass. Big Raft browser journey and reversal verified. Full game parity remains unverified.",
   "godot_scene_preview": {
     "scene": "LevelEnclosed",
     "nodes": 548,
@@ -3731,5 +3731,15 @@
     "runtime_report": "godot-map-runtime-check.json",
     "browser_report": "godot-moving-floor-browser-check.json",
     "whole_game_parity_verified": false
+  },
+  "reactive_moving_floors": {
+    "maps": 6,
+    "platforms": 14,
+    "source_method_samples": 37842,
+    "runtime_suites": 23,
+    "browser_map": "level40",
+    "native_report": "godot-reactive-floor-native-check.json",
+    "browser_report": "godot-reactive-floor-browser-check.json",
+    "exact_game_parity": false
   }
 }

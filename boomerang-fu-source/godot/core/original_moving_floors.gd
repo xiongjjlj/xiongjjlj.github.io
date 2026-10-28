@@ -1,25 +1,31 @@
 class_name OriginalMovingFloors
 extends RefCounted
 ## MovingFloor.FixedUpdate/ToggleTargetPosition. Coordinates remain Unity XY;
-## source Z is reflected by the scene loader. Reactive subclasses are separate.
+## source Z is reflected by the scene loader. Reactive movement reads the
+## shared TimeKeeper timestamp; rolling-pin visuals use its latest velocity.
 const C = preload("res://core/original_timekeeper.gd")
 var floors: Dictionary = {}
 var world: OriginalCollisionWorld
 var rng: OriginalUnityRandom
 var disc_parents: Dictionary = {}
+var rollers: Array[Dictionary] = []
+var now := 0.0
 
 func initialize(sidecar: Dictionary, nodes: Dictionary, collision: OriginalCollisionWorld, random: OriginalUnityRandom) -> void:
 	world = collision; rng = random
-	floors.clear(); disc_parents.clear()
+	floors.clear(); disc_parents.clear(); rollers.clear()
 	for record in sidecar.get("behaviours", []):
-		if record.get("class") != "MovingFloor" or not nodes.has(int(record.game_object)): continue
+		if record.get("class") not in ["MovingFloor", "MovingFloorReactive"] or not nodes.has(int(record.game_object)): continue
+		var reactive: bool = record.get("class") == "MovingFloorReactive"
 		var data: Dictionary = record.data
 		var node: Node3D = nodes[int(record.game_object)]
 		var points: Array[Vector3] = []
-		for p in data.positionRotations: points.append(Vector3(p.x, p.y, p.z))
+		for p in data.get("positions" if reactive else "positionRotations", []): points.append(Vector3(p.x, p.y, p.z))
 		if points.size() < 2: continue
 		var floor := {"component_id":int(record.component_id), "game_object":int(record.game_object), "node":node,
-			"points":points, "initial":node.transform, "initial_index":int(data.posIndex),
+			"points":points, "initial":node.transform, "reactive":reactive,
+			"initial_state":int(data.get("movementState",0)), "is_spring":bool(data.get("isSpring",0)),
+			"pre_duration":float(data.get("preMoveDur",0.35)), "pause_duration":float(data.get("springPauseDur",0.25)), "windback_duration":float(data.get("springWindBackDur",2.0)), "initial_index":int(data.posIndex),
 			"initial_percent":float(data.movePercent), "use_rotations":bool(data.useRotations),
 			"counter_clockwise":bool(data.counterClockwise), "movement_type":int(data.movementType),
 			"min_duration":float(data.moveDurMin), "max_duration":float(data.moveDurMax),
@@ -32,13 +38,22 @@ func initialize(sidecar: Dictionary, nodes: Dictionary, collision: OriginalColli
 			if floor.id == -1: floor.id = int(shape.id)
 			shape.tag = "MovingFloor"
 			shape.moving_floor = floor
+	for record in sidecar.get("behaviours", []):
+		if record.get("class") != "MovingFloorRollingPin": continue
+		var data: Dictionary = record.data; var refs: Dictionary = record.get("resolved_refs",{})
+		var floor_id := int(data.pairedMovingFloor.m_PathID)
+		if not floors.has(floor_id) or not nodes.has(int(refs.get("roller",0))): continue
+		var roller: Node3D = nodes[int(refs.roller)]
+		rollers.append({"node":nodes[int(record.game_object)], "roller":roller, "floor":floor_id, "spin_factor":float(data.spinFactor), "initial":roller.transform,
+			"enabled":bool(data.get("m_Enabled",1)) and bool(record.get("active_in_hierarchy",true))})
 	reset(false)
 
 func reset(consume_start_random := true) -> void:
 	disc_parents.clear()
 	for f in floors.values():
 		f.node.transform = f.initial
-		f.pos_index = f.initial_index; f.move_percent = f.initial_percent
+		f.pos_index = 0 if f.reactive else f.initial_index; f.move_percent = f.initial_percent
+		f.state = f.initial_state; f.reverse = false; f.spring_back = false; f.toggle_timestamp = 0.0
 		f.move_duration = f.min_duration; f.new_duration = 0.0
 		f.start_pos = Vector2.ZERO; f.target_pos = Vector2.ZERO
 		f.start_rotation = 0.0; f.target_rotation = 0.0
@@ -50,9 +65,11 @@ func reset(consume_start_random := true) -> void:
 		if consume_start_random and f.enabled: rng.range_float(C.f32(-0.05 * 0.75), 0.0)
 		world.sync_scene_subtree(int(f.game_object))
 
+	for roller in rollers: roller.roller.transform = roller.initial
+
 func start_all() -> void:
 	for f in floors.values():
-		if f.enabled: toggle(f)
+		if f.enabled and not f.reactive: toggle(f)
 
 func euler_z(node: Node3D) -> float:
 	return fposmod(C.f32(rad_to_deg(node.rotation.z)), 360.0)
@@ -84,9 +101,13 @@ static func cubic_in_out(t: float) -> float:
 	return C.f32(0.5*(t*t*t+2.0))
 
 func step_floor(f: Dictionary, delta: float) -> void:
-	if not f.enabled or not f.moving: return
-	delta = C.f32(delta)
 	f.previous_transform = f.node.global_transform
+	if not f.enabled: return
+	delta = C.f32(delta)
+	if f.reactive:
+		step_reactive(f,delta)
+		return
+	if not f.moving: return
 	var p: Vector2
 	if f.move_percent < 1.0:
 		f.move_duration = C.lerp32(f.move_duration,f.new_duration,delta)
@@ -124,7 +145,7 @@ func fixed_step(delta: float) -> void:
 	for f in floors.values(): step_floor(f,delta)
 
 func carry(f: Dictionary, position: Vector2, z: float) -> Vector2:
-	var point: Vector3 = f.node.global_transform * (f.previous_transform.affine_inverse() * Vector3(position.x,position.y,z))
+	var point: Vector3 = f.node.global_transform * (f.previous_transform.affine_inverse() * Vector3(position.x,position.y,-z))
 	return Vector2(point.x,point.y)
 
 func rotation_delta(f: Dictionary) -> float:
@@ -179,3 +200,62 @@ func update_discs(discs: Array) -> void:
 		if not found: disc_parents.erase(id)
 	for id in disc_parents.keys():
 		if not live.has(id): disc_parents.erase(id)
+
+func toggle_reactive(f: Dictionary, spring_back := false) -> void:
+	if int(f.state) == 3:
+		f.state = 1
+	else:
+		var p: Vector3 = f.points[int(f.pos_index)]
+		f.start_pos = Vector2(p.x,p.y)
+		if f.use_rotations: f.start_rotation = p.z
+		if int(f.state) in [1,2] and not f.reverse and f.points.size() > 1:
+			f.pos_index = posmod(int(f.pos_index)-1,f.points.size()); f.reverse = true
+		else:
+			f.pos_index = (int(f.pos_index)+1)%f.points.size(); f.reverse = false
+		p = f.points[int(f.pos_index)]; f.target_pos = Vector2(p.x,p.y)
+		if f.use_rotations: f.target_rotation = p.z
+		f.move_percent = C.f32(1.0-f.move_percent) if int(f.state) in [1,2] and f.points.size()>1 else 0.0
+		f.state = 3 if spring_back else 2
+	f.toggle_timestamp = C.f32(now)
+	f.spring_back = spring_back
+
+static func lerp_angle_degrees(start: float, target: float, t: float) -> float:
+	var difference := C.f32(target-start)
+	difference = C.f32(difference-floor(difference/360.0)*360.0)
+	if difference > 180.0: difference = C.f32(difference-360.0)
+	return C.f32(start+difference*clampf(t,0.0,1.0))
+
+func step_reactive(f: Dictionary, delta: float) -> void:
+	if int(f.state) in [2,3]:
+		var wait: float = f.pre_duration if int(f.state)==2 else f.pause_duration
+		if C.f32(now-f.toggle_timestamp) < wait:
+			f.velocity = Vector2.ZERO; return
+		f.state = 1
+	if int(f.state) != 1: return
+	var point: Vector2
+	if f.move_percent < 1.0:
+		var duration: float = f.windback_duration if f.spring_back else f.move_duration
+		f.move_percent = C.f32(f.move_percent+C.f32(delta/duration))
+		var t := clampf(float(f.move_percent),0.0,1.0)
+		var easing := C.ease_in(t) if f.reverse else C.ease_out(t)
+		point = Vector2(C.lerp32(f.start_pos.x,f.target_pos.x,easing),C.lerp32(f.start_pos.y,f.target_pos.y,easing))
+		if f.use_rotations: f.node.rotation = Vector3(0,0,deg_to_rad(lerp_angle_degrees(f.start_rotation,f.target_rotation,ease_in_out(t))))
+	else:
+		point = f.target_pos
+		if f.use_rotations: f.node.rotation = Vector3(0,0,deg_to_rad(f.target_rotation))
+		f.state = 0
+		if f.is_spring and not f.spring_back and int(f.pos_index)==1: toggle_reactive(f,true)
+		f.reverse = false
+	f.node.position = Vector3(point.x,point.y,f.z)
+	var current := Vector2(f.node.global_position.x,f.node.global_position.y)
+	f.velocity = (current-f.last_pos)/delta; f.last_pos = current
+	world.sync_scene_subtree(int(f.game_object))
+
+func frame_step(delta: float) -> void:
+	for item in rollers:
+		if not item.enabled: continue
+		var velocity: Vector2 = floors[item.floor].velocity
+		var right: Vector3 = item.node.global_basis.x.normalized()
+		var direction := OriginalActorMotion.normalized(velocity)
+		var amount := C.f32(OriginalActorMotion.magnitude(velocity)*item.spin_factor*delta*C.f32(Vector2(right.x,right.y).dot(direction)))
+		item.roller.rotate_object_local(Vector3.BACK,deg_to_rad(amount))
