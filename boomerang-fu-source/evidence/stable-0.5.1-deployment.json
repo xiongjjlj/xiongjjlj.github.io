@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "version": "0.5.1",
+  "channel": "stable",
+  "url": "https://boomerang-fu.arkevo.ai/releases/0.5.1/",
+  "preview_url": "https://boomerang-fu.arkevo.ai/",
+  "worker": "arkevo-boomerang-fu",
+  "worker_version": "edded417-dc4e-44df-9960-f767fbaa9f5c",
+  "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
+  "game_source_commit": "556e5a18f314253a8b022deed6e23eee6faa79f5",
+  "release_source_commit": "3aa1fb52ff7696e72a268a8c0d38330a7a8b7352",
+  "checked_at": "2026-10-28T06:59:16.823749+00:00",
+  "checks": {
+    "runtime_suites": 73,
+    "native_gpu_water_samples": 168,
+    "loader_fault_tests": 5,
+    "workerd_current_files": 16,
+    "workerd_frozen_files": 16,
+    "live_version_manifest_files": 16,
+    "live_island_round": true,
+    "cross_origin_iframe_round": true,
+    "browser_errors": 0
+  },
+  "full_game_parity_verified": false,
+  "limits": [
+    "Teleportals, full visuals/audio and original UI remain incomplete.",
+    "Initial asset download can take several minutes.",
+    "No network multiplayer, control/score postMessage API, deterministic replay or native parity guarantee."
+  ]
+}

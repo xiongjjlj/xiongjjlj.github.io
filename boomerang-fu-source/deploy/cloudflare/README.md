@@ -44,3 +44,15 @@ Relevant API details: [precompressed response bodies](https://developers.cloudfl
 ## Operation and rollback
 
 This is static game hosting. It does not add accounts, a matchmaking service, or internet multiplayer. Player controls and local bots are provided by the game itself. Future updates must pass the same build and verification steps. To roll back, deploy a previously verified package using its matching evidence report; do not move the stable Git tag.
+
+
+## Frozen 0.5.1 integration release
+
+`/releases/0.5.1/` serves the frozen export; `/` remains the moving preview.
+`/releases/0.5.1/version.json` exposes version and SHA-256 values with CORS.
+The versioned files use immutable caching, and all future builds must retain
+every `releases/*.json` lock and its matching asset cache. Missing or altered
+release files fail the build. Restore the pinned ZIP with
+`python3 ../../tools/restore_release.py 0.5.1 CACHE_DIR`, then set
+`BF_RELEASE_CACHE=CACHE_DIR` for `npm run build`. Source and archive are in
+the `boomerang-fu-v0.5.1` Git tag; integration limits are in `../../INTEGRATION.md`.

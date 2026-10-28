@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+**/__pycache__/
+*.user
+**/.godot/
+godot/.godot/
+
+web/
+dist/
+**/node_modules/
+**/.cloudflare/
+**/.wrangler/
+**/.env*

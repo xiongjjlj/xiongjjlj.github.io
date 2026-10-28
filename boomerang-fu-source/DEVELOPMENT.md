@@ -1,17 +1,8 @@
 # 开发与固定依赖
 
-稳定浏览器版位于 <https://feixiong.me/boomerang-fu/>。其他项目可固定提交
-`ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1`，源码目录是 `boomerang-fu-source/`；
-`boomerang-fu-v0.5.0` 标签保留在该提交。`boomerang-fu-dev` 接受后续开发。
-
-当前源码与开发 Web 包为 `0.5.1-dev.8`。公司预览位于
-<https://boomerang-fu.arkevo.ai/>，线上实际版本以 `/version.json` 为准。
-稳定依赖 `0.5.0` 保留，后续开发不改变其提交和标签。
-源代码、浏览器包与证据分别有哈希，历史报告只证明当时记录的构建。
-
-开发包为 `web-development-0.5.1-dev.8.zip`，解压后通过 HTTP(S) 托管。
-完整 PCK 超过 100 MiB；附带的 Cloudflare Worker 会将存储分片合成为原文件响应。
-59 个已导入资源场景分别使用自己的原版寻路网格。地图范围已按原版 LevelAsset 核验：本体 36 张、DLC 21 张，另有教程和重复 Toaster 构建条目；详情见 `MAP_SCOPE.md`。运行时障碍重扫已接入；传送门连接仍待完成。
+当前固定依赖为 `boomerang-fu-v0.5.1`，在线地址 https://boomerang-fu.arkevo.ai/releases/0.5.1/ 。
+交接包先读 `HANDOFF.md`，接口范围见 `INTEGRATION.md`。开发继续在 `boomerang-fu-dev`。
+原 `0.5.0` tag 保留不动。以下为功能分阶段记录，历史证据只证明当时对应的构建。
 
 普通 MovingFloor 已接入 Split、Drift、Tracks、Spin、Donut、Four Cogs、Raft Crusher。
 角色和落地回旋镖随平台移动，退出接触后解除附着，回合重置恢复初始轨迹。

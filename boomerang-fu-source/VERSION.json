@@ -1,17 +1,18 @@
 {
   "name": "boomerang-fu-web",
   "version": "0.5.1",
-  "generated_at": "2026-10-28T06:35:57.146961+00:00",
+  "generated_at": "2026-10-28T06:59:16.823749+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 3284,
-  "source_bytes": 314482940,
+  "source_files": 3252,
+  "source_bytes": 301918387,
   "manifest_excludes": [
     "VERSION.json"
   ],
   "stable_dependency": {
-    "tag": "boomerang-fu-v0.5.0",
-    "commit": "ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1"
+    "tag": "boomerang-fu-v0.5.1",
+    "url": "https://boomerang-fu.arkevo.ai/releases/0.5.1/",
+    "contract": "INTEGRATION.md"
   },
   "development_branch": "boomerang-fu-dev",
   "development_archive": {
@@ -22,23 +23,30 @@
   },
   "full_game_parity_verified": false,
   "limitations": [
-    "Original-game frame/pixel/PCM parity remains unproven.",
-    "Map selection and rotation remain base 36/31, base+DLC 57/52 at 2-4/5-6 players. Tutorial flow and DLC ownership checks are unfinished.",
-    "219 material-input records and 182 texture slots are bound; not all shader families are implemented.",
-    "Water depth/vignette and day lighting pass 168 controlled native GPU/WebGL pixel samples with maximum error below 1/255. Source water visibility is preserved. Reflections, fog, seasonal/night lighting and full scene rendering remain unfinished.",
-    "73 runtime suites pass. Teleportals, full callback/random ordering, floor particles and complete visual/audio effects remain unfinished.",
-    "Stable static directory and boomerang-fu-v0.5.0 dependency remain unchanged."
+    "Teleportals, full visuals/audio and original UI remain incomplete.",
+    "Initial asset download can take several minutes.",
+    "No network multiplayer, control/score postMessage API, deterministic replay or native parity guarantee."
   ],
   "files": [
     {
+      "path": ".gitignore",
+      "bytes": 132,
+      "sha256": "a819611773d903a48408bb89502779e830e49102c386e158aeb0e4bc246a6599"
+    },
+    {
       "path": "DEVELOPMENT.md",
-      "bytes": 11220,
-      "sha256": "3d5ae7d08bc6d55c08c22490a24da4adbc7f6da9875da5b2515ea8f30e21bc61"
+      "bytes": 10488,
+      "sha256": "d2ab5da551590342235e64d9a6e545a9716619936f0f3e4eae41eb620c0ccd0f"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 4978,
+      "sha256": "e7030486d2ce5fa9505b1793b7b9d50bec1757fc2c4e70287a37c9f5126b3356"
     },
     {
       "path": "INTEGRATION.md",
-      "bytes": 4266,
-      "sha256": "64bdb0632730806132070d1c85fc7e196306297211e9ab23aa7df5acedadf898"
+      "bytes": 4447,
+      "sha256": "867f6a0d4f4ad7add214511bb41c9465d62ff7c92b909b34d52daa7cfcad9eb1"
     },
     {
       "path": "MAP_SCOPE.md",
@@ -47,8 +55,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 37211,
-      "sha256": "74aa9a436e832b88be6ba6a65c2e8a5a7c3d136e4d12442c585d4a7abb888ad3"
+      "bytes": 36711,
+      "sha256": "338c30f77436f18603254e5751c5b486b4ae41d611e7eba45066ac42ba10511b"
     },
     {
       "path": "WATER_RESTORATION.md",
@@ -62,8 +70,8 @@
     },
     {
       "path": "deploy/cloudflare/README.md",
-      "bytes": 4092,
-      "sha256": "68244f480eefd5e0320a528ee54ba8484302087752437fc53c95416ade645b04"
+      "bytes": 4726,
+      "sha256": "72a0c18b3db92e36c4dd8d01ebb5de5597c9db56f38667a3cd3479cc3a3bbb5c"
     },
     {
       "path": "deploy/cloudflare/cloudflare.config.ts",
@@ -107,8 +115,8 @@
     },
     {
       "path": "deploy/cloudflare/test/hosting.test.mjs",
-      "bytes": 6858,
-      "sha256": "49ccb5f7aa7645c40dd5de28250e38d1ba7d10cc723cfa0385eb1b6ec4554568"
+      "bytes": 7570,
+      "sha256": "03b786295b7152b8ff4f0ce87d719d74979101c771262529e64e16b0b2c3ce36"
     },
     {
       "path": "evidence/arkevo-deployment-check.json",
@@ -1642,8 +1650,8 @@
     },
     {
       "path": "evidence/progress.json",
-      "bytes": 129638,
-      "sha256": "5323f446df67ab1d3c278066c923eb97687602d03e2ac08695c510bd809f1c83"
+      "bytes": 131159,
+      "sha256": "576a9c3c8f884738586487b40e1e2d2fd11f4e6a5d52e68041138b5b46dfc7f8"
     },
     {
       "path": "evidence/public-deploy-check.json",
@@ -1726,6 +1734,51 @@
       "sha256": "8e300d8af928dce170330d6554afa1f2191091aafb1c117f765a4953b248fa1f"
     },
     {
+      "path": "evidence/stable-0.5.1-deployment.json",
+      "bytes": 1126,
+      "sha256": "4ae61de760c0c5e639aafb75036c44587da4591183a2e5a32c978d7d0c27c98e"
+    },
+    {
+      "path": "evidence/stable-0.5.1-hosting-check.json",
+      "bytes": 1045,
+      "sha256": "5358f60662e71ceda42c3092a8ffa4704bbee9ca67f03612f195b664e9417e37"
+    },
+    {
+      "path": "evidence/stable-0.5.1-iframe-browser.json",
+      "bytes": 28146,
+      "sha256": "2058cd62441d22302f9a9d609e62a4cd9686b3d02a7ae93dbd600cf62c623778"
+    },
+    {
+      "path": "evidence/stable-0.5.1-iframe-lobby.png",
+      "bytes": 61736,
+      "sha256": "6451419853802eb6398f2ca6ec75c277725b390a45187e31e570f901ca5db2d0"
+    },
+    {
+      "path": "evidence/stable-0.5.1-iframe-round.png",
+      "bytes": 36959,
+      "sha256": "5272f8d86b2d9bccf210fdd1d3d66f2cb90b338191782795ae4eb2a93ad689e8"
+    },
+    {
+      "path": "evidence/stable-0.5.1-live-browser.json",
+      "bytes": 16236,
+      "sha256": "e6f3c2c515049a1779978030c186b8a2c1e382c754a36f6eb4481e1b4b5ef161"
+    },
+    {
+      "path": "evidence/stable-0.5.1-live-play.png",
+      "bytes": 122018,
+      "sha256": "332247622c158db7099013ad885c09b80acc3b8903e41f18b059688368fe8955"
+    },
+    {
+      "path": "evidence/stable-0.5.1-live-round.png",
+      "bytes": 43695,
+      "sha256": "b63e1f64e06085384a964b2e70ed512fd21d27b577f6e1adbab5bead730235ff"
+    },
+    {
+      "path": "evidence/stable-0.5.1-loader-check.json",
+      "bytes": 931,
+      "sha256": "20c42492d97c453afd4258db6ed10bda4f8ea891c119cb67099bf4248f70522d"
+    },
+    {
       "path": "evidence/stable-0.5.1-local-browser.json",
       "bytes": 15233,
       "sha256": "cc3c26413446259b75afc877804b2432f3673505e9cbef03ad17310d112aa4b4"
@@ -1734,6 +1787,26 @@
       "path": "evidence/stable-0.5.1-package.json",
       "bytes": 330,
       "sha256": "d68cf43e7e3ade4725930a9913d5c484ef420d619ab6c57a687ed93cd0dc8de7"
+    },
+    {
+      "path": "evidence/stable-0.5.1-portable-browser.json",
+      "bytes": 17180,
+      "sha256": "092b5828ec65ce8565d0b0d7a4d77cfc29e9a5ffc636ea4c8d44f4b913e24b05"
+    },
+    {
+      "path": "evidence/stable-0.5.1-portable-rebuild.json",
+      "bytes": 2629,
+      "sha256": "de033c2935731541296fad1a004dc461cf165ee662c23bdc65cbfaea2a28c24b"
+    },
+    {
+      "path": "evidence/stable-0.5.1-portable-round.png",
+      "bytes": 45056,
+      "sha256": "513d0f32979a0f306fc2a1ad04e75cb3831f50ffce687c906d946f381c47d186"
+    },
+    {
+      "path": "evidence/stable-0.5.1-restore-check.json",
+      "bytes": 491,
+      "sha256": "782ff04662075ed542cdd62dbebc055c25bfe361f3d36853355b96f3a4574459"
     },
     {
       "path": "evidence/water-bigraft-play.png",
@@ -15801,176 +15874,6 @@
       "sha256": "0aed281ce397635d2e8a22560dd55168ae30bbadda760f4f0ee555366e6d6beb"
     },
     {
-      "path": "recovered-source/bin/Debug/netstandard2.1/Assembly-CSharp-firstpass.dll",
-      "bytes": 1115136,
-      "sha256": "a7e370ae41f2c07262c59e64ffeead69cdef144898ae2c8453348f2b5440a13e"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/Assembly-CSharp.deps.json",
-      "bytes": 12084,
-      "sha256": "35b121eed4743a4e531fc67df268ff8a9fb2bd89e70955a5b252d4bc15b43a74"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/Assembly-CSharp.dll",
-      "bytes": 1177600,
-      "sha256": "c21cba7c0bf7f6c37f0c2a672a0d64a55df0076925991ac540a5b3d616d26418"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/Assembly-CSharp.pdb",
-      "bytes": 556708,
-      "sha256": "7322b139b935e0f51880299905e5f4cf675cffa6bbe90da2a9bcbd6debe436fa"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/AstarPathfindingProject.dll",
-      "bytes": 538624,
-      "sha256": "d90702eff0b4215851717bbb143b9a671e2f8719d65b22fb9dc571f83f1f6a5d"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/DOTween.dll",
-      "bytes": 155648,
-      "sha256": "c55e6fdcbe430cb8dd71fd44a368bc8246c132a2f050015986f1aba054f0b436"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/FMODUnity.dll",
-      "bytes": 210432,
-      "sha256": "1cc8067960f256bcedbcbff7a70673b9bffb2c4a622e7de13310ea545f630f30"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/KdTreeLib.dll",
-      "bytes": 18944,
-      "sha256": "5d8a6cb6a74cc7249d98a2380f17befe1dd108f8919b8e690cbf2ca4d03a50cb"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/Pathfinding.ClipperLib.dll",
-      "bytes": 58880,
-      "sha256": "4651eba68167202db81c212f445e23a2742560d70b605c0b367ad26a4d8dc1b3"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/Pathfinding.Ionic.Zip.Reduced.dll",
-      "bytes": 240640,
-      "sha256": "481cc0f9a53a9ba94f8ea3fc0fb2a520b41812c2fdc6ab10581751eada743d34"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/Pathfinding.Poly2Tri.dll",
-      "bytes": 36352,
-      "sha256": "6d37c20001d050b2bfd5071d64ee19f7fd7415e021e8122f1e9070613e4d570b"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/Poly2Tri.dll",
-      "bytes": 34816,
-      "sha256": "b55024573f3498d3a90fac18b4868c66eee2849536905c1dc18228ccf7bdfe4f"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/ProBuilderCore-Unity5.dll",
-      "bytes": 246272,
-      "sha256": "dba980f3eb2fb0e186eb9c3395df7db21686eb2b13f0350b14b61cec50f0aaef"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/ProBuilderMeshOps-Unity5.dll",
-      "bytes": 95744,
-      "sha256": "fe0781f61dd4bb37239092d4b3ff14deaa3bb450097a5baf533adef2e41d0806"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/Rewired_Core.dll",
-      "bytes": 2030592,
-      "sha256": "b235da3db779cec9c2478b071c7678b9acdfe62b20fe331f8a1aa6185bbea1b7"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/Rewired_Windows.dll",
-      "bytes": 1323008,
-      "sha256": "5255c2f09ea78f5210562bddf466cc5248b3b3bb7d15fd4bdfdda682b35bc350"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/Unity.TextMeshPro.dll",
-      "bytes": 380416,
-      "sha256": "3d66310ed20a14ce89ab521c4124600febe666b6dd3b40b61b4f72e61fddde12"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.AnimationModule.dll",
-      "bytes": 164272,
-      "sha256": "a3a74a5bc04bb9e5038a6fbf5bd09322df2565059f0ac269cb2bd7155d2f66d2"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.AssetBundleModule.dll",
-      "bytes": 33200,
-      "sha256": "44a78ecfbbb79eac4b9220d1f11f831662bd0616317ee997680065f48dd9ffa7"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.AudioModule.dll",
-      "bytes": 71592,
-      "sha256": "bc58f16249320022780ea78e757773b8311aea4f5b966c6602c8149794026e54"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.CoreModule.dll",
-      "bytes": 1393584,
-      "sha256": "5afc743d350e95dc30379a6d2bafa2293b63259acf196fe3f7370f03644ef6f4"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.IMGUIModule.dll",
-      "bytes": 191400,
-      "sha256": "b9720d33d0709863fcc8b10a4f327e3bbf082486e4b544917393f7ac8a78e460"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.InputLegacyModule.dll",
-      "bytes": 39336,
-      "sha256": "be0fa03c0bd24c778b4cc6e49c26e9302a4af649e391ee34b379aaaefd826317"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.JSONSerializeModule.dll",
-      "bytes": 22440,
-      "sha256": "0418491b85b6498558cc1d42d37a8b5d6cc1a5b4d57f51dbda2c257f315fd5f8"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.ParticleSystemModule.dll",
-      "bytes": 161704,
-      "sha256": "c4638591082025e644aaecf7347061925fd4323fab3d6465cc4bca0d50346900"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.Physics2DModule.dll",
-      "bytes": 141744,
-      "sha256": "8af04f4acf34735b8682d21b40f549da67079fc0f794c41e9f2e5cbb5b6304c5"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.PhysicsModule.dll",
-      "bytes": 138664,
-      "sha256": "c6b1ca3c3f4352ea6069726ec4b2c54e5ad637ccc891729299b03d2b398312be"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.ScreenCaptureModule.dll",
-      "bytes": 21424,
-      "sha256": "d341c378adc589d1b889f5e16bc4b8a661d94da11747f8066762776f97eb0123"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.TextRenderingModule.dll",
-      "bytes": 39344,
-      "sha256": "a829aae9dc1953efb38e2102284a30a9a8c05891aa4dc6afabbf3a4abef6af1c"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.UI.dll",
-      "bytes": 264192,
-      "sha256": "d9e933331968a8238a3e44d312a2b444eb8e81a5c221a62f754fb84aec48b140"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.UIModule.dll",
-      "bytes": 36784,
-      "sha256": "cb320e62d957cf297a643ccd917ee78aa8f8c039fbf032805a9878e6d7acef61"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.UnityWebRequestModule.dll",
-      "bytes": 58792,
-      "sha256": "6602c84b1d2b649847a070333c1169c091bc4d6cd0e2bd23cd3f95dfdaa8971c"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.VideoModule.dll",
-      "bytes": 41384,
-      "sha256": "df8ea5c97000ea356477450754d2ba4500987df8be07e81b41dd3c8bf8c2c0d7"
-    },
-    {
-      "path": "recovered-source/bin/Debug/netstandard2.1/UnityEngine.dll",
-      "bytes": 126896,
-      "sha256": "25f9d67576954ee1bac500c38e3ec07fadccf7e3e29774d2043d614a8af953be"
-    },
-    {
       "path": "recovered-source/cameraAspectFix.cs",
       "bytes": 742,
       "sha256": "6a67d691eb32f857b046b27d052f32d6559637d9043626819b4ea64e55e9b44b"
@@ -15979,76 +15882,6 @@
       "path": "recovered-source/destroyMe.cs",
       "bytes": 275,
       "sha256": "4ab92453acd8c11ae952dab673aeb685ffd76b8633c114e46ce5eb9ea121b696"
-    },
-    {
-      "path": "recovered-source/obj/Assembly-CSharp.csproj.nuget.dgspec.json",
-      "bytes": 2602,
-      "sha256": "599b9035f98e3444e70d49acfc0590cd0bf4b6e5dc6074d53ceaf43a37e35f4e"
-    },
-    {
-      "path": "recovered-source/obj/Assembly-CSharp.csproj.nuget.g.props",
-      "bytes": 1124,
-      "sha256": "7f33ad5cd8ae4ee864db80aa94d0ea78ba554591d8a7eb9e8a0e434b3ef1ff03"
-    },
-    {
-      "path": "recovered-source/obj/Assembly-CSharp.csproj.nuget.g.targets",
-      "bytes": 149,
-      "sha256": "b14461e0cb1be3f77fcf9fe2fdd62889325ca92523d0f606980ed59eb5c4aa1c"
-    },
-    {
-      "path": "recovered-source/obj/Debug/netstandard2.1/.NETStandard,Version=v2.1.AssemblyAttributes.cs",
-      "bytes": 204,
-      "sha256": "df351ab8cda38d16370d8aa74d934a81faf0e44ecc9a079bb1c5cc7a1f1575af"
-    },
-    {
-      "path": "recovered-source/obj/Debug/netstandard2.1/Assembly-CSharp.GeneratedMSBuildEditorConfig.editorconfig",
-      "bytes": 434,
-      "sha256": "9bc53244e97490f7410500363420d77dea119393e3c2d8cbaacb5182dc29f358"
-    },
-    {
-      "path": "recovered-source/obj/Debug/netstandard2.1/Assembly-CSharp.assets.cache",
-      "bytes": 153,
-      "sha256": "290a7dccfa8bd6a7265a1bd58b75d3e74d2ca82a97cec2ede04c1b985670485c"
-    },
-    {
-      "path": "recovered-source/obj/Debug/netstandard2.1/Assembly-CSharp.csproj.AssemblyReference.cache",
-      "bytes": 25197,
-      "sha256": "9038c9f93ea0bcf59e2595fa8acecadd1150db8480bb81c2bed13a9573a483fc"
-    },
-    {
-      "path": "recovered-source/obj/Debug/netstandard2.1/Assembly-CSharp.csproj.CoreCompileInputs.cache",
-      "bytes": 65,
-      "sha256": "025bd2f72d5125f5284a1e02bf625d09b4aa79bd6d9de18a7e51b4ea2cb0826c"
-    },
-    {
-      "path": "recovered-source/obj/Debug/netstandard2.1/Assembly-CSharp.csproj.FileListAbsolute.txt",
-      "bytes": 6031,
-      "sha256": "1fa9449351597e56ad109a1ce44cf446bfebac3e8c450e0c28df3978119640b0"
-    },
-    {
-      "path": "recovered-source/obj/Debug/netstandard2.1/Assembly-CSharp.dll",
-      "bytes": 1177600,
-      "sha256": "c21cba7c0bf7f6c37f0c2a672a0d64a55df0076925991ac540a5b3d616d26418"
-    },
-    {
-      "path": "recovered-source/obj/Debug/netstandard2.1/Assembly-CSharp.pdb",
-      "bytes": 556708,
-      "sha256": "7322b139b935e0f51880299905e5f4cf675cffa6bbe90da2a9bcbd6debe436fa"
-    },
-    {
-      "path": "recovered-source/obj/Debug/netstandard2.1/Assembly.44154EF1.Up2Date",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "path": "recovered-source/obj/project.assets.json",
-      "bytes": 2382,
-      "sha256": "f493cb5e3fb17fb52043c7bcace9d7c7d4a778aa0807d72d7e64e1068cffa9b1"
-    },
-    {
-      "path": "recovered-source/obj/project.nuget.cache",
-      "bytes": 372,
-      "sha256": "7e1636f8dec525c0162948e711efe5f444fa8fe0836be15a49df0d39a69147d3"
     },
     {
       "path": "recovered-source/particleColorChangerMaster.cs",
@@ -16064,6 +15897,11 @@
       "path": "recovered-source/vertex.cs",
       "bytes": 116,
       "sha256": "2d525ba16027cd0efad75999a0e487fa2737f0c33d2347e576a8d263bbf09a46"
+    },
+    {
+      "path": "tools/build_web.py",
+      "bytes": 2942,
+      "sha256": "314aebc6e0d627186224860840f545bfcdc4761c62afdaf4c49b89e9e0798148"
     },
     {
       "path": "tools/disc-motion-native/JsonSerializer.cs",
@@ -16452,40 +16290,74 @@
     }
   ],
   "deployment": {
-    "url": "https://boomerang-fu.arkevo.ai",
-    "version": "0.5.1-dev.1",
-    "worker_version": "c62533da-78ed-4095-aa44-57b9968e5c57",
+    "passed": true,
+    "version": "0.5.1",
+    "channel": "stable",
+    "url": "https://boomerang-fu.arkevo.ai/releases/0.5.1/",
+    "preview_url": "https://boomerang-fu.arkevo.ai/",
     "worker": "arkevo-boomerang-fu",
-    "account_id": "c0e2717206e00c30b9dcd1d456d744fc",
-    "version_endpoint": "https://boomerang-fu.arkevo.ai/version.json"
+    "worker_version": "edded417-dc4e-44df-9960-f767fbaa9f5c",
+    "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
+    "game_source_commit": "556e5a18f314253a8b022deed6e23eee6faa79f5",
+    "release_source_commit": "3aa1fb52ff7696e72a268a8c0d38330a7a8b7352",
+    "checked_at": "2026-10-28T06:59:16.823749+00:00",
+    "checks": {
+      "runtime_suites": 73,
+      "native_gpu_water_samples": 168,
+      "loader_fault_tests": 5,
+      "workerd_current_files": 16,
+      "workerd_frozen_files": 16,
+      "live_version_manifest_files": 16,
+      "live_island_round": true,
+      "cross_origin_iframe_round": true,
+      "browser_errors": 0
+    },
+    "full_game_parity_verified": false,
+    "limits": [
+      "Teleportals, full visuals/audio and original UI remain incomplete.",
+      "Initial asset download can take several minutes.",
+      "No network multiplayer, control/score postMessage API, deterministic replay or native parity guarantee."
+    ]
   },
   "company_development_deployment": {
     "passed": true,
-    "version": "0.5.1-dev.7",
-    "url": "https://boomerang-fu.arkevo.ai/",
+    "version": "0.5.1",
+    "channel": "stable",
+    "url": "https://boomerang-fu.arkevo.ai/releases/0.5.1/",
+    "preview_url": "https://boomerang-fu.arkevo.ai/",
     "worker": "arkevo-boomerang-fu",
-    "worker_version": "3e9c8f5e-b8bb-45e4-a930-9c1843b18d14",
+    "worker_version": "edded417-dc4e-44df-9960-f767fbaa9f5c",
     "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
-    "source_commit": "8979323345f21b9d394abc502ed172071e48bc4b",
-    "checked_at": "2026-10-28T05:00:24.227219+00:00",
+    "game_source_commit": "556e5a18f314253a8b022deed6e23eee6faa79f5",
+    "release_source_commit": "3aa1fb52ff7696e72a268a8c0d38330a7a8b7352",
+    "checked_at": "2026-10-28T06:59:16.823749+00:00",
     "checks": {
-      "all_16_files_match": true,
-      "live_scene_loaded": true,
-      "live_base_playlist": true,
-      "no_browser_errors": true,
-      "runtime_suites": 66,
-      "playlist_cases": 304,
-      "playlist_comparisons": 53916,
-      "scene_transition_checks": 41,
-      "regular_ffa_maps": 57,
-      "base_ffa_maps": 36,
-      "dlc_ffa_maps": 21
+      "runtime_suites": 73,
+      "native_gpu_water_samples": 168,
+      "loader_fault_tests": 5,
+      "workerd_current_files": 16,
+      "workerd_frozen_files": 16,
+      "live_version_manifest_files": 16,
+      "live_island_round": true,
+      "cross_origin_iframe_round": true,
+      "browser_errors": 0
     },
-    "full_game_parity_verified": false
+    "full_game_parity_verified": false,
+    "limits": [
+      "Teleportals, full visuals/audio and original UI remain incomplete.",
+      "Initial asset download can take several minutes.",
+      "No network multiplayer, control/score postMessage API, deterministic replay or native parity guarantee."
+    ]
   },
-  "channel": "release-candidate",
-  "candidate_dependency": {
-    "tag": "boomerang-fu-v0.5.1",
-    "url": "https://boomerang-fu.arkevo.ai/releases/0.5.1/"
+  "channel": "stable",
+  "previous_stable_dependency": {
+    "tag": "boomerang-fu-v0.5.0",
+    "commit": "ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1"
+  },
+  "stable_archive": {
+    "name": "web-stable-0.5.1.zip",
+    "bytes": 93730203,
+    "sha256": "42e176f79cbeec903c50ad3553bf28e8d7b0682762823277e27e9cb9463175d6",
+    "url": "https://raw.githubusercontent.com/xiongjjlj/xiongjjlj.github.io/boomerang-fu-v0.5.1/boomerang-fu-releases/0.5.1/web.zip"
   }
 }

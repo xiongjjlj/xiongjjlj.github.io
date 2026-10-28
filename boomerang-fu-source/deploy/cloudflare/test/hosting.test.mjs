@@ -101,3 +101,15 @@ test('production Worker streams the complete verified export in workerd', { time
     throw error;
   } finally { await runtime.dispose(); }
 });
+
+test('a later preview version cannot change the frozen release metadata', async () => {
+  const { serve } = await import('../src/serve.mjs');
+  const next = { ...manifest, version: 'future-development', files: {} };
+  const current = await serve(new Request('https://example.test/version.json'), {}, {}, next);
+  assert.equal((await current.json()).version, 'future-development');
+  const frozen = await serve(new Request('https://example.test/releases/0.5.1/version.json'), {}, {}, next);
+  const info = await frozen.json();
+  assert.equal(info.version, '0.5.1');
+  assert.equal(info.immutable, true);
+  assert.equal(info.files['/index.pck'].sha256, manifest.releases['0.5.1'].files['/index.pck'].sha256);
+});

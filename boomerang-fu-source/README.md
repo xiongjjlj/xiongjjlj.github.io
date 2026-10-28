@@ -1,15 +1,14 @@
 # Boomerang Fu Godot 浏览器移植工程
 
-目标：在浏览器本地运行、可自行托管的 Boomerang Fu 自由击杀模式；按原版验证游戏逻辑、地图、角色、动画、视效、音频和输入行为。目标仍是用户要求的完整还原。按用户 2026-10-27 的要求改用 Godot。当前 Web 构建可进行 2–6 人混合真人/机器人对战：移动、冲刺、投掷、蓄力、返回、近战、出招位移、基础弹反、死亡、计分与回合流程已接通。空手缴械、掉镖与飞镖互撞也已接入。道具和完整视听表现仍不完整，没有达到逐帧一致。
+当前可依赖版本为 **0.5.1 集成稳定版**：[固定在线入口](https://boomerang-fu.arkevo.ai/releases/0.5.1/) · [源码 tag](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.1/boomerang-fu-source) · [自托管 ZIP](https://github.com/xiongjjlj/xiongjjlj.github.io/blob/boomerang-fu-v0.5.1/boomerang-fu-releases/0.5.1/web.zip) · [接入契约](INTEGRATION.md)。固定地址与 tag 不随后续开发更新；开发继续在 `boomerang-fu-dev`，公司预览根路径可以更新。
 
+**稳定指文件、版本和接入范围冻结，不代表已完成原作还原。** 可用于网页嵌入、启动器接入及固定源码并行开发。尚无联网对战、远程控制/比分 postMessage API 或确定性重放保证；传送门、原菜单、反射/雾、其他 Shader、完整音视频和原生回调时序仍有缺口。
 
-在线试玩：[feixiong.me/boomerang-fu](https://feixiong.me/boomerang-fu/)。已实测公开地址加载、双人操作、音频及暂停恢复。当前为未完成还原的开发版本。
+0.5.1 保留 `.8` 的游戏二进制：2–6 个本地真人/机器人，战斗、计分、暂停、重赛和跨回合换图已接入。本体地图 2–4 人 36 张、5–6 人 31 张；选 Base + DLC 后为 57/52 张。教程及重复 Toaster 不计入常规地图。接入原版水面和各地图日间光照，73 项运行时套件与 168 个受控原引擎/WebGL 像素样本通过；不等于全部地图或逐帧一致。
 
-稳定依赖点已发布到 GitHub：[源码快照 `boomerang-fu-v0.5.0`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu-source)，该稳定版本固定在提交 `ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1`；[可继续开发的 `boomerang-fu-dev` 分支](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-dev)从同一版本开始。发布网页文件位于同一 tag 的 [`boomerang-fu/`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu)。依赖项目可固定 tag，地图和视觉补全继续在 dev 分支推进。
+已验证本地构建、公网 Island 开局与回合结算，以及跨站 iframe 实际运行和结算，无新增控制台错误。修复导出加载器在网络中断后静默卡住的问题：最多 4 次尝试，30 秒无数据或单次 300 秒终止，最终失败提示重新加载。首屏资源仍较大，首次下载可能需要数分钟。完整证据见 `evidence/stable-0.5.1-deployment.json`。
 
-`0.5.1-dev.7` 已部署到 [公司预览](https://boomerang-fu.arkevo.ai/)（实际版本以 `/version.json` 为准）：默认仅本体地图，2–4 人 36 张、5–6 人 31 张；可选 Base + DLC 后为 57/52 张。已接入原版选图和跨回合轮换，保留比分、道具及玩家设置，重赛清零。304 组原版方法对照、53,916 项比较无差异；实际换图 41 项检查、66 项运行时回归及浏览器验证通过。教学流程、原菜单呈现和完整场景时序仍未完成，详见 `MAP_SCOPE.md` 和 `DEVELOPMENT.md`。
-
-开发分支当前源码为 `0.5.1-dev.8`：补齐 219 条材质输入记录，接入原版水面 Shader 与各地图日间光照；168 个原引擎/WebGL 受控像素样本最大误差约 0.00295，小于一个 8 位色阶。73 项运行时检查通过，保留原资源中水面的启用/关闭状态。公司线上版本以 `/version.json` 为准；反射、雾效和其他 Shader 类型仍待完成，详见 `WATER_RESTORATION.md`。
+旧版 `boomerang-fu-v0.5.0` 及其提交 `ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1` 保留不变。下面为分阶段历史记录，最新接入方式以 `INTEGRATION.md` 为准。
 
 `0.5.1-dev.6` 已接入塌陷与踩踏地板的预警、下沉、恢复、导航标签/重扫及回合重置。浏览器实测范围与剩余呈现缺口见 `evidence/floor-hazards-browser-check.json`。59 是资源场景数，包含教程和重复 Toaster 条目，不是常规地图数量。
 

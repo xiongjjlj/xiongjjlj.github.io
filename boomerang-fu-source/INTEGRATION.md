@@ -53,6 +53,9 @@ Local 2–6 keyboard/gamepad/bot slots, combat, scoring, pause, rematch and map
 rotation are integrated. The release reuses the unchanged `.8` game binary:
 73 runtime suites passed, and water lighting passed 168 controlled native/WebGL
 pixel samples. These tests do not prove every map feature or input device.
+A public cold load in the validation environment took 454 seconds; this is
+an observed sample, not a performance guarantee. The large initial download
+remains a release limitation.
 Desktop Chromium is validated; mobile, Safari and gamepad hardware diversity
 are not release-certified.
 

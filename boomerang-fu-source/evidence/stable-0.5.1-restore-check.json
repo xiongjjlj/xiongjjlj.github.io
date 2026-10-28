@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "files": 16,
+  "scope": "Unmodified release-restore script tested with same archive bytes served by localhost; tag download URL is checked separately. Archive hash and every extracted file matched the frozen lock. Temporary cache removed.",
+  "script_sha256": "e83f460c18f3110612a8254a67817c427c2ef6ccd134e4795bb49304b73cbacf",
+  "archive_sha256": "42e176f79cbeec903c50ad3553bf28e8d7b0682762823277e27e9cb9463175d6",
+  "checked_at": "2026-10-28T06:48:08.158049+00:00"
+}

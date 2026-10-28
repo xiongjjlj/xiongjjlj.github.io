@@ -50,11 +50,11 @@
     "native_dxbc_disassembled": true,
     "partial_map_shader_webgl_verified": true
   },
-  "updated_at": "2026-10-28T05:00:24.227219+00:00",
+  "updated_at": "2026-10-28T06:59:16.823749+00:00",
   "implementation_engine": "Godot 4.7.2",
   "browser_language": "GDScript",
   "browser_development_preview": true,
-  "current_work": "0.5.1-dev.7 deployed on arkevo.ai: original FFA map selection/rotation, base 36/31 and base+DLC 57/52 maps for 2-4/5-6 players. 304 original Mono method cases and 53916 comparisons match, 41 scene-transition checks and 66 runtime suites pass. Scores, powers, controller choices and related RNG state survive map changes. Tutorial flow, menu transitions, teleportals and full visual/audio/scheduling fidelity remain unfinished.",
+  "current_work": "0.5.1 frozen integration baseline released on arkevo.ai, with pinned Git tag/source/archive. Water .8 game binary unchanged; loader bounded retries and frozen release hosting added. Desktop browser gameplay and cross-origin iframe round validated. Reconstruction continues on dev; teleportals and full audiovisual/native parity remain unfinished.",
   "godot_scene_preview": {
     "scene": "LevelEnclosed",
     "nodes": 548,
@@ -3743,27 +3743,33 @@
   },
   "company_development_deployment": {
     "passed": true,
-    "version": "0.5.1-dev.7",
-    "url": "https://boomerang-fu.arkevo.ai/",
+    "version": "0.5.1",
+    "channel": "stable",
+    "url": "https://boomerang-fu.arkevo.ai/releases/0.5.1/",
+    "preview_url": "https://boomerang-fu.arkevo.ai/",
     "worker": "arkevo-boomerang-fu",
-    "worker_version": "3e9c8f5e-b8bb-45e4-a930-9c1843b18d14",
+    "worker_version": "edded417-dc4e-44df-9960-f767fbaa9f5c",
     "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
-    "source_commit": "8979323345f21b9d394abc502ed172071e48bc4b",
-    "checked_at": "2026-10-28T05:00:24.227219+00:00",
+    "game_source_commit": "556e5a18f314253a8b022deed6e23eee6faa79f5",
+    "release_source_commit": "3aa1fb52ff7696e72a268a8c0d38330a7a8b7352",
+    "checked_at": "2026-10-28T06:59:16.823749+00:00",
     "checks": {
-      "all_16_files_match": true,
-      "live_scene_loaded": true,
-      "live_base_playlist": true,
-      "no_browser_errors": true,
-      "runtime_suites": 66,
-      "playlist_cases": 304,
-      "playlist_comparisons": 53916,
-      "scene_transition_checks": 41,
-      "regular_ffa_maps": 57,
-      "base_ffa_maps": 36,
-      "dlc_ffa_maps": 21
+      "runtime_suites": 73,
+      "native_gpu_water_samples": 168,
+      "loader_fault_tests": 5,
+      "workerd_current_files": 16,
+      "workerd_frozen_files": 16,
+      "live_version_manifest_files": 16,
+      "live_island_round": true,
+      "cross_origin_iframe_round": true,
+      "browser_errors": 0
     },
-    "full_game_parity_verified": false
+    "full_game_parity_verified": false,
+    "limits": [
+      "Teleportals, full visuals/audio and original UI remain incomplete.",
+      "Initial asset download can take several minutes.",
+      "No network multiplayer, control/score postMessage API, deterministic replay or native parity guarantee."
+    ]
   },
   "navigation_restoration": {
     "passed": true,
@@ -3831,5 +3837,35 @@
       "round_resets": 0,
       "scope": "Full Godot game loop with two bots and a rotating reactive maze; native whole-frame parity remains unproven."
     }
+  },
+  "stable_release": {
+    "passed": true,
+    "version": "0.5.1",
+    "channel": "stable",
+    "url": "https://boomerang-fu.arkevo.ai/releases/0.5.1/",
+    "preview_url": "https://boomerang-fu.arkevo.ai/",
+    "worker": "arkevo-boomerang-fu",
+    "worker_version": "edded417-dc4e-44df-9960-f767fbaa9f5c",
+    "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
+    "game_source_commit": "556e5a18f314253a8b022deed6e23eee6faa79f5",
+    "release_source_commit": "3aa1fb52ff7696e72a268a8c0d38330a7a8b7352",
+    "checked_at": "2026-10-28T06:59:16.823749+00:00",
+    "checks": {
+      "runtime_suites": 73,
+      "native_gpu_water_samples": 168,
+      "loader_fault_tests": 5,
+      "workerd_current_files": 16,
+      "workerd_frozen_files": 16,
+      "live_version_manifest_files": 16,
+      "live_island_round": true,
+      "cross_origin_iframe_round": true,
+      "browser_errors": 0
+    },
+    "full_game_parity_verified": false,
+    "limits": [
+      "Teleportals, full visuals/audio and original UI remain incomplete.",
+      "Initial asset download can take several minutes.",
+      "No network multiplayer, control/score postMessage API, deterministic replay or native parity guarantee."
+    ]
   }
 }

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-28T06:39:33.288103+00:00",
+  "version": "0.5.1",
+  "url": "https://boomerang-fu.arkevo.ai/releases/0.5.1/",
+  "version_manifest_matches_16_files": true,
+  "fresh_live_full_byte_checks": [
+    "index.js",
+    "index.html",
+    "README-hosting.txt"
+  ],
+  "unchanged_binary_evidence": [
+    "arkevo-water-compression-check.json",
+    "arkevo-water-https-check.json"
+  ],
+  "current_workerd_check": "16 current files and 16 versioned files streamed and hashed; gzip, ETag, immutable cache, redirect and CORS checked",
+  "public_browser_verified": true,
+  "preview_upgrade_isolation_test": true,
+  "test_log": "\n> test\n> node --test --test-concurrency=1 test/*.test.mjs\n\n\u2714 production Worker streams the complete verified export in workerd (1627.476583ms)\n\u2714 a later preview version cannot change the frozen release metadata (4.109417ms)\n\u2139 tests 2\n\u2139 suites 0\n\u2139 pass 2\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 1883.940833\n"
+}

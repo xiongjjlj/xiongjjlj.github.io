@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-28T06:58:25.945001+00:00",
+  "scope": "Clean isolated import/export from portable handoff directory using bundled single-thread Web template. Same original source presets retained; temporary copy adjusts template paths. Export and five loader tests pass. Browser proof is recorded separately.",
+  "build_tool_sha256": "314aebc6e0d627186224860840f545bfcdc4761c62afdaf4c49b89e9e0798148",
+  "files": {
+    "Godot-LICENSE.txt": {
+      "bytes": 1149,
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"
+    },
+    "README-hosting.txt": {
+      "bytes": 1180,
+      "sha256": "a0c1afebee66597c8ce4c0153db6b36ff1b8a74db844fbc657b52714b41ad9bd"
+    },
+    "audio/Master Bank.bank": {
+      "bytes": 34346400,
+      "sha256": "a3cc8b9c6b602d7e6aeda00fb9705e4df6f3d3b44bd1f95913923fb2233c52c2"
+    },
+    "audio/Master Bank.strings.bank": {
+      "bytes": 9110,
+      "sha256": "0abd3722cd7a43f160f9b5bb202dbbd657d9a491dedeb7dd43e56055939cc9ed"
+    },
+    "audio/NOTICE.txt": {
+      "bytes": 563,
+      "sha256": "f4833c4e9821033e749794cf12fc608fb3bf25d79c8390576561d361c64ae993"
+    },
+    "audio/fmodstudio.js": {
+      "bytes": 131434,
+      "sha256": "7497a63744b940b2d5c9ff494e5017bf991aee8dd26739edcf86e1954f6e93e9"
+    },
+    "audio/fmodstudio.wasm": {
+      "bytes": 2656574,
+      "sha256": "38007e3792e111b265af6c5499f8453c5e83809b13c200522b794efee8ad213e"
+    },
+    "audio/runtime.js": {
+      "bytes": 8860,
+      "sha256": "144f0fada740e14f154d620892c6c453495d8ac2206581450e70173e8f5e7f57"
+    },
+    "index.audio.position.worklet.js": {
+      "bytes": 2973,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+    },
+    "index.audio.worklet.js": {
+      "bytes": 7298,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+    },
+    "index.html": {
+      "bytes": 5398,
+      "sha256": "1ab480125ad607b572db3fb3a19d19889d5bd3a8ed9c03fbb1efb08807e72139"
+    },
+    "index.js": {
+      "bytes": 280629,
+      "sha256": "d53c040c92b2919e50c34d3c5ac4fc285521881bd1f2549b1cce37f142d26c3c"
+    },
+    "index.pck": {
+      "bytes": 152023300,
+      "sha256": "b3a0a25cebca171176522f8f094093e796a7fdc61cdb7a1dfacf8efbc82a1bf7"
+    },
+    "index.png": {
+      "bytes": 21443,
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
+    },
+    "index.wasm": {
+      "bytes": 39514754,
+      "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+    }
+  },
+  "browser_checked": true,
+  "browser_evidence": "stable-0.5.1-portable-browser.json"
+}

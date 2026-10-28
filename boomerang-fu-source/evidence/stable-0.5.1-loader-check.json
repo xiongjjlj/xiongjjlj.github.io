@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "tests": 5,
+  "scope": [
+    "PCK stream interrupted then succeeds",
+    "WASM stream interrupted then succeeds",
+    "four body failures reject",
+    "stalled body aborts four bounded attempts",
+    "HTTP/fetch errors dispose timers"
+  ],
+  "checked_at": "2026-10-28T06:38:06.525540+00:00",
+  "index_js_sha256": "d53c040c92b2919e50c34d3c5ac4fc285521881bd1f2549b1cce37f142d26c3c",
+  "test_log": "\u2714 interrupted PCK body retries and succeeds (15.6815ms)\n\u2714 interrupted WASM body retries and succeeds (2.371083ms)\n\u2714 repeated body failures reject after four attempts and stop progress (6.209417ms)\n\u2714 stalled body is aborted and retries remain bounded (45.880333ms)\n\u2714 HTTP and fetch rejection finish with no active timers (8.811334ms)\n\u2139 tests 5\n\u2139 suites 0\n\u2139 pass 5\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 82.038333\n"
+}
