@@ -92,9 +92,15 @@
       },
       "name": "Disc wall callback reaches the exact destructable collider",
       "passed": true
+    },
+    {
+      "details": {
+        "object_id": 41
+      },
+      "name": "Player melee polygon reaches destructable obstacles",
+      "passed": true
     }
   ],
   "passed": true,
-  "scope": "LevelSlideTraps serialized MovingObstacle/Switch/WobblyObstacle/DestructableObstacle/Debris3D sidecar, collider wall callbacks and source timing state machine.",
-  "generated_at": "2026-10-28T08:33:49+08:00"
+  "scope": "LevelSlideTraps serialized MovingObstacle/Switch sidecar, source timing state machine, projectile wall callbacks and player melee obstacle callbacks."
 }

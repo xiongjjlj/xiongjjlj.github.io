@@ -5,8 +5,8 @@
   "runtime": "Godot 4.7 Web",
   "default_scene": "LevelEnclosed",
   "optional_scene": "LevelSlideTraps (?map=slide)",
-  "source_files": 1229,
-  "source_bytes": 67573160,
+  "source_files": 1230,
+  "source_bytes": 67577994,
   "full_game_parity_verified": false,
   "limitations": [
     "This is a stable scoped FFA browser build, not a claim of full original-game parity.",
@@ -20,9 +20,14 @@
       "sha256": "9ce94c34f68d7391d8a81659a18e9c0b114c4d9b8467adb3851c2b990c03849c"
     },
     {
+      "path": "evidence/godot-audio-browser-repack-gate.json",
+      "bytes": 4143,
+      "sha256": "f35a0b25a0bc64b5104641511355c90a6914d18ca39c8e06971666bd51911171"
+    },
+    {
       "path": "evidence/godot-level3-behavior-check.json",
-      "bytes": 2497,
-      "sha256": "f0707fa29067d42ca1dd2f9577c3c51708d82177ad43d0c24388cfbd72ef362b"
+      "bytes": 2594,
+      "sha256": "bdf364fc6b677549d57e5a40bdfff09322cec1be5c1124f9245a0722c9f1edb8"
     },
     {
       "path": "evidence/godot-map-selector-check.json",
@@ -31,13 +36,13 @@
     },
     {
       "path": "evidence/godot-native-web-check.json",
-      "bytes": 33285,
-      "sha256": "e0faffa3a86cec6132268bb7aceb6ba58efe9fba18c42bbc3224b7fe8ab8c961"
+      "bytes": 33362,
+      "sha256": "e7d50727ec212f93e75b45dde91d9892596cc07d0d68467dbf261973344bd393"
     },
     {
       "path": "evidence/godot-regression-suite.json",
       "bytes": 11579,
-      "sha256": "b2e6e569632477ba1a1cb68e2b75cbb0e65231bf01856bdb1b7927e738739853"
+      "sha256": "49d47554dd4be5076ba265ddfe22e917ebd28e0d98bd8006bfd0117cbe476589"
     },
     {
       "path": "evidence/public-deploy-check.json",
@@ -46,8 +51,8 @@
     },
     {
       "path": "evidence/web-package-check.json",
-      "bytes": 1774,
-      "sha256": "660a5aeee40eef96863a1ee3a8cecf6bbc379d3099a9b8463401d4b13b54f5fe"
+      "bytes": 2111,
+      "sha256": "23d9d4f461c3c8b619d67aa53737bec13cd83c1c9c61a6408b28ae3b3bd0d099"
     },
     {
       "path": "godot/assets/characters/ActorFrozenBlock-idle.json",
@@ -6156,8 +6161,8 @@
     },
     {
       "path": "VERSION.json",
-      "bytes": 225649,
-      "sha256": "236b0501b05b1f3bc55f3dc2a944b3eb9983ad2cb3c733e95829f2cf3a90af39"
+      "bytes": 225829,
+      "sha256": "b4bdc5b8eea805afab282a8c6110644d06784ba86c34d09fe46be92363b837a0"
     }
   ]
 }

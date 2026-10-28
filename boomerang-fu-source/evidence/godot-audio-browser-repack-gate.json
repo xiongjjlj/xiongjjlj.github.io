@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-28T08:18:00+08:00",
+  "checks": {
+    "original_events_observed": true,
+    "actual_stereo_output_under_memory_limit": true,
+    "bounded_heap_128_mib": true,
+    "retrieve_and_control_loops_released": true,
+    "round_end_parameters_observed": true,
+    "final_muted": true,
+    "no_browser_errors_or_warnings": true,
+    "bank_metadata_exact": true,
+    "106_events_decode_and_mix": true,
+    "32_logic_groups_passed": true
+  },
+  "logs": 298,
+  "bounded_logs": 70,
+  "required_observed_events": [
+    "event:/combat/footstep",
+    "event:/combat/throw",
+    "event:/combat/catch",
+    "event:/combat/dash",
+    "event:/combat/retrieve",
+    "event:/combat/telekinesis",
+    "event:/environment/disc_rico_stone",
+    "event:/environment/firecell_loop",
+    "event:/combat/fire_loop",
+    "event:/powerups/ice_freeze",
+    "event:/powerups/explosion",
+    "event:/powerups/decoy_spawn",
+    "event:/powerups/grenade_blink",
+    "event:/death/exploded",
+    "event:/death/burnt"
+  ],
+  "bounded_signal": [
+    {
+      "peak": 0.001624921103939414,
+      "channels": 2,
+      "samples": 2048
+    }
+  ],
+  "runtime": [
+    {
+      "version": "20308",
+      "bank_events": 167,
+      "heap_bytes": 134217728
+    }
+  ],
+  "source_sha256": {
+    "godot/main.gd": "d45f63e3fc6aeac5345e5550cde1b03ca3d06f21dc372d0869a71f1f6faf716c",
+    "godot/original_audio.gd": "16da9b923bad24499f876b32e499152ec7f5145b1aaf729416cddf98418ce7ea",
+    "godot/web/audio-runtime.js": "144f0fada740e14f154d620892c6c453495d8ac2206581450e70173e8f5e7f57",
+    "godot/assets/original/audio-inputs.json": "14053759a600e1050868c470db3c9cd01552ba75ced93a8443f01485855790f5",
+    "godot/core/original_combat_world.gd": "b79b71a723fd3a373894e12a2d7e70f8da0a30f7be632bc7d348e007594bea51",
+    "godot/core/original_disc_motion.gd": "63187f0ee15e273703360a1e441c135b101459399c48314259a50e46f4bb7900",
+    "godot/export_presets.cfg": "c03ee4de2f7766ff9a0859287bc4e311574c03188d42d0b1447bd48a81834ece",
+    "web/index.html": "429d99ddfd596f2ea6f849871222aa1a13f631817ccbf161d432b34b002f7c87",
+    "web/index.pck": "645d4b3e0660d9d9ed81c81af14eaf8fff17f4560bbef2a45ef987679e080352",
+    "web/audio/Master Bank.bank": "a3cc8b9c6b602d7e6aeda00fb9705e4df6f3d3b44bd1f95913923fb2233c52c2",
+    "web/audio/Master Bank.strings.bank": "0abd3722cd7a43f160f9b5bb202dbbd657d9a491dedeb7dd43e56055939cc9ed",
+    "web/audio/NOTICE.txt": "f4833c4e9821033e749794cf12fc608fb3bf25d79c8390576561d361c64ae993",
+    "web/audio/fmodstudio.js": "7497a63744b940b2d5c9ff494e5017bf991aee8dd26739edcf86e1954f6e93e9",
+    "web/audio/fmodstudio.wasm": "38007e3792e111b265af6c5499f8453c5e83809b13c200522b794efee8ad213e",
+    "web/audio/runtime.js": "144f0fada740e14f154d620892c6c453495d8ac2206581450e70173e8f5e7f57",
+    "godot/core/original_collision_world.gd": "f21c73ab6f25723952005c8ce70b1d9e704d41ac17031ee2b671a9de45254f54",
+    "godot/core/original_level3_behaviors.gd": "d4749f01721956d99f1c0b3ce89be98d8d1b08b8d7854188fa2393065b904e1f"
+  },
+  "evidence": [
+    "godot-audio-browser-console.json",
+    "godot-audio-bounded-browser-console.json"
+  ],
+  "scope": "Browser UI-driven combat, real mixer output, loop lifecycle, mute, and final 128 MiB fixed WASM allocation. Original/native PCM and complete-frame timing equivalence are not established.",
+  "packaging_gate": {
+    "kind": "current-source-hash-rebind",
+    "checked_at": "2026-10-28",
+    "browser_behavior_rerun": false,
+    "drift": [],
+    "reason": "AI loop/world and export changed after the prior audio browser capture; audio banks/runtime files are unchanged. Re-run interactive audio browser capture before claiming a new audio parity result.",
+    "note": "Rebound after scene-selector/material loader changes; audio implementation files and browser audio evidence are unchanged. This is a packaging gate, not a new browser behavior capture."
+  },
+  "browser_behavior_rerun": false,
+  "repack_only_after_runtime_change": true,
+  "note": "Repack integrity gate updated after web export; browser behavior run is reused from the prior stable build and is not a fresh dynamic browser claim."
+}

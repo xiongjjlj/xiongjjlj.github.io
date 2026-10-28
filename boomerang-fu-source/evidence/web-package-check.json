@@ -1,12 +1,12 @@
 {
-  "bytes": 65807678,
-  "sha256": "c081d833a5078c656df87d3629a203b14ba3f6f47e7281be6d8103c849490eac",
+  "bytes": 65809004,
+  "sha256": "87d2479aca138e6d667cb18c69fe006d24a0a87f3d296d91595a19cbcebfd4ed",
   "files": {
     "index.audio.position.worklet.js": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
     "index.audio.worklet.js": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
-    "index.html": "799646c7abf0cd014462ef419704617594215ac9d5d0048763e41aa5ac30ad8f",
+    "index.html": "429d99ddfd596f2ea6f849871222aa1a13f631817ccbf161d432b34b002f7c87",
     "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
-    "index.pck": "d8b27cdcf9494e92416c9432467fb6401331d5ad62e6eec34631d44109fed1e9",
+    "index.pck": "645d4b3e0660d9d9ed81c81af14eaf8fff17f4560bbef2a45ef987679e080352",
     "index.png": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
     "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
     "Godot-LICENSE.txt": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
@@ -23,5 +23,10 @@
   "core_files_match_browser": 46,
   "validation_report": "godot-native-web-check.json",
   "audio_browser_report": "godot-audio-browser-repack-gate.json",
-  "full_game_parity_verified": false
+  "full_game_parity_verified": false,
+  "zip_bytes": 65809004,
+  "zip_sha256": "87d2479aca138e6d667cb18c69fe006d24a0a87f3d296d91595a19cbcebfd4ed",
+  "index_html_sha256": "429d99ddfd596f2ea6f849871222aa1a13f631817ccbf161d432b34b002f7c87",
+  "index_pck_sha256": "645d4b3e0660d9d9ed81c81af14eaf8fff17f4560bbef2a45ef987679e080352",
+  "generated_at": "2026-10-28T08:38:57+08:00"
 }
