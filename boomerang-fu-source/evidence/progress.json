@@ -10,9 +10,9 @@
   "recovered_scene_assets": 61,
   "blocking_input": null,
   "next_actions": [
-    "Implement original map pool selection and cross-round rotation; prioritize the 36 base maps and track 21 DLC maps separately.",
-    "Complete floor particles, debris hazards and projectile attachment.",
-    "Implement teleportals and navigation links, restore original rendering/audio and verify complete callback/random-stream order."
+    "Restore missing map shader inputs and original water/material rendering.",
+    "Implement teleportals and navigation links.",
+    "Complete floor particles, debris/projectile attachment, original rendering/audio and full callback/random-stream order."
   ],
   "validation_limitations": [
     "Recovered C# compilation is not engine/runtime equivalence",
@@ -50,11 +50,11 @@
     "native_dxbc_disassembled": true,
     "partial_map_shader_webgl_verified": true
   },
-  "updated_at": "2026-10-28T02:55:37.213686+00:00",
+  "updated_at": "2026-10-28T05:00:24.227219+00:00",
   "implementation_engine": "Godot 4.7.2",
   "browser_language": "GDScript",
   "browser_development_preview": true,
-  "current_work": "0.5.1-dev.6 deployed on arkevo.ai: collapsing/trap floor state, navigation, book hazards, extinguishing and round reset. 64 runtime suites pass; original isolated state/collapse/tag comparisons match. The 59 imported scene resources are 36 base FFA maps + 21 DLC maps + tutorial + duplicate Toaster build entry. Original filtering/rotation, floor effects/attachment, teleportals and full visual/audio/scheduling fidelity remain unfinished.",
+  "current_work": "0.5.1-dev.7 deployed on arkevo.ai: original FFA map selection/rotation, base 36/31 and base+DLC 57/52 maps for 2-4/5-6 players. 304 original Mono method cases and 53916 comparisons match, 41 scene-transition checks and 66 runtime suites pass. Scores, powers, controller choices and related RNG state survive map changes. Tutorial flow, menu transitions, teleportals and full visual/audio/scheduling fidelity remain unfinished.",
   "godot_scene_preview": {
     "scene": "LevelEnclosed",
     "nodes": 548,
@@ -3743,23 +3743,22 @@
   },
   "company_development_deployment": {
     "passed": true,
-    "version": "0.5.1-dev.6",
+    "version": "0.5.1-dev.7",
     "url": "https://boomerang-fu.arkevo.ai/",
     "worker": "arkevo-boomerang-fu",
-    "worker_version": "399c9a2f-30c9-478a-83c4-30d0f7900c8d",
+    "worker_version": "3e9c8f5e-b8bb-45e4-a930-9c1843b18d14",
     "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
-    "source_commit": "b71275e036834a5ca5696bc2a4e5d19ea562112d",
-    "checked_at": "2026-10-28T02:55:37.213686+00:00",
+    "source_commit": "8979323345f21b9d394abc502ed172071e48bc4b",
+    "checked_at": "2026-10-28T05:00:24.227219+00:00",
     "checks": {
       "all_16_files_match": true,
       "live_scene_loaded": true,
-      "live_floor_events": true,
+      "live_base_playlist": true,
       "no_browser_errors": true,
-      "runtime_suites": 64,
-      "floor_state_comparisons": 259752,
-      "floor_collapse_comparisons": 56252,
-      "floor_navigation_comparisons": 525720,
-      "affected_scene_suites": 12,
+      "runtime_suites": 66,
+      "playlist_cases": 304,
+      "playlist_comparisons": 53916,
+      "scene_transition_checks": 41,
       "regular_ffa_maps": 57,
       "base_ffa_maps": 36,
       "dlc_ffa_maps": 21

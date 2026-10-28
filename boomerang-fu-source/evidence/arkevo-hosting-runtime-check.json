@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "version": "0.5.1-dev.6",
-  "checked_at": "2026-10-28T02:55:37.213686+00:00",
+  "version": "0.5.1-dev.7",
+  "checked_at": "2026-10-28T05:00:24.227219+00:00",
   "runtime": "workerd via Miniflare",
   "scope": "All 16 verified export files streamed byte-for-byte, HEAD/content-type/cache and routing checks; npm test completed with one passing suite.",
-  "http_evidence": "arkevo-floor-hazards-https-check.json"
+  "http_evidence": "arkevo-playlist-https-check.json"
 }

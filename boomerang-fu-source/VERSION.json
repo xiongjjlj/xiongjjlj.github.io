@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
   "version": "0.5.1-dev.7",
-  "generated_at": "2026-10-28T04:49:27.257463+00:00",
+  "generated_at": "2026-10-28T05:00:24.227219+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 3171,
-  "source_bytes": 310266180,
+  "source_files": 3177,
+  "source_bytes": 310473619,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -97,8 +97,8 @@
     },
     {
       "path": "evidence/arkevo-hosting-runtime-check.json",
-      "bytes": 353,
-      "sha256": "993410d72a5ca530a38da82e360b01ed1d351ed9d0cdc27319cda01bd15cdaae"
+      "bytes": 348,
+      "sha256": "d8cbdf75c24c3563213216596ed963bcd108ddab44ab643b4cf3e820a26fe93b"
     },
     {
       "path": "evidence/arkevo-https-check.json",
@@ -247,8 +247,8 @@
     },
     {
       "path": "evidence/progress.json",
-      "bytes": 129796,
-      "sha256": "83205b7e384dbcba35fc8ea412e2d562f949fbf659b69069def616905bd6cf4b"
+      "bytes": 129638,
+      "sha256": "5323f446df67ab1d3c278066c923eb97687602d03e2ac08695c510bd809f1c83"
     },
     {
       "path": "evidence/public-deploy-check.json",
@@ -15884,6 +15884,36 @@
       "path": "tools/playlist-native/extract.py",
       "bytes": 3891,
       "sha256": "496c3c0e08c945280d0e6146e6110e0e07aa37b3e5e102e8601408ad459cfa44"
+    },
+    {
+      "path": "evidence/arkevo-playlist-base-default.png",
+      "bytes": 63921,
+      "sha256": "90cc9f8353997048db0b63c60116e42f41b0af5185ac576ba7b77087cc5b36c4"
+    },
+    {
+      "path": "evidence/arkevo-playlist-browser-log.json",
+      "bytes": 26632,
+      "sha256": "11d7786cd13845fe1de3a5bc7261a5f57c0935bb9daf57fdb022ece5e09fbf83"
+    },
+    {
+      "path": "evidence/arkevo-playlist-deployment.json",
+      "bytes": 742,
+      "sha256": "c3779523c44eee8118b60fc762adb5280e2f96d0381e5d3fe19d6aeb5f1c55e1"
+    },
+    {
+      "path": "evidence/arkevo-playlist-https-check.json",
+      "bytes": 7003,
+      "sha256": "6577659c8e94eab4e40aec243269a963d5c6cc3f37570b1ccb9aabdddd1369bd"
+    },
+    {
+      "path": "evidence/arkevo-playlist-round1.png",
+      "bytes": 41818,
+      "sha256": "ca84b4532328019262fc3a6df665a710e33a3bc87653e09591c9c4a0bfd4f715"
+    },
+    {
+      "path": "evidence/arkevo-playlist-round2.png",
+      "bytes": 67486,
+      "sha256": "b989cb0805449ac5730e348365b812094e251a97a7b7b038922b67173f73c6c7"
     }
   ],
   "deployment": {
@@ -15896,23 +15926,22 @@
   },
   "company_development_deployment": {
     "passed": true,
-    "version": "0.5.1-dev.6",
+    "version": "0.5.1-dev.7",
     "url": "https://boomerang-fu.arkevo.ai/",
     "worker": "arkevo-boomerang-fu",
-    "worker_version": "399c9a2f-30c9-478a-83c4-30d0f7900c8d",
+    "worker_version": "3e9c8f5e-b8bb-45e4-a930-9c1843b18d14",
     "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
-    "source_commit": "b71275e036834a5ca5696bc2a4e5d19ea562112d",
-    "checked_at": "2026-10-28T02:55:37.213686+00:00",
+    "source_commit": "8979323345f21b9d394abc502ed172071e48bc4b",
+    "checked_at": "2026-10-28T05:00:24.227219+00:00",
     "checks": {
       "all_16_files_match": true,
       "live_scene_loaded": true,
-      "live_floor_events": true,
+      "live_base_playlist": true,
       "no_browser_errors": true,
-      "runtime_suites": 64,
-      "floor_state_comparisons": 259752,
-      "floor_collapse_comparisons": 56252,
-      "floor_navigation_comparisons": 525720,
-      "affected_scene_suites": 12,
+      "runtime_suites": 66,
+      "playlist_cases": 304,
+      "playlist_comparisons": 53916,
+      "scene_transition_checks": 41,
       "regular_ffa_maps": 57,
       "base_ffa_maps": 36,
       "dlc_ffa_maps": 21

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "version": "0.5.1-dev.7",
+  "url": "https://boomerang-fu.arkevo.ai/",
+  "worker": "arkevo-boomerang-fu",
+  "worker_version": "3e9c8f5e-b8bb-45e4-a930-9c1843b18d14",
+  "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
+  "source_commit": "8979323345f21b9d394abc502ed172071e48bc4b",
+  "checked_at": "2026-10-28T05:00:24.227219+00:00",
+  "checks": {
+    "all_16_files_match": true,
+    "live_scene_loaded": true,
+    "live_base_playlist": true,
+    "no_browser_errors": true,
+    "runtime_suites": 66,
+    "playlist_cases": 304,
+    "playlist_comparisons": 53916,
+    "scene_transition_checks": 41,
+    "regular_ffa_maps": 57,
+    "base_ffa_maps": 36,
+    "dlc_ffa_maps": 21
+  },
+  "full_game_parity_verified": false
+}
