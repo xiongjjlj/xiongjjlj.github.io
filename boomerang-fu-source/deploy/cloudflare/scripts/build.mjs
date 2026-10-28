@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { resolve, extname } from 'node:path';
+import { gzipSync } from 'node:zlib';
 import config from '../cloudflare.config.ts';
 import { cleanBuildOutputDir, writeAssets, writeRootConfig, writeWorkerConfig, getWorkerBundleDir } from '@cloudflare/build-output-utils';
 
@@ -14,10 +15,7 @@ const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; cha
 const manifest = { version: report.version, files: {} };
 await rm('public', { recursive: true, force: true });
 await mkdir('public/_parts', { recursive: true });
-// A single file at a time bounds packaging memory. Original bytes are never modified.
-for (const [name, expected] of Object.entries(report.files)) {
-  const bytes = await readFile(resolve(source, name));
-  if (bytes.length !== expected.bytes || hash(bytes) !== expected.sha256) throw new Error(`Unverified input: ${name}`);
+async function storeParts(bytes) {
   const parts = [];
   for (let offset = 0; offset < bytes.length; offset += chunkBytes) {
     const part = bytes.subarray(offset, offset + chunkBytes);
@@ -25,7 +23,19 @@ for (const [name, expected] of Object.entries(report.files)) {
     await writeFile(`public${path}`, part);
     parts.push({ path, bytes: part.length });
   }
-  manifest.files[`/${name}`] = { ...expected, type: mime[extname(name)] || 'application/octet-stream', parts };
+  return parts;
+}
+// One file and one compressor at a time. Compression happens during the build,
+// never on a Worker request; the identity representation remains byte-exact.
+for (const [name, expected] of Object.entries(report.files)) {
+  const bytes = await readFile(resolve(source, name));
+  if (bytes.length !== expected.bytes || hash(bytes) !== expected.sha256) throw new Error(`Unverified input: ${name}`);
+  const file = { ...expected, type: mime[extname(name)] || 'application/octet-stream', parts: await storeParts(bytes) };
+  if (bytes.length >= 1024 * 1024 && ['.pck', '.wasm', '.bank'].includes(extname(name))) {
+    const encoded = gzipSync(bytes, { level: 6 });
+    if (encoded.length < bytes.length * 0.95) file.gzip = { bytes: encoded.length, sha256: hash(encoded), parts: await storeParts(encoded) };
+  }
+  manifest.files[`/${name}`] = file;
 }
 await writeFile('src/manifest.mjs', `// Generated from the verified web export.\nexport default ${JSON.stringify(manifest)};\n`);
 await cleanBuildOutputDir(root);
@@ -39,3 +49,4 @@ await writeWorkerConfig({ root, config: config.worker, manifest: {
   }
 } });
 console.log(JSON.stringify({ version: manifest.version, files: Object.keys(manifest.files).length, maxChunkBytes: chunkBytes, accountId: config.accountId, domain: config.worker.domains[0] }));
+console.log(JSON.stringify({ compression: Object.fromEntries(Object.entries(manifest.files).filter(([, file]) => file.gzip).map(([path, file]) => [path, { identity: file.bytes, gzip: file.gzip.bytes }])) }));

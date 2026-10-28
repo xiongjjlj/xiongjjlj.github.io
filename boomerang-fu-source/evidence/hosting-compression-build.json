@@ -1,0 +1,38 @@
+{
+  "version": "0.5.1-dev.8",
+  "generated_at": "2026-10-28T06:02:28.033377+00:00",
+  "files": {
+    "/audio/fmodstudio.wasm": {
+      "identity": 2656574,
+      "gzip": 782466,
+      "identity_sha256": "38007e3792e111b265af6c5499f8453c5e83809b13c200522b794efee8ad213e",
+      "gzip_sha256": "9721e6b9a7ad3fe8f2d2dd03878078bd60d6f3a763f73d689f4b1322f1593152"
+    },
+    "/index.pck": {
+      "identity": 153989508,
+      "gzip": 48718219,
+      "identity_sha256": "9e3ea503aa568b3268f981e050cf7d858fcdf3b398d9c6de10c3acd80d560af8",
+      "gzip_sha256": "7eaf865b21eaede8dd469e2e7771fd638f27d057537ff8ad6594ac6c1beb56ce"
+    },
+    "/index.wasm": {
+      "identity": 39514754,
+      "gzip": 10114291,
+      "identity_sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
+      "gzip_sha256": "068f0afee25cb00241c3360e5456388a4dd9ed781f9fd742c132983d6f525006"
+    }
+  },
+  "source_sha256": {
+    "deploy/cloudflare/scripts/build.mjs": "054cc32c9016f9a87830d27f6929b40b72ffd9545ea22ac31658a2ffe79df157",
+    "deploy/cloudflare/src/serve.mjs": "7837a3f5f2e017c783b0dd171606fe497c6467a296b3c1b9b6cd5da62777fb25",
+    "deploy/cloudflare/test/hosting.test.mjs": "72729b56973ec8662ec601e8e4fbe79befc8e34b5a003c94eb7a020d6ba0fc00",
+    "deploy/cloudflare/README.md": "68244f480eefd5e0320a528ee54ba8484302087752437fc53c95416ade645b04"
+  },
+  "scope": "Build-time gzip representations; original game export bytes are unchanged. One sequential compressor, no per-request compression.",
+  "runtime_verified": true,
+  "runtime_checks": [
+    "16 identity files match full bytes/SHA256",
+    "3 gzip bodies decode to identical bytes/SHA256",
+    "Representation-specific ETags and conditional 304",
+    "gzip exclusions, explicit identity preference and no acceptable representation"
+  ]
+}

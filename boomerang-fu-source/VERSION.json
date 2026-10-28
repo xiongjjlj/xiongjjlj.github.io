@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
   "version": "0.5.1-dev.8",
-  "generated_at": "2026-10-28T05:46:31.516614+00:00",
+  "generated_at": "2026-10-28T06:02:28.033377+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 3272,
-  "source_bytes": 314100322,
+  "source_files": 3273,
+  "source_bytes": 314108277,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -47,8 +47,8 @@
     },
     {
       "path": "deploy/cloudflare/README.md",
-      "bytes": 2855,
-      "sha256": "74e5e28dd08f006d759c2ef1c66b1c29cb022bdbd7913be341ee453b53edc51d"
+      "bytes": 4092,
+      "sha256": "68244f480eefd5e0320a528ee54ba8484302087752437fc53c95416ade645b04"
     },
     {
       "path": "deploy/cloudflare/cloudflare.config.ts",
@@ -67,8 +67,8 @@
     },
     {
       "path": "deploy/cloudflare/scripts/build.mjs",
-      "bytes": 2782,
-      "sha256": "ee709a3d4d09321e8c8a33255d954d56a4810b50467d28b202469a419d2d44b3"
+      "bytes": 3487,
+      "sha256": "054cc32c9016f9a87830d27f6929b40b72ffd9545ea22ac31658a2ffe79df157"
     },
     {
       "path": "deploy/cloudflare/scripts/verify_live.py",
@@ -77,8 +77,8 @@
     },
     {
       "path": "deploy/cloudflare/src/serve.mjs",
-      "bytes": 3330,
-      "sha256": "7fd4fe47f9f8d5bf792969c7aeac04f92900f22ab423edbb723eddd048fff82c"
+      "bytes": 4835,
+      "sha256": "7837a3f5f2e017c783b0dd171606fe497c6467a296b3c1b9b6cd5da62777fb25"
     },
     {
       "path": "deploy/cloudflare/src/worker.mjs",
@@ -87,8 +87,8 @@
     },
     {
       "path": "deploy/cloudflare/test/hosting.test.mjs",
-      "bytes": 2843,
-      "sha256": "719e38cacbd931f37ddef08020f7ad5547133cab1ae82e561c6b52e89ae73bd1"
+      "bytes": 5553,
+      "sha256": "72729b56973ec8662ec601e8e4fbe79befc8e34b5a003c94eb7a020d6ba0fc00"
     },
     {
       "path": "evidence/arkevo-deployment-check.json",
@@ -16389,6 +16389,11 @@
       "path": "tools/water-shader-native/WaterShaderOracle.csproj",
       "bytes": 343,
       "sha256": "97c5ec9ebd5dbc82cba8f16d996e672ed2a29c1408664954daf221611c48cc14"
+    },
+    {
+      "path": "evidence/hosting-compression-build.json",
+      "bytes": 1798,
+      "sha256": "892fdc6959a419dad82ce352cdc7ed6901a42662650f6dc0614148e1260139ce"
     }
   ],
   "deployment": {
