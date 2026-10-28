@@ -1,0 +1,14 @@
+[
+  {
+    "level": "error",
+    "message": "TypeError: network error",
+    "timestamp": "2026-10-28T06:06:59.849Z",
+    "url": "https://boomerang-fu.arkevo.ai/?map=level15"
+  },
+  {
+    "level": "error",
+    "message": "TypeError: network error",
+    "timestamp": "2026-10-28T06:06:59.850Z",
+    "url": "https://boomerang-fu.arkevo.ai/?map=level15"
+  }
+]

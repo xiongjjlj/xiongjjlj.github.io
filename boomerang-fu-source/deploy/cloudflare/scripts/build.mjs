@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { resolve, extname } from 'node:path';
 import { gzipSync } from 'node:zlib';
 import config from '../cloudflare.config.ts';
@@ -12,7 +12,7 @@ if (!report.browser_checked || report.export_returncode !== 0) throw new Error('
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const chunkBytes = 20 * 1024 * 1024;
 const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.wasm': 'application/wasm', '.png': 'image/png', '.json': 'application/json', '.txt': 'text/plain; charset=utf-8' };
-const manifest = { version: report.version, files: {} };
+const manifest = { version: report.version, files: {}, releases: {} };
 await rm('public', { recursive: true, force: true });
 await mkdir('public/_parts', { recursive: true });
 async function storeParts(bytes) {
@@ -27,7 +27,9 @@ async function storeParts(bytes) {
 }
 // One file and one compressor at a time. Compression happens during the build,
 // never on a Worker request; the identity representation remains byte-exact.
-for (const [name, expected] of Object.entries(report.files)) {
+async function addExport(source, files) {
+ const output = {};
+ for (const [name, expected] of Object.entries(files)) {
   const bytes = await readFile(resolve(source, name));
   if (bytes.length !== expected.bytes || hash(bytes) !== expected.sha256) throw new Error(`Unverified input: ${name}`);
   const file = { ...expected, type: mime[extname(name)] || 'application/octet-stream', parts: await storeParts(bytes) };
@@ -35,7 +37,18 @@ for (const [name, expected] of Object.entries(report.files)) {
     const encoded = gzipSync(bytes, { level: 6 });
     if (encoded.length < bytes.length * 0.95) file.gzip = { bytes: encoded.length, sha256: hash(encoded), parts: await storeParts(encoded) };
   }
-  manifest.files[`/${name}`] = file;
+  output[`/${name}`] = file;
+ }
+ return output;
+}
+manifest.files = await addExport(source, report.files);
+// Every future build must retain all frozen releases, verified against locks.
+// Missing or changed cached releases fail the build before deployment.
+for (const name of (await readdir('releases')).filter(n => /^\d+\.\d+\.\d+\.json$/.test(n)).sort()) {
+ const locked = JSON.parse(await readFile(`releases/${name}`, 'utf8'));
+ if (name !== `${locked.version}.json`) throw new Error(`Invalid release lock: ${name}`);
+ const cache = resolve(process.env.BF_RELEASE_CACHE || '../../../../work/stable-releases', locked.version);
+ manifest.releases[locked.version] = {version: locked.version, files: await addExport(cache, locked.files)};
 }
 await writeFile('src/manifest.mjs', `// Generated from the verified web export.\nexport default ${JSON.stringify(manifest)};\n`);
 await cleanBuildOutputDir(root);

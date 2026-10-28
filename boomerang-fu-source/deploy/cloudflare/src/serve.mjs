@@ -25,10 +25,23 @@ export async function serve(request, env, ctx, manifest) {
   let path;
   try { path = decodeURIComponent(new URL(request.url).pathname); }
   catch { return new Response('Bad path', { status: 400 }); }
+  const release = /^\/releases\/([^/]+)(\/.*)?$/.exec(path);
+  let frozen = false;
+  if (release) {
+    const target = Object.hasOwn(manifest.releases || {}, release[1]) ? manifest.releases[release[1]] : null;
+    if (!target) return new Response('Unknown release', { status: 404 });
+    if (!release[2]) {
+      const url = new URL(request.url); url.pathname += '/';
+      return Response.redirect(url.href, 308);
+    }
+    manifest = target;
+    path = release[2];
+    frozen = true;
+  }
   if (path === '/') path = '/index.html';
   if (path === '/version.json') {
-    const body = JSON.stringify({ version: manifest.version, files: Object.fromEntries(Object.entries(manifest.files).map(([name, file]) => [name, { bytes: file.bytes, sha256: file.sha256 }])) });
-    return new Response(request.method === 'HEAD' ? null : body, { headers: { ...commonHeaders, 'Content-Type': 'application/json', 'Cache-Control': 'no-cache' } });
+    const body = JSON.stringify({ version: manifest.version, channel: frozen ? 'stable' : 'current', immutable: frozen, files: Object.fromEntries(Object.entries(manifest.files).map(([name, file]) => [name, { bytes: file.bytes, sha256: file.sha256 }])) });
+    return new Response(request.method === 'HEAD' ? null : body, { headers: { ...commonHeaders, 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Cache-Control': frozen ? 'public, max-age=31536000, immutable' : 'no-cache' } });
   }
   const file = Object.hasOwn(manifest.files, path) ? manifest.files[path] : null;
   if (!file) return new Response('Not found', { status: 404 });
@@ -37,11 +50,11 @@ export async function serve(request, env, ctx, manifest) {
   const selected = representation(file, request.cf?.clientAcceptEncoding ?? request.headers.get('Accept-Encoding'));
   if (!selected) return new Response('No acceptable encoding', { status: 406, headers: { Vary: 'Accept-Encoding', 'Cache-Control': 'no-store' } });
   const etag = `"${selected.sha256}"`;
-  const headers = new Headers({ ...commonHeaders, 'Content-Type': file.type, 'ETag': etag, 'Cache-Control': 'public, max-age=0, must-revalidate', 'X-Game-Version': manifest.version, 'Accept-Ranges': 'none' });
+  const headers = new Headers({ ...commonHeaders, 'Content-Type': file.type, 'ETag': etag, 'Cache-Control': frozen ? 'public, max-age=31536000, immutable' : 'public, max-age=0, must-revalidate', 'X-Game-Version': manifest.version, 'Accept-Ranges': 'none' });
   if (file.gzip) headers.set('Vary', 'Accept-Encoding');
   if (selected.encoding) headers.set('Content-Encoding', selected.encoding);
   // Keep the verified loader intact; automatic analytics injection changes HTML.
-  if (file.type.startsWith('text/html')) headers.set('Cache-Control', 'public, max-age=0, must-revalidate, no-transform');
+  if (file.type.startsWith('text/html')) headers.set('Cache-Control', `${headers.get('Cache-Control')}, no-transform`);
   // Range requests deliberately receive the full 200 response; the Godot loader
   // fetches whole resources. Never return a misleading partial response.
   if (request.headers.get('If-None-Match')?.split(',').some(value => value.trim().replace(/^W\//, '') === etag || value.trim() === '*')) return new Response(null, { status: 304, headers });

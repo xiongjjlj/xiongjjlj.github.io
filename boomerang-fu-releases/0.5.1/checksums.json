@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "archive": {
+    "name": "web-stable-0.5.1.zip",
+    "bytes": 93730203,
+    "sha256": "42e176f79cbeec903c50ad3553bf28e8d7b0682762823277e27e9cb9463175d6",
+    "url": "https://raw.githubusercontent.com/xiongjjlj/xiongjjlj.github.io/boomerang-fu-v0.5.1/boomerang-fu-releases/0.5.1/web.zip"
+  },
+  "files": 16
+}

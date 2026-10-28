@@ -59,6 +59,24 @@ test('production Worker streams the complete verified export in workerd', { time
       assert.equal(count, expected.bytes, path);
       assert.equal(digest.digest('hex'), expected.sha256, path);
     }
+    for (const [version, release] of Object.entries(manifest.releases || {})) {
+      const base = `https://example.test/releases/${version}`;
+      const redirect = await runtime.dispatchFetch(base + '?map=level15', {redirect:'manual'});
+      assert.equal(redirect.status, 308);
+      assert.equal(redirect.headers.get('location'), base + '/?map=level15');
+      const versionResponse = await runtime.dispatchFetch(base + '/version.json');
+      assert.equal(versionResponse.headers.get('access-control-allow-origin'), '*');
+      const info = await versionResponse.json();
+      assert.equal(info.version, version); assert.equal(info.immutable, true);
+      for(const [path, expected] of Object.entries(release.files)) {
+        const response = await runtime.dispatchFetch(base + encodeURI(path), {headers:{'Accept-Encoding':'gzip'}});
+        const digest = createHash('sha256'); let size = 0;
+        for await(const chunk of response.body){digest.update(chunk);size+=chunk.length;}
+        assert.equal(response.status,200);assert.equal(size,expected.bytes);assert.equal(digest.digest('hex'),expected.sha256);
+        assert.match(response.headers.get('cache-control'), /immutable/);
+      }
+    }
+    assert.equal((await runtime.dispatchFetch('https://example.test/releases/9.9.9/')).status,404);
     const packed = manifest.files['/index.pck'];
     assert.ok(packed.gzip && packed.gzip.bytes < packed.bytes * 0.95);
     for (const [accept, encoding, status] of [
