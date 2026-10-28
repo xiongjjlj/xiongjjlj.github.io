@@ -10,7 +10,6 @@
   "recovered_scene_assets": 61,
   "blocking_input": null,
   "next_actions": [
-    "Finish navigation browser export, verify arkevo.ai deployment and publish source checkpoint.",
     "Implement dynamic obstacle rescans and teleportal graph connections.",
     "Implement falling/trap floors and teleportal scene behaviour.",
     "Restore platform audio, flash, ropes, particles, original materials/animation and verify full-scene callback and random-stream ordering."
@@ -51,11 +50,11 @@
     "native_dxbc_disassembled": true,
     "partial_map_shader_webgl_verified": true
   },
-  "updated_at": "2026-10-28T02:06:30.799562+00:00",
+  "updated_at": "2026-10-28T02:13:05.767319+00:00",
   "implementation_engine": "Godot 4.7.2",
   "browser_language": "GDScript",
   "browser_development_preview": true,
-  "current_work": "0.5.1-dev.4 navigation: original per-map grids for 59 maps, platform graph selection and retained moving waypoints implemented. 992 native paths, 1134 graph selections and 40 real-scene suites pass. Web export and deployment verification in progress.",
+  "current_work": "0.5.1-dev.4 deployed on arkevo.ai: 59 per-map grids, platform graph selection and retained moving waypoints. 992 native paths, 1134 graph selections, 40 runtime checks and 59 startup checks pass. Runtime obstacle rescans and full fidelity remain in progress.",
   "godot_scene_preview": {
     "scene": "LevelEnclosed",
     "nodes": 548,
@@ -3744,19 +3743,21 @@
   },
   "company_development_deployment": {
     "passed": true,
-    "version": "0.5.1-dev.3",
+    "version": "0.5.1-dev.4",
     "url": "https://boomerang-fu.arkevo.ai/",
     "worker": "arkevo-boomerang-fu",
-    "worker_version": "df9bb045-a4a8-49e9-99b7-695670fc4182",
+    "worker_version": "691bda3c-8df0-4fbc-b943-29d599f9a8db",
     "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
-    "source_commit": "846e98c59c6291ec1e29ae8a29f0e97f3e01ef94",
-    "checked_at": "2026-10-28T01:57:09.996027+00:00",
+    "source_commit": "ef0efc0ae06d6a7826a101a67e036ca2aba06a0e",
+    "checked_at": "2026-10-28T02:13:05.767319+00:00",
     "checks": {
       "all_16_files_match": true,
-      "scene_loaded": true,
-      "live_melee_switch": true,
-      "live_reactive_rotation": true,
-      "no_browser_errors": true
+      "live_scene_loaded": true,
+      "no_browser_errors": true,
+      "native_paths": 992,
+      "native_graph_selections": 1134,
+      "runtime_suites": 40,
+      "maps_load": 59
     },
     "full_game_parity_verified": false
   },

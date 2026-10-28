@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
   "version": "0.5.1-dev.4",
-  "generated_at": "2026-10-28T02:09:14.999081+00:00",
+  "generated_at": "2026-10-28T02:13:05.767319+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 2855,
-  "source_bytes": 271801263,
+  "source_files": 2859,
+  "source_bytes": 271902766,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -245,8 +245,8 @@
     },
     {
       "path": "evidence/progress.json",
-      "bytes": 127670,
-      "sha256": "2895eca7b70d4d10b0b2846849ad51d5bd50c6286422b82633c508d7a01af673"
+      "bytes": 127629,
+      "sha256": "6c62a0de2aae2fddf78454168da7c32ae2e0cb8547e98a15d14f35aa15ec12b7"
     },
     {
       "path": "evidence/public-deploy-check.json",
@@ -14302,6 +14302,26 @@
       "path": "tools/navigation-selection-native/generate_inputs.py",
       "bytes": 2293,
       "sha256": "36e56b8e1e17662c2075d47459ebbe58ef79a444f4382a39c7c3038a88b2dd10"
+    },
+    {
+      "path": "evidence/arkevo-navigation-browser-log.json",
+      "bytes": 12103,
+      "sha256": "3aef86ad523340eafa4bb09a6dcc02a91e32530c86c5d7469a3fe1b8e44b0a3d"
+    },
+    {
+      "path": "evidence/arkevo-navigation-deployment.json",
+      "bytes": 619,
+      "sha256": "4f21c7fbdd4fa714b5e2bd5fa5a943ad13ddfa60769d1e7d179f4bf5ec6f453e"
+    },
+    {
+      "path": "evidence/arkevo-navigation-https-check.json",
+      "bytes": 7182,
+      "sha256": "db4f3c298a215fc139336311cdd6b3e8f92e325bb6969c7a4dc3ac630bee82d5"
+    },
+    {
+      "path": "evidence/arkevo-navigation-live.png",
+      "bytes": 81640,
+      "sha256": "d4d12de2ffbb06fc696ff06e8c51cb7ed08f88ed1fbd1062272531e76d60f989"
     }
   ],
   "deployment": {
@@ -14314,19 +14334,21 @@
   },
   "company_development_deployment": {
     "passed": true,
-    "version": "0.5.1-dev.3",
+    "version": "0.5.1-dev.4",
     "url": "https://boomerang-fu.arkevo.ai/",
     "worker": "arkevo-boomerang-fu",
-    "worker_version": "df9bb045-a4a8-49e9-99b7-695670fc4182",
+    "worker_version": "691bda3c-8df0-4fbc-b943-29d599f9a8db",
     "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
-    "source_commit": "846e98c59c6291ec1e29ae8a29f0e97f3e01ef94",
-    "checked_at": "2026-10-28T01:57:09.996027+00:00",
+    "source_commit": "ef0efc0ae06d6a7826a101a67e036ca2aba06a0e",
+    "checked_at": "2026-10-28T02:13:05.767319+00:00",
     "checks": {
       "all_16_files_match": true,
-      "scene_loaded": true,
-      "live_melee_switch": true,
-      "live_reactive_rotation": true,
-      "no_browser_errors": true
+      "live_scene_loaded": true,
+      "no_browser_errors": true,
+      "native_paths": 992,
+      "native_graph_selections": 1134,
+      "runtime_suites": 40,
+      "maps_load": 59
     },
     "full_game_parity_verified": false
   }
