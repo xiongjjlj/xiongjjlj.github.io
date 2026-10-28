@@ -1,6 +1,6 @@
 {
   "name": "boomerang-fu-web",
-  "version": "0.4.0-stable",
+  "version": "0.4.2-stable",
   "generated_at": "2026-10-28",
   "runtime": "Godot 4.7 Web",
   "default_scene": "LevelEnclosed",
@@ -6152,7 +6152,7 @@
     {
       "path": "VERSION.json",
       "bytes": 225481,
-      "sha256": "6f0e7488562657cbde3f777b50d3c4eb022410d6cce53977cba6abb7b3250a03"
+      "sha256": "e55cc6498685252d815a5a699b4d3f4ee66e2b54931e395249626f837b304f54"
     }
   ]
 }
