@@ -19,7 +19,7 @@
     {
       "path": "README.md",
       "bytes": 34541,
-      "sha256": "4a753beccd9f14817261233ba3ebba7583e96f589097604c68c680a34da92471"
+      "sha256": "4a70e8cdab034617929f268ecdf5dfd45aa3c53c1a3b22cdf1d118f7a3d593fe"
     },
     {
       "path": "evidence/godot-audio-browser-repack-gate.json",
@@ -12434,7 +12434,7 @@
     {
       "path": "VERSION.json",
       "bytes": 460132,
-      "sha256": "8966ab34dd4ca5c47a904b4ae3fd1745df36a871b0f489211651944040509873"
+      "sha256": "362f9f31a9389393f740d4e93b5d9b825927b6f167a1455459ce3acffce5623e"
     }
   ]
 }
