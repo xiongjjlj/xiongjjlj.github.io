@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
   "version": "0.5.1-dev.3",
-  "generated_at": "2026-10-28T01:55:06.588307+00:00",
+  "generated_at": "2026-10-28T01:57:09.996027+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 2667,
-  "source_bytes": 183756964,
+  "source_files": 2672,
+  "source_bytes": 183928201,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -245,8 +245,8 @@
     },
     {
       "path": "evidence/progress.json",
-      "bytes": 126173,
-      "sha256": "8bbd74c7bf96adfc8c7eea367f23959cfffea5cf0bf03e573054281739d1fac0"
+      "bytes": 126816,
+      "sha256": "cbea6645ebbaff3bbde80f8bcd7c278ec488ce6321e5d79588cb81984f6ac825"
     },
     {
       "path": "evidence/public-deploy-check.json",
@@ -13362,6 +13362,31 @@
       "path": "tools/reactive-floor-native/generate_inputs.py",
       "bytes": 2866,
       "sha256": "cd3f1cc6b511fe5af05e8bb5b115c28af234c466cda059cefe39aff5e48576ad"
+    },
+    {
+      "path": "evidence/arkevo-reactive-circle-after.png",
+      "bytes": 74935,
+      "sha256": "bc6e708d052b39e45f993933288237eba3ecd4b81bf7af873d92b365aa17c2fe"
+    },
+    {
+      "path": "evidence/arkevo-reactive-circle-before.png",
+      "bytes": 75094,
+      "sha256": "69051f54817eaecd23f9199fff4e1d91beabb8de42b47d26cc975990ac96f01b"
+    },
+    {
+      "path": "evidence/arkevo-reactive-floor-browser-log.json",
+      "bytes": 12811,
+      "sha256": "a69d64542f6b65f17141d569a3bf8827ca171cdd935e50a3e33533653dfd0d68"
+    },
+    {
+      "path": "evidence/arkevo-reactive-floor-deployment.json",
+      "bytes": 572,
+      "sha256": "91ddc7a26540881ff40cf7aa5087935c47599899172ffa423c7ffe129a12afb8"
+    },
+    {
+      "path": "evidence/arkevo-reactive-floor-https-check.json",
+      "bytes": 7182,
+      "sha256": "34297dcdfcdb943b8bbab8802f9d4d28880bc562106c886082e0461766a4e373"
     }
   ],
   "deployment": {
@@ -13371,5 +13396,23 @@
     "worker": "arkevo-boomerang-fu",
     "account_id": "c0e2717206e00c30b9dcd1d456d744fc",
     "version_endpoint": "https://boomerang-fu.arkevo.ai/version.json"
+  },
+  "company_development_deployment": {
+    "passed": true,
+    "version": "0.5.1-dev.3",
+    "url": "https://boomerang-fu.arkevo.ai/",
+    "worker": "arkevo-boomerang-fu",
+    "worker_version": "df9bb045-a4a8-49e9-99b7-695670fc4182",
+    "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
+    "source_commit": "846e98c59c6291ec1e29ae8a29f0e97f3e01ef94",
+    "checked_at": "2026-10-28T01:57:09.996027+00:00",
+    "checks": {
+      "all_16_files_match": true,
+      "scene_loaded": true,
+      "live_melee_switch": true,
+      "live_reactive_rotation": true,
+      "no_browser_errors": true
+    },
+    "full_game_parity_verified": false
   }
 }
