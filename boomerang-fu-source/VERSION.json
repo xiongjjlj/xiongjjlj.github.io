@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
   "version": "0.5.1-dev.5",
-  "generated_at": "2026-10-28T02:21:31.081837+00:00",
+  "generated_at": "2026-10-28T02:24:35.951969+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 2999,
-  "source_bytes": 298858966,
+  "source_files": 3003,
+  "source_bytes": 298945654,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -96,8 +96,8 @@
     },
     {
       "path": "evidence/arkevo-hosting-runtime-check.json",
-      "bytes": 122503,
-      "sha256": "271b31a019c033695d1dc8971f60c2d26b6752fb20a2ef2ff8d1bb127897bf0a"
+      "bytes": 131920,
+      "sha256": "9d4c0dd18a70c0770479df7d9598e722ec3021b2a9ec1bd322fc30de50b72e60"
     },
     {
       "path": "evidence/arkevo-https-check.json",
@@ -246,8 +246,8 @@
     },
     {
       "path": "evidence/progress.json",
-      "bytes": 129322,
-      "sha256": "58d06b9378de232babb2b3ece89a3b3c362ec94a0288b4d8ae7613fe7cae672a"
+      "bytes": 129505,
+      "sha256": "ebfb081df3ecda326a02fbe2bb8cc08968c9b7b4bc7db74f3f2a42d516b0b1b5"
     },
     {
       "path": "evidence/public-deploy-check.json",
@@ -15023,6 +15023,26 @@
       "path": "tools/navigation-updates-native/Program.cs",
       "bytes": 6660,
       "sha256": "cd29d0e6a53355dd376fee2930df97314d37e7b823f25c8dd07eab1f452ff761"
+    },
+    {
+      "path": "evidence/arkevo-navigation-updates-browser-log.json",
+      "bytes": 16381,
+      "sha256": "a0659f329b335e838cbfbcc777fc20514e03320aa90dad7a49b39482733b21d7"
+    },
+    {
+      "path": "evidence/arkevo-navigation-updates-deployment.json",
+      "bytes": 680,
+      "sha256": "4355863d0e13cf139fe9fa16707bb0fffa1589d605dfcf45f0b0b7e0a395be1e"
+    },
+    {
+      "path": "evidence/arkevo-navigation-updates-https-check.json",
+      "bytes": 6201,
+      "sha256": "1409ce468421485c084c5f7660885cb5fa5ec9358c8433173a28d336147c0957"
+    },
+    {
+      "path": "evidence/arkevo-navigation-updates-live-play.png",
+      "bytes": 53826,
+      "sha256": "38bc86dca31606e3dabc342b38b34b4911ac3ce3a7616cfa7016ced71b480c70"
     }
   ],
   "deployment": {
@@ -15035,20 +15055,22 @@
   },
   "company_development_deployment": {
     "passed": true,
-    "version": "0.5.1-dev.4",
+    "version": "0.5.1-dev.5",
     "url": "https://boomerang-fu.arkevo.ai/",
     "worker": "arkevo-boomerang-fu",
-    "worker_version": "691bda3c-8df0-4fbc-b943-29d599f9a8db",
+    "worker_version": "8b96065a-5058-454f-a795-a18937091d45",
     "company_account": "c0e2717206e00c30b9dcd1d456d744fc",
-    "source_commit": "ef0efc0ae06d6a7826a101a67e036ca2aba06a0e",
-    "checked_at": "2026-10-28T02:13:05.767319+00:00",
+    "source_commit": "f0a5f2dc6d2360c82b54272ab957b7b89313ba9e",
+    "checked_at": "2026-10-28T02:24:35.951969+00:00",
     "checks": {
       "all_16_files_match": true,
       "live_scene_loaded": true,
       "no_browser_errors": true,
       "native_paths": 992,
       "native_graph_selections": 1134,
-      "runtime_suites": 40,
+      "runtime_suites": 46,
+      "dynamic_paths": 66,
+      "dynamic_comparisons": 6230791,
       "maps_load": 59
     },
     "full_game_parity_verified": false
