@@ -6,7 +6,7 @@
   "default_scene": "LevelEnclosed",
   "optional_scene": "LevelSlideTraps and 57 additional imported maps (?map=levelN)",
   "source_files": 2484,
-  "source_bytes": 163246459,
+  "source_bytes": 163247502,
   "full_game_parity_verified": false,
   "limitations": [
     "This is a stable scoped FFA browser build, not a claim of full original-game parity.",
@@ -19,7 +19,7 @@
     {
       "path": "README.md",
       "bytes": 34541,
-      "sha256": "d80e491db1faaf0957f4782629b3ca3c8dd0f34eece086679bca19271ec64328"
+      "sha256": "4a753beccd9f14817261233ba3ebba7583e96f589097604c68c680a34da92471"
     },
     {
       "path": "evidence/godot-audio-browser-repack-gate.json",
@@ -53,8 +53,8 @@
     },
     {
       "path": "evidence/public-deploy-check.json",
-      "bytes": 1467,
-      "sha256": "2f3cd98c0ddf9eafdb6054f1a4042dd85ccb6d22530945b822e8d139e65fd792"
+      "bytes": 2510,
+      "sha256": "5fdc9550200fc4fd51371915ed007b42d99d17d6ecf14e3d96d5df7beb796f58"
     },
     {
       "path": "evidence/web-package-check.json",
@@ -12434,7 +12434,7 @@
     {
       "path": "VERSION.json",
       "bytes": 460132,
-      "sha256": "bd961b92b1aaeb9f5f315ad62a942a0e7600abc2e304b5ff3ca69441ab6637ce"
+      "sha256": "80165ed01ce1f38bf2a2517ec61d700116919a0beebbdeb8ceaa12fbc551764d"
     }
   ]
 }

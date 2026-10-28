@@ -5,7 +5,7 @@
 
 在线试玩：[feixiong.me/boomerang-fu](https://feixiong.me/boomerang-fu/)。已实测公开地址加载、双人操作、音频及暂停恢复。当前为未完成还原的开发版本。
 
-稳定依赖点已发布到 GitHub：[源码快照 `boomerang-fu-v0.4.4`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.4.4/boomerang-fu-source)，对应提交 `a78048c`；[可继续开发的 `boomerang-fu-dev` 分支](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-dev)从同一版本开始。发布网页文件位于同一 tag 的 [`boomerang-fu/`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.4.4/boomerang-fu)。依赖项目可固定 tag，地图和视觉补全继续在 dev 分支推进。
+稳定依赖点已发布到 GitHub：[源码快照 `boomerang-fu-v0.5.0`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu-source)，对应提交 `7201649`；[可继续开发的 `boomerang-fu-dev` 分支](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-dev)从同一版本开始。发布网页文件位于同一 tag 的 [`boomerang-fu/`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu)。依赖项目可固定 tag，地图和视觉补全继续在 dev 分支推进。
 
 最新构建（2026-10-28）：已接入正常的角色选择、短/中/长局、开局提示、暂停恢复、回合结算、继续、加赛和重赛。可配置 2–6 个本地玩家，使用两套键盘、接入的手柄或机器人；六个原角色、头像、字体、模型和动画曲线保留。Unity BuildSettings 中的 59 张原始对战地图（`level2`–`level60`）已经导入 Web 资源包，可用 `?map=levelN`（例如 `?map=level38`，`slide` 仍是 `level3` 的别名）选择；逐张 Godot 启动与共享 FFA 初始化检查全部通过。LevelSlideTraps 另有 MovingObstacle、Switch、WobblyObstacle、可破坏障碍、飞镖墙面回调和玩家近战障碍回调适配；其他地图目前共享 FFA 运行时和原始几何/碰撞体，地图专属移动平台、传送门、落水、粒子、音频和 Animator 仍需逐项移植。
 

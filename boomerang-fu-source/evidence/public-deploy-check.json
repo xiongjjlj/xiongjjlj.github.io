@@ -1,29 +1,41 @@
 {
-  "version": "0.4.4",
-  "checked_at": "2026-10-28T08:43:19+08:00",
+  "version": "0.5.0",
+  "checked_at": "2026-10-28T09:02:05+08:00",
   "repository": "https://github.com/xiongjjlj/xiongjjlj.github.io",
-  "tag": "boomerang-fu-v0.4.4",
+  "tag": "boomerang-fu-v0.5.0",
   "live_url": "https://feixiong.me/boomerang-fu/",
   "local_hashes": {
-    "index.html": "429d99ddfd596f2ea6f849871222aa1a13f631817ccbf161d432b34b002f7c87",
-    "index.pck": "645d4b3e0660d9d9ed81c81af14eaf8fff17f4560bbef2a45ef987679e080352",
+    "index.html": "14d069d0c43613cb3781b87cbbea901cd8ebed946352b39ae0b6b6329fadf56c",
+    "boomerang-fu-sw.js": "e1ee3245acd26b032bd5ec7ebdbee9b52ed1b142cd2d2a16145ec58e8b1563f1",
+    "index.pck.part0": "308b1978847957d85b9630ecc60759a10218481e2d97ed10862bcf342f93c881",
+    "index.pck.part1": "90f1d6e7958dfd04ed948e8bc0137a80a39fdd5cda9437ef1973779a9490c1be",
+    "index.pck.part2": "fadb1fd5c91c56d3a1d838bdcd9d228ae7b8d5b4d23b54e0c2c7393d50940c28",
     "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
     "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
   },
   "raw_tag_hashes": {
-    "index.html": "429d99ddfd596f2ea6f849871222aa1a13f631817ccbf161d432b34b002f7c87",
-    "index.pck": "645d4b3e0660d9d9ed81c81af14eaf8fff17f4560bbef2a45ef987679e080352",
+    "index.html": "14d069d0c43613cb3781b87cbbea901cd8ebed946352b39ae0b6b6329fadf56c",
+    "boomerang-fu-sw.js": "e1ee3245acd26b032bd5ec7ebdbee9b52ed1b142cd2d2a16145ec58e8b1563f1",
+    "index.pck.part0": "308b1978847957d85b9630ecc60759a10218481e2d97ed10862bcf342f93c881",
+    "index.pck.part1": "90f1d6e7958dfd04ed948e8bc0137a80a39fdd5cda9437ef1973779a9490c1be",
+    "index.pck.part2": "fadb1fd5c91c56d3a1d838bdcd9d228ae7b8d5b4d23b54e0c2c7393d50940c28",
     "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
     "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
   },
   "pages_hashes": {
-    "index.html": "429d99ddfd596f2ea6f849871222aa1a13f631817ccbf161d432b34b002f7c87",
-    "index.pck": "645d4b3e0660d9d9ed81c81af14eaf8fff17f4560bbef2a45ef987679e080352",
+    "index.html": "14d069d0c43613cb3781b87cbbea901cd8ebed946352b39ae0b6b6329fadf56c",
+    "boomerang-fu-sw.js": "e1ee3245acd26b032bd5ec7ebdbee9b52ed1b142cd2d2a16145ec58e8b1563f1",
+    "index.pck.part0": "308b1978847957d85b9630ecc60759a10218481e2d97ed10862bcf342f93c881",
+    "index.pck.part1": "90f1d6e7958dfd04ed948e8bc0137a80a39fdd5cda9437ef1973779a9490c1be",
+    "index.pck.part2": "fadb1fd5c91c56d3a1d838bdcd9d228ae7b8d5b4d23b54e0c2c7393d50940c28",
     "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
     "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
   },
   "raw_tag_matches_local": true,
-  "pages_matches_local": true,
+  "pages_parts_match_local": true,
+  "pck_reconstructed_bytes": 136433840,
+  "pck_reconstructed_sha256": "c6c281f4e04cea78b5356f7887b0bb2a41001bae198b6f6e6b93c9422a17a2a6",
+  "pck_reconstructed_matches_source": true,
   "hashes_match": true,
-  "cache_bust": "unique query strings used for Pages reads"
+  "cache_bust": "unique query strings used for GitHub and Pages reads"
 }
