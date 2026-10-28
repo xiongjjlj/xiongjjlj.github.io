@@ -1,0 +1,13 @@
+{
+  "checks": 4,
+  "failures": [
+    "Imported water mesh uses restored shader"
+  ],
+  "map": "level47",
+  "passed": false,
+  "scene": "LevelJungleRuins",
+  "scope": "Actual imported scene, water material dispatch and map-specific light bindings; GPU pixel parity is covered only by the controlled water fixture.",
+  "water_surfaces": 0,
+  "historical_probe": true,
+  "selection_error": "Selected a map without FX/Water_DepthVignette; corrected fixture targets are level34 (Onsen) and level44 (Donut). This report is not in the current 73-suite result."
+}

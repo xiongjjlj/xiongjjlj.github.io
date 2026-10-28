@@ -1,0 +1,8 @@
+{
+  "source": "sharedassets4.assets",
+  "source_sha256": "79ed9e0dffee96730df2ac0460500120611307493d6092d2f23edd7876ccf782",
+  "shader_id": 38,
+  "shader": "FX/Water_DepthVignette",
+  "bytes": 168304,
+  "blob_sha256": "baadbdf496505478f3b9be43535b5f58ba8548e6d298ebf9c5d57cffa3293654"
+}

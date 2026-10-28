@@ -7,7 +7,9 @@
 
 稳定依赖点已发布到 GitHub：[源码快照 `boomerang-fu-v0.5.0`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu-source)，该稳定版本固定在提交 `ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1`；[可继续开发的 `boomerang-fu-dev` 分支](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-dev)从同一版本开始。发布网页文件位于同一 tag 的 [`boomerang-fu/`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu)。依赖项目可固定 tag，地图和视觉补全继续在 dev 分支推进。
 
-开发分支 `0.5.1-dev.7` 已部署到 [公司预览](https://boomerang-fu.arkevo.ai/)（实际版本以 `/version.json` 为准）：默认仅本体地图，2–4 人 36 张、5–6 人 31 张；可选 Base + DLC 后为 57/52 张。已接入原版选图和跨回合轮换，保留比分、道具及玩家设置，重赛清零。304 组原版方法对照、53,916 项比较无差异；实际换图 41 项检查、66 项运行时回归及浏览器验证通过。教学流程、原菜单呈现和完整场景时序仍未完成，详见 `MAP_SCOPE.md` 和 `DEVELOPMENT.md`。
+`0.5.1-dev.7` 已部署到 [公司预览](https://boomerang-fu.arkevo.ai/)（实际版本以 `/version.json` 为准）：默认仅本体地图，2–4 人 36 张、5–6 人 31 张；可选 Base + DLC 后为 57/52 张。已接入原版选图和跨回合轮换，保留比分、道具及玩家设置，重赛清零。304 组原版方法对照、53,916 项比较无差异；实际换图 41 项检查、66 项运行时回归及浏览器验证通过。教学流程、原菜单呈现和完整场景时序仍未完成，详见 `MAP_SCOPE.md` 和 `DEVELOPMENT.md`。
+
+开发分支当前源码为 `0.5.1-dev.8`：补齐 219 条材质输入记录，接入原版水面 Shader 与各地图日间光照；168 个原引擎/WebGL 受控像素样本最大误差约 0.00295，小于一个 8 位色阶。73 项运行时检查通过，保留原资源中水面的启用/关闭状态。公司线上版本以 `/version.json` 为准；反射、雾效和其他 Shader 类型仍待完成，详见 `WATER_RESTORATION.md`。
 
 `0.5.1-dev.6` 已接入塌陷与踩踏地板的预警、下沉、恢复、导航标签/重扫及回合重置。浏览器实测范围与剩余呈现缺口见 `evidence/floor-hazards-browser-check.json`。59 是资源场景数，包含教程和重复 Toaster 条目，不是常规地图数量。
 

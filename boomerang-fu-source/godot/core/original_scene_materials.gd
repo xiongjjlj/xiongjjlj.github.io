@@ -8,13 +8,19 @@ var materials: Array[ShaderMaterial] = []
 var shaders: Dictionary = {}
 var lighting: Dictionary
 var wave_materials: Array[ShaderMaterial] = []
+var water_lighting:Dictionary={}
+var water_materials:Array[ShaderMaterial]=[]
 
-func initialize(asset_root: String) -> void:
+func initialize(asset_root: String,scene_key:="level2") -> void:
 	root = asset_root
 	inputs = JSON.parse_string(FileAccess.get_file_as_string(root + "shader-inputs.json"))
 	if FileAccess.file_exists(root+"floor-materials.json"):
 		inputs.merge(JSON.parse_string(FileAccess.get_file_as_string(root+"floor-materials.json")),true)
 	lighting = JSON.parse_string(FileAccess.get_file_as_string(root + "lighting-inputs.json"))
+	if FileAccess.file_exists(root+"map-shader-inputs.json"):
+		inputs.merge(JSON.parse_string(FileAccess.get_file_as_string(root+"map-shader-inputs.json")),true)
+	if FileAccess.file_exists(root+"water-lighting-inputs.json"):
+		water_lighting=JSON.parse_string(FileAccess.get_file_as_string(root+"water-lighting-inputs.json")).maps.get(scene_key,{})
 
 func color_value(data: Dictionary, property: String, fallback: Color) -> Color:
 	var c: Dictionary = data.colors.get(property, {})
@@ -37,6 +43,7 @@ func make(id: String, data: Dictionary) -> ShaderMaterial:
 			var offset: Dictionary = transform.get("m_Offset", {"x": 0.0, "y": 0.0})
 			source.textures["_MainTex"] = {"scale": [scale.x, scale.y], "offset": [offset.x, offset.y], "texture": main}
 	if kind == "PK/SpritesDiffuseWave": return make_wave(data)
+	if kind == "FX/Water_DepthVignette":return make_water(data,source)
 	var cutout := "Cutout" in kind or kind == "UU/Unlit/Shadow_Receiver"
 	var plain := kind == "Unlit/Transparent Cutout"
 	var cull := int(data.floats.get("_Cull", 2))
@@ -98,3 +105,23 @@ func make_wave(data: Dictionary) -> ShaderMaterial:
 
 func set_time(value: float) -> void:
 	for material in wave_materials: material.set_shader_parameter("source_time", value)
+
+func make_water(data:Dictionary,source:Dictionary)->ShaderMaterial:
+	var material:=ShaderMaterial.new();material.resource_name=data.name
+	material.shader=load("res://shaders/original_water.gdshader")
+	for pair in [["source_shallow","_ShallowColor"],["source_deep","_DeepColor"],["source_vignette","_VignetteColor"]]:
+		var c:=color_value(data,pair[1],Color.WHITE);material.set_shader_parameter(pair[0],Vector3(c.r,c.g,c.b))
+	for pair in [["source_depth_offset","_DepthOffset"],["source_shallow_depth","_ShallowDepth"],["source_vignette_size","_VignetteSize"],["source_vignette_intensity","_VignetteIntensity"]]:
+		material.set_shader_parameter(pair[0],data.floats[pair[1]])
+	if source.textures.has("_texcoord"):
+		var uv:Dictionary=source.textures._texcoord;material.set_shader_parameter("source_uv_st",Vector4(uv.scale[0],uv.scale[1],uv.offset[0],uv.offset[1]))
+	if not water_lighting.is_empty():
+		var coefficients:=PackedVector3Array()
+		for i in 9:coefficients.append(Vector3(water_lighting.sh_coefficients_rgb[0][i],water_lighting.sh_coefficients_rgb[1][i],water_lighting.sh_coefficients_rgb[2][i]))
+		material.set_shader_parameter("source_sh",coefficients);material.set_shader_parameter("source_use_sh",true)
+		for light in water_lighting.lights:
+			if light.vertex:continue
+			material.set_shader_parameter("source_sun_direction",Vector3(light.direction[0],light.direction[1],-light.direction[2]))
+			material.set_shader_parameter("source_sun_color",Vector3(light.color_gamma[0],light.color_gamma[1],light.color_gamma[2]))
+	water_materials.append(material);materials.append(material)
+	return material

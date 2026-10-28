@@ -1,0 +1,10 @@
+{
+  "checks": 9,
+  "failures": [],
+  "map": "level40",
+  "passed": true,
+  "scene": "LevelBigRaft",
+  "scope": "Actual imported scene, source water visibility, material dispatch and map-specific light bindings; GPU pixel parity is covered only by the controlled water fixture.",
+  "visible_water_surfaces": 1,
+  "water_surfaces": 1
+}

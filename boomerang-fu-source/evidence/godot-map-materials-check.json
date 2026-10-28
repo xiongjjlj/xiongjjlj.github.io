@@ -1,0 +1,9 @@
+{
+  "bound_texture_slots": 182,
+  "checks": 756,
+  "failures": [],
+  "materials": 219,
+  "passed": true,
+  "scope": "Shader identity, preserved inputs, texture binding and layer-0 lighting data. Does not verify all shader families or full-scene pixel parity.",
+  "water_materials": 3
+}

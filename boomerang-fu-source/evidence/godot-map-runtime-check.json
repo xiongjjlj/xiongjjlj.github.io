@@ -3445,7 +3445,7 @@
               "details": {
                 "changed_node_samples": 28161,
                 "maximum_queue": 4,
-                "rescan_milliseconds": 465.419,
+                "rescan_milliseconds": 289.498,
                 "targets": 2,
                 "updates": 26
               },
@@ -3498,7 +3498,7 @@
               "details": {
                 "changed_node_samples": 27981,
                 "maximum_queue": 1,
-                "rescan_milliseconds": 678.002,
+                "rescan_milliseconds": 422.376,
                 "targets": 1,
                 "updates": 28
               },
@@ -3551,7 +3551,7 @@
               "details": {
                 "changed_node_samples": 7584,
                 "maximum_queue": 4,
-                "rescan_milliseconds": 12.613,
+                "rescan_milliseconds": 7.922,
                 "targets": 4,
                 "updates": 13
               },
@@ -3599,7 +3599,7 @@
               "details": {
                 "changed_node_samples": 22326,
                 "maximum_queue": 4,
-                "rescan_milliseconds": 1631.956,
+                "rescan_milliseconds": 1019.691,
                 "targets": 4,
                 "updates": 256
               },
@@ -4618,12 +4618,12 @@
       "reports": [
         {
           "active_discs": 0,
-          "active_tile_frames": 4396,
+          "active_tile_frames": 3599,
           "disc_views": 0,
-          "distance": 160.080417139986,
+          "distance": 153.508923091285,
           "finite": true,
           "frames": 900,
-          "hole_frames": 1748,
+          "hole_frames": 1117,
           "map": "level14",
           "passed": true,
           "round_resets": 2
@@ -4639,15 +4639,15 @@
       "reports": [
         {
           "active_discs": 0,
-          "active_tile_frames": 29843,
+          "active_tile_frames": 17302,
           "disc_views": 0,
-          "distance": 147.152247923099,
+          "distance": 148.234111317375,
           "finite": true,
           "frames": 900,
-          "hole_frames": 18498,
+          "hole_frames": 7192,
           "map": "level18",
           "passed": true,
-          "round_resets": 1
+          "round_resets": 2
         }
       ]
     },
@@ -4660,12 +4660,12 @@
       "reports": [
         {
           "active_discs": 0,
-          "active_tile_frames": 710,
+          "active_tile_frames": 4867,
           "disc_views": 0,
-          "distance": 157.836336712497,
+          "distance": 153.986206607363,
           "finite": true,
           "frames": 900,
-          "hole_frames": 178,
+          "hole_frames": 2053,
           "map": "level40",
           "passed": true,
           "round_resets": 2
@@ -5100,6 +5100,138 @@
           ]
         }
       ]
+    },
+    {
+      "test": "map_materials_test",
+      "map": "level2",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "bound_texture_slots": 182,
+          "checks": 756,
+          "failures": [],
+          "materials": 219,
+          "passed": true,
+          "scope": "Shader identity, preserved inputs, texture binding and layer-0 lighting data. Does not verify all shader families or full-scene pixel parity.",
+          "water_materials": 3
+        }
+      ]
+    },
+    {
+      "test": "water_scene_test",
+      "map": "level4",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": 9,
+          "failures": [],
+          "map": "level4",
+          "passed": true,
+          "scene": "LevelTurnstile",
+          "scope": "Actual imported scene, source water visibility, material dispatch and map-specific light bindings; GPU pixel parity is covered only by the controlled water fixture.",
+          "visible_water_surfaces": 0,
+          "water_surfaces": 1
+        }
+      ]
+    },
+    {
+      "test": "water_scene_test",
+      "map": "level15",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": 9,
+          "failures": [],
+          "map": "level15",
+          "passed": true,
+          "scene": "LevelIsland",
+          "scope": "Actual imported scene, source water visibility, material dispatch and map-specific light bindings; GPU pixel parity is covered only by the controlled water fixture.",
+          "visible_water_surfaces": 1,
+          "water_surfaces": 1
+        }
+      ]
+    },
+    {
+      "test": "water_scene_test",
+      "map": "level34",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": 24,
+          "failures": [],
+          "map": "level34",
+          "passed": true,
+          "scene": "LevelOnsen",
+          "scope": "Actual imported scene, source water visibility, material dispatch and map-specific light bindings; GPU pixel parity is covered only by the controlled water fixture.",
+          "visible_water_surfaces": 3,
+          "water_surfaces": 6
+        }
+      ]
+    },
+    {
+      "test": "water_scene_test",
+      "map": "level40",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": 9,
+          "failures": [],
+          "map": "level40",
+          "passed": true,
+          "scene": "LevelBigRaft",
+          "scope": "Actual imported scene, source water visibility, material dispatch and map-specific light bindings; GPU pixel parity is covered only by the controlled water fixture.",
+          "visible_water_surfaces": 1,
+          "water_surfaces": 1
+        }
+      ]
+    },
+    {
+      "test": "water_scene_test",
+      "map": "level44",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": 9,
+          "failures": [],
+          "map": "level44",
+          "passed": true,
+          "scene": "LevelDonut",
+          "scope": "Actual imported scene, source water visibility, material dispatch and map-specific light bindings; GPU pixel parity is covered only by the controlled water fixture.",
+          "visible_water_surfaces": 1,
+          "water_surfaces": 1
+        }
+      ]
+    },
+    {
+      "test": "water_scene_test",
+      "map": "level59",
+      "passed": true,
+      "returncode": 0,
+      "errors": [],
+      "reports": [
+        {
+          "checks": 9,
+          "failures": [],
+          "map": "level59",
+          "passed": true,
+          "scene": "LevelTrapMaze2",
+          "scope": "Actual imported scene, source water visibility, material dispatch and map-specific light bindings; GPU pixel parity is covered only by the controlled water fixture.",
+          "visible_water_surfaces": 1,
+          "water_surfaces": 1
+        }
+      ]
     }
   ],
   "source_sha256": {
@@ -5165,6 +5297,7 @@
     "assets/original/level8/behaviors.json": "04beb8a59d1d34c06cbb3701cbaf603816058a115cf66e54de38eae253881b29",
     "assets/original/level9/behaviors.json": "96bf47cc3b28b2a10f999a74ea7f6df77c1047a77d0e81557f60bb4db1bac6ad",
     "assets/original/map-catalog.json": "303969f91302c18b8efaa44b2df495a814376bc8a45cfb99d2b9e343c8ac53be",
+    "assets/original/map-shader-inputs.json": "d23ba53c1bd9ca6879a079a5f02fd715d0e701f83a9aa1d387d7a2b0331d4350",
     "assets/original/navigation/level10.json": "c411326a07abe78b4ff340fd2d05aa6e87fa126f8bf321136d7fed83068ea216",
     "assets/original/navigation/level11.json": "8fb8f4a295eed1f5315058ca1d552b449df9db4dfbc1ca42a1dc9d7946dad4a2",
     "assets/original/navigation/level12.json": "00c48aa06c3fd59895868c07de0161bea301cbdd1a3728503dd44c0e997e3713",
@@ -5224,6 +5357,7 @@
     "assets/original/navigation/level7.json": "4a574659f6188c994ea87dab567b82bfb2e0927861d002279c27e109c90fd409",
     "assets/original/navigation/level8.json": "5f0b5e1a7325b62044a0aaf8ab45d6066a7549cd8142eb71cad63f9348bf925e",
     "assets/original/navigation/level9.json": "eea3dacf5a5fcdb2616c8b5cde384f86862d2a087c4830c54d754f512833bd46",
+    "assets/original/water-lighting-inputs.json": "049c6cc56b7985b0011175cc48a93584681d450e313c75ea55eed8bceca9e133",
     "core/original_actor_bounds.gd": "acd08859257c379930a7ee5faacfd8ecdfbd00d3520b27ee90baa2425fd4e8a5",
     "core/original_actor_elements.gd": "40fdc6f30b0150d4a97082d4b7a0e45c8ffba8dab90e32c30cc98c5f74347067",
     "core/original_actor_environment.gd": "4fff615a4c814fb26c9d2002e0fbdba533bce37ea294bd3e6664a1cad6a204be",
@@ -5271,7 +5405,7 @@
     "core/original_player_weapons.gd": "469face003d89c464a9a535df060108a58726060ddee53f935f7f107b7cb143b",
     "core/original_powerup_preview.gd": "67282268e3ec46f6467d4500f16d82c1cd47797299e3857560dc2227be456b43",
     "core/original_powerup_world.gd": "a81d2f2314421de2b6a0612df42de67ee5dea63a7857c615ae05a54120006e42",
-    "core/original_scene_materials.gd": "16759b4269d913ce92882c3641cf1ad31db464ae525533bb49a03598c025b907",
+    "core/original_scene_materials.gd": "87e70ecfbc4371ff0833a49ca610ca7dbb52edbfeb11c6612dacb9ba5a43bc96",
     "core/original_system_random.gd": "adc47354646a125d7f8d69b2f0e7a2b718d569303d22e50cfa41d980d02639f6",
     "core/original_teleport.gd": "6af9be272bdf4046817b409e6b3fc9575c5fcd894a66790cd7f95a2696cb1f47",
     "core/original_timekeeper.gd": "627e8b52ae78f88ff162851d5d9269bd3aabd6992caeec6de2e1ede710fc13ca",
@@ -5280,7 +5414,7 @@
     "ffa_setup.gd": "c6463eb561df16c5195714717e24be001fc179d54d9fa1808a599f1e25fa06e7",
     "ffa_shell.gd": "cbedd396f681a79308e66230a76a34372c1c027541e087e5bb1cf31557da1dc3",
     "local_controllers.gd": "49f41dbf1ebbaa726e60362252e255822d8cb7b6411e0474706128145dd2cfd4",
-    "main.gd": "91c4f33b4bfb38e7066e3e48845fd3af52a13b435d56be0e11fa5f7f2e0d0e92",
+    "main.gd": "e8d6a7d8b9d8d72cf97aef4648a85053308e0ff0e428c3c6aa0b7327c9efd9c4",
     "original_audio.gd": "2b21f594120a1d54ad3522f3630d4524596d7fbace88c7ab2bf4da19e529332d",
     "shaders/original_boundary.gdshader": "7deff366cfde3ee039589f20db2b8b96334489d50e543f7cd6f9a661e3b410b1",
     "shaders/original_cell_particle.gdshader": "ba9da677015c30f45903e9c1f08af771c2439f5c9e594ada2e89a202136597f5",
@@ -5288,6 +5422,7 @@
     "shaders/original_frozen.gdshader": "694c21f1f8e40c363f6b6c59652c4b1af3976db5e20ee41b15f253c3c59b266b",
     "shaders/original_sprite_wave.gdshader": "7957b745a8ece15d4e2c16d374c140565566c2f774b4d05a797ac7de0c46558d",
     "shaders/original_uu.gdshader": "a1e316e99d6db403b304ad7f080038b1e81ce7b2e678107744c280a1ed785075",
+    "shaders/original_water.gdshader": "aeee96da6f709eacd7fdf08983a03b1ba293776a1cea1fce1d482666e709e86e",
     "tests/duel_integration_test.gd": "9188991405fa0f7fa767de0e79cf5ce4e3042ca7910e2275cd4d3b2a8051c1b1",
     "tests/ffa_shell_test.gd": "28341982eff05a130c545ab38706ae9ed713b065c8af211cac5e2ff28a851d24",
     "tests/floor_collapse_test.gd": "2d5bc5dc0ac2df8e3b927822d83e7df402933e0ab71c0b3ba1820596f63bf79f",
@@ -5297,6 +5432,7 @@
     "tests/floor_navigation_test.gd": "e27f02730c92cdbdb3ada5383b2e4832928df536b8114be645f09999505b4d75",
     "tests/level3_behaviors_test.gd": "31f599fd4c79aef76881caa16104aa657aec2bdd477c56d7e6be79913616a9e0",
     "tests/map_behavior_adapter_test.gd": "b255ba840046930167020bb122164d93c1d8c94eeb815ee1d4f6ff1de4c4fedc",
+    "tests/map_materials_test.gd": "041a847d3ce8659476a75ae77edd1be88a26d9665b5b40f49fb6ea1cab58a396",
     "tests/match_playlist_test.gd": "27115b1e1cfc26110a4e3467f97d2537983bed26f8f0d6307c5aeefc4b29fd12",
     "tests/moving_floor_native_test.gd": "7db03f4f0ab64cd58afbec582d0c7e9b0effb29ab1c2fd91e368b3bfd9adfca9",
     "tests/moving_floor_scene_test.gd": "d4270fe1ac7acd5588c645c11cd604f592a77cc4304ee30e707ffd23a2331979",
@@ -5309,10 +5445,12 @@
     "tests/playlist_scene_transition_test.gd": "75d09929f91317c1066b671b6b02b2f9c6e7953ef49ef3b87737d6b1401267ec",
     "tests/reactive_floor_game_loop_test.gd": "6e3e974193e1e32db352a4b439515c7cf44615f63ec990e9c310821c82eb15da",
     "tests/reactive_floor_native_test.gd": "b31539394a9461df6166efff8c0ec41b64674b3b272dea062ea9a23e3acfdccc",
-    "tests/reactive_floor_scene_test.gd": "ea1c1f9a8b519541945fdc4dcad07f05fd138e4e8c2067ed88ee86a9807d6c36"
+    "tests/reactive_floor_scene_test.gd": "ea1c1f9a8b519541945fdc4dcad07f05fd138e4e8c2067ed88ee86a9807d6c36",
+    "tests/water_scene_test.gd": "0fce233c41eaa8dfa28034bd9cdd3ca50149da259552b359b16603e2864e62bc"
   },
-  "generated_at": "2026-10-28T03:10:13.980844+00:00",
+  "generated_at": "2026-10-28T05:42:54.561490+00:00",
   "process_limit": 1,
   "per_test_timeout_seconds": 45,
-  "scope": "Real-scene native Godot tests; no original Unity runtime, browser, visual or frame-parity claim."
+  "scope": "Real-scene native Godot tests; no original Unity runtime, browser, visual or frame-parity claim.",
+  "recheck_note": "Added source-visibility assertions: Turnstile Ocean stays hidden, Onsen retains three active water surfaces. All six water-scene checks rerun. Other 67 passing results retained with unchanged production hashes."
 }

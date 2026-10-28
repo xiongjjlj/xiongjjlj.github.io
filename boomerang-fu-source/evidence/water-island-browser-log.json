@@ -1,0 +1,83 @@
+{
+  "logs": [
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T05:40:25.943Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T05:40:25.969Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DiscSpin\",\"missing\":[],\"model\":\"Disc\",\"skeletons\":0,\"tracks\":2}",
+      "timestamp": "2026-10-28T05:40:31.736Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_THROW {\"actor\":1,\"aim\":0.0,\"position\":[-4.91280794143677,19.635835647583],\"spin\":0.0,\"tick\":384}",
+      "timestamp": "2026-10-28T05:40:31.736Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DEATH {\"cause\":\"disc\",\"killer\":1,\"scores\":[0,1],\"tick\":393,\"victim\":0}",
+      "timestamp": "2026-10-28T05:40:31.920Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"DeathSliced\",\"missing\":[],\"model\":\"Avocado0\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T05:40:31.933Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_DISC_BOUNCE {\"actor\":1,\"position\":[-8.34020709991455,28.7253665924072],\"tick\":397}",
+      "timestamp": "2026-10-28T05:40:32.010Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"Idle\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":116}",
+      "timestamp": "2026-10-28T05:40:33.001Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CHARACTER_BOUND {\"clip\":\"WalkOne\",\"missing\":[],\"model\":\"Watermelon1\",\"skeletons\":1,\"tracks\":122}",
+      "timestamp": "2026-10-28T05:40:33.110Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_CATCH {\"actor\":1,\"tick\":460}",
+      "timestamp": "2026-10-28T05:40:33.849Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_ROUND_SCORES {\"round\":1,\"scores\":[0,1]}",
+      "timestamp": "2026-10-28T05:40:34.223Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_AUDIO_EVENT {\"type\":\"round_end\",\"value\":1}",
+      "timestamp": "2026-10-28T05:40:34.228Z",
+      "url": "http://127.0.0.1:57889/audio/runtime.js"
+    },
+    {
+      "level": "log",
+      "message": "BF_FLOW scores",
+      "timestamp": "2026-10-28T05:40:34.247Z",
+      "url": "http://127.0.0.1:57889/index.js"
+    }
+  ],
+  "errors": []
+}

@@ -54,7 +54,7 @@ public sealed class NativeProbe : BaseUnityPlugin {
         var report = new Report { unity = Application.unityVersion, gameDirectory = Paths.GameRootPath,
             processId = System.Diagnostics.Process.GetCurrentProcess().Id };
         string coroutineOracle = Environment.GetEnvironmentVariable("BOOMERANG_NATIVE_ORACLE");
-        if (coroutineOracle == "SceneVisualOracle.Native.dll" || coroutineOracle == "PlayerAiButtonsOracle.Native.dll" || coroutineOracle == "PlayerAiLoopOracle.Native.dll") {
+        if (coroutineOracle == "WaterRenderOracle.Native.dll" || coroutineOracle == "SceneVisualOracle.Native.dll" || coroutineOracle == "PlayerAiButtonsOracle.Native.dll" || coroutineOracle == "PlayerAiLoopOracle.Native.dll") {
             StartCoroutine(RunCoroutineOracle(report,coroutineOracle));
             return;
         }
@@ -127,6 +127,8 @@ public sealed class NativeProbe : BaseUnityPlugin {
             RunOracle(report,"FloorHazardsOracle.Native.dll","floor-hazards",new[] { "native" });
             RunOracle(report,"FloorNavigationOracle.Native.dll","floor-navigation",new[] { "native" });
             RunOracle(report,"FloorShaderOracle.Native.dll","floor-shader",new[] { "disassembly" });
+            RunOracle(report,"WaterShaderOracle.Native.dll","water-shader",new[] { "disassembly" });
+            RunOracle(report,"MapLightingOracle.Native.dll","map-lighting",new[] { "native" });
             RunOracle(report,"PlaylistOracle.Native.dll","playlist",new[] { "native" });
             RunOracle(report,"DecoyOracle.Native.dll","decoy-native",new[] { "lifecycle","random" });
             RunOracle(report,"DecoyAiOracle.Native.dll","decoy-ai-native",new[] { "decisions" });

@@ -4,12 +4,12 @@
 `ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1`，源码目录是 `boomerang-fu-source/`；
 `boomerang-fu-v0.5.0` 标签保留在该提交。`boomerang-fu-dev` 接受后续开发。
 
-当前源码与开发 Web 包为 `0.5.1-dev.7`。公司预览位于
+当前源码与开发 Web 包为 `0.5.1-dev.8`。公司预览位于
 <https://boomerang-fu.arkevo.ai/>，线上实际版本以 `/version.json` 为准。
 稳定依赖 `0.5.0` 保留，后续开发不改变其提交和标签。
 源代码、浏览器包与证据分别有哈希，历史报告只证明当时记录的构建。
 
-开发包为 `web-development-0.5.1-dev.7.zip`，解压后通过 HTTP(S) 托管。
+开发包为 `web-development-0.5.1-dev.8.zip`，解压后通过 HTTP(S) 托管。
 完整 PCK 超过 100 MiB；附带的 Cloudflare Worker 会将存储分片合成为原文件响应。
 59 个已导入资源场景分别使用自己的原版寻路网格。地图范围已按原版 LevelAsset 核验：本体 36 张、DLC 21 张，另有教程和重复 Toaster 构建条目；详情见 `MAP_SCOPE.md`。运行时障碍重扫已接入；传送门连接仍待完成。
 
@@ -25,7 +25,7 @@
 时钟、导航及呈现服务由探针适配，区别于原游戏完整场景执行。
 42 组轨迹共 37,842 个时点通过，位置最大差小于 0.000001，速度差小于 0.000081。
 
-`godot-map-runtime-check.json` 的 66 项检查包括六张响应式地图、平台寻路和完整游戏循环。
+`godot-map-runtime-check.json` 的 73 项检查包括六张响应式地图、平台寻路和完整游戏循环。
 Big Raft 浏览器实测了近战开关、平台载人、途中反向、滚轴、暂停恢复与完整单程。
 中央区域角色完整往返不掉落；外侧角色会受到固定滚轴阻挡，随后失去脚下平台。
 这项行为由 `godot-reactive-floor-game-loop-check.json` 单独覆盖，未据此声称原版回调一致。
@@ -72,6 +72,14 @@ Big Raft 浏览器实测了近战开关、平台载人、途中反向、滚轴�
 以及重新选择本体开局；日志无错误。证据见 `playlist-browser-check.json`、
 `godot-match-playlist-check.json`、`godot-playlist-scene-transition-check.json`。
 原菜单呈现、过场时间、教程流程和完整游戏随机数交错仍待补齐。
+
+## 水面与材质输入（0.5.1-dev.8）
+
+219 条材质记录的 Shader 身份和纹理输入已补齐，182 个纹理槽经绑定检查。
+原版水面的深度/边缘渐变和日间光照已接入，保留各场景原始启用状态。
+168 个原引擎 GPU 与 WebGL 受控样本全部通过，最大误差小于 1/255；
+六张实际地图检查光照与水面可见性，当前 73 个运行时套件全部通过。
+反射、雾效、其他 Shader 类型及完整场景画面仍待完成。重现步骤及证据见 `WATER_RESTORATION.md`。
 
 ## 运行 Godot
 

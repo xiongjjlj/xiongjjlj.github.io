@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checked_at": "2026-10-28T05:45:47.814251+00:00",
+  "version": "0.5.1-dev.8",
+  "evidence": [
+    "water-scenes-browser-log.json",
+    "water-final-export-browser-log.json"
+  ],
+  "screenshots": [
+    "water-turnstile-play.png",
+    "water-island-play.png",
+    "water-island-throw.png",
+    "water-bigraft-play.png",
+    "water-bigraft-round.png",
+    "water-onsen-play.png"
+  ],
+  "checks": {
+    "scenes": [
+      "LevelTurnstile",
+      "LevelIsland",
+      "LevelBigRaft",
+      "LevelOnsen"
+    ],
+    "final_export_scene": "LevelOnsen",
+    "console_errors": 0,
+    "controlled_gpu_pixels": 168,
+    "pixel_max_error": 0.00295025087373352,
+    "runtime_suites": 73,
+    "source_visibility_preserved": true
+  },
+  "limits": [
+    "Controlled pixels do not establish whole-scene pixel parity.",
+    "Reflections, fog, remaining shader families, seasonal/night lighting and complete visual/audio effects are unfinished."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "checks": 24,
+  "failures": [],
+  "map": "level34",
+  "passed": true,
+  "scene": "LevelOnsen",
+  "scope": "Actual imported scene, source water visibility, material dispatch and map-specific light bindings; GPU pixel parity is covered only by the controlled water fixture.",
+  "visible_water_surfaces": 3,
+  "water_surfaces": 6
+}

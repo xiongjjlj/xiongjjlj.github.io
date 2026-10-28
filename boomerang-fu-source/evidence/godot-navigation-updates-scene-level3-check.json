@@ -4,7 +4,7 @@
       "details": {
         "changed_node_samples": 28161,
         "maximum_queue": 4,
-        "rescan_milliseconds": 465.419,
+        "rescan_milliseconds": 289.498,
         "targets": 2,
         "updates": 26
       },

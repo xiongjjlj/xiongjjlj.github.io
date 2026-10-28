@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
-  "version": "0.5.1-dev.7",
-  "generated_at": "2026-10-28T05:00:24.227219+00:00",
+  "version": "0.5.1-dev.8",
+  "generated_at": "2026-10-28T05:46:31.516614+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 3177,
-  "source_bytes": 310473619,
+  "source_files": 3272,
+  "source_bytes": 314100322,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -15,30 +15,30 @@
   },
   "development_branch": "boomerang-fu-dev",
   "development_archive": {
-    "name": "web-development-0.5.1-dev.7.zip",
-    "bytes": 92581911,
-    "sha256": "603859cbb5e24f2a7e4fc64b868cf78b8d5cec0953eea77edabe3ae4d2d1e931",
+    "name": "web-development-0.5.1-dev.8.zip",
+    "bytes": 93730067,
+    "sha256": "db76eef94213da45bd05a670c9794d7d2110119524c0ee75e7f00c681507823c",
     "availability": "Local task deliverable; not stored in the Git repository"
   },
   "full_game_parity_verified": false,
   "limitations": [
     "Original-game frame/pixel/PCM parity remains unproven.",
-    "Map selection and rotation are implemented: base 36/31, base+DLC 57/52 at 2-4/5-6 players. Tutorial flow and DLC ownership checks remain unfinished.",
-    "Dynamic graph updates match 66 native paths and 6230791 node/path checks across two physics diameters.",
-    "Falling/trap floor state and collapse scheduling match isolated native fixtures; full callback order, projectile attachment and floor particles remain unfinished.",
-    "Teleportal links and complete original visual/audio effects remain unfinished.",
+    "Map selection and rotation remain base 36/31, base+DLC 57/52 at 2-4/5-6 players. Tutorial flow and DLC ownership checks are unfinished.",
+    "219 material-input records and 182 texture slots are bound; not all shader families are implemented.",
+    "Water depth/vignette and day lighting pass 168 controlled native GPU/WebGL pixel samples with maximum error below 1/255. Source water visibility is preserved. Reflections, fog, seasonal/night lighting and full scene rendering remain unfinished.",
+    "73 runtime suites pass. Teleportals, full callback/random ordering, floor particles and complete visual/audio effects remain unfinished.",
     "Stable static directory and boomerang-fu-v0.5.0 dependency remain unchanged."
   ],
   "files": [
     {
       "path": "DEVELOPMENT.md",
-      "bytes": 10674,
-      "sha256": "5c7a64b8bac4312cdc8e7d54a8b63ed19487153634955047ed96c71624ea8e1c"
+      "bytes": 11220,
+      "sha256": "3d5ae7d08bc6d55c08c22490a24da4adbc7f6da9875da5b2515ea8f30e21bc61"
     },
     {
       "path": "README.md",
-      "bytes": 36785,
-      "sha256": "8a3c65490fb512f0055c88d97192954755b6940269e8351b6553cf73099668e1"
+      "bytes": 37211,
+      "sha256": "74aa9a436e832b88be6ba6a65c2e8a5a7c3d136e4d12442c585d4a7abb888ad3"
     },
     {
       "path": "deploy/cloudflare/.gitignore",
@@ -182,8 +182,8 @@
     },
     {
       "path": "evidence/godot-map-runtime-check.json",
-      "bytes": 165679,
-      "sha256": "1320dabd4857ec15993e2e524ec8fef3650dbd145784f928b35d091844811f23"
+      "bytes": 170436,
+      "sha256": "4a14583f0af97dbf97eb40330f78910b9e55e908a664056db6badc0a561ab2a4"
     },
     {
       "path": "evidence/godot-map-selector-check.json",
@@ -9677,8 +9677,8 @@
     },
     {
       "path": "godot/core/original_scene_materials.gd",
-      "bytes": 5817,
-      "sha256": "16759b4269d913ce92882c3641cf1ad31db464ae525533bb49a03598c025b907"
+      "bytes": 7939,
+      "sha256": "87e70ecfbc4371ff0833a49ca610ca7dbb52edbfeb11c6612dacb9ba5a43bc96"
     },
     {
       "path": "godot/core/original_system_random.gd",
@@ -9722,8 +9722,8 @@
     },
     {
       "path": "godot/main.gd",
-      "bytes": 76204,
-      "sha256": "91c4f33b4bfb38e7066e3e48845fd3af52a13b435d56be0e11fa5f7f2e0d0e92"
+      "bytes": 76253,
+      "sha256": "e8d6a7d8b9d8d72cf97aef4648a85053308e0ff0e428c3c6aa0b7327c9efd9c4"
     },
     {
       "path": "godot/main.tscn",
@@ -12947,8 +12947,8 @@
     },
     {
       "path": "tools/verify_map_runtime.py",
-      "bytes": 4897,
-      "sha256": "7367b8f8bd06d26e75a5d4c73ace6df1c268088da5cd2ea6a47116bfb3a9490a"
+      "bytes": 5134,
+      "sha256": "a2dac8d678e9dafc0933e81176197edbcb3695d9948f6f6cad51d1d22edfe686"
     },
     {
       "path": "tools/verify_multi_map.py",
@@ -13147,8 +13147,8 @@
     },
     {
       "path": "tools/native-probe/NativeProbe.cs",
-      "bytes": 11736,
-      "sha256": "000ae77d0b2086c94586ab905ff75dbcfff826b1488570810db826580183e20f"
+      "bytes": 11986,
+      "sha256": "44f925ace24fe5399755ef8ec73654b1757fea2f8203adf6711b336091a91314"
     },
     {
       "path": "tools/native-probe/NativeProbe.csproj",
@@ -14348,22 +14348,22 @@
     {
       "path": "evidence/godot-navigation-updates-scene-level3-check.json",
       "bytes": 1129,
-      "sha256": "43cd47bb743d20805e029e2d5919263c952978e0ff0804635cb6c3e8eb8ee07d"
+      "sha256": "6c1f2308540ab24de918e7ab9eeba1c88f8c13fec9896f426d6afd625df248be"
     },
     {
       "path": "evidence/godot-navigation-updates-scene-level41-check.json",
       "bytes": 1130,
-      "sha256": "e4819fc1a82d8077e69272ebdc787b7ab777bca873ecf597d812a5fc1480e347"
+      "sha256": "835abdbc162745969b48a5379e6209dfc861fb41053b874f5d6bfe71e0dfb646"
     },
     {
       "path": "evidence/godot-navigation-updates-scene-level48-check.json",
-      "bytes": 1010,
-      "sha256": "ffa56d756af18fb590b7b2870e9175dc53532e73eaaf5956957de9e21038d91e"
+      "bytes": 1009,
+      "sha256": "ea5696a432f6d4fa106c14c40acdbc9810518bbdc1fd165c361153a2333be0d0"
     },
     {
       "path": "evidence/godot-navigation-updates-scene-level55-check.json",
       "bytes": 1132,
-      "sha256": "eaa99b7d278d0d4c144ee3f13c8af1b8c23d3f2b47f9b1e799ce4e72b10bb70c"
+      "sha256": "48fbadc5c56bd49eb086d87552191ff45d0bfa9cd7623f05e648e5f01c6c9317"
     },
     {
       "path": "evidence/navigation-graph-settings.json",
@@ -15243,17 +15243,17 @@
     {
       "path": "evidence/godot-floor-hazards-game-level14-check.json",
       "bytes": 221,
-      "sha256": "a82a272793ce191e19e9f89c6737ae41a4f98215aadabf3cf73f3ca522240aca"
+      "sha256": "d3d0de2993b6f2d6b56132872029cdc2fcd9195e3dc6502f70dc0abb99e010d8"
     },
     {
       "path": "evidence/godot-floor-hazards-game-level18-check.json",
-      "bytes": 223,
-      "sha256": "0b206c18fd9c260be16b6862adc721c9f7e39e387a65c6af3ef3ad379133bfa9"
+      "bytes": 222,
+      "sha256": "ba015b8af9c5ab4d5d4a946f92b9cfc9ade1fb74cf2d2da112a3b1a60553d5fc"
     },
     {
       "path": "evidence/godot-floor-hazards-game-level40-check.json",
-      "bytes": 219,
-      "sha256": "6c7ce5032e58dad481f51bd062cbd6fdc4e5067e76124854712db90f033880dc"
+      "bytes": 221,
+      "sha256": "7b279782b8cac3062f28765ebe6813760a621936f82d359f0b4c6ed7e2d7c397"
     },
     {
       "path": "evidence/godot-floor-hazards-scene-level14-check.json",
@@ -15914,6 +15914,481 @@
       "path": "evidence/arkevo-playlist-round2.png",
       "bytes": 67486,
       "sha256": "b989cb0805449ac5730e348365b812094e251a97a7b7b038922b67173f73c6c7"
+    },
+    {
+      "path": "WATER_RESTORATION.md",
+      "bytes": 3028,
+      "sha256": "9b074f8bf129866e9f3f04998f75ca064517abb715765e77931357c77ce0e767"
+    },
+    {
+      "path": "evidence/godot-map-materials-check.json",
+      "bytes": 286,
+      "sha256": "9385c2c9d396f84ac80ddb9f8339df0063c99012990df575f491e10e9e7b2625"
+    },
+    {
+      "path": "evidence/godot-map-runtime-0.5.1-dev.7-check.json",
+      "bytes": 165679,
+      "sha256": "1320dabd4857ec15993e2e524ec8fef3650dbd145784f928b35d091844811f23"
+    },
+    {
+      "path": "evidence/godot-water-lighting-web-render-check.json",
+      "bytes": 66952,
+      "sha256": "453217f2584cb377f505b9b1ab20f6515eb708ae319ad26e71ba6d9091848744"
+    },
+    {
+      "path": "evidence/godot-water-scene-level15-check.json",
+      "bytes": 333,
+      "sha256": "84f979ea7ecb6a3720585a94133d9d4347ac4c38ca930d5163c7445752a83e40"
+    },
+    {
+      "path": "evidence/godot-water-scene-level34-check.json",
+      "bytes": 333,
+      "sha256": "81f1ffed3cad093a71048deb35c35cd48c356e999b114989c9f547618101fc92"
+    },
+    {
+      "path": "evidence/godot-water-scene-level35-check.json",
+      "bytes": 550,
+      "sha256": "10e0e30d33864ccccd3d42bccfe1b6537a88afc7a614839cf3ca292f6aeb3e10"
+    },
+    {
+      "path": "evidence/godot-water-scene-level4-check.json",
+      "bytes": 335,
+      "sha256": "91fc9bfaa3eb28349ae7480f0997d04b48d0cf8a78cf4b74adad90f9ef13465e"
+    },
+    {
+      "path": "evidence/godot-water-scene-level40-check.json",
+      "bytes": 334,
+      "sha256": "820c39b10f484721b8146b6b5d33c6d8138e580a48b815c661b08ef28d21fb73"
+    },
+    {
+      "path": "evidence/godot-water-scene-level44-check.json",
+      "bytes": 332,
+      "sha256": "e644ce0f336728ab9d838ec4332b24a6b4a073c31e3b7d98a4ffc70fa6f3b980"
+    },
+    {
+      "path": "evidence/godot-water-scene-level47-check.json",
+      "bytes": 556,
+      "sha256": "f217f85d5f852dab34bdbf6eaf7457140f051e22f2198a4f25f360ab935dc3c1"
+    },
+    {
+      "path": "evidence/godot-water-scene-level59-check.json",
+      "bytes": 336,
+      "sha256": "caeaaf7782ca4295b17776ce32b3eb958f4ba41e0c68f315b32897ff40275b83"
+    },
+    {
+      "path": "evidence/godot-water-web-render-check.json",
+      "bytes": 31172,
+      "sha256": "32b20f58ff7f1b1247d06a64d50bb989995c83bfd424ecb41c022eafaf5ea69f"
+    },
+    {
+      "path": "evidence/map-lighting-inputs-source.json",
+      "bytes": 5829,
+      "sha256": "a36b062a4cfad741dd0be41e8e8daf3f5b5f16669258f45f63fa655a0c8abd74"
+    },
+    {
+      "path": "evidence/map-lighting-native-launch.json",
+      "bytes": 730,
+      "sha256": "91d296387a2a6b823e9552961ae7bb17f71ebdc3773b4f245c7bc037ee7b5664"
+    },
+    {
+      "path": "evidence/map-lighting-native.json",
+      "bytes": 50578,
+      "sha256": "effd03e8f590d13f16040a28b4c27d6fd47dca13195bb2620ab638e502e87271"
+    },
+    {
+      "path": "evidence/map-lighting-unity-native-player.log",
+      "bytes": 11392,
+      "sha256": "217b7e1d75f23becb836872082e6499bc2dd02efa1b70cb95c130ceb443202f6"
+    },
+    {
+      "path": "evidence/map-lighting-unity-native-probe.json",
+      "bytes": 4122,
+      "sha256": "ad95548673ad230707c007438e86cd7c11421d315d2b8e5817ebac4a19f2d904"
+    },
+    {
+      "path": "evidence/map-shader-inputs-extraction.json",
+      "bytes": 8374,
+      "sha256": "00e4c0ce78993dac0007b2058b8d2572659112d184e705057365901a45e5bc9e"
+    },
+    {
+      "path": "evidence/water-bigraft-play.png",
+      "bytes": 94933,
+      "sha256": "e3b6136ba59be6feb7105ab8da9a44e8b67e1d9a78eb1cca110a356d5c319274"
+    },
+    {
+      "path": "evidence/water-bigraft-round.png",
+      "bytes": 41125,
+      "sha256": "6e7bd32bb548f5318808c5446ff9b1a67c361b91119c1c1810c71fbb94ceff50"
+    },
+    {
+      "path": "evidence/water-browser-check.json",
+      "bytes": 953,
+      "sha256": "ed9e91e811db2cb2b5c4f7adc8292e9550b6e3154705daf2c07a6fa28081b31a"
+    },
+    {
+      "path": "evidence/water-development-build.json",
+      "bytes": 321443,
+      "sha256": "c131d137c722aaf0bf4cab8332f6be0bcaf507b2c205637d4623214defc7a788"
+    },
+    {
+      "path": "evidence/water-final-export-browser-log.json",
+      "bytes": 9852,
+      "sha256": "e129da8b9ced5bb53a8c080c258491b21a1331b9f37a621ccc99e668892822fe"
+    },
+    {
+      "path": "evidence/water-island-browser-log.json",
+      "bytes": 3089,
+      "sha256": "a24e536dd0309e9f1739ab0c22583f20773c0c2a9f41bb27a8c789e318f39a53"
+    },
+    {
+      "path": "evidence/water-island-play.png",
+      "bytes": 121672,
+      "sha256": "7eb9b365c4470f3179276267023390a3df20dfbccc5ec1740c65dae7cefb1f41"
+    },
+    {
+      "path": "evidence/water-island-throw.png",
+      "bytes": 45126,
+      "sha256": "3e905154d81e2d9c230858c5a7a7985755e99da3811658bb4070def6478b5abf"
+    },
+    {
+      "path": "evidence/water-lighting-render-native-launch.json",
+      "bytes": 730,
+      "sha256": "37ff58ad0be4030aa6f45823db4fd22da1f22678f0902b56ec82b2c0ee425fad"
+    },
+    {
+      "path": "evidence/water-lighting-render-native.json",
+      "bytes": 38504,
+      "sha256": "06989a96b94d7ea92d710fbf2c554909bd31b60d0defff9f218dcc376f106aff"
+    },
+    {
+      "path": "evidence/water-lighting-render-source.json",
+      "bytes": 2178,
+      "sha256": "c76d2ad9b0e6221826dc604e3d70550263ee653f8f14edafd4736326b0384199"
+    },
+    {
+      "path": "evidence/water-lighting-render-unity-native-player.log",
+      "bytes": 10652,
+      "sha256": "bd79af8175181e08365e136ba8f66acb2b6ec55fc63f0c0ceee8eaff561fd823"
+    },
+    {
+      "path": "evidence/water-lighting-render-unity-native-probe.json",
+      "bytes": 193,
+      "sha256": "e4a234cb8135cf89a7c7fd921a813d2a0a5f03788ece060bb1ab8d77db1383be"
+    },
+    {
+      "path": "evidence/water-lighting-web-browser-log.json",
+      "bytes": 42530,
+      "sha256": "b64ebf6a7c10497a1a8d2c9ead377c83161ef8c38768ac893cb121bf26be4d8e"
+    },
+    {
+      "path": "evidence/water-onsen-play.png",
+      "bytes": 72109,
+      "sha256": "475807596c842f7e0f5efbc4f5a3ae6592cf6ccc9fae066577bb33993b105775"
+    },
+    {
+      "path": "evidence/water-render-native-launch.json",
+      "bytes": 730,
+      "sha256": "1b884c83567f381814f6d33aa5f57c7efe9cbb0d152946881b02032e1f70de94"
+    },
+    {
+      "path": "evidence/water-render-native.json",
+      "bytes": 17676,
+      "sha256": "1df2c3b97ae97136a5b47dc70d9af3f6c7c7ebc91337ca9a8856450bde6c6b6d"
+    },
+    {
+      "path": "evidence/water-render-unity-native-player.log",
+      "bytes": 10570,
+      "sha256": "d12d4a88a4b40c93482256ff9dc48d3cbe75df4e684141a8f74e31c37f1d796b"
+    },
+    {
+      "path": "evidence/water-render-unity-native-probe.json",
+      "bytes": 184,
+      "sha256": "73114147b54ebf12e81308b215852edb772a5cee9e70971807be522bebbe6bfc"
+    },
+    {
+      "path": "evidence/water-render-white-source.json",
+      "bytes": 648,
+      "sha256": "e01b5f74d20f8be920309e0027ee2b87931f12fa477862a0efbbaee3eb773b56"
+    },
+    {
+      "path": "evidence/water-scenes-browser-log.json",
+      "bytes": 41966,
+      "sha256": "9b1fb97207267f0c6a8cedfa777c5c7b467047af3bcf52dd19b3f9e2b5b36f74"
+    },
+    {
+      "path": "evidence/water-shader-disassembly.json",
+      "bytes": 253289,
+      "sha256": "7b4e2aa620d39aa4f9a5977be9507ac843bcfd8ca0ae55198ded3582453b2b50"
+    },
+    {
+      "path": "evidence/water-shader-extraction.json",
+      "bytes": 287,
+      "sha256": "2c958831e6f20c5dc1bad3ee5459d0ff6165d9de55e1df609d162df9dc8da947"
+    },
+    {
+      "path": "evidence/water-shader-native-launch.json",
+      "bytes": 748,
+      "sha256": "275c49f5a72fde5ace825963d1762081b37ab5d3a046a7fd99a1f0a258561211"
+    },
+    {
+      "path": "evidence/water-shader-unity-native-player.log",
+      "bytes": 11394,
+      "sha256": "ce277c4ce52e1e7dda6cb4f1bd705b41052168ff70de988c0e498cdfce8a6612"
+    },
+    {
+      "path": "evidence/water-shader-unity-native-probe.json",
+      "bytes": 4127,
+      "sha256": "0b55a6fa5fd95139a314edc3e54f8f421ef7776cd165dc051fc3507b135d0337"
+    },
+    {
+      "path": "evidence/water-source-visibility.json",
+      "bytes": 8538,
+      "sha256": "bae2e4f32bb38754fc68c9cfecaa8650252b82087bb8a563682f5ce80c649089"
+    },
+    {
+      "path": "evidence/water-turnstile-browser-log.json",
+      "bytes": 15759,
+      "sha256": "533cf5a88bfbf6980e067ea94231cc19534d69163ba7d75fb62901c12696510a"
+    },
+    {
+      "path": "evidence/water-turnstile-play.png",
+      "bytes": 73504,
+      "sha256": "b374fbcae8672a08c6a588cb20c4a059ff6ec2f8093d71e51bff986827fed2cd"
+    },
+    {
+      "path": "evidence/water-web-browser-log.json",
+      "bytes": 19348,
+      "sha256": "0c5d4c64c75f5316664773816ae3f2371d1fe842b316ebfb1260789bc4bae0d4"
+    },
+    {
+      "path": "evidence/web-water-package-check.json",
+      "bytes": 291,
+      "sha256": "1a5b74742701d9c46dadc989c3db6fefb607afe5a2568ee451ff988224a3c89a"
+    },
+    {
+      "path": "godot/assets/original/map-shader-inputs.json",
+      "bytes": 213909,
+      "sha256": "d23ba53c1bd9ca6879a079a5f02fd715d0e701f83a9aa1d387d7a2b0331d4350"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets1.assets_447.png",
+      "bytes": 143,
+      "sha256": "fbff1346df97305e31096d8e4c828bbc836c9ae1de4117891b022b4ba13fc9e6"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets1.assets_447.png.import",
+      "bytes": 1008,
+      "sha256": "ff5107ac2dd7e5509ff43434697298b0e5995fb1b36d88768014bad4bafeb15c"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets1.assets_544.png",
+      "bytes": 111,
+      "sha256": "77ed633fec2756b5fcc3e2dd77b68b51d18d37d8e78ff25ce27734e5b312cac0"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets1.assets_544.png.import",
+      "bytes": 1008,
+      "sha256": "d0431b5fa27496cd7034f4e8c77f5591c486267778e7905f284645d26b915736"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets1.assets_698.png",
+      "bytes": 114,
+      "sha256": "a90d56954ac221a4744666628e1d1edfbcc07f1314d0bba040718c56745f5b74"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets1.assets_698.png.import",
+      "bytes": 1008,
+      "sha256": "472fa416fa3766396731cb888cc0ffffb252d495d1203c47c3a5dc09ea0d488d"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets10.assets_5.png",
+      "bytes": 699235,
+      "sha256": "5111437360ee788300ac0e92a185a3b3409e542eedb2f596ffb0f32fd7d4da3b"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets10.assets_5.png.import",
+      "bytes": 1005,
+      "sha256": "1294c3622152b2236c226a0e438f2c481adb8c140a2c8b39e91fde193a1e3f5e"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets10.assets_7.png",
+      "bytes": 154,
+      "sha256": "13881aea61824fc22be9c90d773d7136cf58ffc176fab9b98621a16cc6e71681"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets10.assets_7.png.import",
+      "bytes": 1005,
+      "sha256": "616b8d80149d2815cc1d6f3b840f5fde73a8c2c401d757b6cd59cc5cae204224"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets26.assets_4.png",
+      "bytes": 127,
+      "sha256": "61622e91e02218c3a981f05167c36d09622ac6bc27b6e70abe78361aa4d329e0"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets26.assets_4.png.import",
+      "bytes": 1004,
+      "sha256": "b5ffe8e1ecade5236d2e7724c9d93487a38bc0fe15de6692723b1209a3e8fc41"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets41.assets_8.png",
+      "bytes": 37650,
+      "sha256": "59c37436efcb896ee8ef8ec71cbee08e36925431dddef12f9eac63a62d1b37dd"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets41.assets_8.png.import",
+      "bytes": 1005,
+      "sha256": "d66e0b64675ec1739cebcae0cd5d80291552b74ccfe726c06e6ed5cc634e5768"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets8.assets_6.png",
+      "bytes": 829394,
+      "sha256": "46ad751daea6a8f3f634ab87fc31a1c56dfa5193cdbcc9ae12e6ae1fcfb3e3dc"
+    },
+    {
+      "path": "godot/assets/original/shader-textures/sharedassets8.assets_6.png.import",
+      "bytes": 1002,
+      "sha256": "8d0a390c5c27417d079afac4713a51f4dff0318f93f1f269d206e0f4135215d5"
+    },
+    {
+      "path": "godot/assets/original/water-lighting-inputs.json",
+      "bytes": 105746,
+      "sha256": "049c6cc56b7985b0011175cc48a93584681d450e313c75ea55eed8bceca9e133"
+    },
+    {
+      "path": "godot/shaders/original_boundary.gdshader.uid",
+      "bytes": 20,
+      "sha256": "9f35f10ef6a738c0cb02490f0df1cd02573c3204d8b9a6da2ed5045285a42d5e"
+    },
+    {
+      "path": "godot/shaders/original_cell_particle.gdshader.uid",
+      "bytes": 20,
+      "sha256": "62705980ca3c852c14cc26153d6245ca22e1c2423656ea516fb7f1db85f98bf0"
+    },
+    {
+      "path": "godot/shaders/original_explosion.gdshader.uid",
+      "bytes": 20,
+      "sha256": "547003487638a15a24ad9029e4bbf07f22204c10edfee8b69d2a926cbb5ad212"
+    },
+    {
+      "path": "godot/shaders/original_frozen.gdshader.uid",
+      "bytes": 20,
+      "sha256": "66d996d33835bb18486c6f97a44df364a19bd8347478abca98daf490b520143e"
+    },
+    {
+      "path": "godot/shaders/original_sprite_wave.gdshader.uid",
+      "bytes": 20,
+      "sha256": "76a52f34a8f7f8973a779277d70ca46243f29709ef3484860516acb8dae3d5bb"
+    },
+    {
+      "path": "godot/shaders/original_uu.gdshader.uid",
+      "bytes": 20,
+      "sha256": "ca267a45fdba8b08ca2979444a90d5da30b3b35bc5e011f4c7937cfdc122ca64"
+    },
+    {
+      "path": "godot/shaders/original_water.gdshader",
+      "bytes": 3669,
+      "sha256": "aeee96da6f709eacd7fdf08983a03b1ba293776a1cea1fce1d482666e709e86e"
+    },
+    {
+      "path": "godot/shaders/original_water.gdshader.uid",
+      "bytes": 20,
+      "sha256": "bedb65148729bfcbcefab62e916835d06eba0eb6ea7354c62cb1d6fa9a187b0b"
+    },
+    {
+      "path": "godot/tests/map_materials_test.gd",
+      "bytes": 3263,
+      "sha256": "041a847d3ce8659476a75ae77edd1be88a26d9665b5b40f49fb6ea1cab58a396"
+    },
+    {
+      "path": "godot/tests/map_materials_test.gd.uid",
+      "bytes": 20,
+      "sha256": "6d07883b13834a72b535ba9078a25a935c663c560d7e58b8e73fb1660a54ef7d"
+    },
+    {
+      "path": "godot/tests/water_scene_test.gd",
+      "bytes": 2712,
+      "sha256": "0fce233c41eaa8dfa28034bd9cdd3ca50149da259552b359b16603e2864e62bc"
+    },
+    {
+      "path": "godot/tests/water_scene_test.gd.uid",
+      "bytes": 19,
+      "sha256": "da7083a88de466be751dce943bd38fed435c73ff3d086f5f478505f0f6395a68"
+    },
+    {
+      "path": "tools/export_map_shader_inputs.py",
+      "bytes": 4544,
+      "sha256": "c1febb716317350165d11b6a64cd6f533e0a0e0bc4c38e1a06adac29a05d1eb6"
+    },
+    {
+      "path": "tools/export_water_shader.py",
+      "bytes": 1416,
+      "sha256": "2a6a654e9820e039d337b3610f861f19c7a51a798c17b66bb55cbeffca1d733c"
+    },
+    {
+      "path": "tools/map-lighting-native/Catalog.cs",
+      "bytes": 69115,
+      "sha256": "07834a7041585922e1e88b53414913b5e767987c6d1989da452ed65cf2f64bdc"
+    },
+    {
+      "path": "tools/map-lighting-native/MapLightingOracle.csproj",
+      "bytes": 504,
+      "sha256": "8ac6d510024db8a894965a50c53c785bc9eebec057959d7544404cf3a2c9bdcc"
+    },
+    {
+      "path": "tools/map-lighting-native/Program.cs",
+      "bytes": 1325,
+      "sha256": "d13a65b6616cb2727ad654f4478198900422803ba7cecb83f31b36dfe89ebaef"
+    },
+    {
+      "path": "tools/map-lighting-native/extract.py",
+      "bytes": 2522,
+      "sha256": "2c5b75e79974a728dba92cbd1620bd6f5a7510b0e0084cccf63ba71858f72b0c"
+    },
+    {
+      "path": "tools/water-render-native/Materials.cs",
+      "bytes": 1347,
+      "sha256": "a84f595a2d5d2e84606e1e764a1c7b0ccc7397ce9c17716dc5c542faa86b3974"
+    },
+    {
+      "path": "tools/water-render-native/Program.cs",
+      "bytes": 7473,
+      "sha256": "a36aacdd69c55392b2cd426fdfe9e94e037f051f0225a3564fa8693f1c860b44"
+    },
+    {
+      "path": "tools/water-render-native/WaterRenderOracle.csproj",
+      "bytes": 504,
+      "sha256": "2d430271bf6448367c655b077669fd689fc9d2bd46e07e87ff8589490dae9e05"
+    },
+    {
+      "path": "tools/water-render-web/main.tscn",
+      "bytes": 157,
+      "sha256": "44dcd305806317d1a5e6f36b9de95237b20bebee4d0c6fb6ec6c7175434a0730"
+    },
+    {
+      "path": "tools/water-render-web/prepare.py",
+      "bytes": 2133,
+      "sha256": "db86eba074028b0e721de9569e585d8693c440718bb4ff9559a7b28805f46ff1"
+    },
+    {
+      "path": "tools/water-render-web/project.godot",
+      "bytes": 331,
+      "sha256": "514a407ba83947e60942c86ebe9dad9d6ecf1b1c378d4a35e20340f935775344"
+    },
+    {
+      "path": "tools/water-render-web/test.gd",
+      "bytes": 4271,
+      "sha256": "190085ad2d5185f68aec9e638116d804265c5511be12d706c6d81c30a43cc237"
+    },
+    {
+      "path": "tools/water-shader-native/Program.cs",
+      "bytes": 2481,
+      "sha256": "703e16997890ce3f73311005fbb3722a8c76833a5ec6d44f8938293443a0cd82"
+    },
+    {
+      "path": "tools/water-shader-native/WaterShaderOracle.csproj",
+      "bytes": 343,
+      "sha256": "97c5ec9ebd5dbc82cba8f16d996e672ed2a29c1408664954daf221611c48cc14"
     }
   ],
   "deployment": {

@@ -1,0 +1,10 @@
+{
+  "fixture_sha256": "1df2c3b97ae97136a5b47dc70d9af3f6c7c7ebc91337ca9a8856450bde6c6b6d",
+  "assembly_sha256": "b59ad8ee64fbd370f70c950f26f2458d5d1da9ada2569529ba839d7cb2fb1924",
+  "source_sha256": {
+    "tools/water-render-native/Materials.cs": "a84f595a2d5d2e84606e1e764a1c7b0ccc7397ce9c17716dc5c542faa86b3974",
+    "tools/water-render-native/WaterRenderOracle.csproj": "2d430271bf6448367c655b077669fd689fc9d2bd46e07e87ff8589490dae9e05",
+    "tools/water-render-native/Program.cs": "1b0c6895e4ce2ed2e13463e98ae828cc7275195f481fb158e6ab08f81b0e9a6f"
+  },
+  "scope": "84 white direct-light GPU samples; controlled fixture, not full scene parity"
+}

@@ -1,0 +1,405 @@
+{
+  "resource_scenes": 39,
+  "renderers": 44,
+  "active_resource_scenes": 33,
+  "active_renderers": 35,
+  "scope": "Serialized FX/Water_DepthVignette renderer hierarchy. Resource scene counts include tutorial and duplicate Toaster build entries; these are not unique FFA map counts.",
+  "renderers_detail": [
+    {
+      "map": "level4",
+      "name": "LevelTurnstile",
+      "node": "Ocean",
+      "id": 127,
+      "active_in_hierarchy": false,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level8",
+      "name": "LevelToaster",
+      "node": "Ocean",
+      "id": 19,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level11",
+      "name": "LevelCloudSweep",
+      "node": "Ocean",
+      "id": 207,
+      "active_in_hierarchy": false,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level13",
+      "name": "LevelTempleGarden",
+      "node": "Ocean",
+      "id": 24,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level14",
+      "name": "LevelFalling",
+      "node": "Ocean",
+      "id": 93,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level15",
+      "name": "LevelIsland",
+      "node": "Ocean",
+      "id": 69,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level16",
+      "name": "LevelMiniIsland",
+      "node": "Ocean",
+      "id": 174,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level17",
+      "name": "LevelClouds",
+      "node": "Ocean",
+      "id": 156,
+      "active_in_hierarchy": false,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level18",
+      "name": "LevelFalling2",
+      "node": "Ocean (1)",
+      "id": 142,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level19",
+      "name": "LevelSquare",
+      "node": "Ocean",
+      "id": 136,
+      "active_in_hierarchy": false,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level20",
+      "name": "LevelWheel",
+      "node": "Ocean",
+      "id": 117,
+      "active_in_hierarchy": false,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level22",
+      "name": "LevelRing",
+      "node": "Ocean",
+      "id": 163,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level24",
+      "name": "LevelSplit",
+      "node": "Ocean",
+      "id": 173,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level26",
+      "name": "LevelDrift",
+      "node": "Ocean",
+      "id": 118,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level27",
+      "name": "LevelTracks",
+      "node": "Ocean",
+      "id": 228,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level28",
+      "name": "LevelTutorial",
+      "node": "Ocean",
+      "id": 86,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level29",
+      "name": "LevelSpin",
+      "node": "Ocean",
+      "id": 145,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level32",
+      "name": "LevelPier",
+      "node": "Ocean",
+      "id": 43,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level33",
+      "name": "LevelToaster",
+      "node": "Ocean",
+      "id": 19,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level34",
+      "name": "LevelOnsen",
+      "node": "BathPool_A_Water",
+      "id": 123,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level34",
+      "name": "LevelOnsen",
+      "node": "polySurface13",
+      "id": 241,
+      "active_in_hierarchy": false,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level34",
+      "name": "LevelOnsen",
+      "node": "pasted__pCube18",
+      "id": 255,
+      "active_in_hierarchy": false,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level34",
+      "name": "LevelOnsen",
+      "node": "pasted__pasted__pCube20",
+      "id": 383,
+      "active_in_hierarchy": false,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level34",
+      "name": "LevelOnsen",
+      "node": "BathPool_C_Water",
+      "id": 475,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level34",
+      "name": "LevelOnsen",
+      "node": "BathPool_C_Water",
+      "id": 476,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level36",
+      "name": "LevelBridges",
+      "node": "Ocean",
+      "id": 69,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level37",
+      "name": "LevelMist",
+      "node": "Ocean",
+      "id": 182,
+      "active_in_hierarchy": false,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level40",
+      "name": "LevelBigRaft",
+      "node": "Ocean",
+      "id": 98,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level41",
+      "name": "LevelCircleMaze",
+      "node": "Ocean",
+      "id": 145,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level42",
+      "name": "LevelCourtyard",
+      "node": "Ocean",
+      "id": 142,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level44",
+      "name": "LevelDonut",
+      "node": "Ocean",
+      "id": 118,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level45",
+      "name": "LevelFourCogs",
+      "node": "Ocean",
+      "id": 139,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level46",
+      "name": "LevelIslandPair",
+      "node": "Ocean",
+      "id": 121,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level49",
+      "name": "LevelPincer",
+      "node": "Ocean",
+      "id": 101,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level50",
+      "name": "LevelRaftCrusher",
+      "node": "Ocean",
+      "id": 123,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level51",
+      "name": "LevelRaftPair",
+      "node": "Ocean",
+      "id": 97,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level52",
+      "name": "LevelRaftSwitches",
+      "node": "Ocean",
+      "id": 185,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level53",
+      "name": "LevelRaftSwitches2",
+      "node": "Ocean",
+      "id": 193,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level54",
+      "name": "LevelRivercrossing",
+      "node": "Ocean",
+      "id": 143,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level55",
+      "name": "LevelRollerSweep",
+      "node": "Ocean",
+      "id": 111,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level56",
+      "name": "LevelShrine",
+      "node": "Ocean",
+      "id": 113,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level57",
+      "name": "LevelTrap",
+      "node": "Ocean",
+      "id": 92,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level58",
+      "name": "LevelTrapIslands",
+      "node": "Ocean",
+      "id": 118,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    },
+    {
+      "map": "level59",
+      "name": "LevelTrapMaze2",
+      "node": "Ocean",
+      "id": 107,
+      "active_in_hierarchy": true,
+      "enabled": true,
+      "surfaces": 1
+    }
+  ]
+}

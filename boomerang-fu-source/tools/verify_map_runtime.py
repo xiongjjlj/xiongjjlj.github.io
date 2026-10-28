@@ -30,10 +30,12 @@ def main():
     tests += [('floor_hazards_game_test', key) for key in ('level14','level18','level40')]
     tests += [('level3_behaviors_test', 'level3'), ('ffa_shell_test', 'level4'), ('duel_integration_test', 'level2')]
     tests += [('match_playlist_test','level2'),('playlist_scene_transition_test','level2')]
+    tests += [('map_materials_test','level2')]
+    tests += [('water_scene_test',key) for key in ('level4','level15','level34','level40','level44','level59')]
     paths = [*args.project.glob('*.gd'), *args.project.glob('core/*.gd'), *args.project.glob('assets/original/level*/behaviors.json')]
     paths += list(args.project.glob('assets/original/navigation/*.json'))
     paths += list(args.project.glob('assets/original/floor-*.json')) + list(args.project.glob('shaders/*.gdshader'))
-    paths += [args.project/'assets/original/map-catalog.json']
+    paths += [args.project/('assets/original/'+name) for name in ['map-catalog.json','map-shader-inputs.json','water-lighting-inputs.json']]
     paths += [args.project / ('tests/' + name + '.gd') for name in sorted({t[0] for t in tests})]
     hashes = {str(p.relative_to(args.project)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(paths)}
     results = []

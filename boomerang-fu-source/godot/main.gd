@@ -107,7 +107,7 @@ func _ready() -> void:
 		active_scene_index=scene_index_for_key(incoming.scene_key)
 		requested_map="" # The active playlist now owns scene selection.
 	active_scene = manifest.scenes[active_scene_index]
-	scene_materials.initialize(ROOT)
+	scene_materials.initialize(ROOT,str(active_scene.file).get_file().get_basename())
 	disguise_inputs=read_json(ROOT+"disguise-inputs.json")
 	var scene_key := str(active_scene.file).get_file().get_basename()
 	var scene_boundary_path := ROOT + "boundary-inputs-" + scene_key + ".json"

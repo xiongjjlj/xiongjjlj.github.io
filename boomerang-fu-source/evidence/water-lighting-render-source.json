@@ -1,0 +1,26 @@
+{
+  "fixture_sha256": "06989a96b94d7ea92d710fbf2c554909bd31b60d0defff9f218dcc376f106aff",
+  "assembly_sha256": "5518d04431517d86a927a8c559fecb4a8c6423b20150aeabc1132051cdb485c9",
+  "source_sha256": {
+    "godot/shaders/original_water.gdshader": "aeee96da6f709eacd7fdf08983a03b1ba293776a1cea1fce1d482666e709e86e",
+    "godot/assets/original/map-shader-inputs.json": "d23ba53c1bd9ca6879a079a5f02fd715d0e701f83a9aa1d387d7a2b0331d4350",
+    "godot/assets/original/water-lighting-inputs.json": "049c6cc56b7985b0011175cc48a93584681d450e313c75ea55eed8bceca9e133",
+    "tools/water-render-native/Materials.cs": "a84f595a2d5d2e84606e1e764a1c7b0ccc7397ce9c17716dc5c542faa86b3974",
+    "tools/water-render-native/Program.cs": "a36aacdd69c55392b2cd426fdfe9e94e037f051f0225a3564fa8693f1c860b44",
+    "tools/water-render-native/WaterRenderOracle.csproj": "2d430271bf6448367c655b077669fd689fc9d2bd46e07e87ff8589490dae9e05",
+    "tools/water-render-web/prepare.py": "db86eba074028b0e721de9569e585d8693c440718bb4ff9559a7b28805f46ff1",
+    "tools/water-render-web/test.gd": "190085ad2d5185f68aec9e638116d804265c5511be12d706c6d81c30a43cc237",
+    "tools/water-render-web/project.godot": "514a407ba83947e60942c86ebe9dad9d6ecf1b1c378d4a35e20340f935775344",
+    "tools/water-render-web/main.tscn": "44dcd305806317d1a5e6f36b9de95237b20bebee4d0c6fb6ec6c7175434a0730"
+  },
+  "web_export_sha256": {
+    "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
+    "index.html": "428add146e4546947bd1742378df1123996510248482de3a448b617aa0ea093a",
+    "index.png": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+    "index.audio.worklet.js": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+    "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
+    "index.audio.position.worklet.js": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+    "index.pck": "c774b98489038c8a692ef97e1d579a92402f718a01f7226228420a3f9da10e3d"
+  },
+  "scope": "168 controlled GPU pixels: white direct light and LevelTurnstile day light with ambient/secondary SH. Reflections and fog disabled; not full-scene parity."
+}
