@@ -1,0 +1,207 @@
+{
+  "version": "0.5.1-dev.1",
+  "checked_at": "2026-10-28T01:28:27.581215+00:00",
+  "passed": true,
+  "checks": {
+    "turnstile_loads": true,
+    "slide_traps_loads": true,
+    "keyboard_throw": true,
+    "pause_resume": true,
+    "round_continuation": true,
+    "audio_runtime_ready": true,
+    "melee_switch": true,
+    "both_brushes_trigger": true,
+    "both_brushes_spring_back": true,
+    "no_browser_errors_or_warnings": true
+  },
+  "browser_errors": [],
+  "source_sha256": {
+    "godot/assets/original/level10/behaviors.json": "1e331b377e8f9dc367a9ddcb3d1a38768a2a9ffc7bcb9d9d285a554c9db87732",
+    "godot/assets/original/level11/behaviors.json": "1500f5b6d8ff1c29298e1b40705adaf3e6ae7526942a14498c2db46bce0f2f12",
+    "godot/assets/original/level12/behaviors.json": "460aed0a24ab0ca519f488b78b5b83aa5869fce13dee1eb7bd2699b9b18c0aa9",
+    "godot/assets/original/level13/behaviors.json": "02ca2111495041ac9eac1da73580d3f2a1ca403740e1f6bb39d864f4756f559c",
+    "godot/assets/original/level14/behaviors.json": "ba76633d72a123be877a3a51fdbd6149b19859a68b585709416d05e92a7fd1b1",
+    "godot/assets/original/level15/behaviors.json": "eceb1cb8a73186e409a822a4a4c72e55aee6008ebb17aab5a0952bac6c836610",
+    "godot/assets/original/level16/behaviors.json": "cafefa95058ddc8b01a33f6abda899f02756c5b188e2c86cb8ca527333d28e88",
+    "godot/assets/original/level17/behaviors.json": "36d6b45e7f7f6f19491efa8c4e1c238bbffa1942e18ade0ef498a89860fc3bc3",
+    "godot/assets/original/level18/behaviors.json": "782d71cb3867fe95ca090122e19901c156a610fecaf13dafcd071bdae1e99afd",
+    "godot/assets/original/level19/behaviors.json": "1a6809057d754b9fe69236204d5a11a8f132ad01d766839dbe99a1a09c4a654c",
+    "godot/assets/original/level2/behaviors.json": "ae5e4419d1f3130e02923f20101d8198f4fe9e64a186f731ee78b0c715b53715",
+    "godot/assets/original/level20/behaviors.json": "77ad3547af8057527ba800cae711076517390e88d14ce77e37621f9b20964dd6",
+    "godot/assets/original/level21/behaviors.json": "a791691ead95b26e9d78d1302f90d45bef9328ff9d2dc9fe99346ea5449b9d46",
+    "godot/assets/original/level22/behaviors.json": "bc0b0efb05cf7a81afec29765086e5b7634f0a9b689a65351478ff6b8cb838cf",
+    "godot/assets/original/level23/behaviors.json": "3fcbfd27728f95a5823fe4d0d3caba9c3c2165e1c8995326e383e716e9bfc41d",
+    "godot/assets/original/level24/behaviors.json": "766a048fb22193ae4701c330dfb163370c12c5a35c780a59357e913b9497062f",
+    "godot/assets/original/level25/behaviors.json": "186a9ba1bb79b1f0defab39286f4db5db09631892e9c6a93620383c2e7d2786e",
+    "godot/assets/original/level26/behaviors.json": "f6df3d975c2b20967f7e4597a80d0ef080e0b269552f323d29774be2b65b9fbd",
+    "godot/assets/original/level27/behaviors.json": "d9ac58cc05c4be3044e02bce1cddfce3965cc165725eecda77a7c5b74eb0cddc",
+    "godot/assets/original/level28/behaviors.json": "17dda00b8321af93b6ff0d007b9a10811b9a30fd839d1e195920f60cfde30f50",
+    "godot/assets/original/level29/behaviors.json": "b80b9d3ece0c1b14ed97390097b9fb43ba1d060dd2ca775daa5364e72ebba56c",
+    "godot/assets/original/level3/behaviors.json": "1427c50ca7b8c8bb865fc59b0605c74f50da180c85de76883b4e2a8d98d238c5",
+    "godot/assets/original/level30/behaviors.json": "957e63c67eab60720858e425cad79c4522bcfeaf7848a7267e045a9e0bb923c6",
+    "godot/assets/original/level31/behaviors.json": "94a16955577170e0175f67b9e7c4e86331384da18b1138f8ae783113f346e8f7",
+    "godot/assets/original/level32/behaviors.json": "7331941cf694153c9868bf14831a7e0fc984c5bfd20096ecaa9df12d94a4af8b",
+    "godot/assets/original/level33/behaviors.json": "675a6a56715e5cb7ba5e1e0735aa0a9f9fa59d410bd4848864bb70987a3e52f9",
+    "godot/assets/original/level34/behaviors.json": "0d00cad9c81ad7ddda3371d5a9d776a1c9fbf7358ec61d9411e28501c0a1e988",
+    "godot/assets/original/level35/behaviors.json": "4c2e084b35e9e12980977989fbe651e8f1a4b6dd1bec96c380c304e408ce81db",
+    "godot/assets/original/level36/behaviors.json": "84ffa16a554376fa9bd507b3f738cf9290293dc56187ab9c21ea63329edf7ce4",
+    "godot/assets/original/level37/behaviors.json": "904750897e8d4be3974d7c8b110e04e68a95d00857b34eba82efec0917e95614",
+    "godot/assets/original/level38/behaviors.json": "be4a88e486fc336497fad32875681af5afcbd8d857888bf3a462df2117282f75",
+    "godot/assets/original/level39/behaviors.json": "733304d5ed16659a1897393f2e03238f82de04992be5ee80efc1bc2b8b05875c",
+    "godot/assets/original/level4/behaviors.json": "52720ba1f63cbe2e2eebfd689d5340303bf8239f856ad9fd6b79d81bb4030f55",
+    "godot/assets/original/level40/behaviors.json": "8645ce53e6e6686c7c4871c5cc28a86338a6aec56ab5af3f6fb16a4737df8066",
+    "godot/assets/original/level41/behaviors.json": "06bcaf8c1dfaaa51cf243c66cb26b3370b1f8a19f10e0e892bc0ffa40b8a66eb",
+    "godot/assets/original/level42/behaviors.json": "457d3aaff376c9611bac82de67b8c8acde9b5c32e42bb9cf4b79ec4bea42c16a",
+    "godot/assets/original/level43/behaviors.json": "e2fa3b05518829350139d4203a9fe4783ef2c536d2651a4c4efdee57f89d3bdf",
+    "godot/assets/original/level44/behaviors.json": "7fcbd4b45a44e98fc2d4a3bd279064ac103e45d1d3845b34770f0a0f48727d73",
+    "godot/assets/original/level45/behaviors.json": "11ee2010417b257358c0b3379ad20b7ee0259b3e3179cc3a89efdd579e8f918d",
+    "godot/assets/original/level46/behaviors.json": "bcd617026ca74a329772e8f57ab9c04a5c724ab4a5e4fb59b040d0db0c2ccbba",
+    "godot/assets/original/level47/behaviors.json": "f4657a6004548368f8446f613737931ae1df2e2e9e3e7abcb0f214ddfc973416",
+    "godot/assets/original/level48/behaviors.json": "7d266db0a4e92cf57d02134a88fd6cc97c95ceec9a9046fa1a46d203dfc2bd0b",
+    "godot/assets/original/level49/behaviors.json": "e75b86181f5ae315d18ffe8b9504ead819310d25811c3423f505b0275df6e97e",
+    "godot/assets/original/level5/behaviors.json": "da48b27a18fbe332b3ca9ae1e49c6d4d7a236d7ccea334df1e9a76865dc19bca",
+    "godot/assets/original/level50/behaviors.json": "dde865995d51174ab4b01daa1a1d16346286cbfdf862880c71e6bc9c31ddfc12",
+    "godot/assets/original/level51/behaviors.json": "467ed73a9ae918ba2729ff509bda7111a064f41b3317f854ee61ef6c31503658",
+    "godot/assets/original/level52/behaviors.json": "5921aa7017702494dedffcdecc1256fd3d10f14940bdbe2013b1d51f6af928b3",
+    "godot/assets/original/level53/behaviors.json": "26098d4e6fb0622e932df5c917f9878c151a2f5f2e0691674bd7f0f74e25a856",
+    "godot/assets/original/level54/behaviors.json": "66cdf8c706992741c8ceea4f8e978fc1f0a378d9b6c13c750f8fd92b903c346f",
+    "godot/assets/original/level55/behaviors.json": "5273fe7f2abdbbe6e9c20695895b19eed7643a2aa69de1e0108e696d5e139bb6",
+    "godot/assets/original/level56/behaviors.json": "55ec5c9e23288d3d8de8b8c22c5f4c22db657900de3b0edb658f000252684f36",
+    "godot/assets/original/level57/behaviors.json": "adea4331451bf8a0cdae83bbe1575c53b7bfb91e67ebf84ab0604cab51e4c2f4",
+    "godot/assets/original/level58/behaviors.json": "f46d424b9fcdcd52042616be0cae507edd0dc6a1e366c18e4f6f8eac61fd354a",
+    "godot/assets/original/level59/behaviors.json": "9640850283a9f9c03084ec04d92d5a4d53307fb7fcc2513c60e2fbadfde86ca3",
+    "godot/assets/original/level6/behaviors.json": "066bb532f0008241e43e805df9d682e33273e9e4904a2b994d9154ae954f87a7",
+    "godot/assets/original/level60/behaviors.json": "12184a1f125eedae9d6f133715e7bda91fb2e515cc1f6b86352acc12c25b5361",
+    "godot/assets/original/level7/behaviors.json": "a4b127bb41446c851ca425affb2b43d9cf9e69dcb941407e35bf1f1b3ac3d7b7",
+    "godot/assets/original/level8/behaviors.json": "04beb8a59d1d34c06cbb3701cbaf603816058a115cf66e54de38eae253881b29",
+    "godot/assets/original/level9/behaviors.json": "96bf47cc3b28b2a10f999a74ea7f6df77c1047a77d0e81557f60bb4db1bac6ad",
+    "godot/core/original_actor_bounds.gd": "acd08859257c379930a7ee5faacfd8ecdfbd00d3520b27ee90baa2425fd4e8a5",
+    "godot/core/original_actor_elements.gd": "40fdc6f30b0150d4a97082d4b7a0e45c8ffba8dab90e32c30cc98c5f74347067",
+    "godot/core/original_actor_environment.gd": "440e36dccd18c75d0fda45d5da81eb3d0f54bbaf485ee79fd11bb292c1fefcbb",
+    "godot/core/original_actor_motion.gd": "cf0a9e3550825eddbb5f19482092b146a8390945989305981076d303752787b4",
+    "godot/core/original_boundary_preview.gd": "7f43b7dc5e9b097b4decc6c5881427632d933aabbd1232102d582441282bfccd",
+    "godot/core/original_camera_rig.gd": "080726c67ca7389fe16f679772cebbe1f12932f7e7395c97ab740c32ca62ab97",
+    "godot/core/original_cell_grid.gd": "efb014740e0b893b3c3adc03e6c6f755c668f8f09d4b15cfae37a82d5e3ee773",
+    "godot/core/original_cell_preview.gd": "3f142fa2ae75e95d5aa7c14b57166794bb4d2949b8582345889a697c9045ccf2",
+    "godot/core/original_character_preview.gd": "ed0e6b925df00baf5b4c6d506f230aefa99de8c367b8e918e19f2cc87404353e",
+    "godot/core/original_collision_world.gd": "6f184c40ac5c97eb0b07b947c9cfb1d4d6318212ccaa9d91ff287e601d0a6145",
+    "godot/core/original_combat_world.gd": "b79b71a723fd3a373894e12a2d7e70f8da0a30f7be632bc7d348e007594bea51",
+    "godot/core/original_decoy_ai.gd": "c9527d92e9392ce801b84184b245066186edd2f73f0a85a5dec865f222a4618c",
+    "godot/core/original_decoy_elements.gd": "cb7136541cc58cc9cc3d7f26aea995bc929d6671687679ee6025acae66e75768",
+    "godot/core/original_decoy_input.gd": "996a9e1f2db5d2e67a298ac6ef8208f806b8f9585395fcaffb0e10d64d66ec43",
+    "godot/core/original_decoy_motion.gd": "d682669ff63ff7ffc9a5b24ad1b0a9d64890f1181368691f73ac3d78e7a0dfdf",
+    "godot/core/original_decoy_world.gd": "f33e6965cd255d108acce022f9d47247e33c1f3f9a0908b393432d08a504af8e",
+    "godot/core/original_disc_motion.gd": "63187f0ee15e273703360a1e441c135b101459399c48314259a50e46f4bb7900",
+    "godot/core/original_disc_preview.gd": "a28198310984cf8535d834c3e405299c162fa48de76e1e857b72bbe149ee9957",
+    "godot/core/original_disc_trail.gd": "3d232599209f911d87709f648543754267218b7d9763b2b22f00785316b0392d",
+    "godot/core/original_disguise.gd": "4f11663f700ed6375f921272ccdce6c570b38e10c095ade5d7f287482b921b03",
+    "godot/core/original_disguise_preview.gd": "ea2826322ae87d1de460e993fb579ebbc4398b2e9a997a47ba460e4ea1c07634",
+    "godot/core/original_explosion.gd": "21509488f9b5e85d6b36c1ba2d3442aa00c9da6836239326d337688433d8011f",
+    "godot/core/original_explosion_preview.gd": "4600e1948cee761036c9d8d32137eb2d14748c1bb85393e1401c8ad91722fbea",
+    "godot/core/original_ffa_round.gd": "7b2855274fc9ea7182c0e09fdaab88d7f70ddbda28ba8dd0ba1c8b9edac83c0f",
+    "godot/core/original_ffa_score.gd": "41db8c61d10977797c02de09d139a46d693cfcba55208b31c398b5d9e119993d",
+    "godot/core/original_grenade.gd": "6b5ddd63e69302cc43b6d4d62649717ec79f47d3c91cd50f857571734bc38ad6",
+    "godot/core/original_ground_queries.gd": "225eeaf3d44f3735b84be90668e5d7512e74ddaa11a986e5918e9bb54ca62506",
+    "godot/core/original_level3_behaviors.gd": "9791389415fe4d8719017ce86ba9d37fbb25afa50ba2d8313eb7cb288b66ca54",
+    "godot/core/original_level_boundary.gd": "280b19da2259369f87d6b71535da9e8b5916036365035fe5d8905fe1f2c316e3",
+    "godot/core/original_navigation.gd": "ec4393608415f56d750dfed746ab70a605363f6f5b1a401b1878f3c1eec16c3a",
+    "godot/core/original_player_ai.gd": "19476c3f229e9070f4d6d63275f063102f528a20d12dbcc2eccc5c68c973cd4d",
+    "godot/core/original_player_ai_actions.gd": "da917b0ac0088f2b5d5d8a9fc505d3ec0735800609170ee0e81cbff906426284",
+    "godot/core/original_player_ai_buttons.gd": "5596237593a95a6a60f2918b1bdaf7f0238829e860e23079226ac2b7fad680a2",
+    "godot/core/original_player_ai_policy.gd": "8825b86830df29e207652be1d4e7a1e74e97cfa4cc19c4c841c8b37697a07184",
+    "godot/core/original_player_ai_targeting.gd": "d10988c683234488b6819681a42fc83f96ccba29c732d6fe67d5251bb69a64f7",
+    "godot/core/original_player_ai_world.gd": "16de4df777928cffd3e486f73b806e1466aac8ff55cd8163f0776aa00ea029e7",
+    "godot/core/original_player_input.gd": "8df6d7457ed56a740e39dfa90d563016dbfc563d428accf51d74d3ce429788c0",
+    "godot/core/original_player_powers.gd": "ec6edc2c504d062d531ba7939ea5ddca8e28a5e57f10e2e6de000c1844f17d65",
+    "godot/core/original_player_weapons.gd": "469face003d89c464a9a535df060108a58726060ddee53f935f7f107b7cb143b",
+    "godot/core/original_powerup_preview.gd": "67282268e3ec46f6467d4500f16d82c1cd47797299e3857560dc2227be456b43",
+    "godot/core/original_powerup_world.gd": "96fdd87907349bd55693face2d4e759886ff43482de2750a0aa9ae6548915e48",
+    "godot/core/original_scene_materials.gd": "dd8255608c4d1daa3dea08eb2b2f50c187e7e4336f17257826f691d07f5bec04",
+    "godot/core/original_system_random.gd": "adc47354646a125d7f8d69b2f0e7a2b718d569303d22e50cfa41d980d02639f6",
+    "godot/core/original_teleport.gd": "6af9be272bdf4046817b409e6b3fc9575c5fcd894a66790cd7f95a2696cb1f47",
+    "godot/core/original_timekeeper.gd": "627e8b52ae78f88ff162851d5d9269bd3aabd6992caeec6de2e1ede710fc13ca",
+    "godot/core/original_unity_random.gd": "fc2ce8b28c5dadb129286ed61634e2b93956bec22b98d6b811d95ae60af8acb2",
+    "godot/ffa_setup.gd": "c6463eb561df16c5195714717e24be001fc179d54d9fa1808a599f1e25fa06e7",
+    "godot/ffa_shell.gd": "9debf084f08a9db4bd982da215813ff17c973739451adba41bbc8d01cbdbd609",
+    "godot/local_controllers.gd": "49f41dbf1ebbaa726e60362252e255822d8cb7b6411e0474706128145dd2cfd4",
+    "godot/main.gd": "79c5d7858edf9bcd140e746595da11dc0540556ec23e9fb48afc279f5ceab3d6",
+    "godot/original_audio.gd": "16da9b923bad24499f876b32e499152ec7f5145b1aaf729416cddf98418ce7ea"
+  },
+  "export_files": {
+    "Godot-LICENSE.txt": {
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+      "bytes": 1149
+    },
+    "Godot-THIRDPARTY.json": {
+      "sha256": "0e012ef5f7fe547457e51cf56ef477c5383bc5d319ae1473587438f6e446f538",
+      "bytes": 114894
+    },
+    "README-hosting.txt": {
+      "sha256": "d777271b1bdf084a280e7179f02bbc249874cc286b2c5cdec169c8fb30c9ce3a",
+      "bytes": 891
+    },
+    "audio/Master Bank.bank": {
+      "sha256": "a3cc8b9c6b602d7e6aeda00fb9705e4df6f3d3b44bd1f95913923fb2233c52c2",
+      "bytes": 34346400
+    },
+    "audio/Master Bank.strings.bank": {
+      "sha256": "0abd3722cd7a43f160f9b5bb202dbbd657d9a491dedeb7dd43e56055939cc9ed",
+      "bytes": 9110
+    },
+    "audio/NOTICE.txt": {
+      "sha256": "f4833c4e9821033e749794cf12fc608fb3bf25d79c8390576561d361c64ae993",
+      "bytes": 563
+    },
+    "audio/fmodstudio.js": {
+      "sha256": "7497a63744b940b2d5c9ff494e5017bf991aee8dd26739edcf86e1954f6e93e9",
+      "bytes": 131434
+    },
+    "audio/fmodstudio.wasm": {
+      "sha256": "38007e3792e111b265af6c5499f8453c5e83809b13c200522b794efee8ad213e",
+      "bytes": 2656574
+    },
+    "audio/runtime.js": {
+      "sha256": "144f0fada740e14f154d620892c6c453495d8ac2206581450e70173e8f5e7f57",
+      "bytes": 8860
+    },
+    "index.audio.position.worklet.js": {
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "bytes": 2973
+    },
+    "index.audio.worklet.js": {
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "bytes": 7298
+    },
+    "index.html": {
+      "sha256": "166fb51d2983b525a0254bc54d872debec010e997c5cf9e4dde91dd1bb074362",
+      "bytes": 5398
+    },
+    "index.js": {
+      "sha256": "ffc3898b59fba6f5af0c02f76e5ee526cc061e65c7d2d6f4f98186876cea15c4",
+      "bytes": 315645
+    },
+    "index.pck": {
+      "sha256": "755200afa49b72c81c9e64fe8b1907edf228c3c1e3a6048138c0acc17bd944b9",
+      "bytes": 142511504
+    },
+    "index.png": {
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+      "bytes": 21443
+    },
+    "index.wasm": {
+      "sha256": "11ea19645368f8e73cf337b59cfd7ceeb4ebb51f7a3bbf77d1a5c3ddfedbc522",
+      "bytes": 37902138
+    }
+  },
+  "screenshots": {
+    "map-behavior-turnstile-paused.png": "33c2ca9d4dbdc6933ae6624065828c086b0792c441ca66f925efa2c75ac63e8e",
+    "map-behavior-turnstile-before.png": "53a02afbcd184f61d40cd32c2af22b6a4a5b869eebd26090835276ae01a69ea4",
+    "map-behavior-turnstile-browser.png": "5f0c69f84c10ac5cf2f9bbacf6df31d12f9e5102e46cb5f27a386f6a7154e226",
+    "map-behavior-slide-browser.png": "9c683111d19827d1e8a4cdba5c94303dd091d44693e01cfa2110155080335711"
+  },
+  "known_limitations": [
+    "A bot walked off a platform in LevelTurnstile; map-specific navigation remains incomplete.",
+    "No full original Unity scene replay, pixel/PCM parity or browser test of all 59 maps.",
+    "Only shared MovingObstacle/Switch/WobblyObstacle/DestructableObstacle/Debris3D adapters are integrated; other decoded classes remain incomplete."
+  ]
+}

@@ -1,0 +1,2203 @@
+{
+  "scope": "Integrity of 59 imported Unity levels 2-60, including tutorial content. Does not prove FFA eligibility, runtime behavior or frame parity.",
+  "generated_at": "2026-10-28T01:24:52.629865+00:00",
+  "maps": 59,
+  "records": 6904,
+  "passed_maps": 59,
+  "all_passed": true,
+  "shared_adapter_classes": [
+    "Debris3D",
+    "DestructableObstacle",
+    "MovingObstacle",
+    "Switch",
+    "WobblyObstacle"
+  ],
+  "results": [
+    {
+      "map": "level2",
+      "scene": "LevelEnclosed",
+      "passed": true,
+      "failures": [],
+      "records": 99,
+      "class_counts": {
+        "Debris3D": 63,
+        "WobblyObstacle": 26,
+        "AnimatedObstacle": 1,
+        "DestructableObstacle": 9
+      },
+      "active_counts": {
+        "Debris3D": 49,
+        "WobblyObstacle": 25,
+        "AnimatedObstacle": 1,
+        "DestructableObstacle": 7
+      },
+      "active_classes_without_shared_adapter": {
+        "AnimatedObstacle": 1
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "ae5e4419d1f3130e02923f20101d8198f4fe9e64a186f731ee78b0c715b53715",
+      "graph_sha256": "13510631d1bccff29f2bb84c432d0b077079a4e0c392e4dc129f38dab0947f89"
+    },
+    {
+      "map": "level3",
+      "scene": "LevelSlideTraps",
+      "passed": true,
+      "failures": [],
+      "records": 85,
+      "class_counts": {
+        "MovingObstacle": 2,
+        "Debris3D": 45,
+        "DestructableObstacle": 9,
+        "WobblyObstacle": 25,
+        "Switch": 4
+      },
+      "active_counts": {
+        "MovingObstacle": 2,
+        "DestructableObstacle": 4,
+        "Debris3D": 18,
+        "WobblyObstacle": 19,
+        "Switch": 2
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "1427c50ca7b8c8bb865fc59b0605c74f50da180c85de76883b4e2a8d98d238c5",
+      "graph_sha256": "f9755a4490fe4d72ea3ba4c350560802cd8fd369da18f443fdeeba09d9447392"
+    },
+    {
+      "map": "level4",
+      "scene": "LevelTurnstile",
+      "passed": true,
+      "failures": [],
+      "records": 35,
+      "class_counts": {
+        "MovingObstacle": 5,
+        "WobblyObstacle": 28,
+        "Switch": 1,
+        "ExpressiveObstacle": 1
+      },
+      "active_counts": {
+        "MovingObstacle": 1,
+        "WobblyObstacle": 10,
+        "Switch": 1,
+        "ExpressiveObstacle": 1
+      },
+      "active_classes_without_shared_adapter": {
+        "ExpressiveObstacle": 1
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "52720ba1f63cbe2e2eebfd689d5340303bf8239f856ad9fd6b79d81bb4030f55",
+      "graph_sha256": "8819b3408ae9ed5bd9e374d246a360f921902880b8e9c317560d356ef7327272"
+    },
+    {
+      "map": "level5",
+      "scene": "LevelPools",
+      "passed": true,
+      "failures": [],
+      "records": 28,
+      "class_counts": {
+        "Debris3D": 14,
+        "WobblyObstacle": 9,
+        "DestructableObstacle": 5
+      },
+      "active_counts": {
+        "Debris3D": 14,
+        "DestructableObstacle": 3,
+        "WobblyObstacle": 4
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "da48b27a18fbe332b3ca9ae1e49c6d4d7a236d7ccea334df1e9a76865dc19bca",
+      "graph_sha256": "cd79bdcb3e33f18ad9bc0367568f66f6ca49486c4c2ea18cc78895daa5a21bda"
+    },
+    {
+      "map": "level6",
+      "scene": "LevelMarketplace",
+      "passed": true,
+      "failures": [],
+      "records": 286,
+      "class_counts": {
+        "Debris3D": 230,
+        "DestructableObstacle": 41,
+        "WobblyObstacle": 15
+      },
+      "active_counts": {
+        "Debris3D": 103,
+        "DestructableObstacle": 19,
+        "WobblyObstacle": 7
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "066bb532f0008241e43e805df9d682e33273e9e4904a2b994d9154ae954f87a7",
+      "graph_sha256": "a6e57cc0f9bcd251bb2f7cf69cc1cfdd3dd27a2a43a71a0b05f2a3839cc8a0b3"
+    },
+    {
+      "map": "level7",
+      "scene": "LevelWasher",
+      "passed": true,
+      "failures": [],
+      "records": 98,
+      "class_counts": {
+        "MovingObstacle": 4,
+        "DestructableObstacle": 15,
+        "Debris3D": 39,
+        "Border": 4,
+        "WobblyObstacle": 36
+      },
+      "active_counts": {
+        "MovingObstacle": 1,
+        "WobblyObstacle": 14,
+        "Debris3D": 7,
+        "DestructableObstacle": 3
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "a4b127bb41446c851ca425affb2b43d9cf9e69dcb941407e35bf1f1b3ac3d7b7",
+      "graph_sha256": "740aadb28ddbb037d907e9a0f910c35c9c54a1fe18117a1a7fa73e03c12938e3"
+    },
+    {
+      "map": "level8",
+      "scene": "LevelToaster",
+      "passed": true,
+      "failures": [],
+      "records": 325,
+      "class_counts": {
+        "Border": 4,
+        "Debris3D": 258,
+        "DestructableObstacle": 45,
+        "WobblyObstacle": 17,
+        "ExpressiveObstacle": 1
+      },
+      "active_counts": {
+        "Debris3D": 49,
+        "DestructableObstacle": 7,
+        "ExpressiveObstacle": 1,
+        "WobblyObstacle": 8
+      },
+      "active_classes_without_shared_adapter": {
+        "ExpressiveObstacle": 1
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "04beb8a59d1d34c06cbb3701cbaf603816058a115cf66e54de38eae253881b29",
+      "graph_sha256": "f96a9462bec421d6df5a1e8ee1c2c92458fa73308f98d8f44cbabe285bfa14d6"
+    },
+    {
+      "map": "level9",
+      "scene": "LevelPlants",
+      "passed": true,
+      "failures": [],
+      "records": 17,
+      "class_counts": {
+        "WobblyObstacle": 17
+      },
+      "active_counts": {
+        "WobblyObstacle": 17
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "96bf47cc3b28b2a10f999a74ea7f6df77c1047a77d0e81557f60bb4db1bac6ad",
+      "graph_sha256": "22e2d8ccc78f355d3bede3481fc29317d6d720e68b8a4387f63aa3867242babb"
+    },
+    {
+      "map": "level10",
+      "scene": "LevelRooms",
+      "passed": true,
+      "failures": [],
+      "records": 9,
+      "class_counts": {
+        "WobblyObstacle": 9
+      },
+      "active_counts": {
+        "WobblyObstacle": 6
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "1e331b377e8f9dc367a9ddcb3d1a38768a2a9ffc7bcb9d9d285a554c9db87732",
+      "graph_sha256": "93f20a67b85b9744edc763e8b70ae61e2225c9607ce542dfa291ab5a5e2d420f"
+    },
+    {
+      "map": "level11",
+      "scene": "LevelCloudSweep",
+      "passed": true,
+      "failures": [],
+      "records": 247,
+      "class_counts": {
+        "MovingObstacle": 5,
+        "Debris3D": 167,
+        "WobblyObstacle": 44,
+        "AnimatedObstacle": 1,
+        "DestructableObstacle": 26,
+        "Switch": 4
+      },
+      "active_counts": {
+        "MovingObstacle": 2,
+        "WobblyObstacle": 5,
+        "Switch": 2
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "1500f5b6d8ff1c29298e1b40705adaf3e6ae7526942a14498c2db46bce0f2f12",
+      "graph_sha256": "9f17e07b1eccbba45cd213a5d8f8dfa860d8053551c46fc10f92069e60d6030f"
+    },
+    {
+      "map": "level12",
+      "scene": "LevelWhisk",
+      "passed": true,
+      "failures": [],
+      "records": 60,
+      "class_counts": {
+        "RotatingObstacleController": 1,
+        "Debris3D": 35,
+        "DestructableObstacle": 8,
+        "WobblyObstacle": 12,
+        "Switch": 2,
+        "MovingObstacleRollingPin": 2
+      },
+      "active_counts": {
+        "Debris3D": 35,
+        "DestructableObstacle": 5,
+        "WobblyObstacle": 7,
+        "Switch": 2,
+        "MovingObstacleRollingPin": 2
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingObstacleRollingPin": 2
+      },
+      "switch_targets_without_shared_adapter": [
+        {
+          "switch": 1412,
+          "field": "movingObstacles",
+          "target": 1422,
+          "class": "MovingObstacleRollingPin"
+        },
+        {
+          "switch": 1412,
+          "field": "movingObstacles",
+          "target": 1421,
+          "class": "MovingObstacleRollingPin"
+        },
+        {
+          "switch": 1413,
+          "field": "movingObstacles",
+          "target": 1422,
+          "class": "MovingObstacleRollingPin"
+        },
+        {
+          "switch": 1413,
+          "field": "movingObstacles",
+          "target": 1421,
+          "class": "MovingObstacleRollingPin"
+        }
+      ],
+      "sidecar_sha256": "460aed0a24ab0ca519f488b78b5b83aa5869fce13dee1eb7bd2699b9b18c0aa9",
+      "graph_sha256": "62f2756004785a923e36491e9b217d1691e2d318e0f990b9d859af4a938b3a3d"
+    },
+    {
+      "map": "level13",
+      "scene": "LevelTempleGarden",
+      "passed": true,
+      "failures": [],
+      "records": 11,
+      "class_counts": {
+        "WobblyObstacle": 11
+      },
+      "active_counts": {
+        "WobblyObstacle": 11
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "02ca2111495041ac9eac1da73580d3f2a1ca403740e1f6bb39d864f4756f559c",
+      "graph_sha256": "62c9e0c69da2026c13553edcc2856cddaf19bc860a0e7ec168a99490f04733e4"
+    },
+    {
+      "map": "level14",
+      "scene": "LevelFalling",
+      "passed": true,
+      "failures": [],
+      "records": 35,
+      "class_counts": {
+        "FallingFloor": 31,
+        "GoldenTotem": 1,
+        "WobblyObstacle": 3
+      },
+      "active_counts": {
+        "FallingFloor": 31,
+        "WobblyObstacle": 2
+      },
+      "active_classes_without_shared_adapter": {
+        "FallingFloor": 31
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "ba76633d72a123be877a3a51fdbd6149b19859a68b585709416d05e92a7fd1b1",
+      "graph_sha256": "cf974f9f5df0624e3ce692643a90447cfb62c23f18b588def80659ea66892eb9"
+    },
+    {
+      "map": "level15",
+      "scene": "LevelIsland",
+      "passed": true,
+      "failures": [],
+      "records": 90,
+      "class_counts": {
+        "MovingObstacle": 7,
+        "Switch": 6,
+        "Debris3D": 50,
+        "WobblyObstacle": 18,
+        "AnimatedObstacle": 1,
+        "DestructableObstacle": 8
+      },
+      "active_counts": {
+        "MovingObstacle": 6,
+        "Debris3D": 50,
+        "WobblyObstacle": 18,
+        "AnimatedObstacle": 1,
+        "DestructableObstacle": 8,
+        "Switch": 3
+      },
+      "active_classes_without_shared_adapter": {
+        "AnimatedObstacle": 1
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "eceb1cb8a73186e409a822a4a4c72e55aee6008ebb17aab5a0952bac6c836610",
+      "graph_sha256": "fd7f3c538998b3f1beb2f1ab8b8ba223bb9ce4b332ebd8ce2d0153cfbc19462d"
+    },
+    {
+      "map": "level16",
+      "scene": "LevelMiniIsland",
+      "passed": true,
+      "failures": [],
+      "records": 35,
+      "class_counts": {
+        "MovingObstacle": 1,
+        "WobblyObstacle": 12,
+        "Debris3D": 16,
+        "DestructableObstacle": 4,
+        "Switch": 2
+      },
+      "active_counts": {
+        "MovingObstacle": 1,
+        "WobblyObstacle": 11,
+        "Debris3D": 16,
+        "DestructableObstacle": 4,
+        "Switch": 2
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "cafefa95058ddc8b01a33f6abda899f02756c5b188e2c86cb8ca527333d28e88",
+      "graph_sha256": "b2b381a4103125fb589fd97eab7599fd1dd8addd082312dc94a1f94a35289584"
+    },
+    {
+      "map": "level17",
+      "scene": "LevelClouds",
+      "passed": true,
+      "failures": [],
+      "records": 240,
+      "class_counts": {
+        "Debris3D": 175,
+        "WobblyObstacle": 28,
+        "AnimatedObstacle": 1,
+        "DestructableObstacle": 28,
+        "Teleportal": 8
+      },
+      "active_counts": {
+        "Debris3D": 114,
+        "AnimatedObstacle": 1,
+        "WobblyObstacle": 20,
+        "DestructableObstacle": 18,
+        "Teleportal": 4
+      },
+      "active_classes_without_shared_adapter": {
+        "AnimatedObstacle": 1,
+        "Teleportal": 4
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "36d6b45e7f7f6f19491efa8c4e1c238bbffa1942e18ade0ef498a89860fc3bc3",
+      "graph_sha256": "e4ad10a9657d05750cab532972ea34e7f62f1b7992e2257816b3441229d9485f"
+    },
+    {
+      "map": "level18",
+      "scene": "LevelFalling2",
+      "passed": true,
+      "failures": [],
+      "records": 113,
+      "class_counts": {
+        "WobblyObstacle": 12,
+        "FallingFloor": 98,
+        "GoldenTotem": 1,
+        "Teleportal": 2
+      },
+      "active_counts": {
+        "WobblyObstacle": 12,
+        "FallingFloor": 98
+      },
+      "active_classes_without_shared_adapter": {
+        "FallingFloor": 98
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "782d71cb3867fe95ca090122e19901c156a610fecaf13dafcd071bdae1e99afd",
+      "graph_sha256": "24f892f30c9d4616af0914073c9446334555cf42ebe7ffd7b47c68551f6be342"
+    },
+    {
+      "map": "level19",
+      "scene": "LevelSquare",
+      "passed": true,
+      "failures": [],
+      "records": 30,
+      "class_counts": {
+        "MovingObstacle": 4,
+        "FallingFloor": 7,
+        "WobblyObstacle": 12,
+        "GoldenTotem": 1,
+        "Switch": 6
+      },
+      "active_counts": {
+        "MovingObstacle": 4,
+        "WobblyObstacle": 12,
+        "Switch": 4
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "1a6809057d754b9fe69236204d5a11a8f132ad01d766839dbe99a1a09c4a654c",
+      "graph_sha256": "eb638041c2bf10f261dacddaac61308a5e49b16feef2b973da4d1f30fb00f008"
+    },
+    {
+      "map": "level20",
+      "scene": "LevelWheel",
+      "passed": true,
+      "failures": [],
+      "records": 34,
+      "class_counts": {
+        "WobblyObstacle": 24,
+        "Teleportal": 10
+      },
+      "active_counts": {
+        "WobblyObstacle": 16,
+        "Teleportal": 6
+      },
+      "active_classes_without_shared_adapter": {
+        "Teleportal": 6
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "77ad3547af8057527ba800cae711076517390e88d14ce77e37621f9b20964dd6",
+      "graph_sha256": "e0c6abbb7e51a4d215e1952020dd864f482b2d86940b9efb547693636736dd27"
+    },
+    {
+      "map": "level21",
+      "scene": "LevelMaze",
+      "passed": true,
+      "failures": [],
+      "records": 14,
+      "class_counts": {
+        "MovingObstacle": 3,
+        "WobblyObstacle": 5,
+        "Teleportal": 2,
+        "Switch": 4
+      },
+      "active_counts": {
+        "MovingObstacle": 3,
+        "WobblyObstacle": 5,
+        "Teleportal": 2,
+        "Switch": 4
+      },
+      "active_classes_without_shared_adapter": {
+        "Teleportal": 2
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "a791691ead95b26e9d78d1302f90d45bef9328ff9d2dc9fe99346ea5449b9d46",
+      "graph_sha256": "0d230d79f35004e8e22e0e6d2189799668ddf9e3fa60f62741075f9c1c7b3184"
+    },
+    {
+      "map": "level22",
+      "scene": "LevelRing",
+      "passed": true,
+      "failures": [],
+      "records": 168,
+      "class_counts": {
+        "Debris3D": 110,
+        "WobblyObstacle": 36,
+        "DestructableObstacle": 20,
+        "Teleportal": 2
+      },
+      "active_counts": {
+        "Debris3D": 55,
+        "WobblyObstacle": 29,
+        "DestructableObstacle": 10,
+        "Teleportal": 2
+      },
+      "active_classes_without_shared_adapter": {
+        "Teleportal": 2
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "bc0b0efb05cf7a81afec29765086e5b7634f0a9b689a65351478ff6b8cb838cf",
+      "graph_sha256": "b4bf7bb342e93a06782014acb345b0ff351a5dd3dd58dd0c26a80718877a0a1c"
+    },
+    {
+      "map": "level23",
+      "scene": "LevelForest",
+      "passed": true,
+      "failures": [],
+      "records": 22,
+      "class_counts": {
+        "WobblyObstacle": 20,
+        "Teleportal": 2
+      },
+      "active_counts": {
+        "WobblyObstacle": 20,
+        "Teleportal": 2
+      },
+      "active_classes_without_shared_adapter": {
+        "Teleportal": 2
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "3fcbfd27728f95a5823fe4d0d3caba9c3c2165e1c8995326e383e716e9bfc41d",
+      "graph_sha256": "7245f76748526f133afa99a414e71d602a31c8ba690e211e416f697549d87f2c"
+    },
+    {
+      "map": "level24",
+      "scene": "LevelSplit",
+      "passed": true,
+      "failures": [],
+      "records": 101,
+      "class_counts": {
+        "MovingFloor": 4,
+        "Debris3D": 62,
+        "WobblyObstacle": 22,
+        "DestructableObstacle": 11,
+        "Teleportal": 2
+      },
+      "active_counts": {
+        "MovingFloor": 4,
+        "WobblyObstacle": 11,
+        "Teleportal": 2
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloor": 4,
+        "Teleportal": 2
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "766a048fb22193ae4701c330dfb163370c12c5a35c780a59357e913b9497062f",
+      "graph_sha256": "7359963f935609afb2ce00049ba5029c6657b145e3712f689da6d86f27b940f8"
+    },
+    {
+      "map": "level25",
+      "scene": "LevelMoving",
+      "passed": true,
+      "failures": [],
+      "records": 36,
+      "class_counts": {
+        "MovingObstacle": 4,
+        "WobblyObstacle": 30,
+        "Switch": 2
+      },
+      "active_counts": {
+        "MovingObstacle": 4,
+        "WobblyObstacle": 28,
+        "Switch": 2
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "186a9ba1bb79b1f0defab39286f4db5db09631892e9c6a93620383c2e7d2786e",
+      "graph_sha256": "244f7254f6ff4f20a9cb9b5c1309386a3e7c4952011d11fe6ef3940cfffc16fd"
+    },
+    {
+      "map": "level26",
+      "scene": "LevelDrift",
+      "passed": true,
+      "failures": [],
+      "records": 45,
+      "class_counts": {
+        "MovingFloor": 2,
+        "DestructableObstacle": 9,
+        "Debris3D": 32,
+        "Teleportal": 2
+      },
+      "active_counts": {
+        "MovingFloor": 2,
+        "Debris3D": 32,
+        "Teleportal": 2,
+        "DestructableObstacle": 8
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloor": 2,
+        "Teleportal": 2
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "f6df3d975c2b20967f7e4597a80d0ef080e0b269552f323d29774be2b65b9fbd",
+      "graph_sha256": "58a76fb38f06bc47fdf0d097608990c0010c6e5677c7a619f1044106a8a054ff"
+    },
+    {
+      "map": "level27",
+      "scene": "LevelTracks",
+      "passed": true,
+      "failures": [],
+      "records": 144,
+      "class_counts": {
+        "MovingFloor": 2,
+        "DestructableObstacle": 18,
+        "Debris3D": 90,
+        "Teleportal": 2,
+        "WobblyObstacle": 32
+      },
+      "active_counts": {
+        "MovingFloor": 2,
+        "Debris3D": 24,
+        "DestructableObstacle": 6,
+        "Teleportal": 2,
+        "WobblyObstacle": 9
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloor": 2,
+        "Teleportal": 2
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "d9ac58cc05c4be3044e02bce1cddfce3965cc165725eecda77a7c5b74eb0cddc",
+      "graph_sha256": "1cbde14ab28af95fabbae9ef95b1a5291ff23206b52d3b066c3d0248e64ae49c"
+    },
+    {
+      "map": "level28",
+      "scene": "LevelTutorial",
+      "passed": true,
+      "failures": [],
+      "records": 160,
+      "class_counts": {
+        "MovingDoor": 134,
+        "WobblyObstacle": 15,
+        "Switch": 11
+      },
+      "active_counts": {
+        "MovingDoor": 24,
+        "WobblyObstacle": 13,
+        "Switch": 6
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingDoor": 24
+      },
+      "switch_targets_without_shared_adapter": [
+        {
+          "switch": 3465,
+          "field": "movingDoors",
+          "target": 3205,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3465,
+          "field": "movingDoors",
+          "target": 3169,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3465,
+          "field": "movingDoors",
+          "target": 3260,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3465,
+          "field": "movingDoors",
+          "target": 3264,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3466,
+          "field": "movingDoors",
+          "target": 3217,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3466,
+          "field": "movingDoors",
+          "target": 3159,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3466,
+          "field": "movingDoors",
+          "target": 3237,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3466,
+          "field": "movingDoors",
+          "target": 3189,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3467,
+          "field": "movingDoors",
+          "target": 3151,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3467,
+          "field": "movingDoors",
+          "target": 3193,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3467,
+          "field": "movingDoors",
+          "target": 3268,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3467,
+          "field": "movingDoors",
+          "target": 3161,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3467,
+          "field": "movingDoors",
+          "target": 3177,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3467,
+          "field": "movingDoors",
+          "target": 3214,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3467,
+          "field": "movingDoors",
+          "target": 3274,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3467,
+          "field": "movingDoors",
+          "target": 3197,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3467,
+          "field": "movingDoors",
+          "target": 3270,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3467,
+          "field": "movingDoors",
+          "target": 3245,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3468,
+          "field": "movingDoors",
+          "target": 3225,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3468,
+          "field": "movingDoors",
+          "target": 3167,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3468,
+          "field": "movingDoors",
+          "target": 3190,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3468,
+          "field": "movingDoors",
+          "target": 3204,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3468,
+          "field": "movingDoors",
+          "target": 3202,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3468,
+          "field": "movingDoors",
+          "target": 3235,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3468,
+          "field": "movingDoors",
+          "target": 3215,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3468,
+          "field": "movingDoors",
+          "target": 3198,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3468,
+          "field": "movingDoors",
+          "target": 3174,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3468,
+          "field": "movingDoors",
+          "target": 3206,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3469,
+          "field": "movingDoors",
+          "target": 3199,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3469,
+          "field": "movingDoors",
+          "target": 3168,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3469,
+          "field": "movingDoors",
+          "target": 3172,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3469,
+          "field": "movingDoors",
+          "target": 3236,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3470,
+          "field": "movingDoors",
+          "target": 3216,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3470,
+          "field": "movingDoors",
+          "target": 3254,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3470,
+          "field": "movingDoors",
+          "target": 3234,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3470,
+          "field": "movingDoors",
+          "target": 3178,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3470,
+          "field": "movingDoors",
+          "target": 3180,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3470,
+          "field": "movingDoors",
+          "target": 3154,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3470,
+          "field": "movingDoors",
+          "target": 3162,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3470,
+          "field": "movingDoors",
+          "target": 3191,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3470,
+          "field": "movingDoors",
+          "target": 3267,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3470,
+          "field": "movingDoors",
+          "target": 3271,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3471,
+          "field": "movingDoors",
+          "target": 3249,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3471,
+          "field": "movingDoors",
+          "target": 3265,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3471,
+          "field": "movingDoors",
+          "target": 3255,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3471,
+          "field": "movingDoors",
+          "target": 3201,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3472,
+          "field": "movingDoors",
+          "target": 3284,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3472,
+          "field": "movingDoors",
+          "target": 3269,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3472,
+          "field": "movingDoors",
+          "target": 3181,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3472,
+          "field": "movingDoors",
+          "target": 3280,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3473,
+          "field": "movingDoors",
+          "target": 3226,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3473,
+          "field": "movingDoors",
+          "target": 3232,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3473,
+          "field": "movingDoors",
+          "target": 3183,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3473,
+          "field": "movingDoors",
+          "target": 3210,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3473,
+          "field": "movingDoors",
+          "target": 3257,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3473,
+          "field": "movingDoors",
+          "target": 3208,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3473,
+          "field": "movingDoors",
+          "target": 3224,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3473,
+          "field": "movingDoors",
+          "target": 3276,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3473,
+          "field": "movingDoors",
+          "target": 3281,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3473,
+          "field": "movingDoors",
+          "target": 3220,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3474,
+          "field": "movingDoors",
+          "target": 3250,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3474,
+          "field": "movingDoors",
+          "target": 3229,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3474,
+          "field": "movingDoors",
+          "target": 3227,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3474,
+          "field": "movingDoors",
+          "target": 3239,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3474,
+          "field": "movingDoors",
+          "target": 3209,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3474,
+          "field": "movingDoors",
+          "target": 3256,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3474,
+          "field": "movingDoors",
+          "target": 3221,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3474,
+          "field": "movingDoors",
+          "target": 3242,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3474,
+          "field": "movingDoors",
+          "target": 3194,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3474,
+          "field": "movingDoors",
+          "target": 3166,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3475,
+          "field": "movingDoors",
+          "target": 3200,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3475,
+          "field": "movingDoors",
+          "target": 3176,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3475,
+          "field": "movingDoors",
+          "target": 3212,
+          "class": "MovingDoor"
+        },
+        {
+          "switch": 3475,
+          "field": "movingDoors",
+          "target": 3187,
+          "class": "MovingDoor"
+        }
+      ],
+      "sidecar_sha256": "17dda00b8321af93b6ff0d007b9a10811b9a30fd839d1e195920f60cfde30f50",
+      "graph_sha256": "483e04e17d38776761814c10f00b51534616cfd60019419a45e1502ec43b35b6"
+    },
+    {
+      "map": "level29",
+      "scene": "LevelSpin",
+      "passed": true,
+      "failures": [],
+      "records": 34,
+      "class_counts": {
+        "MovingFloor": 1,
+        "WobblyObstacle": 12,
+        "GoldenTotem": 1,
+        "Debris3D": 16,
+        "DestructableObstacle": 4
+      },
+      "active_counts": {
+        "MovingFloor": 1,
+        "WobblyObstacle": 12,
+        "Debris3D": 16,
+        "DestructableObstacle": 4
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloor": 1
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "b80b9d3ece0c1b14ed97390097b9fb43ba1d060dd2ca775daa5364e72ebba56c",
+      "graph_sha256": "f2242835ca57c7d252368ba04f41cc93f1f5bf7d0d5a64fd813c1fa9afeb353c"
+    },
+    {
+      "map": "level30",
+      "scene": "LevelTeleportals",
+      "passed": true,
+      "failures": [],
+      "records": 16,
+      "class_counts": {
+        "WobblyObstacle": 8,
+        "Teleportal": 8
+      },
+      "active_counts": {
+        "WobblyObstacle": 4,
+        "Teleportal": 6
+      },
+      "active_classes_without_shared_adapter": {
+        "Teleportal": 6
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "957e63c67eab60720858e425cad79c4522bcfeaf7848a7267e045a9e0bb923c6",
+      "graph_sha256": "fb96a3e5e4c33de24551f47600a532f1d5e11cb630cdc6b1d2c0bab163c6ebbc"
+    },
+    {
+      "map": "level31",
+      "scene": "LevelTemple",
+      "passed": true,
+      "failures": [],
+      "records": 19,
+      "class_counts": {
+        "ExpressiveObstacle": 2,
+        "WobblyObstacle": 17
+      },
+      "active_counts": {
+        "ExpressiveObstacle": 2,
+        "WobblyObstacle": 11
+      },
+      "active_classes_without_shared_adapter": {
+        "ExpressiveObstacle": 2
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "94a16955577170e0175f67b9e7c4e86331384da18b1138f8ae783113f346e8f7",
+      "graph_sha256": "7a7c33d6a70b5b32e6cea931a808850109f7586d10e0ff561f0f519c6e8adfbb"
+    },
+    {
+      "map": "level32",
+      "scene": "LevelPier",
+      "passed": true,
+      "failures": [],
+      "records": 216,
+      "class_counts": {
+        "Border": 4,
+        "Debris3D": 162,
+        "WobblyObstacle": 20,
+        "DestructableObstacle": 30
+      },
+      "active_counts": {
+        "Debris3D": 81,
+        "DestructableObstacle": 15,
+        "WobblyObstacle": 5
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "7331941cf694153c9868bf14831a7e0fc984c5bfd20096ecaa9df12d94a4af8b",
+      "graph_sha256": "b8a190950924197728e8c97d4bc3e110f5b8d975c92be6d83209015bb7f21535"
+    },
+    {
+      "map": "level33",
+      "scene": "LevelToaster",
+      "passed": true,
+      "failures": [],
+      "records": 325,
+      "class_counts": {
+        "Border": 4,
+        "Debris3D": 258,
+        "DestructableObstacle": 45,
+        "WobblyObstacle": 17,
+        "ExpressiveObstacle": 1
+      },
+      "active_counts": {
+        "Debris3D": 49,
+        "DestructableObstacle": 7,
+        "ExpressiveObstacle": 1,
+        "WobblyObstacle": 8
+      },
+      "active_classes_without_shared_adapter": {
+        "ExpressiveObstacle": 1
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "675a6a56715e5cb7ba5e1e0735aa0a9f9fa59d410bd4848864bb70987a3e52f9",
+      "graph_sha256": "a2755a699b061f36e710fd6ac63397dfe42aa4a74b1c832a780aa7348aa9025a"
+    },
+    {
+      "map": "level34",
+      "scene": "LevelOnsen",
+      "passed": true,
+      "failures": [],
+      "records": 115,
+      "class_counts": {
+        "Border": 4,
+        "Debris3D": 84,
+        "WobblyObstacle": 11,
+        "DestructableObstacle": 16
+      },
+      "active_counts": {
+        "Debris3D": 70,
+        "DestructableObstacle": 14,
+        "WobblyObstacle": 6
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "0d00cad9c81ad7ddda3371d5a9d776a1c9fbf7358ec61d9411e28501c0a1e988",
+      "graph_sha256": "db759a808d4ea37a615ab25e9b5dd754dba8ff0aca006e66f85b141f5e5f2576"
+    },
+    {
+      "map": "level35",
+      "scene": "LevelHenge",
+      "passed": true,
+      "failures": [],
+      "records": 45,
+      "class_counts": {
+        "MovingObstacle": 4,
+        "WobblyObstacle": 36,
+        "AnimatedObstacle": 1,
+        "Switch": 3,
+        "MovingObstacleRollingPin": 1
+      },
+      "active_counts": {
+        "WobblyObstacle": 34,
+        "Switch": 3,
+        "MovingObstacleRollingPin": 1
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingObstacleRollingPin": 1
+      },
+      "switch_targets_without_shared_adapter": [
+        {
+          "switch": 1545,
+          "field": "movingObstacles",
+          "target": 1553,
+          "class": "MovingObstacleRollingPin"
+        },
+        {
+          "switch": 1546,
+          "field": "movingObstacles",
+          "target": 1553,
+          "class": "MovingObstacleRollingPin"
+        },
+        {
+          "switch": 1547,
+          "field": "movingObstacles",
+          "target": 1553,
+          "class": "MovingObstacleRollingPin"
+        }
+      ],
+      "sidecar_sha256": "4c2e084b35e9e12980977989fbe651e8f1a4b6dd1bec96c380c304e408ce81db",
+      "graph_sha256": "fce04190334d64144ef790a72e63c292659b9453f43d28d4af0d1413e6327162"
+    },
+    {
+      "map": "level36",
+      "scene": "LevelBridges",
+      "passed": true,
+      "failures": [],
+      "records": 200,
+      "class_counts": {
+        "MovingObstacle": 7,
+        "Switch": 6,
+        "Debris3D": 133,
+        "WobblyObstacle": 31,
+        "AnimatedObstacle": 1,
+        "DestructableObstacle": 22
+      },
+      "active_counts": {
+        "Debris3D": 57,
+        "WobblyObstacle": 22,
+        "DestructableObstacle": 9
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "84ffa16a554376fa9bd507b3f738cf9290293dc56187ab9c21ea63329edf7ce4",
+      "graph_sha256": "d3cf63a359fa5c626fa7f62aa3e4f8755f0df2e844a8cee6ebe769100b806b5a"
+    },
+    {
+      "map": "level37",
+      "scene": "LevelMist",
+      "passed": true,
+      "failures": [],
+      "records": 85,
+      "class_counts": {
+        "MovingObstacle": 1,
+        "WobblyObstacle": 41,
+        "Debris3D": 32,
+        "DestructableObstacle": 8,
+        "Switch": 3
+      },
+      "active_counts": {
+        "MovingObstacle": 1,
+        "WobblyObstacle": 24,
+        "Debris3D": 16,
+        "DestructableObstacle": 4,
+        "Switch": 3
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "904750897e8d4be3974d7c8b110e04e68a95d00857b34eba82efec0917e95614",
+      "graph_sha256": "049aff1a3c590c4b612350bd7872b1d0c7d7140658ee708f568e28eab5d60107"
+    },
+    {
+      "map": "level38",
+      "scene": "LevelBambooGrove",
+      "passed": true,
+      "failures": [],
+      "records": 69,
+      "class_counts": {
+        "WobblyObstacle": 68,
+        "AnimatedObstacle": 1
+      },
+      "active_counts": {
+        "WobblyObstacle": 52
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "be4a88e486fc336497fad32875681af5afcbd8d857888bf3a462df2117282f75",
+      "graph_sha256": "33e41bed810cad2f25f3beaf6ff27b438170e6e32b6eb867a4c3657e1cb5c4d4"
+    },
+    {
+      "map": "level39",
+      "scene": "LevelPinball",
+      "passed": true,
+      "failures": [],
+      "records": 305,
+      "class_counts": {
+        "Debris3D": 221,
+        "WobblyObstacle": 46,
+        "DestructableObstacle": 38
+      },
+      "active_counts": {
+        "Debris3D": 108,
+        "WobblyObstacle": 28,
+        "DestructableObstacle": 18
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "733304d5ed16659a1897393f2e03238f82de04992be5ee80efc1bc2b8b05875c",
+      "graph_sha256": "46d45f2744426af66053e609409d4cab1afafa2957d119d0b42e1ad3ee9803be"
+    },
+    {
+      "map": "level40",
+      "scene": "LevelBigRaft",
+      "passed": true,
+      "failures": [],
+      "records": 200,
+      "class_counts": {
+        "MovingFloorReactive": 1,
+        "DestructableObstacleDestroyer": 2,
+        "MovingFloorRollingPin": 2,
+        "Debris3D": 99,
+        "WobblyObstacle": 18,
+        "DestructableObstacle": 18,
+        "TrapFloor": 58,
+        "Switch": 2
+      },
+      "active_counts": {
+        "MovingFloorReactive": 1,
+        "DestructableObstacleDestroyer": 2,
+        "MovingFloorRollingPin": 2,
+        "Debris3D": 99,
+        "WobblyObstacle": 18,
+        "DestructableObstacle": 18,
+        "TrapFloor": 58,
+        "Switch": 2
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloorReactive": 1,
+        "DestructableObstacleDestroyer": 2,
+        "MovingFloorRollingPin": 2,
+        "TrapFloor": 58
+      },
+      "switch_targets_without_shared_adapter": [
+        {
+          "switch": 2929,
+          "field": "movingFloors",
+          "target": 2678,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 2930,
+          "field": "movingFloors",
+          "target": 2678,
+          "class": "MovingFloorReactive"
+        }
+      ],
+      "sidecar_sha256": "8645ce53e6e6686c7c4871c5cc28a86338a6aec56ab5af3f6fb16a4737df8066",
+      "graph_sha256": "ad58c70ebfa1ca700ca7d0dc71f6879db0ccf3e3c4e294e2ec09e78cf9b3ebd3"
+    },
+    {
+      "map": "level41",
+      "scene": "LevelCircleMaze",
+      "passed": true,
+      "failures": [],
+      "records": 187,
+      "class_counts": {
+        "MovingFloorReactive": 1,
+        "Debris3D": 123,
+        "WobblyObstacle": 29,
+        "AnimatedObstacle": 1,
+        "DestructableObstacle": 21,
+        "Switch": 4,
+        "ShrubWobbleCollider": 8
+      },
+      "active_counts": {
+        "MovingFloorReactive": 1,
+        "Debris3D": 61,
+        "WobblyObstacle": 18,
+        "DestructableObstacle": 10,
+        "Switch": 4,
+        "ShrubWobbleCollider": 6
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloorReactive": 1,
+        "ShrubWobbleCollider": 6
+      },
+      "switch_targets_without_shared_adapter": [
+        {
+          "switch": 2926,
+          "field": "movingFloors",
+          "target": 2764,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 2927,
+          "field": "movingFloors",
+          "target": 2764,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 2928,
+          "field": "movingFloors",
+          "target": 2764,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 2929,
+          "field": "movingFloors",
+          "target": 2764,
+          "class": "MovingFloorReactive"
+        }
+      ],
+      "sidecar_sha256": "06bcaf8c1dfaaa51cf243c66cb26b3370b1f8a19f10e0e892bc0ffa40b8a66eb",
+      "graph_sha256": "258e62b15cc2120637b0ac319765386939aba6530b493c59138fe5f57e867b4b"
+    },
+    {
+      "map": "level42",
+      "scene": "LevelCourtyard",
+      "passed": true,
+      "failures": [],
+      "records": 110,
+      "class_counts": {
+        "Debris3D": 42,
+        "WobblyObstacle": 47,
+        "DestructableObstacle": 6,
+        "TrapFloor": 11,
+        "ShrubWobbleCollider": 4
+      },
+      "active_counts": {
+        "Debris3D": 42,
+        "WobblyObstacle": 40,
+        "DestructableObstacle": 6,
+        "TrapFloor": 3,
+        "ShrubWobbleCollider": 4
+      },
+      "active_classes_without_shared_adapter": {
+        "TrapFloor": 3,
+        "ShrubWobbleCollider": 4
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "457d3aaff376c9611bac82de67b8c8acde9b5c32e42bb9cf4b79ec4bea42c16a",
+      "graph_sha256": "0d2be492495c59beb5ad0355db7e841b5c8c1d9918b70f12f5c6c16e9912bdff"
+    },
+    {
+      "map": "level43",
+      "scene": "LevelCrate",
+      "passed": true,
+      "failures": [],
+      "records": 311,
+      "class_counts": {
+        "WobblyObstacle": 20,
+        "Debris3D": 228,
+        "DestructableObstacle": 57,
+        "ShrubWobbleCollider": 6
+      },
+      "active_counts": {
+        "Debris3D": 164,
+        "DestructableObstacle": 41,
+        "WobblyObstacle": 12,
+        "ShrubWobbleCollider": 6
+      },
+      "active_classes_without_shared_adapter": {
+        "ShrubWobbleCollider": 6
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "e2fa3b05518829350139d4203a9fe4783ef2c536d2651a4c4efdee57f89d3bdf",
+      "graph_sha256": "02b7874b125890c833b0320328f24b8a399891ca56a7e7915be7c216bdf01cbc"
+    },
+    {
+      "map": "level44",
+      "scene": "LevelDonut",
+      "passed": true,
+      "failures": [],
+      "records": 121,
+      "class_counts": {
+        "MovingFloor": 1,
+        "Debris3D": 91,
+        "DestructableObstacle": 13,
+        "WobblyObstacle": 16
+      },
+      "active_counts": {
+        "MovingFloor": 1,
+        "Debris3D": 28,
+        "DestructableObstacle": 4,
+        "WobblyObstacle": 6
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloor": 1
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "7fcbd4b45a44e98fc2d4a3bd279064ac103e45d1d3845b34770f0a0f48727d73",
+      "graph_sha256": "cbba1e605c540dd18f050121d11afac93f5bfd61fef19b721a8487cdce2295d4"
+    },
+    {
+      "map": "level45",
+      "scene": "LevelFourCogs",
+      "passed": true,
+      "failures": [],
+      "records": 157,
+      "class_counts": {
+        "MovingFloor": 4,
+        "Debris3D": 84,
+        "WobblyObstacle": 44,
+        "DestructableObstacle": 12,
+        "AutoRotate": 1,
+        "ShrubWobbleCollider": 12
+      },
+      "active_counts": {
+        "MovingFloor": 4,
+        "WobblyObstacle": 22,
+        "AutoRotate": 1,
+        "ShrubWobbleCollider": 6
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloor": 4,
+        "AutoRotate": 1,
+        "ShrubWobbleCollider": 6
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "11ee2010417b257358c0b3379ad20b7ee0259b3e3179cc3a89efdd579e8f918d",
+      "graph_sha256": "92445ebb81a882509fff88c7a0501d08e6c9d6db9affefca0c1e697453b59a1e"
+    },
+    {
+      "map": "level46",
+      "scene": "LevelIslandPair",
+      "passed": true,
+      "failures": [],
+      "records": 147,
+      "class_counts": {
+        "MovingFloorReactive": 2,
+        "Debris3D": 78,
+        "WobblyObstacle": 32,
+        "DestructableObstacle": 15,
+        "TrapFloor": 10,
+        "Switch": 2,
+        "ShrubWobbleCollider": 8
+      },
+      "active_counts": {
+        "MovingFloorReactive": 2,
+        "Debris3D": 40,
+        "WobblyObstacle": 22,
+        "DestructableObstacle": 7,
+        "TrapFloor": 10,
+        "Switch": 2,
+        "ShrubWobbleCollider": 3
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloorReactive": 2,
+        "TrapFloor": 10,
+        "ShrubWobbleCollider": 3
+      },
+      "switch_targets_without_shared_adapter": [
+        {
+          "switch": 2491,
+          "field": "movingFloors",
+          "target": 2344,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 2492,
+          "field": "movingFloors",
+          "target": 2343,
+          "class": "MovingFloorReactive"
+        }
+      ],
+      "sidecar_sha256": "bcd617026ca74a329772e8f57ab9c04a5c724ab4a5e4fb59b040d0db0c2ccbba",
+      "graph_sha256": "3ce4bd3fb51bcdf9a8b32dc85b84229f18569bcd9fd22a1eeb46ba95ae279887"
+    },
+    {
+      "map": "level47",
+      "scene": "LevelJungleRuins",
+      "passed": true,
+      "failures": [],
+      "records": 59,
+      "class_counts": {
+        "Debris3D": 40,
+        "WobblyObstacle": 12,
+        "DestructableObstacle": 7
+      },
+      "active_counts": {
+        "Debris3D": 36,
+        "WobblyObstacle": 7,
+        "DestructableObstacle": 6
+      },
+      "active_classes_without_shared_adapter": {},
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "f4657a6004548368f8446f613737931ae1df2e2e9e3e7abcb0f214ddfc973416",
+      "graph_sha256": "91755bd0919516f6fc678a10637d457cbcfb2128471a0f6f6a7fb512865ea5c9"
+    },
+    {
+      "map": "level48",
+      "scene": "LevelMaze2",
+      "passed": true,
+      "failures": [],
+      "records": 17,
+      "class_counts": {
+        "MovingObstacle": 4,
+        "WobblyObstacle": 5,
+        "Teleportal": 4,
+        "Switch": 4
+      },
+      "active_counts": {
+        "MovingObstacle": 4,
+        "Teleportal": 4,
+        "Switch": 4
+      },
+      "active_classes_without_shared_adapter": {
+        "Teleportal": 4
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "7d266db0a4e92cf57d02134a88fd6cc97c95ceec9a9046fa1a46d203dfc2bd0b",
+      "graph_sha256": "e9ff82b63c1eafafeaa15c06c254913e8ca8086cc2b8a1de0081b9407292cdd9"
+    },
+    {
+      "map": "level49",
+      "scene": "LevelPincer",
+      "passed": true,
+      "failures": [],
+      "records": 135,
+      "class_counts": {
+        "MovingObstacle": 2,
+        "Debris3D": 45,
+        "TrapFloor": 68,
+        "GoldenTotem": 1,
+        "DestructableObstacle": 9,
+        "Switch": 2,
+        "WobblyObstacle": 6,
+        "ShrubWobbleCollider": 2
+      },
+      "active_counts": {
+        "MovingObstacle": 2,
+        "Debris3D": 45,
+        "TrapFloor": 68,
+        "DestructableObstacle": 9,
+        "Switch": 2,
+        "WobblyObstacle": 6,
+        "ShrubWobbleCollider": 2
+      },
+      "active_classes_without_shared_adapter": {
+        "TrapFloor": 68,
+        "ShrubWobbleCollider": 2
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "e75b86181f5ae315d18ffe8b9504ead819310d25811c3423f505b0275df6e97e",
+      "graph_sha256": "fe21d0966fdf149e3c3f34d271dda561b1bc9f6d4893de89f0b514b594261af0"
+    },
+    {
+      "map": "level50",
+      "scene": "LevelRaftCrusher",
+      "passed": true,
+      "failures": [],
+      "records": 134,
+      "class_counts": {
+        "MovingFloor": 2,
+        "MovingObstacleButter": 1,
+        "ExpressiveObstacle": 1,
+        "Debris3D": 79,
+        "WobblyObstacle": 24,
+        "DestructableObstacle": 16,
+        "Switch": 2,
+        "ShrubWobbleCollider": 9
+      },
+      "active_counts": {
+        "MovingFloor": 2,
+        "MovingObstacleButter": 1,
+        "ExpressiveObstacle": 1,
+        "Debris3D": 38,
+        "DestructableObstacle": 8,
+        "Switch": 2,
+        "WobblyObstacle": 8,
+        "ShrubWobbleCollider": 5
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloor": 2,
+        "MovingObstacleButter": 1,
+        "ExpressiveObstacle": 1,
+        "ShrubWobbleCollider": 5
+      },
+      "switch_targets_without_shared_adapter": [
+        {
+          "switch": 2302,
+          "field": "movingObstacles",
+          "target": 2175,
+          "class": "MovingObstacleButter"
+        },
+        {
+          "switch": 2303,
+          "field": "movingObstacles",
+          "target": 2175,
+          "class": "MovingObstacleButter"
+        }
+      ],
+      "sidecar_sha256": "dde865995d51174ab4b01daa1a1d16346286cbfdf862880c71e6bc9c31ddfc12",
+      "graph_sha256": "49af241d6264716f843a91df045b0dcbf8f035895bcf03c56dbcc0a3566b0849"
+    },
+    {
+      "map": "level51",
+      "scene": "LevelRaftPair",
+      "passed": true,
+      "failures": [],
+      "records": 73,
+      "class_counts": {
+        "MovingFloorReactive": 2,
+        "WobblyObstacle": 21,
+        "TrapFloor": 17,
+        "Debris3D": 20,
+        "DestructableObstacle": 5,
+        "Switch": 2,
+        "ShrubWobbleCollider": 6
+      },
+      "active_counts": {
+        "MovingFloorReactive": 2,
+        "TrapFloor": 16,
+        "Debris3D": 20,
+        "DestructableObstacle": 5,
+        "Switch": 2,
+        "WobblyObstacle": 13,
+        "ShrubWobbleCollider": 6
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloorReactive": 2,
+        "TrapFloor": 16,
+        "ShrubWobbleCollider": 6
+      },
+      "switch_targets_without_shared_adapter": [
+        {
+          "switch": 1780,
+          "field": "movingFloors",
+          "target": 1691,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 1781,
+          "field": "movingFloors",
+          "target": 1692,
+          "class": "MovingFloorReactive"
+        }
+      ],
+      "sidecar_sha256": "467ed73a9ae918ba2729ff509bda7111a064f41b3317f854ee61ef6c31503658",
+      "graph_sha256": "5f9f88a1bad69029e67af22348fd6771907599d808f8e1709017b54d20df1079"
+    },
+    {
+      "map": "level52",
+      "scene": "LevelRaftSwitches",
+      "passed": true,
+      "failures": [],
+      "records": 116,
+      "class_counts": {
+        "MovingFloorReactive": 4,
+        "Debris3D": 76,
+        "WobblyObstacle": 19,
+        "DestructableObstacle": 13,
+        "Switch": 4
+      },
+      "active_counts": {
+        "MovingFloorReactive": 4,
+        "Debris3D": 76,
+        "WobblyObstacle": 15,
+        "DestructableObstacle": 13,
+        "Switch": 4
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloorReactive": 4
+      },
+      "switch_targets_without_shared_adapter": [
+        {
+          "switch": 2901,
+          "field": "movingFloors",
+          "target": 2775,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 2902,
+          "field": "movingFloors",
+          "target": 2773,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 2903,
+          "field": "movingFloors",
+          "target": 2772,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 2904,
+          "field": "movingFloors",
+          "target": 2774,
+          "class": "MovingFloorReactive"
+        }
+      ],
+      "sidecar_sha256": "5921aa7017702494dedffcdecc1256fd3d10f14940bdbe2013b1d51f6af928b3",
+      "graph_sha256": "317f9b3b02082d90aa1f3ddabfe4636022209b0ec02f60e2a40962cf0cff1b5d"
+    },
+    {
+      "map": "level53",
+      "scene": "LevelRaftSwitches2",
+      "passed": true,
+      "failures": [],
+      "records": 86,
+      "class_counts": {
+        "MovingFloorReactive": 4,
+        "WobblyObstacle": 60,
+        "Switch": 4,
+        "ExpressiveObstacle": 2,
+        "ShrubWobbleCollider": 16
+      },
+      "active_counts": {
+        "MovingFloorReactive": 4,
+        "WobblyObstacle": 22,
+        "Switch": 4,
+        "ExpressiveObstacle": 2,
+        "ShrubWobbleCollider": 7
+      },
+      "active_classes_without_shared_adapter": {
+        "MovingFloorReactive": 4,
+        "ExpressiveObstacle": 2,
+        "ShrubWobbleCollider": 7
+      },
+      "switch_targets_without_shared_adapter": [
+        {
+          "switch": 3364,
+          "field": "movingFloors",
+          "target": 3306,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3364,
+          "field": "movingFloors",
+          "target": 3305,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3364,
+          "field": "movingFloors",
+          "target": 3304,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3364,
+          "field": "movingFloors",
+          "target": 3303,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3365,
+          "field": "movingFloors",
+          "target": 3306,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3365,
+          "field": "movingFloors",
+          "target": 3305,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3365,
+          "field": "movingFloors",
+          "target": 3304,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3365,
+          "field": "movingFloors",
+          "target": 3303,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3366,
+          "field": "movingFloors",
+          "target": 3306,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3366,
+          "field": "movingFloors",
+          "target": 3305,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3366,
+          "field": "movingFloors",
+          "target": 3304,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3366,
+          "field": "movingFloors",
+          "target": 3303,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3367,
+          "field": "movingFloors",
+          "target": 3306,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3367,
+          "field": "movingFloors",
+          "target": 3305,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3367,
+          "field": "movingFloors",
+          "target": 3304,
+          "class": "MovingFloorReactive"
+        },
+        {
+          "switch": 3367,
+          "field": "movingFloors",
+          "target": 3303,
+          "class": "MovingFloorReactive"
+        }
+      ],
+      "sidecar_sha256": "26098d4e6fb0622e932df5c917f9878c151a2f5f2e0691674bd7f0f74e25a856",
+      "graph_sha256": "9045fa82bdfc3541be4c4751bd5692b597f6a68830261bcd1a2f50d76fb65a35"
+    },
+    {
+      "map": "level54",
+      "scene": "LevelRivercrossing",
+      "passed": true,
+      "failures": [],
+      "records": 209,
+      "class_counts": {
+        "Debris3D": 102,
+        "WobblyObstacle": 46,
+        "DestructableObstacle": 18,
+        "TrapFloor": 24,
+        "Teleportal": 2,
+        "ShrubWobbleCollider": 17
+      },
+      "active_counts": {
+        "Debris3D": 41,
+        "DestructableObstacle": 8,
+        "TrapFloor": 24,
+        "Teleportal": 2,
+        "WobblyObstacle": 12,
+        "ShrubWobbleCollider": 12
+      },
+      "active_classes_without_shared_adapter": {
+        "TrapFloor": 24,
+        "Teleportal": 2,
+        "ShrubWobbleCollider": 12
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "66cdf8c706992741c8ceea4f8e978fc1f0a378d9b6c13c750f8fd92b903c346f",
+      "graph_sha256": "9258c303e05aec134571042cd2fd3cfe713cc29543539c7db841e66db4fd4712"
+    },
+    {
+      "map": "level55",
+      "scene": "LevelRollerSweep",
+      "passed": true,
+      "failures": [],
+      "records": 145,
+      "class_counts": {
+        "MovingObstacle": 4,
+        "AutoRotate": 7,
+        "DestructableObstacleDestroyer": 4,
+        "WobblyObstacle": 15,
+        "Debris3D": 92,
+        "DestructableObstacle": 23
+      },
+      "active_counts": {
+        "MovingObstacle": 4,
+        "AutoRotate": 7,
+        "DestructableObstacleDestroyer": 4,
+        "Debris3D": 92,
+        "DestructableObstacle": 23,
+        "WobblyObstacle": 4
+      },
+      "active_classes_without_shared_adapter": {
+        "AutoRotate": 7,
+        "DestructableObstacleDestroyer": 4
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "5273fe7f2abdbbe6e9c20695895b19eed7643a2aa69de1e0108e696d5e139bb6",
+      "graph_sha256": "e94a1337ecca47d48c5ae21295f31cb53d1175683036bc23b191a12788b27444"
+    },
+    {
+      "map": "level56",
+      "scene": "LevelShrine",
+      "passed": true,
+      "failures": [],
+      "records": 154,
+      "class_counts": {
+        "Debris3D": 92,
+        "WobblyObstacle": 33,
+        "DestructableObstacle": 17,
+        "Teleportal": 4,
+        "ExpressiveObstacle": 1,
+        "ShrubWobbleCollider": 7
+      },
+      "active_counts": {
+        "Debris3D": 41,
+        "WobblyObstacle": 24,
+        "DestructableObstacle": 8,
+        "Teleportal": 4,
+        "ExpressiveObstacle": 1
+      },
+      "active_classes_without_shared_adapter": {
+        "Teleportal": 4,
+        "ExpressiveObstacle": 1
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "55ec5c9e23288d3d8de8b8c22c5f4c22db657900de3b0edb658f000252684f36",
+      "graph_sha256": "c5740e9af94df201dc85948dc724a703c941a033c8418546d2ba5e9cc29d967d"
+    },
+    {
+      "map": "level57",
+      "scene": "LevelTrap",
+      "passed": true,
+      "failures": [],
+      "records": 128,
+      "class_counts": {
+        "WobblyObstacle": 11,
+        "Debris3D": 39,
+        "DestructableObstacle": 9,
+        "TrapFloor": 67,
+        "GoldenTotem": 1,
+        "ShrubWobbleCollider": 1
+      },
+      "active_counts": {
+        "WobblyObstacle": 10,
+        "Debris3D": 39,
+        "DestructableObstacle": 9,
+        "TrapFloor": 66,
+        "ShrubWobbleCollider": 1
+      },
+      "active_classes_without_shared_adapter": {
+        "TrapFloor": 66,
+        "ShrubWobbleCollider": 1
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "adea4331451bf8a0cdae83bbe1575c53b7bfb91e67ebf84ab0604cab51e4c2f4",
+      "graph_sha256": "0b0b83db85fb1ae1eeedabce4cc80dc50d55c09b50b9b7648e3027ab5c8cadb4"
+    },
+    {
+      "map": "level58",
+      "scene": "LevelTrapIslands",
+      "passed": true,
+      "failures": [],
+      "records": 165,
+      "class_counts": {
+        "ExpressiveObstacle": 3,
+        "Debris3D": 91,
+        "WobblyObstacle": 26,
+        "DestructableObstacle": 13,
+        "TrapFloor": 32
+      },
+      "active_counts": {
+        "Debris3D": 42,
+        "WobblyObstacle": 19,
+        "DestructableObstacle": 6,
+        "TrapFloor": 32
+      },
+      "active_classes_without_shared_adapter": {
+        "TrapFloor": 32
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "f46d424b9fcdcd52042616be0cae507edd0dc6a1e366c18e4f6f8eac61fd354a",
+      "graph_sha256": "a68a5b03c43340e68d8936b2c7bef688b5b00677d632b1ffa47e2fc6287941ea"
+    },
+    {
+      "map": "level59",
+      "scene": "LevelTrapMaze2",
+      "passed": true,
+      "failures": [],
+      "records": 149,
+      "class_counts": {
+        "TrapFloor": 120,
+        "GoldenTotem": 1,
+        "WobblyObstacle": 17,
+        "ShrubWobbleCollider": 11
+      },
+      "active_counts": {
+        "TrapFloor": 120,
+        "WobblyObstacle": 17,
+        "ShrubWobbleCollider": 11
+      },
+      "active_classes_without_shared_adapter": {
+        "TrapFloor": 120,
+        "ShrubWobbleCollider": 11
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "9640850283a9f9c03084ec04d92d5a4d53307fb7fcc2513c60e2fbadfde86ca3",
+      "graph_sha256": "bd366fffaa190c6275d9478cb14067c0934f2e335af5a95f50e0f322b454e421"
+    },
+    {
+      "map": "level60",
+      "scene": "LevelTurnTeleportals",
+      "passed": true,
+      "failures": [],
+      "records": 105,
+      "class_counts": {
+        "AutoRotate": 3,
+        "Debris3D": 62,
+        "WobblyObstacle": 16,
+        "DestructableObstacle": 11,
+        "ShrubWobbleCollider": 7,
+        "Teleportal": 6
+      },
+      "active_counts": {
+        "AutoRotate": 3,
+        "Debris3D": 62,
+        "DestructableObstacle": 11,
+        "WobblyObstacle": 6,
+        "ShrubWobbleCollider": 6,
+        "Teleportal": 6
+      },
+      "active_classes_without_shared_adapter": {
+        "AutoRotate": 3,
+        "ShrubWobbleCollider": 6,
+        "Teleportal": 6
+      },
+      "switch_targets_without_shared_adapter": [],
+      "sidecar_sha256": "12184a1f125eedae9d6f133715e7bda91fb2e515cc1f6b86352acc12c25b5361",
+      "graph_sha256": "fd84ea193fb6c40d1f2ccca6b5b3843b5437c5dcccec551e0dc24fa3c620a5f4"
+    }
+  ]
+}

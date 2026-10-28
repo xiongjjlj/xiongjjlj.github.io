@@ -207,7 +207,8 @@ func build_cards() -> void:
 	validate_lobby()
 
 func validate_lobby() -> void:
-	var message := "Same-screen multiplayer · Level Enclosed"
+	var scene_name := str(game.active_scene.get("name", "Arena")).trim_prefix("Level").to_snake_case().capitalize()
+	var message := "Same-screen multiplayer · " + scene_name
 	var used_devices: Array[int] = []
 	var used_names: Array[String] = []
 	var valid := true

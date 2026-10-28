@@ -7,6 +7,7 @@ var shapes: Array[Dictionary] = []
 var source_scene: Dictionary = {}
 var source_nodes: Dictionary = {}
 var source_components: Dictionary = {}
+var subtree_collider_owners: Dictionary = {}
 var actor_shapes: Array[Dictionary] = []
 var next_actor_id:=1000000
 var ignored_actor_pairs:Dictionary={}
@@ -18,6 +19,7 @@ func load_scene(scene: Dictionary, scene_nodes: Dictionary) -> void:
 	source_scene = scene
 	source_nodes = scene_nodes
 	source_components.clear()
+	subtree_collider_owners.clear()
 	actor_shapes.clear()
 	for object in scene.nodes:
 		source_components[int(object.id)] = object.components
@@ -106,6 +108,18 @@ func sync_scene_object(object_id: int) -> void:
 				for p in vertices: bounds = bounds.expand(p)
 				shape.bounds = bounds.grow(shape.get("edge_radius", 0.0))
 		shapes[shape_index] = shape
+
+func sync_scene_subtree(object_id: int) -> void:
+	if not source_nodes.has(object_id): return
+	if not subtree_collider_owners.has(object_id):
+		var owners: Dictionary = {}
+		var parent: Node3D = source_nodes[object_id]
+		for shape in shapes:
+			if shape.actor: continue
+			var child: Node3D = source_nodes[int(shape.object_id)]
+			if child == parent or parent.is_ancestor_of(child): owners[int(shape.object_id)] = true
+		subtree_collider_owners[object_id] = owners.keys()
+	for owner in subtree_collider_owners[object_id]: sync_scene_object(int(owner))
 
 func set_scene_object_enabled(object_id: int, enabled: bool) -> void:
 	# Unity disables a destroyed obstacle collider with its GameObject. Keep the

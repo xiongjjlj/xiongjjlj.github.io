@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "scope": "Fresh GitHub source snapshot import without pre-existing .godot cache, then level4 startup. Does not validate all gameplay or browser parity.",
+  "import_returncode": 0,
+  "startup_returncode": 0,
+  "startup": {
+    "meshes": 155,
+    "missing": 0,
+    "nodes": 445,
+    "scene": "LevelTurnstile",
+    "scene_index": 2
+  },
+  "errors": []
+}

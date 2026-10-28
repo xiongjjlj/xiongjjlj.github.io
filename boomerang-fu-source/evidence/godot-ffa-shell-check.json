@@ -1,0 +1,119 @@
+{
+  "checks": [
+    {
+      "details": null,
+      "name": "six distinct original characters and source spawn points",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "all 72 character clips bind with no missing targets",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "frozen visuals cover all six players",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "six fire emitters have independent bounded state",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "six player kills lead to one round result",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "next round keeps scores and resets six actors",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "tiebreak only enables the two finalists",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "first tiebreak kill ends match with one winner",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "new two-player long match resets roster score and queries",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "lobby hides validation controls and suspends simulation",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "menu start selects characters and match length",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "ready phase holds actor simulation",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "source one-second ready leads to gameplay",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "pause freezes world and slow-motion timers",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "resume preserves pre-pause time scale",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "normal match exposes round scoreboard",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "continue returns to ready preserving points",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "focus loss pauses ready countdown",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "gamepad edge routes only to its assigned slot",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "gamepad press consumed once",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "original FFA score goals for lengths and player counts",
+      "passed": true
+    },
+    {
+      "details": {
+        "after": 990,
+        "baseline": 990
+      },
+      "name": "repeated two/six player setup reclaims scene nodes",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Actual imported scene and six models, full local FFA shell, input adapter routing and node reclamation. Gamepad hardware/browser mapping, original menu pixels, full native scene scheduling and character-specific effects are not proven."
+}

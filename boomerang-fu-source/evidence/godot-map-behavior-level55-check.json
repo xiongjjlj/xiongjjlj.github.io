@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "details": "level55",
+      "name": "loaded requested map with decoded behaviors",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "rotating parent updates child colliders",
+      "passed": true
+    }
+  ],
+  "map": "level55",
+  "passed": true,
+  "scope": "Real-scene switch trigger, mover transforms/colliders, reset, and shared physics scheduling; no Unity frame-parity claim."
+}

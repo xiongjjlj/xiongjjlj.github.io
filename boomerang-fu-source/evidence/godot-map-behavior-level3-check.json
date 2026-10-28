@@ -1,0 +1,98 @@
+{
+  "checks": [
+    {
+      "details": "level3",
+      "name": "loaded requested map with decoded behaviors",
+      "passed": true
+    },
+    {
+      "details": [
+        2316,
+        2317
+      ],
+      "name": "switch resolves serialized component references",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "walking near switch does not activate an attack trigger",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "actual melee polygon activates switch",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "activation reaches the linked mover",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "continuous overlap does not retrigger after cooldown",
+      "passed": true
+    },
+    {
+      "details": 1,
+      "name": "moving/rotating geometry updates actual collision vertices",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "disarm re-entry activates after melee exits",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "reset restores rotation, direction and trigger state",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "projectile approaching from rejected direction stays inactive",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "projectile re-entry from accepted direction triggers",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "fresh throw exception includes original Z distance",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "near-owner fresh throw bypasses direction restriction",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "one-shot switch disables and resets",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "reset restores one-shot activation state",
+      "passed": true
+    },
+    {
+      "details": {
+        "actor_ticks": 3,
+        "map_ticks": 3
+      },
+      "name": "main-loop obstacle and actor physics steps stay aligned",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "zero-time frame does not tick map behaviors",
+      "passed": true
+    }
+  ],
+  "map": "level3",
+  "passed": true,
+  "scope": "Real-scene switch trigger, mover transforms/colliders, reset, and shared physics scheduling; no Unity frame-parity claim."
+}

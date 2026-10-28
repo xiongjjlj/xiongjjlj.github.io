@@ -5,9 +5,11 @@
 
 在线试玩：[feixiong.me/boomerang-fu](https://feixiong.me/boomerang-fu/)。已实测公开地址加载、双人操作、音频及暂停恢复。当前为未完成还原的开发版本。
 
-稳定依赖点已发布到 GitHub：[源码快照 `boomerang-fu-v0.5.0`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu-source)，当前快照随该 tag 更新；[可继续开发的 `boomerang-fu-dev` 分支](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-dev)从同一版本开始。发布网页文件位于同一 tag 的 [`boomerang-fu/`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu)。依赖项目可固定 tag，地图和视觉补全继续在 dev 分支推进。
+稳定依赖点已发布到 GitHub：[源码快照 `boomerang-fu-v0.5.0`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu-source)，该稳定版本固定在提交 `ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1`；[可继续开发的 `boomerang-fu-dev` 分支](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-dev)从同一版本开始。发布网页文件位于同一 tag 的 [`boomerang-fu/`](https://github.com/xiongjjlj/xiongjjlj.github.io/tree/boomerang-fu-v0.5.0/boomerang-fu)。依赖项目可固定 tag，地图和视觉补全继续在 dev 分支推进。
 
-最新构建（2026-10-28）：已接入正常的角色选择、短/中/长局、开局提示、暂停恢复、回合结算、继续、加赛和重赛。可配置 2–6 个本地玩家，使用两套键盘、接入的手柄或机器人；六个原角色、头像、字体、模型和动画曲线保留。Unity BuildSettings 中的 59 张原始对战地图（`level2`–`level60`）已经导入 Web 资源包，可用 `?map=levelN`（例如 `?map=level38`，`slide` 仍是 `level3` 的别名）选择；逐张 Godot 启动与共享 FFA 初始化检查全部通过。LevelSlideTraps 另有 MovingObstacle、Switch、WobblyObstacle、可破坏障碍、飞镖墙面回调和玩家近战障碍回调适配；其他地图目前共享 FFA 运行时和原始几何/碰撞体，地图专属移动平台、传送门、落水、粒子、音频和 Animator 仍需逐项移植。
+开发分支 `0.5.1-dev.1`（2026-10-28）：将 MovingObstacle、Switch、WobblyObstacle、DestructableObstacle、Debris3D 的共享适配器接入全部关卡的行为数据。修正组件引用、启用状态、开关 Enter 语义、机关重置、子节点碰撞同步及物理步调度。行为数据含原安装 SHA-256 和组件归属，6,904 条记录经场景图检查。真实场景测试覆盖 level3、level4、level48、level55；其余关卡仅做加载检查。移动地板、门、传送门、塌陷/陷阱地板和特效等仍有缺口；未验证 Unity 完整时序或逐帧一致。详细开发入口及测试命令见 `DEVELOPMENT.md`。开发包 `web-development-0.5.1-dev.1.zip` 已在浏览器验证：Turnstile 的旋转、投掷、暂停恢复和继续回合，以及 Slide Traps 的键盘近战触发开关、双刷移动与回弹。两个页面无控制台错误或警告；观察到机器人走落 Turnstile 平台，地图寻路仍需修复。以下历史浏览器记录对应此前发布的稳定版。
+
+最新构建（2026-10-28）：已接入正常的角色选择、短/中/长局、开局提示、暂停恢复、回合结算、继续、加赛和重赛。可配置 2–6 个本地玩家，使用两套键盘、接入的手柄或机器人；六个原角色、头像、字体、模型和动画曲线保留。Unity BuildSettings 中的 59 个原始关卡（包含教程，尚未逐张确认 FFA 适用性）（`level2`–`level60`）已经导入 Web 资源包，可用 `?map=levelN`（例如 `?map=level38`，`slide` 仍是 `level3` 的别名）选择；逐张 Godot 启动与共享 FFA 初始化检查全部通过。LevelSlideTraps 另有 MovingObstacle、Switch、WobblyObstacle、可破坏障碍、飞镖墙面回调和玩家近战障碍回调适配；其他地图目前共享 FFA 运行时和原始几何/碰撞体，地图专属移动平台、传送门、落水、粒子、音频和 Animator 仍需逐项移植。
 
 浏览器实测双人操作、新角色选择、菜单/对局音乐、暂停滤波、计分和下一回合；无控制台错误。最新整合验证覆盖 37 组检查，包含六人计分、AI 跨回合复用、72 段动画绑定、六人火/冰效果、加赛和反复切换人数后的节点回收；对应报告记录 45 个核心脚本的 SHA-256。13 种普通道具（含伪装、缩小边界和诱饵）和原始 FMOD 音频库已接入，音频内存上限为 128 MiB；最新 Godot 回归套件覆盖道具书、六人 FFA、诱饵、伪装和边界，全部通过。
 
@@ -38,7 +40,7 @@
 
 原版直接依赖已补齐并逐文件校验。编译记录见 `evidence/compile-check.json`。声明元数据对照中，695 个类型及其基类、接口、字段和方法签名一致；六个接口的 BeforeFieldInit 标记有差异，完整原始结果保留在 `evidence/metadata-contract-check.json`，没有标成完全一致。
 
-已校验取得全部 61 个场景文件。Godot 的 `tools/export_godot_scene.py` 保留原始层级、变换、碰撞体与渲染资源引用；其中 59 张对战地图已进入 Web 资源包，节点数和网格引用按源场景保存。该场景的网格与材质引用已补齐（47 个网格、16 个材质、10 张贴图、187 个渲染实例）；SpriteRenderer 与全局运行时场景尚未导入。当前材料只是预览，原始 Shader、灯光与后处理仍需移植。
+已校验取得全部 61 个场景文件。Godot 的 `tools/export_godot_scene.py` 保留原始层级、变换、碰撞体与渲染资源引用；其中 59 个原始关卡已进入 Web 资源包，节点数和网格引用按源场景保存。该场景的网格与材质引用已补齐（47 个网格、16 个材质、10 张贴图、187 个渲染实例）；SpriteRenderer 与全局运行时场景尚未导入。当前材料只是预览，原始 Shader、灯光与后处理仍需移植。
 
 两名角色已通过 GLB 导入 Godot；15 个蒙皮网格的骨骼与绑定矩阵保留，单骨骼网格的隐式权重已展开。原始动画流直接解码为三次曲线系数、常量和密集采样通道，运行时不将曲线重新烘焙成固定帧。待机与行走检查没有未绑定目标；实际浏览器中已验证切换和慢动作。表情贴图的原始缩放与偏移通过 `KHR_texture_transform` 保留。记录见 `evidence/godot-character-assets.json`、`evidence/godot-character-import-check.json` 和浏览器截图；这不证明 Animator 状态机或逐帧画面一致。
 

@@ -12,16 +12,16 @@
     },
     {
       "details": {
-        "elapsed": 0.0333333333333333,
+        "elapsed": 0.283321976661682,
         "state": 1,
-        "y": -2.83241844177246
+        "y": -1.89120423793793
       },
       "name": "serialized preMove delay and EaseOut motion move the first brush",
       "passed": true
     },
     {
       "details": {
-        "elapsed": 0.0333333333333333,
+        "elapsed": 0.0,
         "percent": 0.0,
         "state": 3,
         "y": -21.7000007629395
@@ -33,14 +33,14 @@
       "details": {
         "spring": true,
         "state": 1,
-        "y": -19.2703723907471
+        "y": -20.4833202362061
       },
       "name": "springPauseDur releases the spring wind-back",
       "passed": true
     },
     {
       "details": {
-        "spring": false,
+        "spring": true,
         "state": 0,
         "y": 0.0
       },
@@ -69,10 +69,10 @@
     {
       "details": {
         "offset": [
-          0.333333343267441,
-          0.0555555559694767
+          0.333326697349548,
+          0.0555544421076775
         ],
-        "rotation": 0.0166666675359011
+        "rotation": 0.0166663359850645
       },
       "name": "WobblyObstacle spring force changes the rendered root",
       "passed": true

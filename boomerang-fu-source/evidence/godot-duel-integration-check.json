@@ -1,0 +1,108 @@
+{
+	"native_frame_parity_verified": false,
+	"nodes_after_restart": 1192,
+	"nodes_before": 1192,
+	"passed": true,
+	"reached_default_medium_goal": true,
+	"rounds": [
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 1,
+			"round": 1
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 2,
+			"round": 2
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 3,
+			"round": 3
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 4,
+			"round": 4
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 5,
+			"round": 5
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 6,
+			"round": 6
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 7,
+			"round": 7
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 8,
+			"round": 8
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 9,
+			"round": 9
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 10,
+			"round": 10
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 11,
+			"round": 11
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 12,
+			"round": 12
+		},
+		{
+			"frames": 143,
+			"passed": true,
+			"phase": 3,
+			"points": 13,
+			"round": 13
+		},
+		{
+			"frames": 7,
+			"passed": true,
+			"phase": 4,
+			"points": 14,
+			"round": 14
+		}
+	],
+	"scope": "Actual scene, source map queries, flight, damage, source death clip, score persistence, 14-round preview victory and restart; excludes melee/powers/complete original presentation"
+}

@@ -97,8 +97,13 @@ func _ready() -> void:
 	for item in JSON.parse_string(FileAccess.get_file_as_string(ROOT+"explosion-inputs.json")):
 		if item.script == "Explosion": explosion_parameters[item.name] = item.data
 	load_original_scene(active_scene.file)
-	if active_scene.name == "LevelSlideTraps":
-		level_behaviors.initialize(read_json(ROOT + "level3/behaviors.json"), nodes, collision_world)
+	# Every imported Unity level now carries a decoded behaviour sidecar.  Keep
+	# the same deterministic adapter for shared obstacle families (moving
+	# obstacles, switches, wobbly props, destructibles and debris), while
+	# leaving room for map-specific adapters to opt in later.
+	var behavior_path := ROOT + scene_key + "/behaviors.json"
+	if FileAccess.file_exists(behavior_path):
+		level_behaviors.initialize(read_json(behavior_path), nodes, collision_world, decoys.rng)
 	ground_queries.world = collision_world
 	ground_queries.water_mask = 16 # Original serialized Water layer (index 4).
 	create_characters()
@@ -182,7 +187,7 @@ func create_characters() -> void:
 		"fixed_delta": actors[0].fixed_delta, "radius": actors[0].radius}))
 
 func reset_motions(new_match := true) -> void:
-	if active_scene.name == "LevelSlideTraps" and level_behaviors.initialized: level_behaviors.reset()
+	if level_behaviors.initialized: level_behaviors.reset()
 	if decoys.world!=null:decoys.reset_round()
 	for item in decoy_views.values():item.root.queue_free()
 	decoy_views.clear()
@@ -376,6 +381,7 @@ func update_movement(scaled_delta: float) -> void:
 			weapons[index].fixed_step()
 		decoys.fixed_step()
 		step_discs()
+		level_behaviors.fixed_step(actors[0].fixed_delta, actors, flying_discs, combat)
 		physics_accumulator -= actors[0].fixed_delta
 		steps += 1
 		simulated_ticks += 1
@@ -512,7 +518,7 @@ func step_discs() -> void:
 		for event in disc.events:
 			if event.type == "wall":
 				audio.wall(event,disc.source_z)
-				if active_scene.name == "LevelSlideTraps" and level_behaviors.initialized:
+				if level_behaviors.initialized:
 					level_behaviors.interact_disc_wall(disc,int(event.get("object_id",-1)),disc.velocity)
 			if event.type == "wall": print("BF_DISC_BOUNCE " + JSON.stringify({"actor": item.player, "tick": simulated_ticks, "position": [disc.position.x, disc.position.y]}))
 		disc.events.clear()
@@ -1111,9 +1117,7 @@ func _process(delta: float) -> void:
 	if movement_enabled and round_state.simulation_running():
 		cell_grid.current_time = clock.time_counter
 		update_movement(scaled_delta)
-		if active_scene.name == "LevelSlideTraps" and level_behaviors.initialized:
-			level_behaviors.interact_melee(actors, combat)
-		level_behaviors.step(scaled_delta, actors, flying_discs)
+		level_behaviors.frame_step(scaled_delta)
 		for behavior_event in level_behaviors.drain_events(): print("BF_LEVEL3_EVENT " + JSON.stringify(behavior_event))
 		advance_explosions(scaled_delta)
 		for index in actor_elements.size():

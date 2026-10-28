@@ -1,0 +1,75 @@
+{
+  "version": "0.5.1-dev.1",
+  "archive": "web-development-0.5.1-dev.1.zip",
+  "bytes": 88585861,
+  "sha256": "15942fa235609b0713351bbbcc7913a547baf4e399209b1e16277106e7dfd2e3",
+  "files": {
+    "Godot-LICENSE.txt": {
+      "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80",
+      "bytes": 1149
+    },
+    "Godot-THIRDPARTY.json": {
+      "sha256": "0e012ef5f7fe547457e51cf56ef477c5383bc5d319ae1473587438f6e446f538",
+      "bytes": 114894
+    },
+    "README-hosting.txt": {
+      "sha256": "d777271b1bdf084a280e7179f02bbc249874cc286b2c5cdec169c8fb30c9ce3a",
+      "bytes": 891
+    },
+    "audio/Master Bank.bank": {
+      "sha256": "a3cc8b9c6b602d7e6aeda00fb9705e4df6f3d3b44bd1f95913923fb2233c52c2",
+      "bytes": 34346400
+    },
+    "audio/Master Bank.strings.bank": {
+      "sha256": "0abd3722cd7a43f160f9b5bb202dbbd657d9a491dedeb7dd43e56055939cc9ed",
+      "bytes": 9110
+    },
+    "audio/NOTICE.txt": {
+      "sha256": "f4833c4e9821033e749794cf12fc608fb3bf25d79c8390576561d361c64ae993",
+      "bytes": 563
+    },
+    "audio/fmodstudio.js": {
+      "sha256": "7497a63744b940b2d5c9ff494e5017bf991aee8dd26739edcf86e1954f6e93e9",
+      "bytes": 131434
+    },
+    "audio/fmodstudio.wasm": {
+      "sha256": "38007e3792e111b265af6c5499f8453c5e83809b13c200522b794efee8ad213e",
+      "bytes": 2656574
+    },
+    "audio/runtime.js": {
+      "sha256": "144f0fada740e14f154d620892c6c453495d8ac2206581450e70173e8f5e7f57",
+      "bytes": 8860
+    },
+    "index.audio.position.worklet.js": {
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "bytes": 2973
+    },
+    "index.audio.worklet.js": {
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "bytes": 7298
+    },
+    "index.html": {
+      "sha256": "166fb51d2983b525a0254bc54d872debec010e997c5cf9e4dde91dd1bb074362",
+      "bytes": 5398
+    },
+    "index.js": {
+      "sha256": "ffc3898b59fba6f5af0c02f76e5ee526cc061e65c7d2d6f4f98186876cea15c4",
+      "bytes": 315645
+    },
+    "index.pck": {
+      "sha256": "755200afa49b72c81c9e64fe8b1907edf228c3c1e3a6048138c0acc17bd944b9",
+      "bytes": 142511504
+    },
+    "index.png": {
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+      "bytes": 21443
+    },
+    "index.wasm": {
+      "sha256": "11ea19645368f8e73cf337b59cfd7ceeb4ebb51f7a3bbf77d1a5c3ddfedbc522",
+      "bytes": 37902138
+    }
+  },
+  "crc_verified": true,
+  "browser_report": "godot-map-behavior-browser-check.json",
+  "full_game_parity_verified": false
+}
