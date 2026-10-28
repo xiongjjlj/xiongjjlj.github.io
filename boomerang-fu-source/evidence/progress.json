@@ -10,10 +10,10 @@
   "recovered_scene_assets": 61,
   "blocking_input": null,
   "next_actions": [
-    "Repair map-specific bot navigation; browser test observed a bot walk off a Turnstile platform.",
-    "Implement moving doors/floors and scene-specific obstacle variants using decoded references.",
-    "Implement falling/trap floors and portal scene wiring.",
-    "Compare full original Unity scene scheduling, RNG interleaving, collision callbacks and visuals against the browser."
+    "Implement MovingFloorReactive and MovingFloorRollingPin using original callbacks and native traces.",
+    "Repair per-map and moving-platform navigation; all maps currently reuse Enclosed navigation.",
+    "Implement falling/trap floors and teleportal scene wiring; MovingDoor is confined to the tutorial.",
+    "Compare complete scene scheduling, global random draw order, trigger callback order, shaders, animation and audio against the original."
   ],
   "validation_limitations": [
     "Recovered C# compilation is not engine/runtime equivalence",
@@ -51,11 +51,11 @@
     "native_dxbc_disassembled": true,
     "partial_map_shader_webgl_verified": true
   },
-  "updated_at": "2026-10-28T09:29:04+08:00",
+  "updated_at": "2026-10-28T01:47:21.521894+00:00",
   "implementation_engine": "Godot 4.7.2",
   "browser_language": "GDScript",
   "browser_development_preview": true,
-  "current_work": "0.5.1-dev.1 completed as a scoped development snapshot: 59 map data/startup checks, seven native suites, browser Turnstile movement/throw/pause/round flow, and keyboard-triggered Slide Traps switch/movers/spring-back. Public stable version remains 0.5.0. Original-game frame parity and remaining map families are unfinished.",
+  "current_work": "0.5.1-dev.2: normal MovingFloor motion, actor and dropped-disc parenting integrated in seven FFA maps. 38,416 original UnityPlayer frames compared with explicit tolerances; 15 bounded runtime suites and local-browser Spin/Drift checks passed. Full game parity remains unverified.",
   "godot_scene_preview": {
     "scene": "LevelEnclosed",
     "nodes": 548,
@@ -3714,5 +3714,22 @@
     "crc_verified": true,
     "browser_report": "godot-map-behavior-browser-check.json",
     "full_game_parity_verified": false
+  },
+  "normal_moving_floors": {
+    "maps": [
+      "LevelSplit",
+      "LevelDrift",
+      "LevelTracks",
+      "LevelSpin",
+      "LevelDonut",
+      "LevelFourCogs",
+      "LevelRaftCrusher"
+    ],
+    "components": 16,
+    "native_samples": 38416,
+    "native_report": "godot-moving-floor-native-check.json",
+    "runtime_report": "godot-map-runtime-check.json",
+    "browser_report": "godot-moving-floor-browser-check.json",
+    "whole_game_parity_verified": false
   }
 }

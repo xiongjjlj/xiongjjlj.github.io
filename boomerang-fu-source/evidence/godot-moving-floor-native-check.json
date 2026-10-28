@@ -1,0 +1,247 @@
+{
+  "cases": [
+    {
+      "failures": [],
+      "key": "level24-2177",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "rotation": 0.0,
+        "target_duration": 0.0,
+        "velocity": 0.000230663048569113
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level24-2178",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "rotation": 0.0,
+        "target_duration": 0.0,
+        "velocity": 0.000255950988503173
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level24-2179",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "rotation": 0.0,
+        "target_duration": 0.0,
+        "velocity": 0.000230663048569113
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level24-2180",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "rotation": 0.0,
+        "target_duration": 0.0,
+        "velocity": 0.000255950988503173
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level26-1129",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.000000119209289550781,
+        "position": 0.00000213248063118954,
+        "rotation": 0.0,
+        "target_duration": 0.0,
+        "velocity": 0.000114500522613525
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level26-1130",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.000000119209289550781,
+        "position": 0.00000134869912926661,
+        "rotation": 0.0,
+        "target_duration": 0.0,
+        "velocity": 0.0000809219491202384
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level27-3304",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.000000000465661287307739,
+        "position": 0.0,
+        "rotation": 0.0,
+        "target_duration": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level27-3305",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.000000000465661287307739,
+        "position": 0.0,
+        "rotation": 0.0,
+        "target_duration": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level29-1370",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.000000119209289550781,
+        "position": 0.0,
+        "rotation": 0.000000659658092594384,
+        "target_duration": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level44-2557",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.000000119209289550781,
+        "position": 0.0,
+        "rotation": 0.000000659658092594384,
+        "target_duration": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level45-2614",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.000000119209289550781,
+        "position": 0.0,
+        "rotation": 0.000000589441672360635,
+        "target_duration": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level45-2615",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "rotation": 0.000000594740109605141,
+        "target_duration": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level45-2616",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.0,
+        "position": 0.0,
+        "rotation": 0.000000594740109605141,
+        "target_duration": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level45-2617",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.000000119209289550781,
+        "position": 0.0,
+        "rotation": 0.000000589441672360635,
+        "target_duration": 0.0,
+        "velocity": 0.0
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level50-2173",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.000000000931322574615479,
+        "position": 0.0,
+        "rotation": 0.0,
+        "target_duration": 0.0,
+        "velocity": 0.000362120161298662
+      },
+      "passed": true,
+      "samples": 2401
+    },
+    {
+      "failures": [],
+      "key": "level50-2174",
+      "max_errors": {
+        "duration": 0.0,
+        "index": 0.0,
+        "percent": 0.000000000931322574615479,
+        "position": 0.0,
+        "rotation": 0.0,
+        "target_duration": 0.0,
+        "velocity": 0.000362120161298662
+      },
+      "passed": true,
+      "samples": 2401
+    }
+  ],
+  "passed": true,
+  "runtime": "Installed Assembly-CSharp MovingFloor, original UnityPlayer/Mono",
+  "scope": "Motion fields from Start initialized explicitly; actual ToggleTargetPosition and FixedUpdate. Navigation, audio and trigger scheduling excluded."
+}

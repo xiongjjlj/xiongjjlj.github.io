@@ -4,15 +4,29 @@
 `ef21423cfcfcf4e1e5a9ff8cb16f35ba883e52d1`，源码目录是 `boomerang-fu-source/`；
 `boomerang-fu-v0.5.0` 标签保留在该提交。`boomerang-fu-dev` 接受后续开发。
 
-本次开发版本为 `0.5.1-dev.1`，修复共享地图机关，已部署到 <https://boomerang-fu.arkevo.ai/>。
-`feixiong.me` 上的网页及 `boomerang-fu-v0.5.0` 标签仍保持稳定版。
+本次开发版本为 `0.5.1-dev.2`。它修复共享地图机关；公开网页仍为此前的稳定构建。
 源代码、浏览器包与证据分别有哈希，历史浏览器测试报告仅证明当时记录的构建。
 
-开发 Web 包为 `web-development-0.5.1-dev.1.zip`，解压后通过 HTTP(S) 托管。
-浏览器已实际验证 Turnstile 的旋转、投掷、暂停恢复、继续回合，以及 Slide Traps
+开发 Web 包为 `web-development-0.5.1-dev.2.zip`，解压后通过 HTTP(S) 托管。
+上一版浏览器已实际验证 Turnstile 的旋转、投掷、暂停恢复、继续回合，以及 Slide Traps
 中用键盘近战命中开关、两根刷子移动与回弹；两个页面的控制台均无错误或警告。
 在 Turnstile 观察到机器人走落平台，地图专属寻路仍需修复。
 该包使用完整 PCK（超过 100 MiB），需托管端允许相应文件大小；未使用稳定版的分片加载器。
+
+本轮新增普通移动平台：Split、Drift、Tracks、Spin、Donut、Four Cogs、Raft Crusher。
+角色与落地回旋镖会随平台平移或旋转，退出接触后解除附着，回合重置恢复初始轨迹。
+原版探针直接调用安装程序集里的 `MovingFloor.ToggleTargetPosition/FixedUpdate`，
+每个平台比较 2,401 个时点，共 38,416 帧；运动位置最大差约 0.0000022，速度最大差
+约 0.000363。旋转、插值参数等也按报告中的显式容差检查，不能视为完整游戏逐帧相同。
+
+`evidence/godot-moving-floor-native-check.json`、`godot-map-runtime-check.json`
+和 `godot-moving-floor-browser-check.json` 记录本轮检查。后者包含浏览器 Spin 旋转、
+Drift 双角色随行、投掷接回、近战及暂停恢复；15 项运行时检查通过。
+动态寻路、响应式平台、完整 Unity 触发顺序、地图波浪材质与传送门仍未完成。
+
+原版运动探针的输入生成器为 `tools/moving-floor-native/generate_inputs.py`。
+它从已有场景和行为 JSON 生成真实参数，不需要 Unity 编辑器。探针通过已有隔离
+Windows 副本执行；一次一个进程，30 秒和 2 GiB 限制，结束时确认进程退出。
 
 ## 运行 Godot
 
@@ -58,7 +72,9 @@ python3 tools/verify_multi_map.py --godot /absolute/path/to/godot \
 | --- | --- |
 | 线性/旋转 MovingObstacle，Switch 近战、缴械和飞镖触发 | 共享适配器已接入；4 个真实关卡验证 |
 | WobblyObstacle、可破坏障碍和碎片 | 共享适配器已接入；仍有近似视觉/物理行为 |
-| MovingDoor、MovingFloor 及其变体 | 数据已解码；共享机关适配尚未完成 |
+| 普通 MovingFloor | 7 个 FFA 关卡、16 个平台已接入；38,416 帧原版运动对照，仍有显式浮点容差 |
+| MovingFloorReactive / RollingPin | 数据已解码；待实现 |
+| MovingDoor | 仅教程关卡使用；待实现 |
 | FallingFloor、TrapFloor、Teleportal | 数据已解码；完整关卡行为尚未完成 |
 | 原版 TimeKeeper 与 Unity 回调顺序、全局随机数交错 | 尚未证明完整场景一致 |
 | 原始材质、Animator、机关音效、粒子及逐帧画面 | 尚未完成 |
@@ -80,9 +96,3 @@ python3 tools/export_scene_behaviors.py --data /path/to/Boomerang_Fu_Data \
 导出前校验安装文件；缺少类型信息或未完整解码会失败，不跳过记录。
 `schema: 2` 保留 Unity 的 `m_FileID/m_PathID`、`component_owners`、
 `active_in_hierarchy` 与 `resolved_refs`，方便其他项目消费。
-
-## 公司域名部署
-
-Cloudflare 的独立 Worker 配置、构建、验证与回滚说明见 `deploy/cloudflare/README.md`。
-<https://boomerang-fu.arkevo.ai/version.json> 提供版本及文件 SHA-256，便于其他项目核对依赖。
-部署在服务端把大文件分片流式还原，浏览器收到的仍是完整原文件。

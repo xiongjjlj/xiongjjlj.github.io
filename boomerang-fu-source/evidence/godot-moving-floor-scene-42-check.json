@@ -1,0 +1,79 @@
+{
+  "checks": [
+    {
+      "details": null,
+      "name": "all normal moving floors bound",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "real floor colliders reference runtime floor",
+      "passed": true
+    },
+    {
+      "details": "(-22.4, 2.8)",
+      "name": "found actual walkable platform point",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "trigger attaches actor to original collider",
+      "passed": true
+    },
+    {
+      "details": 2557,
+      "name": "dropped disc attaches",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "platform follows original trajectory",
+      "passed": true
+    },
+    {
+      "details": 0.0000740987161407247,
+      "name": "actor remains at its local platform position",
+      "passed": true
+    },
+    {
+      "details": {
+        "actor": "(-17.81959, -13.85877)",
+        "actor_z": 0.0,
+        "disc": "(-17.81959, -13.85877)",
+        "disc_z": 0.0,
+        "error": 0.0,
+        "floor": 2557
+      },
+      "name": "dropped disc follows same platform",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "collision shapes remain bound to moving scene",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "trigger exit detaches actor",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "recalled disc detaches",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "reset restores pose and awaits StartMoving",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "round start enables floor movement",
+      "passed": true
+    }
+  ],
+  "map": "LevelDonut",
+  "passed": true,
+  "scope": "Real scene collider binding, platform carry and round reset. Native trigger callback order remains unverified."
+}

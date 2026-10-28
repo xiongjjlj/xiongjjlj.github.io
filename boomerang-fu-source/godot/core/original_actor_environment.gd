@@ -9,6 +9,7 @@ var ground: OriginalGroundQueries
 var parent_kind := 0 # 0: none; 1: MovingFloor; 2: other parent.
 var parent_velocity := Vector2.ZERO
 var parent_shape_id := -1
+var parent_floor: Dictionary = {}
 var fall_animation := false
 var frozen_animation := false
 var hop_count := 0
@@ -21,6 +22,9 @@ func initialize(motion: OriginalActorMotion, queries: OriginalGroundQueries) -> 
 	actor = motion
 	ground = queries
 	actor.environment_hook = weakref(self)
+
+func detach_floor() -> void:
+	parent_floor = {}; parent_kind = 0; parent_shape_id = -1; parent_velocity = Vector2.ZERO
 
 func over_hazard(point: Vector2) -> bool:
 	return ground.over_hazard(point,C.f32(actor.radius * C.f32(1.15)))

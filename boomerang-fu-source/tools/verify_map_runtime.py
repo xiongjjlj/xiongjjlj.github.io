@@ -15,6 +15,8 @@ def main():
     parser.add_argument('--project', type=Path, default=Path(__file__).resolve().parents[1] / 'godot')
     args = parser.parse_args()
     tests = [('map_behavior_adapter_test', key) for key in ('level3', 'level4', 'level48', 'level55')]
+    tests += [('moving_floor_scene_test', key) for key in ('level24','level26','level27','level29','level44','level45','level50')]
+    tests += [('moving_floor_native_test', 'level2')]
     tests += [('level3_behaviors_test', 'level3'), ('ffa_shell_test', 'level4'), ('duel_integration_test', 'level2')]
     paths = [*args.project.glob('*.gd'), *args.project.glob('core/*.gd'), *args.project.glob('assets/original/level*/behaviors.json')]
     paths += [args.project / ('tests/' + name + '.gd') for name in sorted({t[0] for t in tests})]

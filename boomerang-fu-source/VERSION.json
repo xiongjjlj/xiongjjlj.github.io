@@ -1,11 +1,11 @@
 {
   "name": "boomerang-fu-web",
-  "version": "0.5.1-dev.1",
-  "generated_at": "2026-10-28T01:35:27.899410+00:00",
+  "version": "0.5.1-dev.2",
+  "generated_at": "2026-10-28T01:48:04.579406+00:00",
   "runtime": "Godot 4.7.2 Web",
   "default_scene": "LevelEnclosed",
-  "source_files": 2586,
-  "source_bytes": 169723129,
+  "source_files": 2627,
+  "source_bytes": 175780383,
   "manifest_excludes": [
     "VERSION.json"
   ],
@@ -15,24 +15,23 @@
   },
   "development_branch": "boomerang-fu-dev",
   "development_archive": {
-    "name": "web-development-0.5.1-dev.1.zip",
-    "bytes": 88585861,
-    "sha256": "15942fa235609b0713351bbbcc7913a547baf4e399209b1e16277106e7dfd2e3",
+    "name": "web-development-0.5.1-dev.2.zip",
+    "bytes": 88612976,
+    "sha256": "9fe982bc2160cf7c545a61fca4d9147f8866b91f271ac173b042f8e2e9f985e6",
     "availability": "Local task deliverable; not stored in the Git repository"
   },
   "full_game_parity_verified": false,
   "limitations": [
     "Original-game frame/pixel/PCM parity remains unproven.",
-    "59 imported levels include tutorial content; FFA eligibility and all scene behaviors are not established.",
-    "Only the shared moving/rotating obstacle, switch, wobble, destructible and debris adapters are connected; remaining classes are inventoried in the evidence.",
-    "Browser test observed a bot walking off a platform in LevelTurnstile; map-specific navigation remains incomplete.",
-    "The boomerang-fu static directory remains the stable 0.5.0 build; this commit updates source and development evidence."
+    "Normal MovingFloor motion was checked against 38,416 original Unity frames with explicit tolerances; scene scheduling and trigger ordering are not covered.",
+    "Reactive platforms, other hazards, map-specific navigation and original visual effects remain unfinished.",
+    "Stable static directory and boomerang-fu-v0.5.0 dependency remain unchanged."
   ],
   "files": [
     {
       "path": "DEVELOPMENT.md",
-      "bytes": 4789,
-      "sha256": "f89ceaa5188ee9a7bf2ef61d8a2cc1b4b5a3af0534d0c54642b5459710e876c2"
+      "bytes": 5753,
+      "sha256": "7989b2bf05b949a978c542f957f212680af2e7dfe6177648690d061232a985c4"
     },
     {
       "path": "README.md",
@@ -181,8 +180,8 @@
     },
     {
       "path": "evidence/godot-map-runtime-check.json",
-      "bytes": 34224,
-      "sha256": "d930aa597570605e9e346d05a65855fd4c81a03b6ec2b8218e9787cfa84c8abf"
+      "bytes": 59648,
+      "sha256": "f14e67fdb5b2a0c0298c76fa77ebbf16d22772a4da60028d26f144217e5eedc0"
     },
     {
       "path": "evidence/godot-map-selector-check.json",
@@ -246,8 +245,8 @@
     },
     {
       "path": "evidence/progress.json",
-      "bytes": 125399,
-      "sha256": "b813436c754e9f97f2ded9028dc5cb77cbea67fbe120dd00ae563018fb867824"
+      "bytes": 125900,
+      "sha256": "d65a2f32e2dc701256319cbaa4fc9c79387861453d33390c2f57b18fb5f90b3c"
     },
     {
       "path": "evidence/public-deploy-check.json",
@@ -9481,8 +9480,8 @@
     },
     {
       "path": "godot/core/original_actor_environment.gd",
-      "bytes": 8784,
-      "sha256": "440e36dccd18c75d0fda45d5da81eb3d0f54bbaf485ee79fd11bb292c1fefcbb"
+      "bytes": 8938,
+      "sha256": "4fff615a4c814fb26c9d2002e0fbdba533bce37ea294bd3e6664a1cad6a204be"
     },
     {
       "path": "godot/core/original_actor_motion.gd",
@@ -9606,8 +9605,8 @@
     },
     {
       "path": "godot/core/original_level3_behaviors.gd",
-      "bytes": 23402,
-      "sha256": "9791389415fe4d8719017ce86ba9d37fbb25afa50ba2d8313eb7cb288b66ca54"
+      "bytes": 23566,
+      "sha256": "d1ad2cd0537a17335070aaba36e60c9cf5906be39e45b91207e6841822e3d2fd"
     },
     {
       "path": "godot/core/original_level_boundary.gd",
@@ -9646,8 +9645,8 @@
     },
     {
       "path": "godot/core/original_player_ai_world.gd",
-      "bytes": 12264,
-      "sha256": "16de4df777928cffd3e486f73b806e1466aac8ff55cd8163f0776aa00ea029e7"
+      "bytes": 12549,
+      "sha256": "12c058bfd8649fdec199e77bf9b0e0f06c9c27989c3d21f6806cbbf6867c630f"
     },
     {
       "path": "godot/core/original_player_input.gd",
@@ -9721,8 +9720,8 @@
     },
     {
       "path": "godot/main.gd",
-      "bytes": 68198,
-      "sha256": "79c5d7858edf9bcd140e746595da11dc0540556ec23e9fb48afc279f5ceab3d6"
+      "bytes": 68800,
+      "sha256": "f86f66334a6ab136df6c058da43e2abb7e5cc76db28cbd18a34dcaac5b70b062"
     },
     {
       "path": "godot/main.tscn",
@@ -12946,8 +12945,8 @@
     },
     {
       "path": "tools/verify_map_runtime.py",
-      "bytes": 3073,
-      "sha256": "83e8581d063393829b6c285a6f508af8207dfe0e263b0561d1574992534b7c86"
+      "bytes": 3258,
+      "sha256": "2fdca1697532aa88ed646c9309d013083a4139f474db8c97625ed093e0c565ba"
     },
     {
       "path": "tools/verify_multi_map.py",
@@ -12958,6 +12957,211 @@
       "path": "tools/verify_scene_behaviors.py",
       "bytes": 6737,
       "sha256": "6852b98247c0409f56d1269137fa6065d388a6fdbc0c5c5a0457c9f3858990e6"
+    },
+    {
+      "path": "evidence/godot-moving-floor-browser-check.json",
+      "bytes": 16441,
+      "sha256": "751d2848a7f334ba80d85f536b22503de9671eef848835998bf0ed7474323363"
+    },
+    {
+      "path": "evidence/godot-moving-floor-native-check.json",
+      "bytes": 5840,
+      "sha256": "ee4a97ee121430e18c9cb22500e1a5ba47d7934985a77e0b1e6c75b229394f24"
+    },
+    {
+      "path": "evidence/godot-moving-floor-scene-22-check.json",
+      "bytes": 1837,
+      "sha256": "c73acb8513ed52047727d63b7e8580d3ccb987d44f8968b0153df28df9a894ed"
+    },
+    {
+      "path": "evidence/godot-moving-floor-scene-24-check.json",
+      "bytes": 1825,
+      "sha256": "627ac8e574dc9bb20aca71fed26b01f82898844173f6af26742622a3fde1dfbe"
+    },
+    {
+      "path": "evidence/godot-moving-floor-scene-25-check.json",
+      "bytes": 1802,
+      "sha256": "efeea48ca0f117d916b5dc8a9dee4fade9b5d469dbc0b10596dc87521f78f814"
+    },
+    {
+      "path": "evidence/godot-moving-floor-scene-27-check.json",
+      "bytes": 1834,
+      "sha256": "70bcedb60c9d6ee0df7b7c5c195503300d332f935c98e27fc87be361e2c7c2c1"
+    },
+    {
+      "path": "evidence/godot-moving-floor-scene-42-check.json",
+      "bytes": 1827,
+      "sha256": "bea455ff9ee5834902357499b3cdc957cdccd7879cb58f979e931bf0834a2849"
+    },
+    {
+      "path": "evidence/godot-moving-floor-scene-43-check.json",
+      "bytes": 1825,
+      "sha256": "4ea748c943c450ddbd0f4c17e019efef59365d99e3dbe6be1ed65cff6a552af2"
+    },
+    {
+      "path": "evidence/godot-moving-floor-scene-48-check.json",
+      "bytes": 1841,
+      "sha256": "f3df74d15677f05ba635c49b7a6efdaf105983a36fe6209c569e495ec2f38095"
+    },
+    {
+      "path": "evidence/moving-floor-development-build.json",
+      "bytes": 15401,
+      "sha256": "c3ea9ee50a62a438de2f2cf1a2bff22d8c42465958e0e6d8eec0d710b09cdd3b"
+    },
+    {
+      "path": "evidence/moving-floor-drift-before.png",
+      "bytes": 68955,
+      "sha256": "fe4d49d015b3eb79c3f0bd1ab9103f90a5463b9f34c9e33f4583e93365174622"
+    },
+    {
+      "path": "evidence/moving-floor-drift-browser-log.json",
+      "bytes": 15215,
+      "sha256": "4b38dfc99b20b839dc89d64c16db74f20a239bfb06d3de0f6b3bd503d5259125"
+    },
+    {
+      "path": "evidence/moving-floor-drift-playing.png",
+      "bytes": 67880,
+      "sha256": "d3cae612a91ac35413ae929306eb57f376d6fe545fafcb287c47c53d47801c4c"
+    },
+    {
+      "path": "evidence/moving-floor-native-input.json",
+      "bytes": 66075,
+      "sha256": "a598502dd577fd26847c17588f8b9028acf9a3c73073738938f6ff36593842c6"
+    },
+    {
+      "path": "evidence/moving-floor-native-launch.json",
+      "bytes": 728,
+      "sha256": "a8f804a0050b3495639ce1c4cb6bdd6be67fab8965d1fe4e552684759456710d"
+    },
+    {
+      "path": "evidence/moving-floor-native-motion.json",
+      "bytes": 5500342,
+      "sha256": "cb9a26af61532e287f73ad507cb06a1603599033d29d7e0414780cc54e555cb4"
+    },
+    {
+      "path": "evidence/moving-floor-spin-after.png",
+      "bytes": 73806,
+      "sha256": "098ad256f813cc87605bec8f99fb4267e7ebce4ff591e847d43388769cb5f844"
+    },
+    {
+      "path": "evidence/moving-floor-spin-before.png",
+      "bytes": 95563,
+      "sha256": "eca1373ebed160322d0d6d448dec419981c04e94224b7ea9e3f7eeb9eee35571"
+    },
+    {
+      "path": "evidence/moving-floor-spin-browser-log.json",
+      "bytes": 13752,
+      "sha256": "15623072fa06d7e5f78c83e0b57040939ef320efae1bba8f839ab15f22166b8a"
+    },
+    {
+      "path": "evidence/moving-floor-unity-native-player.log",
+      "bytes": 11361,
+      "sha256": "deb3795d6492ba514b1b3eea4650b3c4b81d9f9433ba66ba1b05b4955ddd5586"
+    },
+    {
+      "path": "evidence/moving-floor-unity-native-probe.json",
+      "bytes": 4129,
+      "sha256": "b3c47bc0346f7da75a3e7b7170ba012217247297300660676555f6680a0383e9"
+    },
+    {
+      "path": "evidence/web-moving-floor-package-check.json",
+      "bytes": 2495,
+      "sha256": "cd571c334c19c57ebb8164d4f785e4eb2bfb8c6cbe1c8d10b9b19b3ed993d0eb"
+    },
+    {
+      "path": "godot/core/original_actor_environment.gd.uid",
+      "bytes": 19,
+      "sha256": "f6261aa6dd7df407d429f9283f61e1783934c438a7f26c256afa224f86736f04"
+    },
+    {
+      "path": "godot/core/original_level3_behaviors.gd.uid",
+      "bytes": 20,
+      "sha256": "d6ac2f59da3c7a83e1d049dc72b4aa5dca6cda5df1bad6f5b629f30649a7c93a"
+    },
+    {
+      "path": "godot/core/original_moving_floors.gd",
+      "bytes": 8783,
+      "sha256": "8cc61e6299fdc76cad43c40f2be50719f3ae84df87347911a66224123c0ff3a3"
+    },
+    {
+      "path": "godot/core/original_moving_floors.gd.uid",
+      "bytes": 20,
+      "sha256": "d82f053c452e62612a7eaa14cfda8c1cf8a84152b9d6d043b7c85a4feb49f0cc"
+    },
+    {
+      "path": "godot/core/original_player_ai_world.gd.uid",
+      "bytes": 20,
+      "sha256": "e6c2f1f9c6440394b758d6f33884b6808549dd34fe4e47db0f52567f0a2b2f22"
+    },
+    {
+      "path": "godot/main.gd.uid",
+      "bytes": 19,
+      "sha256": "2a1bbb158a60f2d941d2289589c4c3a647cfdbeee7a8a7fd05d27db11ef71a92"
+    },
+    {
+      "path": "godot/tests/moving_floor_native_test.gd",
+      "bytes": 3061,
+      "sha256": "7db03f4f0ab64cd58afbec582d0c7e9b0effb29ab1c2fd91e368b3bfd9adfca9"
+    },
+    {
+      "path": "godot/tests/moving_floor_native_test.gd.uid",
+      "bytes": 19,
+      "sha256": "9f9254261a307d3c2181692451928890374663f340458bcd389354ef22f20748"
+    },
+    {
+      "path": "godot/tests/moving_floor_scene_test.gd",
+      "bytes": 4631,
+      "sha256": "d4270fe1ac7acd5588c645c11cd604f592a77cc4304ee30e707ffd23a2331979"
+    },
+    {
+      "path": "godot/tests/moving_floor_scene_test.gd.uid",
+      "bytes": 20,
+      "sha256": "23d121f75d9e4d1234b12dcffb4d3f9ebabddce0b6fecc0110ee844ba4f0d613"
+    },
+    {
+      "path": "tools/disc-motion-native/JsonSerializer.cs",
+      "bytes": 3007,
+      "sha256": "457fe65a8298d7349c5edb584c5f3649354e48220f8e90dcced1ecf461dbf916"
+    },
+    {
+      "path": "tools/moving-floor-native/Cases.cs",
+      "bytes": 11710,
+      "sha256": "7459878ff033e9adf6286eabb178a894ca8bfad769d7d845bd7af9c1a2f32f77"
+    },
+    {
+      "path": "tools/moving-floor-native/MovingFloorOracle.csproj",
+      "bytes": 682,
+      "sha256": "c12220652504a8abae760ef4eebd211c6d4a7cf4af2978907930f1e728429927"
+    },
+    {
+      "path": "tools/moving-floor-native/Program.cs",
+      "bytes": 3801,
+      "sha256": "46f752a7472701664e2bfbd3ee98fd2f766d5693e06969b57f9102ceb6ebd4dc"
+    },
+    {
+      "path": "tools/moving-floor-native/generate_inputs.py",
+      "bytes": 2890,
+      "sha256": "5690278bd0ce696d335c14e728534e3a6db10396f728cae289edf8063f1a831f"
+    },
+    {
+      "path": "tools/native-probe/NativeProbe.cs",
+      "bytes": 10908,
+      "sha256": "0e52d5cc77ded7892f698a8ea4a84356d57dcc5dbf8ced93444512b9121bfac5"
+    },
+    {
+      "path": "tools/native-probe/NativeProbe.csproj",
+      "bytes": 987,
+      "sha256": "1810cf6687ef970c8e93aa3c1be9b7f9900d9bab66587549d862c3714fb29815"
+    },
+    {
+      "path": "tools/native-probe/run.ps1",
+      "bytes": 2603,
+      "sha256": "bc656b65b58ca0770880761734daea88ded62c71d2ac3ed4d841d4e5f5705424"
+    },
+    {
+      "path": "tools/native-probe/run_oracle.py",
+      "bytes": 5001,
+      "sha256": "1ebdcbfd2da6cebb9cf4db3d8513cc96bed489dedd62c024be689ba5ba17ee55"
     }
   ],
   "deployment": {

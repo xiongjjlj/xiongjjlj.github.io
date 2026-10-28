@@ -130,7 +130,7 @@ func refresh()->void:
 		for item:Dictionary in game.decoys.members.values():
 			var actor:OriginalDecoyMotion=item.actor
 			decoys.append(record(str(i)+"/decoy/"+str(item.id),{"id":item.id,"kind":"decoy","position":Vector3(item.render.x,item.render.y,actor.source_z),"velocity":Vector3(actor.velocity.x,actor.velocity.y,0),"body":true,"alive":actor.state==A.State.ALIVE,"owner_exists":true,"owner_self":actor.owner_actor==game.actors[i],"opponent":actor.owner_actor!=game.actors[i]}))
-		ai.facts={"players":players,"discs":discs,"powerups":powerups,"decoys":decoys,"fires":fires,"explosives":explosives,"switches":[],"moving_floors":[],"size":game.boundary.size,"time":game.clock.time_counter,"standing":standing}
+		ai.facts={"players":players,"discs":discs,"powerups":powerups,"decoys":decoys,"fires":fires,"explosives":explosives,"switches":[],"moving_floors":game.level_behaviors.moving_floors.floors.values().filter(func(f):return f.enabled).map(func(f):return f.node.global_position),"size":game.boundary.size,"time":game.clock.time_counter,"standing":standing}
 	for key in records.keys():
 		if not records[key].active:records.erase(key)
 	peak_records=maxi(peak_records,records.size())
@@ -191,7 +191,11 @@ func query(i:int,kind:String,args:Array)->Variant:
 			ai.own.position=Vector3(actor.position.x,actor.position.y,actor.source_z);return null
 		"obstacle_ray":return not game.collision_world.circle_cast(actor.position,0.0,args[0],args[1],256).is_empty()
 		"obstacle_overlap":return not game.collision_world.overlaps(actor.position,args[0],256).is_empty()
-		"same_moving_floor":return false # Enclosed has no moving floors.
+		"same_moving_floor":
+			if env.parent_floor.is_empty(): return false
+			for hit in game.collision_world.overlaps(Vector2(args[0].x,args[0].y),0.0,1 << 30):
+				return int(hit.shape.id)==int(env.parent_floor.id)
+			return false
 		"random_floor_target":return ai.target
 		"hidden_by_plants":return args[0].get("hidden",false)
 		"nearby_plant","teleportal_ray":return {} # No active providers in this map adapter.

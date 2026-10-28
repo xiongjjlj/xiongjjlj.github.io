@@ -27,6 +27,7 @@ var melee_contacts: Dictionary = {}
 var disc_contacts: Dictionary = {}
 var rng := OriginalUnityRandom.new(0xB00F1)
 var fixed_ticks := 0
+var moving_floors := OriginalMovingFloors.new()
 
 func initialize(sidecar: Dictionary, scene_nodes: Dictionary, world: OriginalCollisionWorld, shared_rng = null) -> void:
 	if shared_rng != null: rng = shared_rng
@@ -102,12 +103,14 @@ func initialize(sidecar: Dictionary, scene_nodes: Dictionary, world: OriginalCol
 				"initial_hits": maxi(1, int(record.get("data", {}).get("hitsLeft", 1))),
 				"destroyed": false, "initial_visible": nodes[game_object].visible,
 				"enabled": bool(record.get("active_in_hierarchy", true)), "debris_transforms": debris.map(func(child): return child.transform)}
+	moving_floors.initialize(sidecar,nodes,world,rng)
 	reset(false)
 	initialized = true
 	print("BF_LEVEL3_BEHAVIORS " + JSON.stringify({"moving_obstacles": obstacles.size(), "switches": switches.size(), "wobbly_obstacles": wobbles.size(), "destructable_obstacles": destructables.size(), "source_counts": source_counts}))
 
 func reset(randomize := true) -> void:
 	accumulator = 0.0; fixed_ticks = 0
+	moving_floors.reset(randomize)
 	events.clear(); interaction_cooldowns.clear(); debris_states.clear(); melee_contacts.clear(); disc_contacts.clear()
 	for o in obstacles.values():
 		var node: Node3D = o.node
@@ -386,6 +389,7 @@ func frame_step(delta: float) -> void:
 func fixed_step(delta: float, actors: Array = [], flying_discs: Array = [], combat_world = null) -> void:
 	if not initialized: return
 	fixed_ticks += 1
+	moving_floors.fixed_step(delta)
 	for obstacle in obstacles.values(): _step_obstacle(obstacle, delta)
 	for wobble in wobbles.values(): _step_wobble(wobble, delta)
 	_step_debris(delta)

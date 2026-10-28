@@ -340,6 +340,7 @@ func reset_motions(new_match := true) -> void:
 		var power_binding := read_json("res://assets/powers/powerup-bindings-level3.json" if active_scene.name == "LevelSlideTraps" else "res://assets/powers/powerup-bindings.json")
 		powerup_world.initialize(weapons, collision_world, power_binding)
 	powerup_world.begin_round(round_state.round_number, clock.time_counter, new_match)
+	level_behaviors.moving_floors.start_all()
 	bots.initialize(self)
 	clock.stop_slow_mo()
 	if next_round_button != null: next_round_button.visible = false
@@ -382,6 +383,14 @@ func update_movement(scaled_delta: float) -> void:
 		decoys.fixed_step()
 		step_discs()
 		level_behaviors.fixed_step(actors[0].fixed_delta, actors, flying_discs, combat)
+		for index in actor_environments.size():
+			var environment: OriginalActorEnvironment = actor_environments[index]
+			if not environment.parent_floor.is_empty():
+				previous_positions[index] = level_behaviors.moving_floors.carry(environment.parent_floor,previous_positions[index],actors[index].source_z)
+				previous_rotations[index] += level_behaviors.moving_floors.rotation_delta(environment.parent_floor)
+			level_behaviors.moving_floors.update_actor(environment)
+		level_behaviors.moving_floors.update_discs(flying_discs)
+		collision_world.sync_actors()
 		physics_accumulator -= actors[0].fixed_delta
 		steps += 1
 		simulated_ticks += 1

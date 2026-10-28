@@ -1,0 +1,3094 @@
+{
+  "cases": [
+    {
+      "key": "level24-2177",
+      "seed": 3177,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.3826834261417389,
+            "w": 0.9238795638084412
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -6.0,
+            "y": 6.0,
+            "z": 3.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 20
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 1,
+        "positionRotations": [
+          {
+            "x": -19.0,
+            "y": 14.0,
+            "z": 0.0
+          },
+          {
+            "x": -6.0,
+            "y": 6.0,
+            "z": 0.0
+          }
+        ],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 2,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 7.0,
+        "moveDurMax": 7.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 128
+        },
+        "cellGridWidth": 12.0,
+        "cellGridHeight": 12.0
+      },
+      "record": {
+        "component_id": 2177,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 20,
+        "game_object_name": "MovingFloor (2)",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 20
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 1,
+          "positionRotations": [
+            {
+              "x": -19.0,
+              "y": 14.0,
+              "z": 0.0
+            },
+            {
+              "x": -6.0,
+              "y": 6.0,
+              "z": 0.0
+            }
+          ],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 2,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 7.0,
+          "moveDurMax": 7.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 128
+          },
+          "cellGridWidth": 12.0,
+          "cellGridHeight": 12.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 20
+        }
+      }
+    },
+    {
+      "key": "level24-2178",
+      "seed": 3178,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.3826834261417389,
+            "w": 0.9238795638084412
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -6.0,
+            "y": -6.0,
+            "z": 3.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 52
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 1,
+        "positionRotations": [
+          {
+            "x": -19.0,
+            "y": -14.0,
+            "z": 0.0
+          },
+          {
+            "x": -6.0,
+            "y": -6.0,
+            "z": 0.0
+          }
+        ],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 2,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 7.0,
+        "moveDurMax": 7.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 64
+        },
+        "cellGridWidth": 12.0,
+        "cellGridHeight": 12.0
+      },
+      "record": {
+        "component_id": 2178,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 52,
+        "game_object_name": "MovingFloor (3)",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 52
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 1,
+          "positionRotations": [
+            {
+              "x": -19.0,
+              "y": -14.0,
+              "z": 0.0
+            },
+            {
+              "x": -6.0,
+              "y": -6.0,
+              "z": 0.0
+            }
+          ],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 2,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 7.0,
+          "moveDurMax": 7.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 64
+          },
+          "cellGridWidth": 12.0,
+          "cellGridHeight": 12.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 52
+        }
+      }
+    },
+    {
+      "key": "level24-2179",
+      "seed": 3179,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.3826834261417389,
+            "w": 0.9238795638084412
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 6.0,
+            "y": -6.0,
+            "z": 3.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 80
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 1,
+        "positionRotations": [
+          {
+            "x": 19.0,
+            "y": -14.0,
+            "z": 0.0
+          },
+          {
+            "x": 6.0,
+            "y": -6.0,
+            "z": 0.0
+          }
+        ],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 2,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 7.0,
+        "moveDurMax": 7.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 32
+        },
+        "cellGridWidth": 12.0,
+        "cellGridHeight": 12.0
+      },
+      "record": {
+        "component_id": 2179,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 80,
+        "game_object_name": "MovingFloor",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 80
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 1,
+          "positionRotations": [
+            {
+              "x": 19.0,
+              "y": -14.0,
+              "z": 0.0
+            },
+            {
+              "x": 6.0,
+              "y": -6.0,
+              "z": 0.0
+            }
+          ],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 2,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 7.0,
+          "moveDurMax": 7.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 32
+          },
+          "cellGridWidth": 12.0,
+          "cellGridHeight": 12.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 80
+        }
+      }
+    },
+    {
+      "key": "level24-2180",
+      "seed": 3180,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.3826834261417389,
+            "w": 0.9238795638084412
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 6.0,
+            "y": 6.0,
+            "z": 3.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 91
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 1,
+        "positionRotations": [
+          {
+            "x": 19.0,
+            "y": 14.0,
+            "z": 0.0
+          },
+          {
+            "x": 6.0,
+            "y": 6.0,
+            "z": 0.0
+          }
+        ],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 2,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 7.0,
+        "moveDurMax": 7.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 16
+        },
+        "cellGridWidth": 12.0,
+        "cellGridHeight": 12.0
+      },
+      "record": {
+        "component_id": 2180,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 91,
+        "game_object_name": "MovingFloor (1)",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 91
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 1,
+          "positionRotations": [
+            {
+              "x": 19.0,
+              "y": 14.0,
+              "z": 0.0
+            },
+            {
+              "x": 6.0,
+              "y": 6.0,
+              "z": 0.0
+            }
+          ],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 2,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 7.0,
+          "moveDurMax": 7.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 16
+          },
+          "cellGridWidth": 12.0,
+          "cellGridHeight": 12.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 91
+        }
+      }
+    },
+    {
+      "key": "level26-1129",
+      "seed": 2129,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 8.0,
+            "z": 3.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 36
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [
+          {
+            "x": 0.0,
+            "y": 8.0,
+            "z": 0.0
+          },
+          {
+            "x": -7.0,
+            "y": 12.0,
+            "z": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 16.0,
+            "z": 0.0
+          },
+          {
+            "x": 7.0,
+            "y": 12.0,
+            "z": 0.0
+          }
+        ],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 1,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 4.0,
+        "moveDurMax": 7.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 4
+        },
+        "cellGridWidth": 36.0,
+        "cellGridHeight": 16.0
+      },
+      "record": {
+        "component_id": 1129,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 36,
+        "game_object_name": "MovingFloor",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 36
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [
+            {
+              "x": 0.0,
+              "y": 8.0,
+              "z": 0.0
+            },
+            {
+              "x": -7.0,
+              "y": 12.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 16.0,
+              "z": 0.0
+            },
+            {
+              "x": 7.0,
+              "y": 12.0,
+              "z": 0.0
+            }
+          ],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 1,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 4.0,
+          "moveDurMax": 7.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 4
+          },
+          "cellGridWidth": 36.0,
+          "cellGridHeight": 16.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 36
+        }
+      }
+    },
+    {
+      "key": "level26-1130",
+      "seed": 2130,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": -8.0,
+            "z": 3.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 69
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [
+          {
+            "x": 0.0,
+            "y": -8.0,
+            "z": 0.0
+          },
+          {
+            "x": 6.0,
+            "y": -12.0,
+            "z": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": -16.0,
+            "z": 0.0
+          },
+          {
+            "x": -7.0,
+            "y": -12.0,
+            "z": 0.0
+          }
+        ],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 1,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 3.0,
+        "moveDurMax": 8.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 2
+        },
+        "cellGridWidth": 36.0,
+        "cellGridHeight": 16.0
+      },
+      "record": {
+        "component_id": 1130,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 69,
+        "game_object_name": "MovingFloor (1)",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 69
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [
+            {
+              "x": 0.0,
+              "y": -8.0,
+              "z": 0.0
+            },
+            {
+              "x": 6.0,
+              "y": -12.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": -16.0,
+              "z": 0.0
+            },
+            {
+              "x": -7.0,
+              "y": -12.0,
+              "z": 0.0
+            }
+          ],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 1,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 3.0,
+          "moveDurMax": 8.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 2
+          },
+          "cellGridWidth": 36.0,
+          "cellGridHeight": 16.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 69
+        }
+      }
+    },
+    {
+      "key": "level27-3304",
+      "seed": 4304,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 10.0,
+            "y": -6.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 93
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [
+          {
+            "x": 10.0,
+            "y": -6.0,
+            "z": 0.0
+          },
+          {
+            "x": -10.0,
+            "y": -6.0,
+            "z": 0.0
+          }
+        ],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 4,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 10.0,
+        "moveDurMax": 10.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 2
+        },
+        "cellGridWidth": 24.0,
+        "cellGridHeight": 12.0
+      },
+      "record": {
+        "component_id": 3304,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 93,
+        "game_object_name": "MovingFloor",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 93
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [
+            {
+              "x": 10.0,
+              "y": -6.0,
+              "z": 0.0
+            },
+            {
+              "x": -10.0,
+              "y": -6.0,
+              "z": 0.0
+            }
+          ],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 4,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 10.0,
+          "moveDurMax": 10.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 2
+          },
+          "cellGridWidth": 24.0,
+          "cellGridHeight": 12.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 93
+        }
+      }
+    },
+    {
+      "key": "level27-3305",
+      "seed": 4305,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -10.0,
+            "y": 6.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 183
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [
+          {
+            "x": -10.0,
+            "y": 6.0,
+            "z": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 6.0,
+            "z": 0.0
+          }
+        ],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 4,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 10.0,
+        "moveDurMax": 10.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 4
+        },
+        "cellGridWidth": 24.0,
+        "cellGridHeight": 12.0
+      },
+      "record": {
+        "component_id": 3305,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 183,
+        "game_object_name": "MovingFloor",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 183
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [
+            {
+              "x": -10.0,
+              "y": 6.0,
+              "z": 0.0
+            },
+            {
+              "x": 10.0,
+              "y": 6.0,
+              "z": 0.0
+            }
+          ],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 4,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 10.0,
+          "moveDurMax": 10.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 4
+          },
+          "cellGridWidth": 24.0,
+          "cellGridHeight": 12.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 183
+        }
+      }
+    },
+    {
+      "key": "level29-1370",
+      "seed": 2370,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 3.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": 0.3826834261417389,
+            "w": 0.9238795638084412
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 80
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 1,
+        "positionRotations": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 180.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 270.0
+          }
+        ],
+        "useRotations": 1,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.5,
+        "moveDurMin": 9.0,
+        "moveDurMax": 9.0,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_floor",
+        "graphMask": {
+          "value": 8
+        },
+        "cellGridWidth": 38.0,
+        "cellGridHeight": 38.0
+      },
+      "record": {
+        "component_id": 1370,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 80,
+        "game_object_name": "MovingFloor",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 80
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 1,
+          "positionRotations": [
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 90.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 180.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 270.0
+            }
+          ],
+          "useRotations": 1,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.5,
+          "moveDurMin": 9.0,
+          "moveDurMax": 9.0,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_floor",
+          "graphMask": {
+            "value": 8
+          },
+          "cellGridWidth": 38.0,
+          "cellGridHeight": 38.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 80
+        }
+      }
+    },
+    {
+      "key": "level44-2557",
+      "seed": 3557,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 48
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 90.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 180.0
+          },
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 270.0
+          }
+        ],
+        "useRotations": 1,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.5,
+        "moveDurMin": 6.0,
+        "moveDurMax": 6.0,
+        "isMoving": 0,
+        "movingSoundEventName": "event:/environment/moving_obstacle",
+        "graphMask": {
+          "value": 8
+        },
+        "cellGridWidth": 60.0,
+        "cellGridHeight": 60.0
+      },
+      "record": {
+        "component_id": 2557,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 48,
+        "game_object_name": "Spinner",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 48
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 90.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 180.0
+            },
+            {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 270.0
+            }
+          ],
+          "useRotations": 1,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.5,
+          "moveDurMin": 6.0,
+          "moveDurMax": 6.0,
+          "isMoving": 0,
+          "movingSoundEventName": "event:/environment/moving_obstacle",
+          "graphMask": {
+            "value": 8
+          },
+          "cellGridWidth": 60.0,
+          "cellGridHeight": 60.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 48
+        }
+      }
+    },
+    {
+      "key": "level45-2614",
+      "seed": 3614,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 10.0,
+            "y": -10.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 42
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [
+          {
+            "x": 10.0,
+            "y": -10.0,
+            "z": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": -10.0,
+            "z": 90.0
+          },
+          {
+            "x": 10.0,
+            "y": -10.0,
+            "z": 180.0
+          },
+          {
+            "x": 10.0,
+            "y": -10.0,
+            "z": 270.0
+          }
+        ],
+        "useRotations": 1,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.5,
+        "moveDurMin": 4.0,
+        "moveDurMax": 4.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 8
+        },
+        "cellGridWidth": 20.0,
+        "cellGridHeight": 20.0
+      },
+      "record": {
+        "component_id": 2614,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 42,
+        "game_object_name": "Spinner SE",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 42
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [
+            {
+              "x": 10.0,
+              "y": -10.0,
+              "z": 0.0
+            },
+            {
+              "x": 10.0,
+              "y": -10.0,
+              "z": 90.0
+            },
+            {
+              "x": 10.0,
+              "y": -10.0,
+              "z": 180.0
+            },
+            {
+              "x": 10.0,
+              "y": -10.0,
+              "z": 270.0
+            }
+          ],
+          "useRotations": 1,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.5,
+          "moveDurMin": 4.0,
+          "moveDurMax": 4.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 8
+          },
+          "cellGridWidth": 20.0,
+          "cellGridHeight": 20.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 42
+        }
+      }
+    },
+    {
+      "key": "level45-2615",
+      "seed": 3615,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -10.0,
+            "y": -10.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.7071068286895752,
+            "w": -0.7071068286895752
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 53
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 1,
+        "positionRotations": [
+          {
+            "x": -10.0,
+            "y": -10.0,
+            "z": 0.0
+          },
+          {
+            "x": -10.0,
+            "y": -10.0,
+            "z": 270.0
+          },
+          {
+            "x": -10.0,
+            "y": -10.0,
+            "z": 180.0
+          },
+          {
+            "x": -10.0,
+            "y": -10.0,
+            "z": 90.0
+          }
+        ],
+        "useRotations": 1,
+        "counterClockwise": 1,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.5,
+        "moveDurMin": 4.0,
+        "moveDurMax": 4.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 16
+        },
+        "cellGridWidth": 20.0,
+        "cellGridHeight": 20.0
+      },
+      "record": {
+        "component_id": 2615,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 53,
+        "game_object_name": "Spinner SW",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 53
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 1,
+          "positionRotations": [
+            {
+              "x": -10.0,
+              "y": -10.0,
+              "z": 0.0
+            },
+            {
+              "x": -10.0,
+              "y": -10.0,
+              "z": 270.0
+            },
+            {
+              "x": -10.0,
+              "y": -10.0,
+              "z": 180.0
+            },
+            {
+              "x": -10.0,
+              "y": -10.0,
+              "z": 90.0
+            }
+          ],
+          "useRotations": 1,
+          "counterClockwise": 1,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.5,
+          "moveDurMin": 4.0,
+          "moveDurMax": 4.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 16
+          },
+          "cellGridWidth": 20.0,
+          "cellGridHeight": 20.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 53
+        }
+      }
+    },
+    {
+      "key": "level45-2616",
+      "seed": 3616,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": -0.0,
+            "z": 0.7071068286895752,
+            "w": -0.7071068286895752
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 55
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 1,
+        "positionRotations": [
+          {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 0.0
+          },
+          {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 270.0
+          },
+          {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 180.0
+          },
+          {
+            "x": 10.0,
+            "y": 10.0,
+            "z": 90.0
+          }
+        ],
+        "useRotations": 1,
+        "counterClockwise": 1,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.5,
+        "moveDurMin": 4.0,
+        "moveDurMax": 4.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 4
+        },
+        "cellGridWidth": 20.0,
+        "cellGridHeight": 20.0
+      },
+      "record": {
+        "component_id": 2616,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 55,
+        "game_object_name": "Spinner NE",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 55
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 1,
+          "positionRotations": [
+            {
+              "x": 10.0,
+              "y": 10.0,
+              "z": 0.0
+            },
+            {
+              "x": 10.0,
+              "y": 10.0,
+              "z": 270.0
+            },
+            {
+              "x": 10.0,
+              "y": 10.0,
+              "z": 180.0
+            },
+            {
+              "x": 10.0,
+              "y": 10.0,
+              "z": 90.0
+            }
+          ],
+          "useRotations": 1,
+          "counterClockwise": 1,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.5,
+          "moveDurMin": 4.0,
+          "moveDurMax": 4.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 4
+          },
+          "cellGridWidth": 20.0,
+          "cellGridHeight": 20.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 55
+        }
+      }
+    },
+    {
+      "key": "level45-2617",
+      "seed": 3617,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -10.0,
+            "y": 10.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 67
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [
+          {
+            "x": -10.0,
+            "y": 10.0,
+            "z": 0.0
+          },
+          {
+            "x": -10.0,
+            "y": 10.0,
+            "z": 90.0
+          },
+          {
+            "x": -10.0,
+            "y": 10.0,
+            "z": 180.0
+          },
+          {
+            "x": -10.0,
+            "y": 10.0,
+            "z": 270.0
+          }
+        ],
+        "useRotations": 1,
+        "counterClockwise": 0,
+        "movementType": 0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.5,
+        "moveDurMin": 4.0,
+        "moveDurMax": 4.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 2
+        },
+        "cellGridWidth": 20.0,
+        "cellGridHeight": 20.0
+      },
+      "record": {
+        "component_id": 2617,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 67,
+        "game_object_name": "Spinner NW",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 67
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [
+            {
+              "x": -10.0,
+              "y": 10.0,
+              "z": 0.0
+            },
+            {
+              "x": -10.0,
+              "y": 10.0,
+              "z": 90.0
+            },
+            {
+              "x": -10.0,
+              "y": 10.0,
+              "z": 180.0
+            },
+            {
+              "x": -10.0,
+              "y": 10.0,
+              "z": 270.0
+            }
+          ],
+          "useRotations": 1,
+          "counterClockwise": 0,
+          "movementType": 0,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.5,
+          "moveDurMin": 4.0,
+          "moveDurMax": 4.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 2
+          },
+          "cellGridWidth": 20.0,
+          "cellGridHeight": 20.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 67
+        }
+      }
+    },
+    {
+      "key": "level50-2173",
+      "seed": 3173,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.5555701851844788,
+            "w": 0.831469714641571
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -11.0,
+            "y": 26.0,
+            "z": 3.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 61
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [
+          {
+            "x": -11.0,
+            "y": 26.0,
+            "z": 0.0
+          },
+          {
+            "x": 11.0,
+            "y": 26.0,
+            "z": 0.0
+          }
+        ],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 2,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 5.0,
+        "moveDurMax": 5.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 4
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 12.0
+      },
+      "record": {
+        "component_id": 2173,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 61,
+        "game_object_name": "MovingFloor",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 61
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [
+            {
+              "x": -11.0,
+              "y": 26.0,
+              "z": 0.0
+            },
+            {
+              "x": 11.0,
+              "y": 26.0,
+              "z": 0.0
+            }
+          ],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 2,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 5.0,
+          "moveDurMax": 5.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 4
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 12.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 61
+        }
+      }
+    },
+    {
+      "key": "level50-2174",
+      "seed": 3174,
+      "chain": [
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.5555701851844788,
+            "w": 0.831469714641571
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        },
+        {
+          "position": {
+            "x": -11.0,
+            "y": -26.0,
+            "z": 3.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": -0.0,
+            "z": -0.0,
+            "w": 1.0
+          },
+          "scale": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          }
+        }
+      ],
+      "data": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 67
+        },
+        "m_Enabled": 1,
+        "m_Script": {
+          "m_FileID": 1,
+          "m_PathID": 1157
+        },
+        "m_Name": "",
+        "posIndex": 0,
+        "positionRotations": [
+          {
+            "x": 11.0,
+            "y": -26.0,
+            "z": 0.0
+          },
+          {
+            "x": -11.0,
+            "y": -26.0,
+            "z": 0.0
+          }
+        ],
+        "useRotations": 0,
+        "counterClockwise": 0,
+        "movementType": 2,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "collider": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        "childColliders": [],
+        "movePercent": 0.0,
+        "moveDurMin": 5.0,
+        "moveDurMax": 5.0,
+        "isMoving": 0,
+        "movingSoundEventName": "",
+        "graphMask": {
+          "value": 2
+        },
+        "cellGridWidth": 10.0,
+        "cellGridHeight": 12.0
+      },
+      "record": {
+        "component_id": 2174,
+        "class": "MovingFloor",
+        "assembly": "Assembly-CSharp",
+        "game_object": 67,
+        "game_object_name": "MovingFloor (1)",
+        "active_in_hierarchy": true,
+        "data": {
+          "m_GameObject": {
+            "m_FileID": 0,
+            "m_PathID": 67
+          },
+          "m_Enabled": 1,
+          "m_Script": {
+            "m_FileID": 1,
+            "m_PathID": 1157
+          },
+          "m_Name": "",
+          "posIndex": 0,
+          "positionRotations": [
+            {
+              "x": 11.0,
+              "y": -26.0,
+              "z": 0.0
+            },
+            {
+              "x": -11.0,
+              "y": -26.0,
+              "z": 0.0
+            }
+          ],
+          "useRotations": 0,
+          "counterClockwise": 0,
+          "movementType": 2,
+          "velocity": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "collider": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "childColliders": [],
+          "movePercent": 0.0,
+          "moveDurMin": 5.0,
+          "moveDurMax": 5.0,
+          "isMoving": 0,
+          "movingSoundEventName": "",
+          "graphMask": {
+            "value": 2
+          },
+          "cellGridWidth": 10.0,
+          "cellGridHeight": 12.0
+        },
+        "resolved_refs": {
+          "m_GameObject": 67
+        }
+      }
+    }
+  ],
+  "ticks": 2400,
+  "fixed_delta": 0.016666
+}
