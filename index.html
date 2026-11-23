@@ -123,10 +123,22 @@ main{position:relative;z-index:5;background:var(--paper);padding:26px 0 60px;
 .about h2 small{font-weight:400;font-size:12px;color:var(--grey);letter-spacing:.3em;margin-left:12px}
 .about .bio{font-size:14.5px;line-height:2.05;color:#3d403c;letter-spacing:.01em}
 .about .bio p{margin:0 0 6px}
-.about .links{margin-top:14px;font-size:12px;letter-spacing:.14em}
-.about .links a{color:var(--water);margin-right:26px;border-bottom:1px solid var(--waterpale);padding-bottom:2px}
-.about .links a:hover{border-bottom-color:var(--water)}
-.about .links .plain{color:var(--grey);margin-right:26px}
+.contact-links{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:16px}
+.contact-link{position:relative;display:grid;place-items:center;min-inline-size:44px;min-block-size:44px;
+  border:1px solid var(--hair);border-radius:50%;background:var(--slab);color:var(--ink);cursor:pointer}
+.contact-link:hover,.contact-wechat[open]>.contact-link{border-color:var(--water);background:var(--waterpale)}
+.contact-link svg,.contact-link img{display:block;width:22px;height:22px}
+.contact-link .no{position:absolute;inset-block-start:-10px;inset-inline-start:-4px;margin:0}
+.contact-name{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip-path:inset(50%);white-space:nowrap}
+.contact-link.email{color:#286b7d}
+.contact-link.rednote img{border-radius:5px}
+.contact-wechat{position:relative}
+.contact-wechat summary{color:#16763c;list-style:none}
+.contact-wechat summary::-webkit-details-marker{display:none}
+.contact-handle{position:absolute;inset-block-start:calc(100% + 8px);inset-inline-start:0;z-index:1;
+  padding:8px 12px;background:var(--slab);border:1px solid var(--hair);border-radius:8px;
+  box-shadow:0 4px 14px #16171514;font-size:13px;white-space:nowrap}
 img.avatar,.avatar.pic{object-fit:cover;padding:0;background:var(--hair)}
 @media (max-width:680px){
   .about{flex-direction:column;gap:20px}
@@ -255,7 +267,36 @@ details.qa .ans p{font-size:14.5px;line-height:1.95;color:#333;margin:0 0 12px}
     <em class="no">A1</em><img loading="lazy" decoding="async" class="avatar pic" src="assets/25e65e555941.webp" alt="熊非">
     <div class="who">
       <div class="bio" data-no="P1" data-field="正文"><em class="no">P1</em><div class="L-zh"><p>我是熊非，<b>同济建筑学士学位</b>，<b>Harvard 21'（MDes RR首个大陆录取本科生）</b>。曾任<b>豆包多模态产品负责人</b>（包括图片/视频理解，实时视频通话，computer use）；<b>即梦founding PM</b>；连续创业者，曾悉空科技COO（Spatial Intelligence）、曾画龙CEO（物理世界定制AI）。</p><p>2019在Harvard和MIT开始我的Computer Vision旅程，而后我致力于打造<b>以视觉为统一接口的交互新范式</b>，以及<b>下一代视觉交互的前沿模型</b>。我相信模型作为新质生产力，下一代的生产关系会围绕模型展开，最强的学习信号会来自产品落地和部署环境，有竞争力的组织会从这样的新生产力和生产关系长出来。我希望建立这样的组织，也希望认识更多有趣的朋友。</p></div><div class="L-en"><p>I'm Fei Xiong — <b>B.Arch from Tongji</b>, <b>Harvard '21 (first mainland undergrad admitted to MDes RR)</b>. Formerly <b>Head of Multimodal Product at Doubao</b> (image/video understanding, real-time video calls, computer use); <b>founding PM of Dreamina (ByteDance)</b>; serial entrepreneur — COO of PlaceInt (spatial intelligence), CEO of LongAI (custom AI for the physical world).</p><p>My computer vision journey began at Harvard and MIT in 2019. Since then I've focused on one thing: <b>making vision the universal interface between humans and AI</b>, and <b>building the frontier models behind it</b>. I believe models are the new means of production: the next production relations will form around them, the strongest learning signal will come from shipped products and deployment, and the most competitive organizations will grow out of both. That's the organization I want to build — and I'd love to meet more interesting people along the way.</p></div></div>
-      <div class="links"><a href="mailto:fei.w.xiong@outlook.com"><em class="no">A4</em>EMAIL</a><a href="https://www.xiaoyuzhoufm.com/podcast/6885f49a7c043891439ecf96" target="_blank" rel="noopener"><em class="no">A5</em><span class="L-zh">小宇宙 · FUNDAMENTALS: AI</span><span class="L-en">PODCAST · FUNDAMENTALS: AI</span> ↗</a><span class="plain"><em class="no">A6</em><span class="L-zh">微信 · wowolpert</span><span class="L-en">WECHAT · wowolpert</span></span></div>
+      <div class="contact-links" role="group" aria-label="Contact / 联系方式">
+        <a class="contact-link email" href="mailto:fei.w.xiong@outlook.com" title="邮箱 / Email">
+          <em class="no" aria-hidden="true">A4</em>
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/>
+          </svg>
+          <span class="contact-name"><span class="L-zh">发邮件</span><span class="L-en">Email Fei Xiong</span></span>
+        </a>
+        <a class="contact-link" href="https://www.xiaoyuzhoufm.com/podcast/6885f49a7c043891439ecf96" target="_blank" rel="noopener" title="Fundamentals: AI · 小宇宙">
+          <em class="no" aria-hidden="true">A5</em>
+          <img src="assets/contact/xiaoyuzhou.png" alt="" width="22" height="22">
+          <span class="contact-name"><span class="L-zh">在小宇宙收听 Fundamentals: AI</span><span class="L-en">Listen to Fundamentals: AI on Xiaoyuzhou</span></span>
+        </a>
+        <details class="contact-wechat">
+          <summary class="contact-link" title="微信 / WeChat">
+            <em class="no" aria-hidden="true">A6</em>
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.969-.982z"/></svg>
+            <span class="contact-name"><span class="L-zh">查看微信号</span><span class="L-en">Show WeChat ID</span></span>
+          </summary>
+          <div class="contact-handle"><span class="L-zh">微信</span><span class="L-en">WeChat</span> · wowolpert</div>
+        </details>
+        <a class="contact-link rednote" href="https://xhslink.cn/o/5g4DD6GnMjp" target="_blank" rel="noopener" title="小红书 / RedNote">
+          <img src="assets/contact/rednote.png" alt="" width="22" height="22">
+          <span class="contact-name"><span class="L-zh">小红书个人主页</span><span class="L-en">RedNote profile</span></span>
+        </a>
+        <a class="contact-link" href="https://x.com/feiBearX" target="_blank" rel="noopener" title="X · @feiBearX">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+          <span class="contact-name">X · @feiBearX</span>
+        </a>
+      </div>
     </div>
   </div>
 
