@@ -252,7 +252,7 @@ details.qa .ans p{font-size:14.5px;line-height:1.95;color:#333;margin:0 0 12px}
   <div class="pin" id="pin">
     <div id="stage">
       <div id="building" role="img" aria-label="Axonometric drawing of the Ecological Dis-Integration water treatment plant">
-        <img src="assets/ecological/g_01.svg" alt="" width="880" height="880" fetchpriority="high">
+        <img src="assets/ecological/g_01.svg?v=2" alt="" width="1800" height="1800" fetchpriority="high">
       </div>
     </div>
     <div id="caps"></div>
@@ -366,12 +366,11 @@ var building=document.getElementById('building');
 var firstView=building.querySelector('img');
 var viewCount=33;
 var views=new Array(viewCount), requested=new Set([0]), loadingViews=0;
-var visibleBase=firstView, visibleOverlay=null, firstSettled=false;
+var visibleView=firstView;
 function watchView(index, image){
   loadingViews++;
   function settle(loaded){
     loadingViews--;
-    if(index===0) firstSettled=true;
     if(loaded) views[index]=image;
     repaint();
   }
@@ -385,32 +384,25 @@ function requestView(index){
   var image=new Image();
   image.alt='';
   watchView(index,image);
-  image.src='assets/ecological/g_'+String(index+1).padStart(2,'0')+'.svg';
+  image.src='assets/ecological/g_'+String(index+1).padStart(2,'0')+'.svg?v=2';
 }
 function drawBuilding(p){
-  var frame=p*(viewCount-1), index=Math.floor(frame), mix=frame-index;
-  var destination=Math.floor(target*(viewCount-1));
-  // A fast scroll can skip intermediate views. Fetch the destination before filling nearby gaps.
-  if(index===0&&destination===0){
-    if(firstSettled) requestView(1);
-  }else{
-    [destination,destination+1,index,index+1,index-1,index+2].forEach(requestView);
+  // Keep one drawing visible so fine lines stay sharp between scroll positions.
+  var index=Math.round(p*(viewCount-1));
+  var destination=Math.round(target*(viewCount-1));
+  if(index!==0||destination!==0){
+    // Fetch the destination first after a fast scroll, then the nearby views.
+    var direction=destination<index?-1:1;
+    [destination,index,index+direction,index-direction,destination+direction].forEach(requestView);
   }
-  var base=views[index], overlay=base&&mix>0.001?views[index+1]:null;
-  if(!base){
-    for(var offset=1;offset<viewCount&&!base;offset++){
-      base=views[index-offset]||views[index+offset];
-    }
+  var view=views[index];
+  for(var offset=1;offset<viewCount&&!view;offset++){
+    view=views[index-offset]||views[index+offset];
   }
-  if(!base) return;
-  if(base!==visibleBase||overlay!==visibleOverlay){
-    if(overlay) building.replaceChildren(base,overlay);
-    else building.replaceChildren(base);
-    visibleBase=base;
-    visibleOverlay=overlay;
+  if(view&&view!==visibleView){
+    building.replaceChildren(view);
+    visibleView=view;
   }
-  base.style.opacity=1;
-  if(overlay) overlay.style.opacity=mix;
 }
 hero.style.height='400vh';           /* 240vh 擦洗 + 60vh 终态停留 + 100vh 贴片覆盖段 */
 
