@@ -1,7 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FEI XIONG</title>
-<link rel="preload" as="image" href="assets/ecological/scrub-lite.webp" fetchpriority="low">
 <script>try{document.documentElement.setAttribute('data-lang',localStorage.getItem('xf_lang')||'en')}catch(e){document.documentElement.setAttribute('data-lang','en')}</script>
 <style>
 :root{
@@ -71,7 +70,11 @@ body.edit #savebar{display:flex}
   background:var(--paper);transition:opacity .35s linear}
 #stage{position:absolute;inset:14px}
 #stage canvas{position:absolute;inset:0;width:100%;height:100%}
-#building{position:absolute;pointer-events:none}
+#building{--cover-side:min(calc((100vw - 28px)*.46),calc((100vh - 28px)*.94));
+  position:absolute;pointer-events:none;background-size:100% 100%;
+  width:var(--cover-side);height:var(--cover-side);
+  left:calc(25% - var(--cover-side)/2);top:calc(50% - var(--cover-side)/2)}
+#building.preview-active{background-image:none!important}
 #building img{position:absolute;inset:0;display:block;width:100%;height:100%}
 #building.preview-active img{visibility:hidden}
 .hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:5;text-align:center;color:var(--grey);
@@ -86,6 +89,8 @@ body.edit #savebar{display:flex}
 .cnote.l{left:4%;width:50%}
 .cnote.r{left:57%;width:40%}
 @media (max-aspect-ratio: 100/115){ /* 竖屏:画注归位到楼/塔正下方,居中 */
+  #building{--cover-side:min(calc((100vw - 28px)*.88),calc((100vh - 28px)*.44));
+    left:calc(50% - var(--cover-side)/2);top:calc(26% - var(--cover-side)/2)}
   .cnote.l,.cnote.r{left:8%;width:84%;text-align:center;bottom:auto}
   .cnote.l{top:49%}
   .cnote.r{top:88.8%}
@@ -254,7 +259,8 @@ details.qa .ans p{font-size:14.5px;line-height:1.95;color:#333;margin:0 0 12px}
 <header class="hero" id="hero">
   <div class="pin" id="pin">
     <div id="stage">
-      <div id="building" role="img" aria-label="Axonometric drawing of the Ecological Dis-Integration water treatment plant">
+      <!-- Embedded WebP preview derived from the same artwork as the responsive cover. -->
+      <div id="building" role="img" aria-label="Axonometric drawing of the Ecological Dis-Integration water treatment plant" style="background-image:url(data:image/webp;base64,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)">
         <img src="assets/ecological/building-cover-520.webp"
           srcset="assets/ecological/building-cover-520.webp 520w, assets/ecological/building-cover-1040.webp 1040w, assets/ecological/building-cover-1800.webp 1800w"
           sizes="(min-aspect-ratio: 20/23) min(48vw, 98vh), min(92vw, 46vh)"
@@ -375,7 +381,7 @@ var views=new Array(viewCount), viewAttempts=new Uint8Array(viewCount);
 var pendingViews=new Set(), visibleView=firstView;
 var lightPoses={file:'scrub-lite.webp',tile:216,columns:5,stride:2,image:null};
 var allPoses={file:'scrub-frames.webp',tile:420,columns:6,stride:1,image:null};
-var fullQueued=false, fullRequested=false;
+var lightRequested=false, fullQueued=false, fullRequested=false;
 
 function loadPoses(sheet){
   var image=new Image();
@@ -386,10 +392,15 @@ function loadPoses(sheet){
   };
   image.src='assets/ecological/'+sheet.file;
 }
+function startLightPoses(){
+  if(lightRequested) return;
+  lightRequested=true;
+  loadPoses(lightPoses);
+}
 function scheduleFullPoses(){
   var connection=navigator.connection;
   if(fullRequested||fullQueued||!lightPoses.image||reduce||
-    connection&&(connection.saveData||/2g$/.test(connection.effectiveType))) return;
+    connection&&(connection.saveData||/[23]g$/.test(connection.effectiveType))) return;
   fullQueued=true;
   setTimeout(function(){
     fullQueued=false;
@@ -720,6 +731,7 @@ function tick(){
 }
 function apply(){
   target=(PV!==null)?PV:prog();
+  if(target>0) startLightPoses();
   repaint();
 }
 addEventListener('scroll',apply,{passive:true});
@@ -790,7 +802,12 @@ document.getElementById('logo').addEventListener('click',function(){
 
 var H0=location.hash.replace('#','');
 if(PV!==null){ cur=PV; }
-loadPoses(lightPoses);
+// Give the sharp cover the connection first, unless the visitor starts scrolling.
+if(firstView.complete) startLightPoses();
+else {
+  firstView.addEventListener('load',startLightPoses,{once:true});
+  firstView.addEventListener('error',startLightPoses,{once:true});
+}
 if(TABS.indexOf(H0)>=0) scrollToSec(H0,true);
 apply();
 render(cur);
