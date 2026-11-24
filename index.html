@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <title>FEI XIONG</title>
+<link rel="preload" as="image" href="assets/ecological/scrub-keys.webp" fetchpriority="low">
 <script>try{document.documentElement.setAttribute('data-lang',localStorage.getItem('xf_lang')||'en')}catch(e){document.documentElement.setAttribute('data-lang','en')}</script>
 <style>
 :root{
@@ -71,6 +72,7 @@ body.edit #savebar{display:flex}
 #stage canvas{position:absolute;inset:0;width:100%;height:100%}
 #building{position:absolute;pointer-events:none}
 #building img{position:absolute;inset:0;display:block;width:100%;height:100%}
+#building.preview-active img{visibility:hidden}
 .hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:5;text-align:center;color:var(--grey);
   font-size:11px;letter-spacing:.3em}
 .hint .ar{display:block;margin:12px auto 0;width:13px;height:13px;
@@ -361,48 +363,80 @@ function size(){
 }
 size();
 
-/* SVG views are loaded near the scroll position and displayed at their native vector resolution. */
+/* Preloaded sheets keep the scroll animation independent of individual SVG requests. */
 var building=document.getElementById('building');
 var firstView=building.querySelector('img');
 var viewCount=33;
-var views=new Array(viewCount), requested=new Set([0]), loadingViews=0;
-var visibleView=firstView;
-function watchView(index, image){
-  loadingViews++;
+var views=new Array(viewCount), viewAttempts=new Uint8Array(viewCount);
+var pendingViews=new Set(), visibleView=firstView;
+var keyPoses={file:'scrub-keys.webp',tile:360,columns:3,stride:4,image:null};
+var allPoses={file:'scrub-frames.webp',tile:420,columns:6,stride:1,image:null};
+
+function loadPoses(sheet, done){
+  var image=new Image();
+  image.fetchPriority='low';
+  image.onload=function(){
+    sheet.image=image;
+    repaint();
+    if(done) done();
+  };
+  image.onerror=done||null;
+  image.src='assets/ecological/'+sheet.file;
+}
+function watchView(index,image){
+  pendingViews.add(index);
   function settle(loaded){
-    loadingViews--;
+    pendingViews.delete(index);
     if(loaded) views[index]=image;
     repaint();
   }
   if(image.complete&&image.hasAttribute('src')){ settle(image.naturalWidth>0); return; }
-  image.addEventListener('load',function(){ settle(true); },{once:true});
-  image.addEventListener('error',function(){ settle(false); },{once:true});
+  image.onload=function(){ settle(true); };
+  image.onerror=function(){ settle(false); };
 }
 function requestView(index){
-  if(index<0||index>=viewCount||requested.has(index)||loadingViews>=3) return;
-  requested.add(index);
+  if(views[index]||pendingViews.has(index)||viewAttempts[index]>=2||pendingViews.size>=2) return;
+  viewAttempts[index]++;
   var image=new Image();
   image.alt='';
   watchView(index,image);
   image.src='assets/ecological/g_'+String(index+1).padStart(2,'0')+'.svg?v=2';
 }
-function drawBuilding(p){
-  // Keep one drawing visible so fine lines stay sharp between scroll positions.
+function paintPose(sheet,index,x,y,side){
+  var tile=sheet.tile;
+  cx.drawImage(sheet.image,(index%sheet.columns)*tile,Math.floor(index/sheet.columns)*tile,
+    tile,tile,x,y,side,side);
+}
+function drawBuilding(p,x,y,side){
   var index=Math.round(p*(viewCount-1));
-  var destination=Math.round(target*(viewCount-1));
-  if(index!==0||destination!==0){
-    // Fetch the destination first after a fast scroll, then the nearby views.
-    var direction=destination<index?-1:1;
-    [destination,index,index+direction,index-direction,destination+direction].forEach(requestView);
+  var atRest=Math.abs(target-p)<=0.0004;
+  var sheet=allPoses.image?allPoses:keyPoses.image?keyPoses:null;
+
+  // A stopped drawing uses the full SVG for that position.
+  if(atRest||!sheet) requestView(Math.round(target*(viewCount-1)));
+  var view=(atRest||!sheet||index===0)?views[index]:null;
+  if(view){
+    if(view!==visibleView){
+      building.replaceChildren(view);
+      visibleView=view;
+    }
+    building.classList.remove('preview-active');
+    return;
   }
-  var view=views[index];
-  for(var offset=1;offset<viewCount&&!view;offset++){
-    view=views[index-offset]||views[index+offset];
+  if(!sheet) return;
+
+  // Blend adjacent poses during motion, matching the original scroll scrub.
+  // The sparse sheet jumps to its closest pose until adjacent poses arrive.
+  var frame=p*(viewCount-1)/sheet.stride;
+  var blend=!atRest&&sheet===allPoses;
+  var base=blend?Math.floor(frame):Math.round(frame);
+  paintPose(sheet,base,x,y,side);
+  if(blend&&frame>base){
+    cx.globalAlpha=frame-base;
+    paintPose(sheet,base+1,x,y,side);
+    cx.globalAlpha=1;
   }
-  if(view&&view!==visibleView){
-    building.replaceChildren(view);
-    visibleView=view;
-  }
+  building.classList.add('preview-active');
 }
 hero.style.height='400vh';           /* 240vh 擦洗 + 60vh 终态停留 + 100vh 贴片覆盖段 */
 
@@ -644,7 +678,7 @@ function render(p){
   building.style.left=dx*cssScaleX+'px';
   building.style.top=dy*cssScaleY+'px';
   building.style.width=building.style.height=side*cssScaleX+'px';
-  drawBuilding(p);
+  drawBuilding(p,dx,dy,side);
   for(var c=0;c<CAPS.length;c++){
     var el=CAPS[c], o=ramp(p,+el.dataset.a,+el.dataset.b);
     el.style.opacity=o.toFixed(3);
@@ -742,6 +776,7 @@ document.getElementById('logo').addEventListener('click',function(){
 var H0=location.hash.replace('#','');
 if(PV!==null){ cur=PV; }
 watchView(0,firstView);
+loadPoses(keyPoses,function(){ loadPoses(allPoses); });
 if(TABS.indexOf(H0)>=0) scrollToSec(H0,true);
 apply();
 render(cur);
