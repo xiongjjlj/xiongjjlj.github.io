@@ -1,6 +1,7 @@
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FEI XIONG</title>
-<link rel="preload" as="image" href="assets/ecological/scrub-keys.webp" fetchpriority="low">
+<link rel="preload" as="image" href="assets/ecological/scrub-lite.webp" fetchpriority="low">
 <script>try{document.documentElement.setAttribute('data-lang',localStorage.getItem('xf_lang')||'en')}catch(e){document.documentElement.setAttribute('data-lang','en')}</script>
 <style>
 :root{
@@ -254,7 +255,10 @@ details.qa .ans p{font-size:14.5px;line-height:1.95;color:#333;margin:0 0 12px}
   <div class="pin" id="pin">
     <div id="stage">
       <div id="building" role="img" aria-label="Axonometric drawing of the Ecological Dis-Integration water treatment plant">
-        <img src="assets/ecological/g_01.svg?v=2" alt="" width="1800" height="1800" fetchpriority="high">
+        <img src="assets/ecological/building-cover-520.webp"
+          srcset="assets/ecological/building-cover-520.webp 520w, assets/ecological/building-cover-1040.webp 1040w, assets/ecological/building-cover-1800.webp 1800w"
+          sizes="(min-aspect-ratio: 20/23) min(48vw, 98vh), min(92vw, 46vh)"
+          alt="" width="1040" height="1040" fetchpriority="high" decoding="async">
       </div>
     </div>
     <div id="caps"></div>
@@ -279,7 +283,7 @@ details.qa .ans p{font-size:14.5px;line-height:1.95;color:#333;margin:0 0 12px}
         </a>
         <a class="contact-link" href="https://www.xiaoyuzhoufm.com/podcast/6885f49a7c043891439ecf96" target="_blank" rel="noopener" title="Fundamentals: AI · 小宇宙">
           <em class="no" aria-hidden="true">A5</em>
-          <img src="assets/contact/xiaoyuzhou.png" alt="" width="22" height="22">
+          <img src="assets/contact/xiaoyuzhou.png" alt="" width="22" height="22" loading="lazy" decoding="async">
           <span class="contact-name"><span class="L-zh">在小宇宙收听 Fundamentals: AI</span><span class="L-en">Listen to Fundamentals: AI on Xiaoyuzhou</span></span>
         </a>
         <details class="contact-wechat">
@@ -291,7 +295,7 @@ details.qa .ans p{font-size:14.5px;line-height:1.95;color:#333;margin:0 0 12px}
           <div class="contact-handle"><span class="L-zh">微信</span><span class="L-en">WeChat</span> · wowolpert</div>
         </details>
         <a class="contact-link rednote" href="https://xhslink.cn/o/5g4DD6GnMjp" target="_blank" rel="noopener" title="小红书 / RedNote">
-          <img src="assets/contact/rednote.png" alt="" width="22" height="22">
+          <img src="assets/contact/rednote.png" alt="" width="22" height="22" loading="lazy" decoding="async">
           <span class="contact-name"><span class="L-zh">小红书个人主页</span><span class="L-en">RedNote profile</span></span>
         </a>
         <a class="contact-link" href="https://x.com/feiBearX" target="_blank" rel="noopener" title="X · @feiBearX">
@@ -363,25 +367,36 @@ function size(){
 }
 size();
 
-/* Preloaded sheets keep the scroll animation independent of individual SVG requests. */
+/* The light sheet includes both endpoints; the full sheet is a motion-only upgrade. */
 var building=document.getElementById('building');
 var firstView=building.querySelector('img');
 var viewCount=33;
 var views=new Array(viewCount), viewAttempts=new Uint8Array(viewCount);
 var pendingViews=new Set(), visibleView=firstView;
-var keyPoses={file:'scrub-keys.webp',tile:360,columns:3,stride:4,image:null};
+var lightPoses={file:'scrub-lite.webp',tile:216,columns:5,stride:2,image:null};
 var allPoses={file:'scrub-frames.webp',tile:420,columns:6,stride:1,image:null};
+var fullQueued=false, fullRequested=false;
 
-function loadPoses(sheet, done){
+function loadPoses(sheet){
   var image=new Image();
   image.fetchPriority='low';
   image.onload=function(){
     sheet.image=image;
     repaint();
-    if(done) done();
   };
-  image.onerror=done||null;
   image.src='assets/ecological/'+sheet.file;
+}
+function scheduleFullPoses(){
+  var connection=navigator.connection;
+  if(fullRequested||fullQueued||!lightPoses.image||reduce||
+    connection&&(connection.saveData||/2g$/.test(connection.effectiveType))) return;
+  fullQueued=true;
+  setTimeout(function(){
+    fullQueued=false;
+    if(document.hidden||target<=0||target>=1) return;
+    fullRequested=true;
+    loadPoses(allPoses);
+  },700);
 }
 function watchView(index,image){
   pendingViews.add(index);
@@ -410,11 +425,12 @@ function paintPose(sheet,index,x,y,side){
 function drawBuilding(p,x,y,side){
   var index=Math.round(p*(viewCount-1));
   var atRest=Math.abs(target-p)<=0.0004;
-  var sheet=allPoses.image?allPoses:keyPoses.image?keyPoses:null;
+  var sheet=allPoses.image?allPoses:lightPoses.image?lightPoses:null;
 
-  // A stopped drawing uses the full SVG for that position.
-  if(atRest||!sheet) requestView(Math.round(target*(viewCount-1)));
-  var view=(atRest||!sheet||index===0)?views[index]:null;
+  // Use the original artwork at the start; fetch other sharp views only at rest.
+  if(!atRest&&target>0&&target<1) scheduleFullPoses();
+  if(atRest&&index!==0) requestView(index);
+  var view=index===0?firstView:(atRest||!sheet)?views[index]:null;
   if(view){
     if(view!==visibleView){
       building.replaceChildren(view);
@@ -425,10 +441,9 @@ function drawBuilding(p,x,y,side){
   }
   if(!sheet) return;
 
-  // Blend adjacent poses during motion, matching the original scroll scrub.
-  // The sparse sheet jumps to its closest pose until adjacent poses arrive.
+  // Blend adjacent poses on either sheet so a slow network still gets smooth motion.
   var frame=p*(viewCount-1)/sheet.stride;
-  var blend=!atRest&&sheet===allPoses;
+  var blend=!atRest;
   var base=blend?Math.floor(frame):Math.round(frame);
   paintPose(sheet,base,x,y,side);
   if(blend&&frame>base){
@@ -775,8 +790,7 @@ document.getElementById('logo').addEventListener('click',function(){
 
 var H0=location.hash.replace('#','');
 if(PV!==null){ cur=PV; }
-watchView(0,firstView);
-loadPoses(keyPoses,function(){ loadPoses(allPoses); });
+loadPoses(lightPoses);
 if(TABS.indexOf(H0)>=0) scrollToSec(H0,true);
 apply();
 render(cur);
